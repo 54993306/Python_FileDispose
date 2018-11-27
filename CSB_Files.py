@@ -27,20 +27,21 @@ class CSB_Files:
 # subprocess.run('kill  %s' % ' '.join(pids), shell=True)
 # 就可以杀掉进程 111 和 22
 
-filepath = "D:/Python_FileDispose/res"
+# filepath = "D:/Python_FileDispose/res"
+filepath = "./res"
 
 def initPathFiles(filepath , list):
     if os.path.isdir(filepath):
         for ccfile in os.listdir(filepath):
-            if os.path.isdir(ccfile):
-                print(ccfile + "----- 3")
-                initPathFiles(ccfile , list)
+            if os.path.isdir(filepath + "/" + ccfile):
+                print(filepath + "/" + ccfile + "----- 3")
+                initPathFiles(filepath + "/" + ccfile , list)
             else:
-                print(ccfile + "-----2")
-                list.append(filepath.join(ccfile))
+                print(filepath + "/" + ccfile + "-----2")
+                list.append(filepath + "/" + ccfile + "\n")
     else:
         print(filepath + "-----1")
-        list.append(filepath)
+        list.append(filepath + "\n")
 
 def Test2(rootDir):
     for lists in os.listdir(rootDir):
@@ -53,11 +54,12 @@ def Test2(rootDir):
 #读取路径下的所有资源文件分类后写入到文件中
 class gameres:
     file = open("files.txt" , "w+")
-    # file.write()
     # def __init__(self):
     fileList = []
     initPathFiles(filepath , fileList)
-        # print(filefilepath.join(fileList))
+    print()
+    file.write("".join(fileList))
+    file.close()
     # print(fileList)
-        # print(os.path.join(filefilepath, fileList))
+    #     print(os.path.join(filefilepath, fileList))
 # cla = gameres()
