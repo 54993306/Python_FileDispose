@@ -1,7 +1,8 @@
 
 # -*- coding: UTF-8 -*-
-import os
 # import shutil
+import os
+import json
 
 class CSB_Files:
     def __init__(self,path):
@@ -29,6 +30,7 @@ class CSB_Files:
 
 # filepath = "D:/Python_FileDispose/res"
 filepath = "./res"
+jsonfilename = "lay_test.json"
 
 def initPathFiles(filepath , list):
     if os.path.isdir(filepath):
@@ -57,9 +59,16 @@ class gameres:
     # def __init__(self):
     fileList = []
     initPathFiles(filepath , fileList)
-    print()
     file.write("".join(fileList))
     file.close()
+
+    jsonfile = open(jsonfilename   , "r+")
+    # print(jsonfile)
+    jsondict = json.load(jsonfile)
+    print json.dumps( jsondict , ensure_ascii=False ,  encoding= "utf -8" , indent=4)
+    if isinstance(jsondict , dict):
+        print( jsondict.get("fileNameData", "666"))   #遍历所有的容器，找到key值为fileNameData的地方
+    # print(json.load(jsonfile))
     # print(fileList)
     #     print(os.path.join(filefilepath, fileList))
 # cla = gameres()
