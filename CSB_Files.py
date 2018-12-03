@@ -3,6 +3,7 @@
 # import shutil
 import os
 import json
+import hashlib
 
 class CSB_Files:
     def __init__(self,path):
@@ -59,16 +60,37 @@ class gameres:
     # def __init__(self):
     fileList = []
     initPathFiles(filepath , fileList)
-    file.write("".join(fileList))
+
+    filedict = {}
+    for pathbylist in fileList:
+        print(pathbylist)
+        abspath = pathbylist
+        if not os.path.isabs(abspath):
+            abspath = os.path.abspath(pathbylist)
+        if os.path.isabs(abspath):                  #可以直接输出
+            print("2222222222222222222")
+        print(abspath)
+        # print abspath.replace("\\" , "/")   # 不管用
+        # abspath = repr(abspath)[1:-1]     # repr 不行
+        # abspath = eval("""%s""" % str(abspath))   # eval(r"%s" % abspath) 不行，r+abspath不行
+        print(os.path.exists(abspath))
+        print(os.path.isfile(abspath))
+        # print(os.path.exists(r"D:\Python_FileDispose\res\111.txt"))
+        # print(os.path.exists(r"D:\Python_FileDispose\res\fqqq\222.png"))
+        # print(os.path.exists(r"D:\Python_FileDispose\res\fccc\333.txt"))
+
+        if os.path.exists(abspath) and os.path.isfile(abspath):
+            singlepath  = os.path.splitext(abspath)
+            print(singlepath)
+
+
+    # file.write("".join(fileList))
     file.close()
 
-    jsonfile = open(jsonfilename   , "r+")
-    # print(jsonfile)
-    jsondict = json.load(jsonfile)
-    print json.dumps( jsondict , ensure_ascii=False ,  encoding= "utf -8" , indent=4)
-    if isinstance(jsondict , dict):
-        print( jsondict.get("fileNameData", "666"))   #遍历所有的容器，找到key值为fileNameData的地方
-    # print(json.load(jsonfile))
-    # print(fileList)
-    #     print(os.path.join(filefilepath, fileList))
-# cla = gameres()
+    # jsonfile = open(jsonfilename   , "r+")
+    # jsondict = json.load(jsonfile)
+    # print json.dumps( jsondict , ensure_ascii=False ,  encoding= "utf -8" , indent=4)
+
+
+    # if isinstance(jsondict , dict):
+        # print( jsondict.get("fileNameData", "666"))   #遍历所有的容器，找到key值为fileNameData的地方
