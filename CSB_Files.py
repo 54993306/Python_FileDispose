@@ -110,3 +110,8 @@ class gameres:
 t = gameres()
 t.initFileDict()
 print(json.dumps(t.filedict, ensure_ascii=False, encoding="utf -8", indent=4))
+
+
+# 需要把可存在png和plist的行都进行处理，所有的资源类型都要进行处理和匹配
+jsonpath = ""
+class jsonHasRes:
