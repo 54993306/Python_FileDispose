@@ -31,7 +31,7 @@ def initPathFiles(filepath , list):
                 list.append(filepath + "/" + ccfile ) # 写入到列表中，不需要加换行符，从列表中写入文件才需要加入换行符
     else:
         print(filepath + "-----1")
-        list.append(filepath + "\n")
+        list.append(filepath)
 
 def Test2(rootDir):
     for lists in os.listdir(rootDir):
@@ -111,7 +111,37 @@ t = gameres()
 t.initFileDict()
 print(json.dumps(t.filedict, ensure_ascii=False, encoding="utf -8", indent=4))
 
-
+import re
 # 需要把可存在png和plist的行都进行处理，所有的资源类型都要进行处理和匹配
-jsonpath = ""
+jsonpaths = "./"
+jsonHavaRes = "jsonres.txt"
 class jsonHasRes:
+    json_res = {}
+    fileList = []
+    initPathFiles(jsonpaths , fileList)
+
+    def iniJsonFileList(self):
+        jsonres = open(jsonHavaRes , "w+")
+        for jsonpath in self.fileList:
+            if not re.search(r".json" , jsonpath):
+                continue
+            print(jsonpath)
+            if not os.path.isabs(jsonpath):
+                jsonpath = os.path.abspath(jsonpath)
+            if not os.path.isfile(jsonpath):
+                assert(False)
+            file_stream = open(jsonpath , "rb")
+
+            for line in file_stream.readlines():
+                for resType in t.filedict.iterkeys():
+                    resType = str.replace(resType , "." , "\." )
+                    # print(resType)
+                    if re.search(resType , line):
+                        line = str.replace(line , " " , "")
+                        print resType + " : " + line
+                        jsonres.write(line)
+        # print(jsonres.read())
+        jsonres.close()
+
+jc= jsonHasRes()
+jc.iniJsonFileList()
