@@ -38,6 +38,7 @@ def getFileMd5( path ):
     if os.path.isfile(path):
         filesize = os.path.getsize(path)
         if filesize > 1024 * 10:   # 大文件获取md5值的方法
+            print("BigFile :" + path)
             return bigFileMd5(path)
         else:
             return smallFileMd5(path)

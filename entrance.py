@@ -10,11 +10,15 @@ import totalResDict
 import jsonFileRes
 import fileChange
 
-t = totalResDict.gameres()
+referenceRes = {}    #文件引用计数表
+
+t = totalResDict.totalRes() #初始化所有的资源信息
 t.initFileDict()
 
-jc= jsonFileRes.jsonHasRes(t.filedict)
+jc= jsonFileRes.jsonRes(t.filedict)  # 初始化所有json中包含的资源信息
 jc.initRecordFile()
+
+# 初始化代码中包含的资源信息
 
 cg = fileChange.replaceImage()
 # cg.replaceFile(jc.jsonPaths)
@@ -22,11 +26,6 @@ cg = fileChange.replaceImage()
 newJsonFile = "./newJson/rp_1lay_test.json"
 def streamDispose(newJsonFile):
     json_stream = open(newJsonFile, "r+")
-    # json_stream.seek(0,0)             # 定位到文件流某个位置
-    # json_stream.tell()                # 输出当前文件流位置
-    # json_stream.flush()               #
-    # print(type(json.loads("[1,2,3,4,5]")))   #将字符串转换为数据对象( List or Dict )
-
     if not json_stream:
         assert (False)
     jsondict = json.load(json_stream)
