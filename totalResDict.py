@@ -37,6 +37,7 @@ class gameres:
                 typedict = {}
                 self.filedict[filetype] = typedict
                 fillDict(typedict, abspath)
+        # print(json.dumps(self.filedict, ensure_ascii=False, encoding="utf -8", indent=4))
 
     def getFileMd5( self,path ):
         if os.path.isfile(path):
@@ -69,7 +70,3 @@ class gameres:
         f_stream.close()
         md5_code = str(hash_code).lower()
         return md5_code
-
-# t = gameres()
-# t.initFileDict()
-# print(json.dumps(t.filedict, ensure_ascii=False, encoding="utf -8", indent=4))

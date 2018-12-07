@@ -7,7 +7,7 @@ import comFun
 import os
 import re
 
-searchJsonpath = "./newJson"   #当前目录
+searchJsonpath = "./oldJson"
 jsonHavaRes = "jsonres.txt"
 class jsonHasRes:
     json_res = {}
@@ -20,13 +20,12 @@ class jsonHasRes:
             _ , fileType = os.path.splitext(jsonpath)
             if cmp(fileType , ".json") != 0:
                 continue
-            # print "file : " + jsonpath
             if not os.path.isabs(jsonpath):
                 jsonpath = os.path.abspath(jsonpath)
             if not os.path.isfile(jsonpath):
                 assert(False)
             self.jsonPaths.append(jsonpath)
-            print(jsonpath)
+            # print("Json has res : " + jsonpath)
             file_stream = open(jsonpath , "rb")
             for line in file_stream.readlines():
                 for resType in resDict.iterkeys():   # 从json文件中，找到所有包含资源文件的行
@@ -34,11 +33,8 @@ class jsonHasRes:
                     # print(resType)
                     if re.search(resType , line):
                         line = str.replace(line , " " , "")
-                        print resType + " : " + line
+                        # print resType + " : " + line
                         rJsonRes.write(line)
                         break
         # print(jsonres.read())
         rJsonRes.close()
-
-# jc= jsonHasRes()
-# jc.iniJsonFileList()

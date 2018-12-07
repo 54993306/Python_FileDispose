@@ -10,34 +10,36 @@ import comFun
 outputPath = "./newJson/"
 import shutil
 class replaceImage:
-    def replaceFile(self):
+    def replaceFile(self , jsonPaths):
         if not os.path.exists(outputPath):
             os.mkdir(outputPath , 0o777)        # 创建输出路径
-        for jsonPath in jc.jsonPaths:
+        for jsonPath in jsonPaths:
             if not os.path.isfile(jsonPath):
                 assert(False)
             if not re.search(r".json" , jsonPath):
                 assert(False)
-            print jsonPath
             _ , filename = os.path.split(jsonPath)
-            newFilePath = outputPath + filename
-            if os.path.isfile(newFilePath):
-                print("file exists : " + newFilePath)
-                continue  # 文件已经存在
+            newFilePath = outputPath + "rp_" +filename
             shutil.copyfile(jsonPath , newFilePath)
             if not os.path.isabs(newFilePath):
                 newFilePath = os.path.abspath(newFilePath)
             if not os.path.isfile(newFilePath):
                 assert(False)
             print(newFilePath)
-            json_stream = open(newFilePath , "r+")
-            self.streamDispose(json_stream)
+            self.streamDispose(newFilePath)
 
-    def streamDispose(self , fileStream):
-        if not fileStream:
+    def streamDispose(self , newJsonFile):
+        json_stream = open(newJsonFile, "r+")
+        # json_stream.seek(0,0)             # 定位到文件流某个位置
+        # json_stream.tell()                # 输出当前文件流位置
+        # json_stream.flush()               #
+        # print(type(json.loads("[1,2,3,4,5]")))   #将字符串转换为数据对象( List or Dict )
+
+        if not json_stream:
             assert(False)
-        jsondict = json.load(fileStream)
-        print json.dumps( jsondict , ensure_ascii=False ,  encoding= "utf -8" , indent=4)
+        jsondict = json.load(json_stream)
+        for keyL1 in jsondict.iterkeys():
+            print keyL1
+        # print json.dumps( jsondict , ensure_ascii=False ,  encoding= "utf-8" , indent=4)
+        json_stream.close()
 
-# rep = replaceImage()
-# rep.replaceFile()
