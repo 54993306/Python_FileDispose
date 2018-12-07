@@ -1,10 +1,13 @@
 # -*- coding: UTF-8 -*-
 
 import os
-
+import json
+import hashlib
 # 通过子进程执行shell命令
 # subprocess.run('kill  %s' % ' '.join(pids), shell=True)
 # 就可以杀掉进程 111 和 22
+
+FileMd5Dict = {}   #用于记录文件的路径和md5值
 
 def initPathFiles(filepath , list):
     if os.path.isdir(filepath):
@@ -27,3 +30,40 @@ def Test2(rootDir):
         if os.path.isdir(path):
             Test2(path)
 # Test2(filefilepath)
+
+def getFileMd5( path ):
+    if FileMd5Dict.has_key(path):
+        return FileMd5Dict.get(path)
+
+    if os.path.isfile(path):
+        filesize = os.path.getsize(path)
+        if filesize > 1024 * 10:   # 大文件获取md5值的方法
+            return bigFileMd5(path)
+        else:
+            return smallFileMd5(path)
+    else:
+        print(" path error : " + path)
+
+def bigFileMd5(path):
+    md5_obj = hashlib.md5()
+    f_stream = open(path, "rb")
+    while True:
+        cut_stream = f_stream.read(8069)
+        if not cut_stream:
+            break
+        md5_obj.update(cut_stream)
+    hask_code = md5_obj.hexdigest()
+    f_stream.close()
+    md5_code = str(hask_code).lower()
+    FileMd5Dict[path] = md5_code
+    return md5_code
+
+def smallFileMd5(path):
+    md5_obj = hashlib.md5()
+    f_stream = open(path , "rb")
+    md5_obj.update(f_stream.read())
+    hash_code = md5_obj.hexdigest()
+    f_stream.close()
+    md5_code = str(hash_code).lower()
+    FileMd5Dict[path] = md5_code
+    return md5_code

@@ -6,6 +6,11 @@ import re
 
 import comFun
 
+# 根据图片的引用计数合成大图成功后，对工程的json文件进行修改
+# 测试修改的算法是否有效
+# 合成大图后的相应匹配数据要确定
+# 原来使用的是某张小图，合成大图后，应该改成什么样子才是正确的
+
 # json修改小图 jsonfilename
 outputPath = "./newJson/"
 import shutil

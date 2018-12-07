@@ -15,12 +15,12 @@ class gameres:
     fileList = []
     comFun.initPathFiles(filepath , fileList)
 
-    filedict = {}
+    filedict = {}   #资源目录下的资源字典，有多少中类型资源，每种类型有多少个
     def initFileDict(self):
         def fillDict(typedict , filepath):
             pathdict = {}
             typedict[filepath] = pathdict
-            pathdict["md5"] = self.getFileMd5(filepath)
+            pathdict["md5"] = comFun.getFileMd5(filepath)
             # pathdict["md5"] = self.getFileMd5(filepath)
             pathdict["size"] = os.path.getsize(filepath)
             #len(dict)   #返回dict元素个数
@@ -38,35 +38,3 @@ class gameres:
                 self.filedict[filetype] = typedict
                 fillDict(typedict, abspath)
         # print(json.dumps(self.filedict, ensure_ascii=False, encoding="utf -8", indent=4))
-
-    def getFileMd5( self,path ):
-        if os.path.isfile(path):
-            filesize = os.path.getsize(path)
-            if filesize > 1024 * 10:   # 大文件获取md5值的方法
-                return self.bigFileMd5(path)
-            else:
-                return self.smallFileMd5(path)
-        else:
-            print(" path error : " + path)
-
-    def bigFileMd5(self , path):
-        md5_obj = hashlib.md5()
-        f_stream = open(path, "rb")
-        while True:
-            cut_stream = f_stream.read(8069)
-            if not cut_stream:
-                break
-            md5_obj.update(cut_stream)
-        hask_code = md5_obj.hexdigest()
-        f_stream.close()
-        md5_code = str(hask_code).lower()
-        return md5_code
-
-    def smallFileMd5(self , path):
-        md5_obj = hashlib.md5()
-        f_stream = open(path , "rb")
-        md5_obj.update(f_stream.read())
-        hash_code = md5_obj.hexdigest()
-        f_stream.close()
-        md5_code = str(hash_code).lower()
-        return md5_code
