@@ -46,7 +46,7 @@ class jsonHasRes:
                     line = re.sub(r"\s|\r|\n", "", line)
                     # print line
                     reType = re.compile(r"\"([^:]+" + resType + r")\"")   # ：不是特殊字符跟字母一样 , ()不是特殊字符串
-                    serchObj = reType.findall(line)
+                    serchObj = reType.search(line)
                     print serchObj.group(1)
                     print serchObj.group()
                     if serchObj:
