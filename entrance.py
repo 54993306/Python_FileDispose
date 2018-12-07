@@ -14,7 +14,7 @@ t = totalResDict.gameres()
 t.initFileDict()
 
 jc= jsonFileRes.jsonHasRes(t.filedict)
-jc.iniJsonFileList()
+jc.initRecordFile()
 
 cg = fileChange.replaceImage()
 # cg.replaceFile(jc.jsonPaths)

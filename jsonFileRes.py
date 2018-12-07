@@ -18,11 +18,19 @@ class jsonHasRes:
     json_res = {}
     folderFiles = []
     comFun.initPathFiles(searchJsonpath , folderFiles)
-    rJsonRes = open(jsonHavaRes, "w+")
+
+    def initRecordFile(self , refresh = False):
+        if os.path.isfile(jsonHavaRes) and not refresh:
+            if not self.json_res:
+                json_stream = open(jsonHavaRes , "r")
+                self.json_res = json.load(json_stream)
+                print "open : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
+            return
+        else:
+            self.iniJsonFileList()
+
+
     def iniJsonFileList(self):
-        # rJsonRes = open(jsonHavaRes, "w+")
-        # rJsonRes.write(line)
-        # rJsonRes.close()
         for jsonpath in self.folderFiles:
             _ , fileType = os.path.splitext(jsonpath)
             if cmp(fileType , ".json") != 0:
@@ -32,10 +40,11 @@ class jsonHasRes:
             if not os.path.isfile(jsonpath):
                 assert(False)
             self.json_res[jsonpath] = []
-            # print("Json has res : " + jsonpath)\
+            # print("Json has res : " + jsonpath)
             self.replaceCmpResType(jsonpath)
-        self.rJsonRes.close()
-        # print json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
+        json_stream = open(jsonHavaRes, "w+")
+        json.dump(self.json_res, json_stream)
+        print "init : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
 
     def replaceCmpResType(self , jsonpath):
         file_stream = open(jsonpath, "rb")
@@ -47,11 +56,8 @@ class jsonHasRes:
                     # print line
                     reType = re.compile(r"\"([^:]+" + resType + r")\"")   # ：不是特殊字符跟字母一样 , ()不是特殊字符串
                     serchObj = reType.search(line)
-                    print serchObj.group(1)
-                    print serchObj.group()
                     if serchObj:
                         self.json_res[jsonpath].append(serchObj.group(1))  # 记录每个文件中都包含了多少的资源
-                        self.rJsonRes.write(serchObj.group(1) + "\n")
                     else:
                         print line + " regular failed "
                         assert(False)
