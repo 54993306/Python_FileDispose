@@ -25,7 +25,7 @@ class jsonRes:
             if not self.json_res:
                 json_stream = open(jsonHavaRes , "r")
                 self.json_res = json.load(json_stream)
-                print "open : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
+                # print "open : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
         else:
             self.iniJsonFileList()
         self.initReferenceCount() # 可以跟json_res一起执行，但是耦合逻辑太多，拆出来逻辑清楚，但是性能消耗
@@ -40,7 +40,7 @@ class jsonRes:
                     path = os.path.abspath(path)
                 if not os.path.isfile(path):
                     print "not fount file : " + path
-                    # assert(False)
+                    # continue
                 _,fileType = os.path.splitext(path)
                 if fileType in self.pResDict:
                     typeDict = self.pResDict.get(fileType)
