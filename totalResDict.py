@@ -31,6 +31,8 @@ class totalRes:
             if not os.path.isabs(abspath):
                 abspath = os.path.abspath(pathbylist)
             singlepath , filetype = os.path.splitext(abspath)   # 分离文件名和后缀
+            if not filetype:
+                continue
             if filetype in self.filedict:
                 typedict = self.filedict.get(filetype)
                 fillDict(typedict , abspath)
@@ -38,4 +40,4 @@ class totalRes:
                 typedict = {}
                 self.filedict[filetype] = typedict
                 fillDict(typedict, abspath)
-        # print(json.dumps(self.filedict, ensure_ascii=False, encoding="utf -8", indent=4))
+        print(json.dumps(self.filedict, ensure_ascii=False, encoding="utf -8", indent=4))
