@@ -34,7 +34,7 @@ class jsonRes:
     def initReferenceCount(self , refresh = False):  #初始化文件引用计数表
         # if self.reference and (not refresh) :
         #     return
-        for _ , paths in self.json_res.iteritems():
+        for jsonpath , paths in self.json_res.iteritems():
             for path in paths:
                 if not os.path.isabs(path):
                     path = os.path.abspath(path)
@@ -45,21 +45,30 @@ class jsonRes:
                 if fileType in self.pResDict:
                     typeDict = self.pResDict.get(fileType)
                     if typeDict.has_key(path):
-                        md5Code = typeDict.get(path)   #通过文件路径到总资源表中取得文件Md5值
-                        self.addReferenceNum(md5Code , path)
+                        fileinfo = typeDict.get(path)   #通过文件路径到总资源表中取得文件Md5值
+                        if fileinfo["md5"]:
+                            self.addReferenceNum(fileinfo["md5"], jsonpath ,path)
+                        else:
+                            print(" ERROR : Lost file md5 by " + path)
                 else:
                     print(path)
                     assert(False)
+        # 计算引用计数时,在同一个json 文件中,可能出现同一个文件的多次引用,只能算做一次引用.
+        # 采用合并表的形式来实现不同
         print "referenceCount : " + json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4)
 
-    def addReferenceNum(self,md5Code , path):
+    def addReferenceNum(self,md5Code , jsonpath = "" ,path = ""):
         if md5Code in self.referenceCount:
-            fileDict = self.referenceCount.get(md5Code)
-            fileDict.append(path)
+            referenctInfo = self.referenceCount.get(md5Code)
+            RefList = referenctInfo["RefList"]
+            RefList.append(jsonpath)
         else:
-            referenctList = []
-            self.referenceCount[md5Code] = referenctList
-            referenctList.append(path)
+            referenctInfo = {}
+            self.referenceCount[md5Code] = referenctInfo
+            referenctInfo["FilePath"] = path
+            RefList = []
+            referenctInfo["RefList"] = RefList
+            RefList.append(jsonpath)
 
     def iniJsonFileList(self):
         for jsonpath in self.folderFiles:
@@ -89,7 +98,8 @@ class jsonRes:
                     serchObj = reType.search(line)              # 对于一行中，包含多个类型的情况是否有相应的考虑
                     # groupdict 返回以有别名的组的别名为键、以该组截获的子串为值的字典，没有别名的组不包含在内。default含义同上。
                     if serchObj:
-                        self.json_res[jsonpath].append(serchObj.group(1))  # 记录每个文件中都包含了多少的资源
+                        # self.json_res[jsonpath].append(serchObj.group(1))  # 记录每个文件中都包含了多少的资源
+                        self.json_res[jsonpath].append(r"res/"+serchObj.group(1))  # 记录每个文件中都包含了多少的资源
                     else:
                         print line + " regular failed "
                         assert(False)
