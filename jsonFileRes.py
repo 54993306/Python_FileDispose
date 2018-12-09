@@ -61,14 +61,17 @@ class jsonRes:
         if md5Code in self.referenceCount:
             referenctInfo = self.referenceCount.get(md5Code)
             RefList = referenctInfo["RefList"]
-            RefList.append(jsonpath)
+            if jsonpath in RefList:
+                RefList[jsonpath] = RefList[jsonpath] + 1   # 在同一个 json 文件中被引用的次数
+            else:
+                RefList[jsonpath] = 1
         else:
             referenctInfo = {}
             self.referenceCount[md5Code] = referenctInfo
             referenctInfo["FilePath"] = path
-            RefList = []
+            RefList = {}
             referenctInfo["RefList"] = RefList
-            RefList.append(jsonpath)
+            RefList[jsonpath] = 1
 
     def iniJsonFileList(self):
         for jsonpath in self.folderFiles:
