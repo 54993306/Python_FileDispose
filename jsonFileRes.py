@@ -9,7 +9,8 @@ import re
 import json
 
 # searchJsonpath = "./oldJson"
-searchJsonpath = "./newJson"
+# searchJsonpath = "./newJson"
+searchJsonpath = "D:\Svn_2d\UI_Shu\Json"
 jsonHavaRes = "jsonres.txt"
 class jsonRes:
     def __init__(self , resDict):
@@ -23,6 +24,7 @@ class jsonRes:
     comFun.initPathFiles(searchJsonpath , folderFiles)
 
     def initRecordFile(self , refresh = False):
+        refresh = True
         if os.path.isfile(jsonHavaRes) and not refresh:
             if not self.json_res:
                 json_stream = open(jsonHavaRes , "r")
@@ -106,16 +108,29 @@ class jsonRes:
         json_stream = open(jsonHavaRes, "w+")   # 将数据写入文件中
         json.dump(self.json_res, json_stream)
         json_stream.close()
-        print "init : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
+        # print "init : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
 
     def replaceCmpResType(self , jsonpath):
         file_stream = open(jsonpath, "rb")
+        printLineNum = 0
         for line in file_stream.readlines():
+            if printLineNum == 2:
+                print "------------------------------------------"
+            if printLineNum > 0:
+                printLineNum -= 1
+                line = re.sub(r"\s|\r|\n", "", line)
+                if not re.search(r"plistFile|resourceType" , line):    # path、plistFile、resourceType
+                    print line + jsonpath
+            if re.search(r":\\" , line):
+                line = re.sub(r"\s|\r|\n", "", line)
+                print "Local Image Line : " + line + "by: " + jsonpath
+                continue
             for resType in self.pResDict.iterkeys():  # 从json文件中，找到所有包含资源文件的行
                 resType = str.replace(resType, ".", "\.")  # 把点号也匹配上,字符串替换
                 if re.search(resType, line):
                     line = re.sub(r"\s|\r|\n", "", line)
                     # print line
+                    printLineNum = 2
                     reType = re.compile(r"\"([^:]+" + resType + r")\"")   # ：不是特殊字符跟字母一样 , ()不是特殊字符串
                     serchObj = reType.search(line)              # 对于一行中，包含多个类型的情况是否有相应的考虑
                     # groupdict 返回以有别名的组的别名为键、以该组截获的子串为值的字典，没有别名的组不包含在内。default含义同上。
