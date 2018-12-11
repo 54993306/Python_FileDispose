@@ -1,7 +1,8 @@
 
 # -*- coding: UTF-8 -*-
 
-TEST = True
+# TEST = True
+TEST = False
 
 import os
 import json
@@ -23,9 +24,15 @@ if not TEST:
 
     # 初始化代码中包含的资源信息
 
-    cg = fileChange.replaceImage()
+    # cg = fileChange.replaceImage()
     # cg.replaceFile(jc.jsonPaths)
 else:
+    def searchNodeTree(parent , resDict):
+        if not parent:
+            return
+        children = parent.get("children")
+        # if children:
+
     newJsonFile = "./newJson/hall.json"
     def streamDispose(newJsonFile):
         json_stream = open(newJsonFile, "r+")
@@ -38,15 +45,12 @@ else:
         else:
             print("textures is null")
 
-        widgetTree = jsondict.get("widgetTree")
-        if widgetTree:
-            children = widgetTree.get("children")
-            for chil in children:
-                print chil
-
+        # 遍历节点数
+        resDict = {}
+        searchNodeTree(jsondict.get("widgetTree") , resDict)
         # print json.dumps( jsondict , ensure_ascii=False ,  encoding= "utf-8" , indent=4)
+
         json_stream.close()
     streamDispose(newJsonFile)
 
-    def searchForChildren(children):
-        
+

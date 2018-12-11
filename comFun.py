@@ -68,3 +68,11 @@ def smallFileMd5(path):
     md5_code = str(hash_code).lower()
     FileMd5Dict[path] = md5_code
     return md5_code
+
+# 判断字符串内容是否为合法json格式内容
+def is_json(myjson):
+    try:
+        json.loads(myjson)
+    except ValueError:
+        return False
+    return True

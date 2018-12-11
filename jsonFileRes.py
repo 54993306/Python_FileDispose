@@ -8,7 +8,8 @@ import os
 import re
 import json
 
-searchJsonpath = "./oldJson"
+# searchJsonpath = "./oldJson"
+searchJsonpath = "./newJson"
 jsonHavaRes = "jsonres.txt"
 class jsonRes:
     def __init__(self , resDict):
@@ -18,29 +19,35 @@ class jsonRes:
     json_res = {}   #json文件中包含的资源map
     folderFiles = [] #存储所有的json文件
     referenceCount = {}  # 资源引用计数统计
+    notFountFile = {}   # 在json中使用但是未找到的资源文件
     comFun.initPathFiles(searchJsonpath , folderFiles)
 
     def initRecordFile(self , refresh = False):
         if os.path.isfile(jsonHavaRes) and not refresh:
             if not self.json_res:
                 json_stream = open(jsonHavaRes , "r")
-                self.json_res = json.load(json_stream)
-                # print "open : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
+                if comFun.is_json(json_stream.read()):
+                    # print json_stream.tell()
+                    json_stream.seek(0,0)
+                    self.json_res = json.load(json_stream)
+                    # print "open : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
+                else:
+                    json_stream.close()
+                    os.remove(jsonHavaRes)
+                    print "record file has error remove file paht : " + jsonHavaRes
         else:
             self.iniJsonFileList()
         self.initReferenceCount() # 可以跟json_res一起执行，但是耦合逻辑太多，拆出来逻辑清楚，但是性能消耗
 
     # 资源文件在json中被引用的次数
     def initReferenceCount(self , refresh = False):  #初始化文件引用计数表
-        # if self.reference and (not refresh) :
-        #     return
         for jsonpath , paths in self.json_res.iteritems():
             for path in paths:
                 if not os.path.isabs(path):
                     path = os.path.abspath(path)
                 if not os.path.isfile(path):
-                    print "not fount file : " + path
-                    # continue
+                    self.addNotFoundFile(jsonpath , path)
+                    continue
                 _,fileType = os.path.splitext(path)
                 if fileType in self.pResDict:
                     typeDict = self.pResDict.get(fileType)
@@ -53,10 +60,10 @@ class jsonRes:
                 else:
                     print(path)
                     assert(False)
-        # 计算引用计数时,在同一个json 文件中,可能出现同一个文件的多次引用,只能算做一次引用.
-        # 采用合并表的形式来实现不同
-        print "referenceCount : " + json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4)
+        # print "referenceCount : " + json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4)
+        # print "notFountFile : " + json.dumps(self.notFountFile, ensure_ascii=False, encoding="utf-8", indent=4)
 
+    # 文件添加一次引用
     def addReferenceNum(self,md5Code , jsonpath = "" ,path = ""):
         if md5Code in self.referenceCount:
             referenctInfo = self.referenceCount.get(md5Code)
@@ -73,6 +80,17 @@ class jsonRes:
             referenctInfo["RefList"] = RefList
             RefList[jsonpath] = 1
 
+    # 文件在json中存在，在文件夹中没找到相应资源
+    def addNotFoundFile(self , jsonPath , path):
+        # print "not found file : " + path + " [ in ] : " + jsonPath
+        if jsonPath in self.notFountFile:    # 判断dict中是否包含某个key的方法不能采用取值的模式来判断,会报keyerror
+            self.notFountFile[jsonPath].append(path)
+        else:
+            filePaths = []
+            self.notFountFile[jsonPath] = filePaths
+            filePaths.append(path)
+
+    # 遍历json文件找到，所使用的资源
     def iniJsonFileList(self):
         for jsonpath in self.folderFiles:
             _ , fileType = os.path.splitext(jsonpath)
@@ -85,8 +103,9 @@ class jsonRes:
             self.json_res[jsonpath] = []
             # print("Json has res : " + jsonpath)
             self.replaceCmpResType(jsonpath)
-        json_stream = open(jsonHavaRes, "w+")
+        json_stream = open(jsonHavaRes, "w+")   # 将数据写入文件中
         json.dump(self.json_res, json_stream)
+        json_stream.close()
         print "init : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
 
     def replaceCmpResType(self , jsonpath):
