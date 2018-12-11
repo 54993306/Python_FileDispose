@@ -114,14 +114,14 @@ class jsonRes:
         file_stream = open(jsonpath, "rb")
         printLineNum = 0
         for line in file_stream.readlines():
-            if printLineNum == 2:
-                print "------------------------------------------"
+            # if printLineNum == 2:
+            #     print "------------------------------------------"
             if printLineNum > 0:
                 printLineNum -= 1
                 line = re.sub(r"\s|\r|\n", "", line)
                 if not re.search(r"plistFile|resourceType" , line):    # path、plistFile、resourceType
                     print line + jsonpath
-            if re.search(r":\\" , line):
+            if re.search(r":\\|\.plist" , line):
                 line = re.sub(r"\s|\r|\n", "", line)
                 print "Local Image Line : " + line + "by: " + jsonpath
                 continue
