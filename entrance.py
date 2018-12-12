@@ -20,7 +20,7 @@ if not TEST:
     t.initFileDict()
 
     jc= jsonFileRes.jsonRes(t.filedict)  # 初始化所有json中包含的资源信息
-    # jc.initRecordFile()
+    jc.initRecordFile()
 
     # 初始化代码中包含的资源信息
 

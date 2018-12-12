@@ -36,6 +36,7 @@ class totalRes:
 
     # 初始化文件表
     def initFileDict(self , refresh = False):
+        # refresh = True
         if self.hasFile() and not refresh:
             return
         else:
@@ -124,6 +125,9 @@ class totalRes:
             return False
 
         _, filetype = os.path.splitext(filepath)  # 分离文件名和后缀
+        if not filetype:
+            print "File Type is Null : " + filepath
+            return False
         typedict = {}
         if filetype in self.filedict:
             typedict = self.filedict.get(filetype)

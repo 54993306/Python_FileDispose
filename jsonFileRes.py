@@ -11,17 +11,22 @@ import json
 # searchJsonpath = "./oldJson"
 # searchJsonpath = "./newJson"
 searchJsonpath = "D:\Svn_2d\UI_Shu\Json"
-jsonHavaRes = "jsonres.txt"
+jsonHavaRes = "./output/jsonres.txt"
+ReferenceFIle = "./output/reference.txt"
+NotFound = "./output/notfound.txt"
+realPath = r"D:\Svn_2d\S_GD_Heji\res/hall/"
 class jsonRes:
     def __init__(self , resDict):
         if not resDict:
             assert (False)
         self.pResDict = resDict
-    json_res = {}   #json文件中包含的资源map
+
     folderFiles = [] #存储所有的json文件
+    comFun.initPathFiles(searchJsonpath , folderFiles)
+
+    json_res = {}   #json文件中包含的资源map
     referenceCount = {}  # 资源引用计数统计
     notFountFile = {}   # 在json中使用但是未找到的资源文件
-    comFun.initPathFiles(searchJsonpath , folderFiles)
 
     def initRecordFile(self , refresh = False):
         refresh = True
@@ -40,6 +45,21 @@ class jsonRes:
         else:
             self.iniJsonFileList()
         self.initReferenceCount() # 可以跟json_res一起执行，但是耦合逻辑太多，拆出来逻辑清楚，但是性能消耗
+        self.recordFile()
+
+    def recordFile(self):
+        json_res = open(jsonHavaRes, "w+")   # 将数据写入文件中
+        json_res.write(json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4))
+        # json.dump(self.json_res, json_stream)
+        json_res.close()
+
+        referenceCount = open(ReferenceFIle, "w+")   # 将数据写入文件中
+        referenceCount.write(json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4))
+        referenceCount.close()
+
+        notFountFile = open(NotFound, "w+")   # 将数据写入文件中
+        notFountFile.write(json.dumps(self.notFountFile, ensure_ascii=False, encoding="utf-8", indent=4))
+        notFountFile.close()
 
     # 资源文件在json中被引用的次数
     def initReferenceCount(self , refresh = False):  #初始化文件引用计数表
@@ -59,10 +79,12 @@ class jsonRes:
                             self.addReferenceNum(fileinfo["md5"], jsonpath ,path)
                         else:
                             print(" ERROR : Lost file md5 by " + path)
+                    else:
+                        print "type not found in dict : " + path
                 else:
                     print(path)
                     assert(False)
-        # print "referenceCount : " + json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4)
+        print "referenceCount : " + json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4)
         # print "notFountFile : " + json.dumps(self.notFountFile, ensure_ascii=False, encoding="utf-8", indent=4)
 
     # 文件添加一次引用
@@ -74,10 +96,12 @@ class jsonRes:
                 RefList[jsonpath] = RefList[jsonpath] + 1   # 在同一个 json 文件中被引用的次数
             else:
                 RefList[jsonpath] = 1
+            referenctInfo["total"] = referenctInfo["total"] + 1
         else:
             referenctInfo = {}
             self.referenceCount[md5Code] = referenctInfo
             referenctInfo["FilePath"] = path
+            referenctInfo["total"] = 1
             RefList = {}
             referenctInfo["RefList"] = RefList
             RefList[jsonpath] = 1
@@ -105,10 +129,6 @@ class jsonRes:
             self.json_res[jsonpath] = []
             # print("Json has res : " + jsonpath)
             self.replaceCmpResType(jsonpath)
-        json_stream = open(jsonHavaRes, "w+")   # 将数据写入文件中
-        json_stream.write(json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4))
-        # json.dump(self.json_res, json_stream)
-        json_stream.close()
         # print "init : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
 
     def replaceCmpResType(self , jsonpath):
@@ -128,7 +148,8 @@ class jsonRes:
                 # print "Local Image Line : " + line + "by: " + jsonpath
                 continue
             for resType in self.pResDict.iterkeys():  # 从json文件中，找到所有包含资源文件的行
-                resType = str.replace(resType, ".", "\.")  # 把点号也匹配上,字符串替换
+                # print resType
+                resType = str.replace(str(resType), ".", "\.")  # 把点号也匹配上,字符串替换
                 if re.search(resType, line):
                     line = re.sub(r"\s|\r|\n", "", line)
                     # print line
@@ -138,7 +159,7 @@ class jsonRes:
                     # groupdict 返回以有别名的组的别名为键、以该组截获的子串为值的字典，没有别名的组不包含在内。default含义同上。
                     if serchObj:
                         # self.json_res[jsonpath].append(serchObj.group(1))  # 记录每个文件中都包含了多少的资源
-                        self.json_res[jsonpath].append(r"res/"+serchObj.group(1))  # 记录每个文件中都包含了多少的资源
+                        self.json_res[jsonpath].append(realPath + serchObj.group(1))  # 记录每个文件中都包含了多少的资源
                     else:
                         print line + " regular failed "
                         assert(False)
