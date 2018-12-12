@@ -5,3 +5,4 @@ files.txt
 jsonres.txt
 jsonFileRes.pyc
 *.pyc
+output/

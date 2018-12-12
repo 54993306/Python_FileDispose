@@ -106,7 +106,8 @@ class jsonRes:
             # print("Json has res : " + jsonpath)
             self.replaceCmpResType(jsonpath)
         json_stream = open(jsonHavaRes, "w+")   # 将数据写入文件中
-        json.dump(self.json_res, json_stream)
+        json_stream.write(json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4))
+        # json.dump(self.json_res, json_stream)
         json_stream.close()
         # print "init : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
 
