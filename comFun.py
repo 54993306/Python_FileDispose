@@ -7,6 +7,8 @@ import hashlib
 # subprocess.run('kill  %s' % ' '.join(pids), shell=True)
 # 就可以杀掉进程 111 和 22
 
+BigFileSie = 1024 * 100   #100k以上即认为是大文件
+
 FileMd5Dict = {}   #用于记录文件的路径和md5值
 
 def initPathFiles(filepath , list):
@@ -37,8 +39,8 @@ def getFileMd5( path ):
 
     if os.path.isfile(path):
         filesize = os.path.getsize(path)
-        if filesize > 1024 * 10:   # 大文件获取md5值的方法
-            print("BigFile :" + path)
+        if filesize > BigFileSie:   # 大文件获取md5值的方法
+            # print("BigFile :" + path + " size = " + str(filesize))
             return bigFileMd5(path)
         else:
             return smallFileMd5(path)

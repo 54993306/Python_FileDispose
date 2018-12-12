@@ -116,14 +116,15 @@ class jsonRes:
         for line in file_stream.readlines():
             # if printLineNum == 2:
             #     print "------------------------------------------"
-            if printLineNum > 0:
-                printLineNum -= 1
+            # if printLineNum > 0:
+            #     printLineNum -= 1
+            #     line = re.sub(r"\s|\r|\n", "", line)
+            #     if not re.search(r"plistFile|resourceType" , line):    # path、plistFile、resourceType
+            #         print line + jsonpath
+            # 结论 if not textures then texturesPng = []
+            if re.search(r":\\" , line):
                 line = re.sub(r"\s|\r|\n", "", line)
-                if not re.search(r"plistFile|resourceType" , line):    # path、plistFile、resourceType
-                    print line + jsonpath
-            if re.search(r":\\|\.plist" , line):
-                line = re.sub(r"\s|\r|\n", "", line)
-                print "Local Image Line : " + line + "by: " + jsonpath
+                # print "Local Image Line : " + line + "by: " + jsonpath
                 continue
             for resType in self.pResDict.iterkeys():  # 从json文件中，找到所有包含资源文件的行
                 resType = str.replace(resType, ".", "\.")  # 把点号也匹配上,字符串替换
