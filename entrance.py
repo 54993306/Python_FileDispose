@@ -1,8 +1,8 @@
 
 # -*- coding: UTF-8 -*-
 
-TEST = True
-# TEST = False
+# TEST = True
+TEST = False
 
 import os
 import json
@@ -16,13 +16,14 @@ import fileChange
 if not TEST:
     referenceRes = {}    #文件引用计数表
 
-    t = totalResDict.totalRes() #初始化所有的资源信息
-    t.initFileDict()
+    # t = totalResDict.totalRes() #初始化所有的资源信息
+    # t.initFileDict()
 
-    jc= jsonFileRes.jsonRes(t.filedict)  # 初始化所有json中包含的资源信息
-    jc.initRecordFile()
+    # jc= jsonFileRes.jsonRes(t.filedict)  # 初始化所有json中包含的资源信息
+    # jc.initRecordFile()
 
     # 初始化代码中包含的资源信息
+
 
     # cg = fileChange.replaceImage()
     # cg.replaceFile(jc.jsonPaths)
@@ -33,10 +34,11 @@ else:
     def searchForKey(pDict , key , pDictList):
         tDict = pDict
         for k , v in tDict.items():
-            if k == key:
+            if cmp(key , k) == 0:
                 pDictList.append(tDict)
             else:
-                if type(v) is types.DictType:
+                # if type(v) is types.DictType:    # 有序的dict不是常规的dict
+                if type(v) is collections.OrderedDict:
                     ttDict =  searchForKey(v , key , pDictList)
                     if ttDict:
                         pDictList.append(ttDict)
@@ -48,6 +50,7 @@ else:
             return
         for tDict in pDictList:
             if not tDict["resourceType"]:
+                print tDict
                 tDict["path"] = "btn_buxia.png" # 直接改动生效
                 tDict["resourceType"] = 1
                 tDict["plistFile"] = "abbb/test.plist"
@@ -91,7 +94,7 @@ else:
 
         # 遍历节点数
         resDict = {}
-        # searchNodeTree(jsondict.get("widgetTree") , resDict)
+        searchNodeTree(jsondict.get("widgetTree") , resDict)
         # print json.dumps( jsondict , ensure_ascii=False ,  encoding= "utf-8" , indent=4)
         str_strean = open(outPutFile, "w+")
         # str_strean.write(json.dumps(jsondict , encoding= "utf-8" , indent=4))
