@@ -22,8 +22,6 @@ Md5File = "./output/md5.json"
 RepeatFile = "./output/repeatfile.json"
 AllFiles = "./output/allfile.json"
 class totalRes:
-    totalfile = open("files.txt" , "w+")
-    totalfile.close()
     fileList = []
     comFun.initPathFiles(filepath , fileList)
 
