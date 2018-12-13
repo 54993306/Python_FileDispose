@@ -49,13 +49,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>ccc.png</string>
+            <string>test.png</string>
             <key>size</key>
             <string>{128,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:c3d56e3dfaedfe993f7c2f22ed20befb$</string>
+            <string>$TexturePacker:SmartUpdate:ad98b877e787d76b84801acfae3e3818$</string>
             <key>textureFileName</key>
-            <string>ccc.png</string>
+            <string>test.png</string>
         </dict>
     </dict>
 </plist>

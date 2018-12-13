@@ -1,8 +1,8 @@
 
 # -*- coding: UTF-8 -*-
 
-# TEST = True
-TEST = False
+TEST = True
+# TEST = False
 
 import os
 import json
@@ -27,13 +27,51 @@ if not TEST:
     # cg = fileChange.replaceImage()
     # cg.replaceFile(jc.jsonPaths)
 else:
-    def searchNodeTree(parent , resDict):
+    import types
+    # 找到指定key值所在的dict
+    def searchForKey(pDict , key , pDictList):
+        tDict = pDict
+        for k , v in tDict.items():
+            if k == key:
+                pDictList.append(tDict)
+            else:
+                if type(v) is types.DictType:
+                    ttDict =  searchForKey(v , key , pDictList)
+                    if ttDict:
+                        pDictList.append(ttDict)
+
+    # 修改后，如果使用到了新的plist文件中的资源，要在textures中添加plist文件
+    def changeResPath(pDict , pResDict):
+        if pDict:
+            print(pDict)
+        else:
+            print "dict null"
+        # resDict 用于记录新增 plist 文件
+
+    def searchOptions(pNode , pResDict):
+        if pNode.has_key("options"):
+            tDictList = []
+            searchForKey(pNode["options"], "resourceType" , tDictList)
+            changeResPath(tDictList, pResDict)
+        else:
+            print "child un has options"
+            assert (False)
+
+    def searchNodeTree(parent , pResDict):
         if not parent:
             return
+        print "options name 2: " + parent["options"]["name"]
+        searchOptions(parent, pResDict)
         children = parent.get("children")
-        # if children:
+        if children:
+            for child in children:
+                print "options name 1: " + child["options"]["name"]
+                searchOptions(child , pResDict)
+                if child.get("children"):
+                    searchNodeTree(child, pResDict)
 
-    newJsonFile = "./newJson/hall.json"
+
+    newJsonFile = "./newJson/1lay_test.json"
     def streamDispose(newJsonFile):
         json_stream = open(newJsonFile, "r+")
         if not json_stream:
