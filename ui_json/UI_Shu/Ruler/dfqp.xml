@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfGuidesProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuidesProject>
+    <Project>mjRuleTips</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>clubRoomListWnd</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>adverview_page</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>adverView_page</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>shareDialog1</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>select_area</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>replacebindingSuccess</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>replaceBindingPhone</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>clubApplyWnd</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>bindingSuccess</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>bindingPhone</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>main</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>login</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>hallUpdate</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>hallLogin</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>bindPhone</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>hallBind</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>accountPanel</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>common_dialog</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>clubApplyModeAWnd</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>friendRoomCreate</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>friendRoomCode</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>roommodel</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>Playerpanel</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>choiceShare</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>friendRoomScene</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>choiceShare_horizontal</Project>
+    <GuidesList>
+      <GuidesInfo>
+        <GuidesName>HThumb</GuidesName>
+        <GuidesPosition>283.95993896484379</GuidesPosition>
+      </GuidesInfo>
+      <GuidesInfo>
+        <GuidesName>HThumb</GuidesName>
+        <GuidesPosition>203.95993896484379</GuidesPosition>
+      </GuidesInfo>
+    </GuidesList>
+  </GuidesProject>
+  <GuidesProject>
+    <Project>myclub</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>1lay_test</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>1output</Project>
+    <GuidesList />
+  </GuidesProject>
+</ArrayOfGuidesProject>

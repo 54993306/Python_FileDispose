@@ -1,0 +1,940 @@
+local tConfigSet={} 
+
+tConfigSet.ruleList = {
+[1]={
+	["id"]=1, 
+	["data"]="游戏简介", 
+	["isTitle"]=1, 
+},
+[2]={
+	["id"]=2, 
+	["data"]="1.斗地主玩法简单刺激，老少皆宜，想要获胜还是需要很多判断与思考的。", 
+	["isTitle"]=0, 
+},
+[3]={
+	["id"]=3, 
+	["data"]="2.斗地主是一款浓郁中国风的扑克游戏。游戏分为地主一名、农民两名，地主需要绞尽心机来压迫农民；而农民需要斗倒地主。", 
+	["isTitle"]=0, 
+},
+[4]={
+	["id"]=4, 
+	["data"]="游戏规则", 
+	["isTitle"]=1, 
+},
+[5]={
+	["id"]=5, 
+	["data"]="1.发牌", 
+	["isTitle"]=0, 
+},
+[6]={
+	["id"]=6, 
+	["data"]="每个人发17张牌，留三张底牌。确定地主后，底牌归地主，所有玩家可以看到底牌。", 
+	["isTitle"]=0, 
+},
+[7]={
+	["id"]=7, 
+	["data"]="2.叫地主及抢地主", 
+	["isTitle"]=0, 
+},
+[8]={
+	["id"]=8, 
+	["data"]="系统随机抽取一个玩家来叫地主，此名玩家可以选择是否叫地主；如果三位玩家都不叫，则重新发牌。", 
+	["isTitle"]=0, 
+},
+[9]={
+	["id"]=9, 
+	["data"]="当玩家叫地主后，按照次序所有玩家都有一次抢地主的资格，没有玩家继续抢地主的话，地主属于最后一个抢地主的玩家，选择不叫地主的玩家没有抢地主的资格，每抢一次地主倍数加倍。", 
+	["isTitle"]=0, 
+},
+[10]={
+	["id"]=10, 
+	["data"]="3.出牌", 
+	["isTitle"]=0, 
+},
+[11]={
+	["id"]=11, 
+	["data"]="地主为一队，两个农民为一队，地主有首先出牌权，按逆时针出牌。玩家可以选择用更大的牌或不跟牌。玩家打出牌后无人出牌，该玩家继续出牌。\n", 
+	["isTitle"]=0, 
+},
+[12]={
+	["id"]=12, 
+	["data"]="4.牌型", 
+	["isTitle"]=0, 
+},
+[13]={
+	["id"]=13, 
+	["data"]="火箭：即双王（大王和小王），火箭为最大的牌。", 
+	["isTitle"]=0, 
+},
+[14]={
+	["id"]=14, 
+	["data"]="炸弹：四张点数一样大的牌，如：6666。", 
+	["isTitle"]=0, 
+},
+[15]={
+	["id"]=15, 
+	["data"]="单牌：任意一张单独的牌。", 
+	["isTitle"]=0, 
+},
+[16]={
+	["id"]=16, 
+	["data"]="对牌：任意两张一样点数的牌。", 
+	["isTitle"]=0, 
+},
+[17]={
+	["id"]=17, 
+	["data"]="三张：任意三张一样点数的牌。", 
+	["isTitle"]=0, 
+},
+[18]={
+	["id"]=18, 
+	["data"]="三带一：点数相同的三张加一张单牌或一对。可以带大王或小王如：8885、88899。", 
+	["isTitle"]=0, 
+},
+[19]={
+	["id"]=19, 
+	["data"]="单顺：五张或五张以上连续单牌，不包括2和大小王。如：56789、8910JQKA。", 
+	["isTitle"]=0, 
+},
+[20]={
+	["id"]=20, 
+	["data"]="双顺：三对或三对以上的连续对牌，不包括2和大小王。如：556677、66778899。", 
+	["isTitle"]=0, 
+},
+[21]={
+	["id"]=21, 
+	["data"]="三顺：两个或两个以上的连续三张牌，即飞机。不包括2和大小王，如：555666、888999101010。", 
+	["isTitle"]=0, 
+},
+[22]={
+	["id"]=22, 
+	["data"]="飞机带翅膀：三顺+同数量单牌或对牌，如5556667778910、555666AA22。", 
+	["isTitle"]=0, 
+},
+[23]={
+	["id"]=23, 
+	["data"]="四带二：四张点数一样的牌+两个单牌或两个对牌（四带二不算炸弹），如555579、66667799。", 
+	["isTitle"]=0, 
+},
+[24]={
+	["id"]=24, 
+	["data"]="5.牌型大小对比", 
+	["isTitle"]=0, 
+},
+[25]={
+	["id"]=25, 
+	["data"]="火箭＞炸弹＞一般牌型", 
+	["isTitle"]=0, 
+},
+[26]={
+	["id"]=26, 
+	["data"]="一般牌型之间的比较只有牌型和张数相同，才可以按照点数比较大小。", 
+	["isTitle"]=0, 
+},
+[27]={
+	["id"]=27, 
+	["data"]="三带一、飞机带翅膀、四带二这些牌型是看其中牌型中最大的点数（带的牌不看），进行比较。", 
+	["isTitle"]=0, 
+},
+[28]={
+	["id"]=28, 
+	["data"]="所有顺子都是比较其中点数最大的牌", 
+	["isTitle"]=0, 
+},
+[29]={
+	["id"]=29, 
+	["data"]="单牌点数大小：大王>小王>2>A>K>Q>J>10>9>8>7>6>5>4>3", 
+	["isTitle"]=0, 
+},
+[30]={
+	["id"]=30, 
+	["data"]="6.春天", 
+	["isTitle"]=0, 
+},
+[31]={
+	["id"]=31, 
+	["data"]="地主获胜且农民未出一张牌称为“春天”，农民获胜且地主只出过一手牌也称为“春天”。", 
+	["isTitle"]=0, 
+},
+[32]={
+	["id"]=32, 
+	["data"]="得分规则", 
+	["isTitle"]=1, 
+},
+[33]={
+	["id"]=33, 
+	["data"]="1.得分公式", 
+	["isTitle"]=0, 
+},
+[34]={
+	["id"]=34, 
+	["data"]="农民得分=±底分*倍数", 
+	["isTitle"]=0, 
+},
+[35]={
+	["id"]=35, 
+	["data"]="地主得分=±2*底分*倍数", 
+	["isTitle"]=0, 
+},
+[36]={
+	["id"]=36, 
+	["data"]="底分：由房间配置决定。", 
+	["isTitle"]=0, 
+},
+[37]={
+	["id"]=37, 
+	["data"]="倍数：由抢地主、炸弹、春天共同决定的。", 
+	["isTitle"]=0, 
+},
+}
+ tConfigSet.musicList = {
+["btn"]={
+	["name"]="btn", 
+	["path"]="button_click", 
+},
+["cardClick"]={
+	["name"]="cardClick", 
+	["path"]="card_click", 
+},
+["fapai"]={
+	["name"]="fapai", 
+	["path"]="fapai", 
+},
+["baojin"]={
+	["name"]="baojin", 
+	["path"]="baojin", 
+},
+["bottom_card"]={
+	["name"]="bottom_card", 
+	["path"]="bottom_card", 
+},
+["double"]={
+	["name"]="double", 
+	["path"]="double", 
+},
+["feiji"]={
+	["name"]="feiji", 
+	["path"]="feiji", 
+},
+["huojian"]={
+	["name"]="huojian", 
+	["path"]="huojian", 
+},
+["jiaodizhu"]={
+	["name"]="jiaodizhu", 
+	["path"]="jiaodizhu", 
+},
+["lose"]={
+	["name"]="lose", 
+	["path"]="lose", 
+},
+["shunzi_liandui"]={
+	["name"]="shunzi_liandui", 
+	["path"]="shunzi_liandui", 
+},
+["spring"]={
+	["name"]="spring", 
+	["path"]="spring", 
+},
+["win"]={
+	["name"]="win", 
+	["path"]="win", 
+},
+["zhadan"]={
+	["name"]="zhadan", 
+	["path"]="zhadan", 
+},
+["danzhang_30"]={
+	["name"]="danzhang_30", 
+	["path"]="dub/danzhang_30", 
+},
+["danzhang_40"]={
+	["name"]="danzhang_40", 
+	["path"]="dub/danzhang_40", 
+},
+["danzhang_50"]={
+	["name"]="danzhang_50", 
+	["path"]="dub/danzhang_50", 
+},
+["danzhang_60"]={
+	["name"]="danzhang_60", 
+	["path"]="dub/danzhang_60", 
+},
+["danzhang_70"]={
+	["name"]="danzhang_70", 
+	["path"]="dub/danzhang_70", 
+},
+["danzhang_80"]={
+	["name"]="danzhang_80", 
+	["path"]="dub/danzhang_80", 
+},
+["danzhang_90"]={
+	["name"]="danzhang_90", 
+	["path"]="dub/danzhang_90", 
+},
+["danzhang_100"]={
+	["name"]="danzhang_100", 
+	["path"]="dub/danzhang_100", 
+},
+["danzhang_110"]={
+	["name"]="danzhang_110", 
+	["path"]="dub/danzhang_110", 
+},
+["danzhang_120"]={
+	["name"]="danzhang_120", 
+	["path"]="dub/danzhang_120", 
+},
+["danzhang_130"]={
+	["name"]="danzhang_130", 
+	["path"]="dub/danzhang_130", 
+},
+["danzhang_140"]={
+	["name"]="danzhang_140", 
+	["path"]="dub/danzhang_140", 
+},
+["danzhang_150"]={
+	["name"]="danzhang_150", 
+	["path"]="dub/danzhang_150", 
+},
+["danzhang_290"]={
+	["name"]="danzhang_290", 
+	["path"]="dub/danzhang_290", 
+},
+["danzhang_300"]={
+	["name"]="danzhang_300", 
+	["path"]="dub/danzhang_300", 
+},
+["dui_30"]={
+	["name"]="dui_30", 
+	["path"]="dub/dui_30", 
+},
+["dui_40"]={
+	["name"]="dui_40", 
+	["path"]="dub/dui_40", 
+},
+["dui_50"]={
+	["name"]="dui_50", 
+	["path"]="dub/dui_50", 
+},
+["dui_60"]={
+	["name"]="dui_60", 
+	["path"]="dub/dui_60", 
+},
+["dui_70"]={
+	["name"]="dui_70", 
+	["path"]="dub/dui_70", 
+},
+["dui_80"]={
+	["name"]="dui_80", 
+	["path"]="dub/dui_80", 
+},
+["dui_90"]={
+	["name"]="dui_90", 
+	["path"]="dub/dui_90", 
+},
+["dui_100"]={
+	["name"]="dui_100", 
+	["path"]="dub/dui_100", 
+},
+["dui_110"]={
+	["name"]="dui_110", 
+	["path"]="dub/dui_110", 
+},
+["dui_120"]={
+	["name"]="dui_120", 
+	["path"]="dub/dui_120", 
+},
+["dui_130"]={
+	["name"]="dui_130", 
+	["path"]="dub/dui_130", 
+},
+["dui_140"]={
+	["name"]="dui_140", 
+	["path"]="dub/dui_140", 
+},
+["dui_150"]={
+	["name"]="dui_150", 
+	["path"]="dub/dui_150", 
+},
+["sanzhang_30"]={
+	["name"]="sanzhang_30", 
+	["path"]="dub/sanzhang_30", 
+},
+["sanzhang_40"]={
+	["name"]="sanzhang_40", 
+	["path"]="dub/sanzhang_40", 
+},
+["sanzhang_50"]={
+	["name"]="sanzhang_50", 
+	["path"]="dub/sanzhang_50", 
+},
+["sanzhang_60"]={
+	["name"]="sanzhang_60", 
+	["path"]="dub/sanzhang_60", 
+},
+["sanzhang_70"]={
+	["name"]="sanzhang_70", 
+	["path"]="dub/sanzhang_70", 
+},
+["sanzhang_80"]={
+	["name"]="sanzhang_80", 
+	["path"]="dub/sanzhang_80", 
+},
+["sanzhang_90"]={
+	["name"]="sanzhang_90", 
+	["path"]="dub/sanzhang_90", 
+},
+["sanzhang_100"]={
+	["name"]="sanzhang_100", 
+	["path"]="dub/sanzhang_100", 
+},
+["sanzhang_110"]={
+	["name"]="sanzhang_110", 
+	["path"]="dub/sanzhang_110", 
+},
+["sanzhang_120"]={
+	["name"]="sanzhang_120", 
+	["path"]="dub/sanzhang_120", 
+},
+["sanzhang_130"]={
+	["name"]="sanzhang_130", 
+	["path"]="dub/sanzhang_130", 
+},
+["sanzhang_140"]={
+	["name"]="sanzhang_140", 
+	["path"]="dub/sanzhang_140", 
+},
+["sanzhang_150"]={
+	["name"]="sanzhang_150", 
+	["path"]="dub/sanzhang_150", 
+},
+["ct_feiji0"]={
+	["name"]="ct_feiji0", 
+	["path"]="dub/ct_feiji0", 
+},
+["ct_feiji10"]={
+	["name"]="ct_feiji10", 
+	["path"]="dub/ct_feiji10", 
+},
+["ct_liandui0"]={
+	["name"]="ct_liandui0", 
+	["path"]="dub/ct_liandui0", 
+},
+["ct_sandaiyi0"]={
+	["name"]="ct_sandaiyi0", 
+	["path"]="dub/ct_sandaiyi0", 
+},
+["ct_shunzi0"]={
+	["name"]="ct_shunzi0", 
+	["path"]="dub/ct_shunzi0", 
+},
+["ct_sidaier0"]={
+	["name"]="ct_sidaier0", 
+	["path"]="dub/ct_sidaier0", 
+},
+["ct_sandaier10"]={
+	["name"]="ct_sandaier10", 
+	["path"]="dub/ct_sandaier10", 
+},
+["ct_sandaier20"]={
+	["name"]="ct_sandaier20", 
+	["path"]="dub/ct_sandaier20", 
+},
+["ct_zhadan10"]={
+	["name"]="ct_zhadan10", 
+	["path"]="dub/ct_zhadan10", 
+},
+["ct_zhadan20"]={
+	["name"]="ct_zhadan20", 
+	["path"]="dub/ct_zhadan20", 
+},
+["ct_huojian10"]={
+	["name"]="ct_huojian10", 
+	["path"]="dub/ct_huojian10", 
+},
+["ct_huojian20"]={
+	["name"]="ct_huojian20", 
+	["path"]="dub/ct_huojian20", 
+},
+["ct_huojian30"]={
+	["name"]="ct_huojian30", 
+	["path"]="dub/ct_huojian30", 
+},
+["op_last10"]={
+	["name"]="op_last10", 
+	["path"]="dub/op_last10", 
+},
+["op_last20"]={
+	["name"]="op_last20", 
+	["path"]="dub/op_last20", 
+},
+["op_last30"]={
+	["name"]="op_last30", 
+	["path"]="dub/op_last30", 
+},
+["op_jiaodizhu00"]={
+	["name"]="op_jiaodizhu00", 
+	["path"]="dub/op_jiaodizhu00", 
+},
+["op_jiaodizhu10"]={
+	["name"]="op_jiaodizhu10", 
+	["path"]="dub/op_jiaodizhu10", 
+},
+["op_qiangdizhu00"]={
+	["name"]="op_qiangdizhu00", 
+	["path"]="dub/op_qiangdizhu00", 
+},
+["op_qiangdizhu10"]={
+	["name"]="op_qiangdizhu10", 
+	["path"]="dub/op_qiangdizhu10", 
+},
+["op_qiangdizhu20"]={
+	["name"]="op_qiangdizhu20", 
+	["path"]="dub/op_qiangdizhu20", 
+},
+["op_jiabei00"]={
+	["name"]="op_jiabei00", 
+	["path"]="dub/op_jiabei00", 
+},
+["op_jiabei10"]={
+	["name"]="op_jiabei10", 
+	["path"]="dub/op_jiabei10", 
+},
+["op_buchu10"]={
+	["name"]="op_buchu10", 
+	["path"]="dub/op_buchu10", 
+},
+["op_buchu20"]={
+	["name"]="op_buchu20", 
+	["path"]="dub/op_buchu20", 
+},
+["op_buchu30"]={
+	["name"]="op_buchu30", 
+	["path"]="dub/op_buchu30", 
+},
+["op_chu10"]={
+	["name"]="op_chu10", 
+	["path"]="dub/op_chu10", 
+},
+["op_chu20"]={
+	["name"]="op_chu20", 
+	["path"]="dub/op_chu20", 
+},
+["op_chu30"]={
+	["name"]="op_chu30", 
+	["path"]="dub/op_chu30", 
+},
+["danzhang_31"]={
+	["name"]="danzhang_31", 
+	["path"]="dub/danzhang_31", 
+},
+["danzhang_41"]={
+	["name"]="danzhang_41", 
+	["path"]="dub/danzhang_41", 
+},
+["danzhang_51"]={
+	["name"]="danzhang_51", 
+	["path"]="dub/danzhang_51", 
+},
+["danzhang_61"]={
+	["name"]="danzhang_61", 
+	["path"]="dub/danzhang_61", 
+},
+["danzhang_71"]={
+	["name"]="danzhang_71", 
+	["path"]="dub/danzhang_71", 
+},
+["danzhang_81"]={
+	["name"]="danzhang_81", 
+	["path"]="dub/danzhang_81", 
+},
+["danzhang_91"]={
+	["name"]="danzhang_91", 
+	["path"]="dub/danzhang_91", 
+},
+["danzhang_101"]={
+	["name"]="danzhang_101", 
+	["path"]="dub/danzhang_101", 
+},
+["danzhang_111"]={
+	["name"]="danzhang_111", 
+	["path"]="dub/danzhang_111", 
+},
+["danzhang_121"]={
+	["name"]="danzhang_121", 
+	["path"]="dub/danzhang_121", 
+},
+["danzhang_131"]={
+	["name"]="danzhang_131", 
+	["path"]="dub/danzhang_131", 
+},
+["danzhang_141"]={
+	["name"]="danzhang_141", 
+	["path"]="dub/danzhang_141", 
+},
+["danzhang_151"]={
+	["name"]="danzhang_151", 
+	["path"]="dub/danzhang_151", 
+},
+["danzhang_291"]={
+	["name"]="danzhang_291", 
+	["path"]="dub/danzhang_291", 
+},
+["danzhang_301"]={
+	["name"]="danzhang_301", 
+	["path"]="dub/danzhang_301", 
+},
+["dui_31"]={
+	["name"]="dui_31", 
+	["path"]="dub/dui_31", 
+},
+["dui_41"]={
+	["name"]="dui_41", 
+	["path"]="dub/dui_41", 
+},
+["dui_51"]={
+	["name"]="dui_51", 
+	["path"]="dub/dui_51", 
+},
+["dui_61"]={
+	["name"]="dui_61", 
+	["path"]="dub/dui_61", 
+},
+["dui_71"]={
+	["name"]="dui_71", 
+	["path"]="dub/dui_71", 
+},
+["dui_81"]={
+	["name"]="dui_81", 
+	["path"]="dub/dui_81", 
+},
+["dui_91"]={
+	["name"]="dui_91", 
+	["path"]="dub/dui_91", 
+},
+["dui_101"]={
+	["name"]="dui_101", 
+	["path"]="dub/dui_101", 
+},
+["dui_111"]={
+	["name"]="dui_111", 
+	["path"]="dub/dui_111", 
+},
+["dui_121"]={
+	["name"]="dui_121", 
+	["path"]="dub/dui_121", 
+},
+["dui_131"]={
+	["name"]="dui_131", 
+	["path"]="dub/dui_131", 
+},
+["dui_141"]={
+	["name"]="dui_141", 
+	["path"]="dub/dui_141", 
+},
+["dui_151"]={
+	["name"]="dui_151", 
+	["path"]="dub/dui_151", 
+},
+["sanzhang_31"]={
+	["name"]="sanzhang_31", 
+	["path"]="dub/sanzhang_31", 
+},
+["sanzhang_41"]={
+	["name"]="sanzhang_41", 
+	["path"]="dub/sanzhang_41", 
+},
+["sanzhang_51"]={
+	["name"]="sanzhang_51", 
+	["path"]="dub/sanzhang_51", 
+},
+["sanzhang_61"]={
+	["name"]="sanzhang_61", 
+	["path"]="dub/sanzhang_61", 
+},
+["sanzhang_71"]={
+	["name"]="sanzhang_71", 
+	["path"]="dub/sanzhang_71", 
+},
+["sanzhang_81"]={
+	["name"]="sanzhang_81", 
+	["path"]="dub/sanzhang_81", 
+},
+["sanzhang_91"]={
+	["name"]="sanzhang_91", 
+	["path"]="dub/sanzhang_91", 
+},
+["sanzhang_101"]={
+	["name"]="sanzhang_101", 
+	["path"]="dub/sanzhang_101", 
+},
+["sanzhang_111"]={
+	["name"]="sanzhang_111", 
+	["path"]="dub/sanzhang_111", 
+},
+["sanzhang_121"]={
+	["name"]="sanzhang_121", 
+	["path"]="dub/sanzhang_121", 
+},
+["sanzhang_131"]={
+	["name"]="sanzhang_131", 
+	["path"]="dub/sanzhang_131", 
+},
+["sanzhang_141"]={
+	["name"]="sanzhang_141", 
+	["path"]="dub/sanzhang_141", 
+},
+["sanzhang_151"]={
+	["name"]="sanzhang_151", 
+	["path"]="dub/sanzhang_151", 
+},
+["ct_feiji1"]={
+	["name"]="ct_feiji1", 
+	["path"]="dub/ct_feiji1", 
+},
+["ct_feiji11"]={
+	["name"]="ct_feiji11", 
+	["path"]="dub/ct_feiji11", 
+},
+["ct_liandui1"]={
+	["name"]="ct_liandui1", 
+	["path"]="dub/ct_liandui1", 
+},
+["ct_sandaiyi1"]={
+	["name"]="ct_sandaiyi1", 
+	["path"]="dub/ct_sandaiyi1", 
+},
+["ct_shunzi1"]={
+	["name"]="ct_shunzi1", 
+	["path"]="dub/ct_shunzi1", 
+},
+["ct_sidaier1"]={
+	["name"]="ct_sidaier1", 
+	["path"]="dub/ct_sidaier1", 
+},
+["ct_sandaier11"]={
+	["name"]="ct_sandaier11", 
+	["path"]="dub/ct_sandaier11", 
+},
+["ct_sandaier21"]={
+	["name"]="ct_sandaier21", 
+	["path"]="dub/ct_sandaier21", 
+},
+["ct_zhadan11"]={
+	["name"]="ct_zhadan11", 
+	["path"]="dub/ct_zhadan11", 
+},
+["ct_zhadan21"]={
+	["name"]="ct_zhadan21", 
+	["path"]="dub/ct_zhadan21", 
+},
+["ct_huojian11"]={
+	["name"]="ct_huojian11", 
+	["path"]="dub/ct_huojian11", 
+},
+["ct_huojian21"]={
+	["name"]="ct_huojian21", 
+	["path"]="dub/ct_huojian21", 
+},
+["ct_huojian31"]={
+	["name"]="ct_huojian31", 
+	["path"]="dub/ct_huojian31", 
+},
+["op_last11"]={
+	["name"]="op_last11", 
+	["path"]="dub/op_last11", 
+},
+["op_last21"]={
+	["name"]="op_last21", 
+	["path"]="dub/op_last21", 
+},
+["op_last31"]={
+	["name"]="op_last31", 
+	["path"]="dub/op_last31", 
+},
+["op_jiaodizhu01"]={
+	["name"]="op_jiaodizhu01", 
+	["path"]="dub/op_jiaodizhu01", 
+},
+["op_jiaodizhu11"]={
+	["name"]="op_jiaodizhu11", 
+	["path"]="dub/op_jiaodizhu11", 
+},
+["op_qiangdizhu01"]={
+	["name"]="op_qiangdizhu01", 
+	["path"]="dub/op_qiangdizhu01", 
+},
+["op_qiangdizhu11"]={
+	["name"]="op_qiangdizhu11", 
+	["path"]="dub/op_qiangdizhu11", 
+},
+["op_qiangdizhu21"]={
+	["name"]="op_qiangdizhu21", 
+	["path"]="dub/op_qiangdizhu21", 
+},
+["op_jiabei01"]={
+	["name"]="op_jiabei01", 
+	["path"]="dub/op_jiabei01", 
+},
+["op_jiabei11"]={
+	["name"]="op_jiabei11", 
+	["path"]="dub/op_jiabei11", 
+},
+["op_buchu11"]={
+	["name"]="op_buchu11", 
+	["path"]="dub/op_buchu11", 
+},
+["op_buchu21"]={
+	["name"]="op_buchu21", 
+	["path"]="dub/op_buchu21", 
+},
+["op_buchu31"]={
+	["name"]="op_buchu31", 
+	["path"]="dub/op_buchu31", 
+},
+["op_chu11"]={
+	["name"]="op_chu11", 
+	["path"]="dub/op_chu11", 
+},
+["op_chu21"]={
+	["name"]="op_chu21", 
+	["path"]="dub/op_chu21", 
+},
+["op_chu31"]={
+	["name"]="op_chu31", 
+	["path"]="dub/op_chu31", 
+},
+["ddzchat_txt10"]={
+	["name"]="ddzchat_txt10", 
+	["path"]="dub/ddzchat_txt10", 
+},
+["ddzchat_txt20"]={
+	["name"]="ddzchat_txt20", 
+	["path"]="dub/ddzchat_txt20", 
+},
+["ddzchat_txt30"]={
+	["name"]="ddzchat_txt30", 
+	["path"]="dub/ddzchat_txt30", 
+},
+["ddzchat_txt40"]={
+	["name"]="ddzchat_txt40", 
+	["path"]="dub/ddzchat_txt40", 
+},
+["ddzchat_txt50"]={
+	["name"]="ddzchat_txt50", 
+	["path"]="dub/ddzchat_txt50", 
+},
+["ddzchat_txt60"]={
+	["name"]="ddzchat_txt60", 
+	["path"]="dub/ddzchat_txt60", 
+},
+["ddzchat_txt70"]={
+	["name"]="ddzchat_txt70", 
+	["path"]="dub/ddzchat_txt70", 
+},
+["ddzchat_txt80"]={
+	["name"]="ddzchat_txt80", 
+	["path"]="dub/ddzchat_txt80", 
+},
+["ddzchat_txt90"]={
+	["name"]="ddzchat_txt90", 
+	["path"]="dub/ddzchat_txt90", 
+},
+["ddzchat_txt100"]={
+	["name"]="ddzchat_txt100", 
+	["path"]="dub/ddzchat_txt100", 
+},
+["ddzchat_txt11"]={
+	["name"]="ddzchat_txt11", 
+	["path"]="dub/ddzchat_txt11", 
+},
+["ddzchat_txt21"]={
+	["name"]="ddzchat_txt21", 
+	["path"]="dub/ddzchat_txt21", 
+},
+["ddzchat_txt31"]={
+	["name"]="ddzchat_txt31", 
+	["path"]="dub/ddzchat_txt31", 
+},
+["ddzchat_txt41"]={
+	["name"]="ddzchat_txt41", 
+	["path"]="dub/ddzchat_txt41", 
+},
+["ddzchat_txt51"]={
+	["name"]="ddzchat_txt51", 
+	["path"]="dub/ddzchat_txt51", 
+},
+["ddzchat_txt61"]={
+	["name"]="ddzchat_txt61", 
+	["path"]="dub/ddzchat_txt61", 
+},
+["ddzchat_txt71"]={
+	["name"]="ddzchat_txt71", 
+	["path"]="dub/ddzchat_txt71", 
+},
+["ddzchat_txt81"]={
+	["name"]="ddzchat_txt81", 
+	["path"]="dub/ddzchat_txt81", 
+},
+["ddzchat_txt91"]={
+	["name"]="ddzchat_txt91", 
+	["path"]="dub/ddzchat_txt91", 
+},
+["ddzchat_txt101"]={
+	["name"]="ddzchat_txt101", 
+	["path"]="dub/ddzchat_txt101", 
+},
+["effectpath"]={
+	["name"]="effectpath", 
+	["path"]="package_res/games/pokercommon/music/audio/mp3/effect/", 
+},
+["bgpath"]={
+	["name"]="bgpath", 
+	["path"]="package_res/games/pokercommon/music/game_bg.mp3", 
+},
+}
+ tConfigSet.maleChatList = {
+[1]={
+	["id"]=1, 
+	["content"]="不怕神一样的对手,就怕猪一样的队友！", 
+},
+[2]={
+	["id"]=2, 
+	["content"]="不要吵了!不要吵了!专心玩游戏吧！", 
+},
+[3]={
+	["id"]=3, 
+	["content"]="不要和我抢,地主是我的！", 
+},
+[4]={
+	["id"]=4, 
+	["content"]="不要走,再战三百回合！", 
+},
+[5]={
+	["id"]=5, 
+	["content"]="和我斗,你还嫩了点！", 
+},
+}
+ tConfigSet.femaleChatList = {
+[1]={
+	["id"]=1, 
+	["content"]="不怕神一样的对手,就怕猪一样的队友！", 
+},
+[2]={
+	["id"]=2, 
+	["content"]="不要吵了!不要吵了!专心玩游戏吧！", 
+},
+[3]={
+	["id"]=3, 
+	["content"]="不要和我抢,地主是我的！", 
+},
+[4]={
+	["id"]=4, 
+	["content"]="不要走,再战三百回合！", 
+},
+[5]={
+	["id"]=5, 
+	["content"]="和我斗,你还嫩了点！", 
+},
+}
+ return tConfigSet

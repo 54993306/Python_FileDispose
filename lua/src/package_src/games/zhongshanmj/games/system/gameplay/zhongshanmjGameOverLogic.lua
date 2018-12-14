@@ -1,0 +1,264 @@
+local GameOverLogic = import("app.games.common.system.gameplay.GameOverLogic")
+
+local zhongshanmjGameOverLogic = class("zhongshanmjGameOverLogic", GameOverLogic)
+
+--[[
+-- @brief  设置游戏结束数据函数
+-- @param  void
+-- @return void
+--]]
+function zhongshanmjGameOverLogic:setGameOverDatas(cmd, context)
+    self.super.setGameOverDatas(self, cmd, context)
+    self.gameOverDatas.isND = context.isND or 0  -- 是否显示翻马
+    -- self.gameOverDatas.isND = 1  -- 是否显示翻马
+    -- self.gameOverDatas.faI9 = context.faI9 or {}  -- 翻马数据
+    -- self.gameOverDatas.score[3].faI9 =  
+
+    -- self.gameOverDatas.score[1].faI9 =  {
+    --     [1] =
+    --     {
+    --         ["faI"] = 41;
+    --         ["isM"] = 0;
+    --     };
+    --     [2] =
+    --     {
+    --         ["faI"] = 46;
+    --         ["isM"] = 1;
+    --     };
+    --     [3] =
+    --     {
+    --         ["faI"] = 47;
+    --         ["isM"] = 0;
+    --     };
+    --     [4] =
+    --     {
+    --         ["faI"] = 33;
+    --         ["isM"] = 0;
+    --     };
+    --     [5] =
+    --     {
+    --         ["faI"] = 41;
+    --         ["isM"] = 0;
+    --     };
+    --     [6] =
+    --     {
+    --         ["faI"] = 46;
+    --         ["isM"] = 1;
+    --     };
+    --     [7] =
+    --     {
+    --         ["faI"] = 47;
+    --         ["isM"] = 0;
+    --     };
+    --     [8] =
+    --     {
+    --         ["faI"] = 33;
+    --         ["isM"] = 0;
+    --     };
+    --     [9] =
+    --     {
+    --         ["faI"] = 41;
+    --         ["isM"] = 0;
+    --     };
+    --     [10] =
+    --     {
+    --         ["faI"] = 46;
+    --         ["isM"] = 1;
+    --     };
+    --     [11] =
+    --     {
+    --         ["faI"] = 47;
+    --         ["isM"] = 0;
+    --     };
+    --     [12] =
+    --     {
+    --         ["faI"] = 33;
+    --         ["isM"] = 0;
+    --     };
+    -- };
+    -- self.gameOverDatas.score[2].faI9 =  {
+    --     -- [1] =
+    --     -- {
+    --     --     ["faI"] = 41;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [2] =
+    --     -- {
+    --     --     ["faI"] = 46;
+    --     --     ["isM"] = 1;
+    --     -- };
+    --     -- [3] =
+    --     -- {
+    --     --     ["faI"] = 47;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [4] =
+    --     -- {
+    --     --     ["faI"] = 33;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [5] =
+    --     -- {
+    --     --     ["faI"] = 41;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [6] =
+    --     -- {
+    --     --     ["faI"] = 46;
+    --     --     ["isM"] = 1;
+    --     -- };
+    --     -- [7] =
+    --     -- {
+    --     --     ["faI"] = 47;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [8] =
+    --     -- {
+    --     --     ["faI"] = 33;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [9] =
+    --     -- {
+    --     --     ["faI"] = 41;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [10] =
+    --     -- {
+    --     --     ["faI"] = 46;
+    --     --     ["isM"] = 1;
+    --     -- };
+    --     -- [11] =
+    --     -- {
+    --     --     ["faI"] = 47;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [12] =
+    --     -- {
+    --     --     ["faI"] = 33;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [13] =
+    --     -- {
+    --     --     ["faI"] = 41;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [14] =
+    --     -- {
+    --     --     ["faI"] = 46;
+    --     --     ["isM"] = 1;
+    --     -- };
+    --     -- [15] =
+    --     -- {
+    --     --     ["faI"] = 47;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [16] =
+    --     -- {
+    --     --     ["faI"] = 33;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [17] =
+    --     -- {
+    --     --     ["faI"] = 41;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [18] =
+    --     -- {
+    --     --     ["faI"] = 46;
+    --     --     ["isM"] = 1;
+    --     -- };
+    --     -- [19] =
+    --     -- {
+    --     --     ["faI"] = 47;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [20] =
+    --     -- {
+    --     --     ["faI"] = 33;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [21] =
+    --     -- {
+    --     --     ["faI"] = 41;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [22] =
+    --     -- {
+    --     --     ["faI"] = 46;
+    --     --     ["isM"] = 1;
+    --     -- };
+    --     -- [23] =
+    --     -- {
+    --     --     ["faI"] = 47;
+    --     --     ["isM"] = 0;
+    --     -- };
+    --     -- [24] =
+    --     -- {
+    --     --     ["faI"] = 33;
+    --     --     ["isM"] = 0;
+    --     -- };
+    -- };
+   
+    -- self.gameOverDatas.score[3].faI9 =  {
+    --     [1] =
+    --     {
+    --         ["faI"] = 41;
+    --         ["isM"] = 1;
+    --     };
+    --     [2] =
+    --     {
+    --         ["faI"] = 41;
+    --         ["isM"] = 1;
+    --     };
+    --     [3] =
+    --     {
+    --         ["faI"] = 41;
+    --         ["isM"] = 1;
+    --     };
+    --     [4] =
+    --     {
+    --         ["faI"] = 41;
+    --         ["isM"] = 0;
+    --     };
+    --     [5] =
+    --     {
+    --         ["faI"] = 41;
+    --         ["isM"] = 1;
+    --     };
+    --     -- [6] =
+    --     -- {
+    --     --     ["faI"] = 41;
+    --     --     ["isM"] = 1;
+    --     -- };
+    --     -- [7] =
+    --     -- {
+    --     --     ["faI"] = 41;
+    --     --     ["isM"] = 1;
+    --     -- };
+    --     -- [8] =
+    --     -- {
+    --     --     ["faI"] = 41;
+    --     --     ["isM"] = 1;
+    --     -- };
+    -- };
+    --  self.gameOverDatas.score[4].faI9 =  {
+    --  };
+
+    
+	local sys = MjMediator.getInstance():getSystemManager():getSystem(enSystemDef.GAME_PLAY_SYSTEM)
+    local playerCount = sys:getGameStartDatas().playerNum
+	for i=1, playerCount do
+		local site = i
+		local index = self:getOverPlayerIndex(site, context)
+		if nil == index then
+			printError("无效的索引%d", index)
+			return 
+		end
+		self.gameOverDatas.score[site].faI9 		= context.scI[index].faI  or {}  -- 翻马数据
+        -- self.gameOverDatas.score[site].isEF         = context.scI[index].isEF  or false  -- 是否補馬
+        -- self.gameOverDatas.score[site].isQG         = context.scI[index].isQG  or false  -- 是否被抢杠
+        -- self.gameOverDatas.score[1].isQG = true
+	end
+end
+
+return zhongshanmjGameOverLogic

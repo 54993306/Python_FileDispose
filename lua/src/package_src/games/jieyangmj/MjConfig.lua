@@ -1,0 +1,43 @@
+--
+-- Author: Jan
+-- Date: 2018-01-16 12:00:34
+--
+local gamePalyingName={
+    [1]  = {title = "difen1",ch = "1分"},
+    [2]  = {title = "difen2",ch = "2分"},
+    [3]  = {title = "difen3",ch = "3分"},
+    [4]  = {title = "difen4",ch = "4分"},
+    [5]  = {title = "difen5",ch = "5分"},
+    [6]  = {title = "difen6",ch = "6分"},
+    [7]  = {title = "difen7",ch = "7分"},
+    [8]  = {title = "difen9",ch = "8分"},
+    [9]  = {title = "difen9",ch = "9分"},
+    [10] = {title = "difen10",ch = "10分"},
+    [11] = {title = "jiangma",ch = "无马"},
+    [12] = {title = "jiangma2",ch = "买2马"},
+    [13] = {title = "jiangma4",ch = "买4马"},
+    [14] = {title = "jiangma6",ch = "买6马"},
+    [15] = {title = "jiangma8",ch = "买8马"},
+    [16] = {title = "jiangma10",ch = "买10马"},
+    [17] = {title = "zhuama",ch = "抓马"},
+    [18] = {title = "baibanzuogui",ch = "鬼牌白板"},
+    [19] = {title = "zhongzuogui",ch = "鬼牌红中"},
+    [20] = {title = "fangui",ch = "翻鬼"},
+    [21] = {title = "wugui",ch = "无鬼牌"},
+    [22] = {title = "bushefengding",ch = "不封顶"},
+    [23] = {title = "wubeifengding",ch = "5倍封顶"},
+    [24] = {title = "shibeifengding",ch = "10倍封顶"},
+    [25] = {title = "dihuwuzhuapaihu",ch = "首圈未抓牌可胡牌"},
+    [26] = {title = "dihuhuzhuangdiyipao",ch = "地胡只胡庄炮"},
+    [27] = {title = "gangkaifanbei",ch = "杠开翻倍"},
+    [28] = {title = "haidilaofanbei",ch = "海底捞翻倍"},
+    [29] = {title = "huangzhuanghg",ch = "黄庄黄杠"},
+    [30] = {title = "kejiepao",ch = "可接炮胡"},
+    [31] = {title = "qiangganghu_X3_b3j",ch = "抢杠胡X3"},
+    [32] = {title = "shibeitingbaikejiepao",ch = "10倍听牌可接炮"},
+    [33] = {title = "shibeitingbaikemianfen",ch = "10倍听牌可免分"},
+    [34] = {title = "",ch = ""},
+    [35] = {title = "maall2",ch = "马固定2底"},
+    [36] = {title = "masuihu",ch = "胡多大马多大"},
+}
+return {_gamePalyingName =gamePalyingName }

@@ -23,7 +23,9 @@ class codeRes:
     codeResLine = {}
     unInRegular = {}
     csbList = []
-    def initResList(self):
+    def initResList(self , refresh = False):
+        if not refresh:
+            return
         for filepath in self.fileList:
             if re.search(r".svn" , filepath):
                 continue

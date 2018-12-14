@@ -1,0 +1,48 @@
+--
+-- Author: Jinds
+-- Date: 2017-11-09
+--
+local DDZTWOPGameEvent = {}
+
+local prefix = "DDZTWOP.GAME."
+
+DDZTWOPGameEvent.ONGAMESTART 	= prefix .. "ONGAMESTART"
+DDZTWOPGameEvent.ONCALLLORD 	= prefix .. "ONCALLLORD"
+DDZTWOPGameEvent.ONROBLORD 		= prefix .. "ONROBLORD"
+DDZTWOPGameEvent.ONSTRATPLAY 	= prefix .. "ONSTRATPLAY"
+DDZTWOPGameEvent.ONOUTCARD 		= prefix .. "ONOUTCARD"
+DDZTWOPGameEvent.GAMEOVER 		= prefix .. "GAMEOVER"
+DDZTWOPGameEvent.ONTUOGUAN 		= prefix .. "ONTUOGUAN"
+DDZTWOPGameEvent.ONRECONNECT 	= prefix .. "ONRECONNECT"
+DDZTWOPGameEvent.ONEXITROOM 	= prefix .. "ONEXITROOM"
+DDZTWOPGameEvent.ONUSERDEFCHAT 	= prefix .. "ONUSERDEFCHAT"
+DDZTWOPGameEvent.ONCOINUPDATE	= prefix .. "ONCOINUPDATE"
+DDZTWOPGameEvent.RECVBROCAST	= prefix .. "RECVBROCAST"
+DDZTWOPGameEvent.BOTTOMCARDSDISPENSED = prefix .. "BOTTOMCARDSDISPENSED"
+DDZTWOPGameEvent.SHOWTIPCOUNT         = prefix .. "SHOWTIPCOUNT"
+DDZTWOPGameEvent.TOTALGAMEOVER        = prefix .. "TOTALGAMEOVER"
+DDZTWOPGameEvent.FRIENDCONTINUE       = prefix .. "FRIENDCONTINUE"
+DDZTWOPGameEvent.ONRECVREQDISSMISS = prefix .. "ONRECVREQDISSMISS"
+DDZTWOPGameEvent.ONRECVDISSMISSEND = prefix .. "ONRECVDISSMISSEND"
+-- DDZTWOPGameEvent. = prefix .. ""
+-- DDZTWOPGameEvent. = prefix .. ""
+-- DDZTWOPGameEvent. = prefix .. ""
+-- DDZTWOPGameEvent. = prefix .. ""
+-- DDZTWOPGameEvent. = prefix .. ""
+
+local uiprefix = "DDZTWOP.GAME.UI."
+DDZTWOPGameEvent.UPDATEOPERATION 	= uiprefix .. "UPDATEOPERATION"
+DDZTWOPGameEvent.REQCHANGEDESK 		= uiprefix .. "REQCHANGEDESK"
+DDZTWOPGameEvent.UIREQCHANGEDESK 	= uiprefix .. "UIREQCHANGEDESK"
+DDZTWOPGameEvent.UIREQCONTINUE 		= uiprefix .. "UIREQCONTINUE"
+DDZTWOPGameEvent.REQEXITROOM 		= uiprefix .. "REQEXITROOM"
+DDZTWOPGameEvent.REQSENDDEFCHAT 	= uiprefix .. "REQSENDDEFCHAT"
+DDZTWOPGameEvent.REQTUOGUAN 		= uiprefix .. "REQTUOGUAN"
+DDZTWOPGameEvent.SHOWOPRATION       = uiprefix .. "SHOWOPRATION"
+DDZTWOPGameEvent.RESAYCHAT          = uiprefix .. "RESAYCHAT"
+
+
+return DDZTWOPGameEvent
+
+
+
