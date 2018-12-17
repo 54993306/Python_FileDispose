@@ -24,12 +24,12 @@ if not TEST:
     jc.initRecordFile()
 
     # 初始化代码中包含的资源信息
-    cre = codeRes.codeRes(t.filedict)
-    cre.initResList()
+    # cre = codeRes.codeRes(t.filedict)
+    # cre.initResList()
 
     # 小图合并大图
-    pcg = packageImage.packageImage(t.filedict)
-    pcg.sortReference()
+    # pcg = packageImage.packageImage(t.filedict)
+    # pcg.sortReference()
 
     # 修改json文件为使用大图
     # cg = fileChange.replaceImage()

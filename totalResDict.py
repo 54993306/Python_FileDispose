@@ -21,6 +21,7 @@ SizeFile = "./output/filesize.json"
 Md5File = "./output/md5.json"
 RepeatFile = "./output/repeatfile.json"
 AllFiles = "./output/allfile.json"
+NewMD5 = "./output/newmd5.json"
 class totalRes:
     fileList = []
     comFun.initPathFiles(filepath , fileList)
@@ -30,6 +31,7 @@ class totalRes:
     sizeOrder = {}  # 文件大小排序表  os.path.getsize(filepath)
     md5List = {}    # 存储文件md5值 key:md5 value:path
     repeatList = {} # 存储重复图片的相关信息
+    newFileMd5 = {} #
     allFiles = []
 
     # 初始化文件表
@@ -82,6 +84,10 @@ class totalRes:
         allFiles.write(json.dumps(self.allFiles, ensure_ascii=False, encoding="utf -8", indent=4))
         allFiles.close()
 
+        newFileMd5 = open(NewMD5 , "w+")
+        newFileMd5.write(json.dumps(self.newFileMd5, ensure_ascii=False, encoding="utf -8", indent=4))
+        newFileMd5.close()
+
     # 存在记录文件的情况，不重新遍历文件夹
     def hasFile(self):
         if os.path.isfile(DictFile):
@@ -105,13 +111,15 @@ class totalRes:
         time.sleep(3)                # 大规模的文件操作，需要做延时处理
         os.mkdir(copypath, 0o777)
         copynum = 0
-        for filepath in self.md5List.itervalues():   # 有很多的同名文件
+        for md5Code , filepath in self.md5List.iteritems():
             _, filename = os.path.split(filepath)
             copynum += 1
             if os.path.isfile(copypath + "/" + filename):   # 判断是否已经存在同名文件
                 shutil.copyfile(filepath, copypath + "/" + str(copynum) + "_" + filename)
+                self.newFileMd5[md5Code] = copypath + "/" + str(copynum) + "_" + filename
             else:
                 shutil.copyfile(filepath, copypath + "/" + filename)
+                self.newFileMd5[md5Code] = copypath + "/" + filename
 
         if copynum == len(self.md5List):
             print "File Num : " + str(len(self.md5List))

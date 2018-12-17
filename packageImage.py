@@ -27,8 +27,8 @@ class packageImage:
         self.sortRefList = sorted(self.sortRefList.items(), key=lambda refNum: refNum[1] , reverse = True)
         print json.dumps(self.sortRefList, ensure_ascii=False, encoding="utf-8", indent=4)
 
-    # def countPackagImage(self):
-
+    def countPackagImage(self):
+        print 1
         # 通过分析打印数据，当引用计数大于2时，可以作为第一批的加载数据处理。
 
         # print len(refDict)
