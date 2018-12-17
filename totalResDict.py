@@ -29,7 +29,7 @@ class totalRes:
     timeOrder = {}  # 文件创建时间排序表 os.path.getctime(path)
     sizeOrder = {}  # 文件大小排序表  os.path.getsize(filepath)
     md5List = {}    # 存储文件md5值 key:md5 value:path
-    repeatList = [] #
+    repeatList = {} # 存储重复图片的相关信息
     allFiles = []
 
     # 初始化文件表
@@ -40,7 +40,7 @@ class totalRes:
         else:
             self.initDict()
 
-    # 初始化文件字典
+    # 初始化文件字典(已去重)
     def initDict(self):
         for pathbylist in self.fileList:
             abspath = pathbylist
@@ -138,12 +138,20 @@ class totalRes:
         typedict[filepath] = pathdict
         return True
 
-    # 生成文件hash值
+    # 生成文件hash值{MD5 : {currPath:path , oldpath : [path1 ,path2 ...]}}
     def getFileMd5(self , filepath):
         md5 = comFun.getFileMd5(filepath)
         if md5 in self.md5List:
+            if md5 in self.repeatList:
+                self.repeatList[md5]["oldpath"].append(filepath)
+            else:
+                repeatDict = {}
+                self.repeatList[md5] = repeatDict
+                repeatDict["currPath"] =  self.md5List[md5]
+                oldpaths = []
+                repeatDict["oldpath"] = oldpaths
+                oldpaths.append(filepath)
             # print "Repeat File Path : " + filepath
-            self.repeatList.append(filepath)
             return False
         self.md5List[md5] = filepath
         return md5

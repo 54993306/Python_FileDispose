@@ -29,7 +29,7 @@ class jsonRes:
     notFountFile = {}   # 在json中使用但是未找到的资源文件
 
     def initRecordFile(self , refresh = False):
-        refresh = True
+        # refresh = True
         if os.path.isfile(jsonHavaRes) and not refresh:
             if not self.json_res:
                 json_stream = open(jsonHavaRes , "r")
@@ -63,28 +63,40 @@ class jsonRes:
 
     # 资源文件在json中被引用的次数
     def initReferenceCount(self , refresh = False):  #初始化文件引用计数表
+        RepeatFile = "./output/repeatfile.json"
+        repeat_stream = open(RepeatFile , "r")
+        repeatDict = json.load(repeat_stream)
         for jsonpath , paths in self.json_res.iteritems():
             for path in paths:
                 if not os.path.isabs(path):
                     path = os.path.abspath(path)
                 if not os.path.isfile(path):
-                    self.addNotFoundFile(jsonpath , path)
+                    self.addNotFoundFile(jsonpath , path)   # 在json 中使用，但是实际上不存在
                     continue
                 _,fileType = os.path.splitext(path)
                 if fileType in self.pResDict:
                     typeDict = self.pResDict.get(fileType)
+                    md5Code = None
                     if typeDict.has_key(path):
                         fileinfo = typeDict.get(path)   #通过文件路径到总资源表中取得文件Md5值
-                        if fileinfo["md5"]:
-                            self.addReferenceNum(fileinfo["md5"], jsonpath ,path)
-                        else:
-                            print(" ERROR : Lost file md5 by " + path)
+                        md5Code = fileinfo["md5"]
                     else:
-                        print "type not found in dict : " + path
+                        md5Code = comFun.getFileMd5(path)
+                        if md5Code in repeatDict:
+                            fileinfo = repeatDict.get(md5Code)
+                            path = fileinfo["currPath"]
+                        else:
+                            print "type not found in dict : " + path   # 图片可能被去重删除掉了
+                            assert(False)
+                    if md5Code:
+                        self.addReferenceNum(md5Code, jsonpath, path)
+                    else:
+                        print(" ERROR : Lost file md5 by " + path)
+                        assert (False)
                 else:
                     print(path)
                     assert(False)
-        print "referenceCount : " + json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4)
+        # print "referenceCount : " + json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4)
         # print "notFountFile : " + json.dumps(self.notFountFile, ensure_ascii=False, encoding="utf-8", indent=4)
 
     # 文件添加一次引用
@@ -128,10 +140,11 @@ class jsonRes:
                 assert(False)
             self.json_res[jsonpath] = []
             # print("Json has res : " + jsonpath)
-            self.replaceCmpResType(jsonpath)
+            self.cmpJsonResType(jsonpath)
         # print "init : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
 
-    def replaceCmpResType(self , jsonpath):
+    # 找到json文件中包含的资源行
+    def cmpJsonResType(self , jsonpath):
         file_stream = open(jsonpath, "rb")
         printLineNum = 0
         for line in file_stream.readlines():

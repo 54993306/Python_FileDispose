@@ -11,6 +11,8 @@ BigFileSie = 1024 * 100   #100k以上即认为是大文件
 
 FileMd5Dict = {}   #用于记录文件的路径和md5值
 
+ReferenceFIle = "./output/reference.txt"
+
 def initPathFiles(filepath , list):
     if os.path.isdir(filepath):
         for ccfile in os.listdir(filepath):
