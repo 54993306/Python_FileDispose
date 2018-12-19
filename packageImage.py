@@ -29,6 +29,7 @@ class packageImage:
         # self.sortRefList = sorted(self.sortRefList.items(), key=lambda refNum: refNum[1] , reverse = True)
         # print json.dumps(self.sortRefList, ensure_ascii=False, encoding="utf-8", indent=4)
         # self.countPackagImage()
+        self.modulePackageImage()
         self.initNewImageInfo()
         self.initPlistMd5()
         self.recordData()
@@ -36,11 +37,6 @@ class packageImage:
 
     # 根据引用计数，执行打包工具脚本合成大图,试用版软件可以实现切图无水印
     def countPackagImage(self):
-        # shutil.move(src, dst)# 移动文件或重命名
-        TEXTURE_PACK_PATH = r"C:\Program Files\CodeAndWeb\TexturePacker\bin"
-        PACKAGE_TYPE = r"--multipack"
-        PLIST_PATH = r"D:\Python_FileDispose\packageimage\out{n}.plist"
-        PNG_PATH = r"D:\Python_FileDispose\packageimage\out{n}.png"
         PNG_MAX_SIZE = 1024  # 输出的图片大小,大多数平台支持的大小
         SOURCE_FOLDER = r"D:\Python_FileDispose\real_res\111"
         newFile_stream = open(comFun.NewMD5 , "r")
@@ -63,11 +59,23 @@ class packageImage:
                         shutil.move(newpath,  SOURCE_FOLDER + "\\" + filename)
                     else:
                         print "package Lost file :" + newpath
+        self.callPackageTexture(PNG_MAX_SIZE , "out")
+        newFile_stream.close()
+
+    # 将模块中，引用计数较低的按模块进行打包
+    def modulePackageImage(self):
+        print 1
+    # 调用打包工具打包图片
+    def callPackageTexture(self , PNG_MAX_SIZE , outFileName , SOURCE_FOLDER):
+        TEXTURE_PACK_PATH = r"C:\Program Files\CodeAndWeb\TexturePacker\bin"
+        PACKAGE_TYPE = r"--multipack"
+        PLIST_PATH = r"D:\Python_FileDispose\packageimage\\"+ outFileName +"{n}.plist"
+        PNG_PATH = r"D:\Python_FileDispose\packageimage\\"+ outFileName +"{n}.png"
         PACKAGE_COMMOND = "TexturePacker.exe %s --data %s --sheet %s --max-size %d %s" % \
                           (PACKAGE_TYPE, PLIST_PATH, PNG_PATH, PNG_MAX_SIZE, SOURCE_FOLDER)
         os.chdir(TEXTURE_PACK_PATH)
         os.system(PACKAGE_COMMOND)
-        newFile_stream.close()
+
 
     # 读取输出路径中的plist文件获取大图中的资源信息
     def initNewImageInfo(self):

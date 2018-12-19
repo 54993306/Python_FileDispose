@@ -64,6 +64,26 @@ class replaceImage:
 
         json_stream.close()
 
+    def searchNodeTree(self, parent , pResDict):
+        if not parent:
+            return
+        self.searchOptions(parent, pResDict)
+        children = parent.get("children")
+        if children:
+            for child in children:
+                self.searchOptions(child , pResDict)
+                if child.get("children"):
+                    self.searchNodeTree(child, pResDict)
+
+    def searchOptions(self, pNode , pResDict):
+        if pNode.has_key("options"):
+            tDictList = []
+            self.searchForKey(pNode["options"], "resourceType" , tDictList)
+            self.changeResPath(tDictList, pResDict)
+        else:
+            print "child un has options"
+            assert (False)
+
     # 找到指定key值所在的dict
     def searchForKey(self, pDict , key , pDictList):
         for k , v in pDict.items():
@@ -89,24 +109,4 @@ class replaceImage:
                 tDict["plistFile"] = "abbb/test.plist"
                 pResDict["new"] = copy.deepcopy(tDict)
         # resDict 用于记录新增 plist 文件
-
-    def searchOptions(self, pNode , pResDict):
-        if pNode.has_key("options"):
-            tDictList = []
-            self.searchForKey(pNode["options"], "resourceType" , tDictList)
-            self.changeResPath(tDictList, pResDict)
-        else:
-            print "child un has options"
-            assert (False)
-
-    def searchNodeTree(self, parent , pResDict):
-        if not parent:
-            return
-        self.searchOptions(parent, pResDict)
-        children = parent.get("children")
-        if children:
-            for child in children:
-                self.searchOptions(child , pResDict)
-                if child.get("children"):
-                    self.searchNodeTree(child, pResDict)
 
