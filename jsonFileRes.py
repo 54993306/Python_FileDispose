@@ -11,9 +11,9 @@ import json
 # searchJsonpath = "./oldJson"
 # searchJsonpath = "./newJson"
 searchJsonpath = "D:\Svn_2d\UI_Shu\Json"
-jsonHavaRes = "./output/jsonres.txt"
-ReferenceFIle = "./output/reference.txt"
-NotFound = "./output/notfound.txt"
+jsonHavaRes = "./output/jsonres.json"
+ReferenceFIle = "./output/reference.json"
+NotFound = "./output/notfound.json"
 realPath = r"D:\Svn_2d\S_GD_Heji\res/hall/"
 class jsonRes:
     def __init__(self , resDict):

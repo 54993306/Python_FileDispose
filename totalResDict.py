@@ -15,23 +15,17 @@ import comFun
 filepath = r"D:\Svn_2d\S_GD_Heji\res"
 copypath = r"./real_res"
 
-DictFile = "./output/filedict.json"
-SizeFile = "./output/filesize.json"
-SizeFile = "./output/filesize.json"
-Md5File = "./output/md5.json"
-RepeatFile = "./output/repeatfile.json"
-AllFiles = "./output/allfile.json"
-NewMD5 = "./output/newmd5.json"
 class totalRes:
     fileList = []
     comFun.initPathFiles(filepath , fileList)
 
-    filedict = {}   # 文件分类表，有多少中类型资源，每种类型有多少个
-    timeOrder = {}  # 文件创建时间排序表 os.path.getctime(path)
-    sizeOrder = {}  # 文件大小排序表  os.path.getsize(filepath)
-    md5List = {}    # 存储文件md5值 key:md5 value:path
-    repeatList = {} # 存储重复图片的相关信息
-    newFileMd5 = {} #
+    filedict = {}       # 文件分类表，有多少中类型资源，每种类型有多少个
+    timeOrder = {}      # 文件创建时间排序表 os.path.getctime(path)
+    sizeOrder = {}      # 文件大小排序表  os.path.getsize(filepath)
+    md5List = {}        # 存储文件md5值 key:md5 value:path
+    repeatList = {}     # 存储重复图片的相关信息
+    newFileMd5 = {}     # 新文件的md5
+    oldtonewPath = {}   # 新旧路径对应表 key: oldpath ,value : newpath
     allFiles = []
 
     # 初始化文件表
@@ -64,29 +58,40 @@ class totalRes:
 
     # 将内容记录到文件中
     def recordToFile(self):
-        filedict = open(DictFile , "w+")
+        DICTFILE = "./output/filedict.json"
+        filedict = open(DICTFILE , "w+")
         filedict.write(json.dumps(self.filedict, ensure_ascii=False, encoding="utf -8", indent=4))
         filedict.close()
 
-        sizeOrder = open(SizeFile , "w+")
+        SIZEFILE = "./output/filesize.json"
+        sizeOrder = open(SIZEFILE , "w+")
         sizeOrder.write(json.dumps(self.sizeOrder, ensure_ascii=False, encoding="utf -8", indent=4))
         sizeOrder.close()
 
-        md5List = open(Md5File , "w+")
+        MD5FILE = "./output/md5.json"
+        md5List = open(MD5FILE , "w+")
         md5List.write(json.dumps(self.md5List, ensure_ascii=False, encoding="utf -8", indent=4))
         md5List.close()
 
-        repeatList = open(RepeatFile , "w+")
+        REPEATFILE = "./output/repeatfile.json"
+        repeatList = open(REPEATFILE , "w+")
         repeatList.write(json.dumps(self.repeatList, ensure_ascii=False, encoding="utf -8", indent=4))
         repeatList.close()
 
-        allFiles = open(AllFiles , "w+")
+        ALLFILES = "./output/allfile.json"
+        allFiles = open(ALLFILES , "w+")
         allFiles.write(json.dumps(self.allFiles, ensure_ascii=False, encoding="utf -8", indent=4))
         allFiles.close()
 
-        newFileMd5 = open(NewMD5 , "w+")
+        NEWMD5 = "./output/newmd5.json"
+        newFileMd5 = open(NEWMD5 , "w+")
         newFileMd5.write(json.dumps(self.newFileMd5, ensure_ascii=False, encoding="utf -8", indent=4))
         newFileMd5.close()
+
+        OLDTONEW = "./output/oldtonew.json"
+        oldtonewPath = open(OLDTONEW , "w+")
+        oldtonewPath.write(json.dumps(self.oldtonewPath, ensure_ascii=False, encoding="utf -8", indent=4))
+        oldtonewPath.close()
 
     # 存在记录文件的情况，不重新遍历文件夹
     def hasFile(self):
@@ -114,12 +119,16 @@ class totalRes:
         for md5Code , filepath in self.md5List.iteritems():
             _, filename = os.path.split(filepath)
             copynum += 1
+            # 这里要生成唯一性的名称，后面需要用名称来与md5值生成对应关系，因为在合成plist后，只有名称保存在其中
+            newpath = copypath + "/" + filename
             if os.path.isfile(copypath + "/" + filename):   # 判断是否已经存在同名文件
-                shutil.copyfile(filepath, copypath + "/" + str(copynum) + "_" + filename)
-                self.newFileMd5[md5Code] = copypath + "/" + str(copynum) + "_" + filename
+                newpath = copypath + "/" + str(copynum) + "_" + filename
+                shutil.copyfile(filepath, newpath)
+                self.newFileMd5[md5Code] = newpath
             else:
-                shutil.copyfile(filepath, copypath + "/" + filename)
-                self.newFileMd5[md5Code] = copypath + "/" + filename
+                shutil.copyfile(filepath, newpath)
+                self.newFileMd5[md5Code] = newpath
+            oldtonewPath[filepath] = newpath
 
         if copynum == len(self.md5List):
             print "File Num : " + str(len(self.md5List))
