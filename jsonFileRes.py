@@ -38,7 +38,7 @@ class jsonRes:
         notFountFile.close()
 
     def initRecordFile(self , refresh = False):
-        # refresh = True
+        refresh = True
         if os.path.isfile(comFun.JSONHAVARES) and not refresh:
             if not self.json_res:
                 json_stream = open(comFun.JSONHAVARES , "r")
@@ -55,7 +55,7 @@ class jsonRes:
             self.iniJsonFileList()
         self.initReferenceCount() # 可以跟json_res一起执行，但是耦合逻辑太多，拆出来逻辑清楚，但是性能消耗
         self.recordFile()
-    # 资源文件在json中被引用的次数
+    # 资源文件在json中被引用的次数，json中包含的资源，被引用的次数
     def initReferenceCount(self , refresh = False):  #初始化文件引用计数表
         repeat_stream = open(comFun.REPEATFILE , "r")
         repeatDict = json.load(repeat_stream)
