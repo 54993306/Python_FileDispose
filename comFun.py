@@ -9,10 +9,34 @@ import hashlib
 
 BigFileSie = 1024 * 100   #100k以上即认为是大文件
 
-FileMd5Dict = {}   #用于记录文件的路径和md5值
+FileMd5Dict = {}   #用于记录文件的路径和md5值,避免同一路径多次生成
+FILEPATH = r"D:\Svn_2d\S_GD_Heji\res"
+COPYPATH = r"./real_res"
+DICTFILE = "./output/filedict.json"
+SIZEFILE = "./output/filesize.json"
+MD5FILE = "./output/notRepeatFilemd5.json"
+REPEATFILE = "./output/repeatfile.json"
+ALLFILES = "./output/allfile.json"
+NEWMD5 = "./output/newmd5.json"
+
+# json UI 文件
+SEARCHJSONPATH = "D:\Svn_2d\UI_Shu\Json"            # 只是竖版的大厅部分json
+REALPATH = r"D:\Svn_2d\S_GD_Heji\res/hall/"         # 资源的具体位置和json的位置相关
+JSONHAVARES = "./output/jsonres.json"
+REFERENCEFILE = "./output/reference.json"
+NOTFOUND = "./output/notfound.json"
+REPEATFILE = "./output/repeatfile.json"
+
+# 代码文件
+CODEFOLDER = r"D:\Svn_2d\S_GD_Heji\src\app"
+GAMECODEFOLDER = r"D:\Svn_2d\S_GD_Heji\src\package_src"
+CODERESFILE = r"./output/coderesline.json"
+CODEUNREGULARFILE = r"./output/codeUnregularline.json"
+CODECSB = r"./output/codecsb.json"
 
 ReferenceFIle = "./output/reference.json"
 NewMD5 = "./output/newmd5.json"
+JsonsRes = "./output/jsonres.json"
 
 def initPathFiles(filepath , list):
     if os.path.isdir(filepath):

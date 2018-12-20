@@ -18,6 +18,24 @@ outputPath = "./newJson/"
 import shutil
 class replaceImage:
     changeRecord = {}
+    allFileMD5 = {}
+    newFileMD5 = {}
+    plistMd5 = {}
+
+    # 根据老图的路径，获取新图所在位置,老路径对应的新图的大图路径和plist文件信息
+    def initNewPathDict(self):
+        ALLFILES = "./output/allfile.json"
+        allFileMD5 = open(ALLFILES , "r")
+        self.allFileMD5 = json.load(allFileMD5)
+
+        NEWMD5 = "./output/newmd5.json"
+        newFileMD5 = open(NEWMD5 , "r")
+        self.newFileMD5 = json.load(newFileMD5)
+
+        PLISTMD5 = "./output/plistMd5.json"  # 图片md5值对应存储的plist文件
+        plistMd5 = open(PLISTMD5 , "r")
+        self.plistMd5 = json.load(plistMd5)
+    # 做新旧资源替换
     def replaceFile(self , jsonPaths):
         jsonPaths = ["./newJson/1lay_test.json"]
         if not os.path.exists(outputPath):
@@ -37,7 +55,7 @@ class replaceImage:
             print(newFilePath)
             self.streamDispose(newFilePath)
 
-
+    # 文件处理
     def streamDispose(self , newJsonFile):
         json_stream = open(newJsonFile, "r+")
         if not json_stream:
@@ -104,9 +122,46 @@ class replaceImage:
         for tDict in pDictList:
             if not tDict["resourceType"]:
                 pResDict["old"] = copy.deepcopy(tDict)
-                tDict["path"] = "btn_buxia.png" # 直接改动生效
-                tDict["resourceType"] = 1
-                tDict["plistFile"] = "abbb/test.plist"
+                newFileDict = self.getNewResInfo(tDict["path"])
+                if type(newFileDict)is types.DictType:
+                    tDict["path"] = newFileDict["name"]  # 直接改动生效
+                    tDict["resourceType"] = 1
+                    tDict["plistFile"] = newFileDict["plist"]
+                else:
+                    tDict["path"] = newFileDict
+                    tDict["resourceType"] = 0
+                    tDict["plistFile"] = ""
                 pResDict["new"] = copy.deepcopy(tDict)
         # resDict 用于记录新增 plist 文件
 
+    def getNewResInfo(self , path):
+        if not os.path.isabs(path):
+            path = os.path.abspath(path)
+        if os.path.isfile(path):
+            filemd5 = None
+            if path in self.allFileMD5:
+                filemd5 = self.allFileMD5.get(path)
+            else:
+                print "can't found md5 : " + path
+                assert(False)
+
+            newFileName = None
+            if filemd5 in self.newFileMD5:
+                newFileName = self.newFileMD5.get(filemd5)
+            else:
+                print "can't found new file name : " + path + " md5 : " + filemd5
+                return
+
+            plistpath = None
+            if filemd5 in self.plistMd5:
+                plistpath = self.plistMd5.get(filemd5)
+            else:
+                print "can't found plist file : " + path + " md5: " + filemd5
+                return newFileName    # 只是改了名字没有合并大图的图，只是修改了文件的路径
+
+            newFileDict = {}
+            newFileDict["name"] = newFileName
+            newFileDict["plist"] = plistpath
+            return newFileDict
+        else:
+            print "can't find file :" + path

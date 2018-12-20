@@ -8,31 +8,40 @@ import os
 import re
 import json
 
-# searchJsonpath = "./oldJson"
-# searchJsonpath = "./newJson"
-searchJsonpath = "D:\Svn_2d\UI_Shu\Json"
-jsonHavaRes = "./output/jsonres.json"
-ReferenceFIle = "./output/reference.json"
-NotFound = "./output/notfound.json"
-realPath = r"D:\Svn_2d\S_GD_Heji\res/hall/"
 class jsonRes:
-    def __init__(self , resDict):
-        if not resDict:
-            assert (False)
-        self.pResDict = resDict
+    def __init__(self):
+        if not os.path.isfile(comFun.DICTFILE):
+            print "can't found file " + comFun.DICTFILE
+            assert(False)
+        filedict = open(comFun.DICTFILE, "r")
+        self.pResDict = json.load(filedict)
 
     folderFiles = [] #存储所有的json文件
-    comFun.initPathFiles(searchJsonpath , folderFiles)
+    comFun.initPathFiles(comFun.SEARCHJSONPATH , folderFiles)
 
-    json_res = {}   #json文件中包含的资源map
-    referenceCount = {}  # 资源引用计数统计
-    notFountFile = {}   # 在json中使用但是未找到的资源文件
+    json_res = {}           #json文件中包含的资源map
+    referenceCount = {}     # 资源引用计数统计
+    notFountFile = {}       # 在json中使用但是未找到的资源文件
+
+    def recordFile(self):
+        json_res = open(comFun.JSONHAVARES, "w+")   # 将数据写入文件中
+        json_res.write(json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4))
+        # json.dump(self.json_res, json_stream)
+        json_res.close()
+
+        referenceCount = open(comFun.REFERENCEFILE, "w+")   # 将数据写入文件中
+        referenceCount.write(json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4))
+        referenceCount.close()
+
+        notFountFile = open(comFun.NOTFOUND, "w+")   # 将数据写入文件中
+        notFountFile.write(json.dumps(self.notFountFile, ensure_ascii=False, encoding="utf-8", indent=4))
+        notFountFile.close()
 
     def initRecordFile(self , refresh = False):
         # refresh = True
-        if os.path.isfile(jsonHavaRes) and not refresh:
+        if os.path.isfile(comFun.JSONHAVARES) and not refresh:
             if not self.json_res:
-                json_stream = open(jsonHavaRes , "r")
+                json_stream = open(comFun.JSONHAVARES , "r")
                 if comFun.is_json(json_stream.read()):
                     # print json_stream.tell()
                     json_stream.seek(0,0)
@@ -40,31 +49,15 @@ class jsonRes:
                     # print "open : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
                 else:
                     json_stream.close()
-                    os.remove(jsonHavaRes)
-                    print "record file has error remove file paht : " + jsonHavaRes
+                    os.remove(comFun.JSONHAVARES)
+                    print "record file has error remove file paht : " + comFun.JSONHAVARES
         else:
             self.iniJsonFileList()
         self.initReferenceCount() # 可以跟json_res一起执行，但是耦合逻辑太多，拆出来逻辑清楚，但是性能消耗
         self.recordFile()
-
-    def recordFile(self):
-        json_res = open(jsonHavaRes, "w+")   # 将数据写入文件中
-        json_res.write(json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4))
-        # json.dump(self.json_res, json_stream)
-        json_res.close()
-
-        referenceCount = open(ReferenceFIle, "w+")   # 将数据写入文件中
-        referenceCount.write(json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4))
-        referenceCount.close()
-
-        notFountFile = open(NotFound, "w+")   # 将数据写入文件中
-        notFountFile.write(json.dumps(self.notFountFile, ensure_ascii=False, encoding="utf-8", indent=4))
-        notFountFile.close()
-
     # 资源文件在json中被引用的次数
     def initReferenceCount(self , refresh = False):  #初始化文件引用计数表
-        RepeatFile = "./output/repeatfile.json"
-        repeat_stream = open(RepeatFile , "r")
+        repeat_stream = open(comFun.REPEATFILE , "r")
         repeatDict = json.load(repeat_stream)
         for jsonpath , paths in self.json_res.iteritems():
             for path in paths:
@@ -81,12 +74,12 @@ class jsonRes:
                         fileinfo = typeDict.get(path)   #通过文件路径到总资源表中取得文件Md5值
                         md5Code = fileinfo["md5"]
                     else:
-                        md5Code = comFun.getFileMd5(path)
+                        md5Code = comFun.getFileMd5(path)   # 图片可能被去重删除掉了
                         if md5Code in repeatDict:
                             fileinfo = repeatDict.get(md5Code)
                             path = fileinfo["currPath"]
                         else:
-                            print "type not found in dict : " + path   # 图片可能被去重删除掉了
+                            print "type not found in dict : " + path
                             assert(False)
                     if md5Code:
                         self.addReferenceNum(md5Code, jsonpath, path)
@@ -102,20 +95,20 @@ class jsonRes:
     # 文件添加一次引用
     def addReferenceNum(self,md5Code , jsonpath = "" ,path = ""):
         if md5Code in self.referenceCount:
-            referenctInfo = self.referenceCount.get(md5Code)
-            RefList = referenctInfo["RefList"]
+            referenceInfo = self.referenceCount.get(md5Code)
+            RefList = referenceInfo["RefList"]
             if jsonpath in RefList:
                 RefList[jsonpath] = RefList[jsonpath] + 1   # 在同一个 json 文件中被引用的次数
             else:
                 RefList[jsonpath] = 1
-            referenctInfo["total"] = referenctInfo["total"] + 1
+                referenceInfo["total"] = referenceInfo["total"] + 1
         else:
-            referenctInfo = {}
-            self.referenceCount[md5Code] = referenctInfo
-            referenctInfo["FilePath"] = path
-            referenctInfo["total"] = 1
+            referenceInfo = {}
+            self.referenceCount[md5Code] = referenceInfo
+            referenceInfo["FilePath"] = path
+            referenceInfo["total"] = 1
             RefList = {}
-            referenctInfo["RefList"] = RefList
+            referenceInfo["RefList"] = RefList
             RefList[jsonpath] = 1
 
     # 文件在json中存在，在文件夹中没找到相应资源
@@ -168,11 +161,11 @@ class jsonRes:
                     # print line
                     printLineNum = 2
                     reType = re.compile(r"\"([^:]+" + resType + r")\"")   # ：不是特殊字符跟字母一样 , ()不是特殊字符串
-                    serchObj = reType.search(line)              # 对于一行中，包含多个类型的情况是否有相应的考虑
+                    serchObj = reType.search(line)
                     # groupdict 返回以有别名的组的别名为键、以该组截获的子串为值的字典，没有别名的组不包含在内。default含义同上。
                     if serchObj:
                         # self.json_res[jsonpath].append(serchObj.group(1))  # 记录每个文件中都包含了多少的资源
-                        self.json_res[jsonpath].append(realPath + serchObj.group(1))  # 记录每个文件中都包含了多少的资源
+                        self.json_res[jsonpath].append(comFun.REALPATH + serchObj.group(1))  # 记录每个文件中都包含了多少的资源
                     else:
                         print line + " regular failed "
                         assert(False)

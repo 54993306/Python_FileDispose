@@ -1,8 +1,7 @@
 
 # -*- coding: UTF-8 -*-
-
-# TEST = True
 TEST = False
+# TEST = True
 
 import os
 import json
@@ -20,21 +19,22 @@ if not TEST:
     # t = totalResDict.totalRes() #初始化所有的资源信息
     # t.initFileDict()
 
-    # jc= jsonFileRes.jsonRes(t.filedict)  # 初始化所有json中包含的资源信息
+    # jc= jsonFileRes.jsonRes()  # 初始化所有json中包含的资源信息
     # jc.initRecordFile()
 
     # 初始化代码中包含的资源信息
-    # cre = codeRes.codeRes(t.filedict)
+    # cre = codeRes.codeRes()
     # cre.initResList()
 
     # 小图合并大图
     pcg = packageImage.packageImage()
-    pcg.sortReference()
+    pcg.packageRes()
 
     # 修改json文件为使用大图
     # cg = fileChange.replaceImage()
     # cg.replaceFile(jc.jsonPaths)
 else:
-    print 1
+    moduleName = "aaa.json"
+    print moduleName.split(".")[1]
 
 
