@@ -9,11 +9,13 @@ import hashlib
 
 BigFileSie = 1024 * 100   #100k以上即认为是大文件
 
+PNG_MAX_SIZE = 1024  # 输出的图片大小,大多数平台支持的大小
+
 UNPACKAGENUM = 3
 
 FileMd5Dict = {}   #用于记录文件的路径和md5值,避免同一路径多次生成
 FILEPATH = r"D:\Svn_2d\S_GD_Heji\res"
-COPYPATH = r"./real_res"
+COPYPATH = r"real_res"
 DICTFILE = "./output/filedict.json"
 SIZEFILE = "./output/filesize.json"
 MD5FILE = "./output/notRepeatFilemd5.json"
@@ -35,6 +37,9 @@ GAMECODEFOLDER = r"D:\Svn_2d\S_GD_Heji\src\package_src"
 CODERESFILE = r"./output/coderesline.json"
 CODEUNREGULARFILE = r"./output/codeUnregularline.json"
 CODECSB = r"./output/codecsb.json"
+
+#
+CHANGERESULT = r"./output/changefile.json"
 
 def initPathFiles(filepath , list):
     if os.path.isdir(filepath):
