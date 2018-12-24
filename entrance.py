@@ -27,12 +27,12 @@ if not TEST:
     # cre.initResList()
 
     # 小图合并大图
-    pcg = packageImage.packageImage()
-    pcg.packageRes()
+    # pcg = packageImage.packageImage()
+    # pcg.packageRes()
 
     # 修改json文件为使用大图
-    # cg = fileChange.replaceImage()
-    # cg.replaceFile()
+    cg = fileChange.replaceImage()
+    cg.replaceFile()
 else:
     moduleName = "aaa.json"
     print moduleName.split(".")[1]

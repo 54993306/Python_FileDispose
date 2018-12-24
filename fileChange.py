@@ -28,12 +28,20 @@ class replaceImage:
     def initNewPathDict(self):
         allFileMD5 = open(comFun.ALLFILES , "r")
         self.allFileMD5 = json.load(allFileMD5)
+        allFileMD5.close()
 
         newFileMD5 = open(comFun.NEWMD5 , "r")
         self.newFileMD5 = json.load(newFileMD5)
+        newFileMD5.close()
 
         plistMd5 = open(comFun.PLISTMD5 , "r")
         self.plistMd5 = json.load(plistMd5)
+        plistMd5.close()
+
+        newPaths = open(comFun.TYPENEWPATH , "r")
+        self.newPaths = json.load(newPaths)
+        newPaths.close()
+
 
     # 记录替换结果数据
     def recordResult(self):
@@ -138,6 +146,7 @@ class replaceImage:
                 pResDict["new"] = copy.deepcopy(tDict)
         # resDict 用于记录新增 plist 文件
 
+    # 根据原图片路径获取新的图片信息
     def getNewResInfo(self , path):
         if not path:
             return ""
@@ -166,9 +175,14 @@ class replaceImage:
             else:
                 if max(Image.open(path).size) >= comFun.PNG_MAX_SIZE:
                     print "max size path : " + path
+                    if filemd5 in self.newPaths:
+                        print " new big path : " + self.newPaths.get(filemd5)
+                        return self.newPaths.get(filemd5)
+                    else:
+                        print "can't find file in newpath : " + path
                 else:
                     print "can't found plist file : " + path + "  md5:" + filemd5
-                return newFileName    # 只是改了名字没有合并大图的图，只是修改了文件的路径
+                    return newFileName    # 只是改了名字没有合并大图的图，只是修改了文件的路径
 
             newFileDict = {}
             newFileDict["newpath"] = newFileName

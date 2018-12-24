@@ -13,7 +13,6 @@ PNG_MAX_SIZE = 1024  # 输出的图片大小,大多数平台支持的大小
 
 UNPACKAGENUM = 3
 
-FileMd5Dict = {}   #用于记录文件的路径和md5值,避免同一路径多次生成
 FILEPATH = r"D:\Svn_2d\S_GD_Heji\res"
 COPYPATH = r"real_res"
 DICTFILE = "./output/filedict.json"
@@ -42,10 +41,18 @@ CODECSB = r"./output/codecsb.json"
 PLISTINFO = "./output/plistInfo.json"  # 合图后的plist包含的图片信息。
 SORTREFLIST = "./output/sortRefList.json"  # key:path , value:reference
 PLISTMD5 = "./output/plistMd5.json"  # 图片md5值对应存储的plist文件
+TARGETPATH = r"D:\Svn_2d\UI_Shu\Resources/"  # 实际输出路径
+OUTPUTTARGET = r"D:\Python_FileDispose/"
+TYPEPATHS = "./output/resTypePaths.json"  # 文件分类后对应的新路径和md5值，对不进行大图合成的资源进行分类存放
+TYPENEWPATH = "./output/typeNewPaths.json"
 
 #
 CHANGERESULT = r"./output/changefile.json"
 PLISTMD5 = "./output/plistMd5.json"  # 图片md5值对应存储的plist文件
+
+# 为优化打包结构，一些图片，手动选择不用打包
+UNPACKAGERES = {}
+UNPACKAGERES["lastUpdateAD"] = True
 
 def RecordToJsonFile(path , data):
     file_stream = open(path, "w+")
@@ -73,7 +80,7 @@ def Test2(rootDir):
         if os.path.isdir(path):
             Test2(path)
 # Test2(filefilepath)
-
+FileMd5Dict = {}   #用于记录文件的路径和md5值,避免同一路径多次生成
 def getFileMd5( path ):
     if FileMd5Dict.has_key(path):
         return FileMd5Dict.get(path)

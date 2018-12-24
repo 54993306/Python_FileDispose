@@ -15,11 +15,14 @@ PNG_MAX_SIZE = 1024  # 输出的图片大小,大多数平台支持的大小
 PACKAGESOURCE = r"D:\Python_FileDispose\packagesource\\"
 COMMONSOURCE = r"D:\Python_FileDispose\packagesource\\lowcommon"
 PACKAGEOUTPUT = r"D:\\Python_FileDispose\\packageimage\\"
+TYPEOUTPATH = r"D:\\Python_FileDispose/"
 class packageImage:
     plistInfo = {}      # 合图后的plist包含的图片信息。
     sortRefList = {}    # key:path , value:reference
     plistMd5 = {}       # 图片md5值对应存储的plist文件
-    lowRefPath = {}  # 引用计数低的路径
+    lowRefPath = {}     # 引用计数低的路径
+    newResPath = {}     # 结构化存储文件被整理后的路径信息
+    singleNewPath = {}  # 存储md5值和对应分类后的路径
 
     # 将数据都记录到文件中
     def recordData(self):
@@ -29,14 +32,21 @@ class packageImage:
 
         comFun.RecordToJsonFile(comFun.PLISTMD5, self.plistMd5)
 
+        comFun.RecordToJsonFile(comFun.TYPEPATHS, self.newResPath)
+
+        comFun.RecordToJsonFile(comFun.TYPENEWPATH, self.singleNewPath)
+
     def packageRes(self):
+        newFileMD5 = open(comFun.NEWMD5, "r")
+        self.newFileMD5 = json.load(newFileMD5)
         self.sortReference()
-        # self.countPackagImage()  # 文件被移动一次后第二次合成时，会报错，文件已经被移走了
-        # self.modulePackageImage()
+        self.countPackagImage()  # 文件被移动一次后第二次合成时，会报错，文件已经被移走了
+        self.modulePackageImage()
         self.initNewImageInfo()
         self.initPlistMd5()
         self.recordData()
         self.copyOutPutFile()
+        newFileMD5.close()
 
     # 对引用计数进行排序处理，分析需要进行预加载的图片要满足的引用计数最低值是多少
     def sortReference(self):
@@ -62,19 +72,19 @@ class packageImage:
         newFile_stream = open(comFun.NEWMD5 , "r")
         newFileDict = json.load(newFile_stream)
         for tPath , fileinfo in self.sortRefList.iteritems():
-            _, filetype = os.path.splitext(tPath)
-            if cmp(filetype, ".png") != 0:
-                print "not image file: " + tPath
-                continue
             newpath = newFileDict[fileinfo["md5"]]  # 根据老路径直接获取新路径的信息
             if not os.path.isabs(newpath):
                 newpath = os.path.abspath(newpath)
+            _, filetype = os.path.splitext(newpath)
+            if cmp(filetype, ".png") != 0:
+                self.handleOtherRes(newpath)
+                continue
             if fileinfo["refNum"] > 2:  # 将引用计数最高，且合成后大小是1024的合成为一张图
                 # 根据md5值，找到相应的新路径的位置，打包大图使用新路径的打包大图，新路径的图已经修改过名字
                 self.moveResToPath(newpath , SOURCE_FOLDER)
             else:
                 self.lowRefPath[tPath] = newpath
-        self.callPackageTexture(PNG_MAX_SIZE , "foreload" , SOURCE_FOLDER)
+        self.singlePackageTexture(PNG_MAX_SIZE , "foreload" , SOURCE_FOLDER)
         newFile_stream.close()
 
     # 将模块中，引用计数较低的按模块进行打包
@@ -92,13 +102,13 @@ class packageImage:
             for respath in resList:
                 if respath in self.lowRefPath:
                     self.moveResToPath( self.lowRefPath.get(respath) , modulePath)  # 将图片移动到打包的路径下
-                else:
-                    print "not found file in lowRefList : " + respath
+                # else:
+                    # print "not found file in lowRefList : " + respath
             if not self.judgeResNum(modulePath):            # 将模块中只有少量图片的模块集中
                 os.removedirs(modulePath)                   # 将空的文件夹都删掉
                 continue
-            self.callPackageTexture(PNG_MAX_SIZE, moduleName , modulePath) # 将模块下的内容打包输出到指定目录下
-        self.callPackageTexture(PNG_MAX_SIZE, "common", COMMONSOURCE)   # 对模块中的集中图片进行打包
+            self.singlePackageTexture(PNG_MAX_SIZE, moduleName , modulePath) # 将模块下的内容打包输出到指定目录下
+        self.singlePackageTexture(PNG_MAX_SIZE, "common", COMMONSOURCE)   # 对模块中的集中图片进行打包
 
     # 对文件夹中的图片做一个判断处理，当低于3张时不进行直接合图处理。移动到某个位置后，一起合并起来组成通用图统一预加载
     def judgeResNum(self , modulePath):
@@ -119,14 +129,65 @@ class packageImage:
         if not os.path.isfile(resPath):
             return
         if max(Image.open(resPath).size) >= PNG_MAX_SIZE:
-            print "max size path : " + resPath
+            # print "max size path : " + resPath   # 大图也是其他资源的一种
+            self.handleOtherRes(resPath)
         else:
             filename = os.path.basename(resPath)
+            if self.isUnPackageRes(filename):
+                return
             if os.path.isfile(resPath):
                 shutil.move(resPath, sourcePath + "\\" + filename)
             else:
                 print "package Lost file :" + resPath
 
+    # 对png以外的其他资源做处理
+    def handleOtherRes(self , pResPath):
+        if not os.path.isfile(pResPath):
+            return
+        _, filetype = os.path.splitext(pResPath)
+        outPutPath = "res_" + filetype.split(".")[1]
+        if not os.path.isdir(outPutPath):
+            os.mkdir(outPutPath, 0o777)
+            # comFun.TARGETPATH
+        baseName = os.path.basename(pResPath)
+        # 可直接输出到使用路径
+        shutil.copy(pResPath , comFun.OUTPUTTARGET + outPutPath + "/" + baseName)       # 只是移动文件，没有做名字更改处理
+        self.initNewPathRes(pResPath , comFun.OUTPUTTARGET + outPutPath + "/" + baseName , outPutPath)
+
+    # 初始化分类后文件位置信息
+    def initNewPathRes(self , oldPath , newPath , outPutPath):
+        # print "res move: " + oldPath.ljust(58) + ">>> " + newPath
+        resInfo = {}
+        resInfo["md5"] = self.getMd5ByPath(oldPath)
+        resInfo["path"] = newPath
+        self.singleNewPath[resInfo["md5"]] = re.sub(TYPEOUTPATH, "", newPath) # 将多余的路径裁切掉
+        if outPutPath in self.newResPath:
+            resPath = self.newResPath.get(outPutPath)
+            resPath["PathList"].append(resInfo)
+        else:
+            typePaths = {}
+            self.newResPath[outPutPath] = typePaths
+            resList = []
+            resList.append(resInfo)
+            typePaths["PathList"] = resList
+
+    # 根据文件路径获取md5值
+    def getMd5ByPath(self , pPath):
+        for md5 , path in self.newFileMD5.iteritems():
+            if not os.path.isabs(path):
+                path = os.path.abspath(path)
+            if cmp(pPath , path) == 0:
+                return md5
+        print "can't find path md5 : " + pPath
+        return ""
+        # self.newFileMD5
+
+    # 对一些手动选择不打包的资源做处理
+    def isUnPackageRes(self, baseName):
+        baseName,_ = os.path.splitext(baseName)
+        if baseName in comFun.UNPACKAGERES:
+            return True
+        return False
     # 调用打包工具打包图片
     def callPackageTexture(self , PNG_MAX_SIZE , outFileName , SOURCE_FOLDER):
         TEXTURE_PACK_PATH = r"C:\Program Files\CodeAndWeb\TexturePacker\bin"
@@ -135,6 +196,18 @@ class packageImage:
         PNG_PATH = PACKAGEOUTPUT + outFileName +"{n}.png"
         PACKAGE_COMMOND = "TexturePacker.exe %s --data %s --sheet %s --max-size %d %s" % \
                           (PACKAGE_TYPE, PLIST_PATH, PNG_PATH, PNG_MAX_SIZE, SOURCE_FOLDER)
+        CURRPATH = os.getcwd()
+        os.chdir(TEXTURE_PACK_PATH)
+        os.system(PACKAGE_COMMOND)
+        os.chdir(CURRPATH)
+
+    # 使用老版本的TexturePackage进行文件打包处理，将一些超出的大图进行手动删除处理，自动的同时加入一些手动操作，兼容cocosstudio
+    def singlePackageTexture(self, PNG_MAX_SIZE , outFileName , SOURCE_FOLDER):
+        TEXTURE_PACK_PATH = r"C:\Program Files (x86)\TexturePacker\bin"
+        PLIST_PATH = PACKAGEOUTPUT + outFileName + ".plist"
+        PNG_PATH = PACKAGEOUTPUT + outFileName + ".png"
+        PACKAGE_COMMOND = "TexturePacker.exe --data %s --sheet %s --max-size %d %s" % \
+                          (PLIST_PATH, PNG_PATH, PNG_MAX_SIZE, SOURCE_FOLDER)
         CURRPATH = os.getcwd()
         os.chdir(TEXTURE_PACK_PATH)
         os.system(PACKAGE_COMMOND)
@@ -189,7 +262,7 @@ class packageImage:
                 for pngName in pnglist:
                     if cmp(filename , pngName) == 0:
                         plistpath = os.path.abspath(plistpath)
-                        plistpath = re.sub(PACKAGEOUTPUT, "1newplist/", plistpath)
+                        plistpath = re.sub(PACKAGEOUTPUT, "1newplist/", plistpath) # 更改时写入到json中
                         self.plistMd5[md5] = plistpath                  # 文件md5值对应所存储的plist文件
         # print(json.dumps(self.plistMd5, ensure_ascii=False, encoding="utf -8", indent=4))
 
@@ -203,4 +276,7 @@ class packageImage:
                 print(" not found file " + filepath)
                 assert (False)
             shutil.copyfile(filepath, r"D:\Svn_2d\UI_Shu\Resources\1newplist/" + os.path.basename(filepath))
-        #
+
+    # 将被移动的大图和其他资源拷贝到应用目录，手动拷贝？
+    def copyMoveRes(self):
+        print 1
