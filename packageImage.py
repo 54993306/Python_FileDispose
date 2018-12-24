@@ -14,6 +14,7 @@ import xml.etree.ElementTree as ET
 PNG_MAX_SIZE = 1024  # 输出的图片大小,大多数平台支持的大小
 PACKAGESOURCE = r"D:\Python_FileDispose\packagesource\\"
 COMMONSOURCE = r"D:\Python_FileDispose\packagesource\\lowcommon"
+PACKAGEOUTPUT = r"D:\\Python_FileDispose\\packageimage\\"
 class packageImage:
     plistInfo = {}      # 合图后的plist包含的图片信息。
     sortRefList = {}    # key:path , value:reference
@@ -22,28 +23,20 @@ class packageImage:
 
     # 将数据都记录到文件中
     def recordData(self):
-        PLISTINFO = "./output/plistInfo.json"  # 合图后的plist包含的图片信息。
-        plistInfo = open(PLISTINFO , "w+")
-        plistInfo.write(json.dumps(self.plistInfo, ensure_ascii=False, encoding="utf -8", indent=4))
-        plistInfo.close()
+        comFun.RecordToJsonFile(comFun.PLISTINFO , self.plistInfo)
 
-        SORTREFLIST = "./output/sortRefList.json"  # key:path , value:reference
-        sortRefList = open(SORTREFLIST , "w+")
-        sortRefList.write(json.dumps(self.sortRefList, ensure_ascii=False, encoding="utf -8", indent=4))
-        sortRefList.close()
+        comFun.RecordToJsonFile(comFun.SORTREFLIST, self.sortRefList)
 
-        PLISTMD5 = "./output/plistMd5.json"  # 图片md5值对应存储的plist文件
-        plistMd5 = open(PLISTMD5 , "w+")
-        plistMd5.write(json.dumps(self.plistMd5, ensure_ascii=False, encoding="utf -8", indent=4))
-        plistMd5.close()
+        comFun.RecordToJsonFile(comFun.PLISTMD5, self.plistMd5)
 
     def packageRes(self):
         self.sortReference()
-        self.countPackagImage()  # 文件被移动一次后第二次合成时，会报错，文件已经被移走了
-        self.modulePackageImage()
+        # self.countPackagImage()  # 文件被移动一次后第二次合成时，会报错，文件已经被移走了
+        # self.modulePackageImage()
         self.initNewImageInfo()
         self.initPlistMd5()
         self.recordData()
+        self.copyOutPutFile()
 
     # 对引用计数进行排序处理，分析需要进行预加载的图片要满足的引用计数最低值是多少
     def sortReference(self):
@@ -138,8 +131,8 @@ class packageImage:
     def callPackageTexture(self , PNG_MAX_SIZE , outFileName , SOURCE_FOLDER):
         TEXTURE_PACK_PATH = r"C:\Program Files\CodeAndWeb\TexturePacker\bin"
         PACKAGE_TYPE = r"--multipack"
-        PLIST_PATH = r"D:\Python_FileDispose\packageimage\\"+ outFileName +"{n}.plist"
-        PNG_PATH = r"D:\Python_FileDispose\packageimage\\"+ outFileName +"{n}.png"
+        PLIST_PATH = PACKAGEOUTPUT + outFileName +"{n}.plist"
+        PNG_PATH = PACKAGEOUTPUT + outFileName +"{n}.png"
         PACKAGE_COMMOND = "TexturePacker.exe %s --data %s --sheet %s --max-size %d %s" % \
                           (PACKAGE_TYPE, PLIST_PATH, PNG_PATH, PNG_MAX_SIZE, SOURCE_FOLDER)
         CURRPATH = os.getcwd()
@@ -149,9 +142,8 @@ class packageImage:
 
     # 读取输出路径中的plist文件获取大图中的资源信息
     def initNewImageInfo(self):
-        PLIST_PATH = r"D:\Python_FileDispose\packageimage\\"
         folderFiles = []  # 存储所有的json文件
-        comFun.initPathFiles(PLIST_PATH, folderFiles)
+        comFun.initPathFiles(PACKAGEOUTPUT, folderFiles)
         for plistPath in folderFiles:
             if not os.path.isabs(plistPath):
                 plistPath = os.path.abspath(plistPath)
@@ -197,5 +189,18 @@ class packageImage:
                 for pngName in pnglist:
                     if cmp(filename , pngName) == 0:
                         plistpath = os.path.abspath(plistpath)
+                        plistpath = re.sub(PACKAGEOUTPUT, "1newplist/", plistpath)
                         self.plistMd5[md5] = plistpath                  # 文件md5值对应所存储的plist文件
         # print(json.dumps(self.plistMd5, ensure_ascii=False, encoding="utf -8", indent=4))
+
+    def copyOutPutFile(self):
+        folderFiles = []  # 存储所有的json文件
+        comFun.initPathFiles(PACKAGEOUTPUT, folderFiles)
+        for filepath in folderFiles:
+            if not os.path.isabs(filepath):
+                filepath = os.path.abspath(filepath)
+            if not os.path.isfile(filepath):
+                print(" not found file " + filepath)
+                assert (False)
+            shutil.copyfile(filepath, r"D:\Svn_2d\UI_Shu\Resources\1newplist/" + os.path.basename(filepath))
+        #

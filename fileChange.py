@@ -22,19 +22,17 @@ class replaceImage:
     allFileMD5 = {}
     newFileMD5 = {}
     plistMd5 = {}
+    resNum = 0
 
     # 根据老图的路径，获取新图所在位置,老路径对应的新图的大图路径和plist文件信息
     def initNewPathDict(self):
-        ALLFILES = "./output/allfile.json"
-        allFileMD5 = open(ALLFILES , "r")
+        allFileMD5 = open(comFun.ALLFILES , "r")
         self.allFileMD5 = json.load(allFileMD5)
 
-        NEWMD5 = "./output/newmd5.json"
-        newFileMD5 = open(NEWMD5 , "r")
+        newFileMD5 = open(comFun.NEWMD5 , "r")
         self.newFileMD5 = json.load(newFileMD5)
 
-        PLISTMD5 = "./output/plistMd5.json"  # 图片md5值对应存储的plist文件
-        plistMd5 = open(PLISTMD5 , "r")
+        plistMd5 = open(comFun.PLISTMD5 , "r")
         self.plistMd5 = json.load(plistMd5)
 
     # 记录替换结果数据
@@ -69,13 +67,14 @@ class replaceImage:
         json_stream = open(newJsonFile, "r+")
         if not json_stream:
             assert (False)
-        jsondict = json.load(json_stream, object_pairs_hook=collections.OrderedDict)
+        jsondict = json.load(json_stream, object_pairs_hook=collections.OrderedDict )
         outPutFile = "./newJson/1output.json"
         resDict = {}
         self.changeRecord[newJsonFile] = resDict                        # 只是复制了一个引用
         self.searchNodeTree(jsondict.get("widgetTree"), resDict)
         str_strean = open(outPutFile, "w+")
-        json.dump(jsondict, str_strean)
+        # json.dump(jsondict, str_strean)
+        str_strean.write(json.dumps(jsondict, encoding="utf -8", indent=4))
         str_strean.close()
         json_stream.close()
 
@@ -103,8 +102,9 @@ class replaceImage:
                 # print "not have resourceType tag:" + str(pNode["options"]["tag"])  # 输出对应节点的tag，用于手动验证
                 return
             # rjust(right)右对齐， ljust(left)左对齐
-            print("Node tag : " + str(pNode["options"]["tag"]).ljust(6) + " resNum :" + str(len(tDictList)))    # 输出每个需要修改的类型的tag是否有重复部分
-            # self.changeResPath(tDictList, pResDict)
+            # print("Node tag : " + str(pNode["options"]["tag"]).ljust(6) + " resNum :" + str(len(tDictList)))
+            # 输出每个需要修改的类型的tag是否有重复部分
+            self.changeResPath(tDictList, pResDict)
         else:
             print "child un has options"
             assert (False)
@@ -124,13 +124,13 @@ class replaceImage:
     # 修改后，如果使用到了新的plist文件中的资源，要在textures中添加plist文件
     def changeResPath(self , pDictList , pResDict):
         for tDict in pDictList:
-            if not tDict["resourceType"]:
+            if not tDict["resourceType"] and tDict["path"]:
                 pResDict["old"] = copy.deepcopy(tDict)
                 newFileDict = self.getNewResInfo(tDict["path"])
                 if type(newFileDict)is types.DictType:
-                    tDict["path"] = newFileDict["name"]  # 直接改动生效
-                    tDict["resourceType"] = 1
+                    tDict["path"] = newFileDict["newpath"]  # 直接改动生效
                     tDict["plistFile"] = newFileDict["plist"]
+                    tDict["resourceType"] = 1
                 else:
                     tDict["path"] = newFileDict
                     tDict["resourceType"] = 0
@@ -162,6 +162,7 @@ class replaceImage:
             plistpath = None
             if filemd5 in self.plistMd5:
                 plistpath = self.plistMd5.get(filemd5)
+                newFileName = os.path.basename(newFileName)
             else:
                 if max(Image.open(path).size) >= comFun.PNG_MAX_SIZE:
                     print "max size path : " + path
@@ -170,7 +171,7 @@ class replaceImage:
                 return newFileName    # 只是改了名字没有合并大图的图，只是修改了文件的路径
 
             newFileDict = {}
-            newFileDict["name"] = newFileName
+            newFileDict["newpath"] = newFileName
             newFileDict["plist"] = plistpath
             newFileDict["oldpath"] = path
             # print json.dumps(newFileDict, ensure_ascii=False, encoding="utf -8", indent=4)

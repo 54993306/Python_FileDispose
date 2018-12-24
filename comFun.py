@@ -38,8 +38,19 @@ CODERESFILE = r"./output/coderesline.json"
 CODEUNREGULARFILE = r"./output/codeUnregularline.json"
 CODECSB = r"./output/codecsb.json"
 
+# package
+PLISTINFO = "./output/plistInfo.json"  # 合图后的plist包含的图片信息。
+SORTREFLIST = "./output/sortRefList.json"  # key:path , value:reference
+PLISTMD5 = "./output/plistMd5.json"  # 图片md5值对应存储的plist文件
+
 #
 CHANGERESULT = r"./output/changefile.json"
+PLISTMD5 = "./output/plistMd5.json"  # 图片md5值对应存储的plist文件
+
+def RecordToJsonFile(path , data):
+    file_stream = open(path, "w+")
+    file_stream.write(json.dumps(data, ensure_ascii=False, encoding="utf -8", indent=4))
+    file_stream.close()
 
 def initPathFiles(filepath , list):
     if os.path.isdir(filepath):
