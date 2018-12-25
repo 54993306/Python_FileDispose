@@ -86,7 +86,7 @@ class packageImage:
                 self.moveResToPath(newpath , SOURCE_FOLDER)
             else:
                 self.lowRefPath[tPath] = newpath
-        self.singlePackageTexture(PNG_MAX_SIZE , "foreload" , SOURCE_FOLDER)
+        # self.singlePackageTexture(PNG_MAX_SIZE , "foreload" , SOURCE_FOLDER)
         newFile_stream.close()
 
     # 将模块中，引用计数较低的按模块进行打包
@@ -109,8 +109,8 @@ class packageImage:
             if not self.judgeResNum(modulePath):            # 将模块中只有少量图片的模块集中
                 os.removedirs(modulePath)                   # 将空的文件夹都删掉
                 continue
-            self.singlePackageTexture(PNG_MAX_SIZE, moduleName , modulePath) # 将模块下的内容打包输出到指定目录下
-        self.singlePackageTexture(PNG_MAX_SIZE, "common", COMMONSOURCE)   # 对模块中的集中图片进行打包
+            # self.singlePackageTexture(PNG_MAX_SIZE, moduleName , modulePath) # 将模块下的内容打包输出到指定目录下
+        # self.singlePackageTexture(PNG_MAX_SIZE, "common", COMMONSOURCE)   # 对模块中的集中图片进行打包
 
     # 对文件夹中的图片做一个判断处理，当低于3张时不进行直接合图处理。移动到某个位置后，一起合并起来组成通用图统一预加载
     def judgeResNum(self , modulePath):
@@ -155,8 +155,36 @@ class packageImage:
             self.outPutFolder[outPutPath] = True
         baseName = os.path.basename(pResPath)
         # 可直接输出到使用路径
+
+        self.specialTypeHandle(pResPath , outPutPath)
         shutil.copy(pResPath , comFun.OUTPUTTARGET + outPutPath + "/" + baseName)       # 只是移动文件，没有做名字更改处理
         self.initNewPathRes(pResPath , comFun.OUTPUTTARGET + outPutPath + "/" + baseName , outPutPath)
+
+    # 对特殊的资源文件进行处理
+    def specialTypeHandle(self , pResPath , outPutPath):
+        _, filetype = os.path.splitext(pResPath)
+        if cmp(filetype , ".fnt") == 0:
+            pResPath = re.sub(r".fnt" , r".png" , pResPath)
+            if os.path.isfile(pResPath):
+                baseName = os.path.basename(pResPath)
+                shutil.copy(pResPath, comFun.OUTPUTTARGET + outPutPath + "/" + baseName)
+            else:
+                if not hasattr(self , "repeatData"):
+                    repeat_stream = open(comFun.REPEATFILE, "r")
+                    self.repeatData = json.load(repeat_stream)
+                    repeat_stream.close()
+                md5Code = ""
+                baseName = os.path.basename(pResPath)
+                for md5 , fileinfo in self.repeatData.iteritems():
+                    for filepath in fileinfo["oldpath"]:
+                        if re.search(baseName , filepath):
+                            md5Code = md5
+                            break
+                if not md5Code:
+                    assert(False)
+                fileinfo = self.repeatData.get(md5Code)
+                shutil.copy(fileinfo["currPath"], comFun.OUTPUTTARGET + outPutPath + "/" + baseName)
+
 
     # 初始化分类后文件位置信息
     def initNewPathRes(self , oldPath , newPath , outPutPath):

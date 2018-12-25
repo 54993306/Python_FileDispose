@@ -24,30 +24,17 @@ class totalRes:
     allFiles = {}           # 存储所有文件和文件对应md5值 未去重，避免多次生成文件md5值
     # 将内容记录到文件中
     def recordToFile(self):
-        filedict = open(comFun.DICTFILE , "w+")
-        filedict.write(json.dumps(self.filedict, ensure_ascii=False, encoding="utf -8", indent=4))
-        filedict.close()
+        comFun.RecordToJsonFile(comFun.DICTFILE, self.filedict)
 
-        sizeOrder = open(comFun.SIZEFILE , "w+")
-        sizeOrder.write(json.dumps(self.sizeOrder, ensure_ascii=False, encoding="utf -8", indent=4))
-        sizeOrder.close()
+        comFun.RecordToJsonFile(comFun.SIZEFILE, self.sizeOrder)
 
-        md5List = open(comFun.MD5FILE , "w+")
-        md5List.write(json.dumps(self.notRepeatmd5List, ensure_ascii=False, encoding="utf -8", indent=4))
-        md5List.close()
+        comFun.RecordToJsonFile(comFun.MD5FILE, self.notRepeatmd5List)
 
-        repeatList = open(comFun.REPEATFILE , "w+")
-        repeatList.write(json.dumps(self.repeatList, ensure_ascii=False, encoding="utf -8", indent=4))
-        repeatList.close()
+        comFun.RecordToJsonFile(comFun.REPEATFILE, self.repeatList)
 
-        allFiles = open(comFun.ALLFILES , "w+")
-        allFiles.write(json.dumps(self.allFiles, ensure_ascii=False, encoding="utf -8", indent=4))
-        allFiles.close()
+        comFun.RecordToJsonFile(comFun.ALLFILES, self.allFiles)
 
-
-        newFileMd5 = open(comFun.NEWMD5 , "w+")
-        newFileMd5.write(json.dumps(self.newFileMd5, ensure_ascii=False, encoding="utf -8", indent=4))
-        newFileMd5.close()
+        comFun.RecordToJsonFile(comFun.NEWMD5, self.newFileMd5)
 
     # 初始化文件表
     def initFileDict(self , refresh = False):
