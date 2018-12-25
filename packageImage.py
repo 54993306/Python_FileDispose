@@ -275,7 +275,7 @@ class packageImage:
             if not os.path.isfile(filepath):
                 print(" not found file " + filepath)
                 assert (False)
-            shutil.copyfile(filepath, r"D:\Svn_2d\UI_Shu\Resources\1newplist/" + os.path.basename(filepath))
+            shutil.copyfile(filepath, TARGETPATH + "1newplist/" + os.path.basename(filepath))
 
     # 将被移动的大图和其他资源拷贝到应用目录，手动拷贝？
     def copyMoveRes(self):

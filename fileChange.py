@@ -80,6 +80,7 @@ class replaceImage:
         resDict = {}
         self.changeRecord[newJsonFile] = resDict                        # 只是复制了一个引用
         self.searchNodeTree(jsondict.get("widgetTree"), resDict)
+        # print json.dumps(resDict, ensure_ascii=False, encoding="utf -8", indent=4)
         str_strean = open(outPutFile, "w+")
         # json.dump(jsondict, str_strean)
         str_strean.write(json.dumps(jsondict, encoding="utf -8", indent=4))
@@ -102,17 +103,23 @@ class replaceImage:
             if child.get("children"):
                 self.searchChildren(child.get("children"), pResDict)
 
+    # 从options数组中找资源信息
     def searchOptions(self, pNode , pResDict):
         if pNode.has_key("options"):
-            tDictList = []
-            self.searchForKey(pNode["options"], "resourceType" , tDictList)
-            if not tDictList:
+            tDictRes = []
+            self.searchForKey(pNode["options"], "resourceType" , tDictRes)
+            if tDictRes:
+                # rjust(right)右对齐， ljust(left)左对齐
+                # print("Node tag : " + str(pNode["options"]["tag"]).ljust(6) + " resNum :" + str(len(tDictRes)))
+                # 输出每个需要修改的类型的tag是否有重复部分
+                self.changeResPath(tDictRes, pResDict)
+            # else:
                 # print "not have resourceType tag:" + str(pNode["options"]["tag"])  # 输出对应节点的tag，用于手动验证
-                return
-            # rjust(right)右对齐， ljust(left)左对齐
-            # print("Node tag : " + str(pNode["options"]["tag"]).ljust(6) + " resNum :" + str(len(tDictList)))
-            # 输出每个需要修改的类型的tag是否有重复部分
-            self.changeResPath(tDictList, pResDict)
+
+            tDictFont = []
+            self.searchForKey(pNode["options"], "fontName", tDictFont)
+            if tDictFont:
+                self.changeFontPath(tDictFont , pResDict)
         else:
             print "child un has options"
             assert (False)
@@ -133,7 +140,9 @@ class replaceImage:
     def changeResPath(self , pDictList , pResDict):
         for tDict in pDictList:
             if not tDict["resourceType"] and tDict["path"]:
-                pResDict["old"] = copy.deepcopy(tDict)
+                record = {}
+                pResDict[str(len(pResDict))] = record
+                record["old"] = copy.deepcopy(tDict)
                 newFileDict = self.getNewResInfo(tDict["path"])
                 if type(newFileDict)is types.DictType:
                     tDict["path"] = newFileDict["newpath"]  # 直接改动生效
@@ -143,52 +152,80 @@ class replaceImage:
                     tDict["path"] = newFileDict
                     tDict["resourceType"] = 0
                     tDict["plistFile"] = ""
-                pResDict["new"] = copy.deepcopy(tDict)
+                record["new"] = copy.deepcopy(tDict)
         # resDict 用于记录新增 plist 文件
+
+    def changeFontPath(self , pDictList , pResDict):
+        for tDict in pDictList:
+            if tDict["fontName"]:
+                # tDict["fontName"]
+                # tDict["fontName"] = self.getNewFontInfo(tDict["fontName"]) # 字体还有微软雅黑类型
+                tDict["fontName"] = "res_TTF/1283_fangzhengcuyuan.TTF" # 统一字体格式
+
 
     # 根据原图片路径获取新的图片信息
     def getNewResInfo(self , path):
+        filemd5 = self.getFileMd5(path)
+        newFileName = self.getNewFilePath(filemd5)
+
+        plistpath = None
+        if filemd5 in self.plistMd5:
+            plistpath = self.plistMd5.get(filemd5)
+            newFileName = os.path.basename(newFileName)
+        else:
+            _,filetype = os.path.splitext(newFileName)
+            if cmp(filetype , ".png") != 0:
+                return self.otherFileData(filemd5)
+            if max(Image.open(newFileName).size) >= comFun.PNG_MAX_SIZE:
+                print "max size path : " + path
+                return self.otherFileData(filemd5)
+            else:
+                print "can't found plist file : " + path + "  md5:" + filemd5
+                return newFileName    # 只是改了名字没有合并大图的图，只是修改了文件的路径
+
+        newFileDict = {}
+        newFileDict["newpath"] = newFileName
+        newFileDict["plist"] = plistpath
+        newFileDict["oldpath"] = path
+        # print json.dumps(newFileDict, ensure_ascii=False, encoding="utf -8", indent=4)
+        return newFileDict
+
+    # 获取文件md5值
+    def getFileMd5(self , path):
         if not path:
             return ""
         path = r"D:\Svn_2d\S_GD_Heji\res/hall/" + path
         if not os.path.isabs(path):
             path = os.path.abspath(path)
+        filemd5 = None
         if os.path.isfile(path):
-            filemd5 = None
             if path in self.allFileMD5:
                 filemd5 = self.allFileMD5.get(path)
             else:
                 print "can't found md5 : " + path
                 assert(False)
-
-            newFileName = None
-            if filemd5 in self.newFileMD5:
-                newFileName = self.newFileMD5.get(filemd5)
-            else:
-                print "can't found new file name : " + path + " md5 : " + filemd5
-                return
-
-            plistpath = None
-            if filemd5 in self.plistMd5:
-                plistpath = self.plistMd5.get(filemd5)
-                newFileName = os.path.basename(newFileName)
-            else:
-                if max(Image.open(path).size) >= comFun.PNG_MAX_SIZE:
-                    print "max size path : " + path
-                    if filemd5 in self.newPaths:
-                        print " new big path : " + self.newPaths.get(filemd5)
-                        return self.newPaths.get(filemd5)
-                    else:
-                        print "can't find file in newpath : " + path
-                else:
-                    print "can't found plist file : " + path + "  md5:" + filemd5
-                    return newFileName    # 只是改了名字没有合并大图的图，只是修改了文件的路径
-
-            newFileDict = {}
-            newFileDict["newpath"] = newFileName
-            newFileDict["plist"] = plistpath
-            newFileDict["oldpath"] = path
-            # print json.dumps(newFileDict, ensure_ascii=False, encoding="utf -8", indent=4)
-            return newFileDict
         else:
             print "can't find file :" + path
+        return filemd5
+
+    # 根据md5值获取文件新路径
+    def getNewFilePath(self , filemd5):
+        newFileName = None
+        if filemd5 in self.newFileMD5:
+            newFileName = self.newFileMD5.get(filemd5)
+        else:
+            print "can't found new file name : " + path + " md5 : " + filemd5
+        return newFileName
+
+    # 对fnt类的用户自定义的字体(LabelBMFont)进行处理
+    def otherFileData(self , filemd5):
+        if filemd5 in self.newPaths:
+            print " new big path : " + self.newPaths.get(filemd5)
+            return self.newPaths.get(filemd5)
+        else:
+            assert(False)
+
+    # 获取新的字体路径，实际上需要统一字体为方正粗圆
+    def getNewFontInfo(self , path):
+        filemd5 = self.getFileMd5(path)
+        return self.otherFileData(filemd5)
