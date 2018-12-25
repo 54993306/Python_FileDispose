@@ -91,9 +91,9 @@ class packageImage:
 
     # 将模块中，引用计数较低的按模块进行打包
     def modulePackageImage(self):
-        jsonres_stream = open(comFun.JSONHAVARES , "r")
-        jsonresDict = json.load(jsonres_stream)
-        for jsonpath , resList in jsonresDict.iteritems():   # 对模块进行遍历
+        jsonres_stream = open(comFun.COLLATINGJSON , "r")
+        collatingJsonRes = json.load(jsonres_stream)
+        for jsonpath , resList in collatingJsonRes.iteritems():   # json对应一个模块，对模块进行遍历
             # 如果模块只有少量一两张图的情况如何处理？
             # 考虑将内容少的模块统一合成一张图进行预加载
             moduleName = os.path.basename(jsonpath)
@@ -108,7 +108,6 @@ class packageImage:
                     # print "not found file in lowRefList : " + respath
             if not self.judgeResNum(modulePath):            # 将模块中只有少量图片的模块集中
                 os.removedirs(modulePath)                   # 将空的文件夹都删掉
-                continue
             self.singlePackageTexture(PNG_MAX_SIZE, moduleName , modulePath) # 将模块下的内容打包输出到指定目录下
         self.singlePackageTexture(PNG_MAX_SIZE, "common", COMMONSOURCE)   # 对模块中的集中图片进行打包
 
@@ -138,7 +137,7 @@ class packageImage:
             if self.isUnPackageRes(filename):
                 return
             if os.path.isfile(resPath):
-                shutil.move(resPath, sourcePath + "\\" + filename)
+                shutil.move(resPath, sourcePath + "\\" + filename)          # 剪切的方式进行文件移动打包
             else:
                 print "package Lost file :" + resPath
 

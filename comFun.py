@@ -26,6 +26,7 @@ NEWMD5 = "./output/newmd5.json"
 SEARCHJSONPATH = "D:\Svn_2d\UI_Shu\Json"            # 只是竖版的大厅部分json
 REALPATH = r"D:\Svn_2d\S_GD_Heji\res/hall/"         # 资源的具体位置和json的位置相关
 JSONHAVARES = "./output/jsonres.json"
+COLLATINGJSON = "./output/collatingjsonres.json"    # 整理之后的json资源
 REFERENCEFILE = "./output/reference.json"
 NOTFOUND = "./output/notfound.json"
 REPEATFILE = "./output/repeatfile.json"

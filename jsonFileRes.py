@@ -20,22 +20,18 @@ class jsonRes:
     comFun.initPathFiles(comFun.SEARCHJSONPATH , folderFiles)
 
     json_res = {}           #json文件中包含的资源map
+    collatingJson = {}      # 整理后的json数据
     referenceCount = {}     # 资源引用计数统计
     notFountFile = {}       # 在json中使用但是未找到的资源文件
 
     def recordFile(self):
-        json_res = open(comFun.JSONHAVARES, "w+")   # 将数据写入文件中
-        json_res.write(json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4))
-        # json.dump(self.json_res, json_stream)
-        json_res.close()
+        comFun.RecordToJsonFile(comFun.JSONHAVARES, self.json_res)
 
-        referenceCount = open(comFun.REFERENCEFILE, "w+")   # 将数据写入文件中
-        referenceCount.write(json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4))
-        referenceCount.close()
+        comFun.RecordToJsonFile(comFun.COLLATINGJSON, self.collatingJson)
 
-        notFountFile = open(comFun.NOTFOUND, "w+")   # 将数据写入文件中
-        notFountFile.write(json.dumps(self.notFountFile, ensure_ascii=False, encoding="utf-8", indent=4))
-        notFountFile.close()
+        comFun.RecordToJsonFile(comFun.REFERENCEFILE, self.referenceCount)
+
+        comFun.RecordToJsonFile(comFun.NOTFOUND, self.notFountFile)
 
     def initRecordFile(self , refresh = False):
         refresh = True
@@ -55,11 +51,14 @@ class jsonRes:
             self.iniJsonFileList()
         self.initReferenceCount() # 可以跟json_res一起执行，但是耦合逻辑太多，拆出来逻辑清楚，但是性能消耗
         self.recordFile()
+
     # 资源文件在json中被引用的次数，json中包含的资源，被引用的次数
     def initReferenceCount(self , refresh = False):  #初始化文件引用计数表
         repeat_stream = open(comFun.REPEATFILE , "r")
         repeatDict = json.load(repeat_stream)
         for jsonpath , paths in self.json_res.iteritems():
+            collatingResList = []
+            self.collatingJson[jsonpath] = collatingResList
             for path in paths:
                 if not os.path.isabs(path):
                     path = os.path.abspath(path)
@@ -81,6 +80,8 @@ class jsonRes:
                         else:
                             print "type not found in dict : " + path
                             assert(False)
+                    if not path in collatingResList:
+                        collatingResList.append(path)
                     if md5Code:
                         self.addReferenceNum(md5Code, jsonpath, path)
                     else:
