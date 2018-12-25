@@ -108,6 +108,7 @@ class packageImage:
                     # print "not found file in lowRefList : " + respath
             if not self.judgeResNum(modulePath):            # 将模块中只有少量图片的模块集中
                 os.removedirs(modulePath)                   # 将空的文件夹都删掉
+                continue
             self.singlePackageTexture(PNG_MAX_SIZE, moduleName , modulePath) # 将模块下的内容打包输出到指定目录下
         self.singlePackageTexture(PNG_MAX_SIZE, "common", COMMONSOURCE)   # 对模块中的集中图片进行打包
 
