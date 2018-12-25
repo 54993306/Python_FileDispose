@@ -52,7 +52,7 @@ class replaceImage:
     # 做新旧资源替换
     def replaceFile(self):
         self.initNewPathDict()
-        jsonPaths = ["D:\Svn_2d\UI_Shu\Json/hall.json"]
+        jsonPaths = ["D:\Svn_2d\UI_Shu\Json/infoNode.json"]
         if not os.path.exists(outputPath):
             os.mkdir(outputPath , 0o777)        # 创建输出路径
         for jsonPath in jsonPaths:
@@ -76,7 +76,7 @@ class replaceImage:
         if not json_stream:
             assert (False)
         jsondict = json.load(json_stream, object_pairs_hook=collections.OrderedDict )
-        outPutFile = "./newJson/1output.json"
+        outPutFile = "./newJson/" + os.path.basename(newJsonFile)
         resDict = {}
         self.changeRecord[newJsonFile] = resDict                        # 只是复制了一个引用
         self.searchNodeTree(jsondict.get("widgetTree"), resDict)
@@ -180,7 +180,7 @@ class replaceImage:
                 print "max size path : " + path
                 return self.otherFileData(filemd5)
             else:
-                print "can't found plist file : " + path + "  md5:" + filemd5
+                print "can't found plist file : " + path + "  md5:" + filemd5 + " newPath :" + newFileName
                 return newFileName    # 只是改了名字没有合并大图的图，只是修改了文件的路径
 
         newFileDict = {}
@@ -220,7 +220,7 @@ class replaceImage:
     # 对fnt类的用户自定义的字体(LabelBMFont)进行处理
     def otherFileData(self , filemd5):
         if filemd5 in self.newPaths:
-            print " new big path : " + self.newPaths.get(filemd5)
+            print "new big path : " + self.newPaths.get(filemd5)
             return self.newPaths.get(filemd5)
         else:
             assert(False)

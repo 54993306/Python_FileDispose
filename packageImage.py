@@ -23,6 +23,7 @@ class packageImage:
     lowRefPath = {}     # 引用计数低的路径
     newResPath = {}     # 结构化存储文件被整理后的路径信息
     singleNewPath = {}  # 存储md5值和对应分类后的路径
+    outPutFolder = {}   # 生成的文件夹
 
     # 将数据都记录到文件中
     def recordData(self):
@@ -46,6 +47,7 @@ class packageImage:
         self.initPlistMd5()
         self.recordData()
         self.copyOutPutFile()
+        self.copyMoveRes()
         newFileMD5.close()
 
     # 对引用计数进行排序处理，分析需要进行预加载的图片要满足的引用计数最低值是多少
@@ -149,6 +151,8 @@ class packageImage:
         if not os.path.isdir(outPutPath):
             os.mkdir(outPutPath, 0o777)
             # comFun.TARGETPATH
+        if not outPutPath in self.outPutFolder:
+            self.outPutFolder[outPutPath] = True
         baseName = os.path.basename(pResPath)
         # 可直接输出到使用路径
         shutil.copy(pResPath , comFun.OUTPUTTARGET + outPutPath + "/" + baseName)       # 只是移动文件，没有做名字更改处理
@@ -262,21 +266,31 @@ class packageImage:
                 for pngName in pnglist:
                     if cmp(filename , pngName) == 0:
                         plistpath = os.path.abspath(plistpath)
-                        plistpath = re.sub(PACKAGEOUTPUT, "1newplist/", plistpath) # 更改时写入到json中
+                        plistpath = re.sub(PACKAGEOUTPUT, "1newplist/", plistpath) # 更改时写入到json中的plist文件路径
                         self.plistMd5[md5] = plistpath                  # 文件md5值对应所存储的plist文件
         # print(json.dumps(self.plistMd5, ensure_ascii=False, encoding="utf -8", indent=4))
 
+    # 拷贝输出的plist文件到指定目录
     def copyOutPutFile(self):
         folderFiles = []  # 存储所有的json文件
         comFun.initPathFiles(PACKAGEOUTPUT, folderFiles)
-        for filepath in folderFiles:
+        self.copyFilesToPath(folderFiles, comFun.TARGETPATH + "1newplist/")
+
+    # 将被移动的大图和其他资源拷贝到应用目录
+    def copyMoveRes(self):
+        for folderpath in self.outPutFolder.iterkeys():
+            folderFiles = []  # 存储所有的json文件
+            comFun.initPathFiles(folderpath, folderFiles)
+            self.copyFilesToPath(folderFiles , comFun.TARGETPATH + folderpath)
+
+    # 将文件列表复制到指定目录
+    def copyFilesToPath(self , files , path):
+        if not os.path.isdir(path):
+            os.mkdir(path, 0o777)
+        for filepath in files:
             if not os.path.isabs(filepath):
                 filepath = os.path.abspath(filepath)
             if not os.path.isfile(filepath):
                 print(" not found file " + filepath)
                 assert (False)
-            shutil.copyfile(filepath, TARGETPATH + "1newplist/" + os.path.basename(filepath))
-
-    # 将被移动的大图和其他资源拷贝到应用目录，手动拷贝？
-    def copyMoveRes(self):
-        print 1
+            shutil.copyfile(filepath, path+ "/" + os.path.basename(filepath))
