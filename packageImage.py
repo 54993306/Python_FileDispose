@@ -86,7 +86,7 @@ class packageImage:
                 self.moveResToPath(newpath , SOURCE_FOLDER)
             else:
                 self.lowRefPath[tPath] = newpath
-        # self.singlePackageTexture(PNG_MAX_SIZE , "foreload" , SOURCE_FOLDER)
+        self.singlePackageTexture(PNG_MAX_SIZE , "foreload" , SOURCE_FOLDER)
         newFile_stream.close()
 
     # 将模块中，引用计数较低的按模块进行打包
@@ -109,8 +109,8 @@ class packageImage:
             if not self.judgeResNum(modulePath):            # 将模块中只有少量图片的模块集中
                 os.removedirs(modulePath)                   # 将空的文件夹都删掉
                 continue
-            # self.singlePackageTexture(PNG_MAX_SIZE, moduleName , modulePath) # 将模块下的内容打包输出到指定目录下
-        # self.singlePackageTexture(PNG_MAX_SIZE, "common", COMMONSOURCE)   # 对模块中的集中图片进行打包
+            self.singlePackageTexture(PNG_MAX_SIZE, moduleName , modulePath) # 将模块下的内容打包输出到指定目录下
+        self.singlePackageTexture(PNG_MAX_SIZE, "common", COMMONSOURCE)   # 对模块中的集中图片进行打包
 
     # 对文件夹中的图片做一个判断处理，当低于3张时不进行直接合图处理。移动到某个位置后，一起合并起来组成通用图统一预加载
     def judgeResNum(self , modulePath):
@@ -136,6 +136,7 @@ class packageImage:
         else:
             filename = os.path.basename(resPath)
             if self.isUnPackageRes(filename):
+                self.handleOtherRes(resPath)
                 return
             if os.path.isfile(resPath):
                 shutil.move(resPath, sourcePath + "\\" + filename)          # 剪切的方式进行文件移动打包
@@ -156,14 +157,14 @@ class packageImage:
         baseName = os.path.basename(pResPath)
         # 可直接输出到使用路径
 
-        self.specialTypeHandle(pResPath , outPutPath)
+        self.fntTypeHandle(pResPath , outPutPath)
         shutil.copy(pResPath , comFun.OUTPUTTARGET + outPutPath + "/" + baseName)       # 只是移动文件，没有做名字更改处理
         self.initNewPathRes(pResPath , comFun.OUTPUTTARGET + outPutPath + "/" + baseName , outPutPath)
 
     # 对特殊的资源文件进行处理
-    def specialTypeHandle(self , pResPath , outPutPath):
+    def fntTypeHandle(self , pResPath , outPutPath):
         _, filetype = os.path.splitext(pResPath)
-        if cmp(filetype , ".fnt") == 0:
+        if cmp(filetype , ".fnt") == 0:    # 针对fnt类文件进行特殊处理
             pResPath = re.sub(r".fnt" , r".png" , pResPath)
             if os.path.isfile(pResPath):
                 baseName = os.path.basename(pResPath)
@@ -315,10 +316,12 @@ class packageImage:
     def copyFilesToPath(self , files , path):
         if not os.path.isdir(path):
             os.mkdir(path, 0o777)
+        else:
+            os.chmod(path, 0o777)       # 当cocosstudio在运行时会提示权限不足
         for filepath in files:
             if not os.path.isabs(filepath):
                 filepath = os.path.abspath(filepath)
             if not os.path.isfile(filepath):
                 print(" not found file " + filepath)
                 assert (False)
-            shutil.copyfile(filepath, path+ "/" + os.path.basename(filepath))
+            shutil.copyfile(filepath, path + "/" + os.path.basename(filepath))

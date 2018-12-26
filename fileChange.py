@@ -52,7 +52,9 @@ class replaceImage:
     # 做新旧资源替换
     def replaceFile(self):
         self.initNewPathDict()
-        jsonPaths = ["D:\Svn_2d\UI_Shu\Json/infoNode.json"]
+        jsonPaths = []
+        comFun.initPathFiles(comFun.SEARCHJSONPATH , jsonPaths)
+        # jsonPaths = ["D:\Svn_2d\UI_Shu\Json/obtain_prop_dialog.json"]
         if not os.path.exists(outputPath):
             os.mkdir(outputPath , 0o777)        # 创建输出路径
         for jsonPath in jsonPaths:
@@ -61,12 +63,13 @@ class replaceImage:
             if not re.search(r".json" , jsonPath):
                 assert(False)
             _ , filename = os.path.split(jsonPath)
-            newFilePath = outputPath +filename
+            newFilePath = outputPath + filename
             shutil.copyfile(jsonPath , newFilePath)
             if not os.path.isabs(newFilePath):
                 newFilePath = os.path.abspath(newFilePath)
             if not os.path.isfile(newFilePath):
                 assert(False)
+            print "change json : " + jsonPath
             self.streamDispose(newFilePath)
         self.recordResult()
 
@@ -166,6 +169,8 @@ class replaceImage:
     # 根据原图片路径获取新的图片信息
     def getNewResInfo(self , path):
         filemd5 = self.getFileMd5(path)
+        if not filemd5:
+            return path
         newFileName = self.getNewFilePath(filemd5)
 
         plistpath = None
@@ -177,9 +182,13 @@ class replaceImage:
             if cmp(filetype , ".png") != 0:
                 return self.otherFileData(filemd5)
             if max(Image.open(newFileName).size) >= comFun.PNG_MAX_SIZE:
-                print "max size path : " + path
+                # print "max size path : " + path
                 return self.otherFileData(filemd5)
             else:
+                basename = os.path.basename(newFileName)
+                basename = basename.split(".")[0]
+                if basename in comFun.UNPACKAGERES:             # 对尺寸较大的图但又不超过1024的图做单独处理
+                    return self.otherFileData(filemd5)
                 print "can't found plist file : " + path + "  md5:" + filemd5 + " newPath :" + newFileName
                 return newFileName    # 只是改了名字没有合并大图的图，只是修改了文件的路径
 
@@ -205,7 +214,7 @@ class replaceImage:
                 print "can't found md5 : " + path
                 assert(False)
         else:
-            print "can't find file :" + path
+            print "can't find file by game res:" + path  # 在json中使用了，但在游戏资源中没有找到这个资源
         return filemd5
 
     # 根据md5值获取文件新路径
@@ -214,13 +223,13 @@ class replaceImage:
         if filemd5 in self.newFileMD5:
             newFileName = self.newFileMD5.get(filemd5)
         else:
-            print "can't found new file name : " + path + " md5 : " + filemd5
+            print "can't found new file md5 : " + filemd5
         return newFileName
 
     # 对fnt类的用户自定义的字体(LabelBMFont)进行处理
     def otherFileData(self , filemd5):
         if filemd5 in self.newPaths:
-            print "new big path : " + self.newPaths.get(filemd5)
+            # print "new big path : " + self.newPaths.get(filemd5)
             return self.newPaths.get(filemd5)
         else:
             assert(False)

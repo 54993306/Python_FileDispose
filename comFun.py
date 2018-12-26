@@ -55,6 +55,8 @@ PLISTMD5 = "./output/plistMd5.json"  # 图片md5值对应存储的plist文件
 UNPACKAGERES = {}
 UNPACKAGERES["lastUpdateAD"] = True
 
+SPECIALTYPE = [".fnt"]
+
 def RecordToJsonFile(path , data):
     file_stream = open(path, "w+")
     file_stream.write(json.dumps(data, ensure_ascii=False, encoding="utf -8", indent=4))

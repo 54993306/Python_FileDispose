@@ -34,7 +34,7 @@ if not TEST:
     cg = fileChange.replaceImage()
     cg.replaceFile()
 else:
-    moduleName = "aaa.json"
-    print moduleName.split(".")[1]
-
+    str1 = "png.png"
+    str1 = re.sub(r".png" , r".plist",str1)
+    print str1
 
