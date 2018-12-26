@@ -23,18 +23,24 @@ if not TEST:
     # jc.initRecordFile()
 
     # 初始化代码中包含的资源信息
-    # cre = codeRes.codeRes()
-    # cre.initResList()
+    cre = codeRes.codeRes()
+    cre.initResList()
 
     # 小图合并大图
     # pcg = packageImage.packageImage()
     # pcg.packageRes()
 
     # 修改json文件为使用大图
-    cg = fileChange.replaceImage()
-    cg.replaceFile()
+    # cg = fileChange.replaceImage()
+    # cg.replaceFile()
 else:
-    str1 = "png.png"
-    str1 = re.sub(r".png" , r".plist",str1)
-    print str1
+    pathstr = "./oldJson/code.lua"
+    str_stream = open(pathstr , "r")
+    resList = []
+    for lineNum, line in enumerate(str_stream):
+        pattern = re.compile(r"[\"]([^:\"]*" + r".png" + r")[\"]")  # 找到包含资源的行，所有的资源都会被修改路径，统一进行管理
+        serchObj = pattern.findall(line)  # 对于一行中，包含多个类型的情况是否有相应的考虑
+        resList.extend(serchObj)
+    print resList
+        # print serchObj.groups()
 
