@@ -38,16 +38,25 @@ else:
     str_stream = open(pathstr , "r")
     resList = []
     for lineNum, line in enumerate(str_stream):
-        pattern = re.compile(r"[\"]([^:\"]*" + r".png" + r")[\"]")  # 找到包含资源的行，所有的资源都会被修改路径，统一进行管理
-        serchObj = pattern.sub(r'<---->\1</---->' , line)  # \1...\9	匹配第n个分组的内容。
-        print serchObj
-        # print pattern.search(line).group()  # 对于一行中，包含多个类型的情况是否有相应的考虑
+        pattern = re.compile(r"[\"](?P<pattern>[^:\"]*" + r".png" + r")[\"]")  # 找到包含资源的行，所有的资源都会被修改路径，统一进行管理
+        # serchObj = pattern.sub(r'<---->\1</---->' , line)  # \1...\9	匹配第n个分组的内容。
+        # print serchObj
+        print pattern.search(line).group("pattern")  # 对于一行中，包含多个类型的情况是否有相应的考虑
         # serchList = pattern.findall(line)  # 对于一行中，包含多个类型的情况
         # resList.extend(serchList)
-    # print resList
+    print resList
 
     bold = re.compile(r'\*{2}(.*?)\*{2}')
     text = 'Make this **cai**.  This **junsheng**.'
     # print('Text:', text)
     # print('Bold:', bold.sub(r'<b>\1</b>', text))
+
+    line = "Cats are smarter than dogs"
+    matchObj = re.match(r'(.*) are (.*?) .*', line, re.M | re.I)
+    if matchObj:
+        print "matchObj.group() : ", matchObj.group()
+        print "matchObj.group(1) : ", matchObj.group(1)
+        print "matchObj.group(2) : ", matchObj.group(2)
+    else:
+        print "No match!!"
 
