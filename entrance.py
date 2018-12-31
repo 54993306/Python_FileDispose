@@ -42,6 +42,9 @@ else:
         resTypes = ['\\.png', '\\.ExportJson', '\\.plist', '\\.json',
                     '\\.fnt', '\\.TTF', '\\.jpg', '\\.mp3', '\\.ogg',
                     '\\.csb']
+        # resTypes = ['.png', '.ExportJson', '.plist', '.json',
+        #             '.fnt', '.TTF', '.jpg', '.mp3', '.ogg',
+        #             '.csb']
         handleType = ['.png','.fnt', '.TTF']
         changeResult = []   # 对数组合字符串做分别判断
 
@@ -135,17 +138,36 @@ else:
         # 开始处理文件流
         def handleStream(self,stream):
             resList = []
+            content = []
+            unMatch = []
             for lineNum, line in enumerate(stream):
                 for resType in self.resTypes:               # 对于不处理的类型，在这个位置就可以进行过滤掉
-                    pattern = re.compile(r"[\"](?P<Pattern>[^:\"]*?" + resType + r")[\"]")  # 找到包含资源的行，所有的资源都会被修改路径，统一进行管理
+                    pattern = re.compile(r"[\"](?P<Pattern>[^:\"]+?" + resType + r")[\"]")  # 找到包含资源的行，所有的资源都会被修改路径，统一进行管理
                     serchList = pattern.findall(line)  # 对于一行中，包含多个类型的情况
                     if serchList:
-                        resList.extend(serchList)
-                        pattern.sub(self.replacePattern , line)
+                        resList.extend(serchList)                        # 含有resType且匹配成功的部分
+                        line = pattern.sub(self.replacePattern , line)   # 可能对一行内容进行多次替换，一行中有多个restype的情况
+                    else:
+                        if re.search(resType, line):  # 包含有资源类型的字段,但是匹配不成功
+                            unMatch.append(line + " >>> " + resType)
+                content.append(line)
+            self.outInfo[stream.name]["unMatch"] = unMatch
             if resList:
                 # print json.dumps(resList, ensure_ascii=False, encoding="utf -8", indent=4)
                 self.coderesline[stream.name] = resList
                 self.printOutInfo(resList)
+            # self.createNewFile(content)
+
+        # 创建替换内容后的文件
+        def createNewFile(self , content):
+            dir = "./" + os.path.dirname(self.handleFilePath)
+            if not os.path.isdir(dir):
+                os.makedirs(dir , 0o777)
+            basename = os.path.basename(self.handleFilePath)
+            stream = open(dir + basename , "w+")
+            for line in content:
+                stream.write(str(line) + "\n")
+            stream.close()
 
         # 对路径做判断处理
         def replacePattern(self,match):   # match是表达式匹配到的内容
