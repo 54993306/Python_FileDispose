@@ -90,23 +90,53 @@ else:
         def printOutInfo(self , instr):
             if isinstance(instr , str) or isinstance(instr , unicode):
                 print instr
-                self.currList.append(instr)
+                if "msgList" in self.outInfo[self.handleFilePath]:
+                    msgList = self.outInfo[self.handleFilePath].get("msgList")
+                    msgList.append(instr)
+                else:
+                    msgList = []
+                    self.outInfo[self.handleFilePath]["msgList"] = msgList
+                    msgList.append(instr)
+            elif isinstance(instr , list):
+                self.outInfo[self.handleFilePath]["matchList"] = instr
             else:
                 print(type(instr))
                 assert(False)
 
-        def replacePath(self):
+        # 记录改变的内容
+        def recordChange(self , oldstr , newstr):
+            ChangeList = None
+            if "ChangeList" in self.outInfo[self.handleFilePath]:
+                ChangeList = self.outInfo[self.handleFilePath]["ChangeList"]
+            else:
+                ChangeList = []
+                self.outInfo[self.handleFilePath]["ChangeList"] = ChangeList
+            ChangeList.append("%s >>> %s" % (oldstr.ljust(50) , newstr))
+
+        # 记录所使用的Plist,可以拓展记录每个png对应的Plist文件
+        def recordPlist(self , plist):
+            PlistList = None
+            if "PlistList" in self.outInfo[self.handleFilePath]:
+                PlistList = self.outInfo[self.handleFilePath]["PlistList"]
+            else:
+                PlistList = []
+                self.outInfo[self.handleFilePath]["PlistList"] = PlistList
+            PlistList.append(plist)
+
+        # 执行替换操作
+        def excuteReplace(self):
             pathstr = ["./oldJson/HallMain.lua"]
             for filepath in pathstr:
-                str_stream = open(filepath, "r")
-                self.currList = []
-                self.outInfo[filepath] = self.currList
-                self.handleFile(str_stream)
+                stream = open(filepath, "r")
+                self.handleFilePath = filepath      # 对日志的记录提供了很大的遍历，大胆使用语言特性
+                self.outInfo[filepath] = {}
+                self.handleStream(stream)
 
-        def handleFile(self,str_stream):
+        # 开始处理文件流
+        def handleStream(self,stream):
             resList = []
-            for lineNum, line in enumerate(str_stream):
-                for resType in self.resTypes:
+            for lineNum, line in enumerate(stream):
+                for resType in self.resTypes:               # 对于不处理的类型，在这个位置就可以进行过滤掉
                     pattern = re.compile(r"[\"](?P<Pattern>[^:\"]*?" + resType + r")[\"]")  # 找到包含资源的行，所有的资源都会被修改路径，统一进行管理
                     serchList = pattern.findall(line)  # 对于一行中，包含多个类型的情况
                     if serchList:
@@ -114,22 +144,47 @@ else:
                         pattern.sub(self.replacePattern , line)
             if resList:
                 # print json.dumps(resList, ensure_ascii=False, encoding="utf -8", indent=4)
-                self.coderesline[str_stream.name] = resList
-            self.printOutInfo(str(len(resList)))
+                self.coderesline[stream.name] = resList
+                self.printOutInfo(resList)
 
-        def getResNewPath(self , oldpath):
-            if not oldpath in self.allResData:
-                self.printOutInfo( "can't find old path :" + oldpath )
+        # 对路径做判断处理
+        def replacePattern(self,match):   # match是表达式匹配到的内容
+            matchStr = match.group("Pattern")
+            filepath = self.formatPath(matchStr)
+            if not filepath:
+                return matchStr
+            newPath = self.getResNewPath(filepath)
+            if newPath:
+                self.recordChange(matchStr , newPath)
+                self.printOutInfo( "new path :" + newPath)
+                return "\"" + newPath + "\""   # 给新路径添加引号
+            else:
+                return matchStr
+
+        # 格式化匹配到的内容
+        def formatPath(self , matchStr):
+            paths = matchStr.split("/")[0]
+            if not paths in self.absPathChild:  # 判断路径是否为根路径内容
+                self.printOutInfo("not abs path can't change :" + matchStr)
                 return
+            filepath = self.FILEPATH + matchStr
+            if not os.path.isabs(filepath):
+                filepath = os.path.abspath(filepath)
+            if not os.path.isfile(filepath):  # 横版代码在竖版中没有图
+                self.printOutInfo("can't find in game res :" + filepath)  # 在游戏中不存在该图片
+                return
+            return filepath
+
+        # 根据老路径取得新路径
+        def getResNewPath(self , oldpath):
             filemd5 = self.allResData[oldpath]
             newFileName = self.getNewFilePath(filemd5)
             _,filetype = os.path.splitext(newFileName)
             if not filetype in self.handleType:
                 self.printOutInfo( "not handle type " + newFileName )
                 return newFileName
-            # if cmp(filetype , ".csb") == 0 or cmp(filetype , ".plist") == 0:
-            #     return newFileName
             if filemd5 in self.plistMd5:
+                self.recordPlist(self.plistMd5.get(filemd5))
                 self.printOutInfo( "file in plist :" + self.plistMd5.get(filemd5))
                 return "#" + os.path.basename(newFileName)      # 要使用精灵帧的形式进行处理
             else:
@@ -152,7 +207,7 @@ else:
                 # print "new big path : " + self.newPaths.get(filemd5)
                 return self.newPaths.get(filemd5)
             else:
-                assert (False)
+                assert(False)
 
         # 根据md5值获取文件新路径
         def getNewFilePath(self, filemd5):
@@ -163,30 +218,4 @@ else:
                 self.printOutInfo( "can't found new file md5 : " + filemd5 )
             return newFileName
 
-        # 对路径做判断处理
-        def replacePattern(self,match):
-            if not match:
-                self.printOutInfo( "not match" )
-                return ""
-            matchStr = match.group("Pattern")
-            paths = matchStr.split("/")[0]
-            if not paths in self.absPathChild:
-                self.printOutInfo( "can't change path :" + matchStr)
-                return
-            else:
-                matchStr = self.FILEPATH + matchStr
-                # print "add file path : " + matchStr
-            oldmatch = matchStr
-            if not os.path.isabs(matchStr):
-                matchStr = os.path.abspath(matchStr)
-            if not os.path.isfile(matchStr):
-                self.printOutInfo( "can't find in game res :" + matchStr ) # 在游戏中不存在该图片
-                return oldmatch
-            newPath = self.getResNewPath(matchStr)
-            if newPath:
-                self.printOutInfo( "new path :" + newPath)
-                return "\"" + newPath + "\""   # 给新路径添加引号
-            else:
-                return oldmatch
-
-    TestClass().replacePath()
+    TestClass().excuteReplace()

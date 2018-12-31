@@ -18,6 +18,7 @@ class codeRes:
         for resType in self.mResDict.iterkeys():
             if not resType in self.resTypes:
                 resType = str.replace(str(resType), ".", "\.")
+                # 可以在这里过滤掉不进行处理的类型
                 self.resTypes.append(resType)
         print self.resTypes
 

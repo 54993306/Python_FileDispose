@@ -21,7 +21,7 @@ DICTFILE = "./output/filedict.json"
 SIZEFILE = "./output/filesize.json"
 MD5FILE = "./output/notRepeatFilemd5.json"
 REPEATFILE = "./output/repeatfile.json"
-ALLFILES = "./output/allfile.json"
+ALLFILES = "./output/allfile.json"                  # 存储game目录下的res的信息
 NEWMD5 = "./output/newmd5.json"
 
 # json UI 文件
