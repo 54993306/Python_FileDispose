@@ -106,6 +106,19 @@ else:
                 print(type(instr))
                 assert(False)
 
+        # 记录输出信息到文件
+        def recordInfoListToFile(self , listName ,info , tagInfo = None):
+            InfoList = None
+            if listName in self.outInfo[self.handleFilePath]:
+                InfoList = self.outInfo[self.handleFilePath][listName]
+            else:
+                InfoList = []
+                self.outInfo[self.handleFilePath][listName] = InfoList
+            if tagInfo:
+                InfoList.append("%s >>> %s" % (info.ljust(50), tagInfo))
+            else:
+                InfoList.append(info)
+
         # 记录改变的内容
         def recordChange(self , oldstr , newstr):
             ChangeList = None
@@ -125,6 +138,16 @@ else:
                 PlistList = []
                 self.outInfo[self.handleFilePath]["PlistList"] = PlistList
             PlistList.append(plist)
+
+        # 记录在Lua中使用但是Res路径中不存在的内容
+        def recordNotFindRes(self , path):
+            NotFount = None
+            if "NotFount" in self.outInfo[self.handleFilePath]:
+                NotFount = self.outInfo[self.handleFilePath]["NotFount"]
+            else:
+                NotFount = []
+                self.outInfo[self.handleFilePath]["NotFount"] = NotFount
+            NotFount.append(path)
 
         # 执行替换操作
         def excuteReplace(self):
@@ -156,17 +179,17 @@ else:
                 # print json.dumps(resList, ensure_ascii=False, encoding="utf -8", indent=4)
                 self.coderesline[stream.name] = resList
                 self.printOutInfo(resList)
-            # self.createNewFile(content)
+            self.createNewFile(content)
 
         # 创建替换内容后的文件
         def createNewFile(self , content):
-            dir = "./" + os.path.dirname(self.handleFilePath)
+            dir = "./newLua/" + os.path.dirname(self.handleFilePath)
             if not os.path.isdir(dir):
                 os.makedirs(dir , 0o777)
             basename = os.path.basename(self.handleFilePath)
-            stream = open(dir + basename , "w+")
+            stream = open(dir + "/" + basename , "w+")
             for line in content:
-                stream.write(str(line) + "\n")
+                stream.write(str(line))
             stream.close()
 
         # 对路径做判断处理
@@ -174,14 +197,16 @@ else:
             matchStr = match.group("Pattern")
             filepath = self.formatPath(matchStr)
             if not filepath:
-                return matchStr
+                self.recordInfoListToFile("NoChange" , matchStr)
+                return "\"" + matchStr + "\""
             newPath = self.getResNewPath(filepath)
             if newPath:
                 self.recordChange(matchStr , newPath)
                 self.printOutInfo( "new path :" + newPath)
                 return "\"" + newPath + "\""   # 给新路径添加引号
             else:
-                return matchStr
+                self.printOutInfo("Error match : " + matchStr)
+                return match.group("Pattern")
 
         # 格式化匹配到的内容
         def formatPath(self , matchStr):
@@ -193,6 +218,7 @@ else:
             if not os.path.isabs(filepath):
                 filepath = os.path.abspath(filepath)
             if not os.path.isfile(filepath):  # 横版代码在竖版中没有图
+                self.recordNotFindRes(filepath)
                 self.printOutInfo("can't find in game res :" + filepath)  # 在游戏中不存在该图片
                 return
             return filepath
