@@ -5,7 +5,6 @@ files.txt
 jsonres.txt
 jsonFileRes.pyc
 *.pyc
-output/
 newJson/1output.json
 newJson/rp_1lay_test.json
 lua/src/app/.svn/

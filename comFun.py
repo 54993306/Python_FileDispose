@@ -13,7 +13,9 @@ PNG_MAX_SIZE = 1024  # 输出的图片大小,大多数平台支持的大小
 
 UNPACKAGENUM = 3
 
-FILEPATH = r"D:\Svn_2d\S_GD_Heji\res"
+# 将对数据的存储和处理，抽象到一个专门的类中去进行操作。通过统一的接口去调用个各类的产出都存储到同一个通用类中。
+
+FILEPATH = "D:\\Svn_2d\\S_GD_Heji\\res\\"
 COPYPATH = r"real_res"
 DICTFILE = "./output/filedict.json"
 SIZEFILE = "./output/filesize.json"
@@ -50,6 +52,10 @@ TYPENEWPATH = "./output/typeNewPaths.json"
 #
 CHANGERESULT = r"./output/changefile.json"
 PLISTMD5 = "./output/plistMd5.json"  # 图片md5值对应存储的plist文件
+
+# code res
+CODERESMESSAGE = "./CodeOutPut/code_res_Message.json"
+CODELINERES = "./CodeOutPut/resLine.json"
 
 # 为优化打包结构，一些图片，手动选择不用打包
 UNPACKAGERES = {}
