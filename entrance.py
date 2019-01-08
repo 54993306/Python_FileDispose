@@ -1,7 +1,7 @@
 
 # -*- coding: UTF-8 -*-
-# TEST = False
-TEST = True
+TEST = False
+# TEST = True
 #
 import os
 import json
@@ -18,15 +18,15 @@ from PIL import Image
 if not TEST:
     referenceRes = {}    #文件引用计数表
 
-    # t = totalResDict.totalRes() #初始化所有的资源信息
-    # t.initFileDict()
+    t = totalResDict.totalRes() #初始化所有的资源信息
+    t.initFileDict()
 
     # jc= jsonFileRes.jsonRes()  # 初始化所有json中包含的资源信息
     # jc.initRecordFile()
 
     # 初始化代码中包含的资源信息
-    cre = codeRes.codeRes()
-    cre.initResList()
+    # cre = codeRes.codeRes()
+    # cre.initResList()
 
     # 小图合并大图
     # pcg = packageImage.packageImage()

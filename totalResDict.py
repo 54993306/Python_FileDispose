@@ -22,6 +22,7 @@ class totalRes:
     newFileMd5 = {}         # 新文件的md5
     oldtonewPath = {}       # 新旧路径对应表 key: oldpath ,value : newpath
     allFiles = {}           # 存储所有文件和文件对应md5值 未去重，避免多次生成文件md5值
+    typeNum = {}            # 存储文件类型和相应的数量
     # 将内容记录到文件中
     def recordToFile(self):
         comFun.RecordToJsonFile(comFun.DICTFILE, self.filedict)
@@ -35,6 +36,8 @@ class totalRes:
         comFun.RecordToJsonFile(comFun.ALLFILES, self.allFiles)
 
         comFun.RecordToJsonFile(comFun.NEWMD5, self.newFileMd5)
+        # mp3 对应的编号是  2 , 类型 2 下 有429个文件
+        comFun.RecordToJsonFile(comFun.FILETYPENUM, self.typeNum)
 
     # 初始化文件表
     def initFileDict(self , refresh = False):
@@ -63,6 +66,7 @@ class totalRes:
         self.copyFile()
         self.sortFileSize()
         self.recordToFile()
+        print(json.dumps(self.typeNum, ensure_ascii=False, encoding="utf -8", indent=4))
 
     # 判断记录文件的情况
     def hasRecordFile(self):
@@ -88,19 +92,34 @@ class totalRes:
         os.mkdir(comFun.COPYPATH, 0o777)
         copynum = 0
         for md5Code , filepath in self.notRepeatmd5List.iteritems():
-            _, filename = os.path.split(filepath)
             copynum += 1
             # 这里要生成唯一性的名称，后面需要用名称来与md5值生成对应关系，因为在合成plist后，只有名称保存在其中
-            newpath = comFun.COPYPATH + "/" + filename
-            if os.path.isfile(comFun.COPYPATH + "/" + filename):   # 判断是否已经存在同名文件
-                newpath = comFun.COPYPATH + "/" + str(copynum) + "_" + filename
-                shutil.copyfile(filepath, newpath)
-                self.newFileMd5[md5Code] = newpath
-            else:
-                shutil.copyfile(filepath, newpath)
-                self.newFileMd5[md5Code] = newpath
+            newpath = self.getNewFileName(filepath)
+            shutil.copyfile(filepath, newpath)
+            self.newFileMd5[md5Code] = newpath
         if len(self.newFileMd5) == len(self.notRepeatmd5List):
-            print "File Num : " + str(len(self.notRepeatmd5List))
+            print "File Num : " + str(len(self.notRepeatmd5List)) + " copyNum :" + str(copynum)
+
+    # 获取新文件名称
+    def getNewFileName(self , filepath):
+        _, filetype = os.path.splitext(filepath)
+        if not filetype:   # 没有类型的文件不修改文件名
+            return comFun.COPYPATH + "/" + os.path.basename(filepath)
+        if not filetype in self.typeNum:
+            self.typeNum[filetype] = len(self.typeNum)
+            self.typeNum[self.typeNum[filetype]] = 1
+        else:
+            self.typeNum[self.typeNum[filetype]] += 1
+
+        # if filetype in self.typeNum:
+        #     self.typeNum[filetype] += 1
+        # else:
+        #     self.typeNum[filetype] = 1
+        # 10 表示由工具修改过的图片，后面三位为图片index。
+        # return comFun.COPYPATH + "/" + "auto_" + "10" + str("%03d" % self.typeNum[filetype]) + filetype
+        return comFun.COPYPATH + "/" + "auto_" + "10" + \
+               str("%02d" % self.typeNum[filetype]) + \
+               str("%03d" % self.typeNum[self.typeNum[filetype]]) + filetype
 
     # 判断文件复制情况是否出现偏差
     def judgeFileCopySucceed(self):

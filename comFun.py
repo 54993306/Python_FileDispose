@@ -23,6 +23,7 @@ MD5FILE = "./output/notRepeatFilemd5.json"
 REPEATFILE = "./output/repeatfile.json"
 ALLFILES = "./output/allfile.json"                  # 存储game目录下的res的信息
 NEWMD5 = "./output/newmd5.json"
+FILETYPENUM = "./output/fileTypeNum.json"           # 存储文件类型和对应的文件数量
 
 # json UI 文件
 SEARCHJSONPATH = "D:\Svn_2d\UI_Shu\Json"            # 只是竖版的大厅部分json
