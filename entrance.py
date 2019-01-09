@@ -13,6 +13,7 @@ import jsonFileRes
 import fileChange
 import packageImage
 import types
+import shutil
 from PIL import Image
 
 if not TEST:
@@ -266,4 +267,4 @@ else:
                 self.printOutInfo( "can't found new file md5 : " + filemd5 )
             return newFileName
 
-    TestClass().excuteReplace()
+    # TestClass().excuteReplace()

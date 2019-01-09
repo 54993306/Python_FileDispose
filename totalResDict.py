@@ -29,7 +29,7 @@ class totalRes:
 
         comFun.RecordToJsonFile(comFun.SIZEFILE, self.sizeOrder)
 
-        comFun.RecordToJsonFile(comFun.MD5FILE, self.notRepeatmd5List)
+        comFun.RecordToJsonFile(comFun.MD5OLD_NEW, self.notRepeatmd5List)
 
         comFun.RecordToJsonFile(comFun.REPEATFILE, self.repeatList)
 
@@ -42,7 +42,7 @@ class totalRes:
     # 初始化文件表
     def initFileDict(self , refresh = False):
         refresh = True
-        if self.hasRecordFile() and not refresh:
+        if not refresh and self.hasRecordFile():
             return
         else:
             self.initDict()
@@ -56,8 +56,10 @@ class totalRes:
                 abspath = os.path.abspath(pathbylist)
             if re.search(r".svn" , abspath) :
                 continue
+            abspath = comFun.turnBias(abspath)
             if not self.addToDict(abspath):    # 重复文件不进行后续操作
                 continue
+            pathbylist = comFun.turnBias(pathbylist)
             fileSize = os.path.getsize(pathbylist)
             self.sizeOrder[pathbylist] =  fileSize  # 文件大小
             self.timeOrder[pathbylist] = os.path.getctime(pathbylist) # 创建时间
@@ -66,7 +68,7 @@ class totalRes:
         self.copyFile()
         self.sortFileSize()
         self.recordToFile()
-        print(json.dumps(self.typeNum, ensure_ascii=False, encoding="utf -8", indent=4))
+        # print(json.dumps(self.typeNum, ensure_ascii=False, encoding="utf -8", indent=4))
 
     # 判断记录文件的情况
     def hasRecordFile(self):
@@ -76,10 +78,11 @@ class totalRes:
                 # print json_stream.tell()
                 file_stream.seek(0, 0)
                 self.filedict = json.load(file_stream)
+                file_stream.close()
                 # print "open : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
                 return True
             else:
-                json_stream.close()
+                file_stream.close()
                 os.remove(comFun.DICTFILE)
                 print "record file has error remove file paht : " + comFun.DICTFILE
         return False
@@ -91,11 +94,12 @@ class totalRes:
         time.sleep(3)                # 大规模的文件操作，需要做延时处理
         os.mkdir(comFun.COPYPATH, 0o777)
         copynum = 0
-        for md5Code , filepath in self.notRepeatmd5List.iteritems():
+        for md5Code , md5_old_new in self.notRepeatmd5List.iteritems():
             copynum += 1
             # 这里要生成唯一性的名称，后面需要用名称来与md5值生成对应关系，因为在合成plist后，只有名称保存在其中
-            newpath = self.getNewFileName(filepath)
-            shutil.copyfile(filepath, newpath)
+            newpath = self.getNewFileName(md5_old_new["old"])
+            shutil.copyfile(md5_old_new["old"], newpath)
+            md5_old_new["new"] = newpath
             self.newFileMd5[md5Code] = newpath
         if len(self.newFileMd5) == len(self.notRepeatmd5List):
             print "File Num : " + str(len(self.notRepeatmd5List)) + " copyNum :" + str(copynum)
@@ -110,22 +114,17 @@ class totalRes:
             self.typeNum[self.typeNum[filetype]] = 1
         else:
             self.typeNum[self.typeNum[filetype]] += 1
-
-        # if filetype in self.typeNum:
-        #     self.typeNum[filetype] += 1
-        # else:
-        #     self.typeNum[filetype] = 1
-        # 10 表示由工具修改过的图片，后面三位为图片index。
-        # return comFun.COPYPATH + "/" + "auto_" + "10" + str("%03d" % self.typeNum[filetype]) + filetype
-        return comFun.COPYPATH + "/" + "auto_" + "10" + \
+        # 10 表示由工具修改过的图片,中间两位是文件类型码,后面三位为图片index。
+        return comFun.COPYPATH + "/" + "10" + \
                str("%02d" % self.typeNum[filetype]) + \
                str("%03d" % self.typeNum[self.typeNum[filetype]]) + filetype
 
     # 判断文件复制情况是否出现偏差
     def judgeFileCopySucceed(self):
         repeatNum = 0
-        for _,value in self.repeatList.iteritems():
-            repeatNum += len(value["oldpath"])
+        for _,value in self.notRepeatmd5List.iteritems():
+            if "repeat" in value:
+                repeatNum += len(value["repeat"])
         if repeatNum + len(self.newFileMd5) == len(self.allFiles):
             print "copy file succeed  repeatNum: " + str(repeatNum)
         else:
@@ -159,6 +158,13 @@ class totalRes:
         md5 = comFun.getFileMd5(filepath)
         self.allFiles[filepath] = md5           # 存储所有文件和对应的md5值
         if md5 in self.notRepeatmd5List:
+            if not "repeat" in self.notRepeatmd5List[md5]:
+                oldList = []
+                self.notRepeatmd5List[md5]["repeat"] = oldList
+                oldList.append(filepath)
+            else:
+                self.notRepeatmd5List[md5]["repeat"].append(filepath)
+
             if md5 in self.repeatList:
                 self.repeatList[md5]["oldpath"].append(filepath)
             else:
@@ -168,9 +174,10 @@ class totalRes:
                 oldpaths = []
                 repeatDict["oldpath"] = oldpaths
                 oldpaths.append(filepath)
-            # print "Repeat File Path : " + filepath
             return False
-        self.notRepeatmd5List[md5] = filepath
+        md5_old_new = {}
+        md5_old_new["old"] = filepath
+        self.notRepeatmd5List[md5] = md5_old_new   # 由一个md5值对应所有曾出现过的文件
         return md5
 
     # 对文件大小进行排序

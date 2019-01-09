@@ -3,6 +3,8 @@
 import os
 import json
 import hashlib
+import copy
+import re
 # 通过子进程执行shell命令
 # subprocess.run('kill  %s' % ' '.join(pids), shell=True)
 # 就可以杀掉进程 111 和 22
@@ -19,7 +21,7 @@ FILEPATH = "D:\\Svn_2d\\S_GD_Heji\\res\\"
 COPYPATH = r"real_res"
 DICTFILE = "./output/filedict.json"
 SIZEFILE = "./output/filesize.json"
-MD5FILE = "./output/notRepeatFilemd5.json"
+MD5OLD_NEW = "./output/notRepeatFilemd5.json"       # 包含新旧两种文件的信息和数据
 REPEATFILE = "./output/repeatfile.json"
 ALLFILES = "./output/allfile.json"                  # 存储game目录下的res的信息
 NEWMD5 = "./output/newmd5.json"
@@ -68,6 +70,16 @@ def RecordToJsonFile(path , data):
     file_stream = open(path, "w+")
     file_stream.write(json.dumps(data, ensure_ascii=False, encoding="utf -8", indent=4))
     file_stream.close()
+
+def GetDataByFile(path):
+    data = {}
+    if not os.path.isfile(path):
+        return data
+    stream = open(path, "r")
+    data = json.load(stream)
+    stream.close()
+    return data
+
 
 def initPathFiles(filepath , list):
     if os.path.isdir(filepath):
@@ -136,3 +148,8 @@ def is_json(myjson):
     except ValueError:
         return False
     return True
+
+# 将所有的斜杠转换为正斜杠
+def turnBias(str):
+    str = re.sub(r"[/]+" , r"\\" , str)
+    return re.sub(r"[\\]+" , "/" , str)
