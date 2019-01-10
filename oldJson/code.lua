@@ -1,0 +1,2 @@
+local bgPath = tmpData.hu > 0 and "mjOver/total_win_tip_scale_bg.png" or "mjOver/total_fail_tip_scale_bg.png"
+local headFile = self.userSex == 0 and "head/defaultHead_male.png" or "head/defaultHead_female.png"
