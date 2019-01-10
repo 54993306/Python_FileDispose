@@ -1,9 +1,6 @@
 .idea/workspace.xml
 .idea/misc.xml
 .idea/Python_FileDispose.iml
-files.txt
-jsonres.txt
-jsonFileRes.pyc
 *.pyc
 newJson/1output.json
 newJson/rp_1lay_test.json

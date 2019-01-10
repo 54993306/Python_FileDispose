@@ -7,6 +7,8 @@ import comFun
 import os
 import re
 import json
+import copy
+import fileDataHandle as FData
 
 class jsonRes:
     def __init__(self):
@@ -35,13 +37,14 @@ class jsonRes:
 
     def initRecordFile(self , refresh = False):
         refresh = True
-        if os.path.isfile(comFun.JSONHAVARES) and not refresh:
+        if not refresh and os.path.isfile(comFun.JSONHAVARES):
             if not self.json_res:
                 json_stream = open(comFun.JSONHAVARES , "r")
                 if comFun.is_json(json_stream.read()):
                     # print json_stream.tell()
                     json_stream.seek(0,0)
                     self.json_res = json.load(json_stream)
+                    json_stream.close()
                     # print "open : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
                 else:
                     json_stream.close()
@@ -54,42 +57,29 @@ class jsonRes:
 
     # 资源文件在json中被引用的次数，json中包含的资源，被引用的次数
     def initReferenceCount(self , refresh = False):  #初始化文件引用计数表
-        repeat_stream = open(comFun.REPEATFILE , "r")
-        repeatDict = json.load(repeat_stream)
+        fileData = FData.fileDataHandle()
         for jsonpath , paths in self.json_res.iteritems():
             collatingResList = []
             self.collatingJson[jsonpath] = collatingResList
             for path in paths:
-                if not os.path.isabs(path):
-                    path = os.path.abspath(path)
                 if not os.path.isfile(path):
                     self.addNotFoundFile(jsonpath , path)   # 在json 中使用，但是实际上不存在
                     continue
                 _,fileType = os.path.splitext(path)
-                if fileType in self.pResDict:
-                    typeDict = self.pResDict.get(fileType)
-                    md5Code = None
-                    if typeDict.has_key(path):
-                        fileinfo = typeDict.get(path)   #通过文件路径到总资源表中取得文件Md5值
-                        md5Code = fileinfo["md5"]
-                    else:
-                        md5Code = comFun.getFileMd5(path)   # 图片可能被去重删除掉了
-                        if md5Code in repeatDict:
-                            fileinfo = repeatDict.get(md5Code)
-                            path = fileinfo["currPath"]
-                        else:
-                            print "type not found in dict : " + path
-                            assert(False)
-                    if not path in collatingResList:
-                        collatingResList.append(path)
-                    if md5Code:
-                        self.addReferenceNum(md5Code, jsonpath, path)
-                    else:
-                        print(" ERROR : Lost file md5 by " + path)
-                        assert (False)
+                typeDict = self.pResDict.get(fileType)
+                md5Code = None
+                if typeDict.has_key(path):
+                    fileinfo = typeDict.get(path)  # 通过文件路径到总资源表中取得文件Md5值
+                    md5Code = fileinfo["md5"]
                 else:
-                    print(path)
-                    assert(False)
+                    md5Code = fileData.getFileMd5(path)
+                    path = fileData.getOldPathBypath(path)
+                    if not md5Code:
+                        print "type not found in dict : " + path
+                        assert (False)
+                if not path in collatingResList:
+                    collatingResList.append(path)
+                self.addReferenceNum(md5Code, jsonpath, path)
         # print "referenceCount : " + json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4)
         # print "notFountFile : " + json.dumps(self.notFountFile, ensure_ascii=False, encoding="utf-8", indent=4)
 
@@ -130,6 +120,7 @@ class jsonRes:
                 continue
             if not os.path.isabs(jsonpath):
                 jsonpath = os.path.abspath(jsonpath)
+            jsonpath = comFun.turnBias(jsonpath)
             if not os.path.isfile(jsonpath):
                 assert(False)
             self.json_res[jsonpath] = []
@@ -165,8 +156,11 @@ class jsonRes:
                     serchObj = reType.search(line)
                     # groupdict 返回以有别名的组的别名为键、以该组截获的子串为值的字典，没有别名的组不包含在内。default含义同上。
                     if serchObj:
-                        # self.json_res[jsonpath].append(serchObj.group(1))  # 记录每个文件中都包含了多少的资源
-                        self.json_res[jsonpath].append(comFun.REALPATH + serchObj.group(1))  # 记录每个文件中都包含了多少的资源
+                        realPath = comFun.REALPATH + serchObj.group(1)
+                        if not os.path.isabs(realPath):
+                            realPath = os.path.abspath(realPath)
+                        realPath = comFun.turnBias(realPath)
+                        self.json_res[jsonpath].append(realPath)  # 记录每个文件中都包含了多少的资源
                     else:
                         print line + " regular failed "
                         assert(False)

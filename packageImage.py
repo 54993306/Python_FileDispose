@@ -8,6 +8,8 @@ import os
 import json
 import shutil
 import re
+import copy
+import fileDataHandle as FD
 from PIL import Image
 import xml.etree.ElementTree as ET
 
@@ -38,8 +40,7 @@ class packageImage:
         comFun.RecordToJsonFile(comFun.TYPENEWPATH, self.singleNewPath)
 
     def packageRes(self):
-        newFileMD5 = open(comFun.NEWMD5, "r")
-        self.newFileMD5 = json.load(newFileMD5)
+        self.fileData = FD.fileDataHandle()
         self.sortReference()
         self.countPackagImage()  # 文件被移动一次后第二次合成时，会报错，文件已经被移走了
         self.modulePackageImage()
@@ -48,12 +49,10 @@ class packageImage:
         self.recordData()
         self.copyOutPutFile()
         self.copyMoveRes()
-        newFileMD5.close()
 
     # 对引用计数进行排序处理，分析需要进行预加载的图片要满足的引用计数最低值是多少
     def sortReference(self):
-        ref_stream = open(comFun.REFERENCEFILE,"r")         #以json中的文件引用计数为基础对图片进行打包处理
-        refDict = json.load(ref_stream)
+        refDict = copy.deepcopy(comFun.GetDataByFile(comFun.REFERENCEFILE))
         for md5 , dic1 in refDict.iteritems():
             if len(dic1["RefList"]) and dic1["FilePath"]:
                 fileinfo = {}
@@ -64,19 +63,14 @@ class packageImage:
                 print "refresh is : " + str(len(dic1["RefList"])) + "path: " + dic1["FilePath"]
         # self.sortRefList = sorted(self.sortRefList.items(), key=lambda refNum: refNum[1] , reverse = True)
         # print json.dumps(self.sortRefList, ensure_ascii=False, encoding="utf-8", indent=4)
-        ref_stream.close()
 
     # 根据引用计数，执行打包工具脚本合成大图,试用版软件可以实现切图无水印
     def countPackagImage(self):
         SOURCE_FOLDER = PACKAGESOURCE + "foreload"
         if not os.path.isdir(SOURCE_FOLDER):
             os.mkdir(SOURCE_FOLDER, 0o777)
-        newFile_stream = open(comFun.NEWMD5 , "r")
-        newFileDict = json.load(newFile_stream)
         for tPath , fileinfo in self.sortRefList.iteritems():
-            newpath = newFileDict[fileinfo["md5"]]  # 根据老路径直接获取新路径的信息
-            if not os.path.isabs(newpath):
-                newpath = os.path.abspath(newpath)
+            newpath = self.fileData.getNewPathByMd5Code(fileinfo["md5"])
             _, filetype = os.path.splitext(newpath)
             if cmp(filetype, ".png") != 0:
                 self.handleOtherRes(newpath)
@@ -87,12 +81,10 @@ class packageImage:
             else:
                 self.lowRefPath[tPath] = newpath
         self.singlePackageTexture(PNG_MAX_SIZE , "foreload" , SOURCE_FOLDER)
-        newFile_stream.close()
 
     # 将模块中，引用计数较低的按模块进行打包
     def modulePackageImage(self):
-        jsonres_stream = open(comFun.COLLATINGJSON , "r")
-        collatingJsonRes = json.load(jsonres_stream)
+        collatingJsonRes = copy.deepcopy(comFun.GetDataByFile(comFun.COLLATINGJSON))
         for jsonpath , resList in collatingJsonRes.iteritems():   # json对应一个模块，对模块进行遍历
             # 如果模块只有少量一两张图的情况如何处理？
             # 考虑将内容少的模块统一合成一张图进行预加载
@@ -139,6 +131,7 @@ class packageImage:
                 self.handleOtherRes(resPath)
                 return
             if os.path.isfile(resPath):
+                # print "cur : " + resPath + " Tag : " + sourcePath + "\\" + filename
                 shutil.move(resPath, sourcePath + "\\" + filename)          # 剪切的方式进行文件移动打包
             else:
                 print "package Lost file :" + resPath
@@ -155,43 +148,30 @@ class packageImage:
         if not outPutPath in self.outPutFolder:
             self.outPutFolder[outPutPath] = True
         baseName = os.path.basename(pResPath)
-        # 可直接输出到使用路径
 
-        self.fntTypeHandle(pResPath , outPutPath)
-        shutil.copy(pResPath , comFun.OUTPUTTARGET + outPutPath + "/" + baseName)       # 只是移动文件，没有做名字更改处理
+        self.fntdiapose(pResPath , outPutPath) # 移动与fnt对应的图片
+        # print "cur : " + pResPath + " Tag : " + comFun.OUTPUTTARGET + outPutPath + "/" + baseName
+        shutil.move(pResPath , comFun.OUTPUTTARGET + outPutPath + "/" + baseName)
         self.initNewPathRes(pResPath , comFun.OUTPUTTARGET + outPutPath + "/" + baseName , outPutPath)
 
-    # 对特殊的资源文件进行处理
-    def fntTypeHandle(self , pResPath , outPutPath):
-        _, filetype = os.path.splitext(pResPath)
-        if cmp(filetype , ".fnt") == 0:    # 针对fnt类文件进行特殊处理
-            pResPath = re.sub(r".fnt" , r".png" , pResPath)
-            if os.path.isfile(pResPath):
-                baseName = os.path.basename(pResPath)
-                shutil.copy(pResPath, comFun.OUTPUTTARGET + outPutPath + "/" + baseName)
-            else:
-                if not hasattr(self , "repeatData"):
-                    repeat_stream = open(comFun.REPEATFILE, "r")
-                    self.repeatData = json.load(repeat_stream)
-                    repeat_stream.close()
-                md5Code = ""
-                baseName = os.path.basename(pResPath)
-                for md5 , fileinfo in self.repeatData.iteritems():
-                    for filepath in fileinfo["oldpath"]:
-                        if re.search(baseName , filepath):
-                            md5Code = md5
-                            break
-                if not md5Code:
-                    assert(False)
-                fileinfo = self.repeatData.get(md5Code)
-                shutil.copy(fileinfo["currPath"], comFun.OUTPUTTARGET + outPutPath + "/" + baseName)
-
+    # 对fnt类文件处理，找到相应的png文件
+    def fntdiapose(self , pNewResPath , outPutPath ):
+        _, filetype = os.path.splitext(pNewResPath)
+        if cmp(filetype, ".fnt") == 0:  # 针对fnt类文件进行特殊处理
+            baseName = os.path.basename(pNewResPath)
+            oldpath = self.fileData.getOldPathBypath(pNewResPath)
+            pResPath = re.sub(r".fnt", r".png", oldpath)
+            newPath = self.fileData.getNewPathByOldPath(pResPath)
+            if not newPath:
+                print "new ： " + pNewResPath + " old :" + oldpath or ""
+                assert(False)
+            shutil.move(newPath, comFun.OUTPUTTARGET + outPutPath + "/" + baseName.split(".")[0] + ".png")
 
     # 初始化分类后文件位置信息
     def initNewPathRes(self , oldPath , newPath , outPutPath):
         # print "res move: " + oldPath.ljust(58) + ">>> " + newPath
         resInfo = {}
-        resInfo["md5"] = self.getMd5ByPath(oldPath)
+        resInfo["md5"] = self.fileData.getFileMd5(oldPath)
         resInfo["path"] = newPath
         self.singleNewPath[resInfo["md5"]] = re.sub(TYPEOUTPATH, "", newPath) # 将多余的路径裁切掉
         if outPutPath in self.newResPath:
@@ -203,17 +183,6 @@ class packageImage:
             resList = []
             resList.append(resInfo)
             typePaths["PathList"] = resList
-
-    # 根据文件路径获取md5值
-    def getMd5ByPath(self , pPath):
-        for md5 , path in self.newFileMD5.iteritems():
-            if not os.path.isabs(path):
-                path = os.path.abspath(path)
-            if cmp(pPath , path) == 0:
-                return md5
-        print "can't find path md5 : " + pPath
-        return ""
-        # self.newFileMD5
 
     # 对一些手动选择不打包的资源做处理
     def isUnPackageRes(self, baseName):
@@ -285,12 +254,8 @@ class packageImage:
 
     # 初始化md5对应的文件所在的plist文件
     def initPlistMd5(self):
-        if not os.path.isabs(comFun.NEWMD5):
-            comFun.NEWMD5 = os.path.abspath(comFun.NEWMD5)
-        newFile_stream = open(comFun.NEWMD5 , "r")
-        newFileDict = json.load(newFile_stream)
-        for md5 , filepath in newFileDict.iteritems():
-            filename = os.path.basename(filepath)
+        for md5 , filepath in self.fileData.getFileDatas().iteritems():
+            filename = os.path.basename(filepath["new"])
             for plistpath , pnglist in self.plistInfo.iteritems():
                 for pngName in pnglist:
                     if cmp(filename , pngName) == 0:

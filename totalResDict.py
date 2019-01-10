@@ -30,14 +30,14 @@ class totalRes:
         comFun.RecordToJsonFile(comFun.SIZEFILE, self.sizeOrder)
 
         comFun.RecordToJsonFile(comFun.MD5OLD_NEW, self.notRepeatmd5List)
-
+        # mp3 对应的编号是  2 , 类型 2 下 有429个文件
+        comFun.RecordToJsonFile(comFun.FILETYPENUM, self.typeNum)  #
+        # ----------------------------------------------------------------- 可移除文件
         comFun.RecordToJsonFile(comFun.REPEATFILE, self.repeatList)
 
         comFun.RecordToJsonFile(comFun.ALLFILES, self.allFiles)
 
         comFun.RecordToJsonFile(comFun.NEWMD5, self.newFileMd5)
-        # mp3 对应的编号是  2 , 类型 2 下 有429个文件
-        comFun.RecordToJsonFile(comFun.FILETYPENUM, self.typeNum)
 
     # 初始化文件表
     def initFileDict(self , refresh = False):

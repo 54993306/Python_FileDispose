@@ -18,7 +18,7 @@ UNPACKAGENUM = 3
 # 将对数据的存储和处理，抽象到一个专门的类中去进行操作。通过统一的接口去调用个各类的产出都存储到同一个通用类中。
 
 FILEPATH = "D:\\Svn_2d\\S_GD_Heji\\res\\"
-COPYPATH = r"real_res"
+COPYPATH = r"D:/Python_FileDispose/real_res"
 DICTFILE = "./output/filedict.json"
 SIZEFILE = "./output/filesize.json"
 MD5OLD_NEW = "./output/notRepeatFilemd5.json"       # 包含新旧两种文件的信息和数据
@@ -30,6 +30,7 @@ FILETYPENUM = "./output/fileTypeNum.json"           # 存储文件类型和对�
 # json UI 文件
 SEARCHJSONPATH = "D:\Svn_2d\UI_Shu\Json"            # 只是竖版的大厅部分json
 REALPATH = r"D:\Svn_2d\S_GD_Heji\res/hall/"         # 资源的具体位置和json的位置相关
+# 其他的非大厅部分的json，它拼接的路径就不是res/hall了
 JSONHAVARES = "./output/jsonres.json"
 COLLATINGJSON = "./output/collatingjsonres.json"    # 整理之后的json资源
 REFERENCEFILE = "./output/reference.json"
