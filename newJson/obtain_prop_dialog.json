@@ -65,7 +65,7 @@
                             "capInsetsY": 0, 
                             "fileName": null, 
                             "fileNameData": {
-                                "path": "light_effect.png", 
+                                "path": "1000331.png", 
                                 "plistFile": "1newplist/obtain_prop_dialog.plist", 
                                 "resourceType": 1
                             }, 
@@ -119,7 +119,7 @@
                             "capInsetsY": 0, 
                             "fileName": null, 
                             "fileNameData": {
-                                "path": "gxhd_wz.png", 
+                                "path": "1000513.png", 
                                 "plistFile": "1newplist/obtain_prop_dialog.plist", 
                                 "resourceType": 1
                             }, 
@@ -177,7 +177,7 @@
                                     "capInsetsY": 0, 
                                     "fileName": null, 
                                     "fileNameData": {
-                                        "path": "gold_icon.png", 
+                                        "path": "1000683.png", 
                                         "plistFile": "1newplist/foreload.plist", 
                                         "resourceType": 1
                                     }, 
@@ -226,7 +226,7 @@
                                     "x": 0, 
                                     "y": -56, 
                                     "fileNameData": {
-                                        "path": "res_fnt/yellow_num_hrl.fnt", 
+                                        "path": "D:/Python_FileDispose/res_fnt/1004020.fnt", 
                                         "plistFile": "", 
                                         "resourceType": 0
                                     }, 
@@ -275,7 +275,7 @@
                             "capInsetsY": 0, 
                             "fileName": null, 
                             "fileNameData": {
-                                "path": "huode_dk.png", 
+                                "path": "1000604.png", 
                                 "plistFile": "1newplist/obtain_prop_dialog.plist", 
                                 "resourceType": 1
                             }, 
@@ -333,7 +333,7 @@
                                     "capInsetsY": 0, 
                                     "fileName": null, 
                                     "fileNameData": {
-                                        "path": "1284_img_queding.png", 
+                                        "path": "1000766.png", 
                                         "plistFile": "1newplist/obtain_prop_dialog.plist", 
                                         "resourceType": 1
                                     }, 
@@ -388,12 +388,12 @@
                                 "plistFile": null, 
                                 "resourceType": 0
                             }, 
-                            "fontName": "res_TTF/1283_fangzhengcuyuan.TTF", 
+                            "fontName": "res_TTF/1012003.TTF", 
                             "fontSize": 14, 
                             "fontType": 0, 
                             "normal": null, 
                             "normalData": {
-                                "path": "btn_gree.png", 
+                                "path": "1000832.png", 
                                 "plistFile": "1newplist/foreload.plist", 
                                 "resourceType": 1
                             }, 
