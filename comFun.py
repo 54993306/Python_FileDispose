@@ -9,63 +9,64 @@ import re
 # subprocess.run('kill  %s' % ' '.join(pids), shell=True)
 # 就可以杀掉进程 111 和 22
 
-BigFileSie = 1024 * 100   #100k以上即认为是大文件
-
-PNG_MAX_SIZE = 1024  # 输出的图片大小,大多数平台支持的大小
-
-UNPACKAGENUM = 3
+BigFileSie      = 1024 * 100   #100k以上即认为是大文件
+PNG_MAX_SIZE    = 1024  # 输出的图片大小,大多数平台支持的大小
+UNPACKAGENUM    = 3
 
 # 将对数据的存储和处理，抽象到一个专门的类中去进行操作。通过统一的接口去调用个各类的产出都存储到同一个通用类中。
 
-FILEPATH = "D:\\Svn_2d\\S_GD_Heji\\res\\"
-COPYPATH = r"D:/Python_FileDispose/real_res"
-DICTFILE = "./output/filedict.json"
-SIZEFILE = "./output/filesize.json"
-MD5OLD_NEW = "./output/notRepeatFilemd5.json"       # 包含新旧两种文件的信息和数据
-REPEATFILE = "./output/repeatfile.json"
-ALLFILES = "./output/allfile.json"                  # 存储game目录下的res的信息
-NEWMD5 = "./output/newmd5.json"
-FILETYPENUM = "./output/fileTypeNum.json"           # 存储文件类型和对应的文件数量
+FILEPATH        = "D:/Svn_2d/S_GD_Heji/res/"
+COPYPATH        = "D:/Python_FileDispose/real_res"
+TARGETPATH      = "D:/Svn_2d/UI_Shu/Resources/"  # 实际输出路径
+OUTPUTTARGET    = "D:/Python_FileDispose/"
+OUTPUTPATH      = "D:/Python_FileDispose/newJson/"
+
+PACKAGESOURCE = r"D:\Python_FileDispose\packagesource\\"
+COMMONSOURCE = r"D:\Python_FileDispose\packagesource\\lowcommon"
+PACKAGEOUTPUT = r"D:\\Python_FileDispose\\packageimage\\"
+
 
 # json UI 文件
-SEARCHJSONPATH = "D:\Svn_2d\UI_Shu\Json"            # 只是竖版的大厅部分json
-REALPATH = r"D:\Svn_2d\S_GD_Heji\res/hall/"         # 资源的具体位置和json的位置相关
-# 其他的非大厅部分的json，它拼接的路径就不是res/hall了
-JSONHAVARES = "./output/jsonres.json"
-COLLATINGJSON = "./output/collatingjsonres.json"    # 整理之后的json资源
-REFERENCEFILE = "./output/reference.json"
-NOTFOUND = "./output/notfound.json"
-REPEATFILE = "./output/repeatfile.json"
+SEARCHJSONPATH  = "D:/Svn_2d/UI_Shu/Json"            # 只是竖版的大厅部分json
+REALPATH        = "D:/Svn_2d/S_GD_Heji/res/hall/"         # 资源的具体位置和json的位置相关
 
-# 代码文件
-CODEFOLDER = r"D:\Svn_2d\S_GD_Heji\src\app"
-GAMECODEFOLDER = r"D:\Svn_2d\S_GD_Heji\src\package_src"
-CODERESFILE = r"./output/coderesline.json"
-CODEUNREGULARFILE = r"./output/codeUnregularline.json"
-CODECSB = r"./output/codecsb.json"
+# 1 totalResDict
+DICTFILE        = "./output/1_FileDict.json"
+SIZEFILE        = "./output/1_FileSize.json"
+MD5OLD_NEW      = "./output/1_NewFilesInfo.json"             # 包含新旧两种文件的信息和数据
+FILETYPENUM     = "./output/1_FileTypeNum.json"             # 存储文件类型和对应的文件数量
+REPEATFILE      = "./output/1_RepeatFile.json"
+ALLFILES        = "./output/1_Allfile.json"                    # 存储game目录下的res的信息
+NEWMD5          = "./output/1_NewMd5.json"
 
-# package
-PLISTINFO = "./output/plistInfo.json"  # 合图后的plist包含的图片信息。
-SORTREFLIST = "./output/sortRefList.json"  # key:path , value:reference
-PLISTMD5 = "./output/plistMd5.json"  # 图片md5值对应存储的plist文件
-TARGETPATH = r"D:\Svn_2d\UI_Shu\Resources/"  # 实际输出路径
-OUTPUTTARGET = r"D:\Python_FileDispose/"
-TYPEPATHS = "./output/resTypePaths.json"  # 文件分类后对应的新路径和md5值，对不进行大图合成的资源进行分类存放
-TYPENEWPATH = "./output/typeNewPaths.json"
+# 2 JsonFileRes 其他的非大厅部分的json，它拼接的路径就不是res/hall了
+JSONHAVARES     = "./output/2_JsonRes.json"
+COLLATINGJSON   = "./output/2_CollatingJsonRes.json"    # 整理之后的json资源
+REFERENCEFILE   = "./output/2_Reference.json"
+NOTFOUND        = "./output/2_NotFound.json"
 
-#
-CHANGERESULT = r"./output/changefile.json"
-PLISTMD5 = "./output/plistMd5.json"  # 图片md5值对应存储的plist文件
+# 3 packageImage
+PLISTINFO       = "./output/3_PlistInfo.json"  # 合图后的plist包含的图片信息。
+PLISTMD5        = "./output/3_PlistMd5.json"  # 图片md5值对应存储的plist文件
+TYPEPATHS       = "./output/3_ResTypePaths.json"  # 文件分类后对应的新路径和md5值，对不进行大图合成的资源进行分类存放
+TYPENEWPATH     = "./output/3_TypeNewPaths.json"
+MOVERECORD      = "./output/3_MoveRecord.json"  # 记录被使用了的资源
 
-# code res
-CODERESMESSAGE = "./CodeOutPut/code_res_Message.json"
-CODELINERES = "./CodeOutPut/resLine.json"
+# 4 fileChange
+CHANGERESULT    = "./output/4_ChangeFile.json"
+
+# 5 code res
+CODERESMESSAGE      = "./CodeOutPut/code_res_Message.json"
+CODELINERES         = "./CodeOutPut/resLine.json"
+CODEFOLDER          = "D:/Svn_2d/S_GD_Heji/src/app"
+GAMECODEFOLDER      = "D:/Svn_2d/S_GD_Heji/src/package_src"
+CODERESFILE         = "./output/coderesline.json"
+CODEUNREGULARFILE   = "./output/codeUnregularline.json"
+CODECSB             = "./output/codecsb.json"
 
 # 为优化打包结构，一些图片，手动选择不用打包
 UNPACKAGERES = {}
 UNPACKAGERES["lastUpdateAD"] = True
-
-SPECIALTYPE = [".fnt"]
 
 def RecordToJsonFile(path , data):
     file_stream = open(path, "w+")

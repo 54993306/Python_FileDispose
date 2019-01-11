@@ -18,6 +18,8 @@ class jsonRes:
         filedict = open(comFun.DICTFILE, "r")
         self.pResDict = json.load(filedict)
 
+        self.FileData = FData.fileDataHandle()
+
     folderFiles = [] #存储所有的json文件
     comFun.initPathFiles(comFun.SEARCHJSONPATH , folderFiles)
 
@@ -57,10 +59,7 @@ class jsonRes:
 
     # 资源文件在json中被引用的次数，json中包含的资源，被引用的次数
     def initReferenceCount(self , refresh = False):  #初始化文件引用计数表
-        fileData = FData.fileDataHandle()
         for jsonpath , paths in self.json_res.iteritems():
-            collatingResList = []
-            self.collatingJson[jsonpath] = collatingResList
             for path in paths:
                 if not os.path.isfile(path):
                     self.addNotFoundFile(jsonpath , path)   # 在json 中使用，但是实际上不存在
@@ -72,16 +71,36 @@ class jsonRes:
                     fileinfo = typeDict.get(path)  # 通过文件路径到总资源表中取得文件Md5值
                     md5Code = fileinfo["md5"]
                 else:
-                    md5Code = fileData.getFileMd5(path)
-                    path = fileData.getOldPathBypath(path)
+                    md5Code = self.FileData.getFileMd5(path)
+                    path = self.FileData.getOldPathBypath(path)
                     if not md5Code:
                         print "type not found in dict : " + path
                         assert (False)
-                if not path in collatingResList:
-                    collatingResList.append(path)
+                self.recordJsonRes(jsonpath , path)
                 self.addReferenceNum(md5Code, jsonpath, path)
         # print "referenceCount : " + json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4)
         # print "notFountFile : " + json.dumps(self.notFountFile, ensure_ascii=False, encoding="utf-8", indent=4)
+
+    # 记录每个json文件中对应的资源信息
+    def recordJsonRes(self , jsonpath, path):        # 在json中使用的路径，要进行保存
+        md5Code = self.FileData.getFileMd5(path)
+        if not jsonpath in self.collatingJson:
+            jsonResList = {}
+            self.collatingJson[jsonpath] = jsonResList
+        if not md5Code in self.collatingJson[jsonpath]:  # 没有被记录过的文件，有可能存在两个文件名称不同但是md5相同的情况出现
+            newPath = self.FileData.getNewPathByOldPath(path)
+            fileinfo = {}
+            self.collatingJson[jsonpath][md5Code] = fileinfo
+            fileinfo["curr"] = path
+            fileinfo["new"] = newPath
+        else:
+            if "repeat" in self.collatingJson[jsonpath][md5Code]:
+                self.collatingJson[jsonpath][md5Code]["repeat"].append(path)
+            else:
+                repeat = []
+                self.collatingJson[jsonpath][md5Code]["repeat"] = repeat
+                repeat.append(path)
+
 
     # 文件添加一次引用
     def addReferenceNum(self,md5Code , jsonpath = "" ,path = ""):
@@ -96,7 +115,8 @@ class jsonRes:
         else:
             referenceInfo = {}
             self.referenceCount[md5Code] = referenceInfo
-            referenceInfo["FilePath"] = path
+            referenceInfo["Path"] = path
+            referenceInfo["new"] = self.FileData.getNewPathByMd5Code(md5Code)
             referenceInfo["total"] = 1
             RefList = {}
             referenceInfo["RefList"] = RefList

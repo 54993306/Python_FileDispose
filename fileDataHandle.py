@@ -91,3 +91,45 @@ class fileDataHandle:
             if cmp(filepath, datas["new"]) == 0:
                 return datas
         return {}
+
+    # 根据类型数据刷新数据集
+    def refreshTypeDataToFile(self , data):
+        for filetype , resList in data.iteritems():
+            for fileDict in resList:
+                if fileDict["md5"] in self.data:
+                    self.data[fileDict["md5"]]["tPath"] = fileDict["path"]
+                else:
+                    print fileDict["path"]
+                    assert(False)
+        # print json.dumps(self.data, ensure_ascii=False, encoding="utf-8", indent=4)
+        comFun.RecordToJsonFile(comFun.MD5OLD_NEW, self.data)
+
+    def getTPathByMd5Code(self , md5code):
+        if md5code in self.data:
+            if "tPath" in self.data[md5code]:
+                return self.data[md5code]["tPath"]
+            return ""
+        else:
+            return ""
+
+    # 根据文件基础名称获取文件信息
+    def getResInfoByBaseName(self , basename):
+        for md5code, datas in self.data.iteritems():
+            if cmp(basename, os.path.basename(datas["new"])) == 0:
+                resInfo = {}
+                resInfo["md5"] = md5code
+                resInfo["new"] = datas["new"]
+                resInfo["old"] = datas["old"]
+                return resInfo
+        return ""
+
+    # 根据新路径获取文件信息
+    def getResInfoByNewPath(self , filepath):
+        for md5code, datas in self.data.iteritems():
+            if cmp(filepath, datas["new"]) == 0:
+                resInfo = {}
+                resInfo["md5"] = md5code
+                resInfo["new"] = datas["new"]
+                resInfo["old"] = datas["old"]
+                return resInfo
+        return ""
