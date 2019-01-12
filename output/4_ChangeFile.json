@@ -3,7 +3,7 @@
         "1": {
             "new": {
                 "path": "1000513.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\obtain_prop_dialog.plist", 
+                "plistFile": "1newplist/obtain_prop_dialog.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -15,7 +15,7 @@
         "0": {
             "new": {
                 "path": "1000331.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\obtain_prop_dialog.plist", 
+                "plistFile": "1newplist/obtain_prop_dialog.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -27,7 +27,7 @@
         "3": {
             "new": {
                 "path": "1000683.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -39,7 +39,7 @@
         "2": {
             "new": {
                 "path": "1000604.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\obtain_prop_dialog.plist", 
+                "plistFile": "1newplist/obtain_prop_dialog.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -51,7 +51,7 @@
         "5": {
             "new": {
                 "path": "1000832.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -75,7 +75,7 @@
         "6": {
             "new": {
                 "path": "1000766.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\obtain_prop_dialog.plist", 
+                "plistFile": "1newplist/obtain_prop_dialog.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -88,12 +88,12 @@
     "D:/Python_FileDispose/newJson/hall.json": {
         "56": {
             "new": {
-                "path": "res_png/1000119.png", 
-                "plistFile": "", 
-                "resourceType": 0
+                "path": "1000706.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main_portrait/img_more_bg.png", 
+                "path": "huanpi2/Common/transparent_bg.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
@@ -101,7 +101,7 @@
         "54": {
             "new": {
                 "path": "1000706.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -112,12 +112,12 @@
         }, 
         "42": {
             "new": {
-                "path": "1000706.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "path": "1000572.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/Common/transparent_bg.png", 
+                "path": "huanpi2/bindingPhone/btn_bindPhone.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
@@ -125,7 +125,7 @@
         "48": {
             "new": {
                 "path": "1000706.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -136,20 +136,44 @@
         }, 
         "43": {
             "new": {
-                "path": "1000858.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000484.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main/btn_setting.png", 
+                "path": "huanpi2/Common/image_red_dot.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "60": {
             "new": {
+                "path": "res_png/1000659.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "old": {
+                "path": "huanpi/newer/mask_hall.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "61": {
+            "new": {
+                "path": "1000587.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "newer/tips_point.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "62": {
+            "new": {
                 "path": "1000783.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -158,10 +182,10 @@
                 "resourceType": 0
             }
         }, 
-        "61": {
+        "63": {
             "new": {
                 "path": "1000166.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -170,7 +194,7 @@
                 "resourceType": 0
             }
         }, 
-        "62": {
+        "64": {
             "new": {
                 "path": "real_res/1000346.png", 
                 "plistFile": "", 
@@ -184,12 +208,12 @@
         }, 
         "49": {
             "new": {
-                "path": "1000578.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000822.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/bindingPhone/btn_accountManage.png", 
+                "path": "huanpi2/main/btn_mail.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
@@ -197,7 +221,7 @@
         "52": {
             "new": {
                 "path": "1000706.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -208,92 +232,20 @@
         }, 
         "53": {
             "new": {
-                "path": "1000556.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000224.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main_portrait/icon_customer.png", 
+                "path": "huanpi2/main_portrait/icon_back.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "24": {
             "new": {
-                "path": "1000717.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "main/btn_match2.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "25": {
-            "new": {
-                "path": "1000201.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "main/btn_newer.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "26": {
-            "new": {
-                "path": "1000979.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/img_btn_subbg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "27": {
-            "new": {
-                "path": "1000548.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/btn_more.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "20": {
-            "new": {
-                "path": "1000155.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main/diamound_free.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "21": {
-            "new": {
-                "path": "1000497.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\common.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main/btn_club.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "22": {
-            "new": {
                 "path": "1000544.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -302,10 +254,10 @@
                 "resourceType": 0
             }
         }, 
-        "23": {
+        "25": {
             "new": {
                 "path": "1000583.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -314,10 +266,82 @@
                 "resourceType": 0
             }
         }, 
+        "26": {
+            "new": {
+                "path": "1000717.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "main/btn_match2.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "27": {
+            "new": {
+                "path": "1000201.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "main/btn_newer.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "20": {
+            "new": {
+                "path": "1000748.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "huanpi2/main_portrait/img_notice_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "21": {
+            "new": {
+                "path": "1000066.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "huanpi2/main_portrait/btn_create.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "22": {
+            "new": {
+                "path": "1000155.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "huanpi2/main/diamound_free.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "23": {
+            "new": {
+                "path": "1000497.png", 
+                "plistFile": "1newplist/common.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "huanpi2/main/btn_club.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
         "46": {
             "new": {
                 "path": "1000706.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -328,12 +352,12 @@
         }, 
         "47": {
             "new": {
-                "path": "1000822.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000195.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main/btn_mail.png", 
+                "path": "huanpi2/main/icon_rule.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
@@ -341,7 +365,7 @@
         "44": {
             "new": {
                 "path": "1000706.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -352,44 +376,56 @@
         }, 
         "45": {
             "new": {
-                "path": "1000195.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000858.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main/icon_rule.png", 
+                "path": "huanpi2/main/btn_setting.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "28": {
             "new": {
-                "path": "1000191.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000979.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main_portrait/btn_exchange.png", 
+                "path": "huanpi2/main_portrait/img_btn_subbg.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "29": {
             "new": {
-                "path": "1000861.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000548.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main_portrait/btn_activity.png", 
+                "path": "huanpi2/main_portrait/btn_more.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "40": {
             "new": {
+                "path": "1000954.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "huanpi2/main/btn_free.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "41": {
+            "new": {
                 "path": "1000572.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -398,22 +434,10 @@
                 "resourceType": 0
             }
         }, 
-        "41": {
-            "new": {
-                "path": "1000484.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/Common/image_red_dot.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
         "1": {
             "new": {
                 "path": "1000915.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -425,7 +449,7 @@
         "0": {
             "new": {
                 "path": "1000979.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -437,7 +461,7 @@
         "3": {
             "new": {
                 "path": "1000206.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -461,7 +485,7 @@
         "5": {
             "new": {
                 "path": "1000746.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -473,7 +497,7 @@
         "4": {
             "new": {
                 "path": "1000744.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -485,7 +509,7 @@
         "7": {
             "new": {
                 "path": "1000048.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -497,7 +521,7 @@
         "6": {
             "new": {
                 "path": "1000190.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -509,7 +533,7 @@
         "9": {
             "new": {
                 "path": "1000553.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -521,7 +545,7 @@
         "8": {
             "new": {
                 "path": "1000933.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -532,60 +556,60 @@
         }, 
         "51": {
             "new": {
-                "path": "1000224.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000578.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main_portrait/icon_back.png", 
+                "path": "huanpi2/bindingPhone/btn_accountManage.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "39": {
             "new": {
-                "path": "1000572.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000403.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/bindingPhone/btn_bindPhone.png", 
+                "path": "huanpi2/main_portrait/icon_box.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "38": {
             "new": {
-                "path": "1000954.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000633.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main/btn_free.png", 
+                "path": "huanpi2/main_portrait/btn_match_img.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "59": {
             "new": {
-                "path": "1000587.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "path": "1000705.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "newer/tips_point.png", 
+                "path": "main/pvpMatch.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "58": {
             "new": {
-                "path": "res_png/1000659.png", 
+                "path": "res_png/1000119.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }, 
             "old": {
-                "path": "huanpi/newer/mask_hall.png", 
+                "path": "huanpi2/main_portrait/img_more_bg.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
@@ -593,7 +617,7 @@
         "11": {
             "new": {
                 "path": "1000816.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -605,7 +629,7 @@
         "10": {
             "new": {
                 "path": "1000270.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -617,7 +641,7 @@
         "13": {
             "new": {
                 "path": "1000386.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -629,7 +653,7 @@
         "12": {
             "new": {
                 "path": "1000706.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -640,12 +664,12 @@
         }, 
         "15": {
             "new": {
-                "path": "1000571.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000386.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main_portrait/btn_record.png", 
+                "path": "huanpi2/main_portrait/img_diamond_bg.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
@@ -653,7 +677,7 @@
         "14": {
             "new": {
                 "path": "1000759.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -664,8 +688,32 @@
         }, 
         "17": {
             "new": {
+                "path": "1000571.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "huanpi2/main_portrait/btn_record.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "16": {
+            "new": {
+                "path": "1000683.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "huanpi2/Common/gold_icon.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "19": {
+            "new": {
                 "path": "1000113.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -674,10 +722,10 @@
                 "resourceType": 0
             }
         }, 
-        "16": {
+        "18": {
             "new": {
                 "path": "1000099.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -686,74 +734,50 @@
                 "resourceType": 0
             }
         }, 
-        "19": {
-            "new": {
-                "path": "1000066.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/btn_create.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "18": {
-            "new": {
-                "path": "1000748.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/img_notice_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
         "31": {
             "new": {
-                "path": "1000685.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000861.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main_portrait/btn_recive.png", 
+                "path": "huanpi2/main_portrait/btn_activity.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "30": {
             "new": {
-                "path": "1000127.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000191.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main_portrait/btn_bag.png", 
+                "path": "huanpi2/main_portrait/btn_exchange.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "37": {
             "new": {
-                "path": "1000403.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000146.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main_portrait/icon_box.png", 
+                "path": "huanpi2/main_portrait/bth_cion_bg.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "36": {
             "new": {
-                "path": "1000633.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000533.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "huanpi2/main_portrait/btn_match_img.png", 
+                "path": "huanpi2/main_portrait/btn_cion_img.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
@@ -761,7 +785,7 @@
         "35": {
             "new": {
                 "path": "1000146.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -772,44 +796,8 @@
         }, 
         "34": {
             "new": {
-                "path": "1000533.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/btn_cion_img.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "33": {
-            "new": {
-                "path": "1000146.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/bth_cion_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "55": {
-            "new": {
-                "path": "1000187.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/icon_notice.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "32": {
-            "new": {
                 "path": "1000753.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
@@ -818,14 +806,50 @@
                 "resourceType": 0
             }
         }, 
-        "57": {
+        "33": {
             "new": {
-                "path": "1000705.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\hall.plist", 
+                "path": "1000685.png", 
+                "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
             "old": {
-                "path": "main/pvpMatch.png", 
+                "path": "huanpi2/main_portrait/btn_recive.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "55": {
+            "new": {
+                "path": "1000556.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "huanpi2/main_portrait/icon_customer.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "32": {
+            "new": {
+                "path": "1000127.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "huanpi2/main_portrait/btn_bag.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "57": {
+            "new": {
+                "path": "1000187.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }, 
+            "old": {
+                "path": "huanpi2/main_portrait/icon_notice.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
@@ -833,7 +857,7 @@
         "50": {
             "new": {
                 "path": "1000706.png", 
-                "plistFile": "D:\\Python_FileDispose\\packageimage\\foreload.plist", 
+                "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
             "old": {

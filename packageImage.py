@@ -39,8 +39,8 @@ class packageImage:
 
         comFun.RecordToJsonFile(comFun.MOVERECORD, self.moveRecord)
 
-        print json.dumps(self.lowRef, ensure_ascii=False, encoding="utf -8", indent=4)
-        print len(self.lowRef)
+        # print json.dumps(self.lowRef, ensure_ascii=False, encoding="utf -8", indent=4)
+        # print len(self.lowRef)
 
     def tidyRes(self):
         self.fileData = FD.fileDataHandle()
@@ -286,7 +286,6 @@ class packageImage:
                 for pngName in pnglist:
                     if cmp(filename , pngName) == 0:
                         plistpath = os.path.abspath(plistpath)
-                        plistpath = re.sub(comFun.PACKAGEOUTPUT, "1newplist/", plistpath) # 更改时写入到json中的plist文件路径
                         self.plistMd5[md5] = plistpath                  # 文件md5值对应所存储的plist文件
         # print(json.dumps(self.plistMd5, ensure_ascii=False, encoding="utf -8", indent=4))
 

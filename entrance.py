@@ -1,7 +1,7 @@
 
 # -*- coding: UTF-8 -*-
-# TEST = False
-TEST = True
+TEST = False
+# TEST = True
 #
 import os
 import json
@@ -29,7 +29,7 @@ if not TEST:
     # 小图合并大图
     # pcg = packageImage.packageImage()
     # pcg.tidyRes()
-
+    #
     # 修改json文件为使用大图
     cg = fileChange.replaceImage()
     cg.replaceFile()
@@ -273,5 +273,6 @@ else:
     # import fileDataHandle as FD
     # refDict = copy.deepcopy(comFun.GetDataByFile(comFun.TYPEPATHS))
     # FD.fileDataHandle().refreshTypeDataToFile(refDict)
+    comFun.deleteDirByStr(r".svn", r"D:\Python_FileDispose\source")
 
 
