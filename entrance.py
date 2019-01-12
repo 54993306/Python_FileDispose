@@ -274,4 +274,4 @@ else:
     # refDict = copy.deepcopy(comFun.GetDataByFile(comFun.TYPEPATHS))
     # FD.fileDataHandle().refreshTypeDataToFile(refDict)
 
-    comFun.deleteFileBystr(r".svn" , ".")
+

@@ -5,6 +5,8 @@ import json
 import hashlib
 import copy
 import re
+import shutil
+import stat
 # 通过子进程执行shell命令
 # subprocess.run('kill  %s' % ' '.join(pids), shell=True)
 # 就可以杀掉进程 111 和 22
@@ -81,7 +83,6 @@ def GetDataByFile(path):
     stream.close()
     return data
 
-
 def initPathFiles(filepath , list):
     if os.path.isdir(filepath):
         for ccfile in os.listdir(filepath):
@@ -92,9 +93,6 @@ def initPathFiles(filepath , list):
                 # print(filepath + "/" + ccfile + "-----2")
                 # list.append(filepath + "/" + ccfile + "\n") # 写入到列表中，不需要加换行符，从列表中写入文件才需要加入换行符
                 list.append(filepath + "/" + ccfile ) # 写入到列表中，不需要加换行符，从列表中写入文件才需要加入换行符
-    else:
-        print(filepath + "-----1")
-        list.append(filepath)
 
 def Test2(rootDir):
     for lists in os.listdir(rootDir):
@@ -165,3 +163,46 @@ def deleteFileBystr(str , pPath):
             os.chmod(path, 0o777);
             # os.remove(path)
             # shutil.rmtree(path)
+
+# 递归删除文件夹
+def removeDir(dirPath):
+    if not os.path.isdir(dirPath):
+        return
+    files = os.listdir(dirPath)
+    try:
+        for file in files:
+            filePath = os.path.join(dirPath,file)
+            if os.path.isfile(filePath):
+                os.chmod(filePath, 0o777)
+                os.remove(filePath)
+            elif os.path.isdir(filePath):
+                removeDir(filePath)
+        os.chmod(dirPath, 0o777)
+        os.rmdir(dirPath)
+    except Exception,e:
+        print e
+
+# 删除目录下包含str内容的路径和文件
+def deleteDirByStr(str , paths):
+    if not os.path.isdir(paths):
+        print paths + " is not dir"
+        return
+    if not os.path.isabs(paths):
+        os.path.abspath(paths)
+    for path in os.listdir(paths):
+        nPath = os.path.join(paths, path)
+        # nPath = paths + "/" + path
+        if os.path.isdir(nPath):
+            if re.search(str , nPath):
+                print nPath
+                removeDir(nPath)
+            else:
+                deleteDirByStr(str,nPath)
+        elif re.search(str , nPath):
+            print nPath
+            os.chmod(nPath, 0o777);
+            os.remove(nPath)
+
+# 复制文件夹到指定文件夹，目标文件夹必须是不存在的路径
+# comFun.deleteDirByStr(r".svn", r"D:\Python_FileDispose\source\project")
+# shutil.copytree(r"D:\Svn_2d\S_GD_Heji", r"D:\Python_FileDispose\source\project")

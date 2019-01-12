@@ -13,6 +13,8 @@ import fileDataHandle as FD
 from PIL import Image
 import xml.etree.ElementTree as ET
 
+# 图片合并的规则是相对负责的,出现图片的情况很多，包括在代码中使用和一张图被多个文件使用的情况
+
 class packageImage:
     plistInfo = {}      # 合图后的plist包含的图片信息。
     plistMd5 = {}       # 图片md5值对应存储的plist文件
