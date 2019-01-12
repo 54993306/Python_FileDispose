@@ -154,3 +154,14 @@ def is_json(myjson):
 def turnBias(str):
     str = re.sub(r"[/]+" , r"\\" , str)
     return re.sub(r"[\\]+" , "/" , str)
+
+# 根据匹配str内容,递归删除路径下的文件
+def deleteFileBystr(str , pPath):
+    paths = []
+    initPathFiles(pPath , paths)
+    for path in paths:
+        if re.search(str , path):
+            print path
+            os.chmod(path, 0o777);
+            # os.remove(path)
+            # shutil.rmtree(path)

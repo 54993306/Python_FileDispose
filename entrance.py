@@ -1,7 +1,7 @@
 
 # -*- coding: UTF-8 -*-
-TEST = False
-# TEST = True
+# TEST = False
+TEST = True
 #
 import os
 import json
@@ -273,3 +273,5 @@ else:
     # import fileDataHandle as FD
     # refDict = copy.deepcopy(comFun.GetDataByFile(comFun.TYPEPATHS))
     # FD.fileDataHandle().refreshTypeDataToFile(refDict)
+
+    comFun.deleteFileBystr(r".svn" , ".")
