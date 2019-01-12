@@ -39,7 +39,7 @@ class replaceImage:
             _ , filename = os.path.split(jsonPath)
             newFilePath = comFun.OUTPUTPATH + filename
             shutil.copyfile(jsonPath , newFilePath)
-            # self.streamDispose(newFilePath)
+            self.streamDispose(newFilePath)
         # 对数据进行记录处理
         comFun.RecordToJsonFile(comFun.CHANGERESULT, self.changeRecord)
 

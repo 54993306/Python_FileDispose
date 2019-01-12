@@ -14,6 +14,7 @@ import fileChange
 import packageImage
 import types
 import shutil
+import copy
 from PIL import Image
 
 if not TEST:
@@ -26,12 +27,12 @@ if not TEST:
     # jc.initRecordFile()
 
     # 小图合并大图
-    pcg = packageImage.packageImage()
-    pcg.packageRes()
+    # pcg = packageImage.packageImage()
+    # pcg.tidyRes()
 
     # 修改json文件为使用大图
-    # cg = fileChange.replaceImage()
-    # cg.replaceFile()
+    cg = fileChange.replaceImage()
+    cg.replaceFile()
 
     # 初始化代码中包含的资源信息
     # cre = codeRes.codeRes()
@@ -268,3 +269,7 @@ else:
             return newFileName
 
     # TestClass().excuteReplace()
+
+    # import fileDataHandle as FD
+    # refDict = copy.deepcopy(comFun.GetDataByFile(comFun.TYPEPATHS))
+    # FD.fileDataHandle().refreshTypeDataToFile(refDict)

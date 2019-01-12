@@ -10,7 +10,8 @@ import re
 # 就可以杀掉进程 111 和 22
 
 BigFileSie      = 1024 * 100   #100k以上即认为是大文件
-PNG_MAX_SIZE    = 1024  # 输出的图片大小,大多数平台支持的大小
+PNG_MAX_SIZE    = 1024          # 输出的图片大小,大多数平台支持的大小
+PNG_MAX_RES     = 512           # 判断是否为大尺寸资源
 UNPACKAGENUM    = 3
 
 # 将对数据的存储和处理，抽象到一个专门的类中去进行操作。通过统一的接口去调用个各类的产出都存储到同一个通用类中。
@@ -21,10 +22,8 @@ TARGETPATH      = "D:/Svn_2d/UI_Shu/Resources/"  # 实际输出路径
 OUTPUTTARGET    = "D:/Python_FileDispose/"
 OUTPUTPATH      = "D:/Python_FileDispose/newJson/"
 
-PACKAGESOURCE = r"D:\Python_FileDispose\packagesource\\"
-COMMONSOURCE = r"D:\Python_FileDispose\packagesource\\lowcommon"
-PACKAGEOUTPUT = r"D:\\Python_FileDispose\\packageimage\\"
-
+PACKAGESOURCE   = "D:/Python_FileDispose/packagesource/"
+PACKAGEOUTPUT   = "D:/Python_FileDispose/packageimage/"
 
 # json UI 文件
 SEARCHJSONPATH  = "D:/Svn_2d/UI_Shu/Json"            # 只是竖版的大厅部分json
