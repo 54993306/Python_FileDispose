@@ -35,9 +35,7 @@ REALPATH        = "D:/Svn_2d/S_GD_Heji/res/hall/"         # 资源的具体位�
 DICTFILE        = "./output/1_FileDict.json"
 SIZEFILE        = "./output/1_FileSize.json"
 MD5OLD_NEW      = "./output/1_NewFilesInfo.json"             # 包含新旧两种文件的信息和数据
-FILETYPENUM     = "./output/1_FileTypeNum.json"             # 存储文件类型和对应的文件数量
-REPEATFILE      = "./output/1_RepeatFile.json"
-ALLFILES        = "./output/1_Allfile.json"                    # 存储game目录下的res的信息
+FILETYPENUM     = "./output/1_FileTypeNum.json"              # 存储文件类型和对应的文件数量
 NEWMD5          = "./output/1_NewMd5.json"
 
 # 2 JsonFileRes 其他的非大厅部分的json，它拼接的路径就不是res/hall了

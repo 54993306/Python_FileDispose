@@ -26,6 +26,8 @@ class codeRes:
 
     # 输出并写入日志文件
     def printOutInfo(self, instr):
+        if not instr:
+            return
         if isinstance(instr, str) or isinstance(instr, unicode):
             print instr
             if "msgList" in self.currInfo:
@@ -115,9 +117,7 @@ class codeRes:
                     if re.search(resType, line):  # 包含有资源类型的字段,但是匹配不成功
                         self.recordUnMatch(line + " >>> " + resType)
             content.append(line)
-        if resList:
-            # print json.dumps(resList, ensure_ascii=False, encoding="utf -8", indent=4)
-            self.printOutInfo(resList)
+        self.printOutInfo(resList)
         self.createNewFile(content)
 
     # 创建替换内容后的文件

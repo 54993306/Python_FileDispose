@@ -21,8 +21,8 @@ import fileDataHandle as FD
 if not TEST:
     referenceRes = {}    #文件引用计数表
 
-    # t = totalResDict.totalRes() #初始化所有的资源信息
-    # t.initFileDict()
+    t = totalResDict.totalRes() #初始化所有的资源信息
+    t.initFileDict()
 
     # jc= jsonFileRes.jsonRes()  # 初始化所有json中包含的资源信息
     # jc.initRecordFile()
@@ -36,8 +36,8 @@ if not TEST:
     # cg.replaceFile()
 
     # 初始化代码中包含的资源信息
-    cre = codeRes.codeRes()
-    cre.excuteReplace()
+    # cre = codeRes.codeRes()
+    # cre.excuteReplace()
 else:
     print 1
 

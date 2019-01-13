@@ -11,17 +11,12 @@ import comFun
 #读取路径下的所有资源文件分类后写入到文件中
 
 class totalRes:
-    fileList = []
-    comFun.initPathFiles(comFun.FILEPATH , fileList)
-
     filedict = {}           # 文件分类表，有多少中类型资源，每种类型有多少个
     timeOrder = {}          # 文件创建时间排序表 os.path.getctime(path)
     sizeOrder = {}          # 文件大小排序表  os.path.getsize(filepath)
     notRepeatmd5List = {}   # 存储文件md5值 key:md5 value:path
-    repeatList = {}         # 存储重复图片的相关信息
-    newFileMd5 = {}         # 新文件的md5
     oldtonewPath = {}       # 新旧路径对应表 key: oldpath ,value : newpath
-    allFiles = {}           # 存储所有文件和文件对应md5值 未去重，避免多次生成文件md5值
+    allFiles = 0            # 记录文件数
     typeNum = {}            # 存储文件类型和相应的数量
     # 将内容记录到文件中
     def recordToFile(self):
@@ -32,12 +27,6 @@ class totalRes:
         comFun.RecordToJsonFile(comFun.MD5OLD_NEW, self.notRepeatmd5List)
         # mp3 对应的编号是  2 , 类型 2 下 有429个文件
         comFun.RecordToJsonFile(comFun.FILETYPENUM, self.typeNum)  #
-        # ----------------------------------------------------------------- 可移除文件
-        comFun.RecordToJsonFile(comFun.REPEATFILE, self.repeatList)
-
-        comFun.RecordToJsonFile(comFun.ALLFILES, self.allFiles)
-
-        comFun.RecordToJsonFile(comFun.NEWMD5, self.newFileMd5)
 
     # 初始化文件表
     def initFileDict(self , refresh = False):
@@ -50,7 +39,9 @@ class totalRes:
 
     # 初始化文件字典
     def initDict(self):
-        for pathbylist in self.fileList:
+        fileList = []
+        comFun.initPathFiles(comFun.FILEPATH, fileList)
+        for pathbylist in fileList:
             abspath = pathbylist
             if not os.path.isabs(abspath):
                 abspath = os.path.abspath(pathbylist)
@@ -64,7 +55,7 @@ class totalRes:
             self.sizeOrder[pathbylist] =  fileSize  # 文件大小
             self.timeOrder[pathbylist] = os.path.getctime(pathbylist) # 创建时间
         # print(json.dumps(self.filedict, ensure_ascii=False, encoding="utf -8", indent=4))
-        print "Total File Num : " + str(len(self.allFiles))
+        print "Total File Num : " + str(self.allFiles)
         self.copyFile()
         self.sortFileSize()
         self.recordToFile()
@@ -100,9 +91,6 @@ class totalRes:
             newpath = self.getNewFileName(md5_old_new["old"])
             shutil.copyfile(md5_old_new["old"], newpath)
             md5_old_new["new"] = newpath
-            self.newFileMd5[md5Code] = newpath
-        if len(self.newFileMd5) == len(self.notRepeatmd5List):
-            print "File Num : " + str(len(self.notRepeatmd5List)) + " copyNum :" + str(copynum)
 
     # 获取新文件名称
     def getNewFileName(self , filepath):
@@ -125,11 +113,11 @@ class totalRes:
         for _,value in self.notRepeatmd5List.iteritems():
             if "repeat" in value:
                 repeatNum += len(value["repeat"])
-        if repeatNum + len(self.newFileMd5) == len(self.allFiles):
+        if repeatNum + len(self.notRepeatmd5List) == self.allFiles:
             print "copy file succeed  repeatNum: " + str(repeatNum)
         else:
             print " copy file failed repeatNum: " + str(repeatNum) + " newfilenum : " \
-                  + str(len(self.newFileMd5)) + " allNum : " + str(len(self.allFiles))
+                  + str(len(self.notRepeatmd5List)) + " allNum : " + str(self.allFiles)
 
     # 添加文件到容器中
     def addToDict(self, filepath):
@@ -156,7 +144,7 @@ class totalRes:
     # 生成文件hash值{MD5 : {currPath:path , oldpath : [path1 ,path2 ...]}}
     def getFileMd5(self , filepath):
         md5 = comFun.getFileMd5(filepath)
-        self.allFiles[filepath] = md5           # 存储所有文件和对应的md5值
+        self.allFiles += 1
         if md5 in self.notRepeatmd5List:
             if not "repeat" in self.notRepeatmd5List[md5]:
                 oldList = []
@@ -164,16 +152,6 @@ class totalRes:
                 oldList.append(filepath)
             else:
                 self.notRepeatmd5List[md5]["repeat"].append(filepath)
-
-            if md5 in self.repeatList:
-                self.repeatList[md5]["oldpath"].append(filepath)
-            else:
-                repeatDict = {}
-                self.repeatList[md5] = repeatDict
-                repeatDict["currPath"] =  self.notRepeatmd5List[md5]
-                oldpaths = []
-                repeatDict["oldpath"] = oldpaths
-                oldpaths.append(filepath)
             return False
         md5_old_new = {}
         md5_old_new["old"] = filepath
