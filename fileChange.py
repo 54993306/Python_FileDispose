@@ -52,10 +52,9 @@ class replaceImage:
         self.changeRecord[newJsonFile] = resDict  # 只是复制了一个引用
         self.recordDict = resDict
         self.searchNodeTree(jsondict.get("widgetTree"))
-        outPutFile = "./newJson/" + os.path.basename(newJsonFile)
-        str_strean = open(outPutFile, "w+")
+        str_strean = open(newJsonFile, "w+")
         # json.dump(jsondict, str_strean)
-        str_strean.write(json.dumps(jsondict, encoding="utf -8", indent=2))
+        str_strean.write(json.dumps(jsondict, encoding="utf -8", indent=2,separators=(',',': ')))  # 为保持一致，: 后需要留一个空格
         str_strean.close()
 
     # 遍历节点树
