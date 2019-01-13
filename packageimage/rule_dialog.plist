@@ -7,7 +7,7 @@
             <key>1000648.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{64,63},{131,60}}</string>
+                <string>{{64,101},{131,60}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -16,6 +16,19 @@
                 <string>{{0,0},{131,60}}</string>
                 <key>sourceSize</key>
                 <string>{131,60}</string>
+            </dict>
+            <key>1000681.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,63},{103,36}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,2},{103,36}}</string>
+                <key>sourceSize</key>
+                <string>{103,40}</string>
             </dict>
             <key>1000734.png</key>
             <dict>
@@ -33,7 +46,7 @@
             <key>1000762.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,63},{131,60}}</string>
+                <string>{{2,101},{131,60}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -53,7 +66,7 @@
             <key>size</key>
             <string>{128,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:1061f1ac72b389c9f9b52aa2b33bdd53$</string>
+            <string>$TexturePacker:SmartUpdate:40fd99c0530ad1ba695a7704abaea03a$</string>
             <key>textureFileName</key>
             <string>rule_dialog.png</string>
         </dict>

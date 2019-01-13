@@ -133,7 +133,7 @@
     }, 
     "cafa69cdc042f7ecea6dfed299612f73": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1012003.TTF", 
+            "new": "D:/Python_FileDispose/real_res/1010003.TTF", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/font/fangzhengcuyuan.TTF", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/hall/font/fangzhengcuyuan.TTF"
@@ -389,7 +389,7 @@
     }, 
     "ec384eba7d0761c80540a882a9f5517d": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008007.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006007.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongtuidaohumj/game/fanmalight.plist", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongyibaizhangmj/fanma/fanmalight.plist", 
@@ -891,7 +891,7 @@
     }, 
     "693c6357bd66cddbaa422a4d4570aee8": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008003.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006003.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/anim/AnimationWin20.plist"
             ], 
@@ -1195,7 +1195,7 @@
     }, 
     "ad8b0896d54f4986ad60a92ba27129cc": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1010010.json", 
+            "new": "D:/Python_FileDispose/real_res/1008010.json", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/zhongshanmj/friendRoom/down_item.json"
             ], 
@@ -1343,7 +1343,7 @@
     }, 
     "97e8645c2ed9617d25ccb4265f852780": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008019.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006019.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/anim/AnimationZhadan32.plist"
             ], 
@@ -1413,7 +1413,7 @@
     }, 
     "f6e32dd1b633eae3114f16cf087ac408": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006122.csb", 
+            "new": "D:/Python_FileDispose/real_res/RadioButtonPanel.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/jieyangmj/friendRoom/RadioButtonPanel.csb", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/kaipingmj/friendRoom/RadioButtonPanel.csb"
@@ -1445,7 +1445,7 @@
     }, 
     "09b091b8e78bb55b899e2842f85bebd5": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006069.csb", 
+            "new": "D:/Python_FileDispose/real_res/AnimationZhadan3.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/anim/AnimationZhadan3.csb"
             ], 
@@ -1981,7 +1981,7 @@
     }, 
     "a0c7581f9d1a07f914526393bcb58d2e": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008021.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006021.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/anim/AnimationLight0.plist"
             ], 
@@ -2107,7 +2107,7 @@
     }, 
     "cf8fe9c7a62a01fdcd97cd53b5415a02": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006197.csb", 
+            "new": "D:/Python_FileDispose/real_res/CheckBoxPanel.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongyibaizhangmj/friendRoom/CheckBoxPanel.csb", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/jiangmengangganghumj/CheckBoxPanel/CheckBoxPanel.csb", 
@@ -2197,7 +2197,7 @@
     }, 
     "238bf5d1a856172ac3fc439393eacb4c": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006124.csb", 
+            "new": "D:/Python_FileDispose/real_res/chat_txt_item.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/chat_txt_item.csb"
             ], 
@@ -2445,7 +2445,7 @@
     }, 
     "fc49d9440585551d93dfe0c6fb2d2921": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006074.csb", 
+            "new": "D:/Python_FileDispose/real_res/down_item.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/zhongshanmj/friendRoom/down_item.csb"
             ], 
@@ -2605,7 +2605,7 @@
     }, 
     "a68a4966fe80808dc872d9e683228a50": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006126.csb", 
+            "new": "D:/Python_FileDispose/real_res/poker_rule_view.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/poker_rule_view.csb"
             ], 
@@ -2665,7 +2665,7 @@
     }, 
     "618ba0612fabf99cab96ca12397f1e08": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006129.csb", 
+            "new": "D:/Python_FileDispose/real_res/friendRoomCreate.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongyibaizhangmj/hall/friendRoomCreate.csb", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/maomingmj/hall/friendRoomCreate.csb", 
@@ -3039,7 +3039,7 @@
     }, 
     "d48e5b7151149321dc903e3815c58c8e": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008024.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006024.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/hongzhongmj/game/fama/explode.plist", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/shanweimj/game/fama/explode.plist"
@@ -3079,7 +3079,7 @@
     }, 
     "8e128075a1af99d967116e855a3553cf": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006030.csb", 
+            "new": "D:/Python_FileDispose/real_res/chat_view.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/chat_view.csb"
             ], 
@@ -3249,7 +3249,7 @@
     }, 
     "90837b234c7566f015fe97c78dc3faae": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008043.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006043.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/jingdeng/jingdeng0.plist"
             ], 
@@ -3261,7 +3261,7 @@
     }, 
     "13eb4de0b0aaa8d8bc0da6dab0d0ce06": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1010002.json", 
+            "new": "D:/Python_FileDispose/real_res/1008002.json", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/jieyangmj/game/fangma.json", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/shantoumj/game/fangma.json", 
@@ -3315,7 +3315,7 @@
     }, 
     "e8b470bbeed6ecf22bb5c2b3320d654f": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006052.csb", 
+            "new": "D:/Python_FileDispose/real_res/advertisement.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongyibaizhangmj/hall/advertisement.csb", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/maomingmj/hall/advertisement.csb", 
@@ -3375,7 +3375,7 @@
     }, 
     "e0895d42e298529b5ac1a06dff7a56a7": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006135.csb", 
+            "new": "D:/Python_FileDispose/real_res/fangma.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/jiangmengangganghumj/game/fangma.csb", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/zhongshanmj/game/fangma.csb"
@@ -3441,7 +3441,7 @@
     }, 
     "661852df35aec8cf351a5abfd0908348": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006087.csb", 
+            "new": "D:/Python_FileDispose/real_res/AnimationDDZ2.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/anim/gameover/AnimationDDZ2.csb"
             ], 
@@ -3613,7 +3613,7 @@
     }, 
     "3f22fb861f99d2caeed204c0a14b8426": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008025.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006025.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/games/common/game/fanma/fangma.plist"
             ], 
@@ -3979,7 +3979,7 @@
     }, 
     "e14c8a2671110a3798dc80bbaaf850a9": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006035.csb", 
+            "new": "D:/Python_FileDispose/real_res/AnimationLight.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/anim/AnimationLight.csb"
             ], 
@@ -4047,7 +4047,7 @@
     }, 
     "aac94aa876732cfa79f6408ebb5e5586": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008008.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006008.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongjihumj/game/fama/fangma.plist", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongtuidaohumj/game/fangma.plist", 
@@ -4277,7 +4277,7 @@
     }, 
     "dfc4302d46b1811c39f54adcb094c803": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006182.csb", 
+            "new": "D:/Python_FileDispose/real_res/fangma.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongzptdhmj/game/fangma.csb", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/hongzhongmj/game/fangma.csb", 
@@ -4475,7 +4475,7 @@
     }, 
     "e7c107478bfc4a2510525b8a0fef9a6a": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006193.csb", 
+            "new": "D:/Python_FileDispose/real_res/jingdeng.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/jingdeng/jingdeng.csb"
             ], 
@@ -4749,7 +4749,7 @@
     }, 
     "e8e1599ecab76f4fdaf8001af51b0bd7": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008044.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006044.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/hongzhongmj/game/fama/light.plist", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/shanweimj/game/fama/light.plist"
@@ -5057,7 +5057,7 @@
     }, 
     "afa018f1a277dfe964a269413b4fade1": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008046.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006046.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/anim/AnimationZhadan30.plist"
             ], 
@@ -5255,7 +5255,7 @@
     }, 
     "516a75d95c750f9de3fb7667a8e6cba0": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008011.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006011.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/anim/gameover/AnimationDDZ21.plist"
             ], 
@@ -5333,7 +5333,7 @@
     }, 
     "3e04625ef73029338f80a1e09929f321": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006042.csb", 
+            "new": "D:/Python_FileDispose/real_res/friendRoomEnterInfo.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongyibaizhangmj/hall/friendRoomEnterInfo.csb", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/maomingmj/hall/friendRoomEnterInfo.csb", 
@@ -5407,7 +5407,7 @@
     }, 
     "a8287f84c014e728dd4db54cc58fd09d": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006194.csb", 
+            "new": "D:/Python_FileDispose/real_res/face_item.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/face_item.csb", 
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/face_item.csb"
@@ -5637,7 +5637,7 @@
     }, 
     "4067310195b0e1335d6acc919068a606": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006196.csb", 
+            "new": "D:/Python_FileDispose/real_res/toast.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/toast.csb"
             ], 
@@ -5821,7 +5821,7 @@
     }, 
     "7b5c98a23993fb67ff9b05eea70ac37c": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1012002.TTF", 
+            "new": "D:/Python_FileDispose/real_res/1010002.TTF", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/kaipingmj/friendRoom/fangzhengcuyuan.TTF"
             ], 
@@ -5871,7 +5871,7 @@
     }, 
     "d60310f365d782402caa1b5917602bc2": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008014.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006014.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/anim/AnimationZhadan31.plist"
             ], 
@@ -6025,7 +6025,7 @@
     }, 
     "86853bbc1dbb538b19d5c04200365fbf": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1014004.jpg", 
+            "new": "D:/Python_FileDispose/real_res/1012004.jpg", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/ddzroom/ddzroom/bg.jpg"
             ], 
@@ -6439,7 +6439,7 @@
     }, 
     "b5edc231964e0cde5056e85fdc805ffa": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006114.csb", 
+            "new": "D:/Python_FileDispose/real_res/playerinfo.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/playerinfo.csb"
             ], 
@@ -6699,7 +6699,7 @@
     }, 
     "76685bb4173a46f88bccc574007d6f71": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006057.csb", 
+            "new": "D:/Python_FileDispose/real_res/room_menu2p.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/room_menu2p.csb"
             ], 
@@ -6753,7 +6753,7 @@
     }, 
     "21add4cc4ad9041278afdabedd5a56ab": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008049.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006049.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/anim/gameover/AnimationDDZ20.plist"
             ], 
@@ -6805,7 +6805,7 @@
     }, 
     "8290e3ac4bce2f02c9f73f15fd22052e": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006103.csb", 
+            "new": "D:/Python_FileDispose/real_res/roundSelectCheckBox.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/jieyangmj/hall/roundSelectCheckBox.csb"
             ], 
@@ -6841,7 +6841,7 @@
     }, 
     "90a194508c897cc6b741d91b1318e6a8": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1008037.plist", 
+            "new": "D:/Python_FileDispose/real_res/1006037.plist", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/anim/AnimationZhadan33.plist"
             ], 
@@ -6899,7 +6899,7 @@
     }, 
     "48058e8a9d3d5c9cd70f9523e42354f1": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006163.csb", 
+            "new": "D:/Python_FileDispose/real_res/selectCheckBox.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/jieyangmj/hall/selectCheckBox.csb"
             ], 
@@ -6911,7 +6911,7 @@
     }, 
     "aa323d6d7449c9fe12da9a16be6a5ea4": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1014001.jpg", 
+            "new": "D:/Python_FileDispose/real_res/1012001.jpg", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/hall/ddzroom/ddzroom/bg.jpg"
             ], 
@@ -6923,7 +6923,7 @@
     }, 
     "8b7ec06dc12c88fe5e974d8db3ba9ac8": {
         "currPath": {
-            "new": "D:/Python_FileDispose/real_res/1006059.csb", 
+            "new": "D:/Python_FileDispose/real_res/AnimationWin2.csb", 
             "repeat": [
                 "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/anim/AnimationWin2.csb"
             ], 

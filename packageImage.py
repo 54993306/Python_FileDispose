@@ -176,11 +176,9 @@ class packageImage:
             os.mkdir(outPutPath, 0o777)
         if not outPutPath in self.outPutFolder:
             self.outPutFolder[outPutPath] = True
-        baseName = os.path.basename(pResPath)
-
         command = self.fntdiapose(pResPath , outPutPath) # 移动与fnt对应的图片
-        # print "cur : " + pResPath + " Tag : " + comFun.OUTPUTTARGET + outPutPath + "/" + baseName
-        tPath = comFun.OUTPUTTARGET + outPutPath + "/" + baseName
+        tPath = comFun.OUTPUTTARGET + outPutPath + "/" + os.path.basename(pResPath)
+        # print "cur : " + pResPath + " Tag : " + tPath
         shutil.copyfile(pResPath , tPath)
         if command:
             pNewResPath = re.sub("D:/Python_FileDispose", ".", tPath)   # 修改目标路径的文件，而不是本地文件
@@ -291,7 +289,6 @@ class packageImage:
             for plistpath , pnglist in self.plistInfo.iteritems():
                 for pngName in pnglist:
                     if cmp(filename , pngName) == 0:
-                        plistpath = os.path.abspath(plistpath)
                         self.plistMd5[md5] = plistpath                  # 文件md5值对应所存储的plist文件
         # print(json.dumps(self.plistMd5, ensure_ascii=False, encoding="utf -8", indent=4))
 

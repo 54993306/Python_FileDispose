@@ -18,9 +18,7 @@ class replaceImage:
         self.plistMd5 = {}
         self.resNum = 0
 
-        plistMd5 = open(comFun.PLISTMD5, "r")
-        self.plistMd5 = json.load(plistMd5)
-        plistMd5.close()
+        self.plistMd5 = copy.deepcopy(comFun.GetDataByFile(comFun.PLISTMD5))
 
         self.FileData = DF.fileDataHandle()
 

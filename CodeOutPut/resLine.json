@@ -1,8 +1,9 @@
 {
-    "./oldJson/HallMain.lua": [
+    "./oldLua/HallMain.lua": [
         "hall/hall.csb", 
         "hall/huanpi2/main/btn_free_2.png", 
         "hall/huanpi2/main/btn_free.png", 
+        "hall/huanpi2/main_portrait/5542newbg.png", 
         "hall/huanpi2/liangyouaction/btn_sly.png", 
         "hall/main/armature/clubfx.csb", 
         "hall/main/armature/clubfx.csb", 

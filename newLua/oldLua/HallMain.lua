@@ -31,6 +31,8 @@ local LiangYouActivity = require("app.hall.wnds.activity.LiangYouActivity")
 local ActivityDialog = require("app.hall.wnds.activity.ActivityDialog")
 local CommonTips = require "app.hall.common.CommonTips"
 
+local TurnEnterLayer = require("app.hall.main.TurnEnterLayer")
+
 local GAME_ROUND_FLAG = 0
 --redIcon pos param
 local hratio = 13/16
@@ -117,9 +119,9 @@ function HallMain:onInit()
     self.headPanel = ccui.Helper:seekWidgetByName(self.m_pWidget, "head_panel")
     self.headPanel:addTouchEventListener(handler(self, self.onClickButton))
 
+    -- 创建房间按钮
     self.btn_new = ccui.Helper:seekWidgetByName(self.m_pWidget, "btn_new");
     self.btn_new:addTouchEventListener(handler(self, self.onClickButton));
-    -- 创建房间需要更换按钮
 
     self.btn_more = ccui.Helper:seekWidgetByName(self.m_pWidget, "btn_more");
     self.btn_more:addTouchEventListener(handler(self, self.onClickButton));
@@ -230,7 +232,7 @@ function HallMain:onInit()
         if game_round_num < GAME_ROUND_FLAG then
             self.btn_diamond:loadTextureNormal("hall/huanpi2/main/btn_free_2.png")
         else
-            self.btn_diamond:loadTextureNormal("#btn_free.png")
+            self.btn_diamond:loadTextureNormal("real_res/1000954.png")
         end
     end
 
@@ -388,6 +390,16 @@ function HallMain:onInit()
     cc.Director:getInstance():getEventDispatcher():addEventListenerWithFixedPriority(listener, 1)
 
     self:recvPHPActivityData()
+
+    self:haveNewBgimage()
+end
+
+-- 是否有新的背景图需要更新
+function HallMain:haveNewBgimage()
+    if HANENEWBGIMAGE and PRODUCT_ID == 5542 then
+        self.bg_image = ccui.Helper:seekWidgetByName(self.m_pWidget, "bg");
+        self.bg_image:loadTexture ( "real_res/1000959.png" )
+    end
 end
 
 -- 初始化绑定手机按钮状态
@@ -672,7 +684,12 @@ function HallMain:onShow()
         Log.i("hall main onshow send CODE_SEND_YAOQING_INFO")
         SocketManager.getInstance():send(CODE_TYPE_USER, HallSocketCmd.CODE_SEND_YAOQING_INFO, data);
     end
+    local clubdatas = kSystemConfig:getMyClubsInfo()
+    if not next(clubdatas) then
+        SocketManager.getInstance():send(CODE_TYPE_USER, HallSocketCmd.CODE_SEND_JOINEDCLUBLIST);
+    end
 
+    TurnEnterLayer:turn()
     -- self:joinRoomByScheme()
 end
 
@@ -786,7 +803,7 @@ end
 function HallMain:CreateRoomEffect()
     local stencil = display.newSprite(self.btn_new:getVirtualRenderer():getSprite():getSpriteFrame())
     local clipSize = stencil:getContentSize()
-    self.spark = display.newSprite("real_res/clippinglight.png")
+    self.spark = display.newSprite("real_res/1000818.png")
     self.spark:setOpacity(200)
     local clpNode = cc.ClippingNode:create()
     clpNode:setAlphaThreshold(0.05)
@@ -813,7 +830,7 @@ function HallMain:starEffect(pWidget,x,y)
     local romdomSet = cc.CallFunc:create(handler(data,function(data)
         local num = math.random(1,3)
         for i=1,num do
-            local spark = display.newSprite("real_res/999_star.png")
+            local spark = display.newSprite("real_res/1000603.png")
             spark:setOpacity(0)
             local delay = cc.DelayTime:create(math.random(3,8)/10)
             local fadein = cc.FadeIn:create(0.5)
@@ -830,7 +847,7 @@ function HallMain:starEffect(pWidget,x,y)
 end
 
 function HallMain:moreBtnTips()
-    self.btn_more.redIcon = display.newSprite("real_res/hongdian.png")
+    self.btn_more.redIcon = display.newSprite("real_res/1000412.png")
     local hdCs = self.btn_more.redIcon:getContentSize()
     local freeCs = self.btn_more:getContentSize()
     if IsPortrait then -- TODO
@@ -862,7 +879,7 @@ function HallMain:moreBtnTips()
 end
 
 function HallMain:InviteBtnTip()
-    self.btn_yaoqing.redIcon = display.newSprite("real_res/hongdian.png")
+    self.btn_yaoqing.redIcon = display.newSprite("real_res/1000412.png")
     local renderImg = ccui.Helper:seekWidgetByName(self.m_pWidget, "Img_mark")
     if IsPortrait then -- TODO
         renderImg = nil
@@ -886,7 +903,7 @@ end
 
 function HallMain:MailTips()
     -- scheduler.unscheduleGlobal(self.m_getSpeakingThread);   --在离开场景的时候需要停掉它,否则计时器是全局的不会停
-    local redIcon = display.newSprite("real_res/hongdian.png")
+    local redIcon = display.newSprite("real_res/1000412.png")
     local hdCs = redIcon:getContentSize()
     local mailIcon = ccui.Helper:seekWidgetByName(self.btn_mail, "Image_mail")
     if IsPortrait then -- TODO
@@ -970,9 +987,9 @@ function HallMain:showFreeEffect()
         end
 
 
-        local res = "#btn_free.png"
+        local res = "real_res/1000954.png"
         if not (kLoginInfo:isFreeGetDiamound()) then
-            res = "real_res/btn_free_1.png"
+            res = "real_res/1000118.png"
         end
         self.btn_diamond:loadTextureNormal(res)
 
@@ -981,11 +998,11 @@ function HallMain:showFreeEffect()
             return
         end
         --加载特效图
-        cc.SpriteFrameCache:getInstance():addSpriteFrames("real_res/mfeivfx.plist")
+        cc.SpriteFrameCache:getInstance():addSpriteFrames("real_res/1006038.plist")
 
         self.btn_diamond:stopAllActions()
         -- --红点
-        -- self.m_hongdian = display.newSprite("real_res/hongdian.png")
+        -- self.m_hongdian = display.newSprite("real_res/1000412.png")
         -- local hdCs = self.m_hongdian:getContentSize()
         -- self.btn_diamond:addChild(self.m_hongdian)
         -- self.m_hongdian:setPosition(cc.p(freeCs.width*0.84, freeCs.height*0.84))
@@ -1012,7 +1029,7 @@ function HallMain:showFreeEffect()
             self.btn_diamond.particleSys = nil
         end
         --粒子效果
-        self.btn_diamond.particleSys = cc.ParticleSystemQuad:create("real_res/particleDiamond.plist");
+        self.btn_diamond.particleSys = cc.ParticleSystemQuad:create("real_res/1006029.plist");
         pan_bottom:addChild(self.btn_diamond.particleSys);
         self.btn_diamond.particleSys:setScale(0.7)
         self.btn_diamond.particleSys:setPosition(self.btn_diamond:getPositionX(),self.btn_diamond:getPositionY()+10);
@@ -1053,11 +1070,11 @@ function HallMain:showFreeEffect()
             return
         end
         --加载特效图
-        cc.SpriteFrameCache:getInstance():addSpriteFrames("real_res/mfeivfx.plist")
+        cc.SpriteFrameCache:getInstance():addSpriteFrames("real_res/1006038.plist")
         self.btn_diamond:stopAllActions()
 
         --红点
-        self.m_hongdian = display.newSprite("real_res/hongdian.png")
+        self.m_hongdian = display.newSprite("real_res/1000412.png")
         local hdCs = self.m_hongdian:getContentSize()
         self.btn_diamond:addChild(self.m_hongdian)
         self.m_hongdian:setPosition(cc.p(freeCs.width*0.84, freeCs.height*0.84))
@@ -1081,7 +1098,7 @@ function HallMain:showFreeEffect()
         self.btn_diamond:runAction(cc.RepeatForever:create(sequence_1))
 
         --粒子效果
-        self.btn_diamond.particleSys = cc.ParticleSystemQuad:create("real_res/particleDiamond.plist");
+        self.btn_diamond.particleSys = cc.ParticleSystemQuad:create("real_res/1006029.plist");
         pan_bottom:addChild(self.btn_diamond.particleSys);
         self.btn_diamond.particleSys:setScale(0.7)
         self.btn_diamond.particleSys:setPosition(self.btn_diamond:getPositionX(),self.btn_diamond:getPositionY()+10);
@@ -1371,7 +1388,7 @@ function HallMain:pushCommonTips(diamondNum,is_yuanbao)
     data.contentNode =  cc.Layer:create()
     local front_label = display.newTTFLabel({
     text = "恭喜成功获得：",
-    font = "res_TTF/1283_fangzhengcuyuan.TTF",
+    font = "D:/Python_FileDispose/res_TTF/1010003.TTF",
     size = 30,
     align = cc.TEXT_ALIGNMENT_CENTER, -- 文字内部居中对齐
     color = cc.c3b(51,51,51),
@@ -1379,16 +1396,16 @@ function HallMain:pushCommonTips(diamondNum,is_yuanbao)
 
     local last_label = display.newTTFLabel({
     text = "x"..diamondNum,
-    font = "res_TTF/1283_fangzhengcuyuan.TTF",
+    font = "D:/Python_FileDispose/res_TTF/1010003.TTF",
     size = 30,
     align = cc.TEXT_ALIGNMENT_LEFT, -- 文字内部居中对齐
     color = cc.c3b(51,51,51),
     })
     local img_diamond
     if is_yuanbao then
-        img_diamond = cc.Sprite:create("#1328_yuanbao.png")
+        img_diamond = cc.Sprite:create("#1000796.png")
     else
-        img_diamond = cc.Sprite:create("#diamond.png")
+        img_diamond = cc.Sprite:create("#1000990.png")
     end
 
     front_label:setPositionX(front_label:getPositionX() - 150)
@@ -1512,6 +1529,7 @@ function HallMain:onClickNew()
         data.newerType = self.m_NewerType;
         self.m_NewerType = nil;
         kFriendRoomInfo:setRoomState(CreateRoomState.normal)
+        kSystemConfig:cacheEnterData("enterid" , 2)
         UIManager:getInstance():pushWnd(FriendRoomCreate, data);
     end
 end
@@ -2106,7 +2124,7 @@ function HallMain:recvPHPActivityData()
 
     local function onFinish(nErrorCode,tData)
         if nErrorCode == -1 or tData.status ~= 0 then
-           return  
+           return
         end
         self.m_activityData = tData
         Log.d("self.m_activityData....",self.m_activityData)
@@ -2232,7 +2250,7 @@ end
 --不断刷新客服红点显示内容
 function HallMain:updateHelp()
 
-    local hongdian = display.newSprite("real_res/hongdian.png")
+    local hongdian = display.newSprite("real_res/1000412.png")
     local hdCs = hongdian:getContentSize()
     local kfCs = self.btn_help:getContentSize()
     if IsPortrait then -- TODO
@@ -2390,7 +2408,7 @@ function HallMain:recPlayerInfo(packetInfo)
         if game_round_num < GAME_ROUND_FLAG then
             self.btn_diamond:loadTextureNormal("hall/huanpi2/main/btn_free_2.png")
         else
-            self.btn_diamond:loadTextureNormal("#btn_free.png")
+            self.btn_diamond:loadTextureNormal("real_res/1000954.png")
         end
         -- 免费红点显示
         self:showFreeHongDian()
@@ -2649,7 +2667,7 @@ function HallMain:openWebView(url, title)
         NativeCall.getInstance():callNative(data)
         return
     end
-    
+
     local data = {}
     data.url = url or _forceUpdateUrl
     data.title = title or "活动"
@@ -2738,24 +2756,24 @@ function HallMain:showActivionTips(act_tips_msg)
     } )
 
     local activitySize = self.btn_activity:getContentSize()
-    -- local activtyTips_bg = display.newScale9Sprite("real_res/958_bg_tishi.png", 
+    -- local activtyTips_bg = display.newScale9Sprite("real_res/1000575.png",
     --                                                 activitySize.width/2, activitySize.height + 30,
     --                                                  cc.size(label:getContentSize().width + 30, 60),
     --                                                  cc.rect(30,20,10,1))
-    local activityTips_bg = ccui.Scale9Sprite:create("real_res/958_bg_tishi.png")
+    local activityTips_bg = ccui.Scale9Sprite:create("real_res/1000575.png")
     activityTips_bg:setPosition(cc.p(activitySize.width/2, activitySize.height + 30))
     activityTips_bg:setContentSize(cc.size(label:getContentSize().width + 30, 60))
     activityTips_bg:setCapInsets(cc.rect(30,20,20,30))
     local tipsBgSize = activityTips_bg:getContentSize()
 
-    local tishijiantou = display.newSprite("real_res/tishi_bg_jiantou.png")
+    local tishijiantou = display.newSprite("real_res/1000561.png")
     tishijiantou:addTo(activityTips_bg)
     tishijiantou:setPosition(cc.p(tipsBgSize.width/2,0))
-    
+
     activityTips_bg:setName("activityTips_bg")
     activityTips_bg:addTo(self.btn_activity)
     label:addTo(activityTips_bg)
-    
+
     label:setPosition(cc.p(tipsBgSize.width/2,tipsBgSize.height/2))
 
 end
@@ -2765,7 +2783,7 @@ function HallMain:showActivionHongDian()
     if redIcon then
         redIcon:removeFromParent()
     end
-    local redIcon = display.newSprite("real_res/hongdian.png")
+    local redIcon = display.newSprite("real_res/1000412.png")
     redIcon:addTo(self.btn_activity)
     redIcon:setName("redIcon")
     local activitySize = self.btn_activity:getContentSize()

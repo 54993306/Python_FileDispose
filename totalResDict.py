@@ -107,7 +107,7 @@ class totalRes:
     # 获取新文件名称
     def getNewFileName(self , filepath):
         _, filetype = os.path.splitext(filepath)
-        if not filetype:   # 没有类型的文件不修改文件名
+        if not filetype or cmp(".csb" , filetype) == 0:   # 没有类型的文件不修改文件名
             return comFun.COPYPATH + "/" + os.path.basename(filepath)
         if not filetype in self.typeNum:
             self.typeNum[filetype] = len(self.typeNum)

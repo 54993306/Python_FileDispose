@@ -7,7 +7,7 @@
             <key>1000232.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,109},{255,54}}</string>
+                <string>{{2,71},{255,54}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -20,7 +20,7 @@
             <key>1000458.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,40},{80,67}}</string>
+                <string>{{2,2},{80,67}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -30,23 +30,10 @@
                 <key>sourceSize</key>
                 <string>{80,67}</string>
             </dict>
-            <key>1000681.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,2},{103,36}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,2},{103,36}}</string>
-                <key>sourceSize</key>
-                <string>{103,40}</string>
-            </dict>
             <key>1000903.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{84,40},{30,30}}</string>
+                <string>{{84,2},{30,30}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -66,7 +53,7 @@
             <key>size</key>
             <string>{128,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ad83a0ead7d01676e5817e2095ce00f7$</string>
+            <string>$TexturePacker:SmartUpdate:f38fe300abf719abd7698fb0d98ab241$</string>
             <key>textureFileName</key>
             <string>accountPanel.png</string>
         </dict>

@@ -57,17 +57,9 @@ MOVERECORD      = "./output/3_MoveRecord.json"  # 记录被使用了的资源
 CHANGERESULT    = "./output/4_ChangeFile.json"
 
 # 5 code res
-CODERESMESSAGE      = "./CodeOutPut/code_res_Message.json"
-CODELINERES         = "./CodeOutPut/resLine.json"
-CODEFOLDER          = "D:/Svn_2d/S_GD_Heji/src/app"
-GAMECODEFOLDER      = "D:/Svn_2d/S_GD_Heji/src/package_src"
-CODERESFILE         = "./output/coderesline.json"
-CODEUNREGULARFILE   = "./output/codeUnregularline.json"
-CODECSB             = "./output/codecsb.json"
-
-# 为优化打包结构，一些图片，手动选择不用打包
-UNPACKAGERES = {}
-UNPACKAGERES["lastUpdateAD"] = True
+CODERESMESSAGE  = "./output/5_CodeMessage.json"
+CODEFOLDER      = "D:/Svn_2d/S_GD_Heji/src/app"
+GAMECODEFOLDER  = "D:/Svn_2d/S_GD_Heji/src/package_src"
 
 def RecordToJsonFile(path , data):
     file_stream = open(path, "w+")
