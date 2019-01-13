@@ -920,17 +920,17 @@
         "new": "D:/Python_FileDispose/real_res/1002051.mp3", 
         "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_61.mp3"
     }, 
-    "e68b4ac950aecb8d20d0c63064bcf303": {
-        "new": "D:/Python_FileDispose/real_res/1000098.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/btn_text_la2.png"
+    "a2486c1fafdefcd2f5e3cf50c9bec7b3": {
+        "new": "D:/Python_FileDispose/real_res/1000281.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/font/green_num_big.png"
     }, 
     "bf09c5a7b5e0e0e9df181a76e0907966": {
         "new": "D:/Python_FileDispose/real_res/1000099.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main_portrait/img_btn_share.png"
     }, 
-    "2fd2f9d6cfa6ce7b07d0d8cae2e410ce": {
-        "new": "D:/Python_FileDispose/real_res/1004003.fnt", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/font/num4.fnt"
+    "b6193a1591a434fab96ce9d3b85ae739": {
+        "new": "D:/Python_FileDispose/real_res/1002088.mp3", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/duanyu/zimo/1.mp3"
     }, 
     "f2ec1a9fd79150fe793ca6f0d8f4d4b1": {
         "new": "D:/Python_FileDispose/real_res/1000100.png", 
@@ -1361,6 +1361,13 @@
         ], 
         "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_feiji10.mp3"
     }, 
+    "1b99e0a5b5bf9bf7b13a940ba50a6c26": {
+        "new": "D:/Python_FileDispose/real_res/1002065.mp3", 
+        "repeat": [
+            "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_sandaier20.mp3"
+        ], 
+        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_sandaier10.mp3"
+    }, 
     "1539b7f26577bb0c49b51c8b5c2adc17": {
         "new": "D:/Python_FileDispose/real_res/1000153.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/paodekuai/animation/AnimationWin20.png"
@@ -1665,10 +1672,6 @@
         "new": "D:/Python_FileDispose/real_res/1000183.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/input_bg.png"
     }, 
-    "e096def5487ef3723b7c3a4fb9bc6318": {
-        "new": "D:/Python_FileDispose/real_res/1000239.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/gameCommon/face/armature_pic/face_13.png"
-    }, 
     "28ae96db4da0084be8c3a73917be6c4f": {
         "new": "D:/Python_FileDispose/real_res/1002080.mp3", 
         "repeat": [
@@ -1820,9 +1823,9 @@
         ], 
         "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/fanma/light.png"
     }, 
-    "b6193a1591a434fab96ce9d3b85ae739": {
-        "new": "D:/Python_FileDispose/real_res/1002088.mp3", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/duanyu/zimo/1.mp3"
+    "2fd2f9d6cfa6ce7b07d0d8cae2e410ce": {
+        "new": "D:/Python_FileDispose/real_res/1004003.fnt", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/font/num4.fnt"
     }, 
     "1b3cff1de13e8a4e5ccb79fe394d601c": {
         "new": "D:/Python_FileDispose/real_res/1000197.png", 
@@ -2028,12 +2031,9 @@
         "new": "D:/Python_FileDispose/real_res/1000218.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/img_gradient_2.png"
     }, 
-    "cd228666566a0035a33f250028e366ee": {
-        "new": "D:/Python_FileDispose/real_res/1000219.png", 
-        "repeat": [
-            "D:/Svn_2d/S_GD_Heji/res/package_res/games/gaozhoumj/hall/login/logo.png"
-        ], 
-        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/gaozhoumaimamj/hall/login/logo.png"
+    "e096def5487ef3723b7c3a4fb9bc6318": {
+        "new": "D:/Python_FileDispose/real_res/1000239.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/gameCommon/face/armature_pic/face_13.png"
     }, 
     "09532a7fc7fad3b0561e9d475b210440": {
         "new": "D:/Python_FileDispose/real_res/1002099.mp3", 
@@ -2157,13 +2157,6 @@
         ], 
         "old": "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/peng.mp3"
     }, 
-    "76252d956566802d1494c36b8e954031": {
-        "new": "D:/Python_FileDispose/real_res/1002107.mp3", 
-        "repeat": [
-            "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/sanzhang_61.mp3"
-        ], 
-        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_61.mp3"
-    }, 
     "c70adcb855a335b70c272f73f4e6e658": {
         "new": "D:/Python_FileDispose/real_res/1000232.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bind_wechat_text2.png"
@@ -2210,12 +2203,9 @@
         ], 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/weixin_icon.png.png"
     }, 
-    "1b99e0a5b5bf9bf7b13a940ba50a6c26": {
-        "new": "D:/Python_FileDispose/real_res/1002065.mp3", 
-        "repeat": [
-            "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_sandaier20.mp3"
-        ], 
-        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_sandaier10.mp3"
+    "b0514682296ce28f6ef3a622e2ff3cdd": {
+        "new": "D:/Python_FileDispose/real_res/1000716.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/ddz/img_new_area.png"
     }, 
     "e8b470bbeed6ecf22bb5c2b3320d654f": {
         "new": "D:/Python_FileDispose/real_res/1006052.csb", 
@@ -2321,9 +2311,12 @@
         "new": "D:/Python_FileDispose/real_res/1006056.csb", 
         "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/chat_view2.csb"
     }, 
-    "350f55e2853afc31baa31e942110e7a3": {
-        "new": "D:/Python_FileDispose/real_res/1000250.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_cancel.png"
+    "187da919ee4a0d373ef5bd9bc36a3565": {
+        "new": "D:/Python_FileDispose/real_res/1002101.mp3", 
+        "repeat": [
+            "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/dui_90.mp3"
+        ], 
+        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_90.mp3"
     }, 
     "fcac83c98210c0771c6db38568579a71": {
         "new": "D:/Python_FileDispose/real_res/1000251.png", 
@@ -2340,12 +2333,9 @@
         "new": "D:/Python_FileDispose/real_res/1000252.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_title1.png"
     }, 
-    "bf83a6a568e7cf88f2c3f4e601b27c65": {
-        "new": "D:/Python_FileDispose/real_res/1002115.mp3", 
-        "repeat": [
-            "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/sanzhang_141.mp3"
-        ], 
-        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_141.mp3"
+    "e68b4ac950aecb8d20d0c63064bcf303": {
+        "new": "D:/Python_FileDispose/real_res/1000098.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/btn_text_la2.png"
     }, 
     "69ac5b9464b926624a0dab341cc78a7b": {
         "new": "D:/Python_FileDispose/real_res/1000253.png", 
@@ -2591,10 +2581,6 @@
             "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/dui_51.mp3"
         ], 
         "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_51.mp3"
-    }, 
-    "a2486c1fafdefcd2f5e3cf50c9bec7b3": {
-        "new": "D:/Python_FileDispose/real_res/1000281.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/font/green_num_big.png"
     }, 
     "ed5b18cf33357fc5a417512408575424": {
         "new": "D:/Python_FileDispose/real_res/1000282.png", 
@@ -3157,12 +3143,9 @@
         "new": "D:/Python_FileDispose/real_res/1000349.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/img_wechat_share.png"
     }, 
-    "45c118a8fdcb62bd1b0ddc5984b33c0f": {
-        "new": "D:/Python_FileDispose/real_res/1000350.png", 
-        "repeat": [
-            "D:/Svn_2d/S_GD_Heji/res/package_res/games/shanweimj/friendRoom/mjOver/btn_back.png"
-        ], 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/btn_back.png"
+    "da772a2308f4b49817f86bc28495ba4a": {
+        "new": "D:/Python_FileDispose/real_res/1000737.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/font/room_num_0.png"
     }, 
     "c37308c40484efd1d97ead3d0c7ae0bc": {
         "new": "D:/Python_FileDispose/real_res/1002160.mp3", 
@@ -4044,6 +4027,13 @@
     "19e1842f8939d5c73c43b02007cc1214": {
         "new": "D:/Python_FileDispose/real_res/1000448.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/robot_text_cancel.png"
+    }, 
+    "bf83a6a568e7cf88f2c3f4e601b27c65": {
+        "new": "D:/Python_FileDispose/real_res/1002115.mp3", 
+        "repeat": [
+            "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/sanzhang_141.mp3"
+        ], 
+        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_141.mp3"
     }, 
     "c5acd3b25758bd3f6a6dc2c793ef2ce1": {
         "new": "D:/Python_FileDispose/real_res/1000449.png", 
@@ -5488,9 +5478,12 @@
         "new": "D:/Python_FileDispose/real_res/1000625.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/catch_chicken/animation/guizhouAnimation4.png"
     }, 
-    "ee385b09bbfffd47522afe417a712d89": {
-        "new": "D:/Python_FileDispose/real_res/1002335.mp3", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/duanyu/zimo/1.mp3"
+    "44179bbef1dba483143d6aa13eae628c": {
+        "new": "D:/Python_FileDispose/real_res/1000626.png", 
+        "repeat": [
+            "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/hall/huanpi2/Common/dialog_3.png"
+        ], 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/dialog_3.png"
     }, 
     "827dd12e426bfed209f06ff7f0efe825": {
         "new": "D:/Python_FileDispose/real_res/1002262.mp3", 
@@ -5584,9 +5577,9 @@
         ], 
         "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/jingdeng/jingdeng0.plist"
     }, 
-    "bd9e7beda003ce864b4fbe8d4ae8e7b2": {
-        "new": "D:/Python_FileDispose/real_res/1014003.jpg", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/AlbumArtSmall.jpg"
+    "fd1ef04aa1490b5c70ca78ac6be6c283": {
+        "new": "D:/Python_FileDispose/real_res/1000933.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main_portrait/icon_default.png"
     }, 
     "ee718c6331d4d2e613c4933f86e44795": {
         "new": "D:/Python_FileDispose/real_res/1000635.png", 
@@ -5691,12 +5684,9 @@
         ], 
         "old": "D:/Svn_2d/S_GD_Heji/res/games/common/mj/common/L2_bg.png"
     }, 
-    "1d6438a9e289886b5a1bf36dc2edcc1f": {
-        "new": "D:/Python_FileDispose/real_res/1002026.mp3", 
-        "repeat": [
-            "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/shunzi_liandui.mp3"
-        ], 
-        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/shunzi_liandui.mp3"
+    "ceaea30f423f0253502c42c44d4eee80": {
+        "new": "D:/Python_FileDispose/real_res/1000938.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_yqrh.png"
     }, 
     "6815afb149403730e8358beaad458900": {
         "new": "D:/Python_FileDispose/real_res/1000648.png", 
@@ -6024,6 +6014,13 @@
         "new": "D:/Python_FileDispose/real_res/1000683.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/gold_icon.png"
     }, 
+    "cd228666566a0035a33f250028e366ee": {
+        "new": "D:/Python_FileDispose/real_res/1000219.png", 
+        "repeat": [
+            "D:/Svn_2d/S_GD_Heji/res/package_res/games/gaozhoumj/hall/login/logo.png"
+        ], 
+        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/gaozhoumaimamj/hall/login/logo.png"
+    }, 
     "8e8e64096c2ae5af697f014271ab1bf9": {
         "new": "D:/Python_FileDispose/real_res/1000684.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/main/title_free.png"
@@ -6253,16 +6250,13 @@
         "new": "D:/Python_FileDispose/real_res/1002300.mp3", 
         "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_120.mp3"
     }, 
-    "187da919ee4a0d373ef5bd9bc36a3565": {
-        "new": "D:/Python_FileDispose/real_res/1002101.mp3", 
-        "repeat": [
-            "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/dui_90.mp3"
-        ], 
-        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_90.mp3"
-    }, 
     "997d2c48a4e7669f458cd227f4fb23ef": {
         "new": "D:/Python_FileDispose/real_res/1002301.mp3", 
         "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_liandui0.mp3"
+    }, 
+    "65182690a0c4c586e02bbadc63419ee7": {
+        "new": "D:/Python_FileDispose/real_res/1000708.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_yaoqing.png"
     }, 
     "f9a68b6ea6b6492b954855634d19a0a5": {
         "new": "D:/Python_FileDispose/real_res/1000709.png", 
@@ -6416,6 +6410,10 @@
         "new": "D:/Python_FileDispose/real_res/1006155.csb", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/redpacket_panel.csb"
     }, 
+    "bd9e7beda003ce864b4fbe8d4ae8e7b2": {
+        "new": "D:/Python_FileDispose/real_res/1014003.jpg", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/AlbumArtSmall.jpg"
+    }, 
     "4ebc83db22e17a1c59eeb3cd99340f61": {
         "new": "D:/Python_FileDispose/real_res/1000725.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/code_4.png"
@@ -6512,9 +6510,12 @@
         "new": "D:/Python_FileDispose/real_res/1006158.csb", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/wechat_path.csb"
     }, 
-    "da772a2308f4b49817f86bc28495ba4a": {
-        "new": "D:/Python_FileDispose/real_res/1000737.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/font/room_num_0.png"
+    "45c118a8fdcb62bd1b0ddc5984b33c0f": {
+        "new": "D:/Python_FileDispose/real_res/1000350.png", 
+        "repeat": [
+            "D:/Svn_2d/S_GD_Heji/res/package_res/games/shanweimj/friendRoom/mjOver/btn_back.png"
+        ], 
+        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/btn_back.png"
     }, 
     "63951899128c1dd5d710411ab37dc461": {
         "new": "D:/Python_FileDispose/real_res/1000738.png", 
@@ -6570,6 +6571,13 @@
             "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_300.mp3"
         ], 
         "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_300.mp3"
+    }, 
+    "118dd7d708ad118cea2800ef251995c7": {
+        "new": "D:/Python_FileDispose/real_res/1000792.png", 
+        "repeat": [
+            "D:/Svn_2d/S_GD_Heji/res/package_res/games/shanweimj/friendRoom/mjOver/bg_bar.png"
+        ], 
+        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/bg_bar.png"
     }, 
     "cad69fd1a15d20a723ba1d8e5cf24eb6": {
         "new": "D:/Python_FileDispose/real_res/1006159.csb", 
@@ -6888,12 +6896,12 @@
         "new": "D:/Python_FileDispose/real_res/1000347.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/btn_text_pao3.png"
     }, 
-    "44179bbef1dba483143d6aa13eae628c": {
-        "new": "D:/Python_FileDispose/real_res/1000626.png", 
+    "76252d956566802d1494c36b8e954031": {
+        "new": "D:/Python_FileDispose/real_res/1002107.mp3", 
         "repeat": [
-            "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/hall/huanpi2/Common/dialog_3.png"
+            "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/sanzhang_61.mp3"
         ], 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/dialog_3.png"
+        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_61.mp3"
     }, 
     "e172ed5e38788b5e00f417b08c223799": {
         "new": "D:/Python_FileDispose/real_res/1000777.png", 
@@ -7055,12 +7063,9 @@
         ], 
         "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/huaijimj/game/img_bqg.png"
     }, 
-    "118dd7d708ad118cea2800ef251995c7": {
-        "new": "D:/Python_FileDispose/real_res/1000792.png", 
-        "repeat": [
-            "D:/Svn_2d/S_GD_Heji/res/package_res/games/shanweimj/friendRoom/mjOver/bg_bar.png"
-        ], 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/bg_bar.png"
+    "350f55e2853afc31baa31e942110e7a3": {
+        "new": "D:/Python_FileDispose/real_res/1000250.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_cancel.png"
     }, 
     "c80630f028de586b561d077ed02a50ce": {
         "new": "D:/Python_FileDispose/real_res/1000793.png", 
@@ -7412,9 +7417,12 @@
         "new": "D:/Python_FileDispose/real_res/1000833.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/code_3.png"
     }, 
-    "65182690a0c4c586e02bbadc63419ee7": {
-        "new": "D:/Python_FileDispose/real_res/1000708.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_yaoqing.png"
+    "4029a5257d752a35b73ce1ef83418a68": {
+        "new": "D:/Python_FileDispose/real_res/1002397.mp3", 
+        "repeat": [
+            "D:/Svn_2d/S_GD_Heji/res/games/common/mj/mjsound/bgMusic.mp3"
+        ], 
+        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/music/bgMusic.mp3"
     }, 
     "f83b220a9159eb459e6c7ce0f3f8ba50": {
         "new": "D:/Python_FileDispose/real_res/1000834.png", 
@@ -7557,6 +7565,10 @@
     "6dfdf65308499be62425dcc67928a697": {
         "new": "D:/Python_FileDispose/real_res/1008054.plist", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/gameCommon/face/armature/face0.plist"
+    }, 
+    "ee385b09bbfffd47522afe417a712d89": {
+        "new": "D:/Python_FileDispose/real_res/1002335.mp3", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/duanyu/zimo/1.mp3"
     }, 
     "2206cbfccca6df39b25624dfe0bc239e": {
         "new": "D:/Python_FileDispose/real_res/1000849.png", 
@@ -8189,12 +8201,9 @@
         "new": "D:/Python_FileDispose/real_res/1000917.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/itembg.png"
     }, 
-    "4029a5257d752a35b73ce1ef83418a68": {
-        "new": "D:/Python_FileDispose/real_res/1002397.mp3", 
-        "repeat": [
-            "D:/Svn_2d/S_GD_Heji/res/games/common/mj/mjsound/bgMusic.mp3"
-        ], 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/music/bgMusic.mp3"
+    "1efde67d4cf52f14db51d114e47a4f38": {
+        "new": "D:/Python_FileDispose/real_res/1002360.mp3", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/bing/3.mp3"
     }, 
     "9555aa3cd910f1c8b9e33889a4ee0648": {
         "new": "D:/Python_FileDispose/real_res/1002398.mp3", 
@@ -8210,10 +8219,6 @@
             "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/font/ddd.png"
         ], 
         "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/ddztwop/fnt/ddd.png"
-    }, 
-    "1efde67d4cf52f14db51d114e47a4f38": {
-        "new": "D:/Python_FileDispose/real_res/1002360.mp3", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/bing/3.mp3"
     }, 
     "a1e859b2ff107f4f796fbd85c6b7c3ea": {
         "new": "D:/Python_FileDispose/real_res/1000919.png", 
@@ -8380,9 +8385,9 @@
         "new": "D:/Python_FileDispose/real_res/1000932.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/club/image_btn_delete.png"
     }, 
-    "fd1ef04aa1490b5c70ca78ac6be6c283": {
-        "new": "D:/Python_FileDispose/real_res/1000933.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main_portrait/icon_default.png"
+    "9a67656f88072072e8e31429ef12b387": {
+        "new": "D:/Python_FileDispose/real_res/1006133.csb", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/area_item.csb"
     }, 
     "42687dbe7af491050e1d2e51bd0626ea": {
         "new": "D:/Python_FileDispose/real_res/1000934.png", 
@@ -8413,9 +8418,12 @@
         ], 
         "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/chat_bg.png"
     }, 
-    "ceaea30f423f0253502c42c44d4eee80": {
-        "new": "D:/Python_FileDispose/real_res/1000938.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_yqrh.png"
+    "1d6438a9e289886b5a1bf36dc2edcc1f": {
+        "new": "D:/Python_FileDispose/real_res/1002026.mp3", 
+        "repeat": [
+            "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/shunzi_liandui.mp3"
+        ], 
+        "old": "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/shunzi_liandui.mp3"
     }, 
     "c5dcb823fc74234c42f6684950010834": {
         "new": "D:/Python_FileDispose/real_res/1000939.png", 
@@ -8498,10 +8506,6 @@
         "new": "D:/Python_FileDispose/real_res/1000946.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_yellow.png"
     }, 
-    "9a67656f88072072e8e31429ef12b387": {
-        "new": "D:/Python_FileDispose/real_res/1006133.csb", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/area_item.csb"
-    }, 
     "e637e51884c70259dd11fef163d051a7": {
         "new": "D:/Python_FileDispose/real_res/1004030.fnt", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/font/green_num.fnt"
@@ -8521,10 +8525,6 @@
     "43ea3a31bf0f8eef2a41eccc8676ee82": {
         "new": "D:/Python_FileDispose/real_res/1000947.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/text_back.png"
-    }, 
-    "b0514682296ce28f6ef3a622e2ff3cdd": {
-        "new": "D:/Python_FileDispose/real_res/1000716.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/ddz/img_new_area.png"
     }, 
     "13b0798212fae2d21e8e8e41aca97e38": {
         "new": "D:/Python_FileDispose/real_res/1002413.mp3", 

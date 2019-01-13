@@ -146,7 +146,7 @@ class packageImage:
                 if coerce:
                     shutil.move(resPath, sourcePath + "\\" + basename)          # 不是移动无法删除文件夹
                 else:
-                    shutil.copy(resPath, sourcePath + "\\" + basename)          # 剪切的方式进行文件移动打包
+                    shutil.copyfile(resPath, sourcePath + "\\" + basename)          # 剪切的方式进行文件移动打包
                     self.recordMovePath(resPath, sourcePath + "\\" + basename)
             else:
                 print "package Lost file :" + resPath
@@ -178,10 +178,15 @@ class packageImage:
             self.outPutFolder[outPutPath] = True
         baseName = os.path.basename(pResPath)
 
-        self.fntdiapose(pResPath , outPutPath) # 移动与fnt对应的图片
+        command = self.fntdiapose(pResPath , outPutPath) # 移动与fnt对应的图片
         # print "cur : " + pResPath + " Tag : " + comFun.OUTPUTTARGET + outPutPath + "/" + baseName
         tPath = comFun.OUTPUTTARGET + outPutPath + "/" + baseName
-        shutil.copy(pResPath , tPath)
+        shutil.copyfile(pResPath , tPath)
+        if command:
+            pNewResPath = re.sub("D:/Python_FileDispose", ".", tPath)   # 修改目标路径的文件，而不是本地文件
+            print command + pNewResPath
+            # "wsl sed -i s/new/ccc/g ./file.txt"
+            os.system(command + pNewResPath)
         self.recordMovePath(pResPath, tPath)
         self.initNewPathRes(pResPath , tPath , outPutPath)
 
@@ -197,8 +202,9 @@ class packageImage:
                 print "new ： " + pNewResPath + " old :" + oldpath or ""
                 assert(False)
             tPath = comFun.OUTPUTTARGET + outPutPath + "/" + baseName.split(".")[0] + ".png"
-            shutil.copy(newPath, tPath)
+            shutil.copyfile(newPath, tPath)
             self.recordMovePath(newPath, tPath)
+            return "wsl sed -i s/" +  os.path.basename(pResPath) + "/" +  os.path.basename(tPath) + "/g "
 
     # 初始化分类后文件位置信息
     def initNewPathRes(self , oldPath , newPath , outPutPath):

@@ -27,12 +27,12 @@ if not TEST:
     # jc.initRecordFile()
 
     # 小图合并大图
-    # pcg = packageImage.packageImage()
-    # pcg.tidyRes()
+    pcg = packageImage.packageImage()
+    pcg.tidyRes()
     #
     # 修改json文件为使用大图
-    cg = fileChange.replaceImage()
-    cg.replaceFile()
+    # cg = fileChange.replaceImage()
+    # cg.replaceFile()
 
     # 初始化代码中包含的资源信息
     # cre = codeRes.codeRes()
@@ -81,7 +81,7 @@ else:
             # print os.getcwd()
             # os.system("cmd && wsl && sed")
             # os.system("wsl sed -i 's/ccc/new/g' ./file.txt")
-            os.system("wsl sed -i 's/new/ccc/g' ./file.txt")
+            os.system("wsl sed -i s/new/ccc/g ./file.txt")
 
             stream = open("ccc.txt", "w+")
             liststr = ["1,2,3,4", "2232", "asdfasdf"]
@@ -270,9 +270,6 @@ else:
 
     # TestClass().excuteReplace()
 
-    # import fileDataHandle as FD
-    # refDict = copy.deepcopy(comFun.GetDataByFile(comFun.TYPEPATHS))
-    # FD.fileDataHandle().refreshTypeDataToFile(refDict)
-    comFun.deleteDirByStr(r".svn", r"D:\Python_FileDispose\source")
-
+    # command = "wsl sed -i s/" + "yellow_num_hrl.png" + "/" + "1004020.png" + "/g " + r"./res_fnt/1004020.fnt"
+    # os.system(command)
 

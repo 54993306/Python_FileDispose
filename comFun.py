@@ -206,3 +206,8 @@ def deleteDirByStr(str , paths):
 # 复制文件夹到指定文件夹，目标文件夹必须是不存在的路径
 # comFun.deleteDirByStr(r".svn", r"D:\Python_FileDispose\source\project")
 # shutil.copytree(r"D:\Svn_2d\S_GD_Heji", r"D:\Python_FileDispose\source\project")
+
+# 通过sed修改文件内容
+# os.system("wsl sed -i s/old_str/new_str/g ./file.txt")
+# os.system("wsl sed -i s/new_str/old_str/g ./file.txt")
+
