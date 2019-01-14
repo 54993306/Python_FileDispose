@@ -43,6 +43,7 @@ class replaceImage:
 
     # 文件处理
     def streamDispose(self , newJsonFile):
+        print "==========>>>>" + os.path.basename(newJsonFile)
         json_stream = open(newJsonFile, "r")
         jsondict = json.load(json_stream, object_pairs_hook=collections.OrderedDict )
         json_stream.close()
@@ -50,6 +51,7 @@ class replaceImage:
         self.changeRecord[newJsonFile] = resDict  # 只是复制了一个引用
         self.recordDict = resDict
         self.searchNodeTree(jsondict.get("widgetTree"))
+        print "\n"
         str_strean = open(newJsonFile, "w+")
         # json.dump(jsondict, str_strean)
         str_strean.write(json.dumps(jsondict, encoding="utf -8", indent=2,separators=(',',': ')))  # 为保持一致，: 后需要留一个空格
@@ -141,5 +143,5 @@ class replaceImage:
         else:
             if self.FileData.getTPathByMd5Code(md5code):  # 包括大图，fnt，和手动设置为不进行打包的聂内容集合
                 return self.FileData.getTPathByMd5Code(md5code)
-            print "can't found plist file : " + path + "  md5:" + md5code + " newPath :" + newFileName
+            print "Not in Plist > " + path.ljust(60)  + " newPath:" + newFileName.ljust(45) + "md5:" + md5code
             return newFileName

@@ -8,16 +8,17 @@ import time
 import shutil
 import stat
 import comFun
+import collections
 #读取路径下的所有资源文件分类后写入到文件中
 
 class totalRes:
-    filedict = {}           # 文件分类表，有多少中类型资源，每种类型有多少个
-    timeOrder = {}          # 文件创建时间排序表 os.path.getctime(path)
-    sizeOrder = {}          # 文件大小排序表  os.path.getsize(filepath)
-    notRepeatmd5List = {}   # 存储文件md5值 key:md5 value:path
-    oldtonewPath = {}       # 新旧路径对应表 key: oldpath ,value : newpath
+    filedict = collections.OrderedDict()           # 文件分类表，有多少中类型资源，每种类型有多少个
+    timeOrder = collections.OrderedDict()          # 文件创建时间排序表 os.path.getctime(path)
+    sizeOrder = collections.OrderedDict()          # 文件大小排序表  os.path.getsize(filepath)
+    notRepeatmd5List = collections.OrderedDict()   # 存储文件md5值 key:md5 value:path
+    oldtonewPath = collections.OrderedDict()       # 新旧路径对应表 key: oldpath ,value : newpath
     allFiles = 0            # 记录文件数
-    typeNum = {}            # 存储文件类型和相应的数量
+    typeNum = collections.OrderedDict()            # 存储文件类型和相应的数量
     # 将内容记录到文件中
     def recordToFile(self):
         comFun.RecordToJsonFile(comFun.DICTFILE, self.filedict)
@@ -114,7 +115,7 @@ class totalRes:
             if "repeat" in value:
                 repeatNum += len(value["repeat"])
         if repeatNum + len(self.notRepeatmd5List) == self.allFiles:
-            print "copy file succeed  repeatNum: " + str(repeatNum)
+            print "succeed  repeatNum: " + str(repeatNum) + "\ncopy file : " + str(len(self.notRepeatmd5List))
         else:
             print " copy file failed repeatNum: " + str(repeatNum) + " newfilenum : " \
                   + str(len(self.notRepeatmd5List)) + " allNum : " + str(self.allFiles)
@@ -129,13 +130,13 @@ class totalRes:
         if not filetype:
             print "File Type is Null : " + filepath
             return False
-        typedict = {}
+        typedict = collections.OrderedDict()
         if filetype in self.filedict:
             typedict = self.filedict.get(filetype)
         else:
             self.filedict[filetype] = typedict
 
-        pathdict = {}
+        pathdict = collections.OrderedDict()
         pathdict["md5"] = md5
         pathdict["size"] = os.path.getsize(filepath)
         typedict[filepath] = pathdict

@@ -163,7 +163,7 @@ class packageImage:
                 #     # self.lowRef.pop(md5code)
                 #     return newPath , True
                 # else:
-                # print resPath
+                print resPath
                 return resPath
         return
     # 对png以外的其他资源做处理

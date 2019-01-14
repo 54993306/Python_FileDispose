@@ -320,11 +320,11 @@
         85935
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/main/btn_match2.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/main/btn_match1.png", 
         85756
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/main/btn_match1.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/main/btn_match2.png", 
         85756
     ], 
     [
@@ -344,11 +344,11 @@
         81600
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg3.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg2.png", 
         80293
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg2.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg3.png", 
         80293
     ], 
     [
@@ -512,11 +512,11 @@
         42633
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ddzchat_txt11.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ddzchat_txt10.mp3", 
         42631
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ddzchat_txt10.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ddzchat_txt11.mp3", 
         42631
     ], 
     [
@@ -900,7 +900,15 @@
         21122
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_111.mp3", 
+        20943
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_121.mp3", 
+        20943
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_131.mp3", 
         20943
     ], 
     [
@@ -912,19 +920,11 @@
         20943
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_111.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_51.mp3", 
         20943
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_71.mp3", 
-        20943
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_131.mp3", 
-        20943
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_51.mp3", 
         20943
     ], 
     [
@@ -980,7 +980,7 @@
         19898
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_90.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_61.mp3", 
         19898
     ], 
     [
@@ -988,7 +988,7 @@
         19898
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_61.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_90.mp3", 
         19898
     ], 
     [
@@ -1008,15 +1008,15 @@
         19568
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_70.mp3", 
-        19375
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/op_chu11.mp3", 
         19375
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/op_chu20.mp3", 
+        19375
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_70.mp3", 
         19375
     ], 
     [
@@ -1088,11 +1088,11 @@
         18562
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_100.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/op_chu10.mp3", 
         18330
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/op_chu10.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_100.mp3", 
         18330
     ], 
     [
@@ -1124,15 +1124,15 @@
         17903
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_30.mp3", 
-        17808
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_130.mp3", 
         17808
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_140.mp3", 
+        17808
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/sanzhang_30.mp3", 
         17808
     ], 
     [
@@ -1464,11 +1464,11 @@
         13564
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/title_ping.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/title_fail.png", 
         13470
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/title_fail.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/title_ping.png", 
         13470
     ], 
     [
@@ -2084,11 +2084,11 @@
         8614
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_91.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_sandaiyi1.mp3", 
         8612
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_sandaiyi1.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_91.mp3", 
         8612
     ], 
     [
@@ -2256,15 +2256,11 @@
         7839
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_101.mp3", 
-        7776
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/op_buchu30.mp3", 
-        7776
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_feiji0.mp3", 
+        7776
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_101.mp3", 
         7776
     ], 
     [
@@ -2272,15 +2268,19 @@
         7776
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/op_buchu30.mp3", 
+        7776
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/jingdeng/jingdeng0.png", 
         7755
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/FriendRoomEnterInfo.csb", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/batteryFont.png", 
         7750
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/batteryFont.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/FriendRoomEnterInfo.csb", 
         7750
     ], 
     [
@@ -2364,7 +2364,7 @@
         7358
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/op_buchu11.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_51.mp3", 
         7358
     ], 
     [
@@ -2372,7 +2372,7 @@
         7358
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_51.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/op_buchu11.mp3", 
         7358
     ], 
     [
@@ -2488,27 +2488,11 @@
         6941
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_81.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_shunzi0.mp3", 
         6940
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_71.mp3", 
-        6940
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_51.mp3", 
-        6940
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_50.mp3", 
-        6940
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_31.mp3", 
-        6940
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_61.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_100.mp3", 
         6940
     ], 
     [
@@ -2516,11 +2500,27 @@
         6940
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_shunzi0.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_31.mp3", 
         6940
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_100.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_50.mp3", 
+        6940
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_51.mp3", 
+        6940
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_61.mp3", 
+        6940
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_71.mp3", 
+        6940
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_81.mp3", 
         6940
     ], 
     [
@@ -2620,11 +2620,11 @@
         6591
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/about_us.csb", 
         6586
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/about_us.csb", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music.png", 
         6586
     ], 
     [
@@ -2636,11 +2636,11 @@
         6547
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_40.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_101.mp3", 
         6522
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_111.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_31.mp3", 
         6522
     ], 
     [
@@ -2648,7 +2648,7 @@
         6522
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_101.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_111.mp3", 
         6522
     ], 
     [
@@ -2656,7 +2656,7 @@
         6522
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_31.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_40.mp3", 
         6522
     ], 
     [
@@ -2696,11 +2696,11 @@
         6379
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/game_btn_tianting.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/game_btn_pingbai.png", 
         6371
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/game_btn_pingbai.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/game_btn_tianting.png", 
         6371
     ], 
     [
@@ -2776,11 +2776,11 @@
         6104
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_80.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_zhadan11.mp3", 
         6104
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_zhadan11.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_121.mp3", 
         6104
     ], 
     [
@@ -2788,7 +2788,7 @@
         6104
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_121.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_80.mp3", 
         6104
     ], 
     [
@@ -2892,7 +2892,15 @@
         5719
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_60.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_liandui0.mp3", 
+        5686
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_zhadan10.mp3", 
+        5686
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_111.mp3", 
         5686
     ], 
     [
@@ -2904,19 +2912,11 @@
         5686
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_50.mp3", 
-        5686
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_131.mp3", 
-        5686
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_151.mp3", 
         5686
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_liandui0.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_50.mp3", 
         5686
     ], 
     [
@@ -2928,7 +2928,7 @@
         5686
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_111.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_131.mp3", 
         5686
     ], 
     [
@@ -2936,7 +2936,7 @@
         5686
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/ct_zhadan10.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_60.mp3", 
         5686
     ], 
     [
@@ -3080,7 +3080,11 @@
         5269
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_90.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_131.mp3", 
+        5268
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_81.mp3", 
         5268
     ], 
     [
@@ -3096,11 +3100,7 @@
         5268
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_81.mp3", 
-        5268
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_131.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_90.mp3", 
         5268
     ], 
     [
@@ -3144,11 +3144,11 @@
         5179
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/tips.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/common_tips.csb", 
         5174
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/common_tips.csb", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/tips.mp3", 
         5174
     ], 
     [
@@ -3216,11 +3216,7 @@
         4887
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_61.mp3", 
-        4850
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_30.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/card_out.mp3", 
         4850
     ], 
     [
@@ -3228,7 +3224,7 @@
         4850
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/op_buchu10.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_150.mp3", 
         4850
     ], 
     [
@@ -3236,15 +3232,19 @@
         4850
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_61.mp3", 
+        4850
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_110.mp3", 
         4850
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_150.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/dui_30.mp3", 
         4850
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/card_out.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/op_buchu10.mp3", 
         4850
     ], 
     [
@@ -3264,11 +3264,11 @@
         4803
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/tip_view.csb", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/mall/img_wx_4.png", 
         4800
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/mall/img_wx_4.png", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/tip_view.csb", 
         4800
     ], 
     [
@@ -3292,15 +3292,15 @@
         4721
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_last21.mp3", 
-        4712
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/duanyu/zimo/1.mp3", 
         4712
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_last20.mp3", 
+        4712
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_last21.mp3", 
         4712
     ], 
     [
@@ -3388,7 +3388,7 @@
         4434
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_30.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_100.mp3", 
         4432
     ], 
     [
@@ -3396,11 +3396,11 @@
         4432
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_100.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_140.mp3", 
         4432
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_140.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/pdkEffect/dub/danzhang_30.mp3", 
         4432
     ], 
     [
@@ -3412,11 +3412,11 @@
         4413
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_feiji10.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/text_back.png", 
         4400
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/text_back.png", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_feiji10.mp3", 
         4400
     ], 
     [
@@ -3484,11 +3484,11 @@
         4168
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/area_item.csb", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/common/text_agree.png", 
         4165
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/common/text_agree.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/area_item.csb", 
         4165
     ], 
     [
@@ -3620,11 +3620,11 @@
         3984
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_qiangdizhu11.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_91.mp3", 
         3984
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_91.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_qiangdizhu11.mp3", 
         3984
     ], 
     [
@@ -3752,11 +3752,11 @@
         3724
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/ddzroom/ddzroom/img_host.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/gameCommon/face/armature_pic/face_11.png", 
         3723
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/gameCommon/face/armature_pic/face_11.png", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/ddzroom/ddzroom/img_host.png", 
         3723
     ], 
     [
@@ -3784,19 +3784,7 @@
         3673
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_141.mp3", 
-        3672
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_sidaier0.mp3", 
-        3672
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/king_0.mp3", 
-        3672
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_61.mp3", 
         3672
     ], 
     [
@@ -3804,15 +3792,23 @@
         3672
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_131.mp3", 
+        3672
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_141.mp3", 
+        3672
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_31.mp3", 
         3672
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_sandaiyi1.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_61.mp3", 
         3672
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_131.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_70.mp3", 
         3672
     ], 
     [
@@ -3820,7 +3816,11 @@
         3672
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_70.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_sandaiyi1.mp3", 
+        3672
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_sidaier0.mp3", 
         3672
     ], 
     [
@@ -3860,19 +3860,19 @@
         3571
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_71.mp3", 
-        3568
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_81.mp3", 
-        3568
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_301.mp3", 
         3568
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_41.mp3", 
+        3568
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_71.mp3", 
+        3568
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_81.mp3", 
         3568
     ], 
     [
@@ -3904,15 +3904,7 @@
         3505
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_sandaier11.mp3", 
-        3464
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_chu10.mp3", 
-        3464
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_51.mp3", 
         3464
     ], 
     [
@@ -3925,6 +3917,14 @@
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_50.mp3", 
+        3464
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_51.mp3", 
+        3464
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_sandaier11.mp3", 
         3464
     ], 
     [
@@ -3968,15 +3968,7 @@
         3361
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiaodizhu11.mp3", 
-        3360
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_110.mp3", 
-        3360
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/rank_second_0.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/Arial.png", 
         3360
     ], 
     [
@@ -3984,7 +3976,11 @@
         3360
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_sidaier1.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/rank_second_0.mp3", 
+        3360
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_110.mp3", 
         3360
     ], 
     [
@@ -3992,7 +3988,11 @@
         3360
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/Arial.png", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_sidaier1.mp3", 
+        3360
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiaodizhu11.mp3", 
         3360
     ], 
     [
@@ -4052,19 +4052,7 @@
         3266
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_60.mp3", 
-        3256
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiaodizhu10.mp3", 
-        3256
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_sandaier10.mp3", 
-        3256
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_chu30.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_290.mp3", 
         3256
     ], 
     [
@@ -4076,7 +4064,19 @@
         3256
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_290.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_chu30.mp3", 
+        3256
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_60.mp3", 
+        3256
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_sandaier10.mp3", 
+        3256
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiaodizhu10.mp3", 
         3256
     ], 
     [
@@ -4100,27 +4100,7 @@
         3156
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_51.mp3", 
-        3152
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/duanyu/hu/1.mp3", 
-        3152
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/ct_liandui0.mp3", 
-        3152
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_buchu30.mp3", 
-        3152
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_290.mp3", 
-        3152
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_80.mp3", 
         3152
     ], 
     [
@@ -4128,7 +4108,27 @@
         3152
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/ct_liandui0.mp3", 
+        3152
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/ct_shunzi1.mp3", 
+        3152
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_290.mp3", 
+        3152
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_51.mp3", 
+        3152
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_buchu30.mp3", 
+        3152
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_80.mp3", 
         3152
     ], 
     [
@@ -4172,7 +4172,7 @@
         3066
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_30.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/7.mp3", 
         3048
     ], 
     [
@@ -4180,15 +4180,15 @@
         3048
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/7.mp3", 
-        3048
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_huojian11.mp3", 
-        3048
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_171.mp3", 
+        3048
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_71.mp3", 
+        3048
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/jie_feng_0.mp3", 
         3048
     ], 
     [
@@ -4200,11 +4200,11 @@
         3048
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_71.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_30.mp3", 
         3048
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/jie_feng_0.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_huojian11.mp3", 
         3048
     ], 
     [
@@ -4260,11 +4260,7 @@
         2962
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiabei00.mp3", 
-        2944
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_130.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/duanyu/ting/ting3.mp3", 
         2944
     ], 
     [
@@ -4276,15 +4272,19 @@
         2944
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_sandaiyi0.mp3", 
-        2944
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_120.mp3", 
         2944
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/duanyu/ting/ting3.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_130.mp3", 
+        2944
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_sandaiyi0.mp3", 
+        2944
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiabei00.mp3", 
         2944
     ], 
     [
@@ -4304,11 +4304,11 @@
         2921
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/shanweimj/GUI/image.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/menu_btn_substitute.png", 
         2900
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/menu_btn_substitute.png", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/shanweimj/GUI/image.png", 
         2900
     ], 
     [
@@ -4344,7 +4344,23 @@
         2844
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_111.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/5.mp3", 
+        2840
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/feng/baiban.mp3", 
+        2840
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/tiao/7.mp3", 
+        2840
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_up.png", 
+        2840
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/ct_shunzi0.mp3", 
         2840
     ], 
     [
@@ -4356,7 +4372,11 @@
         2840
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/kang_gong_0.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_111.mp3", 
+        2840
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_81.mp3", 
         2840
     ], 
     [
@@ -4364,23 +4384,7 @@
         2840
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_up.png", 
-        2840
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_feiji0.mp3", 
-        2840
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/feng/baiban.mp3", 
-        2840
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_40.mp3", 
-        2840
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/ct_shunzi0.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/kang_gong_0.mp3", 
         2840
     ], 
     [
@@ -4388,19 +4392,15 @@
         2840
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/5.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_40.mp3", 
+        2840
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_feiji0.mp3", 
         2840
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiabei01.mp3", 
-        2840
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/tiao/7.mp3", 
-        2840
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_81.mp3", 
         2840
     ], 
     [
@@ -4484,55 +4484,11 @@
         2737
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/tiao/4.mp3", 
-        2736
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/duanyu/ting/ting4.mp3", 
         2736
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/3.mp3", 
-        2736
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_90.mp3", 
-        2736
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_140.mp3", 
-        2736
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/tiao/3.mp3", 
-        2736
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_300.mp3", 
-        2736
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_150.mp3", 
-        2736
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/ct_zhadan11.mp3", 
-        2736
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_chu11.mp3", 
-        2736
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_140.mp3", 
-        2736
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_101.mp3", 
-        2736
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_91.mp3", 
         2736
     ], 
     [
@@ -4544,6 +4500,50 @@
         2736
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/tiao/3.mp3", 
+        2736
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/tiao/4.mp3", 
+        2736
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/ct_zhadan11.mp3", 
+        2736
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_300.mp3", 
+        2736
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_91.mp3", 
+        2736
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_101.mp3", 
+        2736
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_140.mp3", 
+        2736
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_90.mp3", 
+        2736
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_chu11.mp3", 
+        2736
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_140.mp3", 
+        2736
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/sanzhang_150.mp3", 
+        2736
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/select.png", 
         2729
     ], 
@@ -4552,11 +4552,11 @@
         2728
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_green_2.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/menu_btn_exit.png", 
         2720
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/menu_btn_exit.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_green_2.png", 
         2720
     ], 
     [
@@ -4588,39 +4588,11 @@
         2647
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/4.mp3", 
-        2632
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/gang_ban_1.mp3", 
-        2632
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/duanyu/hu/1.mp3", 
-        2632
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_51.mp3", 
-        2632
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/feng/nanfeng.mp3", 
-        2632
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/dapai.mp3", 
         2632
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_120.mp3", 
-        2632
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/tiao/6.mp3", 
-        2632
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/feng/xifeng.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/4.mp3", 
         2632
     ], 
     [
@@ -4628,7 +4600,35 @@
         2632
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/duanyu/hu/1.mp3", 
+        2632
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/feng/nanfeng.mp3", 
+        2632
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/feng/xifeng.mp3", 
+        2632
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/tiao/6.mp3", 
+        2632
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_51.mp3", 
+        2632
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_120.mp3", 
+        2632
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_91.mp3", 
+        2632
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/gang_ban_1.mp3", 
         2632
     ], 
     [
@@ -4684,19 +4684,11 @@
         2539
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/tiao/5.mp3", 
-        2528
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/rank_second_1.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/duanyu/ting/ting2.mp3", 
         2528
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/6.mp3", 
-        2528
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/rank_first_1.mp3", 
         2528
     ], 
     [
@@ -4708,15 +4700,11 @@
         2528
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/tiao/5.mp3", 
+        2528
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/6.mp3", 
-        2528
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/duanyu/ting/ting2.mp3", 
-        2528
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_40.mp3", 
         2528
     ], 
     [
@@ -4724,11 +4712,23 @@
         2528
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_50.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_40.mp3", 
         2528
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_41.mp3", 
+        2528
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_50.mp3", 
+        2528
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/rank_first_1.mp3", 
+        2528
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/rank_second_1.mp3", 
         2528
     ], 
     [
@@ -4752,11 +4752,11 @@
         2514
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/gameCommon/face/face_1.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/chat_bg.png", 
         2510
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/chat_bg.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/gameCommon/face/face_1.png", 
         2510
     ], 
     [
@@ -4820,11 +4820,23 @@
         2432
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_huojian10.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/duanyu/buhua/1.mp3", 
         2424
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiaodizhu00.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/feng/facai.mp3", 
+        2424
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/2.mp3", 
+        2424
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/4.mp3", 
+        2424
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/duanyu/ting/ting3.mp3", 
         2424
     ], 
     [
@@ -4832,7 +4844,15 @@
         2424
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/feng/facai.mp3", 
+        2424
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/2.mp3", 
+        2424
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/4.mp3", 
         2424
     ], 
     [
@@ -4840,15 +4860,19 @@
         2424
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_161.mp3", 
-        2424
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_101.mp3", 
         2424
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/4.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_161.mp3", 
+        2424
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_41.mp3", 
+        2424
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_110.mp3", 
         2424
     ], 
     [
@@ -4860,7 +4884,15 @@
         2424
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/4.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_80.mp3", 
+        2424
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/ct_huojian10.mp3", 
+        2424
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiaodizhu00.mp3", 
         2424
     ], 
     [
@@ -4868,39 +4900,7 @@
         2424
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/feng/facai.mp3", 
-        2424
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_80.mp3", 
-        2424
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/feng/facai.mp3", 
-        2424
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_110.mp3", 
-        2424
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_41.mp3", 
-        2424
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/duanyu/ting/ting3.mp3", 
-        2424
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/2.mp3", 
-        2424
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_qiangdizhu20.mp3", 
-        2424
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/duanyu/buhua/1.mp3", 
         2424
     ], 
     [
@@ -4924,15 +4924,15 @@
         2385
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/gou_select_big.png", 
-        2382
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/mjGameCrossband.csb", 
         2382
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/shanweimj/Maima.csb", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/Common/gou_select_big.png", 
+        2382
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/common/bugang.png", 
         2376
     ], 
     [
@@ -4940,7 +4940,7 @@
         2376
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/common/bugang.png", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/shanweimj/Maima.csb", 
         2376
     ], 
     [
@@ -4972,15 +4972,35 @@
         2324
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/2.mp3", 
+        2320
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/3.mp3", 
+        2320
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/5.mp3", 
+        2320
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/7.mp3", 
         2320
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_121.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/9.mp3", 
+        2320
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/8.mp3", 
         2320
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/7.mp3", 
+        2320
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_100.mp3", 
         2320
     ], 
     [
@@ -4992,7 +5012,7 @@
         2320
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/2.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_121.mp3", 
         2320
     ], 
     [
@@ -5000,35 +5020,11 @@
         2320
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_31.mp3", 
-        2320
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/9.mp3", 
-        2320
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_100.mp3", 
-        2320
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_qiangdizhu01.mp3", 
-        2320
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/5.mp3", 
-        2320
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_buchu11.mp3", 
-        2320
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_30.mp3", 
         2320
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/3.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_31.mp3", 
         2320
     ], 
     [
@@ -5036,23 +5032,27 @@
         2320
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_qiangdizhu21.mp3", 
-        2320
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/8.mp3", 
-        2320
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/mu_ban_1.mp3", 
         2320
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/friendRoom/roomMain.png", 
-        2312
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_buchu11.mp3", 
+        2320
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_qiangdizhu01.mp3", 
+        2320
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_qiangdizhu21.mp3", 
+        2320
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/set/wanfa_text.png", 
+        2312
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/friendRoom/roomMain.png", 
         2312
     ], 
     [
@@ -5104,35 +5104,11 @@
         2216
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/bing/9.mp3", 
+        2216
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/feng/beifeng.mp3", 
-        2216
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_150.mp3", 
-        2216
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/tiao/1.mp3", 
-        2216
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/9.mp3", 
-        2216
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiabei11.mp3", 
-        2216
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_151.mp3", 
-        2216
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/8.mp3", 
-        2216
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/1.mp3", 
         2216
     ], 
     [
@@ -5140,11 +5116,7 @@
         2216
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/bing/9.mp3", 
-        2216
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/3.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/bing/9.mp3", 
         2216
     ], 
     [
@@ -5152,7 +5124,35 @@
         2216
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/tiao/1.mp3", 
+        2216
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/1.mp3", 
+        2216
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/3.mp3", 
+        2216
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/8.mp3", 
+        2216
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_130.mp3", 
+        2216
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_150.mp3", 
+        2216
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/dui_151.mp3", 
+        2216
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiabei11.mp3", 
         2216
     ], 
     [
@@ -5196,31 +5196,7 @@
         2116
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/feng/baiban.mp3", 
-        2112
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/bing/8.mp3", 
-        2112
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/1.mp3", 
-        2112
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/5.mp3", 
-        2112
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiabei10.mp3", 
-        2112
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/bing/3.mp3", 
-        2112
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_31.mp3", 
         2112
     ], 
     [
@@ -5228,7 +5204,31 @@
         2112
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/bing/8.mp3", 
+        2112
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/feng/baiban.mp3", 
+        2112
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/1.mp3", 
+        2112
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/8.mp3", 
+        2112
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/wan/5.mp3", 
+        2112
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_141.mp3", 
+        2112
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_31.mp3", 
         2112
     ], 
     [
@@ -5236,7 +5236,7 @@
         2112
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/tiao/8.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/dub/op_jiabei10.mp3", 
         2112
     ], 
     [
@@ -5304,11 +5304,11 @@
         2028
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/head/defaultHead_male.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/common/number1.png", 
         2023
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/common/number1.png", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/head/defaultHead_male.png", 
         2023
     ], 
     [
@@ -5320,27 +5320,11 @@
         2011
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/kang_gong_1.mp3", 
-        2008
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_61.mp3", 
-        2008
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/feng/dongfeng.mp3", 
-        2008
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_70.mp3", 
-        2008
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/bing/4.mp3", 
         2008
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/wan/4.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/bing/5.mp3", 
         2008
     ], 
     [
@@ -5348,15 +5332,11 @@
         2008
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_81.mp3", 
-        2008
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_50.mp3", 
-        2008
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/feng/nanfeng.mp3", 
+        2008
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/wan/4.mp3", 
         2008
     ], 
     [
@@ -5368,7 +5348,27 @@
         2008
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/bing/5.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/feng/dongfeng.mp3", 
+        2008
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_50.mp3", 
+        2008
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_61.mp3", 
+        2008
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_70.mp3", 
+        2008
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_81.mp3", 
+        2008
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/kang_gong_1.mp3", 
         2008
     ], 
     [
@@ -5464,31 +5464,7 @@
         1905
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_151.mp3", 
-        1904
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_40.mp3", 
-        1904
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/duanyu/ting/ting2.mp3", 
-        1904
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/duanyu/gang.mp3", 
-        1904
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/bing/2.mp3", 
-        1904
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/wan/7.mp3", 
-        1904
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_71.mp3", 
         1904
     ], 
     [
@@ -5500,7 +5476,31 @@
         1904
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/wan/7.mp3", 
+        1904
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/duanyu/gang.mp3", 
+        1904
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/woman/duanyu/ting/ting2.mp3", 
+        1904
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_140.mp3", 
+        1904
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_151.mp3", 
+        1904
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_40.mp3", 
+        1904
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_71.mp3", 
         1904
     ], 
     [
@@ -5584,7 +5584,7 @@
         1809
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/wan/1.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/feng/dongfeng.mp3", 
         1800
     ], 
     [
@@ -5592,15 +5592,11 @@
         1800
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/wan/1.mp3", 
+        1800
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/wan/2.mp3", 
-        1800
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/feng/dongfeng.mp3", 
-        1800
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_30.mp3", 
         1800
     ], 
     [
@@ -5609,6 +5605,10 @@
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/wan/8.mp3", 
+        1800
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_30.mp3", 
         1800
     ], 
     [
@@ -5636,11 +5636,11 @@
         1759
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/hall/huanpi2/friendroomscene/txt_exchange_hor.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/club/image_btn_confirm.png", 
         1753
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/club/image_btn_confirm.png", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/hall/huanpi2/friendroomscene/txt_exchange_hor.png", 
         1753
     ], 
     [
@@ -5668,11 +5668,15 @@
         1700
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_131.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_111.mp3", 
         1696
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_buchu21.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_120.mp3", 
+        1696
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_131.mp3", 
         1696
     ], 
     [
@@ -5680,11 +5684,7 @@
         1696
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_111.mp3", 
-        1696
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/danzhang_120.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_buchu21.mp3", 
         1696
     ], 
     [
@@ -5700,11 +5700,11 @@
         1676
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/gaozhoumaimamj/aniturncard/guipai.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg6_30x30.png", 
         1675
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg6_30x30.png", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/gaozhoumaimamj/aniturncard/guipai.png", 
         1675
     ], 
     [
@@ -5792,11 +5792,11 @@
         1573
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/gameCommon/sub_num.fnt", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/gameCommon/add_num.fnt", 
         1563
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/gameCommon/add_num.fnt", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/gameCommon/sub_num.fnt", 
         1563
     ], 
     [
@@ -5804,11 +5804,11 @@
         1560
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/yellow_num_big.fnt", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/font/green_num_big.fnt", 
         1549
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/green_num_big.fnt", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/font/yellow_num_big.fnt", 
         1549
     ], 
     [
@@ -5824,14 +5824,6 @@
         1547
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/font/num1.fnt", 
-        1546
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/font/num2.fnt", 
-        1546
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/game/font/gree_num.fnt", 
         1546
     ], 
@@ -5840,8 +5832,12 @@
         1546
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/shantoumj/common/dice_6.png", 
-        1545
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/font/num1.fnt", 
+        1546
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/font/num2.fnt", 
+        1546
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/font/JJJ.fnt", 
@@ -5849,6 +5845,10 @@
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/font/SSS.fnt", 
+        1545
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/shantoumj/common/dice_6.png", 
         1545
     ], 
     [
@@ -5900,11 +5900,7 @@
         1489
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_buchu20.mp3", 
-        1488
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_buchu10.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/wan/6.mp3", 
         1488
     ], 
     [
@@ -5912,7 +5908,11 @@
         1488
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/wan/6.mp3", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_buchu10.mp3", 
+        1488
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/music/effect/dub/op_buchu20.mp3", 
         1488
     ], 
     [
@@ -5972,15 +5972,15 @@
         1431
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/ddztwop/fnt/ddd.fnt", 
+        1431
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/ddztwop/fnt/num1.fnt", 
         1431
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/font/qqq.fnt", 
-        1431
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/ddztwop/fnt/ddd.fnt", 
         1431
     ], 
     [
@@ -6012,6 +6012,10 @@
         1399
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/duanyu/gang.mp3", 
+        1384
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/ddz/fnt/time.png", 
         1384
     ], 
@@ -6020,12 +6024,12 @@
         1384
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/audio/mp3/effect/putong/man/duanyu/gang.mp3", 
-        1384
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/ddz/broken_line.png", 
         1383
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/hall/Common/tipDialog/bg_top_tip.png", 
+        1364
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/gaozhoumaimamj/aniturncard/icon_guipai.png", 
@@ -6033,10 +6037,6 @@
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongtuidaohumj/game/icon_guipaijiaobiao.png", 
-        1364
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/tipDialog/bg_top_tip.png", 
         1364
     ], 
     [
@@ -6100,11 +6100,11 @@
         1257
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/x.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/bg2.png", 
         1253
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/bg2.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/x.png", 
         1253
     ], 
     [
@@ -6216,11 +6216,11 @@
         1113
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/tishi_bg_jiantou.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/game_remain_bg.png", 
         1110
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/game_remain_bg.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/tishi_bg_jiantou.png", 
         1110
     ], 
     [
@@ -6388,11 +6388,11 @@
         865
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/huaijimj/common/hunzi.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main_portrait/img_diamond_bg.png", 
         863
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main_portrait/img_diamond_bg.png", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/huaijimj/common/hunzi.png", 
         863
     ], 
     [
@@ -6424,11 +6424,11 @@
         837
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_speak.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/icon_quanma.png", 
         825
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/icon_quanma.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_speak.png", 
         825
     ], 
     [
@@ -6452,11 +6452,11 @@
         783
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn-orange.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/scale_bg1.png", 
         776
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/scale_bg1.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn-orange.png", 
         776
     ], 
     [
@@ -6536,11 +6536,11 @@
         656
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/clock_light_bei.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/img_gradient_2.png", 
         654
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/img_gradient_2.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/clock_light_bei.png", 
         654
     ], 
     [
@@ -6572,11 +6572,11 @@
         618
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongyibaizhangmj/selectInterface/divider.png", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongjihumj/game/fama/maCount1.png", 
         614
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongjihumj/game/fama/maCount1.png", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guangdongyibaizhangmj/selectInterface/divider.png", 
         614
     ], 
     [
@@ -6628,11 +6628,11 @@
         544
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/win_charge_tip_bg.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/wifi.png", 
         543
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/wifi.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/win_charge_tip_bg.png", 
         543
     ], 
     [
@@ -6724,11 +6724,11 @@
         396
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/GUI/selected01.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/Common/advertNoSelect.png", 
         392
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/advertNoSelect.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/GUI/selected01.png", 
         392
     ], 
     [
@@ -6772,11 +6772,11 @@
         333
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/bg_white.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/bat_bg.png", 
         319
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/bat_bg.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/bg_white.png", 
         319
     ], 
     [
@@ -6844,15 +6844,15 @@
         232
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_drop_bg.png", 
-        231
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/mj/common/btn_cancel_n.png", 
         231
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/games/common/mj/common/btn_gree_n.png", 
+        231
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_drop_bg.png", 
         231
     ], 
     [
@@ -6892,11 +6892,11 @@
         194
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/horizonGreenmask.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/bat_pro.png", 
         191
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/bat_pro.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/horizonGreenmask.png", 
         191
     ], 
     [
@@ -6920,19 +6920,19 @@
         170
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/ddz/time/xinhao_3.png", 
-        160
-    ], 
-    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/line.png", 
         160
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/dialog_3.png", 
-        158
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/ddz/time/xinhao_3.png", 
+        160
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/dialog_1.png", 
+        158
+    ], 
+    [
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/dialog_3.png", 
         158
     ], 
     [
@@ -6960,11 +6960,11 @@
         126
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/cut_off_line.png", 
+        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/bg_bar.png", 
         109
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/bg_bar.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/cut_off_line.png", 
         109
     ], 
     [
@@ -6980,11 +6980,11 @@
         85
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/line_an.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/cut_off_line.png", 
         82
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/cut_off_line.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/line_an.png", 
         82
     ], 
     [
