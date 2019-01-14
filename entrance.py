@@ -20,15 +20,16 @@ from PIL import Image
 import fileDataHandle as FD
 
 if not TEST:
-    t = totalResDict.totalRes() #初始化所有的资源信息
-    t.initFileDict()
+    # t = totalResDict.totalRes() #初始化所有的资源信息
+    # t.initFileDict()
 
+    # 对json中的资源做处理
     # jc= jsonFileRes.jsonRes()  # 初始化所有json中包含的资源信息
     # jc.initRecordFile()
 
     # 小图合并大图
-    # pcg = packageImage.packageImage()
-    # pcg.tidyRes()
+    pcg = packageImage.packageImage()
+    pcg.tidyRes()
     #
     # 修改json文件为使用大图
     # cg = fileChange.replaceImage()

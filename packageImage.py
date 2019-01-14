@@ -21,11 +21,11 @@ class packageImage:
     plistMd5 = collections.OrderedDict()       # 图片md5值对应存储的plist文件
     lowRefPath = collections.OrderedDict()     # 引用计数低的路径
     newResPath = collections.OrderedDict()     # 结构化存储文件被整理后的路径信息
-    singleNewPath = collections.OrderedDict()  # 存储md5值和对应分类后的路径
     outPutFolder = collections.OrderedDict()   # 生成的文件夹
     moveRecord = collections.OrderedDict()     # 记录被使用的文件
-    lowRef = collections.OrderedDict()
     packageInfo = collections.OrderedDict()    # 存储合成plist的res信息
+    unPackRepeat = collections.OrderedDict()   # 未打包和重复移动的文件
+    unPackRepeat["repeat"] = []
 
     # 将数据都记录到文件中
     def recordData(self):
@@ -36,12 +36,9 @@ class packageImage:
         comFun.RecordToJsonFile(comFun.TYPEPATHS, self.newResPath)    # 新路径新增到文件信息记录中
         self.fileData.refreshTypeDataToFile(self.newResPath)
 
-        comFun.RecordToJsonFile(comFun.TYPENEWPATH, self.singleNewPath)
+        comFun.RecordToJsonFile(comFun.UNPACKREPEATRES, self.unPackRepeat)
 
         comFun.RecordToJsonFile(comFun.MOVERECORD, self.moveRecord)
-
-        # print json.dumps(self.lowRef, ensure_ascii=False, encoding="utf -8", indent=4)
-        # print len(self.lowRef)
 
     def tidyRes(self):
         self.fileData = FD.fileDataHandle()
@@ -123,12 +120,12 @@ class packageImage:
             for resPath in folderFiles:
                 resPath = comFun.turnBias(resPath)
                 md5code = self.moveRecord[resPath]["md5"]
-                if md5code in self.lowRef:   # 已经被移动过一次，则移动回原来的位置去，避免图片重复出现
+                if md5code in self.unPackRepeat:   # 已经被移动过一次，则移动回原来的位置去，避免图片重复出现
                     print "repeat :" + resPath
                     self.moveResToPath(resPath, comFun.COPYPATH, True)
                 else:
                     self.moveResToPath(resPath, SourcePath, True)  # 达不到打包条件的图片会统一存放到这个位置，没有进行进一步的处理
-                    self.lowRef[self.moveRecord[resPath]["md5"]] = SourcePath + "/" + os.path.basename(resPath)
+                    self.unPackRepeat[self.moveRecord[resPath]["md5"]] = SourcePath + "/" + os.path.basename(resPath)
                 # 要做进一步的处理，出现的一个情况是一个文件可能被多个(具体为2个，2个以上会另外打包)json使用 1000497.png 就是其中的情况之一
             return False
         return True
@@ -156,15 +153,12 @@ class packageImage:
     def isRepeatCopy(self , resPath):
         for tPath , fileInfo in self.moveRecord.iteritems():
             if cmp(fileInfo["new"] , resPath) == 0:  # 图片已经被移走
-                # md5code = self.fileData.getFileMd5(resPath)   # 从low
-                # typestr = type(self.lowRef)
-                # if md5code in self.lowRef:
-                #     newPath =  self.lowRef[md5code]
-                #     print newPath
-                #     # self.lowRef.pop(md5code)
-                #     return newPath , True
-                # else:
-                print resPath
+                if "repeat" in self.unPackRepeat:
+                    self.unPackRepeat["repeat"].append(resPath)
+                else:
+                    repeat = []
+                    repeat.append(resPath)
+                    self.unPackRepeat["repeat"] = repeat
                 return resPath
         return
     # 对png以外的其他资源做处理
@@ -211,7 +205,6 @@ class packageImage:
         resInfo = collections.OrderedDict()
         resInfo["md5"] = self.fileData.getFileMd5(oldPath)
         resInfo["path"] = newPath
-        self.singleNewPath[resInfo["md5"]] = newPath
         if outPutPath in self.newResPath:
             resList = self.newResPath.get(outPutPath)
             resList.append(resInfo)

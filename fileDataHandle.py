@@ -6,7 +6,7 @@ import json
 import re
 import comFun
 import copy
-
+import collections
 # 对数据的处理抽象对象
 class fileDataHandle:
     def __init__(self):
@@ -72,7 +72,7 @@ class fileDataHandle:
         if md5code in self.data:
             return self.data[md5code]
         else:
-            return {}
+            return
 
     # 根据老路径获取数据信息
     def getDatasByOldPath(self , filepath):
@@ -83,14 +83,14 @@ class fileDataHandle:
                 for path in datas["repeat"]:
                     if cmp(filepath, path) == 0:
                         return datas
-        return {}
+        return
 
     # 根据新路径获取数据信息
     def getDatasByNewPath(self , filepath):
         for md5code, datas in self.data.iteritems():
             if cmp(filepath, datas["new"]) == 0:
                 return datas
-        return {}
+        return
 
     # 根据类型数据刷新数据集
     def refreshTypeDataToFile(self , data):
@@ -116,7 +116,7 @@ class fileDataHandle:
     def getResInfoByBaseName(self , basename):
         for md5code, datas in self.data.iteritems():
             if cmp(basename, os.path.basename(datas["new"])) == 0:
-                resInfo = {}
+                resInfo = collections.OrderedDict()
                 resInfo["md5"] = md5code
                 resInfo["new"] = datas["new"]
                 resInfo["old"] = datas["old"]
@@ -127,7 +127,7 @@ class fileDataHandle:
     def getResInfoByNewPath(self , filepath):
         for md5code, datas in self.data.iteritems():
             if cmp(filepath, datas["new"]) == 0:
-                resInfo = {}
+                resInfo = collections.OrderedDict()
                 resInfo["md5"] = md5code
                 resInfo["new"] = datas["new"]
                 resInfo["old"] = datas["old"]

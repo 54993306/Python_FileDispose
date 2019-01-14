@@ -48,7 +48,7 @@ NOTFOUND        = "./output/2_NotFound.json"
 PLISTINFO       = "./output/3_PlistInfo.json"  # 合图后的plist包含的图片信息。
 PLISTMD5        = "./output/3_PlistMd5.json"  # 图片md5值对应存储的plist文件
 TYPEPATHS       = "./output/3_ResTypePaths.json"  # 文件分类后对应的新路径和md5值，对不进行大图合成的资源进行分类存放
-TYPENEWPATH     = "./output/3_TypeNewPaths.json"
+UNPACKREPEATRES = "./output/3_UnPackRepeatRes.json"
 MOVERECORD      = "./output/3_MoveRecord.json"  # 记录被使用了的资源
 
 # 4 fileChange
