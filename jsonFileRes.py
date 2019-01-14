@@ -8,6 +8,7 @@ import os
 import re
 import json
 import copy
+import collections
 import fileDataHandle as FData
 
 class jsonRes:
@@ -23,10 +24,10 @@ class jsonRes:
     folderFiles = [] #存储所有的json文件
     comFun.initPathFiles(comFun.SEARCHJSONPATH , folderFiles)
 
-    json_res = {}           #json文件中包含的资源map
-    collatingJson = {}      # 整理后的json数据
-    referenceCount = {}     # 资源引用计数统计
-    notFountFile = {}       # 在json中使用但是未找到的资源文件
+    json_res = collections.OrderedDict()           #json文件中包含的资源map
+    collatingJson = collections.OrderedDict()      # 整理后的json数据
+    referenceCount = collections.OrderedDict()     # 资源引用计数统计
+    notFountFile = collections.OrderedDict()       # 在json中使用但是未找到的资源文件
 
     def recordFile(self):
         comFun.RecordToJsonFile(comFun.JSONHAVARES, self.json_res)
@@ -85,11 +86,11 @@ class jsonRes:
     def recordJsonRes(self , jsonpath, path):        # 在json中使用的路径，要进行保存
         md5Code = self.FileData.getFileMd5(path)
         if not jsonpath in self.collatingJson:
-            jsonResList = {}
+            jsonResList = collections.OrderedDict()
             self.collatingJson[jsonpath] = jsonResList
         if not md5Code in self.collatingJson[jsonpath]:  # 没有被记录过的文件，有可能存在两个文件名称不同但是md5相同的情况出现
             newPath = self.FileData.getNewPathByOldPath(path)
-            fileinfo = {}
+            fileinfo = collections.OrderedDict()
             self.collatingJson[jsonpath][md5Code] = fileinfo
             fileinfo["curr"] = path
             fileinfo["new"] = newPath
@@ -113,12 +114,12 @@ class jsonRes:
                 RefList[jsonpath] = 1
                 referenceInfo["total"] = referenceInfo["total"] + 1
         else:
-            referenceInfo = {}
+            referenceInfo = collections.OrderedDict()
             self.referenceCount[md5Code] = referenceInfo
             referenceInfo["Path"] = path
             referenceInfo["new"] = self.FileData.getNewPathByMd5Code(md5Code)
             referenceInfo["total"] = 1
-            RefList = {}
+            RefList = collections.OrderedDict()
             referenceInfo["RefList"] = RefList
             RefList[jsonpath] = 1
 

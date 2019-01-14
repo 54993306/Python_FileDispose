@@ -1,28 +1,23 @@
 {
+    "D:/Svn_2d/UI_Shu/Json/bindSuccessful_dialog.json": [
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_toRedeem.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting1.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting2.png"
+    ], 
     "D:/Svn_2d/UI_Shu/Json/clubMatchRecord.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/tongyong_yuanjiao.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/tongyong_yuanjiao.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/liangyouClubTipsView.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/black_bg.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/obtain_prop_dialog.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/1000331.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/1newplist/obtain_prop_dialog.plist", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/1000513.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/1newplist/obtain_prop_dialog.plist", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/1000683.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/1newplist/foreload.plist", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/res_fnt/1004020.fnt", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/1000604.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/1newplist/obtain_prop_dialog.plist", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/1000766.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/1newplist/obtain_prop_dialog.plist", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/res_TTF/1012003.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/1000832.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/1newplist/foreload.plist"
+    "D:/Svn_2d/UI_Shu/Json/conversion_dialog.json": [
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_toRedeem.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting1.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting2.png", 
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_redeemOk.png"
     ], 
     "D:/Svn_2d/UI_Shu/Json/hall.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/MAHJONGGAME.png"
+    ], 
+    "D:/Svn_2d/UI_Shu/Json/liangyouClubTipsView.json": [
+        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/black_bg.png"
     ]
 }
