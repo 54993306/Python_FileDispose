@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1000348.png</key>
+            <key>1002475.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,202},{32,32}}</string>
@@ -17,20 +17,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>1000349.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,60},{220,56}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{220,56}}</string>
-                <key>sourceSize</key>
-                <string>{220,56}</string>
-            </dict>
-            <key>1000661.png</key>
+            <key>1002532.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,118},{65,82}}</string>
@@ -43,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{65,82}</string>
             </dict>
-            <key>1000672.png</key>
+            <key>1002582.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{234,56}}</string>
@@ -56,6 +43,19 @@
                 <key>sourceSize</key>
                 <string>{234,56}</string>
             </dict>
+            <key>1002589.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,60},{220,56}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{220,56}}</string>
+                <key>sourceSize</key>
+                <string>{220,56}</string>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -66,7 +66,7 @@
             <key>size</key>
             <string>{256,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:e71fa6539f61685d2962770eafb30715$</string>
+            <string>$TexturePacker:SmartUpdate:44e17c9221fd2c1f7d90afca950c1e47$</string>
             <key>textureFileName</key>
             <string>obtain_diamond.png</string>
         </dict>

@@ -4,33 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1000067.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{64,2},{150,60}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <true/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{150,60}}</string>
-                <key>sourceSize</key>
-                <string>{150,60}</string>
-            </dict>
-            <key>1000192.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,2},{150,60}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <true/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{150,60}}</string>
-                <key>sourceSize</key>
-                <string>{150,60}</string>
-            </dict>
-            <key>1000776.png</key>
+            <key>1002395.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,220},{30,30}}</string>
@@ -43,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{150,60}</string>
             </dict>
-            <key>1000892.png</key>
+            <key>1002396.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,188},{30,30}}</string>
@@ -56,7 +30,33 @@
                 <key>sourceSize</key>
                 <string>{150,60}</string>
             </dict>
-            <key>1000942.png</key>
+            <key>1002404.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{64,2},{150,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{150,60}}</string>
+                <key>sourceSize</key>
+                <string>{150,60}</string>
+            </dict>
+            <key>1002405.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{150,60}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{150,60}}</string>
+                <key>sourceSize</key>
+                <string>{150,60}</string>
+            </dict>
+            <key>1002420.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,154},{32,32}}</string>
@@ -79,7 +79,7 @@
             <key>size</key>
             <string>{128,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:75738b475e1013829a90f63b2027dd37$</string>
+            <string>$TexturePacker:SmartUpdate:ca4b8f45317700c4128d8a5bee33b8c7$</string>
             <key>textureFileName</key>
             <string>radio_item_panelyc.png</string>
         </dict>

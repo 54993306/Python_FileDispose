@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1000133.png</key>
+            <key>1002262.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{106,200},{32,32}}</string>
@@ -17,20 +17,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>1000269.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{106,166},{32,32}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{32,32}}</string>
-                <key>sourceSize</key>
-                <string>{32,32}</string>
-            </dict>
-            <key>1000648.png</key>
+            <key>1002272.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{128,128}}</string>
@@ -43,20 +30,7 @@
                 <key>sourceSize</key>
                 <string>{128,128}</string>
             </dict>
-            <key>1000821.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{106,132},{32,32}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{32,32}}</string>
-                <key>sourceSize</key>
-                <string>{32,32}</string>
-            </dict>
-            <key>1000852.png</key>
+            <key>1002407.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,132},{106,102}}</string>
@@ -69,6 +43,32 @@
                 <key>sourceSize</key>
                 <string>{106,102}</string>
             </dict>
+            <key>1002473.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{106,166},{32,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,32}}</string>
+                <key>sourceSize</key>
+                <string>{32,32}</string>
+            </dict>
+            <key>1002478.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{106,132},{32,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,32}}</string>
+                <key>sourceSize</key>
+                <string>{32,32}</string>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -79,7 +79,7 @@
             <key>size</key>
             <string>{256,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:687e69567e97dbf38797c80d46dcedbb$</string>
+            <string>$TexturePacker:SmartUpdate:286684a5b7be1d60ca99446bf6efb322$</string>
             <key>textureFileName</key>
             <string>email_content.png</string>
         </dict>

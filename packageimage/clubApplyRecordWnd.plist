@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1000414.png</key>
+            <key>1002379.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,90},{87,86}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{87,86}</string>
             </dict>
-            <key>1000430.png</key>
+            <key>1002380.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{91,2},{87,86}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{87,86}</string>
             </dict>
-            <key>1000745.png</key>
+            <key>1002381.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{87,86}}</string>
@@ -53,7 +53,7 @@
             <key>size</key>
             <string>{256,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:fa79034d810512d00f31c3d9c0354008$</string>
+            <string>$TexturePacker:SmartUpdate:bdec697ebfe1cf4115bd39b8b960cbc8$</string>
             <key>textureFileName</key>
             <string>clubApplyRecordWnd.png</string>
         </dict>

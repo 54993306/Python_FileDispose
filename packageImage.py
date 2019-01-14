@@ -9,6 +9,7 @@ import json
 import shutil
 import re
 import copy
+import collections
 import fileDataHandle as FD
 from PIL import Image
 import xml.etree.ElementTree as ET
@@ -16,15 +17,15 @@ import xml.etree.ElementTree as ET
 # 图片合并的规则是相对负责的,出现图片的情况很多，包括在代码中使用和一张图被多个文件使用的情况
 
 class packageImage:
-    plistInfo = {}      # 合图后的plist包含的图片信息。
-    plistMd5 = {}       # 图片md5值对应存储的plist文件
-    lowRefPath = {}     # 引用计数低的路径
-    newResPath = {}     # 结构化存储文件被整理后的路径信息
-    singleNewPath = {}  # 存储md5值和对应分类后的路径
-    outPutFolder = {}   # 生成的文件夹
-    moveRecord = {}     # 记录被使用的文件
-    lowRef = {}
-    packageInfo = {}    # 存储合成plist的res信息
+    plistInfo = collections.OrderedDict()      # 合图后的plist包含的图片信息。
+    plistMd5 = collections.OrderedDict()       # 图片md5值对应存储的plist文件
+    lowRefPath = collections.OrderedDict()     # 引用计数低的路径
+    newResPath = collections.OrderedDict()     # 结构化存储文件被整理后的路径信息
+    singleNewPath = collections.OrderedDict()  # 存储md5值和对应分类后的路径
+    outPutFolder = collections.OrderedDict()   # 生成的文件夹
+    moveRecord = collections.OrderedDict()     # 记录被使用的文件
+    lowRef = collections.OrderedDict()
+    packageInfo = collections.OrderedDict()    # 存储合成plist的res信息
 
     # 将数据都记录到文件中
     def recordData(self):
@@ -207,7 +208,7 @@ class packageImage:
     # 初始化分类后文件位置信息
     def initNewPathRes(self , oldPath , newPath , outPutPath):
         # print "res move: " + oldPath.ljust(58) + ">>> " + newPath
-        resInfo = {}
+        resInfo = collections.OrderedDict()
         resInfo["md5"] = self.fileData.getFileMd5(oldPath)
         resInfo["path"] = newPath
         self.singleNewPath[resInfo["md5"]] = newPath
@@ -265,7 +266,7 @@ class packageImage:
 
     # 读取plist中的png字段
     def initPlistInfo(self , pElements , plistPath):
-        pngList = {}
+        pngList = collections.OrderedDict()
         self.plistInfo[plistPath] = pngList
         for ele in pElements:
             if re.search(r".png", ele.text):

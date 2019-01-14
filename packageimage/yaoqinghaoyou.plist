@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1000012.png</key>
+            <key>1002767.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{24,497},{12,20}}</string>
@@ -17,20 +17,7 @@
                 <key>sourceSize</key>
                 <string>{12,20}</string>
             </dict>
-            <key>1000017.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{60,65},{32,21}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <true/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{32,21}}</string>
-                <key>sourceSize</key>
-                <string>{32,21}</string>
-            </dict>
-            <key>1000158.png</key>
+            <key>1002768.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,497},{12,20}}</string>
@@ -43,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{12,20}</string>
             </dict>
-            <key>1000252.png</key>
+            <key>1002770.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,191},{304,56}}</string>
@@ -56,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{304,56}</string>
             </dict>
-            <key>1000468.png</key>
+            <key>1002772.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{84,2},{187,38}}</string>
@@ -69,20 +56,7 @@
                 <key>sourceSize</key>
                 <string>{187,38}</string>
             </dict>
-            <key>1000481.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,65},{32,27}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{32,27}}</string>
-                <key>sourceSize</key>
-                <string>{32,27}</string>
-            </dict>
-            <key>1000708.png</key>
+            <key>1002773.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{60,191},{136,37}}</string>
@@ -95,7 +69,7 @@
                 <key>sourceSize</key>
                 <string>{136,37}</string>
             </dict>
-            <key>1000960.png</key>
+            <key>1002774.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{80,61}}</string>
@@ -108,6 +82,32 @@
                 <key>sourceSize</key>
                 <string>{80,61}</string>
             </dict>
+            <key>1002775.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,65},{32,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,27}}</string>
+                <key>sourceSize</key>
+                <string>{32,27}</string>
+            </dict>
+            <key>1002776.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{60,65},{32,21}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,21}}</string>
+                <key>sourceSize</key>
+                <string>{32,21}</string>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -118,7 +118,7 @@
             <key>size</key>
             <string>{128,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:fb8dc5d27fde8c3ff00803a8735f50b1$</string>
+            <string>$TexturePacker:SmartUpdate:824f8f3b271bbc2ddd34ef26bc08152b$</string>
             <key>textureFileName</key>
             <string>yaoqinghaoyou.png</string>
         </dict>

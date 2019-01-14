@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1000146.png</key>
+            <key>1002690.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{170,2},{166,166}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{166,166}</string>
             </dict>
-            <key>1000234.png</key>
+            <key>1002691.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,338},{166,166}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{166,166}</string>
             </dict>
-            <key>1000307.png</key>
+            <key>1002692.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,170},{166,166}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{166,166}</string>
             </dict>
-            <key>1000328.png</key>
+            <key>1002693.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{166,166}}</string>
@@ -66,7 +66,7 @@
             <key>size</key>
             <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:9c435d1caf35a11e895935920f9846c6$</string>
+            <string>$TexturePacker:SmartUpdate:da83fedcc0142275e78b0d84698418c0$</string>
             <key>textureFileName</key>
             <string>wechat_path.png</string>
         </dict>
