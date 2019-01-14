@@ -4,16 +4,16 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>GANG/gang1.png</key>
+			<key>light1.png</key>
 			<dict>
 				<key>width</key>
-				<integer>644</integer>
+				<integer>512</integer>
 				<key>height</key>
-				<integer>528</integer>
+				<integer>449</integer>
 				<key>originalWidth</key>
-				<integer>644</integer>
+				<integer>512</integer>
 				<key>originalHeight</key>
-				<integer>528</integer>
+				<integer>449</integer>
 				<key>x</key>
 				<integer>0</integer>
 				<key>y</key>
@@ -23,43 +23,24 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>PENG/peng2.png</key>
+			<key>mosaic0.png</key>
 			<dict>
 				<key>width</key>
-				<integer>422</integer>
+				<integer>771</integer>
 				<key>height</key>
-				<integer>352</integer>
+				<integer>121</integer>
 				<key>originalWidth</key>
-				<integer>644</integer>
+				<integer>794</integer>
 				<key>originalHeight</key>
-				<integer>528</integer>
+				<integer>128</integer>
 				<key>x</key>
 				<integer>0</integer>
 				<key>y</key>
-				<integer>530</integer>
+				<integer>451</integer>
 				<key>offsetX</key>
-				<real>12</real>
+				<real>2.5</real>
 				<key>offsetY</key>
-				<real>-17</real>
-			</dict>
-			<key>TIANTING/tianting2.png</key>
-			<dict>
-				<key>width</key>
-				<integer>435</integer>
-				<key>height</key>
-				<integer>270</integer>
-				<key>originalWidth</key>
-				<integer>644</integer>
-				<key>originalHeight</key>
-				<integer>528</integer>
-				<key>x</key>
-				<integer>424</integer>
-				<key>y</key>
-				<integer>530</integer>
-				<key>offsetX</key>
-				<real>-7.5</real>
-				<key>offsetY</key>
-				<real>-9</real>
+				<real>-2.5</real>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -67,9 +48,9 @@
 			<key>format</key>
 			<integer>0</integer>
 			<key>textureFileName</key>
-			<string>CpghAnimation4.png</string>
+			<string>AnimationDDZ21.png</string>
 			<key>realTextureFileName</key>
-			<string>CpghAnimation4.png</string>
+			<string>AnimationDDZ21.png</string>
 			<key>size</key>
 			<string>{1024,1024}</string>
 		</dict>

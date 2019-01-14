@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{181,77}</string>
             </dict>
-            <key>1000535.png</key>
+            <key>1000536.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{185,2},{66,67}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{64,64}</string>
             </dict>
-            <key>1000898.png</key>
+            <key>1000897.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,81},{40,36}}</string>
@@ -92,7 +92,7 @@
             <key>size</key>
             <string>{256,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:b061195ff565007954fbd0746394cf74$</string>
+            <string>$TexturePacker:SmartUpdate:bfa585a4565cd16e773cb67ee39bf279$</string>
             <key>textureFileName</key>
             <string>chat.png</string>
         </dict>

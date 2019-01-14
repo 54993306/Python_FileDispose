@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{48,38}</string>
             </dict>
-            <key>1000077.png</key>
+            <key>1000076.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{14,46},{47,26}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{47,26}</string>
             </dict>
-            <key>1000124.png</key>
+            <key>1000123.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{112,36},{10,38}}</string>
@@ -173,7 +173,7 @@
                 <key>sourceSize</key>
                 <string>{110,44}</string>
             </dict>
-            <key>1000873.png</key>
+            <key>1000872.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{63,46},{32,25}}</string>
@@ -209,7 +209,7 @@
             <key>size</key>
             <string>{128,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:21b6beac080c71c8b6cec33a47f694cf$</string>
+            <string>$TexturePacker:SmartUpdate:466246f20a2886814dbc8c01116f0541$</string>
             <key>textureFileName</key>
             <string>infoNode.png</string>
         </dict>

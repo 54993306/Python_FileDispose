@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1000139.png</key>
+            <key>1000138.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{672,95}}</string>
@@ -66,7 +66,7 @@
             <key>size</key>
             <string>{256,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:3a4148dcd18800a0e651db1f9d3a70aa$</string>
+            <string>$TexturePacker:SmartUpdate:6405960112f615dd69550859fd39eb1d$</string>
             <key>textureFileName</key>
             <string>mall.png</string>
         </dict>

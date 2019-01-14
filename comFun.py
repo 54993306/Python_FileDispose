@@ -201,3 +201,22 @@ def deleteDirByStr(str , paths):
 # os.system("wsl sed -i s/old_str/new_str/g ./file.txt")
 # os.system("wsl sed -i s/new_str/old_str/g ./file.txt")
 
+# 将数据加入到文件中
+# comFun.addDataToFile("./aaa.txt" , 77122 , "22221")
+def addDataToFile(path , key , data , newFile = False):
+    fileData = {}
+    if newFile or not os.path.isfile(path):
+        stream = open(path , "w+")
+    else:
+        stream = open(path, "a+")
+    if is_json(stream.read()):
+        stream.seek(0, 0)
+        fileData = json.load(stream)
+    else:
+        fileData = {}
+    stream.truncate(len(stream.read()))  # 清理文件内容
+    if stream.mode == "a+":
+        stream.seek(0, 2)  # 必须从文件末尾开始处理，否则 a+模式报错
+    fileData[str(key)] = data
+    stream.write(json.dumps(fileData, ensure_ascii=False, encoding="utf -8", indent=4))
+    stream.close()

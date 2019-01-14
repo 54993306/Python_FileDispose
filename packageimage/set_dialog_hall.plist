@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{119,66}</string>
             </dict>
-            <key>1000170.png</key>
+            <key>1000169.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{139,323},{75,75}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{75,75}</string>
             </dict>
-            <key>1000172.png</key>
+            <key>1000171.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{84,246},{75,75}}</string>
@@ -95,7 +95,7 @@
                 <key>sourceSize</key>
                 <string>{369,39}</string>
             </dict>
-            <key>1000631.png</key>
+            <key>1000632.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{369,39}}</string>
@@ -134,7 +134,7 @@
                 <key>sourceSize</key>
                 <string>{75,75}</string>
             </dict>
-            <key>1000919.png</key>
+            <key>1000918.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,373},{119,67}}</string>
@@ -157,7 +157,7 @@
             <key>size</key>
             <string>{256,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:65a743d71aa8743ab9e045583684bcb0$</string>
+            <string>$TexturePacker:SmartUpdate:2811bc8bd944aad075c750ee8ef2fdb3$</string>
             <key>textureFileName</key>
             <string>set_dialog_hall.png</string>
         </dict>

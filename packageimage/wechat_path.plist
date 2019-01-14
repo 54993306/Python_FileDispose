@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1000147.png</key>
+            <key>1000146.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{170,2},{166,166}}</string>
@@ -66,7 +66,7 @@
             <key>size</key>
             <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:5af180fad1a517b0037f784f1ec8cead$</string>
+            <string>$TexturePacker:SmartUpdate:544364a58131903667d4c1ec0684a71b$</string>
             <key>textureFileName</key>
             <string>wechat_path.png</string>
         </dict>

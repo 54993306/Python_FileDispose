@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{150,60}</string>
             </dict>
-            <key>1000893.png</key>
+            <key>1000892.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,188},{30,30}}</string>
@@ -79,7 +79,7 @@
             <key>size</key>
             <string>{128,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:5b65183d84308f510c2bdb1ce5c08289$</string>
+            <string>$TexturePacker:SmartUpdate:7255cf9a0c56531845ccec2503bfaaa2$</string>
             <key>textureFileName</key>
             <string>radio_item_panelyc.png</string>
         </dict>

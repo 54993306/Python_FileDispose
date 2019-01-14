@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{53,73}</string>
             </dict>
-            <key>1000074.png</key>
+            <key>1000073.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,444},{52,71}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{52,71}</string>
             </dict>
-            <key>1000168.png</key>
+            <key>1000167.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,390},{52,73}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{52,73}</string>
             </dict>
-            <key>1000183.png</key>
+            <key>1000182.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{136,143},{584,105}}</string>
@@ -121,7 +121,7 @@
                 <key>sourceSize</key>
                 <string>{51,70}</string>
             </dict>
-            <key>1000833.png</key>
+            <key>1000832.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{77,428},{52,72}}</string>
@@ -134,7 +134,7 @@
                 <key>sourceSize</key>
                 <string>{52,72}</string>
             </dict>
-            <key>1000864.png</key>
+            <key>1000863.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,336},{52,73}}</string>
@@ -147,7 +147,7 @@
                 <key>sourceSize</key>
                 <string>{52,73}</string>
             </dict>
-            <key>1000884.png</key>
+            <key>1000883.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{214,139}}</string>
@@ -160,7 +160,7 @@
                 <key>sourceSize</key>
                 <string>{214,139}</string>
             </dict>
-            <key>1000932.png</key>
+            <key>1000931.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,143},{132,67}}</string>
@@ -196,7 +196,7 @@
             <key>size</key>
             <string>{256,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:622b868f191930223bb85a61bb14d33d$</string>
+            <string>$TexturePacker:SmartUpdate:c11c1a12af45edcd12cb4f2f300f4327$</string>
             <key>textureFileName</key>
             <string>clubApplyModeBWnd.png</string>
         </dict>

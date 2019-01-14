@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{80,67}</string>
             </dict>
-            <key>1000903.png</key>
+            <key>1000902.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{84,2},{30,30}}</string>
@@ -53,7 +53,7 @@
             <key>size</key>
             <string>{128,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:f38fe300abf719abd7698fb0d98ab241$</string>
+            <string>$TexturePacker:SmartUpdate:1bbb1facc1f6846a2ce2fa0de1ae7c71$</string>
             <key>textureFileName</key>
             <string>accountPanel.png</string>
         </dict>

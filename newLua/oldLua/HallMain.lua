@@ -1388,7 +1388,7 @@ function HallMain:pushCommonTips(diamondNum,is_yuanbao)
     data.contentNode =  cc.Layer:create()
     local front_label = display.newTTFLabel({
     text = "恭喜成功获得：",
-    font = "D:/Python_FileDispose/res_TTF/1010003.TTF",
+    font = "real_res/1010003.TTF",
     size = 30,
     align = cc.TEXT_ALIGNMENT_CENTER, -- 文字内部居中对齐
     color = cc.c3b(51,51,51),
@@ -1396,7 +1396,7 @@ function HallMain:pushCommonTips(diamondNum,is_yuanbao)
 
     local last_label = display.newTTFLabel({
     text = "x"..diamondNum,
-    font = "D:/Python_FileDispose/res_TTF/1010003.TTF",
+    font = "real_res/1010003.TTF",
     size = 30,
     align = cc.TEXT_ALIGNMENT_LEFT, -- 文字内部居中对齐
     color = cc.c3b(51,51,51),

@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{40,40}</string>
             </dict>
-            <key>1000600.png</key>
+            <key>1000601.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{47,239},{71,72}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{71,72}</string>
             </dict>
-            <key>1000630.png</key>
+            <key>1000631.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{47,312},{63,68}}</string>
@@ -92,7 +92,7 @@
             <key>size</key>
             <string>{128,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:f63d5ad384a9d361e6bb84c50f8eee29$</string>
+            <string>$TexturePacker:SmartUpdate:af65344e6ba143dac86acd1597017e39$</string>
             <key>textureFileName</key>
             <string>roommodel.png</string>
         </dict>

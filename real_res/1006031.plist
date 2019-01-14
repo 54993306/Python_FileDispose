@@ -4,81 +4,62 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>liujuguang.png</key>
+			<key>PENG/peng1.png</key>
 			<dict>
 				<key>width</key>
-				<integer>565</integer>
+				<integer>627</integer>
 				<key>height</key>
-				<integer>259</integer>
+				<integer>515</integer>
 				<key>originalWidth</key>
-				<integer>565</integer>
+				<integer>644</integer>
 				<key>originalHeight</key>
-				<integer>259</integer>
+				<integer>528</integer>
 				<key>x</key>
 				<integer>0</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
-				<real>0</real>
+				<real>1.5</real>
 				<key>offsetY</key>
-				<real>0</real>
+				<real>-0.5</real>
 			</dict>
-			<key>liuju.png</key>
+			<key>FA/fa2.png</key>
 			<dict>
 				<key>width</key>
-				<integer>336</integer>
+				<integer>438</integer>
 				<key>height</key>
-				<integer>191</integer>
+				<integer>487</integer>
 				<key>originalWidth</key>
-				<integer>336</integer>
+				<integer>644</integer>
 				<key>originalHeight</key>
-				<integer>191</integer>
+				<integer>528</integer>
 				<key>x</key>
-				<integer>567</integer>
-				<key>y</key>
 				<integer>0</integer>
+				<key>y</key>
+				<integer>517</integer>
 				<key>offsetX</key>
-				<real>0</real>
+				<real>-6</real>
 				<key>offsetY</key>
-				<real>0</real>
+				<real>5.5</real>
 			</dict>
-			<key>liujuxiaguang.png</key>
+			<key>TIANTING/tianting3.png</key>
 			<dict>
 				<key>width</key>
-				<integer>647</integer>
+				<integer>456</integer>
 				<key>height</key>
-				<integer>140</integer>
+				<integer>284</integer>
 				<key>originalWidth</key>
-				<integer>647</integer>
+				<integer>644</integer>
 				<key>originalHeight</key>
-				<integer>140</integer>
+				<integer>528</integer>
 				<key>x</key>
-				<integer>0</integer>
+				<integer>440</integer>
 				<key>y</key>
-				<integer>261</integer>
+				<integer>517</integer>
 				<key>offsetX</key>
-				<real>0</real>
+				<real>-2</real>
 				<key>offsetY</key>
-				<real>0</real>
-			</dict>
-			<key>liujumoji.png</key>
-			<dict>
-				<key>width</key>
-				<integer>584</integer>
-				<key>height</key>
-				<integer>213</integer>
-				<key>originalWidth</key>
-				<integer>584</integer>
-				<key>originalHeight</key>
-				<integer>213</integer>
-				<key>x</key>
-				<integer>0</integer>
-				<key>y</key>
-				<integer>403</integer>
-				<key>offsetX</key>
-				<real>0</real>
-				<key>offsetY</key>
-				<real>0</real>
+				<real>-12</real>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -86,9 +67,9 @@
 			<key>format</key>
 			<integer>0</integer>
 			<key>textureFileName</key>
-			<string>liuju0.png</string>
+			<string>CpghAnimation5.png</string>
 			<key>realTextureFileName</key>
-			<string>liuju0.png</string>
+			<string>CpghAnimation5.png</string>
 			<key>size</key>
 			<string>{1024,1024}</string>
 		</dict>

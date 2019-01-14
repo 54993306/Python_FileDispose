@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{480,142}</string>
             </dict>
-            <key>1000538.png</key>
+            <key>1000539.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{46,330},{41,40}}</string>
@@ -92,7 +92,7 @@
             <key>size</key>
             <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:d2d5f464154869b52be8f9c66bae567c$</string>
+            <string>$TexturePacker:SmartUpdate:02b481e6b624c919c9cf5b479cef57a8$</string>
             <key>textureFileName</key>
             <string>hallLogin.png</string>
         </dict>

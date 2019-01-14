@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{220,56}</string>
             </dict>
-            <key>1000660.png</key>
+            <key>1000661.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,118},{65,82}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{65,82}</string>
             </dict>
-            <key>1000671.png</key>
+            <key>1000672.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{234,56}}</string>
@@ -66,7 +66,7 @@
             <key>size</key>
             <string>{256,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:01a3a18a0bd38652d65d203c83cc4c75$</string>
+            <string>$TexturePacker:SmartUpdate:6d21707c17818ffc0ac4874f0d6ba708$</string>
             <key>textureFileName</key>
             <string>obtain_diamond.png</string>
         </dict>

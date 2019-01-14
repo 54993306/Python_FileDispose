@@ -12,3 +12,7 @@ class tidyRes:
 
     def __init__(self):
         print 1
+
+
+    def tidy(self):
+        print 2

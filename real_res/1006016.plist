@@ -4,77 +4,134 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>YANGMA/yangma1.png</key>
+			<key>body4.png</key>
 			<dict>
 				<key>width</key>
-				<integer>439</integer>
+				<integer>200</integer>
 				<key>height</key>
-				<integer>337</integer>
+				<integer>215</integer>
 				<key>originalWidth</key>
-				<integer>644</integer>
+				<integer>200</integer>
 				<key>originalHeight</key>
-				<integer>528</integer>
+				<integer>215</integer>
 				<key>x</key>
 				<integer>0</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
-				<real>9.5</real>
+				<real>0</real>
 				<key>offsetY</key>
-				<real>-3.5</real>
+				<real>0</real>
 			</dict>
-			<key>YANGMA/yangma2.png</key>
+			<key>item3.png</key>
 			<dict>
 				<key>width</key>
-				<integer>422</integer>
+				<integer>124</integer>
 				<key>height</key>
-				<integer>297</integer>
+				<integer>77</integer>
 				<key>originalWidth</key>
-				<integer>644</integer>
+				<integer>124</integer>
 				<key>originalHeight</key>
-				<integer>528</integer>
+				<integer>77</integer>
 				<key>x</key>
-				<integer>441</integer>
+				<integer>202</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
-				<real>5</real>
+				<real>0</real>
 				<key>offsetY</key>
-				<real>-3.5</real>
+				<real>0</real>
 			</dict>
-			<key>YANGMA/yangma3.png</key>
+			<key>leg1.png</key>
 			<dict>
 				<key>width</key>
-				<integer>361</integer>
+				<integer>48</integer>
 				<key>height</key>
+				<integer>48</integer>
+				<key>originalWidth</key>
+				<integer>48</integer>
+				<key>originalHeight</key>
+				<integer>48</integer>
+				<key>x</key>
+				<integer>328</integer>
+				<key>y</key>
+				<integer>0</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>body1.png</key>
+			<dict>
+				<key>width</key>
+				<integer>177</integer>
+				<key>height</key>
+				<integer>115</integer>
+				<key>originalWidth</key>
+				<integer>177</integer>
+				<key>originalHeight</key>
+				<integer>115</integer>
+				<key>x</key>
+				<integer>378</integer>
+				<key>y</key>
+				<integer>0</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>item1.png</key>
+			<dict>
+				<key>width</key>
 				<integer>232</integer>
+				<key>height</key>
+				<integer>133</integer>
 				<key>originalWidth</key>
-				<integer>644</integer>
+				<integer>232</integer>
 				<key>originalHeight</key>
-				<integer>528</integer>
+				<integer>133</integer>
 				<key>x</key>
-				<integer>0</integer>
+				<integer>557</integer>
 				<key>y</key>
-				<integer>339</integer>
+				<integer>0</integer>
 				<key>offsetX</key>
-				<real>0.5</real>
+				<real>0</real>
 				<key>offsetY</key>
-				<real>-11</real>
+				<real>0</real>
 			</dict>
-			<key>moji1.png</key>
+			<key>item9.png</key>
 			<dict>
 				<key>width</key>
-				<integer>190</integer>
+				<integer>36</integer>
 				<key>height</key>
-				<integer>178</integer>
+				<integer>117</integer>
 				<key>originalWidth</key>
-				<integer>190</integer>
+				<integer>36</integer>
 				<key>originalHeight</key>
-				<integer>178</integer>
+				<integer>117</integer>
+				<key>x</key>
+				<integer>791</integer>
+				<key>y</key>
+				<integer>0</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>item16.png</key>
+			<dict>
+				<key>width</key>
+				<integer>210</integer>
+				<key>height</key>
+				<integer>37</integer>
+				<key>originalWidth</key>
+				<integer>210</integer>
+				<key>originalHeight</key>
+				<integer>37</integer>
 				<key>x</key>
 				<integer>0</integer>
 				<key>y</key>
-				<integer>573</integer>
+				<integer>217</integer>
 				<key>offsetX</key>
 				<real>0</real>
 				<key>offsetY</key>
@@ -86,9 +143,9 @@
 			<key>format</key>
 			<integer>0</integer>
 			<key>textureFileName</key>
-			<string>extraAnimation0.png</string>
+			<string>face1.png</string>
 			<key>realTextureFileName</key>
-			<string>extraAnimation0.png</string>
+			<string>face1.png</string>
 			<key>size</key>
 			<string>{1024,1024}</string>
 		</dict>

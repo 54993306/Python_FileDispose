@@ -4,395 +4,187 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>mfeivfx_00.png</key>
+            <key>icon_coin.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{318,456},{70,70}}</string>
-                <key>offset</key>
-                <string>{-1,1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{14,14},{70,70}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_01.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{76,450},{72,72}}</string>
-                <key>offset</key>
-                <string>{-1,1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{13,13},{72,72}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_02.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,450},{72,72}}</string>
+                <string>{{114,1831},{45,47}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{14,14},{72,72}}</string>
+                <string>{{0,0},{45,47}}</string>
                 <key>sourceSize</key>
-                <string>{100,100}</string>
+                <string>{45,47}</string>
             </dict>
-            <key>mfeivfx_03.png</key>
+            <key>icon_coins.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{242,450},{74,74}}</string>
+                <string>{{842,157},{110,78}}</string>
                 <key>offset</key>
-                <string>{-1,1}</string>
+                <string>{3,-4}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{12,12},{74,74}}</string>
+                <string>{{28,45},{110,78}}</string>
                 <key>sourceSize</key>
-                <string>{100,100}</string>
+                <string>{160,160}</string>
             </dict>
-            <key>mfeivfx_04.png</key>
+            <key>img_defaultHead.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{166,448},{74,74}}</string>
+                <string>{{842,237},{108,108}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{0,1}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{13,13},{74,74}}</string>
+                <string>{{1,0},{108,108}}</string>
                 <key>sourceSize</key>
-                <string>{100,100}</string>
+                <string>{110,110}</string>
             </dict>
-            <key>mfeivfx_05.png</key>
+            <key>img_downframe.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{256,372},{76,76}}</string>
-                <key>offset</key>
-                <string>{-1,1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{11,11},{76,76}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_06.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,372},{76,76}}</string>
+                <string>{{724,2},{296,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{12,12},{76,76}}</string>
+                <string>{{0,0},{296,32}}</string>
                 <key>sourceSize</key>
-                <string>{100,100}</string>
+                <string>{296,32}</string>
             </dict>
-            <key>mfeivfx_07.png</key>
+            <key>img_headBottom.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{86,370},{78,78}}</string>
-                <key>offset</key>
-                <string>{-1,1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{10,10},{78,78}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_08.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{176,368},{78,78}}</string>
+                <string>{{724,275},{80,80}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{11,11},{78,78}}</string>
+                <string>{{0,0},{80,80}}</string>
                 <key>sourceSize</key>
-                <string>{100,100}</string>
+                <string>{80,80}</string>
             </dict>
-            <key>mfeivfx_09.png</key>
+            <key>img_headFrame.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{176,286},{80,80}}</string>
-                <key>offset</key>
-                <string>{-1,1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{9,9},{80,80}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_10.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,288},{82,82}}</string>
-                <key>offset</key>
-                <string>{-1,1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{8,8},{82,82}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_11.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{92,286},{82,82}}</string>
-                <key>offset</key>
-                <string>{-1,1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{8,8},{82,82}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_12.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{372,370},{84,84}}</string>
-                <key>offset</key>
-                <string>{-1,1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{7,7},{84,84}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_13.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{372,284},{84,84}}</string>
+                <string>{{724,157},{116,116}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{8,8},{84,84}}</string>
+                <string>{{0,0},{116,116}}</string>
                 <key>sourceSize</key>
-                <string>{100,100}</string>
+                <string>{116,116}</string>
             </dict>
-            <key>mfeivfx_14.png</key>
+            <key>info_bg.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{284,284},{86,86}}</string>
-                <key>offset</key>
-                <string>{-1,1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{6,6},{86,86}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_15.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{372,196},{86,86}}</string>
+                <string>{{2,2005},{40,40}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{7,7},{86,86}}</string>
+                <string>{{0,0},{40,40}}</string>
                 <key>sourceSize</key>
-                <string>{100,100}</string>
+                <string>{40,40}</string>
             </dict>
-            <key>mfeivfx_16.png</key>
+            <key>niuAndpsz_bg.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{284,196},{86,86}}</string>
+                <string>{{2,2},{1280,720}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{1280,720}}</string>
+                <key>sourceSize</key>
+                <string>{1280,720}</string>
+            </dict>
+            <key>popframe/dialog_left.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{954,221},{67,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{7,7},{86,86}}</string>
+                <string>{{0,0},{67,62}}</string>
                 <key>sourceSize</key>
-                <string>{100,100}</string>
+                <string>{67,62}</string>
             </dict>
-            <key>mfeivfx_17.png</key>
+            <key>popframe/dialog_right.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,198},{88,88}}</string>
+                <string>{{954,157},{67,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{6,6},{88,88}}</string>
+                <string>{{0,0},{67,62}}</string>
                 <key>sourceSize</key>
-                <string>{100,100}</string>
+                <string>{67,62}</string>
             </dict>
-            <key>mfeivfx_18.png</key>
+            <key>popframe/frame_chat.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{98,196},{88,88}}</string>
+                <string>{{114,1284},{114,545}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{6,6},{88,88}}</string>
+                <string>{{0,0},{114,545}}</string>
                 <key>sourceSize</key>
-                <string>{100,100}</string>
+                <string>{114,545}</string>
             </dict>
-            <key>mfeivfx_19.png</key>
+            <key>popframe/frame_function.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{192,194},{90,90}}</string>
+                <string>{{2,1886},{117,488}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{117,488}}</string>
+                <key>sourceSize</key>
+                <string>{117,488}</string>
+            </dict>
+            <key>popframe/frame_gameDescription.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,1284},{110,600}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{5,5},{90,90}}</string>
+                <string>{{0,0},{110,600}}</string>
                 <key>sourceSize</key>
-                <string>{100,100}</string>
+                <string>{110,600}</string>
             </dict>
-            <key>mfeivfx_20.png</key>
+            <key>popframe/frame_info.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{192,102},{90,90}}</string>
+                <string>{{724,36},{119,284}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
-                <string>{{5,5},{90,90}}</string>
+                <string>{{0,0},{119,284}}</string>
                 <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_21.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{98,102},{92,92}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{4,4},{92,92}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_22.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,102},{94,94}}</string>
-                <key>offset</key>
-                <string>{-1,1}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{2,2},{94,94}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_23.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{398,100},{94,94}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{3,3},{94,94}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_24.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{302,100},{94,94}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{3,3},{94,94}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_25.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{400,2},{96,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{2,2},{96,96}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_26.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{302,2},{96,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{2,2},{96,96}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_27.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{202,2},{98,98}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{1,1},{98,98}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_28.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{102,2},{98,98}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{1,1},{98,98}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
-            </dict>
-            <key>mfeivfx_29.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,2},{98,98}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{1,1},{98,98}}</string>
-                <key>sourceSize</key>
-                <string>{100,100}</string>
+                <string>{119,284}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -400,13 +192,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>mfeivfx.png</string>
+            <string>pokercommon1.png</string>
             <key>size</key>
-            <string>{512,1024}</string>
+            <string>{1024,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:47719fb6ef8d39cbb56d1b97e1eb38ee$</string>
+            <string>$TexturePacker:SmartUpdate:8344fe5481c7f43adc697ddd4263732b$</string>
             <key>textureFileName</key>
-            <string>mfeivfx.png</string>
+            <string>pokercommon1.png</string>
         </dict>
     </dict>
 </plist>

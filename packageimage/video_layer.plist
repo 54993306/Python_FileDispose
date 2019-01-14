@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{284,84}</string>
             </dict>
-            <key>1000560.png</key>
+            <key>1000561.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{88,215},{20,27}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{20,27}</string>
             </dict>
-            <key>1000917.png</key>
+            <key>1000916.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,288},{73,73}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{73,73}</string>
             </dict>
-            <key>1000920.png</key>
+            <key>1000919.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{88,152},{34,30}}</string>
@@ -92,7 +92,7 @@
             <key>size</key>
             <string>{128,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ac0aec1dde2cbc0bf82f986fa924dca6$</string>
+            <string>$TexturePacker:SmartUpdate:e5ff0eb625799b2fadfcc1b6e2c48110$</string>
             <key>textureFileName</key>
             <string>video_layer.png</string>
         </dict>

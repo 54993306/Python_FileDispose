@@ -2,9 +2,9 @@
     "D:/Python_FileDispose/newJson/obtain_prop_dialog.json": {
         "1": {
             "new": {
-                "path": "1000513.png", 
-                "plistFile": "1newplist/obtain_prop_dialog.plist", 
-                "resourceType": 1
+                "path": "real_res/1000513.png", 
+                "plistFile": "", 
+                "resourceType": 0
             }, 
             "old": {
                 "path": "Common/gxhd_wz.png", 
@@ -14,9 +14,9 @@
         }, 
         "0": {
             "new": {
-                "path": "1000331.png", 
-                "plistFile": "1newplist/obtain_prop_dialog.plist", 
-                "resourceType": 1
+                "path": "real_res/1000331.png", 
+                "plistFile": "", 
+                "resourceType": 0
             }, 
             "old": {
                 "path": "Common/light_effect.png", 
@@ -38,9 +38,9 @@
         }, 
         "2": {
             "new": {
-                "path": "1000604.png", 
-                "plistFile": "1newplist/obtain_prop_dialog.plist", 
-                "resourceType": 1
+                "path": "real_res/1000605.png", 
+                "plistFile": "", 
+                "resourceType": 0
             }, 
             "old": {
                 "path": "Common/huode_dk.png", 
@@ -50,7 +50,7 @@
         }, 
         "5": {
             "new": {
-                "path": "1000832.png", 
+                "path": "1000831.png", 
                 "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
@@ -62,7 +62,7 @@
         }, 
         "4": {
             "new": {
-                "path": "res_fnt/1004020.fnt", 
+                "path": "real_res/1004020.fnt", 
                 "plistFile": "", 
                 "resourceType": 0
             }, 
@@ -74,9 +74,9 @@
         }, 
         "6": {
             "new": {
-                "path": "1000766.png", 
-                "plistFile": "1newplist/obtain_prop_dialog.plist", 
-                "resourceType": 1
+                "path": "real_res/1000766.png", 
+                "plistFile": "", 
+                "resourceType": 0
             }, 
             "old": {
                 "path": "friendRoom/img_queding.png", 
@@ -112,7 +112,7 @@
         }, 
         "42": {
             "new": {
-                "path": "1000572.png", 
+                "path": "1000573.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -148,7 +148,7 @@
         }, 
         "60": {
             "new": {
-                "path": "res_png/1000659.png", 
+                "path": "res_png/1000660.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }, 
@@ -160,7 +160,7 @@
         }, 
         "61": {
             "new": {
-                "path": "1000587.png", 
+                "path": "1000588.png", 
                 "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
@@ -184,7 +184,7 @@
         }, 
         "63": {
             "new": {
-                "path": "1000166.png", 
+                "path": "1000165.png", 
                 "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
             }, 
@@ -196,7 +196,7 @@
         }, 
         "64": {
             "new": {
-                "path": "real_res/1000346.png", 
+                "path": "real_res/1000345.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }, 
@@ -244,7 +244,7 @@
         }, 
         "24": {
             "new": {
-                "path": "1000544.png", 
+                "path": "1000545.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -256,7 +256,7 @@
         }, 
         "25": {
             "new": {
-                "path": "1000583.png", 
+                "path": "1000584.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -316,7 +316,7 @@
         }, 
         "22": {
             "new": {
-                "path": "1000155.png", 
+                "path": "1000154.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -376,7 +376,7 @@
         }, 
         "45": {
             "new": {
-                "path": "1000858.png", 
+                "path": "1000857.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -400,7 +400,7 @@
         }, 
         "29": {
             "new": {
-                "path": "1000548.png", 
+                "path": "1000549.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -424,7 +424,7 @@
         }, 
         "41": {
             "new": {
-                "path": "1000572.png", 
+                "path": "1000573.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -436,7 +436,7 @@
         }, 
         "1": {
             "new": {
-                "path": "1000915.png", 
+                "path": "1000914.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -472,7 +472,7 @@
         }, 
         "2": {
             "new": {
-                "path": "res_png/1000176.png", 
+                "path": "res_png/1000175.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }, 
@@ -532,7 +532,7 @@
         }, 
         "9": {
             "new": {
-                "path": "1000553.png", 
+                "path": "1000554.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -556,7 +556,7 @@
         }, 
         "51": {
             "new": {
-                "path": "1000578.png", 
+                "path": "1000579.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -580,7 +580,7 @@
         }, 
         "38": {
             "new": {
-                "path": "1000633.png", 
+                "path": "1000634.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -604,7 +604,7 @@
         }, 
         "58": {
             "new": {
-                "path": "res_png/1000119.png", 
+                "path": "res_png/1000118.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }, 
@@ -688,7 +688,7 @@
         }, 
         "17": {
             "new": {
-                "path": "1000571.png", 
+                "path": "1000572.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -712,7 +712,7 @@
         }, 
         "19": {
             "new": {
-                "path": "1000113.png", 
+                "path": "1000112.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -724,7 +724,7 @@
         }, 
         "18": {
             "new": {
-                "path": "1000099.png", 
+                "path": "1000098.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -736,7 +736,7 @@
         }, 
         "31": {
             "new": {
-                "path": "1000861.png", 
+                "path": "1000860.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -760,7 +760,7 @@
         }, 
         "37": {
             "new": {
-                "path": "1000146.png", 
+                "path": "1000145.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -772,7 +772,7 @@
         }, 
         "36": {
             "new": {
-                "path": "1000533.png", 
+                "path": "1000534.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -784,7 +784,7 @@
         }, 
         "35": {
             "new": {
-                "path": "1000146.png", 
+                "path": "1000145.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -820,7 +820,7 @@
         }, 
         "55": {
             "new": {
-                "path": "1000556.png", 
+                "path": "1000557.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -832,7 +832,7 @@
         }, 
         "32": {
             "new": {
-                "path": "1000127.png", 
+                "path": "1000126.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 
@@ -844,7 +844,7 @@
         }, 
         "57": {
             "new": {
-                "path": "1000187.png", 
+                "path": "1000186.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
             }, 

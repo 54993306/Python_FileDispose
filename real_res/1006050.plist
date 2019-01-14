@@ -4,43 +4,195 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>ddzroom/title.png</key>
+			<key>TIANHU/tianhu2.png</key>
 			<dict>
 				<key>width</key>
-				<integer>206</integer>
+				<integer>384</integer>
 				<key>height</key>
-				<integer>49</integer>
+				<integer>212</integer>
 				<key>originalWidth</key>
-				<integer>206</integer>
+				<integer>644</integer>
 				<key>originalHeight</key>
-				<integer>49</integer>
+				<integer>528</integer>
 				<key>x</key>
 				<integer>0</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
-				<real>0</real>
+				<real>-16</real>
 				<key>offsetY</key>
-				<real>0</real>
+				<real>12</real>
 			</dict>
-			<key>C:/Program Files (x86)/Cocos Studio/EditorDefaultRes/GUI/image.png</key>
+			<key>TIANTING/tianting2.png</key>
 			<dict>
 				<key>width</key>
-				<integer>80</integer>
+				<integer>435</integer>
 				<key>height</key>
-				<integer>80</integer>
+				<integer>270</integer>
 				<key>originalWidth</key>
-				<integer>80</integer>
+				<integer>644</integer>
 				<key>originalHeight</key>
-				<integer>80</integer>
+				<integer>528</integer>
+				<key>x</key>
+				<integer>386</integer>
+				<key>y</key>
+				<integer>0</integer>
+				<key>offsetX</key>
+				<real>-7.5</real>
+				<key>offsetY</key>
+				<real>-9</real>
+			</dict>
+			<key>DIANPAO/dianpao2.png</key>
+			<dict>
+				<key>width</key>
+				<integer>351</integer>
+				<key>height</key>
+				<integer>193</integer>
+				<key>originalWidth</key>
+				<integer>644</integer>
+				<key>originalHeight</key>
+				<integer>528</integer>
 				<key>x</key>
 				<integer>0</integer>
 				<key>y</key>
-				<integer>51</integer>
+				<integer>214</integer>
+				<key>offsetX</key>
+				<real>7.5</real>
+				<key>offsetY</key>
+				<real>-10.5</real>
+			</dict>
+			<key>ZIMO/zimo2.png</key>
+			<dict>
+				<key>width</key>
+				<integer>327</integer>
+				<key>height</key>
+				<integer>208</integer>
+				<key>originalWidth</key>
+				<integer>644</integer>
+				<key>originalHeight</key>
+				<integer>528</integer>
+				<key>x</key>
+				<integer>353</integer>
+				<key>y</key>
+				<integer>272</integer>
+				<key>offsetX</key>
+				<real>19.5</real>
+				<key>offsetY</key>
+				<real>-13</real>
+			</dict>
+			<key>LIUJV/liujv2.png</key>
+			<dict>
+				<key>width</key>
+				<integer>327</integer>
+				<key>height</key>
+				<integer>195</integer>
+				<key>originalWidth</key>
+				<integer>644</integer>
+				<key>originalHeight</key>
+				<integer>528</integer>
+				<key>x</key>
+				<integer>682</integer>
+				<key>y</key>
+				<integer>272</integer>
+				<key>offsetX</key>
+				<real>9.5</real>
+				<key>offsetY</key>
+				<real>-3.5</real>
+			</dict>
+			<key>GANG/gang3.png</key>
+			<dict>
+				<key>width</key>
+				<integer>296</integer>
+				<key>height</key>
+				<integer>272</integer>
+				<key>originalWidth</key>
+				<integer>644</integer>
+				<key>originalHeight</key>
+				<integer>528</integer>
+				<key>x</key>
+				<integer>0</integer>
+				<key>y</key>
+				<integer>409</integer>
+				<key>offsetX</key>
+				<real>-9</real>
+				<key>offsetY</key>
+				<real>-9</real>
+			</dict>
+			<key>CHI/chi3.png</key>
+			<dict>
+				<key>width</key>
+				<integer>260</integer>
+				<key>height</key>
+				<integer>238</integer>
+				<key>originalWidth</key>
+				<integer>644</integer>
+				<key>originalHeight</key>
+				<integer>528</integer>
+				<key>x</key>
+				<integer>682</integer>
+				<key>y</key>
+				<integer>469</integer>
 				<key>offsetX</key>
 				<real>0</real>
 				<key>offsetY</key>
-				<real>0</real>
+				<real>-3</real>
+			</dict>
+			<key>TING/ting3.png</key>
+			<dict>
+				<key>width</key>
+				<integer>329</integer>
+				<key>height</key>
+				<integer>367</integer>
+				<key>originalWidth</key>
+				<integer>644</integer>
+				<key>originalHeight</key>
+				<integer>528</integer>
+				<key>x</key>
+				<integer>298</integer>
+				<key>y</key>
+				<integer>482</integer>
+				<key>offsetX</key>
+				<real>-10.5</real>
+				<key>offsetY</key>
+				<real>-11.5</real>
+			</dict>
+			<key>HU/hu3.png</key>
+			<dict>
+				<key>width</key>
+				<integer>271</integer>
+				<key>height</key>
+				<integer>274</integer>
+				<key>originalWidth</key>
+				<integer>644</integer>
+				<key>originalHeight</key>
+				<integer>528</integer>
+				<key>x</key>
+				<integer>0</integer>
+				<key>y</key>
+				<integer>683</integer>
+				<key>offsetX</key>
+				<real>-11.5</real>
+				<key>offsetY</key>
+				<real>-9</real>
+			</dict>
+			<key>PENG/peng3.png</key>
+			<dict>
+				<key>width</key>
+				<integer>340</integer>
+				<key>height</key>
+				<integer>293</integer>
+				<key>originalWidth</key>
+				<integer>644</integer>
+				<key>originalHeight</key>
+				<integer>528</integer>
+				<key>x</key>
+				<integer>629</integer>
+				<key>y</key>
+				<integer>709</integer>
+				<key>offsetX</key>
+				<real>-8</real>
+				<key>offsetY</key>
+				<real>-5.5</real>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -48,18 +200,18 @@
 			<key>format</key>
 			<integer>0</integer>
 			<key>textureFileName</key>
-			<string>ddz0.png</string>
+			<string>CpghAnimation1.png</string>
 			<key>realTextureFileName</key>
-			<string>ddz0.png</string>
+			<string>CpghAnimation1.png</string>
 			<key>size</key>
-			<string>{2048,2048}</string>
+			<string>{1024,1024}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>2048</integer>
+			<integer>1024</integer>
 			<key>height</key>
-			<integer>2048</integer>
+			<integer>1024</integer>
 		</dict>
 	</dict>
 </plist>

@@ -15,12 +15,11 @@ import packageImage
 import types
 import shutil
 import copy
+import tidyRes
 from PIL import Image
 import fileDataHandle as FD
 
 if not TEST:
-    referenceRes = {}    #文件引用计数表
-
     t = totalResDict.totalRes() #初始化所有的资源信息
     t.initFileDict()
 
@@ -38,6 +37,9 @@ if not TEST:
     # 初始化代码中包含的资源信息
     # cre = codeRes.codeRes()
     # cre.excuteReplace()
-else:
-    print 1
 
+    # tr = tidyRes.tidyRes()
+    # tr.tidy()
+else:
+    print ""
+    # comFun.addDataToFile("./aaa.txt" , 77122 , "22221")

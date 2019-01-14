@@ -4,187 +4,83 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>fanmalight1.png</key>
+            <key>fanma1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,458},{52,52}}</string>
+                <string>{{2,309},{127,185}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{52,52}}</string>
+                <string>{{0,0},{127,185}}</string>
                 <key>sourceSize</key>
-                <string>{52,52}</string>
+                <string>{127,185}</string>
             </dict>
-            <key>fanmalight10.png</key>
+            <key>fanma2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{164,152}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{164,152}}</string>
-                <key>sourceSize</key>
-                <string>{164,152}</string>
-            </dict>
-            <key>fanmalight11.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{324,2},{154,154}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{154,154}}</string>
-                <key>sourceSize</key>
-                <string>{154,154}</string>
-            </dict>
-            <key>fanmalight12.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,156},{154,154}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{154,154}}</string>
-                <key>sourceSize</key>
-                <string>{154,154}</string>
-            </dict>
-            <key>fanmalight13.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{168,2},{154,154}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{154,154}}</string>
-                <key>sourceSize</key>
-                <string>{154,154}</string>
-            </dict>
-            <key>fanmalight14.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,312},{142,144}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{142,144}}</string>
-                <key>sourceSize</key>
-                <string>{142,144}</string>
-            </dict>
-            <key>fanmalight2.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{282,431},{71,75}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{71,75}}</string>
-                <key>sourceSize</key>
-                <string>{71,75}</string>
-            </dict>
-            <key>fanmalight3.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{412,244},{75,80}}</string>
+                <string>{{2,2},{100,209}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{75,80}}</string>
+                <string>{{0,0},{100,209}}</string>
                 <key>sourceSize</key>
-                <string>{75,80}</string>
+                <string>{100,209}</string>
             </dict>
-            <key>fanmalight4.png</key>
+            <key>fanma3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{412,158},{90,84}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{90,84}}</string>
-                <key>sourceSize</key>
-                <string>{90,84}</string>
-            </dict>
-            <key>fanmalight5.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{282,286},{111,103}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{111,103}}</string>
-                <key>sourceSize</key>
-                <string>{111,103}</string>
-            </dict>
-            <key>fanmalight6.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{395,321},{108,108}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{108,108}}</string>
-                <key>sourceSize</key>
-                <string>{108,108}</string>
-            </dict>
-            <key>fanmalight7.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{158,158},{122,132}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{122,132}}</string>
-                <key>sourceSize</key>
-                <string>{122,132}</string>
-            </dict>
-            <key>fanmalight8.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{282,158},{126,128}}</string>
+                <string>{{2,2},{100,209}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{126,128}}</string>
+                <string>{{0,0},{100,209}}</string>
                 <key>sourceSize</key>
-                <string>{126,128}</string>
+                <string>{100,209}</string>
             </dict>
-            <key>fanmalight9.png</key>
+            <key>fanma4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{146,312},{137,134}}</string>
+                <string>{{2,104},{74,205}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{137,134}}</string>
+                <string>{{0,0},{74,205}}</string>
                 <key>sourceSize</key>
-                <string>{137,134}</string>
+                <string>{74,205}</string>
+            </dict>
+            <key>fanma5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,180},{127,185}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{127,185}}</string>
+                <key>sourceSize</key>
+                <string>{127,185}</string>
+            </dict>
+            <key>startFrame.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,309},{127,185}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{127,185}}</string>
+                <key>sourceSize</key>
+                <string>{127,185}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -192,13 +88,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>fanmalight.png</string>
+            <string>fangma.png</string>
             <key>size</key>
-            <string>{512,512}</string>
+            <string>{256,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:421cf59fd962a19d397834dde6b53320$</string>
+            <string>$TexturePacker:SmartUpdate:38bf1e1c681676f4f03fcce1cbcc33d2$</string>
             <key>textureFileName</key>
-            <string>fanmalight.png</string>
+            <string>fangma.png</string>
         </dict>
     </dict>
 </plist>

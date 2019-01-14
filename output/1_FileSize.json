@@ -116,16 +116,16 @@
         234928
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/guandan.png", 
+        233244
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/mj/armature/CpghAnimation4.png", 
         229313
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/paodekuai/animation/AnimationWin20.png", 
         221246
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/guandan.png", 
-        213630
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/anim/AnimationWin20.png", 
@@ -200,12 +200,12 @@
         152022
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/videoPanel.png", 
-        150168
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/newPoker.png", 
+        151196
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/newPoker.png", 
-        146334
+        "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/videoPanel.png", 
+        150168
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/games/common/mj/majiang_pai.png", 
@@ -476,16 +476,16 @@
         46617
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/room.csb", 
+        46302
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/hall/ranking/RankingAddressNameInfo.json", 
         45944
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/bg1.png", 
         45612
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/room.csb", 
-        44405
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/music/audio/mp3/effect/Transform.mp3", 
@@ -964,6 +964,10 @@
         20342
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/newPoker.plist", 
+        20340
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/package_res/config/hall/login/logo.png", 
         20146
     ], 
@@ -990,10 +994,6 @@
     [
         "D:/Svn_2d/S_GD_Heji/res/games/common/mj/games/clock_overtime_dui.png", 
         19872
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/newPoker.plist", 
-        19868
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/newer/mask_create.png", 
@@ -1484,6 +1484,10 @@
         13324
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/guandan.plist", 
+        13182
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/zimo.png", 
         13116
     ], 
@@ -1510,10 +1514,6 @@
     [
         "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing.csb", 
         12765
-    ], 
-    [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/guandan.plist", 
-        12704
     ], 
     [
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/anim/image/boost.png", 
@@ -2184,6 +2184,10 @@
         8127
     ], 
     [
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/playerinfo.csb", 
+        8118
+    ], 
+    [
         "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/text_dyj.png", 
         8105
     ], 
@@ -2472,7 +2476,7 @@
         7050
     ], 
     [
-        "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/playerinfo.csb", 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/playerinfo.csb", 
         7027
     ], 
     [

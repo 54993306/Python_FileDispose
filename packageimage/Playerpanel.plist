@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1000097.png</key>
+            <key>1000096.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{190,169},{42,46}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{218,59}</string>
             </dict>
-            <key>1000628.png</key>
+            <key>1000629.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{190,125},{42,46}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{42,46}</string>
             </dict>
-            <key>1000874.png</key>
+            <key>1000873.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{220,60}}</string>
@@ -92,7 +92,7 @@
             <key>size</key>
             <string>{256,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:68a91e0309717095f1d170818bef7ca6$</string>
+            <string>$TexturePacker:SmartUpdate:5fef24d8ccd5a40935880d5cf2dd17f7$</string>
             <key>textureFileName</key>
             <string>Playerpanel.png</string>
         </dict>

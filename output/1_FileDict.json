@@ -1553,8 +1553,8 @@
             "md5": "4af8fa23006ba1b707daef6409c3fcde"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/newPoker.png": {
-            "size": 146334, 
-            "md5": "d13296fd8acd78a4f4fa7fb5ed5fee12"
+            "size": 151196, 
+            "md5": "fb6fb20b5990a34c73464292a07a53ae"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/jieyangmj/common/fanpai.png": {
             "size": 2514, 
@@ -2665,8 +2665,8 @@
             "md5": "ba1c3d24b073292d9b820bf3289d3cde"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/guandan.png": {
-            "size": 213630, 
-            "md5": "62b5ac0ddce840f4eff2477c956f9617"
+            "size": 233244, 
+            "md5": "e50e5adbfc8a7621f1ac878173272da5"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/over_scale_bg1.png": {
             "size": 880, 
@@ -4069,8 +4069,8 @@
             "md5": "3bed08e375f5e46be84fb29c5256d1d8"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/guandan.plist": {
-            "size": 12704, 
-            "md5": "764fbbedf7aaf235dc04827e0dfec635"
+            "size": 13182, 
+            "md5": "98739e54fe10c7ea3f0986811c97e489"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/ddztwop/ddztwop0.plist": {
             "size": 1926, 
@@ -4117,8 +4117,8 @@
             "md5": "afa018f1a277dfe964a269413b4fade1"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/newPoker.plist": {
-            "size": 19868, 
-            "md5": "855a5f5f50d9fdb2e07a240351287a03"
+            "size": 20340, 
+            "md5": "471541b95bf8e5e4f40e85e315eedf10"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/games/common/mj/armature/yaoshaizi0.plist": {
             "size": 3315, 
@@ -6217,8 +6217,8 @@
             "md5": "808f8faca4483908d9531349230e43f8"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/playerinfo.csb": {
-            "size": 7027, 
-            "md5": "b5edc231964e0cde5056e85fdc805ffa"
+            "size": 8118, 
+            "md5": "6f1aff6a165a98d8efa7ec4fee3a5857"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/room_menu2p.csb": {
             "size": 3739, 
@@ -6437,8 +6437,8 @@
             "md5": "c7b0c351641fd11804a4480cba306221"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/guandan/room.csb": {
-            "size": 44405, 
-            "md5": "98b519439c756c83c1d602c7a830eb58"
+            "size": 46302, 
+            "md5": "00e178c7cbec5d1bc002071b87baeff1"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/porker_setting_view.csb": {
             "size": 7749, 
@@ -6679,6 +6679,10 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/main/armature/FreeAnimation.csb": {
             "size": 8793, 
             "md5": "9afb6bbde6b0ac8af3d8b85d936c8fbb"
+        }, 
+        "D:/Svn_2d/S_GD_Heji/res/package_res/games/pokercommon/playerinfo.csb": {
+            "size": 7027, 
+            "md5": "b5edc231964e0cde5056e85fdc805ffa"
         }, 
         "D:/Svn_2d/S_GD_Heji/res/hall/clubApplyModeAWnd.csb": {
             "size": 15654, 

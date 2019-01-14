@@ -4,16 +4,16 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>chick4.png</key>
+			<key>000006.png</key>
 			<dict>
 				<key>width</key>
-				<integer>108</integer>
+				<integer>61</integer>
 				<key>height</key>
-				<integer>166</integer>
+				<integer>68</integer>
 				<key>originalWidth</key>
-				<integer>108</integer>
+				<integer>61</integer>
 				<key>originalHeight</key>
-				<integer>166</integer>
+				<integer>68</integer>
 				<key>x</key>
 				<integer>0</integer>
 				<key>y</key>
@@ -23,18 +23,18 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>chick3.png</key>
+			<key>000005.png</key>
 			<dict>
 				<key>width</key>
-				<integer>141</integer>
+				<integer>61</integer>
 				<key>height</key>
-				<integer>139</integer>
+				<integer>68</integer>
 				<key>originalWidth</key>
-				<integer>141</integer>
+				<integer>61</integer>
 				<key>originalHeight</key>
-				<integer>139</integer>
+				<integer>68</integer>
 				<key>x</key>
-				<integer>110</integer>
+				<integer>63</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
@@ -42,37 +42,18 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>hand.png</key>
+			<key>000004.png</key>
 			<dict>
 				<key>width</key>
-				<integer>105</integer>
+				<integer>61</integer>
 				<key>height</key>
-				<integer>74</integer>
+				<integer>68</integer>
 				<key>originalWidth</key>
-				<integer>105</integer>
+				<integer>61</integer>
 				<key>originalHeight</key>
-				<integer>74</integer>
+				<integer>68</integer>
 				<key>x</key>
-				<integer>0</integer>
-				<key>y</key>
-				<integer>168</integer>
-				<key>offsetX</key>
-				<real>0</real>
-				<key>offsetY</key>
-				<real>0</real>
-			</dict>
-			<key>fur.png</key>
-			<dict>
-				<key>width</key>
-				<integer>89</integer>
-				<key>height</key>
-				<integer>185</integer>
-				<key>originalWidth</key>
-				<integer>89</integer>
-				<key>originalHeight</key>
-				<integer>185</integer>
-				<key>x</key>
-				<integer>253</integer>
+				<integer>126</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
@@ -80,18 +61,18 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>fur1.png</key>
+			<key>000003.png</key>
 			<dict>
 				<key>width</key>
-				<integer>89</integer>
+				<integer>61</integer>
 				<key>height</key>
-				<integer>185</integer>
+				<integer>68</integer>
 				<key>originalWidth</key>
-				<integer>89</integer>
+				<integer>61</integer>
 				<key>originalHeight</key>
-				<integer>185</integer>
+				<integer>68</integer>
 				<key>x</key>
-				<integer>344</integer>
+				<integer>189</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
@@ -99,115 +80,39 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>chick1.png</key>
+			<key>000002.png</key>
 			<dict>
 				<key>width</key>
-				<integer>200</integer>
+				<integer>61</integer>
 				<key>height</key>
-				<integer>156</integer>
+				<integer>68</integer>
 				<key>originalWidth</key>
-				<integer>200</integer>
+				<integer>61</integer>
 				<key>originalHeight</key>
-				<integer>156</integer>
+				<integer>68</integer>
 				<key>x</key>
-				<integer>0</integer>
-				<key>y</key>
-				<integer>244</integer>
-				<key>offsetX</key>
-				<real>0</real>
-				<key>offsetY</key>
-				<real>0</real>
-			</dict>
-			<key>chick2.png</key>
-			<dict>
-				<key>width</key>
-				<integer>200</integer>
-				<key>height</key>
-				<integer>156</integer>
-				<key>originalWidth</key>
-				<integer>200</integer>
-				<key>originalHeight</key>
-				<integer>156</integer>
-				<key>x</key>
-				<integer>202</integer>
-				<key>y</key>
-				<integer>187</integer>
-				<key>offsetX</key>
-				<real>0</real>
-				<key>offsetY</key>
-				<real>0</real>
-			</dict>
-			<key>CHONGFENGJI/chongfengji1.png</key>
-			<dict>
-				<key>width</key>
-				<integer>644</integer>
-				<key>height</key>
-				<integer>300</integer>
-				<key>originalWidth</key>
-				<integer>644</integer>
-				<key>originalHeight</key>
-				<integer>528</integer>
-				<key>x</key>
-				<integer>0</integer>
-				<key>y</key>
-				<integer>402</integer>
-				<key>offsetX</key>
-				<real>0</real>
-				<key>offsetY</key>
-				<real>-8</real>
-			</dict>
-			<key>CFWUGUJI/cfwuguji1.png</key>
-			<dict>
-				<key>width</key>
-				<integer>644</integer>
-				<key>height</key>
 				<integer>252</integer>
-				<key>originalWidth</key>
-				<integer>644</integer>
-				<key>originalHeight</key>
-				<integer>528</integer>
-				<key>x</key>
-				<integer>0</integer>
 				<key>y</key>
-				<integer>704</integer>
+				<integer>0</integer>
 				<key>offsetX</key>
 				<real>0</real>
 				<key>offsetY</key>
-				<real>-8</real>
+				<real>0</real>
 			</dict>
-			<key>CHONGFENGJI/chongfengji2.png</key>
+			<key>000001.png</key>
 			<dict>
 				<key>width</key>
-				<integer>521</integer>
+				<integer>61</integer>
 				<key>height</key>
-				<integer>258</integer>
+				<integer>69</integer>
 				<key>originalWidth</key>
-				<integer>644</integer>
+				<integer>61</integer>
 				<key>originalHeight</key>
-				<integer>528</integer>
+				<integer>69</integer>
 				<key>x</key>
-				<integer>435</integer>
+				<integer>315</integer>
 				<key>y</key>
 				<integer>0</integer>
-				<key>offsetX</key>
-				<real>-4.5</real>
-				<key>offsetY</key>
-				<real>3</real>
-			</dict>
-			<key>moji1.png</key>
-			<dict>
-				<key>width</key>
-				<integer>190</integer>
-				<key>height</key>
-				<integer>178</integer>
-				<key>originalWidth</key>
-				<integer>190</integer>
-				<key>originalHeight</key>
-				<integer>178</integer>
-				<key>x</key>
-				<integer>646</integer>
-				<key>y</key>
-				<integer>260</integer>
 				<key>offsetX</key>
 				<real>0</real>
 				<key>offsetY</key>
@@ -219,9 +124,9 @@
 			<key>format</key>
 			<integer>0</integer>
 			<key>textureFileName</key>
-			<string>guizhouAnimation0.png</string>
+			<string>yaoshaizi0.png</string>
 			<key>realTextureFileName</key>
-			<string>guizhouAnimation0.png</string>
+			<string>yaoshaizi0.png</string>
 			<key>size</key>
 			<string>{1024,1024}</string>
 		</dict>

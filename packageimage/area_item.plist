@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{16,115}</string>
             </dict>
-            <key>1000843.png</key>
+            <key>1000842.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,119},{10,2}}</string>
@@ -53,7 +53,7 @@
             <key>size</key>
             <string>{64,128}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:665735ef99cab9c8fc1eb8a7f52bf3bf$</string>
+            <string>$TexturePacker:SmartUpdate:6acf8176f52e4951e0ce60795b518c85$</string>
             <key>textureFileName</key>
             <string>area_item.png</string>
         </dict>

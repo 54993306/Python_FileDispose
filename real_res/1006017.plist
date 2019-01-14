@@ -4,24 +4,62 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>LIANZHUPAO/lianzhupao3.png</key>
+			<key>halo3.png</key>
 			<dict>
 				<key>width</key>
-				<integer>481</integer>
+				<integer>483</integer>
 				<key>height</key>
-				<integer>207</integer>
+				<integer>475</integer>
 				<key>originalWidth</key>
-				<integer>644</integer>
+				<integer>488</integer>
 				<key>originalHeight</key>
-				<integer>528</integer>
+				<integer>480</integer>
 				<key>x</key>
 				<integer>0</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
-				<real>2.5</real>
+				<real>-0.5</real>
 				<key>offsetY</key>
-				<real>-14.5</real>
+				<real>0.5</real>
+			</dict>
+			<key>halo2.png</key>
+			<dict>
+				<key>width</key>
+				<integer>479</integer>
+				<key>height</key>
+				<integer>464</integer>
+				<key>originalWidth</key>
+				<integer>510</integer>
+				<key>originalHeight</key>
+				<integer>483</integer>
+				<key>x</key>
+				<integer>485</integer>
+				<key>y</key>
+				<integer>0</integer>
+				<key>offsetX</key>
+				<real>-0.5</real>
+				<key>offsetY</key>
+				<real>-8.5</real>
+			</dict>
+			<key>halo1.png</key>
+			<dict>
+				<key>width</key>
+				<integer>468</integer>
+				<key>height</key>
+				<integer>471</integer>
+				<key>originalWidth</key>
+				<integer>472</integer>
+				<key>originalHeight</key>
+				<integer>472</integer>
+				<key>x</key>
+				<integer>0</integer>
+				<key>y</key>
+				<integer>477</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0.5</real>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -29,9 +67,9 @@
 			<key>format</key>
 			<integer>0</integer>
 			<key>textureFileName</key>
-			<string>guizhouAnimation4.png</string>
+			<string>AnimationZhadan32.png</string>
 			<key>realTextureFileName</key>
-			<string>guizhouAnimation4.png</string>
+			<string>AnimationZhadan32.png</string>
 			<key>size</key>
 			<string>{1024,1024}</string>
 		</dict>

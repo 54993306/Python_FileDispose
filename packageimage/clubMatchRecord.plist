@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1000117.png</key>
+            <key>1000116.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{112,33}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{36,36}</string>
             </dict>
-            <key>1000645.png</key>
+            <key>1000646.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{81,89},{22,22}}</string>
@@ -92,7 +92,7 @@
             <key>size</key>
             <string>{128,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:0bc0e41eee83d752cf681cf53b2769c5$</string>
+            <string>$TexturePacker:SmartUpdate:0953905ac4099ec5ed1d0e20b0b342ca$</string>
             <key>textureFileName</key>
             <string>clubMatchRecord.png</string>
         </dict>

@@ -4,16 +4,16 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>000006.png</key>
+			<key>highlight.png</key>
 			<dict>
 				<key>width</key>
-				<integer>61</integer>
+				<integer>33</integer>
 				<key>height</key>
-				<integer>68</integer>
+				<integer>28</integer>
 				<key>originalWidth</key>
-				<integer>61</integer>
+				<integer>33</integer>
 				<key>originalHeight</key>
-				<integer>68</integer>
+				<integer>28</integer>
 				<key>x</key>
 				<integer>0</integer>
 				<key>y</key>
@@ -23,18 +23,18 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>000005.png</key>
+			<key>vzz.png</key>
 			<dict>
 				<key>width</key>
-				<integer>61</integer>
+				<integer>64</integer>
 				<key>height</key>
-				<integer>68</integer>
+				<integer>26</integer>
 				<key>originalWidth</key>
-				<integer>61</integer>
+				<integer>64</integer>
 				<key>originalHeight</key>
-				<integer>68</integer>
+				<integer>26</integer>
 				<key>x</key>
-				<integer>63</integer>
+				<integer>35</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
@@ -42,18 +42,18 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>000004.png</key>
+			<key>hongdeng.png</key>
 			<dict>
 				<key>width</key>
-				<integer>61</integer>
+				<integer>43</integer>
 				<key>height</key>
-				<integer>68</integer>
+				<integer>46</integer>
 				<key>originalWidth</key>
-				<integer>61</integer>
+				<integer>43</integer>
 				<key>originalHeight</key>
-				<integer>68</integer>
+				<integer>46</integer>
 				<key>x</key>
-				<integer>126</integer>
+				<integer>101</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
@@ -61,18 +61,18 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>000003.png</key>
+			<key>landeng.png</key>
 			<dict>
 				<key>width</key>
-				<integer>61</integer>
+				<integer>43</integer>
 				<key>height</key>
-				<integer>68</integer>
+				<integer>46</integer>
 				<key>originalWidth</key>
-				<integer>61</integer>
+				<integer>43</integer>
 				<key>originalHeight</key>
-				<integer>68</integer>
+				<integer>46</integer>
 				<key>x</key>
-				<integer>189</integer>
+				<integer>146</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
@@ -80,18 +80,18 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>000002.png</key>
+			<key>jd01.png</key>
 			<dict>
 				<key>width</key>
-				<integer>61</integer>
+				<integer>10</integer>
 				<key>height</key>
-				<integer>68</integer>
+				<integer>25</integer>
 				<key>originalWidth</key>
-				<integer>61</integer>
+				<integer>10</integer>
 				<key>originalHeight</key>
-				<integer>68</integer>
+				<integer>25</integer>
 				<key>x</key>
-				<integer>252</integer>
+				<integer>191</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
@@ -99,18 +99,113 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>000001.png</key>
+			<key>jd02.png</key>
+			<dict>
+				<key>width</key>
+				<integer>23</integer>
+				<key>height</key>
+				<integer>25</integer>
+				<key>originalWidth</key>
+				<integer>23</integer>
+				<key>originalHeight</key>
+				<integer>25</integer>
+				<key>x</key>
+				<integer>203</integer>
+				<key>y</key>
+				<integer>0</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>jd03.png</key>
+			<dict>
+				<key>width</key>
+				<integer>30</integer>
+				<key>height</key>
+				<integer>25</integer>
+				<key>originalWidth</key>
+				<integer>30</integer>
+				<key>originalHeight</key>
+				<integer>25</integer>
+				<key>x</key>
+				<integer>228</integer>
+				<key>y</key>
+				<integer>0</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>lan.png</key>
+			<dict>
+				<key>width</key>
+				<integer>64</integer>
+				<key>height</key>
+				<integer>45</integer>
+				<key>originalWidth</key>
+				<integer>64</integer>
+				<key>originalHeight</key>
+				<integer>45</integer>
+				<key>x</key>
+				<integer>260</integer>
+				<key>y</key>
+				<integer>0</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>hong.png</key>
+			<dict>
+				<key>width</key>
+				<integer>64</integer>
+				<key>height</key>
+				<integer>45</integer>
+				<key>originalWidth</key>
+				<integer>64</integer>
+				<key>originalHeight</key>
+				<integer>45</integer>
+				<key>x</key>
+				<integer>326</integer>
+				<key>y</key>
+				<integer>0</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>lanlanlan.png</key>
 			<dict>
 				<key>width</key>
 				<integer>61</integer>
 				<key>height</key>
-				<integer>69</integer>
+				<integer>62</integer>
 				<key>originalWidth</key>
 				<integer>61</integer>
 				<key>originalHeight</key>
-				<integer>69</integer>
+				<integer>62</integer>
 				<key>x</key>
-				<integer>315</integer>
+				<integer>392</integer>
+				<key>y</key>
+				<integer>0</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>honghonghong.png</key>
+			<dict>
+				<key>width</key>
+				<integer>61</integer>
+				<key>height</key>
+				<integer>62</integer>
+				<key>originalWidth</key>
+				<integer>61</integer>
+				<key>originalHeight</key>
+				<integer>62</integer>
+				<key>x</key>
+				<integer>455</integer>
 				<key>y</key>
 				<integer>0</integer>
 				<key>offsetX</key>
@@ -124,9 +219,9 @@
 			<key>format</key>
 			<integer>0</integer>
 			<key>textureFileName</key>
-			<string>yaoshaizi0.png</string>
+			<string>jingdeng0.png</string>
 			<key>realTextureFileName</key>
-			<string>yaoshaizi0.png</string>
+			<string>jingdeng0.png</string>
 			<key>size</key>
 			<string>{1024,1024}</string>
 		</dict>

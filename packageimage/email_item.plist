@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{66,49}</string>
             </dict>
-            <key>1000547.png</key>
+            <key>1000548.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{70,44},{34,34}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{34,34}</string>
             </dict>
-            <key>1000566.png</key>
+            <key>1000567.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{70,2},{43,40}}</string>
@@ -53,7 +53,7 @@
             <key>size</key>
             <string>{128,128}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:c59668e6e5d25d08fb544c050d18d8ce$</string>
+            <string>$TexturePacker:SmartUpdate:5316ff386f32e094f7d5a679b2beef5d$</string>
             <key>textureFileName</key>
             <string>email_item.png</string>
         </dict>
