@@ -53,10 +53,10 @@ UNPACKREPEATRES = "./output/3_UnPackRepeatRes.json"
 MOVERECORD      = "./output/3_MoveRecord.json"  # 记录被使用了的资源
 
 # 4 fileChange
-CHANGERESULT    = "./output/4_ChangeFile.json"
+CHANGERESULT    = "./output/4_UIChange.json"
 
 # 5 code res
-CODERESMESSAGE  = "./output/5_CodeMessage.json"
+CODERESMESSAGE  = "./output/5_CodeChange.json"
 CODEFOLDER      = "D:/Svn_2d/S_GD_Heji/src/app"
 GAMECODEFOLDER  = "D:/Svn_2d/S_GD_Heji/src/package_src"
 
@@ -110,7 +110,7 @@ def bigFileMd5(path):
     md5_obj = hashlib.md5()
     f_stream = open(path, "rb")
     while True:
-        cut_stream = f_stream.read(8069)
+        cut_stream = f_stream.read(8069)  # 8069 来自网上的参考值
         if not cut_stream:
             break
         md5_obj.update(cut_stream)
