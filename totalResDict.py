@@ -69,7 +69,7 @@ class totalRes:
             if comFun.is_json(file_stream.read()):
                 # print json_stream.tell()
                 file_stream.seek(0, 0)
-                self.filedict = json.load(file_stream)
+                self.filedict = json.load(file_stream, object_pairs_hook=collections.OrderedDict)
                 file_stream.close()
                 # print "open : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
                 return True

@@ -17,7 +17,7 @@ class jsonRes:
             print "can't found file " + comFun.DICTFILE
             assert(False)
         filedict = open(comFun.DICTFILE, "r")
-        self.pResDict = json.load(filedict)
+        self.pResDict = json.load(filedict, object_pairs_hook=collections.OrderedDict)
 
         self.FileData = FData.fileDataHandle()
 
@@ -46,7 +46,7 @@ class jsonRes:
                 if comFun.is_json(json_stream.read()):
                     # print json_stream.tell()
                     json_stream.seek(0,0)
-                    self.json_res = json.load(json_stream)
+                    self.json_res = json.load(json_stream, object_pairs_hook=collections.OrderedDict)
                     json_stream.close()
                     # print "open : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
                 else:

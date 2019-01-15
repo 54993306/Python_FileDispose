@@ -66,11 +66,10 @@ def RecordToJsonFile(path , data):
     file_stream.close()
 
 def GetDataByFile(path):
-    data = collections.OrderedDict()
     if not os.path.isfile(path):
-        return data
+        return
     stream = open(path, "r")
-    data = json.load(stream)
+    data = json.load(stream, object_pairs_hook=collections.OrderedDict)
     stream.close()
     return data
 
@@ -92,7 +91,7 @@ def Test2(rootDir):
         if os.path.isdir(path):
             Test2(path)
 # Test2(filefilepath)
-FileMd5Dict = {}   #用于记录文件的路径和md5值,避免同一路径多次生成
+FileMd5Dict = collections.OrderedDict()   #用于记录文件的路径和md5值,避免同一路径多次生成
 def getFileMd5( path ):
     if FileMd5Dict.has_key(path):
         return FileMd5Dict.get(path)
@@ -205,16 +204,15 @@ def deleteDirByStr(str , paths):
 # 将数据加入到文件中
 # comFun.addDataToFile("./aaa.txt" , 77122 , "22221")
 def addDataToFile(path , key , data , newFile = False):
-    fileData = {}
     if newFile or not os.path.isfile(path):
         stream = open(path , "w+")
     else:
         stream = open(path, "a+")
     if is_json(stream.read()):
         stream.seek(0, 0)
-        fileData = json.load(stream)
+        fileData = json.load(stream, object_pairs_hook=collections.OrderedDict)
     else:
-        fileData = {}
+        fileData = collections.OrderedDict()
     stream.truncate(len(stream.read()))  # 清理文件内容
     if stream.mode == "a+":
         stream.seek(0, 2)  # 必须从文件末尾开始处理，否则 a+模式报错

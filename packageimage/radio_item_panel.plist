@@ -7,7 +7,7 @@
             <key>1002393.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,70},{30,30}}</string>
+                <string>{{36,2},{30,30}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -20,7 +20,7 @@
             <key>1002394.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,36},{32,32}}</string>
+                <string>{{2,70},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -33,7 +33,7 @@
             <key>1002418.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{34,70},{28,28}}</string>
+                <string>{{68,2},{28,28}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -44,6 +44,19 @@
                 <string>{28,28}</string>
             </dict>
             <key>1002419.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,36},{32,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,32}}</string>
+                <key>sourceSize</key>
+                <string>{32,32}</string>
+            </dict>
+            <key>1002420.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{32,32}}</string>
@@ -64,9 +77,9 @@
             <key>realTextureFileName</key>
             <string>radio_item_panel.png</string>
             <key>size</key>
-            <string>{64,128}</string>
+            <string>{128,128}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:14a30569a91404835a80b1a24e202aa7$</string>
+            <string>$TexturePacker:SmartUpdate:56c7847a93ca3b8d0f602e2375473f21$</string>
             <key>textureFileName</key>
             <string>radio_item_panel.png</string>
         </dict>

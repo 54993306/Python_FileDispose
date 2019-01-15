@@ -7,7 +7,7 @@
             <key>1002262.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{106,200},{32,32}}</string>
+                <string>{{140,178},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -46,7 +46,7 @@
             <key>1002473.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{106,166},{32,32}}</string>
+                <string>{{106,212},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -56,10 +56,23 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
+            <key>1002474.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{106,132},{44,44}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{44,44}}</string>
+                <key>sourceSize</key>
+                <string>{44,44}</string>
+            </dict>
             <key>1002478.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{106,132},{32,32}}</string>
+                <string>{{106,178},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -79,7 +92,7 @@
             <key>size</key>
             <string>{256,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:57f5892d608d5c8f7d393563641d8e54$</string>
+            <string>$TexturePacker:SmartUpdate:2085eb5d75da0804171b823934c7d7e6$</string>
             <key>textureFileName</key>
             <string>email_content.png</string>
         </dict>
