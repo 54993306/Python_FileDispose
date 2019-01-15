@@ -154,7 +154,7 @@ class totalRes:
             else:
                 self.notRepeatmd5List[md5]["repeat"].append(filepath)
             return False
-        md5_old_new = {}
+        md5_old_new = collections.OrderedDict()
         md5_old_new["old"] = filepath
         self.notRepeatmd5List[md5] = md5_old_new   # 由一个md5值对应所有曾出现过的文件
         return md5
