@@ -6,6 +6,7 @@ import os
 import json
 import comFun
 import copy
+import collections
 import fileDataHandle as FD
 
 class codeRes:
@@ -22,7 +23,7 @@ class codeRes:
 
         self.FileData = FD.fileDataHandle()
 
-        self.outInfo = {}
+        self.outInfo = collections.OrderedDict()
 
     # 输出并写入日志文件
     def printOutInfo(self, instr):
@@ -96,7 +97,7 @@ class codeRes:
         pathstr = ["./oldLua/HallMain.lua"]
         for filepath in pathstr:
             stream = open(filepath, "r")
-            self.currInfo = {}
+            self.currInfo = collections.OrderedDict()
             self.handleFilePath = filepath  # 对日志的记录提供了很大的遍历，大胆使用语言特性
             self.outInfo[filepath] = self.currInfo
             self.handleStream(stream)

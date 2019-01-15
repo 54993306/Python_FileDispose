@@ -1,5 +1,40 @@
 {
     "./oldLua/HallMain.lua": {
+        "ChangeList": [
+            "hall/hall.csb                                      >>> real_res/hall.csb", 
+            "hall/huanpi2/main/btn_free.png                     >>> #1002645.png", 
+            "hall/huanpi2/main_portrait/5542newbg.png           >>> real_res/1002656.png", 
+            "hall/Common/clippinglight.png                      >>> real_res/1002391.png", 
+            "hall/Common/star.png                               >>> real_res/1002410.png", 
+            "hall/main/hongdian.png                             >>> real_res/1002740.png", 
+            "hall/main/hongdian.png                             >>> real_res/1002740.png", 
+            "hall/main/hongdian.png                             >>> real_res/1002740.png", 
+            "hall/huanpi2/main/btn_free.png                     >>> #1002645.png", 
+            "hall/huanpi2/main/btn_free_1.png                   >>> real_res/1002646.png", 
+            "hall/main/mfeivfx.plist                            >>> real_res/1000035.plist", 
+            "hall/main/hongdian.png                             >>> real_res/1002740.png", 
+            "hall/main/particleDiamond.plist                    >>> real_res/1000036.plist", 
+            "hall/main/mfeivfx.plist                            >>> real_res/1000035.plist", 
+            "hall/main/hongdian.png                             >>> real_res/1002740.png", 
+            "hall/main/particleDiamond.plist                    >>> real_res/1000036.plist", 
+            "hall/font/fangzhengcuyuan.TTF                      >>> D:/Python_FileDispose/res_TTF/1016001.TTF", 
+            "hall/font/fangzhengcuyuan.TTF                      >>> D:/Python_FileDispose/res_TTF/1016001.TTF", 
+            "hall/huanpi2/Common/yuanbao.png                    >>> #1002621.png", 
+            "hall/huanpi2/Common/diamond.png                    >>> #1002567.png", 
+            "hall/main/hongdian.png                             >>> real_res/1002740.png", 
+            "hall/huanpi2/main/btn_free.png                     >>> #1002645.png", 
+            "hall/huanpi2/main/bg_tishi.png                     >>> real_res/1002642.png", 
+            "hall/huanpi2/main/bg_tishi.png                     >>> real_res/1002642.png", 
+            "hall/huanpi2/main/tishi_bg_jiantou.png             >>> real_res/1002655.png", 
+            "hall/main/hongdian.png                             >>> real_res/1002740.png"
+        ], 
+        "NotFount": [
+            "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/btn_free_2.png", 
+            "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/liangyouaction/btn_sly.png", 
+            "D:/Svn_2d/S_GD_Heji/res/hall/main/armature/clubfx.csb", 
+            "D:/Svn_2d/S_GD_Heji/res/hall/main/armature/clubfx.csb", 
+            "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/btn_free_2.png"
+        ], 
         "NoChange": [
             "hall/huanpi2/main/btn_free_2.png", 
             "hall/huanpi2/liangyouaction/btn_sly.png", 
@@ -9,6 +44,42 @@
             "#mfeivfx_01.png", 
             "%02d.png", 
             "hall/huanpi2/main/btn_free_2.png"
+        ], 
+        "PlistList": [
+            "D:/Python_FileDispose/packageimage/hall.plist", 
+            "D:/Python_FileDispose/packageimage/hall.plist", 
+            "D:/Python_FileDispose/packageimage/bindPhone.plist", 
+            "D:/Python_FileDispose/packageimage/foreload.plist", 
+            "D:/Python_FileDispose/packageimage/hall.plist"
+        ], 
+        "msgList": [
+            "file in plist :D:/Python_FileDispose/packageimage/hall.plist", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main_portrait/5542newbg.png  md5:699f9ffdb21654f6a0f30b57e80d8add newPath :real_res/1002656.png", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/Common/clippinglight.png  md5:632981d393a656b19f5d9ddfc908571d newPath :real_res/1002391.png", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/Common/star.png  md5:d6a6e27b59833b23978f8abe736a24bc newPath :real_res/1002410.png", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1002740.png", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1002740.png", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1002740.png", 
+            "file in plist :D:/Python_FileDispose/packageimage/hall.plist", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/btn_free_1.png  md5:209a1c1f922f64e617f17c1ffd62aca2 newPath :real_res/1002646.png", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1002740.png", 
+            "not abs path can't change :#mfeivfx_01.png", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1002740.png", 
+            "not abs path can't change :#mfeivfx_01.png", 
+            "not abs path can't change :%02d.png", 
+            "file in plist :D:/Python_FileDispose/packageimage/bindPhone.plist", 
+            "file in plist :D:/Python_FileDispose/packageimage/foreload.plist", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1002740.png", 
+            "file in plist :D:/Python_FileDispose/packageimage/hall.plist", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/bg_tishi.png  md5:04d9e60e9d183b033f5539862e774c98 newPath :real_res/1002642.png", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/bg_tishi.png  md5:04d9e60e9d183b033f5539862e774c98 newPath :real_res/1002642.png", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/tishi_bg_jiantou.png  md5:702733ef231a811241af1be3cd1dbc33 newPath :real_res/1002655.png", 
+            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1002740.png"
+        ], 
+        "unMatch": [
+            "    if fileName == kUserInfo:getUserId() .. \".jpg\" then\n >>> \\.jpg", 
+            "    local imgName = kUserInfo:getUserId() .. \".jpg\";\n >>> \\.jpg", 
+            "            HttpManager.getNetworkImage(kUserInfo:getHeadImg(), kUserInfo:getUserId() .. \".jpg\");\n >>> \\.jpg"
         ], 
         "matchList": [
             "hall/hall.csb", 
@@ -45,76 +116,6 @@
             "hall/huanpi2/main/bg_tishi.png", 
             "hall/huanpi2/main/tishi_bg_jiantou.png", 
             "hall/main/hongdian.png"
-        ], 
-        "msgList": [
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/btn_free.png  md5:a5487b2a41d16cfc675ab68c3d8c8d99 newPath :real_res/1000954.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main_portrait/5542newbg.png  md5:699f9ffdb21654f6a0f30b57e80d8add newPath :real_res/1000959.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/Common/clippinglight.png  md5:632981d393a656b19f5d9ddfc908571d newPath :real_res/1000818.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/Common/star.png  md5:d6a6e27b59833b23978f8abe736a24bc newPath :real_res/1000603.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1000412.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1000412.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1000412.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/btn_free.png  md5:a5487b2a41d16cfc675ab68c3d8c8d99 newPath :real_res/1000954.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/btn_free_1.png  md5:209a1c1f922f64e617f17c1ffd62aca2 newPath :real_res/1000118.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1000412.png", 
-            "not abs path can't change :#mfeivfx_01.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1000412.png", 
-            "not abs path can't change :#mfeivfx_01.png", 
-            "not abs path can't change :%02d.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF  md5:cafa69cdc042f7ecea6dfed299612f73 newPath :real_res/1010003.TTF", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF  md5:cafa69cdc042f7ecea6dfed299612f73 newPath :real_res/1010003.TTF", 
-            "file in plist :D:/Python_FileDispose/packageimage/bindPhone.plist", 
-            "file in plist :D:/Python_FileDispose/packageimage/foreload.plist", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1000412.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/btn_free.png  md5:a5487b2a41d16cfc675ab68c3d8c8d99 newPath :real_res/1000954.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/bg_tishi.png  md5:04d9e60e9d183b033f5539862e774c98 newPath :real_res/1000575.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/bg_tishi.png  md5:04d9e60e9d183b033f5539862e774c98 newPath :real_res/1000575.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/tishi_bg_jiantou.png  md5:702733ef231a811241af1be3cd1dbc33 newPath :real_res/1000561.png", 
-            "can't found plist file : D:/Svn_2d/S_GD_Heji/res/hall/main/hongdian.png  md5:fb22ad975536d0a1afecbc4e7449b76b newPath :real_res/1000412.png"
-        ], 
-        "PlistList": [
-            "D:/Python_FileDispose/packageimage/bindPhone.plist", 
-            "D:/Python_FileDispose/packageimage/foreload.plist"
-        ], 
-        "ChangeList": [
-            "hall/hall.csb                                      >>> real_res/hall.csb", 
-            "hall/huanpi2/main/btn_free.png                     >>> real_res/1000954.png", 
-            "hall/huanpi2/main_portrait/5542newbg.png           >>> real_res/1000959.png", 
-            "hall/Common/clippinglight.png                      >>> real_res/1000818.png", 
-            "hall/Common/star.png                               >>> real_res/1000603.png", 
-            "hall/main/hongdian.png                             >>> real_res/1000412.png", 
-            "hall/main/hongdian.png                             >>> real_res/1000412.png", 
-            "hall/main/hongdian.png                             >>> real_res/1000412.png", 
-            "hall/huanpi2/main/btn_free.png                     >>> real_res/1000954.png", 
-            "hall/huanpi2/main/btn_free_1.png                   >>> real_res/1000118.png", 
-            "hall/main/mfeivfx.plist                            >>> real_res/1006038.plist", 
-            "hall/main/hongdian.png                             >>> real_res/1000412.png", 
-            "hall/main/particleDiamond.plist                    >>> real_res/1006029.plist", 
-            "hall/main/mfeivfx.plist                            >>> real_res/1006038.plist", 
-            "hall/main/hongdian.png                             >>> real_res/1000412.png", 
-            "hall/main/particleDiamond.plist                    >>> real_res/1006029.plist", 
-            "hall/font/fangzhengcuyuan.TTF                      >>> real_res/1010003.TTF", 
-            "hall/font/fangzhengcuyuan.TTF                      >>> real_res/1010003.TTF", 
-            "hall/huanpi2/Common/yuanbao.png                    >>> #1000796.png", 
-            "hall/huanpi2/Common/diamond.png                    >>> #1000990.png", 
-            "hall/main/hongdian.png                             >>> real_res/1000412.png", 
-            "hall/huanpi2/main/btn_free.png                     >>> real_res/1000954.png", 
-            "hall/huanpi2/main/bg_tishi.png                     >>> real_res/1000575.png", 
-            "hall/huanpi2/main/bg_tishi.png                     >>> real_res/1000575.png", 
-            "hall/huanpi2/main/tishi_bg_jiantou.png             >>> real_res/1000561.png", 
-            "hall/main/hongdian.png                             >>> real_res/1000412.png"
-        ], 
-        "unMatch": [
-            "    if fileName == kUserInfo:getUserId() .. \".jpg\" then\n >>> \\.jpg", 
-            "    local imgName = kUserInfo:getUserId() .. \".jpg\";\n >>> \\.jpg", 
-            "            HttpManager.getNetworkImage(kUserInfo:getHeadImg(), kUserInfo:getUserId() .. \".jpg\");\n >>> \\.jpg"
-        ], 
-        "NotFount": [
-            "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/btn_free_2.png", 
-            "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/liangyouaction/btn_sly.png", 
-            "D:/Svn_2d/S_GD_Heji/res/hall/main/armature/clubfx.csb", 
-            "D:/Svn_2d/S_GD_Heji/res/hall/main/armature/clubfx.csb", 
-            "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/btn_free_2.png"
         ]
     }
 }
