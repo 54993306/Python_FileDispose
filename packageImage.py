@@ -72,7 +72,7 @@ class packageImage:
         SOURCE_FOLDER = comFun.PACKAGESOURCE + "foreload"   # 存储引用计数较高的资源
         if not os.path.isdir(SOURCE_FOLDER):
             os.mkdir(SOURCE_FOLDER, 0o777)
-        refDict = copy.deepcopy(comFun.GetDataByFile(comFun.REFERENCEFILE))
+        refDict = comFun.GetDataByFile(comFun.REFERENCEFILE)
         for MD5code , fileinfo in refDict.iteritems():
             _, filetype = os.path.splitext(fileinfo["new"])
             if cmp(filetype, ".png") != 0:
@@ -87,7 +87,7 @@ class packageImage:
 
     # 将模块中，引用计数较低的按模块进行打包
     def tidyModuleRes(self):
-        collatingJsonRes = copy.deepcopy(comFun.GetDataByFile(comFun.COLLATINGJSON))
+        collatingJsonRes = comFun.GetDataByFile(comFun.COLLATINGJSON)
         for jsonpath , resDict in collatingJsonRes.iteritems():   # json对应一个模块，对模块进行遍历
             # 如果模块只有少量一两张图的情况如何处理？
             # 考虑将内容少的模块统一合成一张图进行预加载

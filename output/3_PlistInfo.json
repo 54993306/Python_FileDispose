@@ -230,9 +230,7 @@
             "md5": "cc4f62721ae7ef7d287a0a3c0a2486e1", 
             "new": "D:/Python_FileDispose/real_res/1002525.png", 
             "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_drop_up.png"
-        }
-    }, 
-    "D:/Python_FileDispose/packageimage/clubRoomListWnd.plist": {
+        }, 
         "1002608.png": {
             "md5": "b053abb3bfc4dcded8f6be705020d5cb", 
             "new": "D:/Python_FileDispose/real_res/1002608.png", 
@@ -242,16 +240,6 @@
             "md5": "08fb8cc0314f4224c98343eb74f5a216", 
             "new": "D:/Python_FileDispose/real_res/1002609.png", 
             "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/radio_yellow_btn.png"
-        }, 
-        "1002706.png": {
-            "md5": "2d62c57dab9220cfe0a37ecc7e6d76e6", 
-            "new": "D:/Python_FileDispose/real_res/1002706.png", 
-            "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/btn_refresh.png"
-        }, 
-        "1002720.png": {
-            "md5": "4a990549db8a0c33fe2cae59061ff749", 
-            "new": "D:/Python_FileDispose/real_res/1002720.png", 
-            "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/head_btn_add.png"
         }
     }, 
     "D:/Python_FileDispose/packageimage/common.plist": {
@@ -445,10 +433,20 @@
             "new": "D:/Python_FileDispose/real_res/1002644.png", 
             "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/btn_club.png"
         }, 
+        "1002706.png": {
+            "md5": "2d62c57dab9220cfe0a37ecc7e6d76e6", 
+            "new": "D:/Python_FileDispose/real_res/1002706.png", 
+            "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/btn_refresh.png"
+        }, 
         "1002718.png": {
             "md5": "ddf13f11ad112ee3102cc1a9c534a6d5", 
             "new": "D:/Python_FileDispose/real_res/1002718.png", 
             "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/combat_winner.png"
+        }, 
+        "1002720.png": {
+            "md5": "4a990549db8a0c33fe2cae59061ff749", 
+            "new": "D:/Python_FileDispose/real_res/1002720.png", 
+            "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/head_btn_add.png"
         }, 
         "1002733.png": {
             "md5": "66b9e4834e1ef0d4776efad216079d30", 
