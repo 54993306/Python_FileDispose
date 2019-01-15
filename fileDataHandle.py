@@ -12,7 +12,7 @@ class fileDataHandle:
     def __init__(self):
         if not os.path.isfile(comFun.MD5OLD_NEW):
             assert(False)
-        self.data = copy.deepcopy(comFun.GetDataByFile(comFun.MD5OLD_NEW))
+        self.data = comFun.GetDataByFile(comFun.MD5OLD_NEW)
 
     def getFileDatas(self):
         return self.data
