@@ -65,9 +65,9 @@
               "capInsetsY": 0,
               "fileName": null,
               "fileNameData": {
-                "path": "real_res/1000331.png",
-                "plistFile": "",
-                "resourceType": 0
+                "path": "1002400.png",
+                "plistFile": "1newplist/obtain_prop_dialog.plist",
+                "resourceType": 1
               },
               "scale9Enable": false,
               "scale9Height": 398,
@@ -119,9 +119,9 @@
               "capInsetsY": 0,
               "fileName": null,
               "fileNameData": {
-                "path": "real_res/1000513.png",
-                "plistFile": "",
-                "resourceType": 0
+                "path": "1002397.png",
+                "plistFile": "1newplist/obtain_prop_dialog.plist",
+                "resourceType": 1
               },
               "scale9Enable": false,
               "scale9Height": 55,
@@ -177,7 +177,7 @@
                   "capInsetsY": 0,
                   "fileName": null,
                   "fileNameData": {
-                    "path": "1000683.png",
+                    "path": "1002575.png",
                     "plistFile": "1newplist/foreload.plist",
                     "resourceType": 1
                   },
@@ -226,7 +226,7 @@
                   "x": 0,
                   "y": -56,
                   "fileNameData": {
-                    "path": "real_res/1004020.fnt",
+                    "path": "res_fnt/1010015.fnt",
                     "plistFile": "",
                     "resourceType": 0
                   },
@@ -275,9 +275,9 @@
               "capInsetsY": 0,
               "fileName": null,
               "fileNameData": {
-                "path": "real_res/1000605.png",
-                "plistFile": "",
-                "resourceType": 0
+                "path": "1002398.png",
+                "plistFile": "1newplist/obtain_prop_dialog.plist",
+                "resourceType": 1
               },
               "scale9Enable": false,
               "scale9Height": 166,
@@ -333,9 +333,9 @@
                   "capInsetsY": 0,
                   "fileName": null,
                   "fileNameData": {
-                    "path": "real_res/1000766.png",
-                    "plistFile": "",
-                    "resourceType": 0
+                    "path": "1002435.png",
+                    "plistFile": "1newplist/obtain_prop_dialog.plist",
+                    "resourceType": 1
                   },
                   "scale9Enable": false,
                   "scale9Height": 49,
@@ -393,7 +393,7 @@
               "fontType": 0,
               "normal": null,
               "normalData": {
-                "path": "1000831.png",
+                "path": "1002016.png",
                 "plistFile": "1newplist/foreload.plist",
                 "resourceType": 1
               },

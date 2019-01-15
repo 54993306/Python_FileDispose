@@ -28,12 +28,12 @@ if not TEST:
     # jc.initRecordFile()
 
     # 小图合并大图
-    pcg = packageImage.packageImage()
-    pcg.tidyRes()
+    # pcg = packageImage.packageImage()
+    # pcg.tidyRes()
     #
     # 修改json文件为使用大图
-    # cg = fileChange.replaceImage()
-    # cg.replaceFile()
+    cg = fileChange.replaceImage()
+    cg.replaceFile()
 
     # 初始化代码中包含的资源信息
     # cre = codeRes.codeRes()
