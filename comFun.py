@@ -7,6 +7,7 @@ import copy
 import re
 import shutil
 import stat
+import collections
 # 通过子进程执行shell命令
 # subprocess.run('kill  %s' % ' '.join(pids), shell=True)
 # 就可以杀掉进程 111 和 22
@@ -65,7 +66,7 @@ def RecordToJsonFile(path , data):
     file_stream.close()
 
 def GetDataByFile(path):
-    data = {}
+    data = collections.OrderedDict()
     if not os.path.isfile(path):
         return data
     stream = open(path, "r")
