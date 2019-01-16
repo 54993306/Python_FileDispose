@@ -125,7 +125,7 @@ class replaceImage:
         if not pDictList:
             return
         for tDict in pDictList:
-            tDict["fontName"] = "res_TTF/1012003.TTF"
+            tDict["fontName"] = "res_TTF/1016001.TTF"
 
     # 根据原图片路径获取新的图片信息
     def getNewResInfo(self , path):

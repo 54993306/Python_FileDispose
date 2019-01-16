@@ -38,7 +38,7 @@ if not TEST:
     # 初始化代码中包含的资源信息
     # cre = codeRes.codeRes()
     # cre.excuteReplace()
-
+    #
     # tr = tidyRes.tidyRes()
     # tr.tidy()
 else:
