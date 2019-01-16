@@ -58,12 +58,20 @@ class codeRes:
 
     # 记录改变的内容
     def recordChange(self, oldstr, newstr):
+        # 记录每一次实际改动
         if "ChangeList" in self.currInfo:
             self.currInfo["ChangeList"].append("%s >>> %s" % (oldstr.ljust(50), newstr))
         else:
             ChangeList = []
             self.currInfo["ChangeList"] = ChangeList
             ChangeList.append("%s >>> %s" % (oldstr.ljust(50), newstr))
+        # 记录每一次有效改动
+        if "ChangeDict" in self.currInfo:
+            self.currInfo["ChangeDict"][oldstr] = newstr
+        else:
+            ChangeList = collections.OrderedDict()
+            self.currInfo["ChangeDict"] = ChangeList
+            ChangeList[oldstr] = newstr
 
     # 记录所使用的Plist,可以拓展记录每个png对应的Plist文件
     def recordPlist(self, plist):
