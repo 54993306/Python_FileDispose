@@ -1,7 +1,7 @@
 
 # -*- coding: UTF-8 -*-
-TEST = False
-# TEST = True
+# TEST = False
+TEST = True
 #
 import os
 import json
@@ -32,12 +32,12 @@ if not TEST:
     # pcg.tidyRes()
     #
     # 修改json文件为使用大图
-    cg = fileChange.replaceImage()
-    cg.replaceFile()
+    # cg = fileChange.replaceImage()
+    # cg.replaceFile()
 
     # 初始化代码中包含的资源信息
-    # cre = codeRes.codeRes()
-    # cre.excuteReplace()
+    cre = codeRes.codeRes()
+    cre.excuteReplace()
     #
     # tr = tidyRes.tidyRes()
     # tr.tidy()

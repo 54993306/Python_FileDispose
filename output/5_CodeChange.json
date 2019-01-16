@@ -1,6 +1,6 @@
 {
     "./oldLua/HallMain.lua": {
-        "ChangeList": [
+        "ChangeRecord": [
             "hall/hall.csb                                      >>> real_res/hall.csb", 
             "hall/huanpi2/main/btn_free.png                     >>> #1004654.png", 
             "hall/huanpi2/main_portrait/5542newbg.png           >>> real_res/1004665.png", 
@@ -28,21 +28,63 @@
             "hall/huanpi2/main/tishi_bg_jiantou.png             >>> real_res/1004664.png", 
             "hall/main/hongdian.png                             >>> real_res/1004749.png"
         ], 
-        "ChangeDict": {
-            "hall/hall.csb": "real_res/hall.csb", 
-            "hall/huanpi2/main/btn_free.png": "#1004654.png", 
-            "hall/huanpi2/main_portrait/5542newbg.png": "real_res/1004665.png", 
-            "hall/Common/clippinglight.png": "real_res/1004390.png", 
-            "hall/Common/star.png": "real_res/1004409.png", 
-            "hall/main/hongdian.png": "real_res/1004749.png", 
-            "hall/huanpi2/main/btn_free_1.png": "real_res/1004655.png", 
-            "hall/main/mfeivfx.plist": "real_res/1008034.plist", 
-            "hall/main/particleDiamond.plist": "real_res/1008035.plist", 
-            "hall/font/fangzhengcuyuan.TTF": "D:/Python_FileDispose/res_TTF/1016001.TTF", 
-            "hall/huanpi2/Common/yuanbao.png": "#1004630.png", 
-            "hall/huanpi2/Common/diamond.png": "#1004575.png", 
-            "hall/huanpi2/main/bg_tishi.png": "real_res/1004651.png", 
-            "hall/huanpi2/main/tishi_bg_jiantou.png": "real_res/1004664.png"
+        "ValidChange": {
+            "d9d4212fb247d4de20573217aa221736": {
+                "new": "real_res/hall.csb", 
+                "old": "hall/hall.csb"
+            }, 
+            "a5487b2a41d16cfc675ab68c3d8c8d99": {
+                "new": "#1004654.png", 
+                "old": "hall/huanpi2/main/btn_free.png"
+            }, 
+            "699f9ffdb21654f6a0f30b57e80d8add": {
+                "new": "real_res/1004665.png", 
+                "old": "hall/huanpi2/main_portrait/5542newbg.png"
+            }, 
+            "632981d393a656b19f5d9ddfc908571d": {
+                "new": "real_res/1004390.png", 
+                "old": "hall/Common/clippinglight.png"
+            }, 
+            "d6a6e27b59833b23978f8abe736a24bc": {
+                "new": "real_res/1004409.png", 
+                "old": "hall/Common/star.png"
+            }, 
+            "fb22ad975536d0a1afecbc4e7449b76b": {
+                "new": "real_res/1004749.png", 
+                "old": "hall/main/hongdian.png"
+            }, 
+            "209a1c1f922f64e617f17c1ffd62aca2": {
+                "new": "real_res/1004655.png", 
+                "old": "hall/huanpi2/main/btn_free_1.png"
+            }, 
+            "b6e437b9d1ede9ca9b71e315d27ef41c": {
+                "new": "real_res/1008034.plist", 
+                "old": "hall/main/mfeivfx.plist"
+            }, 
+            "249c3f9423de6cac7dd27270a142a500": {
+                "new": "real_res/1008035.plist", 
+                "old": "hall/main/particleDiamond.plist"
+            }, 
+            "cafa69cdc042f7ecea6dfed299612f73": {
+                "new": "D:/Python_FileDispose/res_TTF/1016001.TTF", 
+                "old": "hall/font/fangzhengcuyuan.TTF"
+            }, 
+            "3c4ae3cf8709b272b30950bb4a22286a": {
+                "new": "#1004630.png", 
+                "old": "hall/huanpi2/Common/yuanbao.png"
+            }, 
+            "1dc7aa2197619e27e6eb46e301220099": {
+                "new": "#1004575.png", 
+                "old": "hall/huanpi2/Common/diamond.png"
+            }, 
+            "04d9e60e9d183b033f5539862e774c98": {
+                "new": "real_res/1004651.png", 
+                "old": "hall/huanpi2/main/bg_tishi.png"
+            }, 
+            "702733ef231a811241af1be3cd1dbc33": {
+                "new": "real_res/1004664.png", 
+                "old": "hall/huanpi2/main/tishi_bg_jiantou.png"
+            }
         }, 
         "NotFount": [
             "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/btn_free_2.png", 

@@ -57,21 +57,24 @@ class codeRes:
             InfoList.append(info)
 
     # 记录改变的内容
-    def recordChange(self, oldstr, newstr):
+    def recordChange(self, oldstr, newstr , md5code):
         # 记录每一次实际改动
-        if "ChangeList" in self.currInfo:
-            self.currInfo["ChangeList"].append("%s >>> %s" % (oldstr.ljust(50), newstr))
+        if "ChangeRecord" in self.currInfo:
+            self.currInfo["ChangeRecord"].append("%s >>> %s" % (oldstr.ljust(50), newstr))
         else:
-            ChangeList = []
-            self.currInfo["ChangeList"] = ChangeList
-            ChangeList.append("%s >>> %s" % (oldstr.ljust(50), newstr))
+            ChangeRecord = []
+            self.currInfo["ChangeRecord"] = ChangeRecord
+            ChangeRecord.append("%s >>> %s" % (oldstr.ljust(50), newstr))
         # 记录每一次有效改动
-        if "ChangeDict" in self.currInfo:
-            self.currInfo["ChangeDict"][oldstr] = newstr
+        FileDict = collections.OrderedDict()
+        FileDict["new"] = newstr
+        FileDict["old"] = oldstr
+        if "ValidChange" in self.currInfo:
+            self.currInfo["ValidChange"][md5code] = FileDict
         else:
-            ChangeList = collections.OrderedDict()
-            self.currInfo["ChangeDict"] = ChangeList
-            ChangeList[oldstr] = newstr
+            ValidChange = collections.OrderedDict()
+            self.currInfo["ValidChange"] = ValidChange
+            ValidChange[md5code] = FileDict
 
     # 记录所使用的Plist,可以拓展记录每个png对应的Plist文件
     def recordPlist(self, plist):
@@ -147,9 +150,9 @@ class codeRes:
         if not filepath:
             self.recordInfoListToFile("NoChange", matchStr)  # 无法改动的部分
             return "\"" + matchStr + "\""
-        newPath = self.getResNewPath(filepath)
+        newPath , md5code = self.getResNewPath(filepath)
         if newPath:
-            self.recordChange(matchStr, newPath)
+            self.recordChange(matchStr, newPath , md5code)
             return "\"" + newPath + "\""  # 给新路径添加引号
         else:
             self.printOutInfo("Error match : " + filepath)
@@ -177,13 +180,13 @@ class codeRes:
         newFileName = re.sub(comFun.OUTPUTTARGET, "", newFileName)
         _, filetype = os.path.splitext(newFileName)
         if not filetype in self.handleType:
-            return newFileName
+            return newFileName , md5code
         if md5code in self.plistMd5:
             self.recordPlist(self.plistMd5.get(md5code))
             self.printOutInfo("file in plist :" + self.plistMd5.get(md5code))
-            return "#" + os.path.basename(newFileName)  # 要使用精灵帧的形式进行处理
+            return "#" + os.path.basename(newFileName) , md5code # 要使用精灵帧的形式进行处理
         else:
             if self.FileData.getTPathByMd5Code(md5code):  # 包括大图，fnt，和手动设置为不进行打包的聂内容集合
-                return self.FileData.getTPathByMd5Code(md5code)
+                return self.FileData.getTPathByMd5Code(md5code) , md5code
             self.printOutInfo("can't found plist file : " + oldpath + "  md5:" + md5code + " newPath :" + newFileName)
-            return newFileName  # 只是改了名字没有合并大图的图，只是修改了文件的路径
+            return newFileName , md5code # 只是改了名字没有合并大图的图，只是修改了文件的路径
