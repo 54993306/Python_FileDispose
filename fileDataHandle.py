@@ -19,6 +19,9 @@ class fileDataHandle:
 
     # 根据文件路径获取md5值
     def getFileMd5(self , filepath):
+        if not filepath:
+            print(" getFileMd5 : path is null" )
+            return
         for md5code , datas in self.data.iteritems():
             if cmp(filepath , datas["old"]) == 0:
                 return md5code
@@ -48,12 +51,15 @@ class fileDataHandle:
     # 根据其他路径获取老路径信息
     def getOldPathBypath(self , filepath):
         for md5code, datas in self.data.iteritems():
+            if cmp(filepath, datas["old"]) == 0:
+                return filepath
             if cmp(filepath, datas["new"]) == 0:
                 return datas["old"]
             if "repeat" in datas:
                 for path in datas["repeat"]:
                     if cmp(filepath, path) == 0:
                         return datas["old"]
+        print(" can't find old path " + filepath)
         return ""
 
     # 根据老路径获取新路径

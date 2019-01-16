@@ -1,18 +1,7 @@
 {
-    "D:/Svn_2d/UI_Shu/Json/bindSuccessful_dialog.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_toRedeem.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting1.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting2.png"
-    ], 
     "D:/Svn_2d/UI_Shu/Json/clubMatchRecord.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/tongyong_yuanjiao.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/tongyong_yuanjiao.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/conversion_dialog.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_toRedeem.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting1.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting2.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_redeemOk.png"
     ], 
     "D:/Svn_2d/UI_Shu/Json/hall.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/MAHJONGGAME.png"

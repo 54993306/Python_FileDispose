@@ -16,8 +16,7 @@ class jsonRes:
         if not os.path.isfile(comFun.DICTFILE):
             print "can't found file " + comFun.DICTFILE
             assert(False)
-        filedict = open(comFun.DICTFILE, "r")
-        self.pResDict = json.load(filedict, object_pairs_hook=collections.OrderedDict)
+        self.pResDict = comFun.GetDataByFile(comFun.DICTFILE)
 
         self.FileData = FData.fileDataHandle()
 
@@ -65,18 +64,11 @@ class jsonRes:
                 if not os.path.isfile(path):
                     self.addNotFoundFile(jsonpath , path)   # 在json 中使用，但是实际上不存在
                     continue
-                _,fileType = os.path.splitext(path)
-                typeDict = self.pResDict.get(fileType)
-                md5Code = None
-                if typeDict.has_key(path):
-                    fileinfo = typeDict.get(path)  # 通过文件路径到总资源表中取得文件Md5值
-                    md5Code = fileinfo["md5"]
-                else:
-                    md5Code = self.FileData.getFileMd5(path)
-                    path = self.FileData.getOldPathBypath(path)
-                    if not md5Code:
-                        print "type not found in dict : " + path
-                        assert (False)
+                md5Code = self.FileData.getFileMd5(path)
+                path = self.FileData.getOldPathBypath(path)
+                if not md5Code:
+                    print "type not found in dict : " + path
+                    assert (False)
                 self.recordJsonRes(jsonpath , path)
                 self.addReferenceNum(md5Code, jsonpath, path)
         # print "referenceCount : " + json.dumps(self.referenceCount, ensure_ascii=False, encoding="utf-8", indent=4)
