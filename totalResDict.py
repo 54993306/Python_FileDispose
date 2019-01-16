@@ -12,18 +12,14 @@ import collections
 #读取路径下的所有资源文件分类后写入到文件中
 
 class totalRes:
+    allFiles = 0                                   # 记录文件数
     filedict = collections.OrderedDict()           # 文件分类表，有多少中类型资源，每种类型有多少个
-    timeOrder = collections.OrderedDict()          # 文件创建时间排序表 os.path.getctime(path)
-    sizeOrder = collections.OrderedDict()          # 文件大小排序表  os.path.getsize(filepath)
     notRepeatmd5List = collections.OrderedDict()   # 存储文件md5值 key:md5 value:path
     oldtonewPath = collections.OrderedDict()       # 新旧路径对应表 key: oldpath ,value : newpath
-    allFiles = 0            # 记录文件数
     typeNum = collections.OrderedDict()            # 存储文件类型和相应的数量
     # 将内容记录到文件中
     def recordToFile(self):
         comFun.RecordToJsonFile(comFun.DICTFILE, self.filedict)
-
-        comFun.RecordToJsonFile(comFun.SIZEFILE, self.sizeOrder)
 
         comFun.RecordToJsonFile(comFun.MD5OLD_NEW, self.notRepeatmd5List)
         # mp3 对应的编号是  2 , 类型 2 下 有429个文件
@@ -42,23 +38,17 @@ class totalRes:
     def initDict(self):
         fileList = []
         comFun.initPathFiles(comFun.FILEPATH, fileList)
-        for pathbylist in fileList:
-            abspath = pathbylist
-            if not os.path.isabs(abspath):
-                abspath = os.path.abspath(pathbylist)
-            if re.search(r".svn" , abspath) :
+        for path in fileList:
+            if not os.path.isabs(path):
+                path = os.path.abspath(path)
+            if re.search(r".svn" , path) :
                 continue
-            abspath = comFun.turnBias(abspath)
-            if not self.addToDict(abspath):    # 重复文件不进行后续操作
+            path = comFun.turnBias(path)
+            if not self.addToDict(path):    # 重复文件不进行后续操作
                 continue
-            pathbylist = comFun.turnBias(pathbylist)
-            fileSize = os.path.getsize(pathbylist)
-            self.sizeOrder[pathbylist] =  fileSize  # 文件大小
-            self.timeOrder[pathbylist] = os.path.getctime(pathbylist) # 创建时间
         # print(json.dumps(self.filedict, ensure_ascii=False, encoding="utf -8", indent=4))
         print "Total File Num : " + str(self.allFiles)
         self.copyFile()
-        self.sortFileSize()
         self.recordToFile()
         # print(json.dumps(self.typeNum, ensure_ascii=False, encoding="utf -8", indent=4))
 
@@ -86,12 +76,27 @@ class totalRes:
         time.sleep(3)                # 大规模的文件操作，需要做延时处理
         os.mkdir(comFun.COPYPATH, 0o777)
         copynum = 0
-        for md5Code , md5_old_new in self.notRepeatmd5List.iteritems():
+        for md5Code , fileInfo in self.notRepeatmd5List.iteritems():
             copynum += 1
             # 这里要生成唯一性的名称，后面需要用名称来与md5值生成对应关系，因为在合成plist后，只有名称保存在其中
-            newpath = self.getNewFileName(md5_old_new["old"])
-            shutil.copyfile(md5_old_new["old"], newpath)
-            md5_old_new["new"] = newpath
+            newpath = self.getNewFileName(fileInfo["old"])
+            if os.path.isfile(newpath):                         # 重名文件会导致md5值不同，但是指向了同一个路径的文件
+                path,basename =  os.path.split(newpath)
+                newpath = path + "/" +str(copynum) + basename
+                print(" exist file : " + newpath)   # csb 不执行重命名操作，但是有很多重名的csb，但从UI的结构上来看是不应该的
+            shutil.copyfile(fileInfo["old"], newpath)
+            fileInfo["new"] = newpath
+            self.setNewPathByFileDict(md5Code , newpath)
+
+    # 设置文件字典中文件的新路径
+    def setNewPathByFileDict(self , md5Code , newpath):
+        _, filetype = os.path.splitext(newpath)  # 分离文件名和后缀
+        if not filetype:
+            return
+        if md5Code in self.filedict[filetype]:
+            self.filedict[filetype][md5Code]["new"] = newpath
+        else:
+            assert(False)
 
     # 获取新文件名称
     def getNewFileName(self , filepath):
@@ -135,11 +140,10 @@ class totalRes:
             typedict = self.filedict.get(filetype)
         else:
             self.filedict[filetype] = typedict
-
         pathdict = collections.OrderedDict()
-        pathdict["md5"] = md5
         pathdict["size"] = os.path.getsize(filepath)
-        typedict[filepath] = pathdict
+        pathdict["old"] = filepath
+        typedict[md5] = pathdict
         return True
 
     # 生成文件hash值{MD5 : {currPath:path , oldpath : [path1 ,path2 ...]}}
@@ -154,21 +158,7 @@ class totalRes:
             else:
                 self.notRepeatmd5List[md5]["repeat"].append(filepath)
             return False
-        md5_old_new = collections.OrderedDict()
-        md5_old_new["old"] = filepath
-        self.notRepeatmd5List[md5] = md5_old_new   # 由一个md5值对应所有曾出现过的文件
+        fileInfo = collections.OrderedDict()
+        fileInfo["old"] = filepath
+        self.notRepeatmd5List[md5] = fileInfo   # 由一个md5值对应所有曾出现过的文件
         return md5
-
-    # 对文件大小进行排序
-    def sortFileSize(self):
-        self.sizeOrder = sorted(self.sizeOrder.items() , key = lambda fileSize:fileSize[1] , reverse = True)
-        # print type(self.sizeOrder)
-        # print(json.dumps(self.sizeOrder, ensure_ascii=False, encoding="utf -8", indent=4))
-
-    # 对文件创建时间进行排序
-    def formatFileCTime(self):
-        # 创建时间都是在"Tue Nov 06 16:11:46 2018" 根据日期来处理失去意义
-        sorted(self.timeOrder.items() , key = lambda filetime:filetime[1])
-        # for key,filetime in self.timeOrder.items():
-        #     self.timeOrder[key] = time.asctime(time.localtime(filetime))
-        print(json.dumps(self.timeOrder, ensure_ascii=False, encoding="utf -8", indent=4))
