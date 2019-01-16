@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1002491.png</key>
+            <key>1004491.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{206,59}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{206,59}</string>
             </dict>
-            <key>1002568.png</key>
+            <key>1004576.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,63},{131,94}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{131,94}</string>
             </dict>
-            <key>1002621.png</key>
+            <key>1004630.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{98,63},{100,76}}</string>
@@ -53,7 +53,7 @@
             <key>size</key>
             <string>{256,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:626bfd55cfc03d6d9d1c95dbb180f0f8$</string>
+            <string>$TexturePacker:SmartUpdate:aae45ab943ede04738f8c2b86bcc1a5d$</string>
             <key>textureFileName</key>
             <string>bindPhone.png</string>
         </dict>

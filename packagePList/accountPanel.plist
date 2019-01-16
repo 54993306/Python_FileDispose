@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1002511.png</key>
+            <key>1004519.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,71},{255,54}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{255,54}</string>
             </dict>
-            <key>1002519.png</key>
+            <key>1004527.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{84,2},{30,30}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{30,30}</string>
             </dict>
-            <key>1002552.png</key>
+            <key>1004560.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{80,67}}</string>
@@ -53,7 +53,7 @@
             <key>size</key>
             <string>{128,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:93cbe272fa620e16f7468b70470ec690$</string>
+            <string>$TexturePacker:SmartUpdate:43c1a4e3e4a3eac9948c34d2cfb1f1f6$</string>
             <key>textureFileName</key>
             <string>accountPanel.png</string>
         </dict>

@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1002426.png</key>
+            <key>1004426.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{88,215},{20,27}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{20,27}</string>
             </dict>
-            <key>1002434.png</key>
+            <key>1004434.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{88,152},{34,30}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{34,30}</string>
             </dict>
-            <key>1002436.png</key>
+            <key>1004436.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,288},{73,73}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{73,73}</string>
             </dict>
-            <key>1002438.png</key>
+            <key>1004438.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{88,184},{29,33}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{29,33}</string>
             </dict>
-            <key>1002448.png</key>
+            <key>1004448.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{88,2},{148,36}}</string>
@@ -69,7 +69,7 @@
                 <key>sourceSize</key>
                 <string>{148,36}</string>
             </dict>
-            <key>1002449.png</key>
+            <key>1004449.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{284,84}}</string>
@@ -92,7 +92,7 @@
             <key>size</key>
             <string>{128,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:de23e7d8c23501d3ab09ea42a211331e$</string>
+            <string>$TexturePacker:SmartUpdate:86b5c8e2e8d74ee63078460958498025$</string>
             <key>textureFileName</key>
             <string>video_layer.png</string>
         </dict>

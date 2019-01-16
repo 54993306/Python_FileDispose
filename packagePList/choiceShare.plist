@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1002527.png</key>
+            <key>1004535.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{206,59}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{206,59}</string>
             </dict>
-            <key>1002528.png</key>
+            <key>1004536.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,63},{204,59}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{204,59}</string>
             </dict>
-            <key>1002584.png</key>
+            <key>1004592.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,124},{177,177}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{177,177}</string>
             </dict>
-            <key>1002590.png</key>
+            <key>1004598.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,303},{177,175}}</string>
@@ -66,7 +66,7 @@
             <key>size</key>
             <string>{256,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:2342e0617f1d2e9d21ef3d9114167f9c$</string>
+            <string>$TexturePacker:SmartUpdate:9e3eb509d53317addc7494f16e7756e0$</string>
             <key>textureFileName</key>
             <string>choiceShare.png</string>
         </dict>

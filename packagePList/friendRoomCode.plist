@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1002721.png</key>
+            <key>1004730.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{136,2},{130,68}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{130,68}</string>
             </dict>
-            <key>1002722.png</key>
+            <key>1004731.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{132,67}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{132,67}</string>
             </dict>
-            <key>1002729.png</key>
+            <key>1004738.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,134},{371,62}}</string>
@@ -53,7 +53,7 @@
             <key>size</key>
             <string>{256,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:9fe3a37deef17fbe4085b0013f5192ca$</string>
+            <string>$TexturePacker:SmartUpdate:26ebe8198cc7775ed482a1cdfa29fc7a$</string>
             <key>textureFileName</key>
             <string>friendRoomCode.png</string>
         </dict>

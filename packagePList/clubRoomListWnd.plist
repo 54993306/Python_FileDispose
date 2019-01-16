@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1002501.png</key>
+            <key>1004509.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,109},{40,40}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{40,40}</string>
             </dict>
-            <key>1002522.png</key>
+            <key>1004530.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{161,105}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{161,105}</string>
             </dict>
-            <key>1002576.png</key>
+            <key>1004584.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,156},{63,68}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{71,72}</string>
             </dict>
-            <key>1002577.png</key>
+            <key>1004585.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{165,83},{71,72}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{71,72}</string>
             </dict>
-            <key>1002706.png</key>
+            <key>1004715.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{67,109},{67,61}}</string>
@@ -69,7 +69,7 @@
                 <key>sourceSize</key>
                 <string>{67,61}</string>
             </dict>
-            <key>1002720.png</key>
+            <key>1004729.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{165,2},{79,79}}</string>
@@ -92,7 +92,7 @@
             <key>size</key>
             <string>{256,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:e5527d9aa80665179b793f7ab21f066a$</string>
+            <string>$TexturePacker:SmartUpdate:c6d6f0de6b331ad7c0c0a383970db3e0$</string>
             <key>textureFileName</key>
             <string>clubRoomListWnd.png</string>
         </dict>

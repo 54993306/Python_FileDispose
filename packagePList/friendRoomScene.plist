@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1002002.png</key>
+            <key>1004001.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,197},{102,91}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{102,91}</string>
             </dict>
-            <key>1002103.png</key>
+            <key>1004102.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{170,140}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{170,140}</string>
             </dict>
-            <key>1002185.png</key>
+            <key>1004184.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{213,171},{36,42}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{36,42}</string>
             </dict>
-            <key>1002186.png</key>
+            <key>1004185.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{113,144},{88,49}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{88,49}</string>
             </dict>
-            <key>1002546.png</key>
+            <key>1004554.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{174,2},{76,76}}</string>
@@ -69,7 +69,7 @@
                 <key>sourceSize</key>
                 <string>{76,76}</string>
             </dict>
-            <key>1002547.png</key>
+            <key>1004555.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,144},{109,51}}</string>
@@ -82,7 +82,7 @@
                 <key>sourceSize</key>
                 <string>{109,51}</string>
             </dict>
-            <key>1002563.png</key>
+            <key>1004571.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{234,157},{10,20}}</string>
@@ -95,7 +95,7 @@
                 <key>sourceSize</key>
                 <string>{10,20}</string>
             </dict>
-            <key>1002564.png</key>
+            <key>1004572.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{213,247},{30,30}}</string>
@@ -108,7 +108,7 @@
                 <key>sourceSize</key>
                 <string>{30,30}</string>
             </dict>
-            <key>1002565.png</key>
+            <key>1004573.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{234,145},{10,20}}</string>
@@ -121,7 +121,7 @@
                 <key>sourceSize</key>
                 <string>{10,20}</string>
             </dict>
-            <key>1002566.png</key>
+            <key>1004574.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{213,215},{30,30}}</string>
@@ -134,7 +134,7 @@
                 <key>sourceSize</key>
                 <string>{30,30}</string>
             </dict>
-            <key>1002611.png</key>
+            <key>1004620.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{164,145},{68,24}}</string>
@@ -147,7 +147,7 @@
                 <key>sourceSize</key>
                 <string>{68,24}</string>
             </dict>
-            <key>1002622.png</key>
+            <key>1004631.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{164,171},{95,47}}</string>
@@ -160,7 +160,7 @@
                 <key>sourceSize</key>
                 <string>{95,47}</string>
             </dict>
-            <key>1002626.png</key>
+            <key>1004635.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{174,80},{76,63}}</string>
@@ -183,7 +183,7 @@
             <key>size</key>
             <string>{256,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:024edf5ce9124183ecf2de8f7819ec2d$</string>
+            <string>$TexturePacker:SmartUpdate:46c28d57e91970e438176ea40a8f9347$</string>
             <key>textureFileName</key>
             <string>friendRoomScene.png</string>
         </dict>

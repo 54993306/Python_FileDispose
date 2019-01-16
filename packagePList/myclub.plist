@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1002507.png</key>
+            <key>1004515.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,207},{264,67}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{264,67}</string>
             </dict>
-            <key>1002585.png</key>
+            <key>1004593.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{207,2},{56,46}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{56,46}</string>
             </dict>
-            <key>1002607.png</key>
+            <key>1004615.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{203,203}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{203,203}</string>
             </dict>
-            <key>1002615.png</key>
+            <key>1004624.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{71,207},{48,48}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{58,52}</string>
             </dict>
-            <key>1002617.png</key>
+            <key>1004626.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{207,60},{44,44}}</string>
@@ -79,7 +79,7 @@
             <key>size</key>
             <string>{256,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:371bea505d4660b7d13d87be2b35b1d5$</string>
+            <string>$TexturePacker:SmartUpdate:aec0d42d501ed3ef9044fe2372ad7b2b$</string>
             <key>textureFileName</key>
             <string>myclub.png</string>
         </dict>

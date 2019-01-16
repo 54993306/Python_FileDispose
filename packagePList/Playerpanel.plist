@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1002488.png</key>
+            <key>1004488.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,187},{156,60}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{156,60}</string>
             </dict>
-            <key>1002578.png</key>
+            <key>1004586.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{190,169},{42,46}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{42,46}</string>
             </dict>
-            <key>1002581.png</key>
+            <key>1004589.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{190,125},{42,46}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{42,46}</string>
             </dict>
-            <key>1002705.png</key>
+            <key>1004714.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,125},{186,60}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{186,60}</string>
             </dict>
-            <key>1002724.png</key>
+            <key>1004733.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,64},{218,59}}</string>
@@ -69,7 +69,7 @@
                 <key>sourceSize</key>
                 <string>{218,59}</string>
             </dict>
-            <key>1002728.png</key>
+            <key>1004737.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{220,60}}</string>
@@ -92,7 +92,7 @@
             <key>size</key>
             <string>{256,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:b8ac1265383ef65d29437ac905b8bf39$</string>
+            <string>$TexturePacker:SmartUpdate:986b92e1d48e14196acf091ccc98ba85$</string>
             <key>textureFileName</key>
             <string>Playerpanel.png</string>
         </dict>

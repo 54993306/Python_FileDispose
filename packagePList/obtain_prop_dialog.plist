@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>1002397.png</key>
+            <key>1004396.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{402,2},{200,55}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{200,55}</string>
             </dict>
-            <key>1002398.png</key>
+            <key>1004397.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,401},{166,166}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{166,166}</string>
             </dict>
-            <key>1002400.png</key>
+            <key>1004399.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{397,398}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{397,398}</string>
             </dict>
-            <key>1002435.png</key>
+            <key>1004435.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{459,2},{110,49}}</string>
@@ -66,7 +66,7 @@
             <key>size</key>
             <string>{512,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:0001dbe528fd40aeba96d39a7f3fef3e$</string>
+            <string>$TexturePacker:SmartUpdate:3d355e8523ae27fef7db7fa2d9c35253$</string>
             <key>textureFileName</key>
             <string>obtain_prop_dialog.png</string>
         </dict>

@@ -306,10 +306,10 @@ class packageImage:
 
     # 将文件列表复制到指定目录
     def copyFilesToPath(self , files , path):
-        if not os.path.isdir(path):
-            os.mkdir(path, 0o777)
-        else:
-            os.chmod(path, 0o777)       # 当cocosstudio在运行时会提示权限不足
+        if os.path.isdir(path):
+            os.chmod(path, 0o777)
+            shutil.rmtree(path)
+        os.mkdir(path, 0o777)
         for filepath in files:
             if not os.path.isabs(filepath):
                 filepath = os.path.abspath(filepath)
