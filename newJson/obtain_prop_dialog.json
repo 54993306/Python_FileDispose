@@ -65,7 +65,7 @@
               "capInsetsY": 0,
               "fileName": null,
               "fileNameData": {
-                "path": "1002400.png",
+                "path": "1004399.png",
                 "plistFile": "1newplist/obtain_prop_dialog.plist",
                 "resourceType": 1
               },
@@ -119,7 +119,7 @@
               "capInsetsY": 0,
               "fileName": null,
               "fileNameData": {
-                "path": "1002397.png",
+                "path": "1004396.png",
                 "plistFile": "1newplist/obtain_prop_dialog.plist",
                 "resourceType": 1
               },
@@ -177,7 +177,7 @@
                   "capInsetsY": 0,
                   "fileName": null,
                   "fileNameData": {
-                    "path": "1002575.png",
+                    "path": "1004583.png",
                     "plistFile": "1newplist/foreload.plist",
                     "resourceType": 1
                   },
@@ -275,7 +275,7 @@
               "capInsetsY": 0,
               "fileName": null,
               "fileNameData": {
-                "path": "1002398.png",
+                "path": "1004397.png",
                 "plistFile": "1newplist/obtain_prop_dialog.plist",
                 "resourceType": 1
               },
@@ -333,7 +333,7 @@
                   "capInsetsY": 0,
                   "fileName": null,
                   "fileNameData": {
-                    "path": "1002435.png",
+                    "path": "1004435.png",
                     "plistFile": "1newplist/obtain_prop_dialog.plist",
                     "resourceType": 1
                   },
@@ -393,7 +393,7 @@
               "fontType": 0,
               "normal": null,
               "normalData": {
-                "path": "1002016.png",
+                "path": "1004015.png",
                 "plistFile": "1newplist/foreload.plist",
                 "resourceType": 1
               },
