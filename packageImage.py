@@ -1,7 +1,7 @@
 
 # -*- coding: UTF-8 -*-
 
-# 小图合成大图
+# 小图合成大图，只对出现在json中的资源做合并处理。对于出现在代码中的资源还没有涉及到资源合并的操作。
 
 import comFun
 import os
@@ -151,6 +151,9 @@ class packageImage:
 
     # 判断当前路径是否已经被拷贝过
     def isRepeatCopy(self , resPath):
+        if not os.path.isfile(resPath):
+            print( "Not Found :" + resPath)
+            return resPath  # 图片不存在做被移动过处理
         for tPath , fileInfo in self.moveRecord.iteritems():
             if cmp(fileInfo["new"] , resPath) == 0:  # 图片已经被移走
                 if "repeat" in self.unPackRepeat:
@@ -159,11 +162,13 @@ class packageImage:
                     repeat = []
                     repeat.append(resPath)
                     self.unPackRepeat["repeat"] = repeat
+                # print resPath   # 输出被重复移动的图
                 return resPath
         return
     # 对png以外的其他资源做处理
     def handleOtherRes(self , pResPath):
-        if not os.path.isfile(pResPath):
+        if self.isRepeatCopy(pResPath):
+            print "other res repeat move : " + pResPath
             return
         _, filetype = os.path.splitext(pResPath)
         outPutPath = "res_" + filetype.split(".")[1]

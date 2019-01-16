@@ -19,14 +19,15 @@ UNPACKAGENUM    = 3
 
 # 将对数据的存储和处理，抽象到一个专门的类中去进行操作。通过统一的接口去调用个各类的产出都存储到同一个通用类中。
 
+RESFOLDER       = "real_res"
 FILEPATH        = "D:/Svn_2d/S_GD_Heji/res/"
 COPYPATH        = "D:/Python_FileDispose/real_res"
 TARGETPATH      = "D:/Svn_2d/UI_Shu/Resources/"  # 实际输出路径
 OUTPUTTARGET    = "D:/Python_FileDispose/"
 OUTPUTPATH      = "D:/Python_FileDispose/newJson/"
 
-PACKAGESOURCE   = "D:/Python_FileDispose/packagesource/"
-PACKAGEOUTPUT   = "D:/Python_FileDispose/packageimage/"
+PACKAGESOURCE   = "D:/Python_FileDispose/packageRes/"
+PACKAGEOUTPUT   = "D:/Python_FileDispose/packagePList/"
 
 # json UI 文件
 SEARCHJSONPATH  = "D:/Svn_2d/UI_Shu/Json"            # 只是竖版的大厅部分json
