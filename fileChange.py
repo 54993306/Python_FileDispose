@@ -14,11 +14,10 @@ import fileDataHandle as DF
 class replaceImage:
 
     def __init__(self):
-        self.changeRecord = {}
-        self.plistMd5 = {}
+        self.changeRecord = collections.OrderedDict()
         self.resNum = 0
 
-        self.plistMd5 = copy.deepcopy(comFun.GetDataByFile(comFun.PLISTMD5))
+        self.plistMd5 = comFun.GetDataByFile(comFun.PLISTMD5)
 
         self.FileData = DF.fileDataHandle()
 
@@ -43,15 +42,13 @@ class replaceImage:
 
     # 文件处理
     def streamDispose(self , newJsonFile):
-        print "==========>>>>" + os.path.basename(newJsonFile)
+        print "\n==========>>>>" + os.path.basename(newJsonFile)
         json_stream = open(newJsonFile, "r")
         jsondict = json.load(json_stream, object_pairs_hook=collections.OrderedDict )
         json_stream.close()
-        resDict = {}
-        self.changeRecord[newJsonFile] = resDict  # 只是复制了一个引用
-        self.recordDict = resDict
+        self.recordDict = collections.OrderedDict()
+        self.changeRecord[newJsonFile] = self.recordDict  # 只是复制了一个引用
         self.searchNodeTree(jsondict.get("widgetTree"))
-        print "\n"
         str_strean = open(newJsonFile, "w+")
         # json.dump(jsondict, str_strean)
         str_strean.write(json.dumps(jsondict, encoding="utf -8", indent=2,separators=(',',': ')))  # 为保持一致，: 后需要留一个空格
@@ -106,11 +103,11 @@ class replaceImage:
     def changeResPath(self , pDictList):
         for tDict in pDictList:
             if not tDict["resourceType"] and tDict["path"]:
-                record = {}
+                record = collections.OrderedDict()
                 self.recordDict[str(len(self.recordDict))] = record
                 record["old"] = copy.deepcopy(tDict)
                 newFileDict = self.getNewResInfo(tDict["path"])
-                if type(newFileDict)is types.DictType:
+                if type(newFileDict)is collections.OrderedDict:
                     tDict["path"] = newFileDict["newpath"]  # 直接改动生效
                     tDict["plistFile"] = re.sub(comFun.PACKAGEOUTPUT, "1newplist/", comFun.turnBias(newFileDict["plist"]))
                     tDict["resourceType"] = 1
@@ -134,7 +131,7 @@ class replaceImage:
         newFileName = self.FileData.getNewPathByMd5Code(md5code) # 需要做一个去处本地路径处理
 
         if md5code in self.plistMd5:
-            newFileDict = {}
+            newFileDict = collections.OrderedDict()
             newFileDict["newpath"] = os.path.basename(newFileName)
             newFileDict["plist"] = self.plistMd5.get(md5code)
             newFileDict["oldpath"] = path

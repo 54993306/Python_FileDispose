@@ -1,867 +1,867 @@
 {
     "D:/Python_FileDispose/newJson/obtain_prop_dialog.json": {
-        "1": {
-            "new": {
-                "path": "1004396.png", 
-                "plistFile": "1newplist/obtain_prop_dialog.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "Common/gxhd_wz.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
         "0": {
-            "new": {
-                "path": "1004399.png", 
-                "plistFile": "1newplist/obtain_prop_dialog.plist", 
-                "resourceType": 1
-            }, 
             "old": {
                 "path": "Common/light_effect.png", 
                 "plistFile": "", 
                 "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004399.png", 
+                "plistFile": "1newplist/obtain_prop_dialog.plist", 
+                "resourceType": 1
             }
         }, 
-        "3": {
-            "new": {
-                "path": "1004583.png", 
-                "plistFile": "1newplist/foreload.plist", 
-                "resourceType": 1
-            }, 
+        "1": {
             "old": {
-                "path": "huanpi2/Common/gold_icon.png", 
+                "path": "Common/gxhd_wz.png", 
                 "plistFile": "", 
                 "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004396.png", 
+                "plistFile": "1newplist/obtain_prop_dialog.plist", 
+                "resourceType": 1
             }
         }, 
         "2": {
-            "new": {
-                "path": "1004397.png", 
-                "plistFile": "1newplist/obtain_prop_dialog.plist", 
-                "resourceType": 1
-            }, 
             "old": {
                 "path": "Common/huode_dk.png", 
                 "plistFile": "", 
                 "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004397.png", 
+                "plistFile": "1newplist/obtain_prop_dialog.plist", 
+                "resourceType": 1
             }
         }, 
-        "5": {
-            "new": {
-                "path": "1004015.png", 
-                "plistFile": "1newplist/foreload.plist", 
-                "resourceType": 1
-            }, 
+        "3": {
             "old": {
-                "path": "Common/btn_gree.png", 
+                "path": "huanpi2/Common/gold_icon.png", 
                 "plistFile": "", 
                 "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004583.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
             }
         }, 
         "4": {
-            "new": {
-                "path": "res_fnt/1010015.fnt", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
             "old": {
                 "path": "font/yellow_num_hrl.fnt", 
                 "plistFile": "", 
                 "resourceType": 0
+            }, 
+            "new": {
+                "path": "res_fnt/1010015.fnt", 
+                "plistFile": "", 
+                "resourceType": 0
+            }
+        }, 
+        "5": {
+            "old": {
+                "path": "Common/btn_gree.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004015.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
             }
         }, 
         "6": {
-            "new": {
-                "path": "1004435.png", 
-                "plistFile": "1newplist/obtain_prop_dialog.plist", 
-                "resourceType": 1
-            }, 
             "old": {
                 "path": "friendRoom/img_queding.png", 
                 "plistFile": "", 
                 "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004435.png", 
+                "plistFile": "1newplist/obtain_prop_dialog.plist", 
+                "resourceType": 1
             }
         }
     }, 
     "D:/Python_FileDispose/newJson/hall.json": {
-        "56": {
-            "new": {
-                "path": "1004481.png", 
-                "plistFile": "1newplist/foreload.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/Common/transparent_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "54": {
-            "new": {
-                "path": "1004481.png", 
-                "plistFile": "1newplist/foreload.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/Common/transparent_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "42": {
-            "new": {
-                "path": "1004489.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/bindingPhone/btn_bindPhone.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "48": {
-            "new": {
-                "path": "1004481.png", 
-                "plistFile": "1newplist/foreload.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/Common/transparent_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "43": {
-            "new": {
-                "path": "1004587.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/Common/image_red_dot.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "60": {
-            "new": {
-                "path": "res_png/1004486.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "old": {
-                "path": "huanpi/newer/mask_hall.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "61": {
-            "new": {
-                "path": "1004770.png", 
-                "plistFile": "1newplist/foreload.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "newer/tips_point.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "62": {
-            "new": {
-                "path": "1004769.png", 
-                "plistFile": "1newplist/foreload.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "newer/tips_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "63": {
-            "new": {
-                "path": "1004768.png", 
-                "plistFile": "1newplist/foreload.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "newer/btn_over.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "64": {
-            "new": {
-                "path": "real_res/1004606.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "old": {
-                "path": "huanpi2/Common/MAHJONG GAME.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "49": {
-            "new": {
-                "path": "1004656.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main/btn_mail.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "52": {
-            "new": {
-                "path": "1004481.png", 
-                "plistFile": "1newplist/foreload.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/Common/transparent_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "53": {
-            "new": {
-                "path": "1004682.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/icon_back.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "24": {
-            "new": {
-                "path": "1004674.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/btn_join.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "25": {
-            "new": {
-                "path": "1004745.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "main/btn_match1.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "26": {
-            "new": {
-                "path": "1004746.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "main/btn_match2.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "27": {
-            "new": {
-                "path": "1004747.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "main/btn_newer.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "20": {
-            "new": {
-                "path": "1004696.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/img_notice_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "21": {
-            "new": {
-                "path": "1004671.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/btn_create.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "22": {
-            "new": {
-                "path": "1004658.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main/diamound_free.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "23": {
-            "new": {
-                "path": "1004653.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main/btn_club.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "46": {
-            "new": {
-                "path": "1004481.png", 
-                "plistFile": "1newplist/foreload.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/Common/transparent_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "47": {
-            "new": {
-                "path": "1004660.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main/icon_rule.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "44": {
-            "new": {
-                "path": "1004481.png", 
-                "plistFile": "1newplist/foreload.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/Common/transparent_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "45": {
-            "new": {
-                "path": "1004657.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main/btn_setting.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "28": {
-            "new": {
-                "path": "1004691.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
+        "0": {
             "old": {
                 "path": "huanpi2/main_portrait/img_btn_subbg.png", 
                 "plistFile": "", 
                 "resourceType": 0
-            }
-        }, 
-        "29": {
+            }, 
             "new": {
-                "path": "1004676.png", 
+                "path": "1004691.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/btn_more.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "40": {
-            "new": {
-                "path": "1004654.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main/btn_free.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "41": {
-            "new": {
-                "path": "1004489.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/bindingPhone/btn_bindPhone.png", 
-                "plistFile": "", 
-                "resourceType": 0
             }
         }, 
         "1": {
-            "new": {
-                "path": "1004741.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
             "old": {
                 "path": "main/ad01.png", 
                 "plistFile": "", 
                 "resourceType": 0
-            }
-        }, 
-        "0": {
+            }, 
             "new": {
-                "path": "1004691.png", 
+                "path": "1004741.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
-            }, 
+            }
+        }, 
+        "2": {
             "old": {
-                "path": "huanpi2/main_portrait/img_btn_subbg.png", 
+                "path": "huanpi2/main_portrait/bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "res_png/1004666.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "3": {
-            "new": {
-                "path": "1004694.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
             "old": {
                 "path": "huanpi2/main_portrait/img_info.png", 
                 "plistFile": "", 
                 "resourceType": 0
-            }
-        }, 
-        "2": {
-            "new": {
-                "path": "res_png/1004666.png", 
-                "plistFile": "", 
-                "resourceType": 0
             }, 
-            "old": {
-                "path": "huanpi2/main_portrait/bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "5": {
             "new": {
-                "path": "1004743.png", 
+                "path": "1004694.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
-            }, 
-            "old": {
-                "path": "main/btn_add.png", 
-                "plistFile": "", 
-                "resourceType": 0
             }
         }, 
         "4": {
-            "new": {
-                "path": "1004754.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
             "old": {
                 "path": "main/img_money_bg.png", 
                 "plistFile": "", 
                 "resourceType": 0
-            }
-        }, 
-        "7": {
+            }, 
             "new": {
-                "path": "1004659.png", 
+                "path": "1004754.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
-            }, 
+            }
+        }, 
+        "5": {
             "old": {
-                "path": "huanpi2/main/head_bg.png", 
+                "path": "main/btn_add.png", 
                 "plistFile": "", 
                 "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004743.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
             }
         }, 
         "6": {
-            "new": {
-                "path": "1004750.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
             "old": {
                 "path": "main/img_coin.png", 
                 "plistFile": "", 
                 "resourceType": 0
-            }
-        }, 
-        "9": {
+            }, 
             "new": {
-                "path": "1004688.png", 
+                "path": "1004750.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
-            }, 
+            }
+        }, 
+        "7": {
             "old": {
-                "path": "huanpi2/main_portrait/icon_fg.png", 
+                "path": "huanpi2/main/head_bg.png", 
                 "plistFile": "", 
                 "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004659.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
             }
         }, 
         "8": {
-            "new": {
-                "path": "1004687.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
             "old": {
                 "path": "huanpi2/main_portrait/icon_default.png", 
                 "plistFile": "", 
                 "resourceType": 0
-            }
-        }, 
-        "51": {
+            }, 
             "new": {
-                "path": "1004487.png", 
+                "path": "1004687.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/bindingPhone/btn_accountManage.png", 
-                "plistFile": "", 
-                "resourceType": 0
             }
         }, 
-        "39": {
-            "new": {
-                "path": "1004683.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
+        "9": {
             "old": {
-                "path": "huanpi2/main_portrait/icon_box.png", 
+                "path": "huanpi2/main_portrait/icon_fg.png", 
                 "plistFile": "", 
                 "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004688.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "10": {
+            "old": {
+                "path": "huanpi2/main/TAG1.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004663.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "11": {
+            "old": {
+                "path": "huanpi2/main/img_shopbg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004661.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "12": {
+            "old": {
+                "path": "huanpi2/Common/transparent_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004481.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "13": {
+            "old": {
+                "path": "huanpi2/main_portrait/img_diamond_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004693.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "14": {
+            "old": {
+                "path": "huanpi2/main_portrait/img_diamond_add.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004692.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "15": {
+            "old": {
+                "path": "huanpi2/main_portrait/img_diamond_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004693.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "16": {
+            "old": {
+                "path": "huanpi2/Common/gold_icon.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004583.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "17": {
+            "old": {
+                "path": "huanpi2/main_portrait/btn_record.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004679.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "18": {
+            "old": {
+                "path": "huanpi2/main_portrait/img_btn_share.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004690.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "19": {
+            "old": {
+                "path": "huanpi2/main_portrait/img_notice_line.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004697.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "20": {
+            "old": {
+                "path": "huanpi2/main_portrait/img_notice_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004696.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "21": {
+            "old": {
+                "path": "huanpi2/main_portrait/btn_create.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004671.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "22": {
+            "old": {
+                "path": "huanpi2/main/diamound_free.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004658.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "23": {
+            "old": {
+                "path": "huanpi2/main/btn_club.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004653.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "24": {
+            "old": {
+                "path": "huanpi2/main_portrait/btn_join.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004674.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "25": {
+            "old": {
+                "path": "main/btn_match1.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004745.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "26": {
+            "old": {
+                "path": "main/btn_match2.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004746.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "27": {
+            "old": {
+                "path": "main/btn_newer.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004747.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "28": {
+            "old": {
+                "path": "huanpi2/main_portrait/img_btn_subbg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004691.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "29": {
+            "old": {
+                "path": "huanpi2/main_portrait/btn_more.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004676.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "30": {
+            "old": {
+                "path": "huanpi2/main_portrait/btn_exchange.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004672.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "31": {
+            "old": {
+                "path": "huanpi2/main_portrait/btn_activity.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004668.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "32": {
+            "old": {
+                "path": "huanpi2/main_portrait/btn_bag.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004669.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "33": {
+            "old": {
+                "path": "huanpi2/main_portrait/btn_recive.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004678.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "34": {
+            "old": {
+                "path": "main/taskicon.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004765.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "35": {
+            "old": {
+                "path": "huanpi2/main_portrait/bth_cion_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004667.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "36": {
+            "old": {
+                "path": "huanpi2/main_portrait/btn_cion_img.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004670.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "37": {
+            "old": {
+                "path": "huanpi2/main_portrait/bth_cion_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004667.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
             }
         }, 
         "38": {
+            "old": {
+                "path": "huanpi2/main_portrait/btn_match_img.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
             "new": {
                 "path": "1004675.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
-            }, 
+            }
+        }, 
+        "39": {
             "old": {
-                "path": "huanpi2/main_portrait/btn_match_img.png", 
+                "path": "huanpi2/main_portrait/icon_box.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004683.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "40": {
+            "old": {
+                "path": "huanpi2/main/btn_free.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004654.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "41": {
+            "old": {
+                "path": "huanpi2/bindingPhone/btn_bindPhone.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004489.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "42": {
+            "old": {
+                "path": "huanpi2/bindingPhone/btn_bindPhone.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004489.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "43": {
+            "old": {
+                "path": "huanpi2/Common/image_red_dot.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004587.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "44": {
+            "old": {
+                "path": "huanpi2/Common/transparent_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004481.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "45": {
+            "old": {
+                "path": "huanpi2/main/btn_setting.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004657.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "46": {
+            "old": {
+                "path": "huanpi2/Common/transparent_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004481.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "47": {
+            "old": {
+                "path": "huanpi2/main/icon_rule.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004660.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "48": {
+            "old": {
+                "path": "huanpi2/Common/transparent_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004481.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "49": {
+            "old": {
+                "path": "huanpi2/main/btn_mail.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004656.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "50": {
+            "old": {
+                "path": "huanpi2/Common/transparent_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004481.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "51": {
+            "old": {
+                "path": "huanpi2/bindingPhone/btn_accountManage.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004487.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "52": {
+            "old": {
+                "path": "huanpi2/Common/transparent_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004481.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "53": {
+            "old": {
+                "path": "huanpi2/main_portrait/icon_back.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004682.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "54": {
+            "old": {
+                "path": "huanpi2/Common/transparent_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004481.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "55": {
+            "old": {
+                "path": "huanpi2/main_portrait/icon_customer.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004685.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "56": {
+            "old": {
+                "path": "huanpi2/Common/transparent_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004481.png", 
+                "plistFile": "1newplist/foreload.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "57": {
+            "old": {
+                "path": "huanpi2/main_portrait/icon_notice.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "1004689.png", 
+                "plistFile": "1newplist/hall.plist", 
+                "resourceType": 1
+            }
+        }, 
+        "58": {
+            "old": {
+                "path": "huanpi2/main_portrait/img_more_bg.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "res_png/1004695.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
         "59": {
-            "new": {
-                "path": "1004761.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
             "old": {
                 "path": "main/pvpMatch.png", 
                 "plistFile": "", 
                 "resourceType": 0
-            }
-        }, 
-        "58": {
-            "new": {
-                "path": "res_png/1004695.png", 
-                "plistFile": "", 
-                "resourceType": 0
             }, 
-            "old": {
-                "path": "huanpi2/main_portrait/img_more_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "11": {
             "new": {
-                "path": "1004661.png", 
+                "path": "1004761.png", 
                 "plistFile": "1newplist/hall.plist", 
                 "resourceType": 1
-            }, 
+            }
+        }, 
+        "60": {
             "old": {
-                "path": "huanpi2/main/img_shopbg.png", 
+                "path": "huanpi/newer/mask_hall.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "res_png/1004486.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
         }, 
-        "10": {
-            "new": {
-                "path": "1004663.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
+        "61": {
             "old": {
-                "path": "huanpi2/main/TAG1.png", 
+                "path": "newer/tips_point.png", 
                 "plistFile": "", 
                 "resourceType": 0
-            }
-        }, 
-        "13": {
-            "new": {
-                "path": "1004693.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
             }, 
-            "old": {
-                "path": "huanpi2/main_portrait/img_diamond_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "12": {
             "new": {
-                "path": "1004481.png", 
+                "path": "1004770.png", 
                 "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/Common/transparent_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
             }
         }, 
-        "15": {
-            "new": {
-                "path": "1004693.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
+        "62": {
             "old": {
-                "path": "huanpi2/main_portrait/img_diamond_bg.png", 
+                "path": "newer/tips_bg.png", 
                 "plistFile": "", 
                 "resourceType": 0
-            }
-        }, 
-        "14": {
-            "new": {
-                "path": "1004692.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
             }, 
-            "old": {
-                "path": "huanpi2/main_portrait/img_diamond_add.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "17": {
             "new": {
-                "path": "1004679.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/btn_record.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "16": {
-            "new": {
-                "path": "1004583.png", 
+                "path": "1004769.png", 
                 "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/Common/gold_icon.png", 
-                "plistFile": "", 
-                "resourceType": 0
             }
         }, 
-        "19": {
-            "new": {
-                "path": "1004697.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
+        "63": {
             "old": {
-                "path": "huanpi2/main_portrait/img_notice_line.png", 
+                "path": "newer/btn_over.png", 
                 "plistFile": "", 
                 "resourceType": 0
-            }
-        }, 
-        "18": {
-            "new": {
-                "path": "1004690.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
             }, 
-            "old": {
-                "path": "huanpi2/main_portrait/img_btn_share.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "31": {
             "new": {
-                "path": "1004668.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/btn_activity.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "30": {
-            "new": {
-                "path": "1004672.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/btn_exchange.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "37": {
-            "new": {
-                "path": "1004667.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/bth_cion_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "36": {
-            "new": {
-                "path": "1004670.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/btn_cion_img.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "35": {
-            "new": {
-                "path": "1004667.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/bth_cion_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "34": {
-            "new": {
-                "path": "1004765.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "main/taskicon.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "33": {
-            "new": {
-                "path": "1004678.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/btn_recive.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "55": {
-            "new": {
-                "path": "1004685.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/icon_customer.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "32": {
-            "new": {
-                "path": "1004669.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/btn_bag.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "57": {
-            "new": {
-                "path": "1004689.png", 
-                "plistFile": "1newplist/hall.plist", 
-                "resourceType": 1
-            }, 
-            "old": {
-                "path": "huanpi2/main_portrait/icon_notice.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }
-        }, 
-        "50": {
-            "new": {
-                "path": "1004481.png", 
+                "path": "1004768.png", 
                 "plistFile": "1newplist/foreload.plist", 
                 "resourceType": 1
-            }, 
+            }
+        }, 
+        "64": {
             "old": {
-                "path": "huanpi2/Common/transparent_bg.png", 
+                "path": "huanpi2/Common/MAHJONG GAME.png", 
+                "plistFile": "", 
+                "resourceType": 0
+            }, 
+            "new": {
+                "path": "real_res/1004606.png", 
                 "plistFile": "", 
                 "resourceType": 0
             }
