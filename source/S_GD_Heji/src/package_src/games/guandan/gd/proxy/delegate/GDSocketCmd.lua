@@ -1,0 +1,58 @@
+local GDSocketCmd = require("package_src.games.guandan.gdcommon.data.PokerCommonSocketCmd")
+
+GDSocketCmd.CODE_REC_GAMESTART = 32012;  --开始
+GDSocketCmd.CODE_REC_JINGONG = 32011;
+GDSocketCmd.CODE_SEND_JINGONG = 32011; ---进贡
+-- GDSocketCmd.CODE_REC_DOUBLE = 32013;   --加倍
+-- GDSocketCmd.CODE_SEND_DOUBLE = 32013;	
+GDSocketCmd.CODE_REC_HUANGONG = 32014;   ---还贡
+GDSocketCmd.CODE_SEND_HUANGONG = 32014;
+-- GDSocketCmd.CODE_REC_MINGPAI = 32015;	--明牌
+-- GDSocketCmd.CODE_SEND_MINGPAI = 32015;
+GDSocketCmd.CODE_REC_STARTPLAY = 32003;
+GDSocketCmd.CODE_REC_OUTCARD = 32010; --出牌
+GDSocketCmd.CODE_SEND_OUTCARD = 32010;
+GDSocketCmd.CODE_REC_GAMEOVER = 32020; ---单局结束
+GDSocketCmd.CODE_REC_RECONNECT = 32016; --重连恢复对局
+GDSocketCmd.CODE_UPDATE_CASH = 30002;
+
+--注册委托监听消息
+--队列消息
+GDSocketCmd.queuecmd = {
+	GDSocketCmd.CODE_REC_GAMESTART,
+	GDSocketCmd.CODE_REC_JINGONG,
+	GDSocketCmd.CODE_REC_HUANGONG,
+	-- GDSocketCmd.CODE_REC_DOUBLE,
+	GDSocketCmd.CODE_REC_STARTPLAY,
+	GDSocketCmd.CODE_REC_OUTCARD,
+	GDSocketCmd.CODE_REC_GAMEOVER,
+	GDSocketCmd.CODE_REC_RECONNECT,
+	--GDSocketCmd.CODE_REC_TOTAL_GAME_OVER,---全局结束 22009
+}
+
+--即时消息
+GDSocketCmd.instantcmd = {
+	GDSocketCmd.CODE_REC_ExitRoom,
+	GDSocketCmd.CODE_REC_RESUMEGAME, --TODO 这条消息不知道是否存在
+	-- GDSocketCmd.CODE_USERDATA_POINT,
+	GDSocketCmd.CODE_UPDATE_CASH,
+	GDSocketCmd.CODE_TUOGUAN,
+	GDSocketCmd.CODE_DEFAULT_CHAT,
+	GDSocketCmd.CODE_USER_CHAT,
+	-- GDSocketCmd.CODE_REC_PAOMADENG,
+	-- GDSocketCmd.CODE_REC_GETORDER,
+	-- GDSocketCmd.CODE_REC_CHARGERESULT,
+	GDSocketCmd.CODE_REC_POKERDIALOG,
+	GDSocketCmd.CODE_FRIEND_ROOM_LEAVE,
+	GDSocketCmd.CODE_RECV_FRIEND_ROOM_END, ---22010; --邀请房结束
+	GDSocketCmd.CODE_REC_SAY_CHAT,
+	GDSocketCmd.CODE_REC_ENTERROOM,
+	GDSocketCmd.CODE_REC_CONTINUE,
+	GDSocketCmd.CODE_REC_BROCAST, --通知
+	GDSocketCmd.CODE_RECV_FRIEND_ROOM_INFO,  --22006邀请房信息
+	GDSocketCmd.CODE_REC_TOTAL_GAME_OVER,---全局结束 22009
+	GDSocketCmd.CODE_REC_LOCATION,
+	GDSocketCmd.CODE_PLAYER_ROOM_STATE,	-- 房间中用于接收房间被解散,退出到大厅的消息
+}
+
+return GDSocketCmd

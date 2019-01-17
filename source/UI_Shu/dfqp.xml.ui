@@ -7,8 +7,7 @@
   <JsonFileName>dfqp.json</JsonFileName>
   <JsonFolder>D:\Svn_2d\UI_Shu\Json</JsonFolder>
   <JsonList>
-    <string>1lay_test.json</string>
-    <string>1output.json</string>
+    <string>hall.json</string>
   </JsonList>
   <CanvasSize>
     <Width>720</Width>
@@ -17,10 +16,8 @@
   <filePath>D:\Svn_2d\UI_Shu\dfqp.xml.ui</filePath>
   <ProjectType>UIProject</ProjectType>
   <ResRelativePath />
-  <imageFileList>
-    <string>abbb/test.plist</string>
-  </imageFileList>
+  <imageFileList />
   <imagePngList />
   <JsonSuffix>.json</JsonSuffix>
-  <CurrentUIJson>1lay_test.json</CurrentUIJson>
+  <CurrentUIJson />
 </UIProject>

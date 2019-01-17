@@ -1,7 +1,7 @@
 
 # -*- coding: UTF-8 -*-
-TEST = False
-# TEST = True
+# TEST = False
+TEST = True
 #
 import os
 import json
@@ -38,5 +38,5 @@ if not TEST:
     # 整理日志和资源
     tr = tidyRes.tidyRes()
 else:
-    print ""
-    # comFun.addDataToFile("./aaa.txt" , 77122 , "22221")
+    comFun.deleteDirByStr(r".svn", r"D:\Python_FileDispose\source")
+    # shutil.copytree(r"D:\Svn_2d\UI_Shu", r"D:\Python_FileDispose\source\UI_Shu")

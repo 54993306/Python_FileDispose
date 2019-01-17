@@ -10,7 +10,20 @@
   "designHeight": 1280,
   "designWidth": 720,
   "textures": [],
-  "texturesPng": [],
+  "texturesPng": [
+    "huanpi2/Common/panel_m.png",
+    "huanpi2/Common/btn_x.png",
+    "huanpi2/Common/panel_black_2.png",
+    "huanpi2/Common/btn_gree.png",
+    "huanpi2/Common/diamond_L.png",
+    "huanpi2/bindingPhone/btn_sure.png",
+    "huanpi2/Common/yuanbao.png",
+    "huanpi2/Common/btn_orange.png",
+    "huanpi2/Common/btn_unchecked.png",
+    "huanpi2/bindingPhone/red_1.png",
+    "huanpi2/Common/btn_yellow.png",
+    "huanpi2/bindingPhone/btn_qdbd.png"
+  ],
   "version": "1.6.0.0",
   "widgetTree": {
     "classname": "Panel",
@@ -2888,7 +2901,7 @@
                       "maxLengthEnable": false,
                       "passwordEnable": false,
                       "passwordStyleText": "*",
-                      "placeHolder": "6-14位数字与字母组合",
+                      "placeHolder": "请输入6-14位数字或字母",
                       "text": ""
                     }
                   },
@@ -3167,7 +3180,7 @@
                       "maxLengthEnable": false,
                       "passwordEnable": false,
                       "passwordStyleText": "*",
-                      "placeHolder": "请输入密码",
+                      "placeHolder": "请再次输入密码",
                       "text": ""
                     }
                   },
@@ -3588,7 +3601,7 @@
               "tag": 56265,
               "touchAble": false,
               "useMergedTexture": false,
-              "visible": false,
+              "visible": true,
               "width": 720,
               "x": 0,
               "y": 100,

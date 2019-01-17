@@ -129,4 +129,16 @@
     <Project>1output</Project>
     <GuidesList />
   </GuidesProject>
+  <GuidesProject>
+    <Project>hall</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>infoNode</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>obtain_prop_dialog</Project>
+    <GuidesList />
+  </GuidesProject>
 </ArrayOfGuidesProject>

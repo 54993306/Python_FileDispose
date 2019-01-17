@@ -1,0 +1,854 @@
+local tConfigSet={} 
+
+tConfigSet.ruleList = {
+[1]={
+	["id"]=1, 
+	["data"]="游戏规则", 
+	["isTitle"]=1, 
+},
+[2]={
+	["id"]=2, 
+	["data"]="1.牌数:掼蛋会使用两副完整的扑克牌，共108张。", 
+	["isTitle"]=0, 
+},
+[3]={
+	["id"]=3, 
+	["data"]="\n2.发牌:第一把：系统随机选择一家优先出牌;第二把及之后：如果末游进贡了，则末游出牌，如果末游抗贡，则头游出牌，双贡情况下，由进贡牌大的玩家先出牌，如果两张进贡牌一样时，则进贡给头游的玩家先出牌,如果抗贡了，则头游先出牌。", 
+	["isTitle"]=0, 
+},
+[4]={
+	["id"]=4, 
+	["data"]="玩法", 
+	["isTitle"]=1, 
+},
+[5]={
+	["id"]=5, 
+	["data"]="1.级牌：初局开始时，双方的级牌都是2，在连续对局中，每轮获胜方的主牌都发生变化，由2升级到A结束，每局的级牌都是头游玩家一方的级数决定的。", 
+	["isTitle"]=0, 
+},
+[6]={
+	["id"]=6, 
+	["data"]="\n2.单张：单个牌，可以是手中任意一张牌。", 
+	["isTitle"]=0, 
+},
+[7]={
+	["id"]=7, 
+	["data"]="\n3.对子：两张牌点数相同的牌，花色可以不同。", 
+	["isTitle"]=0, 
+},
+[8]={
+	["id"]=8, 
+	["data"]="\n4.三张牌:三张牌点数相同的牌，花色可以不同。", 
+	["isTitle"]=0, 
+},
+[9]={
+	["id"]=9, 
+	["data"]="\n5.三带对：三张牌点数相同的牌带一对（两张牌点数相同的牌），花色可以不同。", 
+	["isTitle"]=0, 
+},
+[10]={
+	["id"]=10, 
+	["data"]="\n6.木板（三连对）：三个相连的对子，仅限三对，不可超过三对（如：334455,88991010，最大的是QQKKAA，最小的是AA2233），不包括双王，不分花色，两连对不可出。", 
+	["isTitle"]=0, 
+},
+[11]={
+	["id"]=11, 
+	["data"]="\n7.钢板：两个连续点数相同的三张牌，不可超过两个（如：222333,666777，最大的是KKKAAA，最小的是AAA222）。", 
+	["isTitle"]=0, 
+},
+[12]={
+	["id"]=12, 
+	["data"]="\n8.顺子：五张连续的单牌，仅限五张（最大的是10 J Q K A，最小的是A 2 3 4 5），不包括双王，不限花色。", 
+	["isTitle"]=0, 
+},
+[13]={
+	["id"]=13, 
+	["data"]="\n9.同花顺：相同花色的连续五张牌，仅限五张（最大的是10 J Q K A，最小的是A 2 3 4 5），不包括双王。", 
+	["isTitle"]=0, 
+},
+[14]={
+	["id"]=14, 
+	["data"]="\n10.炸弹：四张及四张以上牌点数相同的牌（四张牌点相同的牌，五张牌点相同的牌，六张牌点相同的牌，七张牌点相同的牌，八张牌点相同的牌），点数大的炸弹可以打点数小的炸弹，张数多的炸弹可以打张数少的炸。\n注：主牌有两张红桃称为逢人配（任意配，除双王外可以配任何牌，任何花色），如果和八张点数相同的牌，可以配成十张点数相同的牌。", 
+	["isTitle"]=0, 
+},
+[15]={
+	["id"]=15, 
+	["data"]="\n11.天王炸弹：两个大王，两个小王，是最大的牌，什么牌都可以打。", 
+	["isTitle"]=0, 
+},
+[16]={
+	["id"]=16, 
+	["data"]="特殊玩法", 
+	["isTitle"]=1, 
+},
+[17]={
+	["id"]=17, 
+	["data"]="1.逢人配：配牌是当前等级的红桃牌，比如级牌是10。2，3，4，红桃10，6可以组成2，3，4，5，6的顺子，也可以任意组成除大王，小王外的炸弹以及同花顺等任意牌。", 
+	["isTitle"]=0, 
+},
+[18]={
+	["id"]=18, 
+	["data"]="\n2.双上：玩家和对家最终是前两名。", 
+	["isTitle"]=0, 
+},
+[19]={
+	["id"]=19, 
+	["data"]="\n3.双下：玩家和对家最终是最后两名。", 
+	["isTitle"]=0, 
+},
+[20]={
+	["id"]=20, 
+	["data"]="\n4.单上：头游和头游对家是三游。", 
+	["isTitle"]=0, 
+},
+[21]={
+	["id"]=21, 
+	["data"]="\n5.单下：头游和头游对家是末游。", 
+	["isTitle"]=0, 
+},
+[22]={
+	["id"]=22, 
+	["data"]="\n6.头游：就是第一名。", 
+	["isTitle"]=0, 
+},
+[23]={
+	["id"]=23, 
+	["data"]="\n7.末游：就是最后一名。", 
+	["isTitle"]=0, 
+},
+[24]={
+	["id"]=24, 
+	["data"]="\n8.接风：当某玩家最后一手牌打出后，如果剩余玩家都放弃，则接下来是此玩家的对家出牌。", 
+	["isTitle"]=0, 
+},
+[25]={
+	["id"]=25, 
+	["data"]="\n9.进贡：把手中最大的一张牌给另外一个玩家（有王给王，无王给级牌，但是主牌红桃牌（逢人配）不用给，无王无级牌给最大数值的牌。）\n单下和单上时：末游给头游进贡一张除主牌红桃外最大的牌，头游还一张不大于10的牌，由末游者先打牌，但如果抗贡，则头游先打牌。\n双下时：两个双下玩家各	给两个双上玩家进贡，头游玩家拿最大的进贡牌，如果两张进贡牌大小一样时，则各自进贡给上家。", 
+	["isTitle"]=0, 
+},
+[26]={
+	["id"]=26, 
+	["data"]="\n10.还贡：收到进贡者的牌后，需要向进贡者归还一张牌（牌的数值不能大于10，只能给2,3,4,5,6,7,8,9（级牌除外）。", 
+	["isTitle"]=0, 
+},
+[27]={
+	["id"]=27, 
+	["data"]="\n11.抗贡：需要进贡时，因为手上的牌达到条件而不需要进行进贡（需要进贡方手里有两个大王时可以抗贡，当玩家和玩家对家均是进贡方时，两个玩家手里牌共有两个大王也可以抗贡）。", 
+	["isTitle"]=0, 
+},
+[28]={
+	["id"]=28, 
+	["data"]="结算", 
+	["isTitle"]=1, 
+},
+[29]={
+	["id"]=29, 
+	["data"]="不升级场算分方法:\n\n双上（头游，对家二游）：头游＋3分，二游＋3分，三游－3分，末游－3分\n\n单上（头游，对家三游）：头游＋2分，二游－2分，三游＋2分，末游－2分\n\n单下（头游，对家末游）：头游＋1分,二游－1分，三游－1分，末游＋1分", 
+	["isTitle"]=0, 
+},
+[30]={
+	["id"]=30, 
+	["data"]="\n升级场算分方法:\n\n双上：头游玩家一方升3级\n\n单上：头游玩家一方升2级\n\n单下：头游玩家一方升1级", 
+	["isTitle"]=0, 
+},
+}
+ tConfigSet.musicList = {
+["btn"]={
+	["name"]="btn", 
+	["path"]="button_click", 
+},
+["cardClick"]={
+	["name"]="cardClick", 
+	["path"]="card_click", 
+},
+["fapai"]={
+	["name"]="fapai", 
+	["path"]="fapai", 
+},
+["baojin"]={
+	["name"]="baojin", 
+	["path"]="baojin", 
+},
+["double"]={
+	["name"]="double", 
+	["path"]="double", 
+},
+["lose"]={
+	["name"]="lose", 
+	["path"]="lose", 
+},
+["spring"]={
+	["name"]="spring", 
+	["path"]="spring", 
+},
+["win"]={
+	["name"]="win", 
+	["path"]="win", 
+},
+["gold"]={
+	["name"]="gold", 
+	["path"]="gold", 
+},
+["card_out"]={
+	["name"]="card_out", 
+	["path"]="card_out", 
+},
+["gang_ban"]={
+	["name"]="gang_ban", 
+	["path"]="gang_ban", 
+},
+["jie_feng"]={
+	["name"]="jie_feng", 
+	["path"]="jie_feng", 
+},
+["kang_gong"]={
+	["name"]="kang_gong", 
+	["path"]="kang_gong", 
+},
+["mu_ban"]={
+	["name"]="mu_ban", 
+	["path"]="mu_ban", 
+},
+["rank_first"]={
+	["name"]="rank_first", 
+	["path"]="rank_first", 
+},
+["rank_second"]={
+	["name"]="rank_second", 
+	["path"]="rank_second", 
+},
+["danzhang_30"]={
+	["name"]="danzhang_30", 
+	["path"]="dub/danzhang_30", 
+},
+["danzhang_40"]={
+	["name"]="danzhang_40", 
+	["path"]="dub/danzhang_40", 
+},
+["danzhang_50"]={
+	["name"]="danzhang_50", 
+	["path"]="dub/danzhang_50", 
+},
+["danzhang_60"]={
+	["name"]="danzhang_60", 
+	["path"]="dub/danzhang_60", 
+},
+["danzhang_70"]={
+	["name"]="danzhang_70", 
+	["path"]="dub/danzhang_70", 
+},
+["danzhang_80"]={
+	["name"]="danzhang_80", 
+	["path"]="dub/danzhang_80", 
+},
+["danzhang_90"]={
+	["name"]="danzhang_90", 
+	["path"]="dub/danzhang_90", 
+},
+["danzhang_100"]={
+	["name"]="danzhang_100", 
+	["path"]="dub/danzhang_100", 
+},
+["danzhang_110"]={
+	["name"]="danzhang_110", 
+	["path"]="dub/danzhang_110", 
+},
+["danzhang_120"]={
+	["name"]="danzhang_120", 
+	["path"]="dub/danzhang_120", 
+},
+["danzhang_130"]={
+	["name"]="danzhang_130", 
+	["path"]="dub/danzhang_130", 
+},
+["danzhang_140"]={
+	["name"]="danzhang_140", 
+	["path"]="dub/danzhang_140", 
+},
+["danzhang_150"]={
+	["name"]="danzhang_150", 
+	["path"]="dub/danzhang_150", 
+},
+["danzhang_290"]={
+	["name"]="danzhang_290", 
+	["path"]="dub/danzhang_290", 
+},
+["danzhang_300"]={
+	["name"]="danzhang_300", 
+	["path"]="dub/danzhang_300", 
+},
+["dui_30"]={
+	["name"]="dui_30", 
+	["path"]="dub/dui_30", 
+},
+["dui_40"]={
+	["name"]="dui_40", 
+	["path"]="dub/dui_40", 
+},
+["dui_50"]={
+	["name"]="dui_50", 
+	["path"]="dub/dui_50", 
+},
+["dui_60"]={
+	["name"]="dui_60", 
+	["path"]="dub/dui_60", 
+},
+["dui_70"]={
+	["name"]="dui_70", 
+	["path"]="dub/dui_70", 
+},
+["dui_80"]={
+	["name"]="dui_80", 
+	["path"]="dub/dui_80", 
+},
+["dui_90"]={
+	["name"]="dui_90", 
+	["path"]="dub/dui_90", 
+},
+["dui_100"]={
+	["name"]="dui_100", 
+	["path"]="dub/dui_100", 
+},
+["dui_110"]={
+	["name"]="dui_110", 
+	["path"]="dub/dui_110", 
+},
+["dui_120"]={
+	["name"]="dui_120", 
+	["path"]="dub/dui_120", 
+},
+["dui_130"]={
+	["name"]="dui_130", 
+	["path"]="dub/dui_130", 
+},
+["dui_140"]={
+	["name"]="dui_140", 
+	["path"]="dub/dui_140", 
+},
+["dui_150"]={
+	["name"]="dui_150", 
+	["path"]="dub/dui_150", 
+},
+["dui_290"]={
+	["name"]="dui_290", 
+	["path"]="dub/dui_290", 
+},
+["dui_300"]={
+	["name"]="dui_300", 
+	["path"]="dub/dui_300", 
+},
+["sanzhang_30"]={
+	["name"]="sanzhang_30", 
+	["path"]="dub/sanzhang_30", 
+},
+["sanzhang_40"]={
+	["name"]="sanzhang_40", 
+	["path"]="dub/sanzhang_40", 
+},
+["sanzhang_50"]={
+	["name"]="sanzhang_50", 
+	["path"]="dub/sanzhang_50", 
+},
+["sanzhang_60"]={
+	["name"]="sanzhang_60", 
+	["path"]="dub/sanzhang_60", 
+},
+["sanzhang_70"]={
+	["name"]="sanzhang_70", 
+	["path"]="dub/sanzhang_70", 
+},
+["sanzhang_80"]={
+	["name"]="sanzhang_80", 
+	["path"]="dub/sanzhang_80", 
+},
+["sanzhang_90"]={
+	["name"]="sanzhang_90", 
+	["path"]="dub/sanzhang_90", 
+},
+["sanzhang_100"]={
+	["name"]="sanzhang_100", 
+	["path"]="dub/sanzhang_100", 
+},
+["sanzhang_110"]={
+	["name"]="sanzhang_110", 
+	["path"]="dub/sanzhang_110", 
+},
+["sanzhang_120"]={
+	["name"]="sanzhang_120", 
+	["path"]="dub/sanzhang_120", 
+},
+["sanzhang_130"]={
+	["name"]="sanzhang_130", 
+	["path"]="dub/sanzhang_130", 
+},
+["sanzhang_140"]={
+	["name"]="sanzhang_140", 
+	["path"]="dub/sanzhang_140", 
+},
+["sanzhang_150"]={
+	["name"]="sanzhang_150", 
+	["path"]="dub/sanzhang_150", 
+},
+["ct_liandui0"]={
+	["name"]="ct_liandui0", 
+	["path"]="dub/ct_liandui0", 
+},
+["ct_shunzi0"]={
+	["name"]="ct_shunzi0", 
+	["path"]="dub/ct_shunzi0", 
+},
+["ct_sandaier20"]={
+	["name"]="ct_sandaier20", 
+	["path"]="dub/ct_sandaier20", 
+},
+["ct_zhadan10"]={
+	["name"]="ct_zhadan10", 
+	["path"]="dub/ct_zhadan10", 
+},
+["ct_zhadan20"]={
+	["name"]="ct_zhadan20", 
+	["path"]="dub/ct_zhadan20", 
+},
+["sister_bomb_0"]={
+	["name"]="sister_bomb_0", 
+	["path"]="dub/sister_bomb_0", 
+},
+["gang_ban_0"]={
+	["name"]="gang_ban_0", 
+	["path"]="dub/gang_ban_0", 
+},
+["jie_feng_0"]={
+	["name"]="jie_feng_0", 
+	["path"]="dub/jie_feng_0", 
+},
+["king_0"]={
+	["name"]="king_0", 
+	["path"]="dub/king_0", 
+},
+["mu_ban_0"]={
+	["name"]="mu_ban_0", 
+	["path"]="dub/mu_ban_0", 
+},
+["rank_first_0"]={
+	["name"]="rank_first_0", 
+	["path"]="dub/rank_first_0", 
+},
+["rank_second_0"]={
+	["name"]="rank_second_0", 
+	["path"]="dub/rank_second_0", 
+},
+["kang_gong_0"]={
+	["name"]="kang_gong_0", 
+	["path"]="dub/kang_gong_0", 
+},
+["huojian"]={
+	["name"]="huojian", 
+	["path"]="dub/huojian", 
+},
+["op_buchu10"]={
+	["name"]="op_buchu10", 
+	["path"]="dub/op_buchu10", 
+},
+["op_buchu20"]={
+	["name"]="op_buchu20", 
+	["path"]="dub/op_buchu20", 
+},
+["op_buchu30"]={
+	["name"]="op_buchu30", 
+	["path"]="dub/op_buchu30", 
+},
+["op_chu10"]={
+	["name"]="op_chu10", 
+	["path"]="dub/op_chu10", 
+},
+["op_chu20"]={
+	["name"]="op_chu20", 
+	["path"]="dub/op_chu20", 
+},
+["op_chu30"]={
+	["name"]="op_chu30", 
+	["path"]="dub/op_chu30", 
+},
+["danzhang_31"]={
+	["name"]="danzhang_31", 
+	["path"]="dub/danzhang_31", 
+},
+["danzhang_41"]={
+	["name"]="danzhang_41", 
+	["path"]="dub/danzhang_41", 
+},
+["danzhang_51"]={
+	["name"]="danzhang_51", 
+	["path"]="dub/danzhang_51", 
+},
+["danzhang_61"]={
+	["name"]="danzhang_61", 
+	["path"]="dub/danzhang_61", 
+},
+["danzhang_71"]={
+	["name"]="danzhang_71", 
+	["path"]="dub/danzhang_71", 
+},
+["danzhang_81"]={
+	["name"]="danzhang_81", 
+	["path"]="dub/danzhang_81", 
+},
+["danzhang_91"]={
+	["name"]="danzhang_91", 
+	["path"]="dub/danzhang_91", 
+},
+["danzhang_101"]={
+	["name"]="danzhang_101", 
+	["path"]="dub/danzhang_101", 
+},
+["danzhang_111"]={
+	["name"]="danzhang_111", 
+	["path"]="dub/danzhang_111", 
+},
+["danzhang_121"]={
+	["name"]="danzhang_121", 
+	["path"]="dub/danzhang_121", 
+},
+["danzhang_131"]={
+	["name"]="danzhang_131", 
+	["path"]="dub/danzhang_131", 
+},
+["danzhang_141"]={
+	["name"]="danzhang_141", 
+	["path"]="dub/danzhang_141", 
+},
+["danzhang_151"]={
+	["name"]="danzhang_151", 
+	["path"]="dub/danzhang_151", 
+},
+["danzhang_291"]={
+	["name"]="danzhang_291", 
+	["path"]="dub/danzhang_291", 
+},
+["danzhang_301"]={
+	["name"]="danzhang_301", 
+	["path"]="dub/danzhang_301", 
+},
+["dui_31"]={
+	["name"]="dui_31", 
+	["path"]="dub/dui_31", 
+},
+["dui_41"]={
+	["name"]="dui_41", 
+	["path"]="dub/dui_41", 
+},
+["dui_51"]={
+	["name"]="dui_51", 
+	["path"]="dub/dui_51", 
+},
+["dui_61"]={
+	["name"]="dui_61", 
+	["path"]="dub/dui_61", 
+},
+["dui_71"]={
+	["name"]="dui_71", 
+	["path"]="dub/dui_71", 
+},
+["dui_81"]={
+	["name"]="dui_81", 
+	["path"]="dub/dui_81", 
+},
+["dui_91"]={
+	["name"]="dui_91", 
+	["path"]="dub/dui_91", 
+},
+["dui_101"]={
+	["name"]="dui_101", 
+	["path"]="dub/dui_101", 
+},
+["dui_111"]={
+	["name"]="dui_111", 
+	["path"]="dub/dui_111", 
+},
+["dui_121"]={
+	["name"]="dui_121", 
+	["path"]="dub/dui_121", 
+},
+["dui_131"]={
+	["name"]="dui_131", 
+	["path"]="dub/dui_131", 
+},
+["dui_141"]={
+	["name"]="dui_141", 
+	["path"]="dub/dui_141", 
+},
+["dui_151"]={
+	["name"]="dui_151", 
+	["path"]="dub/dui_151", 
+},
+["dui_291"]={
+	["name"]="dui_291", 
+	["path"]="dub/dui_291", 
+},
+["dui_301"]={
+	["name"]="dui_301", 
+	["path"]="dub/dui_301", 
+},
+["sanzhang_31"]={
+	["name"]="sanzhang_31", 
+	["path"]="dub/sanzhang_31", 
+},
+["sanzhang_41"]={
+	["name"]="sanzhang_41", 
+	["path"]="dub/sanzhang_41", 
+},
+["sanzhang_51"]={
+	["name"]="sanzhang_51", 
+	["path"]="dub/sanzhang_51", 
+},
+["sanzhang_61"]={
+	["name"]="sanzhang_61", 
+	["path"]="dub/sanzhang_61", 
+},
+["sanzhang_71"]={
+	["name"]="sanzhang_71", 
+	["path"]="dub/sanzhang_71", 
+},
+["sanzhang_81"]={
+	["name"]="sanzhang_81", 
+	["path"]="dub/sanzhang_81", 
+},
+["sanzhang_91"]={
+	["name"]="sanzhang_91", 
+	["path"]="dub/sanzhang_91", 
+},
+["sanzhang_101"]={
+	["name"]="sanzhang_101", 
+	["path"]="dub/sanzhang_101", 
+},
+["sanzhang_111"]={
+	["name"]="sanzhang_111", 
+	["path"]="dub/sanzhang_111", 
+},
+["sanzhang_121"]={
+	["name"]="sanzhang_121", 
+	["path"]="dub/sanzhang_121", 
+},
+["sanzhang_131"]={
+	["name"]="sanzhang_131", 
+	["path"]="dub/sanzhang_131", 
+},
+["sanzhang_141"]={
+	["name"]="sanzhang_141", 
+	["path"]="dub/sanzhang_141", 
+},
+["sanzhang_151"]={
+	["name"]="sanzhang_151", 
+	["path"]="dub/sanzhang_151", 
+},
+["ct_liandui1"]={
+	["name"]="ct_liandui1", 
+	["path"]="dub/ct_liandui1", 
+},
+["ct_shunzi1"]={
+	["name"]="ct_shunzi1", 
+	["path"]="dub/ct_shunzi1", 
+},
+["ct_sandaier21"]={
+	["name"]="ct_sandaier21", 
+	["path"]="dub/ct_sandaier21", 
+},
+["ct_zhadan11"]={
+	["name"]="ct_zhadan11", 
+	["path"]="dub/ct_zhadan11", 
+},
+["ct_zhadan21"]={
+	["name"]="ct_zhadan21", 
+	["path"]="dub/ct_zhadan21", 
+},
+["gang_ban_1"]={
+	["name"]="gang_ban_1", 
+	["path"]="dub/gang_ban_1", 
+},
+["jie_feng_1"]={
+	["name"]="jie_feng_1", 
+	["path"]="dub/jie_feng_1", 
+},
+["king_1"]={
+	["name"]="king_1", 
+	["path"]="dub/king_1", 
+},
+["mu_ban_1"]={
+	["name"]="mu_ban_1", 
+	["path"]="dub/mu_ban_1", 
+},
+["rank_first_1"]={
+	["name"]="rank_first_1", 
+	["path"]="dub/rank_first_1", 
+},
+["rank_second_1"]={
+	["name"]="rank_second_1", 
+	["path"]="dub/rank_second_1", 
+},
+["sister_bomb_1"]={
+	["name"]="sister_bomb_1", 
+	["path"]="dub/sister_bomb_1", 
+},
+["kang_gong_1"]={
+	["name"]="kang_gong_1", 
+	["path"]="dub/kang_gong_1", 
+},
+["op_buchu11"]={
+	["name"]="op_buchu11", 
+	["path"]="dub/op_buchu11", 
+},
+["op_buchu21"]={
+	["name"]="op_buchu21", 
+	["path"]="dub/op_buchu21", 
+},
+["op_buchu31"]={
+	["name"]="op_buchu31", 
+	["path"]="dub/op_buchu31", 
+},
+["op_chu11"]={
+	["name"]="op_chu11", 
+	["path"]="dub/op_chu11", 
+},
+["op_chu21"]={
+	["name"]="op_chu21", 
+	["path"]="dub/op_chu21", 
+},
+["op_chu31"]={
+	["name"]="op_chu31", 
+	["path"]="dub/op_chu31", 
+},
+["ddzchat_txt10"]={
+	["name"]="ddzchat_txt10", 
+	["path"]="dub/ddzchat_txt10", 
+},
+["ddzchat_txt20"]={
+	["name"]="ddzchat_txt20", 
+	["path"]="dub/ddzchat_txt20", 
+},
+["ddzchat_txt30"]={
+	["name"]="ddzchat_txt30", 
+	["path"]="dub/ddzchat_txt30", 
+},
+["ddzchat_txt40"]={
+	["name"]="ddzchat_txt40", 
+	["path"]="dub/ddzchat_txt40", 
+},
+["ddzchat_txt50"]={
+	["name"]="ddzchat_txt50", 
+	["path"]="dub/ddzchat_txt50", 
+},
+["ddzchat_txt60"]={
+	["name"]="ddzchat_txt60", 
+	["path"]="dub/ddzchat_txt60", 
+},
+["ddzchat_txt70"]={
+	["name"]="ddzchat_txt70", 
+	["path"]="dub/ddzchat_txt70", 
+},
+["ddzchat_txt80"]={
+	["name"]="ddzchat_txt80", 
+	["path"]="dub/ddzchat_txt80", 
+},
+["ddzchat_txt90"]={
+	["name"]="ddzchat_txt90", 
+	["path"]="dub/ddzchat_txt90", 
+},
+["ddzchat_txt100"]={
+	["name"]="ddzchat_txt100", 
+	["path"]="dub/ddzchat_txt100", 
+},
+["ddzchat_txt11"]={
+	["name"]="ddzchat_txt11", 
+	["path"]="dub/ddzchat_txt11", 
+},
+["ddzchat_txt21"]={
+	["name"]="ddzchat_txt21", 
+	["path"]="dub/ddzchat_txt21", 
+},
+["ddzchat_txt31"]={
+	["name"]="ddzchat_txt31", 
+	["path"]="dub/ddzchat_txt31", 
+},
+["ddzchat_txt41"]={
+	["name"]="ddzchat_txt41", 
+	["path"]="dub/ddzchat_txt41", 
+},
+["ddzchat_txt51"]={
+	["name"]="ddzchat_txt51", 
+	["path"]="dub/ddzchat_txt51", 
+},
+["ddzchat_txt61"]={
+	["name"]="ddzchat_txt61", 
+	["path"]="dub/ddzchat_txt61", 
+},
+["ddzchat_txt71"]={
+	["name"]="ddzchat_txt71", 
+	["path"]="dub/ddzchat_txt71", 
+},
+["ddzchat_txt81"]={
+	["name"]="ddzchat_txt81", 
+	["path"]="dub/ddzchat_txt81", 
+},
+["ddzchat_txt91"]={
+	["name"]="ddzchat_txt91", 
+	["path"]="dub/ddzchat_txt91", 
+},
+["ddzchat_txt101"]={
+	["name"]="ddzchat_txt101", 
+	["path"]="dub/ddzchat_txt101", 
+},
+["effectpath"]={
+	["name"]="effectpath", 
+	["path"]="package_res/games/guandan/music/effect/", 
+},
+["bgpath"]={
+	["name"]="bgpath", 
+	["path"]="package_res/games/guandan/music/game_bg.mp3", 
+},
+}
+ tConfigSet.maleChatList = {
+[1]={
+	["id"]=1, 
+	["content"]="你这呆子！快点快点啊！", 
+},
+[2]={
+	["id"]=2, 
+	["content"]="和我斗，你还嫩了点！", 
+},
+[3]={
+	["id"]=3, 
+	["content"]="不是吧！这样都能赢！", 
+},
+[4]={
+	["id"]=4, 
+	["content"]="不要吵了!不要吵了!专心玩游戏吧！", 
+},
+[5]={
+	["id"]=5, 
+	["content"]="不要走再战300回合!", 
+},
+
+}
+ tConfigSet.femaleChatList = {
+[1]={
+	["id"]=1, 
+	["content"]="你这呆子！快点快点啊！", 
+},
+[2]={
+	["id"]=2, 
+	["content"]="和我斗，你还嫩了点！", 
+},
+[3]={
+	["id"]=3, 
+	["content"]="不是吧！这样都能赢！", 
+},
+[4]={
+	["id"]=4, 
+	["content"]="不要吵了!不要吵了!专心玩游戏吧！", 
+},
+[5]={
+	["id"]=5, 
+	["content"]="不要走再战300回合!", 
+},
+}
+ return tConfigSet
