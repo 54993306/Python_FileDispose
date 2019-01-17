@@ -48,6 +48,7 @@ class packageImage:
         self.packageRes()
         self.initNewImageInfo()
         self.initPlistMd5()
+        self.tidyPlistRes()
         self.recordData()
         self.copyOutPutFile()
         self.copyMoveRes()
@@ -176,7 +177,7 @@ class packageImage:
             os.mkdir(outPutPath, 0o777)
         if not outPutPath in self.outPutFolder:
             self.outPutFolder[outPutPath] = True
-        command = self.fntdiapose(pResPath , outPutPath) # 移动与fnt对应的图片
+        command = self.NeedChangeStream(pResPath , outPutPath) # 移动与fnt对应的图片
         tPath = comFun.OUTPUTTARGET + outPutPath + "/" + os.path.basename(pResPath)
         # print "cur : " + pResPath + " Tag : " + tPath
         shutil.copyfile(pResPath , tPath)
@@ -188,21 +189,29 @@ class packageImage:
         self.recordMovePath(pResPath, tPath)
         self.initNewPathRes(pResPath , tPath , outPutPath)
 
-    # 对fnt类文件处理，找到相应的png文件
-    def fntdiapose(self , pNewResPath , outPutPath ):
+    # 对fnt类文件处理，找到相应的png文件,并改动
+    def NeedChangeStream(self , pNewResPath , outPutPath ):
         _, filetype = os.path.splitext(pNewResPath)
-        if cmp(filetype, ".fnt") == 0:  # 针对fnt类文件进行特殊处理
-            baseName = os.path.basename(pNewResPath)
+        if cmp(filetype, ".fnt") == 0 or cmp(filetype, ".plist") == 0:  # 针对fnt类文件进行特殊处理
             oldpath = self.fileData.getOldPathBypath(pNewResPath)
-            pResPath = re.sub(r".fnt", r".png", oldpath)
-            newPath = self.fileData.getNewPathByOldPath(pResPath)
+            pResPath = re.sub(filetype, r".png", oldpath)
+            newPath = self.fileData.getNewPathByOldPath(pResPath)       # 找到相应的png图
             if not newPath:
-                print "new ： " + pNewResPath + " old :" + oldpath or ""
-                assert(False)
+                print("not found file " + pResPath)
+                return
+            baseName = os.path.basename(pNewResPath)
             tPath = comFun.OUTPUTTARGET + outPutPath + "/" + baseName.split(".")[0] + ".png"
             shutil.copyfile(newPath, tPath)
             self.recordMovePath(newPath, tPath)
             return "wsl sed -i s/" +  os.path.basename(pResPath) + "/" +  os.path.basename(tPath) + "/g "
+
+    # 对plist类文件做分类和修改plist中引用的png文件处理。
+    def tidyPlistRes(self):
+        FileDict = comFun.GetDataByFile(comFun.DICTFILE)
+        for FileType , FileInfos in FileDict.iteritems():
+            if cmp(FileType , ".plist") == 0:
+                for md5code , fileInfo in FileInfos.iteritems():
+                    self.handleOtherRes(fileInfo["new"])
 
     # 初始化分类后文件位置信息
     def initNewPathRes(self , oldPath , newPath , outPutPath):
