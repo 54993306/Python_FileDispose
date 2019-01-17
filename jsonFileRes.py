@@ -22,9 +22,6 @@ class jsonRes:
 
         self.initRecordFile()  # 程序执行开始
 
-    folderFiles = [] #存储所有的json文件
-    comFun.initPathFiles(comFun.SEARCHJSONPATH , folderFiles)
-
     json_res = collections.OrderedDict()           #json文件中包含的资源map
     collatingJson = collections.OrderedDict()      # 整理后的json数据
     referenceCount = collections.OrderedDict()     # 资源引用计数统计
@@ -39,26 +36,28 @@ class jsonRes:
 
         comFun.RecordToJsonFile(comFun.NOTFOUND, self.notFountFile)
 
-    def initRecordFile(self , refresh = False):
-        refresh = True
-        if not refresh and os.path.isfile(comFun.JSONHAVARES):
-            if not self.json_res:
-                json_stream = open(comFun.JSONHAVARES , "r")
-                if comFun.is_json(json_stream.read()):
-                    # print json_stream.tell()
-                    json_stream.seek(0,0)
-                    self.json_res = json.load(json_stream, object_pairs_hook=collections.OrderedDict)
-                    json_stream.close()
-                    # print "open : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
-                else:
-                    json_stream.close()
-                    os.remove(comFun.JSONHAVARES)
-                    print "record file has error remove file paht : " + comFun.JSONHAVARES
+    def initRecordFile(self , record = False):
+        if record and os.path.isfile(comFun.JSONHAVARES):
+            self.initJsonFileByRecord()
         else:
             self.iniJsonFileList()
         self.initReferenceCount() # 可以跟json_res一起执行，但是耦合逻辑太多，拆出来逻辑清楚，但是性能消耗
         self.recordFile()
 
+    # 根据记录文件初始化
+    def initJsonFileByRecord(self):
+        if not self.json_res:
+            json_stream = open(comFun.JSONHAVARES, "r")
+            if comFun.is_json(json_stream.read()):
+                # print json_stream.tell()
+                json_stream.seek(0, 0)
+                self.json_res = json.load(json_stream, object_pairs_hook=collections.OrderedDict)
+                json_stream.close()
+                # print "open : " + json.dumps(self.json_res, ensure_ascii=False, encoding="utf-8", indent=4)
+            else:
+                json_stream.close()
+                os.remove(comFun.JSONHAVARES)
+                print "record file has error remove file paht : " + comFun.JSONHAVARES
     # 资源文件在json中被引用的次数，json中包含的资源，被引用的次数
     def initReferenceCount(self , refresh = False):  #初始化文件引用计数表
         for jsonpath , paths in self.json_res.iteritems():
@@ -129,7 +128,9 @@ class jsonRes:
 
     # 遍历json文件找到，所使用的资源
     def iniJsonFileList(self):
-        for jsonpath in self.folderFiles:
+        folderFiles = []  # 存储所有的json文件
+        comFun.initPathFiles(comFun.SEARCHJSONPATH, folderFiles)
+        for jsonpath in folderFiles:
             _ , fileType = os.path.splitext(jsonpath)
             if cmp(fileType , ".json") != 0:
                 continue
