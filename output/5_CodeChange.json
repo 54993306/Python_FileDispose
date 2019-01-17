@@ -1,5 +1,5 @@
 {
-    "./oldLua/HallMain.lua": {
+    "D:/Svn_2d/S_GD_Heji/src/app/hall/main/HallMain.lua": {
         "ChangeRecord": [
             "hall/hall.csb                                      >>> real_res/hall.csb", 
             "hall/huanpi2/main/btn_free.png                     >>> #1004654.png", 

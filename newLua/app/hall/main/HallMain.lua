@@ -31,8 +31,6 @@ local LiangYouActivity = require("app.hall.wnds.activity.LiangYouActivity")
 local ActivityDialog = require("app.hall.wnds.activity.ActivityDialog")
 local CommonTips = require "app.hall.common.CommonTips"
 
-local TurnEnterLayer = require("app.hall.main.TurnEnterLayer")
-
 local GAME_ROUND_FLAG = 0
 --redIcon pos param
 local hratio = 13/16
@@ -119,9 +117,9 @@ function HallMain:onInit()
     self.headPanel = ccui.Helper:seekWidgetByName(self.m_pWidget, "head_panel")
     self.headPanel:addTouchEventListener(handler(self, self.onClickButton))
 
-    -- 创建房间按钮
     self.btn_new = ccui.Helper:seekWidgetByName(self.m_pWidget, "btn_new");
     self.btn_new:addTouchEventListener(handler(self, self.onClickButton));
+    -- 创建房间需要更换按钮
 
     self.btn_more = ccui.Helper:seekWidgetByName(self.m_pWidget, "btn_more");
     self.btn_more:addTouchEventListener(handler(self, self.onClickButton));
@@ -421,6 +419,12 @@ function HallMain:initBindBtn()
     if data.status == AccountStatus.TaskUnDeal then
         self.btn_bind_phone:setVisible(true)
         tipsimg:setVisible(false)
+        -- if SettingInfo.getInstance():getSelectAreaPlaceID() > 0 then
+        --     if kUserData_userExtInfo:getPhoneRegist() then
+        --         kUserData_userExtInfo:setPhoneRegist(false)
+        --         UIManager:getInstance():pushWnd(BindPhone,data.status)
+        --     end
+        -- end
     elseif data.status == AccountStatus.TaskFinish then
         self.btn_bind_phone:setVisible(true)
         tipsimg:setVisible(true)
@@ -428,6 +432,19 @@ function HallMain:initBindBtn()
         self.btn_bind_phone:setVisible(false)
     else
         Log.e()
+    end
+end
+
+--显示绑定界面
+function HallMain:showBindPhone()
+    local data = kGiftData_logicInfo:getTaskByID(AccountStatus.PhoneTaskID)
+    local tipsimg = ccui.Helper:seekWidgetByName(self.btn_bind_phone, "img_phone_tips")
+    if data.status == AccountStatus.TaskUnDeal then
+        if kUserData_userExtInfo:getPhoneRegist() then
+            kUserData_userExtInfo:setPhoneRegist(false)
+            local BindPhone = require "app.hall.wnds.account.halloption.BindPhone"
+            UIManager:getInstance():pushWnd(BindPhone,data.status,10)
+        end
     end
 end
 
@@ -554,6 +571,8 @@ end
 
 -- 弹出亲友圈指引
 function HallMain:addQinyouquan()
+    print( debug.traceback("======================>>>>>>>>>>>>> addQinyouquan"))
+    -- SettingInfo.getInstance():setClubGuidance(false)
     if SettingInfo.getInstance():getClubGuidance() then return end -- 已经提示过, 不再提示
     -- 延迟一定时间后弹窗, 避免popToWnd(HallMain)陷入死循环
     scheduler.performWithDelayGlobal(
@@ -684,12 +703,7 @@ function HallMain:onShow()
         Log.i("hall main onshow send CODE_SEND_YAOQING_INFO")
         SocketManager.getInstance():send(CODE_TYPE_USER, HallSocketCmd.CODE_SEND_YAOQING_INFO, data);
     end
-    local clubdatas = kSystemConfig:getMyClubsInfo()
-    if not next(clubdatas) then
-        SocketManager.getInstance():send(CODE_TYPE_USER, HallSocketCmd.CODE_SEND_JOINEDCLUBLIST);
-    end
 
-    TurnEnterLayer:turn()
     -- self:joinRoomByScheme()
 end
 
@@ -1322,9 +1336,11 @@ function HallMain:repUserInfo2(info)
             self:addQinyouquan()
             self:joinRoomByScheme()
             self:JoinRoomByXianLaiScheme()
+            if SettingInfo.getInstance():getClubGuidance() then
+                self:showBindPhone()
+            end
         end
     end
-
 end
 
 --个人账户信息
@@ -1529,7 +1545,6 @@ function HallMain:onClickNew()
         data.newerType = self.m_NewerType;
         self.m_NewerType = nil;
         kFriendRoomInfo:setRoomState(CreateRoomState.normal)
-        kSystemConfig:cacheEnterData("enterid" , 2)
         UIManager:getInstance():pushWnd(FriendRoomCreate, data);
     end
 end
@@ -1963,25 +1978,6 @@ function HallMain:recvPlayerGameState(packetInfo)
         return;
     end
 
---[[
-    if 4 == packetInfo.gaT then--房间内
-        UIManager.getInstance():popToWnd(HallMain);
-        LoadingView.getInstance():hide();
-        loadGame(packetInfo.gaI)
-        UIManager:getInstance():pushWnd(FriendRoomScene);
-	elseif 5 == packetInfo.gaT then--游戏内
-        UIManager.getInstance():popToWnd(HallMain);
-	    self.m_gaI = packetInfo.gaI;
-        self.m_roI = packetInfo.roI;
-        self.m_plI = packetInfo.plI;
-	    local tmpData = {};
-        loadGame(packetInfo.gaI)
-	    FriendRoomSocketProcesser.sendFriendRoomStartGame(tmpData);
-    else
-        self:getEnterCode();
-	end
-    ]]
-
     if self.btn_new and self.btn_new.setHighlighted then self.btn_new:setHighlighted(false) end
     if self.btn_join and self.btn_join.setHighlighted then self.btn_join:setHighlighted(false) end
 
@@ -2234,6 +2230,11 @@ function HallMain:onRecvGiftInfo(info)
             end
         end
     end
+
+    if SettingInfo.getInstance():getSelectAreaPlaceID() > 0 then
+        self:showBindPhone()
+    end
+
 end
 
 -- 客服回调

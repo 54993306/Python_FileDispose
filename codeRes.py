@@ -107,8 +107,11 @@ class codeRes:
 
     # 执行替换操作
     def excuteReplace(self):
-        pathstr = ["./oldLua/HallMain.lua"]
+        pathstr = [r"D:\Svn_2d\S_GD_Heji\src\app\hall\main/HallMain.lua"]
         for filepath in pathstr:
+            if not os.path.isabs(filepath):
+                filepath = os.path.abspath(filepath)
+            filepath = comFun.turnBias(filepath)
             stream = open(filepath, "r")
             self.currInfo = collections.OrderedDict()
             self.handleFilePath = filepath  # 对日志的记录提供了很大的遍历，大胆使用语言特性
@@ -136,8 +139,9 @@ class codeRes:
 
     # 创建替换内容后的文件
     def createNewFile(self, content):
-        dir = "./newLua/" + os.path.dirname(self.handleFilePath)
-        if not os.path.isdir(dir):
+        dir = re.sub("D:/Svn_2d/S_GD_Heji/src/" , "" , self.handleFilePath)
+        dir = "./newLua/" + os.path.dirname(dir)
+        if not os.path.isdir(dir):  # 不修改lua文件的路径
             os.makedirs(dir, 0o777)
         basename = os.path.basename(self.handleFilePath)
         stream = open(dir + "/" + basename, "w+")
