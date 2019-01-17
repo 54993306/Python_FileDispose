@@ -21,7 +21,7 @@ import fileDataHandle as FD
 
 if not TEST:
     # 去重和生成文件信息
-    # t = totalResDict.totalRes() #初始化所有的资源信息
+    t = totalResDict.totalRes() #初始化所有的资源信息
 
     # 对json中的资源做处理
     # jc= jsonFileRes.jsonRes()  # 初始化所有json中包含的资源信息
@@ -33,7 +33,7 @@ if not TEST:
     # cg = fileChange.replaceImage()
 
     # 初始化代码中包含的资源信息
-    cre = codeRes.codeRes()
+    # cre = codeRes.codeRes()
 
     # 整理日志和资源
     # tr = tidyRes.tidyRes()
