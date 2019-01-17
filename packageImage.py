@@ -307,7 +307,7 @@ class packageImage:
     def copyOutPutFile(self):
         folderFiles = []  # 存储所有的json文件
         comFun.initPathFiles(comFun.PACKAGEOUTPUT, folderFiles)
-        self.copyFilesToPath(folderFiles, comFun.TARGETPATH + "1newplist/")
+        self.copyFilesToPath(folderFiles, comFun.TARGETPATH + "res_package") #
 
     # 将被移动的大图和其他资源拷贝到应用目录
     def copyMoveRes(self):

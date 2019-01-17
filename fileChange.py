@@ -109,7 +109,7 @@ class replaceImage:
                 newFileDict = self.getNewResInfo(tDict["path"])
                 if type(newFileDict)is collections.OrderedDict:
                     tDict["path"] = newFileDict["newpath"]  # 直接改动生效
-                    tDict["plistFile"] = re.sub(comFun.PACKAGEOUTPUT, "1newplist/", comFun.turnBias(newFileDict["plist"]))
+                    tDict["plistFile"] = re.sub(comFun.PACKAGEOUTPUT, "res_package/", comFun.turnBias(newFileDict["plist"]))
                     tDict["resourceType"] = 1
                 else:
                     tDict["path"] = re.sub(comFun.OUTPUTTARGET , "" , newFileDict ) # 去除本地路径
