@@ -75,9 +75,7 @@ class totalRes:
 
     # 复制文件
     def copyFile(self):
-        if os.path.isdir(comFun.COPYPATH):
-            shutil.rmtree(comFun.COPYPATH)
-        time.sleep(3)                # 大规模的文件操作，需要做延时处理
+        comFun.removeDir(comFun.COPYPATH)
         os.mkdir(comFun.COPYPATH, 0o777)
         copynum = 0
         for md5Code , fileInfo in self.notRepeatmd5List.iteritems():

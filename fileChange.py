@@ -33,16 +33,17 @@ class replaceImage:
         for jsonPath in jsonPaths:
             if not re.search(r".json" , jsonPath):
                 continue
+            jsonPath = comFun.turnBias(jsonPath)
             _ , filename = os.path.split(jsonPath)
             newFilePath = comFun.OUTPUTPATH + filename
             shutil.copyfile(jsonPath , newFilePath)
+            print("\n==========>>>>" + jsonPath)
             self.streamDispose(newFilePath)
         # 对数据进行记录处理
         comFun.RecordToJsonFile(comFun.CHANGERESULT, self.changeRecord)
 
     # 文件处理
     def streamDispose(self , newJsonFile):
-        print "\n==========>>>>" + os.path.basename(newJsonFile)
         json_stream = open(newJsonFile, "r")
         jsondict = json.load(json_stream, object_pairs_hook=collections.OrderedDict )
         json_stream.close()

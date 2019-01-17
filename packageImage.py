@@ -58,10 +58,8 @@ class packageImage:
 
     # 清理文件夹
     def clearDir(self):
-        if os.path.isdir(comFun.PACKAGESOURCE):
-            shutil.rmtree(comFun.PACKAGESOURCE)
-        if os.path.isdir(comFun.PACKAGEOUTPUT):
-            shutil.rmtree(comFun.PACKAGEOUTPUT)
+        comFun.removeDir(comFun.PACKAGESOURCE)
+        comFun.removeDir(comFun.PACKAGEOUTPUT)
         os.mkdir(comFun.PACKAGEOUTPUT, 0o777)
         os.mkdir(comFun.PACKAGESOURCE, 0o777)
 
@@ -308,6 +306,7 @@ class packageImage:
         folderFiles = []  # 存储所有的json文件
         comFun.initPathFiles(comFun.PACKAGEOUTPUT, folderFiles)
         self.copyFilesToPath(folderFiles, comFun.TARGETPATH + "res_package") #
+        self.copyFilesToPath(folderFiles, comFun.MOVETOCODEPATH + "res_package")  #
 
     # 将被移动的大图和其他资源拷贝到应用目录
     def copyMoveRes(self):
@@ -315,12 +314,11 @@ class packageImage:
             folderFiles = []  # 存储所有的json文件
             comFun.initPathFiles(folderpath, folderFiles)
             self.copyFilesToPath(folderFiles , comFun.TARGETPATH + folderpath)
+            self.copyFilesToPath(folderFiles, comFun.MOVETOCODEPATH + folderpath)
 
     # 将文件列表复制到指定目录
     def copyFilesToPath(self , files , path):
-        if os.path.isdir(path):
-            os.chmod(path, 0o777)
-            shutil.rmtree(path)
+        comFun.removeDir(path)
         os.mkdir(path, 0o777)
         for filepath in files:
             if not os.path.isabs(filepath):

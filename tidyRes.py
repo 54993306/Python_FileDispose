@@ -24,12 +24,13 @@ class tidyRes:
     # 实际移动的文件和原去重后的文件想比较，得出的差异就是每种资源多余的文件差异。
     def tidy(self):
         CopyToPath = comFun.TARGETPATH + comFun.RESFOLDER
-        # if os.path.isdir(CopyToPath):
-        #     comFun.removeDir(CopyToPath)
-        os.chmod(comFun.TARGETPATH,0o777)
-        if os.path.isdir(CopyToPath):
-            shutil.rmtree(CopyToPath)
+        comFun.removeDir(CopyToPath)
         os.mkdir(CopyToPath, 0o777)
+
+        CopyToCodePath = comFun.MOVETOCODEPATH + comFun.RESFOLDER
+        comFun.removeDir(CopyToCodePath)
+        os.mkdir(CopyToCodePath, 0o777)
+
         JsonValidResList = []
         for jsonPath , ChangeList in self.UIChange.iteritems():
             for index , ChangeInfo in ChangeList.iteritems():

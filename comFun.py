@@ -30,18 +30,21 @@ RESFOLDER               = "real_res"
 
 EXCUTE_INDEX            = 1                                         # 0 对应demo，1对应TEST，3对应Project
 
-TARGETPATH              = "D:/Svn_2d/UI_Shu/Resources/"             # 打包资源后输出路径
-OUTPUTPATH              = "D:/Python_FileDispose/newJson/"          # 修改后的Json存储路径
-NEWLUAPATH              = "D:/Python_FileDispose/newLua/app"        # 修改后的Lua存储路径
+TARGETPATH              = "D:/Svn_2d/UI_Shu/Resources/"                         # 打包资源后输出路径
+MOVETOCODEPATH          = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"    # 资源在代码中的路径
+OUTPUTPATH              = "D:/Python_FileDispose/newJson/"                      # 修改后的Json存储路径
+NEWLUAPATH              = "D:/Python_FileDispose/newLua/app"                    # 修改后的Lua存储路径
 
 if EXCUTE_INDEX == 1:
     TARGETPATH          = r"D:/Python_FileDispose/source/UI_Shu/Resources/"   # 打包资源后输出路径
-    OUTPUTPATH          = r"D:\Python_FileDispose\source\UI_Shu\Json/"        # 修改后的Json存储路径
+    OUTPUTPATH          = r"D:/Python_FileDispose/source/UI_Shu/Json/"        # 修改后的Json存储路径
     NEWLUAPATH          = r"D:/Python_FileDispose/source/S_GD_Heji/src/app"   # 修改后的Lua存储路径
+    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"  # 资源在代码中的路径
 elif EXCUTE_INDEX == 2:
-    TARGETPATH          = r"D:\Python_FileDispose\source\UI_Shu\Resources/"   # 打包资源后输出路径
-    OUTPUTPATH          = r"D:\Python_FileDispose\source\UI_Shu\Json/"        # 修改后的Json存储路径
-    NEWLUAPATH          = r"D:\Python_FileDispose\source\S_GD_Heji\src\app"   # 修改后的Lua存储路径
+    TARGETPATH          = r"D:/Python_FileDispose/source/UI_Shu/Resources/"   # 打包资源后输出路径
+    OUTPUTPATH          = r"D:/Python_FileDispose/source/UI_Shu/Json/"        # 修改后的Json存储路径
+    NEWLUAPATH          = r"D:/Python_FileDispose/source/S_GD_Heji/src/app"   # 修改后的Lua存储路径
+    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"  # 资源在代码中的路径
 
 ##################################################################################################################
 
@@ -176,7 +179,10 @@ def deleteFileBystr(str , pPath):
 # 递归删除文件夹
 def removeDir(dirPath):
     if not os.path.isdir(dirPath):
-        return
+        if os.path.isfile(dirPath):
+            dirPath = os.path.dirname(dirPath)
+        else:
+            return
     files = os.listdir(dirPath)
     try:
         for file in files:
