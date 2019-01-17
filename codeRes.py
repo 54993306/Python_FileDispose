@@ -107,10 +107,14 @@ class codeRes:
 
     # 执行替换操作
     def excuteReplace(self):
-        pathstr = [r"D:\Svn_2d\S_GD_Heji\src\app\hall\main/HallMain.lua"]
-        for filepath in pathstr:
+        lusPaths = []
+        comFun.initPathFiles(comFun.SEARLUAPATJ, lusPaths)
+        lusPaths = [r"D:\Svn_2d\S_GD_Heji\src\app\hall\main/HallMain.lua"]
+        for filepath in lusPaths:
             if not os.path.isabs(filepath):
                 filepath = os.path.abspath(filepath)
+            if not re.search(r".lua" , filepath):
+                continue
             filepath = comFun.turnBias(filepath)
             stream = open(filepath, "r")
             self.currInfo = collections.OrderedDict()
@@ -139,12 +143,17 @@ class codeRes:
 
     # 创建替换内容后的文件
     def createNewFile(self, content):
-        dir = re.sub("D:/Svn_2d/S_GD_Heji/src/" , "" , self.handleFilePath)
-        dir = "./newLua/" + os.path.dirname(dir)
-        if not os.path.isdir(dir):  # 不修改lua文件的路径
-            os.makedirs(dir, 0o777)
-        basename = os.path.basename(self.handleFilePath)
-        stream = open(dir + "/" + basename, "w+")
+        # dir = re.sub("D:/Svn_2d/S_GD_Heji/src/" , "" , self.handleFilePath)
+        # dir = "./newLua/" + os.path.dirname(dir)
+        # if not os.path.isdir(dir):  # 不修改lua文件的路径
+        #     os.makedirs(dir, 0o777)
+        # basename = os.path.basename(self.handleFilePath)
+        # stream = open(dir + "/" + basename, "w+")
+        dir = re.sub(comFun.SEARLUAPATJ , comFun.NEWLUAPATH , self.handleFilePath)
+        print dir
+        if not os.path.isfile(dir):         # 对文件做覆盖处理
+            os.makedirs(os.path.dirname(dir), 0o777)
+        stream = open(dir, "w+")
         for line in content:
             stream.write(str(line))
         stream.close()

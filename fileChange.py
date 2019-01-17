@@ -27,7 +27,7 @@ class replaceImage:
     def replaceFile(self):
         jsonPaths = []
         comFun.initPathFiles(comFun.SEARCHJSONPATH , jsonPaths)
-        jsonPaths = ["D:\Svn_2d\UI_Shu\Json\obtain_prop_dialog.json","D:\Svn_2d\UI_Shu\Json\hall.json"]
+        # jsonPaths = ["D:\Svn_2d\UI_Shu\Json\obtain_prop_dialog.json","D:\Svn_2d\UI_Shu\Json\hall.json"]
         if not os.path.exists(comFun.OUTPUTPATH):
             os.mkdir(comFun.OUTPUTPATH , 0o777)        # 创建输出路径
         for jsonPath in jsonPaths:
