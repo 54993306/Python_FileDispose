@@ -27,6 +27,9 @@ class packageImage:
     unPackRepeat = collections.OrderedDict()   # 未打包和重复移动的文件
     unPackRepeat["repeat"] = []
 
+    def __init__(self):
+        self.tidyRes()
+
     # 将数据都记录到文件中
     def recordData(self):
         comFun.RecordToJsonFile(comFun.PLISTINFO , self.plistInfo)

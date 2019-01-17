@@ -19,6 +19,8 @@ class tidyRes:
         self.CodeChange = comFun.GetDataByFile(comFun.CODERESMESSAGE)
         self.tidyInfo = collections.OrderedDict()
 
+        self.tidy()
+
     # 实际移动的文件和原去重后的文件想比较，得出的差异就是每种资源多余的文件差异。
     def tidy(self):
         CopyToPath = comFun.TARGETPATH + comFun.RESFOLDER

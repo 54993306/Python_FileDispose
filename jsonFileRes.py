@@ -20,6 +20,8 @@ class jsonRes:
 
         self.FileData = FData.fileDataHandle()
 
+        self.initRecordFile()  # 程序执行开始
+
     folderFiles = [] #存储所有的json文件
     comFun.initPathFiles(comFun.SEARCHJSONPATH , folderFiles)
 

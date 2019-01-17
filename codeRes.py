@@ -25,6 +25,8 @@ class codeRes:
 
         self.outInfo = collections.OrderedDict()
 
+        self.excuteReplace()
+
     # 输出并写入日志文件
     def printOutInfo(self, instr):
         if not instr:

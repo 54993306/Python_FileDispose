@@ -21,6 +21,8 @@ class replaceImage:
 
         self.FileData = DF.fileDataHandle()
 
+        self.replaceFile()
+
     # 做新旧资源替换
     def replaceFile(self):
         jsonPaths = []

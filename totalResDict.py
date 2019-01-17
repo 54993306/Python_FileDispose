@@ -17,6 +17,10 @@ class totalRes:
     notRepeatmd5List = collections.OrderedDict()   # 存储文件md5值 key:md5 value:path
     oldtonewPath = collections.OrderedDict()       # 新旧路径对应表 key: oldpath ,value : newpath
     typeNum = collections.OrderedDict()            # 存储文件类型和相应的数量
+
+    def __init__(self):
+        self.initFileDict()
+
     # 将内容记录到文件中
     def recordToFile(self):
         comFun.RecordToJsonFile(comFun.DICTFILE, self.filedict)
