@@ -61,6 +61,9 @@ CODERESMESSAGE  = "./output/5_CodeChange.json"
 CODEFOLDER      = "D:/Svn_2d/S_GD_Heji/src/app"
 GAMECODEFOLDER  = "D:/Svn_2d/S_GD_Heji/src/package_src"
 
+# 6 tidy
+TIDYRECORD      = "./output/6_Tidy.json"
+
 def RecordToJsonFile(path , data):
     file_stream = open(path, "w+")
     file_stream.write(json.dumps(data, ensure_ascii=False, encoding="utf -8", indent=4))

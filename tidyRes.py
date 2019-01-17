@@ -42,19 +42,21 @@ class tidyRes:
                     shutil.copyfile(newPath , CopyToPath + "/" + os.path.basename(newPath))
 
         LuaValidResList = []
-        for luaPath , ChangeInfo in self.CodeChange.iteritems():  # 代码中对每个json文件中使用的资源有过一个去重处理 dict key
-            if not "ChangeDict" in ChangeInfo:
+        for luaPath , ChangeInfos in self.CodeChange.iteritems():  # 代码中对每个json文件中使用的资源有过一个去重处理 dict key
+            if not "ValidChange" in ChangeInfos:
                 continue
-            for oldPath , newPath in ChangeInfo["ChangeDict"].iteritems():
-                if re.search(comFun.RESFOLDER + "/[\w]*?.png" , newPath):
-                    if not newPath in LuaValidResList:
-                        LuaValidResList.append(newPath)
-                    shutil.copyfile(newPath, CopyToPath + "/" + os.path.basename(newPath))
+            for md5code , ChangeInfo in ChangeInfos["ValidChange"].iteritems():
+                if re.search(comFun.RESFOLDER + "/[\w]*?.png" , ChangeInfo["new"]):
+                    if not ChangeInfo["new"] in LuaValidResList:
+                        LuaValidResList.append(ChangeInfo["new"])
+                    shutil.copyfile(ChangeInfo["new"], CopyToPath + "/" + os.path.basename(ChangeInfo["new"]))
 
-        ValidResList = []
-        ValidResList.extend(JsonValidResList)
-        ValidResList.extend(LuaValidResList)
+        ValidResList = {}
+        ValidResList["JsonChange"] = JsonValidResList
+        ValidResList["CodeChange"] = LuaValidResList
         print(json.dumps(ValidResList, ensure_ascii=False, encoding="utf -8", indent=4))
+        comFun.RecordToJsonFile(comFun.TIDYRECORD, ValidResList)
+
 
     # 找到代码中所有使用的资源，判断哪些csb是没有在json中被使用的，对应的UIJson文件是否有图片是可以删除掉的。
     # 引用了不存在的csb NotFount、NoChange 数组可以解决,代码中引用了不存在的资源都需要做处理

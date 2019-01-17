@@ -30,13 +30,13 @@ if not TEST:
     # pcg = packageImage.packageImage()
 
     # 修改json文件为使用大图
-    cg = fileChange.replaceImage()
+    # cg = fileChange.replaceImage()
 
     # 初始化代码中包含的资源信息
     # cre = codeRes.codeRes()
 
     # 整理日志和资源
-    # tr = tidyRes.tidyRes()
+    tr = tidyRes.tidyRes()
 else:
     print ""
     # comFun.addDataToFile("./aaa.txt" , 77122 , "22221")
