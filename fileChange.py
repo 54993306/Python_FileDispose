@@ -31,8 +31,6 @@ class replaceImage:
         for jsonPath in jsonPaths:
             if not re.search(r".json" , jsonPath):
                 continue
-            if not os.path.isfile(jsonPath):
-                assert(False)
             _ , filename = os.path.split(jsonPath)
             newFilePath = comFun.OUTPUTPATH + filename
             shutil.copyfile(jsonPath , newFilePath)

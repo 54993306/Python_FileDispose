@@ -8,6 +8,7 @@ import os
 import re
 import shutil
 import json
+import collections
 import fileDataHandle as FD
 
 class tidyRes:
@@ -16,7 +17,7 @@ class tidyRes:
         self.FileData = comFun.GetDataByFile(comFun.MD5OLD_NEW)
         self.UIChange = comFun.GetDataByFile(comFun.CHANGERESULT)
         self.CodeChange = comFun.GetDataByFile(comFun.CODERESMESSAGE)
-        self.tidyInfo = {}
+        self.tidyInfo = collections.OrderedDict()
 
     # 实际移动的文件和原去重后的文件想比较，得出的差异就是每种资源多余的文件差异。
     def tidy(self):
