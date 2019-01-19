@@ -22,7 +22,6 @@ OUTPUTTARGET            = "D:/Python_FileDispose/"
 PACKAGESOURCE           = "D:/Python_FileDispose/packageRes/"       # 需要进行打包的文件夹和资源
 PACKAGEOUTPUT           = "D:/Python_FileDispose/packagePList/"     # 打包成Plist后的存储理解
 
-SEARCHJSONPATH          = "D:/Svn_2d/UI_Shu/Json"                   # 获取JsonUI文件的路径，只是竖版的大厅部分json
 SEARLUAPATJ             = "D:/Svn_2d/S_GD_Heji/src/app"             # 获取Lua文件的路径，只是大厅的Lua文件
 RESFOLDER               = "real_res"
 
@@ -30,21 +29,24 @@ RESFOLDER               = "real_res"
 
 EXCUTE_INDEX            = 1                                         # 0 对应demo，1对应TEST，3对应Project
 
+SEARCHJSONPATH          = "D:/Svn_2d/UI_Shu/Json"                   # 获取JsonUI文件的路径，只是竖版的大厅部分json
 TARGETPATH              = "D:/Svn_2d/UI_Shu/Resources/"                         # 打包资源后输出路径
-MOVETOCODEPATH          = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"    # 资源在代码中的路径
 OUTPUTPATH              = "D:/Python_FileDispose/newJson/"                      # 修改后的Json存储路径
 NEWLUAPATH              = "D:/Python_FileDispose/newLua/app"                    # 修改后的Lua存储路径
+MOVETOCODEPATH          = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"    # 资源在代码中的路径
 
 if EXCUTE_INDEX == 1:
-    TARGETPATH          = r"D:/Python_FileDispose/source/UI_Shu/Resources/"   # 打包资源后输出路径
-    OUTPUTPATH          = r"D:/Python_FileDispose/source/UI_Shu/Json/"        # 修改后的Json存储路径
-    NEWLUAPATH          = r"D:/Python_FileDispose/source/S_GD_Heji/src/app"   # 修改后的Lua存储路径
-    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"  # 资源在代码中的路径
+    TARGETPATH          = "D:/Python_FileDispose/source/UI_Shu/Resources/"   # 打包资源后输出路径
+    OUTPUTPATH          = "D:/Python_FileDispose/source/UI_Shu/Json/"        # 修改后的Json存储路径
+    NEWLUAPATH          = "D:/Python_FileDispose/source/S_GD_Heji/src/app"   # 修改后的Lua存储路径
+    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/" # 资源在代码中的路径
+    SEARCHJSONPATH      = "D:/Svn_2d/CoCoStuio/vertical/hall/Json"           # 整理后的Ui工程
 elif EXCUTE_INDEX == 2:
-    TARGETPATH          = r"D:/Python_FileDispose/source/UI_Shu/Resources/"   # 打包资源后输出路径
-    OUTPUTPATH          = r"D:/Python_FileDispose/source/UI_Shu/Json/"        # 修改后的Json存储路径
-    NEWLUAPATH          = r"D:/Python_FileDispose/source/S_GD_Heji/src/app"   # 修改后的Lua存储路径
-    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"  # 资源在代码中的路径
+    TARGETPATH          = "D:/Svn_2d/CoCoStuio/vertical/hal_packres/Resources/"   # 打包资源后输出路径
+    OUTPUTPATH          = "D:/Svn_2d/CoCoStuio/vertical/hal_packres/Json/"        # 修改后的Json存储路径
+    NEWLUAPATH          = "D:/Python_FileDispose/source/S_GD_Heji/src/app"        # 修改后的Lua存储路径
+    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"      # 资源在代码中的路径
+    SEARCHJSONPATH      = "D:/Svn_2d/CoCoStuio/vertical/hall/Json"                # Ui工程中json文件的路径
 
 ##################################################################################################################
 

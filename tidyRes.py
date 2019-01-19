@@ -41,6 +41,7 @@ class tidyRes:
                     if not newPath in JsonValidResList:
                         JsonValidResList.append(newPath)
                     shutil.copyfile(newPath , CopyToPath + "/" + os.path.basename(newPath))
+                    shutil.copyfile(newPath , CopyToCodePath + "/" + os.path.basename(newPath))
 
         LuaValidResList = []
         for luaPath , ChangeInfos in self.CodeChange.iteritems():  # 代码中对每个json文件中使用的资源有过一个去重处理 dict key
@@ -51,6 +52,7 @@ class tidyRes:
                     if not ChangeInfo["new"] in LuaValidResList:
                         LuaValidResList.append(ChangeInfo["new"])
                     shutil.copyfile(ChangeInfo["new"], CopyToPath + "/" + os.path.basename(ChangeInfo["new"]))
+                    shutil.copyfile(ChangeInfo["new"], CopyToCodePath + "/" + os.path.basename(ChangeInfo["new"]))
 
         ValidResList = {}
         ValidResList["JsonChange"] = JsonValidResList

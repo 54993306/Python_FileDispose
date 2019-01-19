@@ -394,7 +394,7 @@
               "normal": null,
               "normalData": {
                 "path": "1004015.png",
-                "plistFile": "res_package/foreload.plist",
+                "plistFile": "res_package/obtain_prop_dialog.plist",
                 "resourceType": 1
               },
               "pressed": null,

@@ -1,12 +1,12 @@
 {
-    "D:/Svn_2d/UI_Shu/Json/clubMatchRecord.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/clubMatchRecord.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/tongyong_yuanjiao.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/tongyong_yuanjiao.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/hall.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/hall.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/MAHJONGGAME.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/liangyouClubTipsView.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/liangyouClubTipsView.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/black_bg.png"
     ]
 }

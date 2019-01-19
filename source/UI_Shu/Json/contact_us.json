@@ -1465,7 +1465,7 @@
                 "classname": null,
                 "name": null,
                 "align": 1,
-                "gravity": 2,
+                "gravity": 0,
                 "layoutEageType": 0,
                 "layoutNormalHorizontal": 0,
                 "layoutNormalVertical": 0,

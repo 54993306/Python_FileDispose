@@ -27,17 +27,17 @@ if not TEST:
     # jsonFileRes.jsonRes()  # 初始化所有json中包含的资源信息
 
     # 对UI中使用的资源进行5小图合并大图
-    packageImage.packageImage()
+    # packageImage.packageImage()
 
     # 修改json文件为使用大图
     # fileChange.replaceImage()
 
     # 初始化代码中包含的资源信息
-    # codeRes.codeRes()
+    codeRes.codeRes()
 
     # 整理日志和资源
     # tidyRes.tidyRes()
 else:
     print ""
-    # comFun.deleteDirByStr(r".svn", r"D:\Python_FileDispose\source")
-    # shutil.copytree(r"D:\Svn_2d\UI_Shu", r"D:\Python_FileDispose\source\UI_Shu")
+    comFun.deleteDirByStr(r".svn", r"D:\Svn_2d\CoCoStuio\vertical\hal_packres")
+    # shutil.copytree(r"D:\Svn_2d\CoCoStuio\vertical\hall", r"D:\Python_FileDispose\source\UI_Shu")

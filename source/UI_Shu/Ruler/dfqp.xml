@@ -113,7 +113,7 @@
       </GuidesInfo>
       <GuidesInfo>
         <GuidesName>HThumb</GuidesName>
-        <GuidesPosition>203.95993896484379</GuidesPosition>
+        <GuidesPosition>203.95993896484376</GuidesPosition>
       </GuidesInfo>
     </GuidesList>
   </GuidesProject>
@@ -139,6 +139,34 @@
   </GuidesProject>
   <GuidesProject>
     <Project>obtain_prop_dialog</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>bindSuccessful_dialog</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>about_us</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>area_item</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>clubApplyConfirmWnd</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>city_item</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>chat_txt_item</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>chat</Project>
     <GuidesList />
   </GuidesProject>
 </ArrayOfGuidesProject>

@@ -1,16 +1,5 @@
 {
-    "D:/Svn_2d/UI_Shu/Json/about_us.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/smallbg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/abouttitle.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/x.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/accountPanel.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/accountPanel.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
@@ -103,7 +92,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/adverView_page.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/adverView_page.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -114,7 +103,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_2.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/area_item.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/area_item.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/selected.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/unselected.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png", 
@@ -122,19 +111,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/cut_off_line.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/bindPhone.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_2.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/diamond_L.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/btn_sure.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/yuanbao.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_orange.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_unchecked.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/red_1.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_yellow.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/btn_qdbd.png", 
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/bindPhone.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
@@ -202,29 +179,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/bindSuccessful_dialog.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_toRedeem.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting1.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting2.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/btn_sure.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_sure.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_cancel.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_orange.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/chat.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/chat.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg_40x36.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg6_30x30.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg2.png", 
@@ -233,11 +188,11 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg4.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/chat_txt_item.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/chat_txt_item.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/gameCommon/chat/chat_item_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/choiceShare.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/choiceShare.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/game_window_panel.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -251,7 +206,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gowechat.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_orange.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/choiceShare_horizontal.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/choiceShare_horizontal.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/game_window_panel.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -265,7 +220,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gowechat.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_orange.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/city_item.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/city_item.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_yellow.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -276,8 +231,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_yellow.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/club.json": [], 
-    "D:/Svn_2d/UI_Shu/Json/clubApplyConfirmWnd.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/clubApplyConfirmWnd.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -294,7 +248,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/clubApplyModeAWnd.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/clubApplyModeAWnd.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -315,7 +269,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_orange.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/clubApplyModeBWnd.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/clubApplyModeBWnd.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_2.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -365,7 +319,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/btn_gree.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/clubApplyRecordWnd.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/clubApplyRecordWnd.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_2.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_half.png", 
@@ -388,31 +342,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/clubApplyWnd.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/L2_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_wight.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_blue.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/line_an.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/x.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/transparent_bg.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/clubJoinedWnd.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/clubJoinedWnd.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/image_title.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_help.png", 
@@ -426,7 +356,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_orange.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/clubListView.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/clubListView.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -444,7 +374,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_qyq.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/clubMatchRecord.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/clubMatchRecord.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/image_title.png", 
@@ -526,7 +456,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_deepgreen.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/clubMemberTypeWnd.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/clubMemberTypeWnd.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png", 
@@ -546,7 +476,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/transparent_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/clubRoomListWnd.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/clubRoomListWnd.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -635,7 +565,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/clubSwitchCreateRoomWnd.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/clubSwitchCreateRoomWnd.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
@@ -643,7 +573,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_2.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/clubSwitchListView.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/clubSwitchListView.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_half.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -662,8 +592,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/clubtips.json": [], 
-    "D:/Svn_2d/UI_Shu/Json/common_dialog.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/common_dialog.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -681,20 +610,20 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/common_tips.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/common_tips.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_sure.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/contact_item.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/contact_item.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/common_btn_green.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/split_line.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/contact_us.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/contact_us.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/line_an.png", 
@@ -714,29 +643,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/split_line.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/conversion_dialog.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_toRedeem.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting1.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting2.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/btn_sure.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_sure.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_orange.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_cancel.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_cancel.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_orange.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_redeemOk.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/duty.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/duty.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_2.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -746,30 +653,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/email_content.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/btn_close.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/L2_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/label_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/btn_blue.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/label_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/scrip_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/cut_off_line.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/email_item.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/email_item.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_2.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/mail.png", 
@@ -779,7 +663,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/gift.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_drop_bg.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/email_panel.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/email_panel.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/transparent_bg.png", 
@@ -817,10 +701,10 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/common_btn_green.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/face_item.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/face_item.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/gameCommon/face/face_1.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/friendRoomCode.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/friendRoomCode.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/title_code.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
@@ -873,7 +757,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/friendRoomCreate.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/friendRoomCreate.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -955,7 +839,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/ddz/img_window.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/ddz/img_window.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/friendRoomEnterInfo.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/friendRoomEnterInfo.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg.png", 
@@ -980,7 +864,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/friendRoomScene.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/friendRoomScene.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg_matte.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -1051,7 +935,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/newer/tips_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/newer/btn_over.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/hall.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/hall.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main_portrait/img_btn_subbg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/main/ad01.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main_portrait/bg.png", 
@@ -1151,25 +1035,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/newer/mask_hall.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/MAHJONGGAME.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/hallBind.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_unchecked.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/red_1.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_yellow.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/btn_qdbd.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/btn_sure.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/btn_know.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/finish.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_2.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/image_changePhone.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/image_editcode.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/image_switchAccount.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/text_switchAccount.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/text_editcode.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/text_changePhone.png", 
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/hallBind.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
@@ -1258,7 +1124,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/hallLogin.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/hallLogin.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main_portrait/bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/check_box.png", 
@@ -1283,7 +1149,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/hallUpdate.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/hallUpdate.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main_portrait/bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/loading_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -1295,16 +1161,16 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/hall_notice.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/hall_notice.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/main/brocast_bg.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/helpWnd.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/helpWnd.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/infoNode.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/infoNode.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/games/game_gray_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/wifi_1.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/wifi_2.png", 
@@ -1322,23 +1188,22 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/roomid.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/aapay.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/liangyou.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/liangyou.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/liangyouaction/img_hb.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/liangyouaction/btn_yellow.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/liangyouaction/btn_x.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/liangyouClubTipsView.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/liangyouaction/guangboru.png", 
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/liangyouClubTipsView.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/black_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/loading.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/loading.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/loading.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/loading_bg.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/mall.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/mall.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/lingzuan/bg_tap1.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/lingzuan/bg_tap1.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/gold_icon.png", 
@@ -1367,7 +1232,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg_matte.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/image_title.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/mall_item.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/mall_item.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/frame.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/exchange_tag.png", 
@@ -1381,7 +1246,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/mall_playerinfo.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/mall_playerinfo.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/x.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/transparent_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/L1_bg.png", 
@@ -1408,7 +1273,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/mall_record.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/mall_record.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/frame.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/exchange.png", 
@@ -1422,11 +1287,11 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/exchange_tag.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/mjRuleTips.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/mjRuleTips.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_3.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/myclub.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/myclub.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/image_title.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/club/my_club_title.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
@@ -1466,8 +1331,8 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/null_layer.json": [], 
-    "D:/Svn_2d/UI_Shu/Json/obtain_diamond.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/null_layer.json": [], 
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/obtain_diamond.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg_matte.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/image_title.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -1551,7 +1416,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/image_title.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/obtain_prop_dialog.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/obtain_prop_dialog.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/light_effect.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/gxhd_wz.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/gold_icon.png", 
@@ -1560,7 +1425,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/img_queding.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/btn_gree.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/pay_select_type.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/pay_select_type.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
@@ -1578,7 +1443,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/transparent_bg.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/Playerpanel.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/Playerpanel.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg_matte.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png", 
@@ -1617,7 +1482,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/image_title.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/player_position_info.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/player_position_info.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -1646,7 +1511,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/player_position_info_portrait.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/player_position_info_portrait.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -1675,13 +1540,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/popitem.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/defaultCircleHead.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/otherCircleHeadFrame.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/poplist.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/poplist.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/image_title.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -1706,12 +1565,12 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/qinyouquanzhiyin.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/qinyouquanzhiyin.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/main/btn_club.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/newer/tips_bg.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/quickpayitem.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/quickpayitem.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/diamond_L.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -1720,7 +1579,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/split_line.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/quickpayment.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/quickpayment.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -1736,27 +1595,11 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_2.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/frame.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/radio_item.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/radio_item.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/radio_yellow_box2.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/radio_item_panel.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/yuan.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/yuan_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/gou.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/gou_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/yuan_wei.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/radio_item_panelyc.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/play_select.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/play_select_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/gou_select_big.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/gou_unselect_big.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/yuan_wei.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/real_name.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/real_name.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_2.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
@@ -1783,7 +1626,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/record_dialog.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/record_dialog.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/image_title.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
@@ -1832,20 +1675,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/combat_winner.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/record_item.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/record/record_item_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/record_match_dialog.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/record_match_dialog.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -1890,12 +1720,12 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/combat_fz.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/redPacket.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/redPacket.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/toumingdi.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/lastUpdateAD.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/redpacket_panel.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/redpacket_panel.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -1908,7 +1738,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_2.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/roommodel.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/roommodel.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/game_window_panel.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_sure.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
@@ -1949,7 +1779,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/rule_dialog.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/rule_dialog.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/image_title.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/friendroomscene/room_btn_more.png", 
@@ -1982,54 +1812,11 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/rule_label.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/select_charge.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/select_charge.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/line2.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/select_city.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/L1_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/btn_close.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_grey.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_grey.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/line_an.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/select_city_confirm_wnd.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/select_city_confirm_wnd.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_cancel.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -2042,7 +1829,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/transparent_bg.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/select_province_city.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/select_province_city.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_sure.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_grey.png", 
@@ -2065,52 +1852,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_back.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_2.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/set_dialog_game.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/L2_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/x.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/set/wanfa_text.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/set/exit_login.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/btn_yellow.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_a_on.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_a_on.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/vioce_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/vioce_bar.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_btn.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_btn.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_a_on.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_a_on.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/vioce_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/vioce_bar.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_on.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_on.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_on.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_off.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_on.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/cut_off_line.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/L2_bg.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/set_dialog_hall.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/set_dialog_hall.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/L2_bg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -2163,7 +1905,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/common_btn_yellow.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/shareDialog.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/shareDialog.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/share_title.png", 
@@ -2172,39 +1914,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/penyouquan_icon.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/pengyouquan.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/share_diamond.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/x.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/main/smbg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/main/smbg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/main/packeg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/main/title_free.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/smallbg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/main/invite.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/main/dayshare.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/main/sharefriend.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/main/redrectangle.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/share_diamond1.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/line_an.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/frame.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/diamond.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_recieve.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_received.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_grey.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/share_diamond2.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/share_diamond2.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/line_an.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/diamond.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -2234,13 +1944,10 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/tips_item.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/toast.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/toast.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/Common/toast_bg.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/video_layer.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/video_layer.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/itembg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/itembg.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/itembg.png", 
@@ -2251,7 +1958,7 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/videoPanel.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/titlevideo.png"
     ], 
-    "D:/Svn_2d/UI_Shu/Json/wechat_path.json": [
+    "D:/Svn_2d/CoCoStuio/vertical/hall/Json/wechat_path.json": [
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_m.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_sure.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
@@ -2267,54 +1974,6 @@
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/yaoqing.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/main/btn_diamond.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/label_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/wenzi_dikuang2.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_title.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/smallbg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_txt_yaoqing.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/x.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/yaoqinghaoyou.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_title1.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/smallbg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_txt_yaoqing1.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_youli.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/btn_yellow.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_yaoqing.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/btn_gree.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/arrow_left.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/arrow_right.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/pro_front.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/pro_bg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/x.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/Common/bg.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/yaoqing_friend_item.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/headbg.png", 
-        "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/head_bg.png"
-    ], 
-    "D:/Svn_2d/UI_Shu/Json/yaoqing_pro_item.json": [
-        "D:/Svn_2d/S_GD_Heji/res/hall/main/img_fangka.png", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF", 
         "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     ]

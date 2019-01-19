@@ -1,55 +1,5 @@
 {
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/about_us.json": {
-        "0": {
-            "old": {
-                "path": "Common/bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004259.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "Common/smallbg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004408.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "Common/abouttitle.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004381.png", 
-                "plistFile": "res_package/common.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "Common/x.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004417.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/accountPanel.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/accountPanel.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -567,7 +517,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/adverView_page.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/adverView_page.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -641,7 +591,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/area_item.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/area_item.json": {
         "0": {
             "old": {
                 "path": "huanpi/Common/selected.png", 
@@ -691,7 +641,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/bindPhone.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/bindPhone.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -1089,165 +1039,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/bindSuccessful_dialog.json": {
-        "0": {
-            "old": {
-                "path": "huanpi2/Common/panel_m.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004612.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "huanpi/Common/transparent_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004481.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "huanpi2/Common/btn_x.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004561.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "huanpi2/Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004293.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "4": {
-            "old": {
-                "path": "huanpi2/bindingPhone/img_toRedeem.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004502.png", 
-                "plistFile": "res_package/bindSuccessful_dialog.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "5": {
-            "old": {
-                "path": "huanpi2/bindingPhone/img_counting1.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004499.png", 
-                "plistFile": "res_package/bindSuccessful_dialog.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "6": {
-            "old": {
-                "path": "huanpi2/bindingPhone/img_counting2.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004500.png", 
-                "plistFile": "res_package/bindSuccessful_dialog.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "7": {
-            "old": {
-                "path": "huanpi2/Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004293.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "8": {
-            "old": {
-                "path": "huanpi2/bindingPhone/btn_sure.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004492.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "9": {
-            "old": {
-                "path": "huanpi2/Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004293.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "10": {
-            "old": {
-                "path": "huanpi2/Common/btn_lab_sure.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004548.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "11": {
-            "old": {
-                "path": "huanpi2/Common/btn_orange.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004294.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "12": {
-            "old": {
-                "path": "huanpi2/Common/btn_lab_cancel.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004546.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/chat.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/chat.json": {
         "0": {
             "old": {
                 "path": "Common/bg_40x36.png", 
@@ -1321,7 +1113,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/chat_txt_item.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/chat_txt_item.json": {
         "0": {
             "old": {
                 "path": "gameCommon/chat/chat_item_bg.png", 
@@ -1335,7 +1127,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/choiceShare.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/choiceShare.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/game_window_panel.png", 
@@ -1433,7 +1225,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/choiceShare_horizontal.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/choiceShare_horizontal.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/game_window_panel.png", 
@@ -1531,7 +1323,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/city_item.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/city_item.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_black.png", 
@@ -1605,8 +1397,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/club.json": {}, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubApplyConfirmWnd.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/clubApplyConfirmWnd.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -1716,7 +1507,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubApplyModeAWnd.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/clubApplyModeAWnd.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -1838,7 +1629,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubApplyModeBWnd.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/clubApplyModeBWnd.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -2188,7 +1979,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubApplyRecordWnd.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/clubApplyRecordWnd.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -2298,129 +2089,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubApplyWnd.json": {
-        "0": {
-            "old": {
-                "path": "huanpi2/Common/L2_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004600.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "huanpi2/Common/panel_black.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004609.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "huanpi2/Common/panel_black.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004609.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "huanpi2/Common/panel_black.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004609.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "4": {
-            "old": {
-                "path": "huanpi2/Common/panel_wight.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004614.png", 
-                "plistFile": "res_package/common.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "5": {
-            "old": {
-                "path": "huanpi2/Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004293.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "6": {
-            "old": {
-                "path": "huanpi2/Common/btn_blue.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004526.png", 
-                "plistFile": "res_package/common.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "7": {
-            "old": {
-                "path": "huanpi2/Common/line_an.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004602.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "8": {
-            "old": {
-                "path": "huanpi2/Common/transparent_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004481.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "9": {
-            "old": {
-                "path": "huanpi2/Common/x.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004629.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubJoinedWnd.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/clubJoinedWnd.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -2530,7 +2199,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubListView.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/clubListView.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_qyq.png", 
@@ -2604,7 +2273,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubMatchRecord.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/clubMatchRecord.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -3206,7 +2875,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubMemberTypeWnd.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/clubMemberTypeWnd.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -3292,7 +2961,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubRoomListWnd.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/clubRoomListWnd.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -3882,7 +3551,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubSwitchCreateRoomWnd.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/clubSwitchCreateRoomWnd.json": {
         "0": {
             "old": {
                 "path": "huanpi/Common/transparent_bg.png", 
@@ -3932,7 +3601,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubSwitchListView.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/clubSwitchListView.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_black.png", 
@@ -4018,8 +3687,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/clubtips.json": {}, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/common_dialog.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/common_dialog.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -4141,7 +3809,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/common_tips.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/common_tips.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -4179,7 +3847,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/contact_item.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/contact_item.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/common_btn_green.png", 
@@ -4205,7 +3873,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/contact_us.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/contact_us.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -4327,81 +3995,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/conversion_dialog.json": {
-        "0": {
-            "old": {
-                "path": "huanpi2/Common/panel_m.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004612.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "huanpi2/Common/btn_orange.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004294.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "huanpi2/Common/btn_lab_cancel.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004546.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "huanpi2/Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004293.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "4": {
-            "old": {
-                "path": "huanpi2/bindingPhone/img_redeemOk.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004501.png", 
-                "plistFile": "res_package/common.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "5": {
-            "old": {
-                "path": "huanpi2/Common/btn_x.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004561.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/duty.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/duty.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -4475,117 +4069,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/email_content.json": {
-        "0": {
-            "old": {
-                "path": "huanpi/Common/btn_close.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004474.png", 
-                "plistFile": "res_package/email_content.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "huanpi/Common/L2_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004271.png", 
-                "plistFile": "res_package/email_content.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "huanpi/Common/label_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004478.png", 
-                "plistFile": "res_package/email_content.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "huanpi/Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004261.png", 
-                "plistFile": "res_package/email_content.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "4": {
-            "old": {
-                "path": "huanpi/Common/btn_blue.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004473.png", 
-                "plistFile": "res_package/email_content.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "5": {
-            "old": {
-                "path": "huanpi/Common/label_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004478.png", 
-                "plistFile": "res_package/email_content.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "6": {
-            "old": {
-                "path": "Common/scrip_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004406.png", 
-                "plistFile": "res_package/email_content.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "7": {
-            "old": {
-                "path": "huanpi/Common/cut_off_line.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004476.png", 
-                "plistFile": "res_package/area_item.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "8": {
-            "old": {
-                "path": "huanpi/Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004261.png", 
-                "plistFile": "res_package/email_content.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/email_item.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/email_item.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_black_2.png", 
@@ -4659,7 +4143,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/email_panel.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/email_panel.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -4925,7 +4409,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/face_item.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/face_item.json": {
         "0": {
             "old": {
                 "path": "gameCommon/face/face_1.png", 
@@ -4939,7 +4423,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/friendRoomCode.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/friendRoomCode.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -5289,7 +4773,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/friendRoomCreate.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/friendRoomCreate.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -6011,7 +5495,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/friendRoomEnterInfo.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/friendRoomEnterInfo.json": {
         "0": {
             "old": {
                 "path": "huanpi/Common/transparent_bg.png", 
@@ -6145,7 +5629,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/friendRoomScene.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/friendRoomScene.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -6759,7 +6243,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/hall.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/hall.json": {
         "0": {
             "old": {
                 "path": "huanpi2/main_portrait/img_btn_subbg.png", 
@@ -7541,7 +7025,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/hallBind.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/hallBind.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -8107,7 +7591,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/hallLogin.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/hallLogin.json": {
         "0": {
             "old": {
                 "path": "huanpi2/main_portrait/bg.png", 
@@ -8253,7 +7737,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/hallUpdate.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/hallUpdate.json": {
         "0": {
             "old": {
                 "path": "huanpi2/main_portrait/bg.png", 
@@ -8291,7 +7775,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/hall_notice.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/hall_notice.json": {
         "0": {
             "old": {
                 "path": "main/brocast_bg.png", 
@@ -8305,7 +7789,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/helpWnd.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/helpWnd.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -8343,7 +7827,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/infoNode.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/infoNode.json": {
         "0": {
             "old": {
                 "path": "games/game_gray_bg.png", 
@@ -8537,7 +8021,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/liangyou.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/liangyou.json": {
         "0": {
             "old": {
                 "path": "huanpi2/liangyouaction/img_hb.png", 
@@ -8575,7 +8059,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/liangyouClubTipsView.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/liangyouClubTipsView.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/black_bg.png", 
@@ -8587,21 +8071,9 @@
                 "plistFile": "", 
                 "resourceType": 0
             }
-        }, 
-        "1": {
-            "old": {
-                "path": "huanpi2/liangyouaction/guangboru.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004645.png", 
-                "plistFile": "res_package/common.plist", 
-                "resourceType": 1
-            }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/loading.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/loading.json": {
         "0": {
             "old": {
                 "path": "Common/loading_bg.png", 
@@ -8627,7 +8099,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/mall.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/mall.json": {
         "0": {
             "old": {
                 "path": "huanpi2/lingzuan/bg_tap1.png", 
@@ -8857,7 +8329,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/mall_item.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/mall_item.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/frame.png", 
@@ -8931,7 +8403,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/mall_playerinfo.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/mall_playerinfo.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/transparent_bg.png", 
@@ -8952,7 +8424,7 @@
             }, 
             "new": {
                 "path": "1004629.png", 
-                "plistFile": "res_package/foreload.plist", 
+                "plistFile": "res_package/common.plist", 
                 "resourceType": 1
             }
         }, 
@@ -9041,7 +8513,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/mall_record.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/mall_record.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/frame.png", 
@@ -9139,7 +8611,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/mjRuleTips.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/mjRuleTips.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_black_3.png", 
@@ -9153,7 +8625,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/myclub.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/myclub.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -9347,8 +8819,8 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/null_layer.json": {}, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/obtain_diamond.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/null_layer.json": {}, 
+    "D:/Python_FileDispose/source/UI_Shu/Json/obtain_diamond.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg_matte.png", 
@@ -9938,7 +9410,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/obtain_prop_dialog.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/obtain_prop_dialog.json": {
         "0": {
             "old": {
                 "path": "Common/light_effect.png", 
@@ -10007,7 +9479,7 @@
             }, 
             "new": {
                 "path": "1004015.png", 
-                "plistFile": "res_package/foreload.plist", 
+                "plistFile": "res_package/obtain_prop_dialog.plist", 
                 "resourceType": 1
             }
         }, 
@@ -10024,7 +9496,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/pay_select_type.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/pay_select_type.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -10158,7 +9630,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/Playerpanel.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/Playerpanel.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -10388,7 +9860,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/player_position_info.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/player_position_info.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -10486,7 +9958,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/player_position_info_portrait.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/player_position_info_portrait.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -10572,33 +10044,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/popitem.json": {
-        "0": {
-            "old": {
-                "path": "huanpi/Common/defaultCircleHead.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004477.png", 
-                "plistFile": "res_package/common.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "huanpi/Common/otherCircleHeadFrame.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004479.png", 
-                "plistFile": "res_package/common.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/poplist.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/poplist.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -10756,7 +10202,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/qinyouquanzhiyin.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/qinyouquanzhiyin.json": {
         "0": {
             "old": {
                 "path": "huanpi2/main/btn_club.png", 
@@ -10782,7 +10228,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/quickpayitem.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/quickpayitem.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/diamond_L.png", 
@@ -10820,7 +10266,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/quickpayment.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/quickpayment.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -10918,7 +10364,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/radio_item.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/radio_item.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/radio_yellow_box2.png", 
@@ -10932,131 +10378,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/radio_item_panel.json": {
-        "0": {
-            "old": {
-                "path": "Common/yuan_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004419.png", 
-                "plistFile": "res_package/radio_item_panel.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "Common/yuan.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004418.png", 
-                "plistFile": "res_package/radio_item_panel.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "Common/gou_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004393.png", 
-                "plistFile": "res_package/radio_item_panel.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "Common/gou.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004392.png", 
-                "plistFile": "res_package/radio_item_panel.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "4": {
-            "old": {
-                "path": "Common/yuan_wei.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004420.png", 
-                "plistFile": "res_package/radio_item_panel.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/radio_item_panelyc.json": {
-        "0": {
-            "old": {
-                "path": "Common/play_select_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004404.png", 
-                "plistFile": "res_package/radio_item_panelyc.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "Common/play_select.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004403.png", 
-                "plistFile": "res_package/radio_item_panelyc.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "Common/gou_unselect_big.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004395.png", 
-                "plistFile": "res_package/radio_item_panelyc.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "Common/gou_select_big.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004394.png", 
-                "plistFile": "res_package/radio_item_panelyc.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "4": {
-            "old": {
-                "path": "Common/yuan_wei.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004420.png", 
-                "plistFile": "res_package/radio_item_panel.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/real_name.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/real_name.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -11214,7 +10536,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/record_dialog.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/record_dialog.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -11492,21 +10814,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/record_item.json": {
-        "0": {
-            "old": {
-                "path": "friendRoom/record/record_item_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004440.png", 
-                "plistFile": "res_package/common.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/record_match_dialog.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/record_match_dialog.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -11724,7 +11032,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/redPacket.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/redPacket.json": {
         "0": {
             "old": {
                 "path": "Common/toumingdi.png", 
@@ -11762,7 +11070,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/redpacket_panel.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/redpacket_panel.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -11836,7 +11144,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/roommodel.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/roommodel.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/game_window_panel.png", 
@@ -12066,7 +11374,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/rule_dialog.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/rule_dialog.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/bg.png", 
@@ -12344,8 +11652,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/rule_label.json": {}, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/select_charge.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/select_charge.json": {
         "0": {
             "old": {
                 "path": "Common/line2.png", 
@@ -12359,105 +11666,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/select_city.json": {
-        "0": {
-            "old": {
-                "path": "huanpi2/Common/L1_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004599.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "huanpi2/Common/panel_black.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004609.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "huanpi/Common/btn_close.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004474.png", 
-                "plistFile": "res_package/email_content.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "huanpi2/Common/btn_grey.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004538.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "4": {
-            "old": {
-                "path": "huanpi2/Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004293.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "5": {
-            "old": {
-                "path": "huanpi2/Common/btn_grey.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004538.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "6": {
-            "old": {
-                "path": "huanpi2/Common/btn_back.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004524.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "7": {
-            "old": {
-                "path": "huanpi2/Common/line_an.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004602.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/select_city_confirm_wnd.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/select_city_confirm_wnd.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -12543,7 +11752,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/select_province_city.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/select_province_city.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -12713,7 +11922,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/set_dialog_game.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/set_dialog_hall.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/L2_bg.png", 
@@ -12722,441 +11931,7 @@
             }, 
             "new": {
                 "path": "1004600.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "huanpi/Common/transparent_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004481.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "huanpi2/Common/x.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004629.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "friendRoom/set/wanfa_text.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004442.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "4": {
-            "old": {
-                "path": "Common/btn_yellow.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004040.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "5": {
-            "old": {
-                "path": "friendRoom/set/exit_login.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004441.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "6": {
-            "old": {
-                "path": "huanpi2/Common/L2_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004600.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "7": {
-            "old": {
-                "path": "huanpi2/set/btn_a_on.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004704.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "8": {
-            "old": {
-                "path": "huanpi2/set/btn_a_on.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004704.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "9": {
-            "old": {
-                "path": "huanpi2/set/vioce_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004712.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "10": {
-            "old": {
-                "path": "huanpi2/set/vioce_bar.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004711.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "11": {
-            "old": {
-                "path": "huanpi2/set/music_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004709.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "12": {
-            "old": {
-                "path": "huanpi2/set/music_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004709.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "13": {
-            "old": {
-                "path": "huanpi2/set/music_btn.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004708.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "14": {
-            "old": {
-                "path": "huanpi2/set/music_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004709.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "15": {
-            "old": {
-                "path": "huanpi2/set/music_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004709.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "16": {
-            "old": {
-                "path": "huanpi2/set/music_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004709.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "17": {
-            "old": {
-                "path": "huanpi2/set/music_btn.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004708.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "18": {
-            "old": {
-                "path": "huanpi2/set/music_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004709.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "19": {
-            "old": {
-                "path": "huanpi2/set/btn_a_on.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004704.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "20": {
-            "old": {
-                "path": "huanpi2/set/btn_a_on.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004704.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "21": {
-            "old": {
-                "path": "huanpi2/set/vioce_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004712.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "22": {
-            "old": {
-                "path": "huanpi2/set/vioce_bar.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004711.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "23": {
-            "old": {
-                "path": "huanpi2/set/btn_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "24": {
-            "old": {
-                "path": "huanpi2/set/btn_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "25": {
-            "old": {
-                "path": "huanpi2/set/btn_on.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004706.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "26": {
-            "old": {
-                "path": "huanpi2/set/btn_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "27": {
-            "old": {
-                "path": "huanpi2/set/btn_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "28": {
-            "old": {
-                "path": "huanpi2/set/btn_on.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004706.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "29": {
-            "old": {
-                "path": "huanpi2/set/btn_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "30": {
-            "old": {
-                "path": "huanpi2/set/btn_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "31": {
-            "old": {
-                "path": "huanpi2/set/btn_on.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004706.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "32": {
-            "old": {
-                "path": "huanpi2/set/btn_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "33": {
-            "old": {
-                "path": "huanpi2/set/btn_off.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "34": {
-            "old": {
-                "path": "huanpi2/set/btn_on.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004706.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "35": {
-            "old": {
-                "path": "huanpi2/Common/cut_off_line.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004570.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/set_dialog_hall.json": {
-        "0": {
-            "old": {
-                "path": "huanpi2/Common/L2_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004600.png", 
-                "plistFile": "res_package/foreload.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13192,7 +11967,7 @@
             }, 
             "new": {
                 "path": "1004442.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13204,7 +11979,7 @@
             }, 
             "new": {
                 "path": "1004040.png", 
-                "plistFile": "res_package/foreload.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13216,7 +11991,7 @@
             }, 
             "new": {
                 "path": "1004441.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13240,7 +12015,7 @@
             }, 
             "new": {
                 "path": "1004710.png", 
-                "plistFile": "res_package/common.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13252,7 +12027,7 @@
             }, 
             "new": {
                 "path": "1004704.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13264,7 +12039,7 @@
             }, 
             "new": {
                 "path": "1004704.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13276,7 +12051,7 @@
             }, 
             "new": {
                 "path": "1004712.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13288,7 +12063,7 @@
             }, 
             "new": {
                 "path": "1004711.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13300,7 +12075,7 @@
             }, 
             "new": {
                 "path": "1004709.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13312,7 +12087,7 @@
             }, 
             "new": {
                 "path": "1004709.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13324,7 +12099,7 @@
             }, 
             "new": {
                 "path": "1004708.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13336,7 +12111,7 @@
             }, 
             "new": {
                 "path": "1004709.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13348,7 +12123,7 @@
             }, 
             "new": {
                 "path": "1004707.png", 
-                "plistFile": "res_package/common.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13360,7 +12135,7 @@
             }, 
             "new": {
                 "path": "1004709.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13372,7 +12147,7 @@
             }, 
             "new": {
                 "path": "1004709.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13384,7 +12159,7 @@
             }, 
             "new": {
                 "path": "1004708.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13396,7 +12171,7 @@
             }, 
             "new": {
                 "path": "1004709.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13408,7 +12183,7 @@
             }, 
             "new": {
                 "path": "1004704.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13420,7 +12195,7 @@
             }, 
             "new": {
                 "path": "1004704.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13432,7 +12207,7 @@
             }, 
             "new": {
                 "path": "1004712.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13444,7 +12219,7 @@
             }, 
             "new": {
                 "path": "1004711.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13456,7 +12231,7 @@
             }, 
             "new": {
                 "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13468,7 +12243,7 @@
             }, 
             "new": {
                 "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13480,7 +12255,7 @@
             }, 
             "new": {
                 "path": "1004706.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13492,7 +12267,7 @@
             }, 
             "new": {
                 "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13504,7 +12279,7 @@
             }, 
             "new": {
                 "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13516,7 +12291,7 @@
             }, 
             "new": {
                 "path": "1004706.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13528,7 +12303,7 @@
             }, 
             "new": {
                 "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13540,7 +12315,7 @@
             }, 
             "new": {
                 "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13552,7 +12327,7 @@
             }, 
             "new": {
                 "path": "1004706.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13564,7 +12339,7 @@
             }, 
             "new": {
                 "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13576,7 +12351,7 @@
             }, 
             "new": {
                 "path": "1004705.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13588,7 +12363,7 @@
             }, 
             "new": {
                 "path": "1004706.png", 
-                "plistFile": "res_package/set_dialog_game.plist", 
+                "plistFile": "res_package/set_dialog_hall.plist", 
                 "resourceType": 1
             }
         }, 
@@ -13653,7 +12428,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/shareDialog.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/shareDialog.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -13739,287 +12514,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/share_diamond.json": {
-        "0": {
-            "old": {
-                "path": "Common/bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004259.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "Common/x.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004417.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "main/smbg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004764.png", 
-                "plistFile": "res_package/share_diamond.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "main/smbg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004764.png", 
-                "plistFile": "res_package/share_diamond.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "4": {
-            "old": {
-                "path": "main/packeg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004759.png", 
-                "plistFile": "res_package/share_diamond.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "5": {
-            "old": {
-                "path": "Common/smallbg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004408.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "6": {
-            "old": {
-                "path": "main/title_free.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004766.png", 
-                "plistFile": "res_package/share_diamond.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "7": {
-            "old": {
-                "path": "main/invite.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004756.png", 
-                "plistFile": "res_package/share_diamond.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "8": {
-            "old": {
-                "path": "Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004015.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "9": {
-            "old": {
-                "path": "main/dayshare.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004748.png", 
-                "plistFile": "res_package/share_diamond.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "10": {
-            "old": {
-                "path": "Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004015.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "11": {
-            "old": {
-                "path": "main/sharefriend.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004763.png", 
-                "plistFile": "res_package/share_diamond.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "12": {
-            "old": {
-                "path": "main/redrectangle.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004762.png", 
-                "plistFile": "res_package/share_diamond.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/share_diamond1.json": {
-        "0": {
-            "old": {
-                "path": "huanpi2/Common/line_an.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004602.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "huanpi2/Common/frame.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004580.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "huanpi2/Common/diamond.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004575.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "huanpi2/Common/btn_grey.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004538.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "4": {
-            "old": {
-                "path": "huanpi2/Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004293.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "5": {
-            "old": {
-                "path": "huanpi2/Common/btn_recieve.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004553.png", 
-                "plistFile": "res_package/common.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "6": {
-            "old": {
-                "path": "huanpi2/Common/btn_received.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004552.png", 
-                "plistFile": "res_package/common.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "7": {
-            "old": {
-                "path": "huanpi2/Common/panel_m.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004612.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "8": {
-            "old": {
-                "path": "huanpi/Common/transparent_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004481.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "9": {
-            "old": {
-                "path": "huanpi2/Common/btn_x.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004561.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/share_diamond2.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/share_diamond2.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/line_an.png", 
@@ -14261,8 +12756,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/tips_item.json": {}, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/toast.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/toast.json": {
         "0": {
             "old": {
                 "path": "Common/toast_bg.png", 
@@ -14276,7 +12770,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/video_layer.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/video_layer.json": {
         "0": {
             "old": {
                 "path": "friendRoom/videoPanel.png", 
@@ -14374,7 +12868,7 @@
             }
         }
     }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/wechat_path.json": {
+    "D:/Python_FileDispose/source/UI_Shu/Json/wechat_path.json": {
         "0": {
             "old": {
                 "path": "huanpi2/Common/panel_m.png", 
@@ -14492,314 +12986,6 @@
             "new": {
                 "path": "1004702.png", 
                 "plistFile": "res_package/wechat_path.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/yaoqing.json": {
-        "0": {
-            "old": {
-                "path": "Common/bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004259.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "Common/label_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004398.png", 
-                "plistFile": "res_package/yaoqing.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "main/btn_diamond.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004744.png", 
-                "plistFile": "res_package/yaoqing.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "Common/wenzi_dikuang2.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004416.png", 
-                "plistFile": "res_package/yaoqing.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "4": {
-            "old": {
-                "path": "Common/smallbg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004408.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "5": {
-            "old": {
-                "path": "yaoqing/img_title.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004778.png", 
-                "plistFile": "res_package/yaoqing.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "6": {
-            "old": {
-                "path": "Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004015.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "7": {
-            "old": {
-                "path": "yaoqing/img_txt_yaoqing.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004780.png", 
-                "plistFile": "res_package/yaoqing.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "8": {
-            "old": {
-                "path": "Common/x.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004417.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/yaoqinghaoyou.json": {
-        "0": {
-            "old": {
-                "path": "Common/bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004259.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "Common/smallbg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004408.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "2": {
-            "old": {
-                "path": "yaoqing/img_title1.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004779.png", 
-                "plistFile": "res_package/yaoqinghaoyou.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "3": {
-            "old": {
-                "path": "Common/btn_yellow.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004040.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "4": {
-            "old": {
-                "path": "yaoqing/img_txt_yaoqing1.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004781.png", 
-                "plistFile": "res_package/yaoqinghaoyou.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "5": {
-            "old": {
-                "path": "yaoqing/img_youli.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004783.png", 
-                "plistFile": "res_package/yaoqinghaoyou.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "6": {
-            "old": {
-                "path": "Common/btn_gree.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004015.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "7": {
-            "old": {
-                "path": "yaoqing/img_yaoqing.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004782.png", 
-                "plistFile": "res_package/yaoqinghaoyou.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "8": {
-            "old": {
-                "path": "yaoqing/arrow_left.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004776.png", 
-                "plistFile": "res_package/yaoqinghaoyou.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "9": {
-            "old": {
-                "path": "yaoqing/arrow_right.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004777.png", 
-                "plistFile": "res_package/yaoqinghaoyou.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "10": {
-            "old": {
-                "path": "yaoqing/pro_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004784.png", 
-                "plistFile": "res_package/yaoqinghaoyou.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "11": {
-            "old": {
-                "path": "yaoqing/pro_front.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004785.png", 
-                "plistFile": "res_package/yaoqinghaoyou.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "12": {
-            "old": {
-                "path": "Common/x.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004417.png", 
-                "plistFile": "res_package/foreload.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/yaoqing_friend_item.json": {
-        "0": {
-            "old": {
-                "path": "friendRoom/headbg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004043.png", 
-                "plistFile": "res_package/common.plist", 
-                "resourceType": 1
-            }
-        }, 
-        "1": {
-            "old": {
-                "path": "yaoqing/head_bg.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004123.png", 
-                "plistFile": "res_package/common.plist", 
-                "resourceType": 1
-            }
-        }
-    }, 
-    "D:\\Python_FileDispose\\source\\UI_Shu\\Json/yaoqing_pro_item.json": {
-        "0": {
-            "old": {
-                "path": "main/img_fangka.png", 
-                "plistFile": "", 
-                "resourceType": 0
-            }, 
-            "new": {
-                "path": "1004752.png", 
-                "plistFile": "res_package/common.plist", 
                 "resourceType": 1
             }
         }

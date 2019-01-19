@@ -70,7 +70,7 @@
                   "fileName": null,
                   "fileNameData": {
                     "path": "1004629.png",
-                    "plistFile": "res_package/foreload.plist",
+                    "plistFile": "res_package/common.plist",
                     "resourceType": 1
                   },
                   "scale9Enable": false,

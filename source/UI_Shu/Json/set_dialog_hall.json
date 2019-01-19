@@ -83,7 +83,7 @@
               "fileName": null,
               "fileNameData": {
                 "path": "1004600.png",
-                "plistFile": "res_package/foreload.plist",
+                "plistFile": "res_package/set_dialog_hall.plist",
                 "resourceType": 1
               },
               "scale9Enable": true,
@@ -433,7 +433,7 @@
               "fileName": null,
               "fileNameData": {
                 "path": "1004442.png",
-                "plistFile": "res_package/set_dialog_game.plist",
+                "plistFile": "res_package/set_dialog_hall.plist",
                 "resourceType": 1
               },
               "scale9Enable": false,
@@ -491,7 +491,7 @@
                   "fileName": null,
                   "fileNameData": {
                     "path": "1004441.png",
-                    "plistFile": "res_package/set_dialog_game.plist",
+                    "plistFile": "res_package/set_dialog_hall.plist",
                     "resourceType": 1
                   },
                   "scale9Enable": false,
@@ -568,7 +568,7 @@
               "normal": null,
               "normalData": {
                 "path": "1004040.png",
-                "plistFile": "res_package/foreload.plist",
+                "plistFile": "res_package/set_dialog_hall.plist",
                 "resourceType": 1
               },
               "pressed": null,
@@ -648,7 +648,7 @@
                               "fileName": null,
                               "fileNameData": {
                                 "path": "1004710.png",
-                                "plistFile": "res_package/common.plist",
+                                "plistFile": "res_package/set_dialog_hall.plist",
                                 "resourceType": 1
                               },
                               "scale9Enable": false,
@@ -751,13 +751,13 @@
                           "ballNormal": null,
                           "ballNormalData": {
                             "path": "1004704.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "ballPressed": null,
                           "ballPressedData": {
                             "path": "1004704.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "barCapInsetsHeight": 1,
@@ -767,7 +767,7 @@
                           "barFileName": null,
                           "barFileNameData": {
                             "path": "1004712.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "capInsetsHeight": 1,
@@ -782,7 +782,7 @@
                           "progressBarCapInsetsY": 0,
                           "progressBarData": {
                             "path": "1004711.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "progressBarVisible": false,
@@ -835,7 +835,7 @@
                           "backGroundBox": null,
                           "backGroundBoxData": {
                             "path": "1004709.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "backGroundBoxDisabled": null,
@@ -847,19 +847,19 @@
                           "backGroundBoxSelected": null,
                           "backGroundBoxSelectedData": {
                             "path": "1004709.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "frontCross": null,
                           "frontCrossData": {
                             "path": "1004708.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "frontCrossDisabled": null,
                           "frontCrossDisabledData": {
                             "path": "1004709.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "selectedState": true
@@ -997,7 +997,7 @@
                               "fileName": null,
                               "fileNameData": {
                                 "path": "1004707.png",
-                                "plistFile": "res_package/common.plist",
+                                "plistFile": "res_package/set_dialog_hall.plist",
                                 "resourceType": 1
                               },
                               "scale9Enable": false,
@@ -1094,7 +1094,7 @@
                           "backGroundBox": null,
                           "backGroundBoxData": {
                             "path": "1004709.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "backGroundBoxDisabled": null,
@@ -1106,19 +1106,19 @@
                           "backGroundBoxSelected": null,
                           "backGroundBoxSelectedData": {
                             "path": "1004709.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "frontCross": null,
                           "frontCrossData": {
                             "path": "1004708.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "frontCrossDisabled": null,
                           "frontCrossDisabledData": {
                             "path": "1004709.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "selectedState": true
@@ -1172,13 +1172,13 @@
                           "ballNormal": null,
                           "ballNormalData": {
                             "path": "1004704.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "ballPressed": null,
                           "ballPressedData": {
                             "path": "1004704.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "barCapInsetsHeight": 1,
@@ -1188,7 +1188,7 @@
                           "barFileName": null,
                           "barFileNameData": {
                             "path": "1004712.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "capInsetsHeight": 1,
@@ -1203,7 +1203,7 @@
                           "progressBarCapInsetsY": 0,
                           "progressBarData": {
                             "path": "1004711.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "progressBarVisible": false,
@@ -1420,7 +1420,7 @@
                           "backGroundBox": null,
                           "backGroundBoxData": {
                             "path": "1004705.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "backGroundBoxDisabled": null,
@@ -1432,13 +1432,13 @@
                           "backGroundBoxSelected": null,
                           "backGroundBoxSelectedData": {
                             "path": "1004705.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "frontCross": null,
                           "frontCrossData": {
                             "path": "1004706.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "frontCrossDisabled": null,
@@ -1607,7 +1607,7 @@
                           "backGroundBox": null,
                           "backGroundBoxData": {
                             "path": "1004705.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "backGroundBoxDisabled": null,
@@ -1619,13 +1619,13 @@
                           "backGroundBoxSelected": null,
                           "backGroundBoxSelectedData": {
                             "path": "1004705.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "frontCross": null,
                           "frontCrossData": {
                             "path": "1004706.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "frontCrossDisabled": null,
@@ -1844,7 +1844,7 @@
                           "backGroundBox": null,
                           "backGroundBoxData": {
                             "path": "1004705.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "backGroundBoxDisabled": null,
@@ -1856,13 +1856,13 @@
                           "backGroundBoxSelected": null,
                           "backGroundBoxSelectedData": {
                             "path": "1004705.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "frontCross": null,
                           "frontCrossData": {
                             "path": "1004706.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "frontCrossDisabled": null,
@@ -1981,7 +1981,7 @@
                           "backGroundBox": null,
                           "backGroundBoxData": {
                             "path": "1004705.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "backGroundBoxDisabled": null,
@@ -1993,13 +1993,13 @@
                           "backGroundBoxSelected": null,
                           "backGroundBoxSelectedData": {
                             "path": "1004705.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "frontCross": null,
                           "frontCrossData": {
                             "path": "1004706.png",
-                            "plistFile": "res_package/set_dialog_game.plist",
+                            "plistFile": "res_package/set_dialog_hall.plist",
                             "resourceType": 1
                           },
                           "frontCrossDisabled": null,

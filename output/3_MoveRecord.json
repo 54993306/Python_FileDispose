@@ -1,24 +1,4 @@
 {
-    "D:/Python_FileDispose/packageRes/foreload/1004259.png": {
-        "md5": "e818da511ec616a003e21ec21c4c45ef", 
-        "new": "D:/Python_FileDispose/real_res/1004259.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/mj/common/bg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/foreload/1004408.png": {
-        "md5": "311fe2c8502079ceba4013671293c074", 
-        "new": "D:/Python_FileDispose/real_res/1004408.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/smallbg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/foreload/1004417.png": {
-        "md5": "863879ce150631ca8a8d596cd237491e", 
-        "new": "D:/Python_FileDispose/real_res/1004417.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/x.png"
-    }, 
-    "D:/Python_FileDispose/res_TTF/1016001.TTF": {
-        "md5": "cafa69cdc042f7ecea6dfed299612f73", 
-        "new": "D:/Python_FileDispose/real_res/1016001.TTF", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
-    }, 
     "D:/Python_FileDispose/packageRes/foreload/1004612.png": {
         "md5": "8a258b06f508b65582750e4918294884", 
         "new": "D:/Python_FileDispose/real_res/1004612.png", 
@@ -28,6 +8,11 @@
         "md5": "1673367be91da12fb5b63d47103bee6a", 
         "new": "D:/Python_FileDispose/real_res/1004561.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_x.png"
+    }, 
+    "D:/Python_FileDispose/res_TTF/1016001.TTF": {
+        "md5": "cafa69cdc042f7ecea6dfed299612f73", 
+        "new": "D:/Python_FileDispose/real_res/1016001.TTF", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF"
     }, 
     "D:/Python_FileDispose/packageRes/foreload/1004293.png": {
         "md5": "dbde71d1853ed307e3d562a750cbffcd", 
@@ -69,16 +54,6 @@
         "new": "D:/Python_FileDispose/real_res/1004481.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/transparent_bg.png"
     }, 
-    "D:/Python_FileDispose/packageRes/foreload/1004548.png": {
-        "md5": "e9033dcafb22b5f7878fb212d0a81f94", 
-        "new": "D:/Python_FileDispose/real_res/1004548.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_sure.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/foreload/1004546.png": {
-        "md5": "350f55e2853afc31baa31e942110e7a3", 
-        "new": "D:/Python_FileDispose/real_res/1004546.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_cancel.png"
-    }, 
     "D:/Python_FileDispose/packageRes/foreload/1004581.png": {
         "md5": "d6c20fcc7d0f8b4b4947c829499be377", 
         "new": "D:/Python_FileDispose/real_res/1004581.png", 
@@ -88,6 +63,11 @@
         "md5": "21ee2c48e177732f52b16aee03732c36", 
         "new": "D:/Python_FileDispose/real_res/1004609.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black.png"
+    }, 
+    "D:/Python_FileDispose/packageRes/foreload/1004546.png": {
+        "md5": "350f55e2853afc31baa31e942110e7a3", 
+        "new": "D:/Python_FileDispose/real_res/1004546.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_cancel.png"
     }, 
     "D:/Python_FileDispose/packageRes/foreload/1004524.png": {
         "md5": "c3f3244d9a05a27f8d49b4c1d75d1e30", 
@@ -109,25 +89,15 @@
         "new": "D:/Python_FileDispose/real_res/1004610.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_3.png"
     }, 
+    "D:/Python_FileDispose/packageRes/foreload/1004548.png": {
+        "md5": "e9033dcafb22b5f7878fb212d0a81f94", 
+        "new": "D:/Python_FileDispose/real_res/1004548.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_lab_sure.png"
+    }, 
     "D:/Python_FileDispose/packageRes/foreload/1004611.png": {
         "md5": "58dc2aad4bbf796ffe3d320a359324bd", 
         "new": "D:/Python_FileDispose/real_res/1004611.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_black_half.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/foreload/1004600.png": {
-        "md5": "3d78f510191311910b79fb11849cbfea", 
-        "new": "D:/Python_FileDispose/real_res/1004600.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/L2_bg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/foreload/1004602.png": {
-        "md5": "b4de5d043b489adbe7f889beb84020a4", 
-        "new": "D:/Python_FileDispose/real_res/1004602.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/line_an.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/foreload/1004629.png": {
-        "md5": "bdb98bef438f1b233d960e2f42f62e48", 
-        "new": "D:/Python_FileDispose/real_res/1004629.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/x.png"
     }, 
     "D:/Python_FileDispose/packageRes/foreload/1004539.png": {
         "md5": "132323aa15ad4d0c693d0aa56846fc97", 
@@ -153,6 +123,11 @@
         "md5": "22a107a519a1919344bfe59bf8353e5c", 
         "new": "D:/Python_FileDispose/real_res/1004529.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_deepgreen.png"
+    }, 
+    "D:/Python_FileDispose/packageRes/foreload/1004602.png": {
+        "md5": "b4de5d043b489adbe7f889beb84020a4", 
+        "new": "D:/Python_FileDispose/real_res/1004602.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/line_an.png"
     }, 
     "D:/Python_FileDispose/packageRes/foreload/1004568.png": {
         "md5": "bb22a2bfa01d7a622657f95f88c4c3ac", 
@@ -249,21 +224,6 @@
         "new": "D:/Python_FileDispose/real_res/1010015.fnt", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/font/yellow_num_hrl.fnt"
     }, 
-    "D:/Python_FileDispose/packageRes/foreload/1004015.png": {
-        "md5": "5f3f20f7bf7051c432c8498891976f06", 
-        "new": "D:/Python_FileDispose/real_res/1004015.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/btn_gree.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/foreload/1004040.png": {
-        "md5": "419d15de74fe6f5ea2cb8527ff4b8159", 
-        "new": "D:/Python_FileDispose/real_res/1004040.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/btn_yellow.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/about_us/1004381.png": {
-        "md5": "03027e30024c04bf392bde328087727b", 
-        "new": "D:/Python_FileDispose/real_res/1004381.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/222/abouttitle.png"
-    }, 
     "D:/Python_FileDispose/packageRes/accountPanel/1004519.png": {
         "md5": "c70adcb855a335b70c272f73f4e6e658", 
         "new": "D:/Python_FileDispose/real_res/1004519.png", 
@@ -313,21 +273,6 @@
         "md5": "1a6e28ea6e3b77359e0e6b3d72c9cb99", 
         "new": "D:/Python_FileDispose/real_res/1004491.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/btn_qdbd.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/bindSuccessful_dialog/1004502.png": {
-        "md5": "5be25bb4ce497ef54146a027e1bf5ae7", 
-        "new": "D:/Python_FileDispose/real_res/1004502.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_toRedeem.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/bindSuccessful_dialog/1004499.png": {
-        "md5": "0a36863537ddf001dd6741fd7af32380", 
-        "new": "D:/Python_FileDispose/real_res/1004499.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting1.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/bindSuccessful_dialog/1004500.png": {
-        "md5": "248ace7dc55effc686307c3edb7b37e5", 
-        "new": "D:/Python_FileDispose/real_res/1004500.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_counting2.png"
     }, 
     "D:/Python_FileDispose/packageRes/chat/1004132.png": {
         "md5": "7b14aa348be075c2917326e5a0e98092", 
@@ -484,16 +429,6 @@
         "new": "D:/Python_FileDispose/real_res/1004378.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/club/tag_pass.png"
     }, 
-    "D:/Python_FileDispose/packageRes/clubApplyWnd/1004614.png": {
-        "md5": "819cc4ffd377b94aa94bb0a687dc673a", 
-        "new": "D:/Python_FileDispose/real_res/1004614.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_wight.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/clubApplyWnd/1004526.png": {
-        "md5": "ac42c7998f8786163eaa87c83dbde282", 
-        "new": "D:/Python_FileDispose/real_res/1004526.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_blue.png"
-    }, 
     "D:/Python_FileDispose/packageRes/clubJoinedWnd/1004541.png": {
         "md5": "9e6cbccb1dee870ff4b9d514c29dd2d3", 
         "new": "D:/Python_FileDispose/real_res/1004541.png", 
@@ -593,41 +528,6 @@
         "md5": "630a7c61df25fb33a1e8a2ed31f2c9b8", 
         "new": "D:/Python_FileDispose/real_res/1004628.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/tips.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/conversion_dialog/1004501.png": {
-        "md5": "189f6c0693ca544765efec91079379b6", 
-        "new": "D:/Python_FileDispose/real_res/1004501.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/bindingPhone/img_redeemOk.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/email_content/1004474.png": {
-        "md5": "8d531aa6ec30b9e23395d9def829ef54", 
-        "new": "D:/Python_FileDispose/real_res/1004474.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/btn_close.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/email_content/1004271.png": {
-        "md5": "5bf5a02829f5885cb2f401a35b519ccd", 
-        "new": "D:/Python_FileDispose/real_res/1004271.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/mj/common/L2_bg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/email_content/1004478.png": {
-        "md5": "32bc9cf63a6fd3e32dc8b40e92718564", 
-        "new": "D:/Python_FileDispose/real_res/1004478.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/label_bg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/email_content/1004261.png": {
-        "md5": "644064992949a1cc01c9f6d6b5078f74", 
-        "new": "D:/Python_FileDispose/real_res/1004261.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/mj/common/btn_gree_n.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/email_content/1004473.png": {
-        "md5": "7e038ea165523b2c344990e8785f0156", 
-        "new": "D:/Python_FileDispose/real_res/1004473.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/btn_blue.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/email_content/1004406.png": {
-        "md5": "83d0ac591efd3289ec863d0da8c58f95", 
-        "new": "D:/Python_FileDispose/real_res/1004406.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/scrip_bg.png"
     }, 
     "D:/Python_FileDispose/packageRes/email_item/1004607.png": {
         "md5": "e458d43dfaf177390d9909fb9807680c", 
@@ -1219,11 +1119,6 @@
         "new": "D:/Python_FileDispose/real_res/1004643.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/liangyouaction/btn_x.png"
     }, 
-    "D:/Python_FileDispose/packageRes/liangyouClubTipsView/1004645.png": {
-        "md5": "e5cd43384e3e36bfe80ed80b0192b120", 
-        "new": "D:/Python_FileDispose/real_res/1004645.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/liangyouaction/guangboru.png"
-    }, 
     "D:/Python_FileDispose/packageRes/loading/1004401.png": {
         "md5": "eb1d0c37b2cb837b712e4046ad8eb17b", 
         "new": "D:/Python_FileDispose/real_res/1004401.png", 
@@ -1263,6 +1158,11 @@
         "md5": "2c046b1b466edcae4a6f5806c177b820", 
         "new": "D:/Python_FileDispose/real_res/1004618.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/redbag.png"
+    }, 
+    "D:/Python_FileDispose/packageRes/mall_playerinfo/1004629.png": {
+        "md5": "bdb98bef438f1b233d960e2f42f62e48", 
+        "new": "D:/Python_FileDispose/real_res/1004629.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/x.png"
     }, 
     "D:/Python_FileDispose/packageRes/mall_record/1004577.png": {
         "md5": "f24b69c7042899a2d5d98af736a3562a", 
@@ -1334,6 +1234,11 @@
         "new": "D:/Python_FileDispose/real_res/1004435.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/img_queding.png"
     }, 
+    "D:/Python_FileDispose/packageRes/obtain_prop_dialog/1004015.png": {
+        "md5": "5f3f20f7bf7051c432c8498891976f06", 
+        "new": "D:/Python_FileDispose/real_res/1004015.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/btn_gree.png"
+    }, 
     "D:/Python_FileDispose/packageRes/pay_select_type/1004771.png": {
         "md5": "02ca0cd82e29709b6a4b100150ee3f77", 
         "new": "D:/Python_FileDispose/real_res/1004771.png", 
@@ -1379,75 +1284,20 @@
         "new": "D:/Python_FileDispose/real_res/1004586.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/image_binded.png"
     }, 
-    "D:/Python_FileDispose/packageRes/popitem/1004477.png": {
-        "md5": "949711130150658e7a7f0f3549d4bd81", 
-        "new": "D:/Python_FileDispose/real_res/1004477.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/defaultCircleHead.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/popitem/1004479.png": {
-        "md5": "455998d6cbe9d1bf5fd833722209c63b", 
-        "new": "D:/Python_FileDispose/real_res/1004479.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi/Common/otherCircleHeadFrame.png"
-    }, 
     "D:/Python_FileDispose/packageRes/radio_item/1004220.png": {
         "md5": "8954e88fbc64d3bffe0454309f2f03f5", 
         "new": "D:/Python_FileDispose/real_res/1004220.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/round_select_bg.png"
     }, 
-    "D:/Python_FileDispose/packageRes/radio_item_panel/1004418.png": {
-        "md5": "d90c6a84e43e806e199e4a21269db48b", 
-        "new": "D:/Python_FileDispose/real_res/1004418.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/yuan.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/radio_item_panel/1004419.png": {
-        "md5": "deb24149a82e77ed9e35af5b5f4a5edf", 
-        "new": "D:/Python_FileDispose/real_res/1004419.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/yuan_bg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/radio_item_panel/1004392.png": {
-        "md5": "b93b955ed27a18baac77c1be21b2ab6a", 
-        "new": "D:/Python_FileDispose/real_res/1004392.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/gou.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/radio_item_panel/1004393.png": {
-        "md5": "770b8046cdab163e97d2dc436c6c8190", 
-        "new": "D:/Python_FileDispose/real_res/1004393.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/gou_bg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/radio_item_panel/1004420.png": {
-        "md5": "f6e63288d339a5ff4af7975b20a0e1e5", 
-        "new": "D:/Python_FileDispose/real_res/1004420.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/yuan_wei.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/radio_item_panelyc/1004403.png": {
-        "md5": "af7dad38341dd5c6dc405b7a4a63fe78", 
-        "new": "D:/Python_FileDispose/real_res/1004403.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/play_select.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/radio_item_panelyc/1004404.png": {
-        "md5": "4480a48ccb79a29050ba8d0824237632", 
-        "new": "D:/Python_FileDispose/real_res/1004404.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/play_select_bg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/radio_item_panelyc/1004394.png": {
-        "md5": "3ae53e87899204730cf9b7638e5557ad", 
-        "new": "D:/Python_FileDispose/real_res/1004394.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/gou_select_big.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/radio_item_panelyc/1004395.png": {
-        "md5": "c27a2d56fe2982b3369fa3c95434fa65", 
-        "new": "D:/Python_FileDispose/real_res/1004395.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/gou_unselect_big.png"
+    "D:/Python_FileDispose/packageRes/real_name/1004614.png": {
+        "md5": "819cc4ffd377b94aa94bb0a687dc673a", 
+        "new": "D:/Python_FileDispose/real_res/1004614.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/panel_wight.png"
     }, 
     "D:/Python_FileDispose/packageRes/record_dialog/1004727.png": {
         "md5": "ddf13f11ad112ee3102cc1a9c534a6d5", 
         "new": "D:/Python_FileDispose/real_res/1004727.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/combat_winner.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/record_item/1004440.png": {
-        "md5": "bd68fe313917186249952f532cee1fb3", 
-        "new": "D:/Python_FileDispose/real_res/1004440.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/record/record_item_bg.png"
     }, 
     "D:/Python_FileDispose/packageRes/redPacket/1004415.png": {
         "md5": "f79edc8fbe03331a89014379568e5897", 
@@ -1494,65 +1344,70 @@
         "new": "D:/Python_FileDispose/real_res/1004400.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/line2.png"
     }, 
-    "D:/Python_FileDispose/packageRes/set_dialog_game/1004442.png": {
+    "D:/Python_FileDispose/packageRes/set_dialog_hall/1004600.png": {
+        "md5": "3d78f510191311910b79fb11849cbfea", 
+        "new": "D:/Python_FileDispose/real_res/1004600.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/L2_bg.png"
+    }, 
+    "D:/Python_FileDispose/packageRes/set_dialog_hall/1004442.png": {
         "md5": "b404038691d5e8c921d9618dfb88c7e6", 
         "new": "D:/Python_FileDispose/real_res/1004442.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/set/wanfa_text.png"
     }, 
-    "D:/Python_FileDispose/packageRes/set_dialog_game/1004441.png": {
+    "D:/Python_FileDispose/packageRes/set_dialog_hall/1004441.png": {
         "md5": "434fa2a36953e19998b9195397cfadc1", 
         "new": "D:/Python_FileDispose/real_res/1004441.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/friendRoom/set/exit_login.png"
     }, 
-    "D:/Python_FileDispose/packageRes/set_dialog_game/1004704.png": {
-        "md5": "a008d913493f9754e7ed0610569269b8", 
-        "new": "D:/Python_FileDispose/real_res/1004704.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_a_on.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/set_dialog_game/1004712.png": {
-        "md5": "1f9b1fd4a07711e3639540fb60bd7279", 
-        "new": "D:/Python_FileDispose/real_res/1004712.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/vioce_bg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/set_dialog_game/1004711.png": {
-        "md5": "7012f527e509edc40c6f533e8f35ba3c", 
-        "new": "D:/Python_FileDispose/real_res/1004711.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/vioce_bar.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/set_dialog_game/1004709.png": {
-        "md5": "ec76206b276d4bb65cae554e7685289c", 
-        "new": "D:/Python_FileDispose/real_res/1004709.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_off.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/set_dialog_game/1004708.png": {
-        "md5": "a803c586ac1f692079f1e16d2a4ebf0f", 
-        "new": "D:/Python_FileDispose/real_res/1004708.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_btn.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/set_dialog_game/1004705.png": {
-        "md5": "b98cd77ee4fe66003d71715650de4ba6", 
-        "new": "D:/Python_FileDispose/real_res/1004705.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_off.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/set_dialog_game/1004706.png": {
-        "md5": "d1b5f080cc7db3b109cbb17c56d5eae0", 
-        "new": "D:/Python_FileDispose/real_res/1004706.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_on.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/set_dialog_game/1004570.png": {
-        "md5": "3a3141260ef1b8cc2e41959a1498b1cc", 
-        "new": "D:/Python_FileDispose/real_res/1004570.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/cut_off_line.png"
+    "D:/Python_FileDispose/packageRes/set_dialog_hall/1004040.png": {
+        "md5": "419d15de74fe6f5ea2cb8527ff4b8159", 
+        "new": "D:/Python_FileDispose/real_res/1004040.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/btn_yellow.png"
     }, 
     "D:/Python_FileDispose/packageRes/set_dialog_hall/1004710.png": {
         "md5": "a1e859b2ff107f4f796fbd85c6b7c3ea", 
         "new": "D:/Python_FileDispose/real_res/1004710.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_sound.png"
     }, 
+    "D:/Python_FileDispose/packageRes/set_dialog_hall/1004704.png": {
+        "md5": "a008d913493f9754e7ed0610569269b8", 
+        "new": "D:/Python_FileDispose/real_res/1004704.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_a_on.png"
+    }, 
+    "D:/Python_FileDispose/packageRes/set_dialog_hall/1004712.png": {
+        "md5": "1f9b1fd4a07711e3639540fb60bd7279", 
+        "new": "D:/Python_FileDispose/real_res/1004712.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/vioce_bg.png"
+    }, 
+    "D:/Python_FileDispose/packageRes/set_dialog_hall/1004711.png": {
+        "md5": "7012f527e509edc40c6f533e8f35ba3c", 
+        "new": "D:/Python_FileDispose/real_res/1004711.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/vioce_bar.png"
+    }, 
+    "D:/Python_FileDispose/packageRes/set_dialog_hall/1004709.png": {
+        "md5": "ec76206b276d4bb65cae554e7685289c", 
+        "new": "D:/Python_FileDispose/real_res/1004709.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_off.png"
+    }, 
+    "D:/Python_FileDispose/packageRes/set_dialog_hall/1004708.png": {
+        "md5": "a803c586ac1f692079f1e16d2a4ebf0f", 
+        "new": "D:/Python_FileDispose/real_res/1004708.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music_btn.png"
+    }, 
     "D:/Python_FileDispose/packageRes/set_dialog_hall/1004707.png": {
         "md5": "ef99d060d096ed1878091be2ea1e93e7", 
         "new": "D:/Python_FileDispose/real_res/1004707.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/music.png"
+    }, 
+    "D:/Python_FileDispose/packageRes/set_dialog_hall/1004705.png": {
+        "md5": "b98cd77ee4fe66003d71715650de4ba6", 
+        "new": "D:/Python_FileDispose/real_res/1004705.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_off.png"
+    }, 
+    "D:/Python_FileDispose/packageRes/set_dialog_hall/1004706.png": {
+        "md5": "d1b5f080cc7db3b109cbb17c56d5eae0", 
+        "new": "D:/Python_FileDispose/real_res/1004706.png", 
+        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/set/btn_on.png"
     }, 
     "D:/Python_FileDispose/packageRes/shareDialog/1004736.png": {
         "md5": "014d856d48a7fcce531a212433aa1bd7", 
@@ -1578,46 +1433,6 @@
         "md5": "1e2138f5aef386a4cc4906d1d5f848f1", 
         "new": "D:/Python_FileDispose/real_res/1004734.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/shuimonew/pengyouquan.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/share_diamond/1004764.png": {
-        "md5": "97c76ab12abdcc6f53bca822883de101", 
-        "new": "D:/Python_FileDispose/real_res/1004764.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/main/smbg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/share_diamond/1004759.png": {
-        "md5": "b5835afecc95d6f3d5b734b4b7427a22", 
-        "new": "D:/Python_FileDispose/real_res/1004759.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/main/packeg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/share_diamond/1004766.png": {
-        "md5": "8e8e64096c2ae5af697f014271ab1bf9", 
-        "new": "D:/Python_FileDispose/real_res/1004766.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/main/title_free.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/share_diamond/1004756.png": {
-        "md5": "0a934867aeafae017cf23146c0d3e4cb", 
-        "new": "D:/Python_FileDispose/real_res/1004756.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/main/invite.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/share_diamond/1004748.png": {
-        "md5": "9772edc09f9556951986daa50095ecaf", 
-        "new": "D:/Python_FileDispose/real_res/1004748.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/main/dayshare.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/share_diamond/1004763.png": {
-        "md5": "045a858cd41b4ee2a29327471f2ca0e8", 
-        "new": "D:/Python_FileDispose/real_res/1004763.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/main/sharefriend.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/share_diamond/1004762.png": {
-        "md5": "9867f4ed399ed385fd706e0b0e3dddee", 
-        "new": "D:/Python_FileDispose/real_res/1004762.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/main/redrectangle.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/share_diamond1/1004552.png": {
-        "md5": "310e4bf22071eb9c6cdf33d397905039", 
-        "new": "D:/Python_FileDispose/real_res/1004552.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/Common/btn_received.png"
     }, 
     "D:/Python_FileDispose/packageRes/share_diamond2/1004517.png": {
         "md5": "d65567e44b77abe2716f5f51c6346645", 
@@ -1683,86 +1498,6 @@
         "md5": "4b0d7a18827dca0fb87a6b5fcd8ee180", 
         "new": "D:/Python_FileDispose/real_res/1004702.png", 
         "old": "D:/Svn_2d/S_GD_Heji/res/hall/huanpi2/mall/img_wx_4.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqing/1004744.png": {
-        "md5": "aff193d77e55901fb093e93ab9eb2b01", 
-        "new": "D:/Python_FileDispose/real_res/1004744.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/main/btn_diamond.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqing/1004398.png": {
-        "md5": "06aa0350ae5093f05f869c4601b5bce3", 
-        "new": "D:/Python_FileDispose/real_res/1004398.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/label_bg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqing/1004416.png": {
-        "md5": "2e2561bd9ea0a3383c6a778601068dbe", 
-        "new": "D:/Python_FileDispose/real_res/1004416.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/Common/wenzi_dikuang2.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqing/1004778.png": {
-        "md5": "c8567206d27120b93581040656dc0fd0", 
-        "new": "D:/Python_FileDispose/real_res/1004778.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_title.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqing/1004780.png": {
-        "md5": "04200cbd2fbbfe150a817b7bf4518e11", 
-        "new": "D:/Python_FileDispose/real_res/1004780.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_txt_yaoqing.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqinghaoyou/1004779.png": {
-        "md5": "eda0f2f93f69312f213d87d1a9db70e9", 
-        "new": "D:/Python_FileDispose/real_res/1004779.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_title1.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqinghaoyou/1004781.png": {
-        "md5": "975fa0baf4682eb4f41fd5f6e532229c", 
-        "new": "D:/Python_FileDispose/real_res/1004781.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_txt_yaoqing1.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqinghaoyou/1004783.png": {
-        "md5": "1df8ccd3108fb3251b20927338c41cc7", 
-        "new": "D:/Python_FileDispose/real_res/1004783.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_youli.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqinghaoyou/1004782.png": {
-        "md5": "65182690a0c4c586e02bbadc63419ee7", 
-        "new": "D:/Python_FileDispose/real_res/1004782.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/img_yaoqing.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqinghaoyou/1004776.png": {
-        "md5": "077b6b0810dc098f9ce59051a79da47c", 
-        "new": "D:/Python_FileDispose/real_res/1004776.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/arrow_left.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqinghaoyou/1004777.png": {
-        "md5": "c90a4116b6f5f564ea69e153888bf087", 
-        "new": "D:/Python_FileDispose/real_res/1004777.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/arrow_right.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqinghaoyou/1004785.png": {
-        "md5": "2774b31517e8474e5f63ec81cbdb8a1c", 
-        "new": "D:/Python_FileDispose/real_res/1004785.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/pro_front.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqinghaoyou/1004784.png": {
-        "md5": "eba15f22ba4c529a41693472c86e2137", 
-        "new": "D:/Python_FileDispose/real_res/1004784.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/yaoqing/pro_bg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqing_friend_item/1004043.png": {
-        "md5": "abcf626af9249052157687c6653cfe48", 
-        "new": "D:/Python_FileDispose/real_res/1004043.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/common/default_head_2.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqing_friend_item/1004123.png": {
-        "md5": "99d65918e9e298a80965974269d375b6", 
-        "new": "D:/Python_FileDispose/real_res/1004123.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/games/common/game/friendRoom/mjOver/head_bg.png"
-    }, 
-    "D:/Python_FileDispose/packageRes/yaoqing_pro_item/1004752.png": {
-        "md5": "d9c87bb8c76d62bc84f7811eeefb9047", 
-        "new": "D:/Python_FileDispose/real_res/1004752.png", 
-        "old": "D:/Svn_2d/S_GD_Heji/res/hall/main/img_fangka.png"
     }, 
     "D:/Python_FileDispose/res_plist/1008001.png": {
         "md5": "dcb4edede784a7bfb76dbb2f1ab0ddd6", 
