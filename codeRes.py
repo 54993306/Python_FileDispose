@@ -7,10 +7,13 @@ import json
 import comFun
 import copy
 import collections
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 import fileDataHandle as FD
 
 class codeRes:
-    absPathChild = ["games", "hall", "package_res"]
+    absPathChild = ["games", "hall", "package_res","res"]
     FILEPATH = r"D:/Svn_2d/S_GD_Heji/res/"
     resTypes = ['\\.png', '\\.ExportJson', '\\.plist', '\\.json',
                 '\\.fnt', '\\.TTF', '\\.jpg', '\\.mp3', '\\.ogg',
@@ -105,22 +108,41 @@ class codeRes:
             self.currInfo["unMatch"] = unMatch
             unMatch.append(path)
 
+    # 不需要做修改的条件
+    def isContinue(self , path):
+        if not re.search(r".lua", path):
+            return True
+        if re.search("app/framework/|/app/luaqrcode/|/src/cocos", path):
+            return True
+
     # 执行替换操作
     def excuteReplace(self):
         lusPaths = []
         comFun.initPathFiles(comFun.SEARLUAPATJ, lusPaths)
-        lusPaths = [r"D:\Svn_2d\S_GD_Heji\src\app\hall\main/HallMain.lua"]
+        # lusPaths = [r"D:\Svn_2d\S_GD_Heji\src\app\hall\main/HallMain.lua"]
         for filepath in lusPaths:
             if not os.path.isabs(filepath):
                 filepath = os.path.abspath(filepath)
-            if not re.search(r".lua" , filepath):
+            if self.isContinue(filepath):
                 continue
             filepath = comFun.turnBias(filepath)
+            print "\n ===============>>>>> " + filepath
             stream = open(filepath, "r")
             self.currInfo = collections.OrderedDict()
             self.handleFilePath = filepath  # 对日志的记录提供了很大的遍历，大胆使用语言特性
             self.outInfo[filepath] = self.currInfo
             self.handleStream(stream)
+        self.tidyChangeInfo()
+
+    # 整理要记录的数据
+    def tidyChangeInfo(self):
+        emptys = []
+        for path , changeInfo in self.outInfo.iteritems():
+            if not changeInfo:
+                emptys.append(path)
+        for path in emptys:
+            del self.outInfo[path]
+        self.outInfo["emptys"] = emptys
         comFun.RecordToJsonFile(comFun.CODERESMESSAGE, self.outInfo)
 
     # 开始处理文件流
@@ -139,7 +161,7 @@ class codeRes:
                         self.recordUnMatch(line + " >>> " + resType)
             content.append(line)
         self.printOutInfo(resList)
-        self.createNewFile(content)
+        # self.createNewFile(content)
 
     # 创建替换内容后的文件
     def createNewFile(self, content):
@@ -166,6 +188,7 @@ class codeRes:
             self.recordInfoListToFile("NoChange", matchStr)  # 无法改动的部分
             return "\"" + matchStr + "\""
         newPath , md5code = self.getResNewPath(filepath)
+        newPath = re.sub(comFun.OUTPUTTARGET , "" , newPath)
         if newPath:
             self.recordChange(matchStr, newPath , md5code)
             return "\"" + newPath + "\""  # 给新路径添加引号
@@ -176,6 +199,9 @@ class codeRes:
     # 格式化匹配到的内容,将匹配的内容转换为全路径
     def formatPath(self, matchStr):
         paths = matchStr.split("/")[0]
+        if cmp("res" , paths) == 0:
+            matchStr = re.sub("res/", "", matchStr)
+            paths = matchStr.split("/")[0]
         if not paths in self.absPathChild:  # 判断路径是否为根路径内容
             self.printOutInfo("not abs path can't change :" + matchStr)
             return
