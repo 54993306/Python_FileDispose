@@ -183,10 +183,7 @@ def deleteFileBystr(str , pPath):
 # 递归删除文件夹
 def removeDir(dirPath):
     if not os.path.isdir(dirPath):
-        if os.path.isfile(dirPath):
-            dirPath = os.path.dirname(dirPath)
-        else:
-            return
+        return
     files = os.listdir(dirPath)
     try:
         for file in files:
@@ -221,6 +218,24 @@ def deleteDirByStr(str , paths):
             print nPath
             os.chmod(nPath, 0o777);
             os.remove(nPath)
+
+# 从 sourcepath 移动 包含type的文件到dirPath,是否保留原有的路径结构
+def moveTypeFileToTarget(sourcePath , type , dirPath):
+    if not os.path.isdir(sourcePath) or not os.path.isdir(dirPath):
+        print "moveTypeFileToTarget is not dir"
+        return
+    files = []  # 存储所有的json文件
+    initPathFiles(sourcePath, files)
+    for path in files:
+        if not os.path.isabs(path):
+            path = os.path.abspath(path)
+        path = turnBias(path)
+        if not re.search(type,path):
+            continue
+        shutil.copyfile(path , dirPath + "/" + os.path.basename(path))
+
+
+
 
 # 复制文件夹到指定文件夹，目标文件夹必须是不存在的路径
 # comFun.deleteDirByStr(r".svn", r"D:\Python_FileDispose\source\project")
