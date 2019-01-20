@@ -21,7 +21,7 @@ import fileDataHandle as FD
 
 if not TEST:
     # 去重和生成文件信息
-    # totalResDict.totalRes() #初始化所有的资源信息
+    totalResDict.totalRes() #初始化所有的资源信息
 
     # 对json中的资源做处理
     # jsonFileRes.jsonRes()  # 初始化所有json中包含的资源信息
@@ -33,11 +33,14 @@ if not TEST:
     # fileChange.replaceImage()
 
     # 初始化代码中包含的资源信息
-    codeRes.codeRes()
+    # codeRes.codeRes()
 
     # 整理日志和资源
     # tidyRes.tidyRes()
 else:
     print ""
-    comFun.deleteDirByStr(r".svn", r"D:\Svn_2d\CoCoStuio\vertical\hal_packres")
+    # D:\Python_FileDispose\res_csb
+    # D:\Svn_2d\CoCoStuio\vertical\hal_packres\Export
+    # comFun.deleteDirByStr(r".svn", r"D:\Svn_2d\CoCoStuio\vertical\hal_packres")
     # shutil.copytree(r"D:\Svn_2d\CoCoStuio\vertical\hall", r"D:\Python_FileDispose\source\UI_Shu")
+    # comFun.moveTypeFileToTarget( r"D:\Svn_2d\CoCoStuio\vertical\hal_packres\Export", ".csb" , r"D:\Python_FileDispose\real_res")

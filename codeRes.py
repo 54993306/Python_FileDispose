@@ -16,8 +16,7 @@ class codeRes:
     absPathChild = ["games", "hall", "package_res","res"]
     FILEPATH = r"D:/Svn_2d/S_GD_Heji/res/"
     resTypes = ['\\.png', '\\.ExportJson', '\\.plist', '\\.json',
-                '\\.fnt', '\\.TTF', '\\.jpg', '\\.mp3', '\\.ogg',
-                '\\.csb']
+                '\\.fnt', '\\.TTF', '\\.jpg', '\\.mp3', '\\.ogg']  # csb类资源不做匹配修改处理
     handleType = ['.png', '.fnt', '.TTF']
     changeResult = []  # 对数组合字符串做分别判断
 

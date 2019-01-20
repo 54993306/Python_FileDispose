@@ -75,26 +75,36 @@ class totalRes:
 
     # 复制文件
     def copyFile(self):
-        comFun.removeDir(comFun.COPYPATH)
-        os.mkdir(comFun.COPYPATH, 0o777)
+        comFun.createNewDir(comFun.COPYPATH)5
         copynum = 0
         for md5Code , fileInfo in self.notRepeatmd5List.iteritems():
+            if self.specialType(fileInfo):
+                continue
             copynum += 1
             # 这里要生成唯一性的名称，后面需要用名称来与md5值生成对应关系，因为在合成plist后，只有名称保存在其中
             newpath = self.getNewFileName(fileInfo["old"])
-            if os.path.isfile(newpath):                         # 重名文件会导致md5值不同，但是指向了同一个路径的文件
-                path,basename =  os.path.split(newpath)
-                newpath = path + "/" +str(copynum) + basename
-                print(" exist file : " + newpath)   # csb 不执行重命名操作，但是有很多重名的csb，但从UI的结构上来看是不应该的
             shutil.copyfile(fileInfo["old"], newpath)
             fileInfo["new"] = newpath
             self.setNewPathByFileDict(md5Code , newpath)
+        print "copy file : " + str(copynum + 1) #有一个无类型文件也拷贝了
+
+    # csb类文件都是在hall的目录下的，都在资源的一级目录下
+    def specialType(self , fileInfo): # or
+        path = fileInfo["old"]
+        _, filetype = os.path.splitext(path)
+        if not filetype:                         # 没有类型的文件不修改文件名
+            newpath = comFun.COPYPATH + "/" + os.path.basename(path)
+            shutil.copyfile(path, newpath)
+            fileInfo["new"] = newpath
+            return True
+        if cmp(".csb", filetype) == 0:
+            fileInfo["new"] = "CSB File"        # 会遍历dict对每个资源判断new，需要存在这个key值
+            return True                         # 不进行复制操作
+        return False
 
     # 设置文件字典中文件的新路径
     def setNewPathByFileDict(self , md5Code , newpath):
         _, filetype = os.path.splitext(newpath)  # 分离文件名和后缀
-        if not filetype:
-            return
         if md5Code in self.filedict[filetype]:
             self.filedict[filetype][md5Code]["new"] = newpath
         else:
@@ -103,8 +113,6 @@ class totalRes:
     # 获取新文件名称
     def getNewFileName(self , filepath):
         _, filetype = os.path.splitext(filepath)
-        if not filetype or cmp(".csb" , filetype) == 0:   # 没有类型的文件不修改文件名
-            return comFun.COPYPATH + "/" + os.path.basename(filepath)
         if not filetype in self.typeNum:
             self.typeNum[filetype] = len(self.typeNum)
             self.typeNum[self.typeNum[filetype]] = 1
@@ -122,7 +130,7 @@ class totalRes:
             if "repeat" in value:
                 repeatNum += len(value["repeat"])
         if repeatNum + len(self.notRepeatmd5List) == self.allFiles:
-            print "succeed  repeatNum: " + str(repeatNum) + "\ncopy file : " + str(len(self.notRepeatmd5List))
+            print "succeed  repeatNum: " + str(repeatNum) + "\nunrepeat file : " + str(len(self.notRepeatmd5List))
         else:
             print " copy file failed repeatNum: " + str(repeatNum) + " newfilenum : " \
                   + str(len(self.notRepeatmd5List)) + " allNum : " + str(self.allFiles)

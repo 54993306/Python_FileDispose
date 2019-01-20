@@ -8,7 +8,7 @@ import re
 import shutil
 import stat
 import collections
-
+import time
 
 BigFileSie              = 1024 * 100                                #100k以上即认为是大文件
 PNG_MAX_SIZE            = 1024                                      # 输出的图片大小,大多数平台支持的大小
@@ -234,8 +234,12 @@ def moveTypeFileToTarget(sourcePath , type , dirPath):
             continue
         shutil.copyfile(path , dirPath + "/" + os.path.basename(path))
 
-
-
+# 创建一个新路径
+def createNewDir(dirpath):
+    removeDir(dirpath)
+    dir, _ = os.path.split(dirpath)
+    os.chmod(dir, 0o777)
+    os.mkdir(dirpath, 0o777)
 
 # 复制文件夹到指定文件夹，目标文件夹必须是不存在的路径
 # comFun.deleteDirByStr(r".svn", r"D:\Python_FileDispose\source\project")
