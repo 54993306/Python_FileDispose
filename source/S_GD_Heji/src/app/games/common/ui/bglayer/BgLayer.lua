@@ -45,7 +45,7 @@ function BgLayer:addRuleBtn()
     self.ruleBtnLayout:setPosition(cc.p(display.cx, display.cy - 45))
 
     -- 文字
-    self.ruleBtnLabel = cc.Label:createWithTTF("规则", "hall/font/fangzhengcuyuan.TTF", 25)
+    self.ruleBtnLabel = cc.Label:createWithTTF("规则", "res_TTF/1016001.TTF", 25)
     self.ruleBtnLabel:setColor(cc.c3b(238,253,72))
     self.ruleBtnLabel:setPosition(cc.p(kRuleBtnSize.width *0.5, kRuleBtnSize.height *0.5))
     self.ruleBtnLayout:addChild(self.ruleBtnLabel)
@@ -95,7 +95,7 @@ function BgLayer:createCustomRuleTip(str)
     end
     -- str = "随便测试一下长规ad则看看 是什么形式 随便测试一 下长规则看看是什么形式 下长规则看看是什么形式"
     -- 初始化规则背景
-    --self.ruleTextBg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "hall/Common/rule_bg.png")
+    --self.ruleTextBg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "real_res/1004405.png")
     local kRuleBtnSize = cc.size(70, 40)
     self.ruleTextBg = ccui.Layout:create()
     self.ruleTextBg:setContentSize(kRuleBtnSize)
@@ -108,7 +108,7 @@ function BgLayer:createCustomRuleTip(str)
 
     self.ruleTextBg:addTo(self)
 
-    self.ruleText = cc.Label:createWithTTF(str, "hall/font/fangzhengcuyuan.TTF", 25)
+    self.ruleText = cc.Label:createWithTTF(str, "res_TTF/1016001.TTF", 25)
     self.ruleText:setWidth(kRuleWidth) -- 通过此方法可以设置最大宽度, 同时其contentSize也为自动适应的大小
     -- self.ruleText:setAnchorPoint(cc.p(0.5, 0.5))
     self.ruleText:setColor(cc.c3b(238,253,72))
@@ -149,13 +149,13 @@ function BgLayer:ctor()
     -- 游戏系统
     self.gamePlaySystem = MjMediator:getInstance():getSystemManager():getSystem(enSystemDef.GAME_PLAY_SYSTEM)
 	-- 背景
-	local bgSprite = display.newSprite("hall/games/game_bg.png")
+	local bgSprite = display.newSprite("real_res/1004471.png")
     bgSprite:setScaleX(Define.visibleWidth / (bgSprite:getContentSize().width))
     bgSprite:setScaleY(Define.visibleHeight / (bgSprite:getContentSize().height))
     bgSprite:setPosition(cc.p(Define.visibleWidth /2, Define.visibleHeight /2))
 	bgSprite:addTo(self)
 
-    -- local subSprite = display.newSprite("games/common/mj/games/game_bg_wenli_1.png")
+    -- local subSprite = display.newSprite("real_res/1004324.png")
     -- subSprite:setPosition(cc.p(Define.visibleWidth * 0.5, Define.visibleHeight * 0.5))
     -- subSprite:setScale(Define.mj_common_scale)
     -- self:addChild(subSprite)
@@ -184,7 +184,7 @@ function BgLayer:ctor()
     self._shengyu:setString(syText)
     self._shengyu:setFontSize(25)
     self._shengyu:setColor(cc.c3b(238,253,72))
-    self._shengyu:setFontName("hall/font/fangzhengcuyuan.TTF")
+    self._shengyu:setFontName("res_TTF/1016001.TTF")
     self._shengyu:setAnchorPoint(cc.p(0.5,0.5))
     if IsPortrait then -- TODO
         self._shengyu:setPosition(cc.p(Define.visibleWidth/2,Define.visibleHeight/2 + 104*Define.mj_common_scale))
@@ -227,14 +227,14 @@ function BgLayer:addGameName(latters)
         local newName = string.sub(gameName, 1, majInx - 1)
         extName = string.sub(gameName, majInx, #gameName)
         Log.i("newName", newName, extName, #gameName)
-        local gameLabel = cc.Label:createWithTTF(newName, "hall/font/fangzhengcuyuan.TTF", 50)
+        local gameLabel = cc.Label:createWithTTF(newName, "res_TTF/1016001.TTF", 50)
         gameLabel:setColor(display.COLOR_BLACK)
         gameLabel:setOpacity(0.2 * 255)
         gameLabel:setAnchorPoint(cc.p(1, 0.5))
         gameLabel:setPosition(cc.p(Define.visibleWidth * 0.5 - offX, Define.visibleHeight * 0.5 + offY))
         self:addChild(gameLabel)
 
-        local majLabel = cc.Label:createWithTTF(extName, "hall/font/fangzhengcuyuan.TTF", 50)
+        local majLabel = cc.Label:createWithTTF(extName, "res_TTF/1016001.TTF", 50)
         majLabel:setColor(display.COLOR_BLACK)
         majLabel:setOpacity(0.2 * 255)
         majLabel:setAnchorPoint(cc.p(0, 0.5))
@@ -381,14 +381,14 @@ end
 -- @return void
 --]]
 function BgLayer:initBattery()
-	local batteryBg = display.newSprite("games/common/mj/games/game_gray_bg.png")
+	local batteryBg = display.newSprite("#1004201.png")
 	batteryBg:setPosition(cc.p(248, Define.visibleHeight - 51)):addTo(self)
-	local battery = display.newSprite("games/common/mj/common/bat_bg.png")
+	local battery = display.newSprite("#1004257.png")
 	battery:setAnchorPoint(cc.p(0, 0.5))
 	battery:setPosition(cc.p(12, batteryBg:getContentSize().height / 2))
 	battery:addTo(batteryBg)
 
-	self.pro_bat = cc.ProgressTimer:create(cc.Sprite:create("games/common/mj/common/bat_pro.png"))
+	self.pro_bat = cc.ProgressTimer:create(cc.Sprite:create("#1004258.png"))
 	self.pro_bat:setType(cc.PROGRESS_TIMER_TYPE_BAR)
 	self.pro_bat:setMidpoint(cc.p(0, 1))
 	self.pro_bat:setAnchorPoint(cc.p(0, 0.5))
@@ -561,7 +561,7 @@ end
 --         cc.p(self.arrHeadNode[3]:getPositionX(), self.arrHeadNode[3]:getPositionY() - 50 - headHeight / 2),
 --         cc.p(self.arrHeadNode[4]:getPositionX() + headWidth/2 + 80, self.arrHeadNode[4]:getPositionY() )}
 --     for i=1,4 do
---         self.m_continueReadySprites[i] = display.newSprite("games/common/mj/common/text_ready.png")
+--         self.m_continueReadySprites[i] = display.newSprite("real_res/1004063.png")
 --         self:addChild(self.m_continueReadySprites[i])
 --         self.m_continueReadySprites[i]:setPosition(readyPos[i])
 --         self.m_continueReadySprites[i]:setVisible(false)
@@ -960,7 +960,7 @@ end
 
 -- 显示听牌标志
 function BgLayer:showTingMark(index)
-	local ting = display.newSprite("games/common/mj/games/icon_ting.png")
+	local ting = display.newSprite("real_res/1004348.png")
 	local space = 70
 	local  tingPos = {
         cc.p(display.cx, display.cy - ting:getContentSize().height / 2 - space ),
@@ -1100,7 +1100,7 @@ function BgLayer:showMatchLoading()
 	self.matchLoadingLayer =  display.newLayer()
 	self.matchLoadingLayer:addTo(self)
 
-	local countDownBgSprite = display.newSprite("games/common/mj/games/match_bg.png")
+	local countDownBgSprite = display.newSprite("real_res/1004353.png")
 	countDownBgSprite:setPosition(cc.p(visibleWidth / 2, visibleHeight / 2))
 	countDownBgSprite:addTo(self.matchLoadingLayer)
 
@@ -1157,7 +1157,7 @@ function BgLayer:on_showPaoMaDeng(content)
 	Log.i("BgLayer:on_showPaoMaDeng")
     if content then
     	if not self.pan_notice then
-        	self.pan_notice = display.newSprite("games/common/mj/common/notice_bg.png")
+        	self.pan_notice = display.newSprite("real_res/1004276.png")
 
         	self.pan_notice:addTo(self)
         	self.pan_notice:setPosition(cc.p(display.cx, display.height - self.pan_notice:getContentSize().height/2))

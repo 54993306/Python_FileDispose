@@ -137,7 +137,7 @@ local function initItem(self, item)
 
     if item.data.reS == 1 then
         local mailicon = ccui.Helper:seekWidgetByName(item, "Image_box")
-        mailicon:loadTexture("hall/huanpi2/Common/mail_open_2.png")
+        mailicon:loadTexture("real_res/1004608.png")
         tTitle:setOpacity(128)
     end
 
@@ -238,7 +238,7 @@ local function changeMailIcon(self,mailID)
     local item = getItemByID(self,mailID)
     if item then
         local mailicon = ccui.Helper:seekWidgetByName(item, "Image_box")
-        mailicon:loadTexture("hall/huanpi2/Common/mail_open_2.png")
+        mailicon:loadTexture("real_res/1004608.png")
     end
 end
 

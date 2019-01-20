@@ -9,8 +9,8 @@ local kColors = {
 
 -- 按钮的默认图片
 local kImg = {
-    selectImg       = "hall/huanpi2/Common/btn_b_on2.png", -- 选中的图片
-    backgroundImg   = "hall/huanpi2/Common/radio_yellow_box2.png", -- 背景图片
+    selectImg       = "real_res/1004219.png", -- 选中的图片
+    backgroundImg   = "#1004220.png", -- 背景图片
 }
 
 -- 按钮的透明度

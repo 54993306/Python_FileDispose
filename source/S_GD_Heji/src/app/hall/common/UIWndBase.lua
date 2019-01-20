@@ -178,7 +178,7 @@ function UIWndBase:getWidget(parent, name, ...)
             elseif args.shadow_bold == true then
                 --新的美術字體效果 cc.c3b(255, 0, 0)  cc.size(2,-2)
                 widget:enableShadow(cc.c4b(0, 0, 0,255),cc.size(1,-1));
-                widget:setFontName("hall/font/fangzhengcuyuan.TTF");
+                widget:setFontName("res_TTF/1016001.TTF");
             end
         end
     elseif m_type == "TextField" then             --安卓的时候有bug
@@ -230,7 +230,7 @@ function UIWndBase:setTextFieldToEditBox(textfield,tfName)
     end
     local editbox = cc.ui.UIInput.new({
         UIInputType = 1,
-        image = "hall/Common/blank.png",
+        image = "real_res/1004041.png",
         listener = onEdit,
         size = tfS
     })

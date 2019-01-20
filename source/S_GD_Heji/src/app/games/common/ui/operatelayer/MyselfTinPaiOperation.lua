@@ -62,13 +62,13 @@ function MyselfTinPaiOperation:createMjValueImage(param)
 		local img = ccui.Helper:seekWidgetByName(mWight,"paiValue")
 		local label_1 = ccui.Helper:seekWidgetByName(mWight,"label_1") --还有多少张
 		local label_2 = ccui.Helper:seekWidgetByName(mWight,"label_2") --还有多少番
-		label_2:setFontName("hall/font/fangzhengcuyuan.TTF")
+		label_2:setFontName("res_TTF/1016001.TTF")
 		local cardPng = getCardPngByValue(data.value)
 		--牌值
 		img:loadTexture(cardPng, ccui.TextureResType.plistType);
         --还剩多少张牌
 		label_1:setString(data.text)
-		label_1:setFontName("hall/font/fangzhengcuyuan.TTF")
+		label_1:setFontName("res_TTF/1016001.TTF")
 		
 		if(data.fang==nil) then --没有多少番
 		  label_2:setVisible(false);

@@ -19,11 +19,11 @@ G_ROOM_INFO_FORMAT = {
     itemTextOffsetY = 14,
 
     --下面是一些资源的路径
-    LineFilePath = "hall/Common/line2.png", --分割线
-    DropBoxNormalImg = "games/common/game/drop_down_box_bg.png",--下拉框背景
-    DropBoxContentImg = "games/common/game/drop_down_box_content_bg.png", --下拉框展开背景
-    DropBoxIconNormalImg = "games/common/game/handle_down.png", --下拉框向下箭头
-    DropBoxIconShowImg = "games/common/game/handle_up.png", --下拉框向上箭头
+    LineFilePath = "#1004400.png", --分割线
+    DropBoxNormalImg = "real_res/1004080.png",--下拉框背景
+    DropBoxContentImg = "real_res/1004081.png", --下拉框展开背景
+    DropBoxIconNormalImg = "real_res/1004212.png", --下拉框向下箭头
+    DropBoxIconShowImg = "real_res/1004213.png", --下拉框向上箭头
 
     CheckBoxPanelCsb = "games/common/game/checkbox_panel.csb", --复选项 custom/CheckBoxPanel.lua用到的csb
 
@@ -31,8 +31,8 @@ G_ROOM_INFO_FORMAT = {
     RadioButtonGroupCsb = "games/common/game/radiobutton_panel.csb",
 
     --另一种单选按钮(SelectPanel)用到的图片资源
-    SelectRadioSelectImg       = "hall/huanpi2/Common/btn_b_on2.png", -- 选中的图片
-    SelectRadioBackgroundImg   = "hall/huanpi2/Common/radio_yellow_box2.png", -- 背景图片
+    SelectRadioSelectImg       = "real_res/1004219.png", -- 选中的图片
+    SelectRadioBackgroundImg   = "#1004220.png", -- 背景图片
 }
 
 if IsPortrait then -- TODO

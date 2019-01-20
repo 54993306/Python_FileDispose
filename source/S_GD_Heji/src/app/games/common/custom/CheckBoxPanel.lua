@@ -5,11 +5,11 @@
 
 
 --  字体路径
-local lFontFilePath = "hall/font/fangzhengcuyuan.TTF"
+local lFontFilePath = "res_TTF/1016001.TTF"
 --  复选框模板
 local lCSBFilePath = "games/common/game/checkbox_panel.csb"
 --  分割线路径
-local lLineFilePath = "hall/Common/line2.png"
+local lLineFilePath = "#1004400.png"
 
 -- @brief   CheckBoxPanel   创建“房间界面”定制版【复选选项块】
 local CheckBoxPanel = class("CheckBoxPanel", function()

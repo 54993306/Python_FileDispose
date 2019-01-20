@@ -72,7 +72,7 @@ local function TipsLab(self)
     local params = {}
     local text = string.format("您的红包兑换码为：%s，一键前往微信公众号: “ %s ”，输入兑换码领取红包",self.m_data,_OFFICIALWECHAT)
     params.text = text
-    params.font = "hall/font/fangzhengcuyuan.TTF"
+    params.font = "res_TTF/1016001.TTF"
     params.size = 30
     params.align =  cc.TEXT_ALIGNMENT_CENTER
     params.valign = cc.VERTICAL_TEXT_ALIGNMENT_CENTER

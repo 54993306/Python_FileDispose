@@ -232,7 +232,7 @@ function ClubMatchRecord:ShowStartTimeList()
         local time = curTime - 60*60*24*i
         text:setString(os.date("%Y-%m-%d", time))
         text:setFontSize(28)
-        text:setFontName("hall/font/fangzhengcuyuan.TTF")
+        text:setFontName("res_TTF/1016001.TTF")
         text:setPosition(width/2, text:getContentSize().height/2)
 
         local lay = ccui.Layout:create()
@@ -266,7 +266,7 @@ function ClubMatchRecord:ShowEndTimeList()
         local time = curTime - 60*60*24*i
         text:setString(os.date("%Y-%m-%d", time))
         text:setFontSize(28)
-        text:setFontName("hall/font/fangzhengcuyuan.TTF")
+        text:setFontName("res_TTF/1016001.TTF")
         text:setPosition(width/2, text:getContentSize().height/2)
 
         local lay = ccui.Layout:create()

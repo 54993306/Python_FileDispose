@@ -156,7 +156,7 @@ function DismissDeskView:addPlayers()
                 self:getNetworkImage(imgURL, imgName);
             end
         else              
-            local headFile = "hall/Common/default_head_2.png";
+            local headFile = "real_res/1004043.png";
             headFile = cc.FileUtils:getInstance():fullPathForFilename(headFile);
             if io.exists(headFile) then
                 img_head:loadTexture(headFile);
@@ -296,7 +296,7 @@ function DismissDeskView:updateUI(packetInfo)
         if IsPortrait then -- TODO
             self.agree_img[toStr]:setVisible(true)
         else
-            local agreeFlag = cc.Sprite:create("games/common/mj/common/green_flag.png")
+            local agreeFlag = cc.Sprite:create("real_res/1004266.png")
             agreeFlag:setPosition(lab_tip:getPosition())
             agreeFlag:setAnchorPoint(lab_tip:getAnchorPoint())
             lab_tip:getParent():addChild(agreeFlag)

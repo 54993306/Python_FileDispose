@@ -60,7 +60,7 @@ function SelectChiPanel:onShow(content, callBack)
 		self:addChild(chi)
 	end
 
-	local pngImg 	= "games/common/mj/games/game_btn_qi.png"
+	local pngImg 	= "real_res/1004338.png"
 	local guoBtn = display.newSprite(pngImg)
 	        :addTo(self)
 	cc(guoBtn):addComponent(enComponentName.BUTTON_ACTION):exportMethods()
@@ -93,7 +93,7 @@ end
 -- @return void
 --]]
 function SelectChiPanel:chiComponent(content, callBack)
-	local chiPath = "games/common/mj/games/bg_action_chi.png"
+	local chiPath = "real_res/1004301.png"
 	local chiBg = cc.ui.UIImage.new(chiPath)
 	local actionCard = MjMediator:getInstance():getSystemManager():getSystem(enSystemDef.OPERATE_SYSTEM):getActionCard()
 	actionCard = actionCard and actionCard or MjMediator.getInstance():getSystemManager():getSystem(enSystemDef.GAME_PLAY_SYSTEM):getActionCard()

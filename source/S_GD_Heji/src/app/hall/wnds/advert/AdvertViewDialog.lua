@@ -72,12 +72,12 @@ if IsPortrait then -- TODO
             self.wechat_label_1:removeFromParent()
             self.wechat_label_1 = nil
         end
-        self.wechat_label =  cc.Label:createWithTTF(wechat_id, "hall/font/fangzhengcuyuan.TTF", 36)
+        self.wechat_label =  cc.Label:createWithTTF(wechat_id, "res_TTF/1016001.TTF", 36)
         self.wechat_label:setPosition(cc.p(img_size.width * 0.5 - 140 , img_size.height* 0.5 - 160 ))
         self.wechat_label:setColor(cc.c3b(255,253,87))
         self.wechat_label:setAnchorPoint(cc.p(0.5, 0.5))
 
-        self.wechat_label_1 =  cc.Label:createWithTTF(wechat_id_2, "hall/font/fangzhengcuyuan.TTF", 36)
+        self.wechat_label_1 =  cc.Label:createWithTTF(wechat_id_2, "res_TTF/1016001.TTF", 36)
         self.wechat_label_1:setPosition(cc.p(img_size.width * 0.5 - 140 , img_size.height* 0.5 - 230 ))
         self.wechat_label_1:setColor(cc.c3b(255,253,87))
         self.wechat_label_1:setAnchorPoint(cc.p(0.5, 0.5))

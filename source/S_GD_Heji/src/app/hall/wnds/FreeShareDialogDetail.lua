@@ -173,10 +173,10 @@ function FreeShareDialogDetail:onInit()
                 self.mContentPanel1:setVisible(true)
                 ---self.img_tag 10008 代表钻石，10009 代表元宝
                 if self.img_tag[1][1] and self.img_tag[1][1] == "10009" then
-                    self.mDiamondNumImg:loadTexture("hall/huanpi2/Common/yuanbao.png")
+                    self.mDiamondNumImg:loadTexture("#1004630.png")
                     self.mDiamondNumImg:setScaleY(1.75)
                 elseif  self.img_tag[1][1] == "10008" then
-                    self.mDiamondNumImg:loadTexture("hall/huanpi2/Common/diamond.png")
+                    self.mDiamondNumImg:loadTexture("#1004575.png")
                     self.mDiamondNumImg:setScale(1.5)
                 end
                 self.m_selectChild = self.img_tag[1][1]

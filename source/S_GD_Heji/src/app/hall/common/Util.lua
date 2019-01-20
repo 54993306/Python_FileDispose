@@ -469,9 +469,9 @@ Util.createRedPointTip = function(parent,isShow,position)
 	-- 如果没有红点, 则创建
 	if not hongdian then
         if IsPortrait then -- TODO
-            hongdian = display.newSprite("hall/main/img_red_dot_2.png")
+            hongdian = display.newSprite("real_res/1004755.png")
         else
-            hongdian = display.newSprite("hall/main/hongdian.png")
+            hongdian = display.newSprite("real_res/1004749.png")
         end
 		parent:addChild(hongdian)
 		hongdian:setPosition(position)   

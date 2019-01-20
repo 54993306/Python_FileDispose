@@ -206,7 +206,7 @@ function PlayerPanel:onInit()
 
     copyUserId:setString("(复制ID)")
     copyUserId:setSystemFontSize(28)
-    copyUserId:setSystemFontName("hall/font/fangzhengcuyuan.TTF")
+    copyUserId:setSystemFontName("res_TTF/1016001.TTF")
     copyUserId:setPosition(cc.p(copyBtnLayout:getContentSize().width/2,copyBtnLayout:getContentSize().height/2))
     copyBtnLayout:addChild(copyUserId)
 
@@ -216,7 +216,7 @@ function PlayerPanel:onInit()
 
     local copyUserIdLine = cc.Label:create()
     copyUserIdLine:setString("  ______  ")
-    copyUserIdLine:setSystemFontName("hall/font/fangzhengcuyuan.TTF")
+    copyUserIdLine:setSystemFontName("res_TTF/1016001.TTF")
     copyUserIdLine:setSystemFontSize(28)
     copyUserIdLine:setPosition(cc.p(copyBtnLayout:getContentSize().width/2,copyBtnLayout:getContentSize().height/2 - 5))
     copyBtnLayout:addChild(copyUserIdLine)

@@ -83,7 +83,7 @@ LoadingView.show = function(self, text, time, touchable, key, offX, offY, disabl
     --
     transition.stopTarget(img_load);
     img_load:runAction(cc.RepeatForever:create(cc.RotateBy:create(2, 360)));
-    txt_load:setFontName("hall/font/fangzhengcuyuan.TTF");
+    txt_load:setFontName("res_TTF/1016001.TTF");
     txt_load:setString(text or "正在加载中，请稍后...");
     if time and time > 0 then
         loadingView:stopAllActions()

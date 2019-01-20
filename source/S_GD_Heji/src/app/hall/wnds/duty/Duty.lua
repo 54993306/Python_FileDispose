@@ -214,14 +214,14 @@ local commonFontCfg = {
     color = cc.c3b(0xff,0xff,0xff),
     opacity = 179,
     widthOff = 10, -- 两边剩余的宽度
-    fontName = "hall/font/fangzhengcuyuan.TTF",
+    fontName = "res_TTF/1016001.TTF",
 }
 if IsPortrait then -- TODO
     commonFontCfg = {
         color = cc.c3b(0x00,0x00,0x00),
         opacity = 179,
         widthOff = 10, -- 两边剩余的宽度
-        fontName = "hall/font/fangzhengcuyuan.TTF",
+        fontName = "res_TTF/1016001.TTF",
     }
 end
 local chapterFontCfg = {

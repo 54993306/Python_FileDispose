@@ -258,7 +258,7 @@ function AdvertView:createPageView()
         if IsPortrait then -- TODO
             self.item_list[#self.item_list + 1]= item
             local wechat_1 ,wechat_2 = kUserData_userExtInfo:getAddWeChatID()
-            local lab_Wechat = cc.Label:createWithTTF(wechat_1.." "..wechat_2, "hall/font/fangzhengcuyuan.TTF", 20)
+            local lab_Wechat = cc.Label:createWithTTF(wechat_1.." "..wechat_2, "res_TTF/1016001.TTF", 20)
             lab_Wechat:setPosition(cc.p(btnimage:getContentSize().width * 0.5 - 165 , 50 ))
             lab_Wechat:setColor(cc.c3b(255,253,87))
             lab_Wechat:setAnchorPoint(cc.p(0, 0.5))

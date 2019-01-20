@@ -48,9 +48,9 @@ function  Mj:ctor(mjType, mjValue, isReality)
 	self.sortValue 	= mjValue or 200
 	self.mjState = enMjState.MJ_STATE_NORMAL
 	self._isQueCard = false;
-	-- cc.SpriteFrameCache:getInstance():addSpriteFrames("games/common/mj/majiang_pai.plist")
- --    cc.SpriteFrameCache:getInstance():addSpriteFrames("games/common/mj/shezi.plist")
- --    cc.SpriteFrameCache:getInstance():addSpriteFrames("games/common/mj/flow.plist")
+	-- cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008025.plist")
+ --    cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008026.plist")
+ --    cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008024.plist")
     -- 根据类型选择麻将显示方式
     self.mjType = mjType
 	local mjTypeCls = {

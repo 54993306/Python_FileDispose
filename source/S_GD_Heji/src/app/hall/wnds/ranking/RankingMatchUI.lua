@@ -44,9 +44,9 @@ function RankingMatchUI:onShow()
    self.m_rankingEnterData = kRankingSystem:getRankingEnterData();
    --玩家不能领取奖励
    if(self.m_rankingEnterData.btS==0) then 
-       self.getWardButton:loadTextureNormal("hall/ranking/getWardWei.png")
+       self.getWardButton:loadTextureNormal("real_res/1004775.png")
    else
-       self.getWardButton:loadTextureNormal("hall/ranking/getWard.png")
+       self.getWardButton:loadTextureNormal("real_res/1004774.png")
        self.getWardButton:addTouchEventListener(handler(self, self.onGetWardButton));
    end
 

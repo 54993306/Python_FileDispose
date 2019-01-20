@@ -14,7 +14,7 @@ local kWidgets = {
     tagAreaListView     = "AreaListView",
     tagTextListView     = "TextListView",
     tagAreaItem         = "listItemModel",
-    FrontName           = "hall/font/fangzhengcuyuan.TTF"
+    FrontName           = "res_TTF/1016001.TTF"
 }
 if IsPortrait then -- TODO
     kWidgets.tagTitleLabel = "Label_select_wanfa"
@@ -174,8 +174,8 @@ if IsPortrait then -- TODO
         if b and count* kWidgets.areaHeight >self.pan_content:getContentSize().height*0.5 then
             local data = {
                 parent = self.select_game_Panel;                   --父节点
-                bgSprite = "hall/huanpi2/Common/select_wight.png";                  --背景层资源
-                scrollSprite = "hall/huanpi2/Common/scroll_bar.png";              --滚动块资源
+                bgSprite = "#1004623.png";                  --背景层资源
+                scrollSprite = "real_res/1004622.png";              --滚动块资源
                 bgSize = cc.size(1,self.pan_content:getContentSize().height*0.5);          --背景大小
             }
             self.scrollBar = ClientScrollBar.new(data)

@@ -27,7 +27,7 @@ local kTouchInterval    = 0.1
 local kDragOutHeight    = 40
 --local kDragOutWidth     = 60
 local kGroupCardNum     = 4 -- 每组牌的个数
-local kLaiziPng  = "games/common/mj/games/laizijiaobiao.png"
+local kLaiziPng  = "real_res/1004352.png"
 -------------------------盖起来的牌相关---------------------------
 -- 盖起来的牌x轴放大系数
 local kScaleX 			= 1.661
@@ -161,7 +161,7 @@ function HandCardsPanel:ctor(mjgroups)
 end
 
 function HandCardsPanel:initPassImg()
-	self.img_pass = display.newSprite("games/common/guopai.png")
+	self.img_pass = display.newSprite("real_res/1004236.png")
 	self.img_pass:setScale(0.9)
 	self.img_pass:setVisible(false)
 	self.img_pass:setAnchorPoint(0, 0.5)

@@ -219,9 +219,9 @@ function FriendRoomCreate:onInit()
         if state == CreateRoomState.clubmodel then
             self.btn_switchClubMode:setVisible(false)
             self.btn_switchClub:setVisible(false)
-            img_sure:loadTexture ( "hall/huanpi2/Common/img_t_qj.png" )
+            img_sure:loadTexture ( "real_res/1004596.png" )
         elseif state == CreateRoomState.resetmodel then
-            img_sure:loadTexture ( "hall/huanpi2/Common/img_t_qd.png" )
+            img_sure:loadTexture ( "real_res/1004595.png" )
             self.btn_switchClubMode:setVisible(false)
             self.btn_switchClub:setVisible(false)
         end
@@ -872,8 +872,8 @@ function FriendRoomCreate:areaVisible(b)
         if b and count* kWidgets.areaHeight >self.pan_content:getContentSize().height*0.5 then
             local data = {
                 parent = self.select_game_Panel;                   --父节点
-                bgSprite = "hall/huanpi2/Common/select_wight.png";                  --背景层资源
-                scrollSprite = "hall/huanpi2/Common/scroll_bar.png";              --滚动块资源
+                bgSprite = "#1004623.png";                  --背景层资源
+                scrollSprite = "real_res/1004622.png";              --滚动块资源
                 bgSize = cc.size(1,self.pan_content:getContentSize().height*0.5);          --背景大小
             }
             self.scrollBar = ClientScrollBar.new(data)
@@ -1087,16 +1087,16 @@ function FriendRoomCreate:showNewerDDZ()
     panel_newer_ddz:setVisible(true);
     if PRODUCT_ID == 4444 then
         local ddzTip = ccui.Helper:seekWidgetByName(panel_newer_ddz, "text_tip_ddz");
-        ddzTip:loadTexture("package_res/games/guandan/image/text_tip_ddz.png")
+        ddzTip:loadTexture("real_res/1004870.png")
     end
 end
 
 
 -- 在btn上显示"新"字提示
 function FriendRoomCreate:showNewArea(selectedBtn)
-    local newArea = display.newSprite("hall/friendRoom/ddz/img_new_area.png", 200, 66)
+    local newArea = display.newSprite("real_res/1004430.png", 200, 66)
     if IsPortrait then -- TODO
-        newArea = display.newSprite("hall/friendRoom/ddz/img_new_area.png", 150, 60)
+        newArea = display.newSprite("real_res/1004430.png", 150, 60)
     end
     newArea:addTo(selectedBtn)
 end

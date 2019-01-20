@@ -32,7 +32,7 @@ MJToast.show = function(self, text,fontSize)
     self.m_pWidget:stopAllActions();
     local label = ccui.Helper:seekWidgetByName(self.m_pWidget, "lb_content");
     label:setString(text or "提示");
-    label:setFontName("hall/font/fangzhengcuyuan.TTF");
+    label:setFontName("res_TTF/1016001.TTF");
     if(fontSize~=nil) then  
 	   label:setFontSize(fontSize);
 	end

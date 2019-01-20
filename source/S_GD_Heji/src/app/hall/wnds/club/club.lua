@@ -11,7 +11,7 @@
 local Club = class("club", UIWndBase)
 
 local CommonTips = require "app.hall.common.CommonTips"
-local FontName = "hall/font/fangzhengcuyuan.TTF"
+local FontName = "res_TTF/1016001.TTF"
 local FontColor = cc.c4b(0xff,0xff,0xff,0x08)
 if IsPortrait then -- TODO
     FontColor = cc.c4b(0x33,0x33,0x33,0xff)

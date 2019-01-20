@@ -1427,7 +1427,7 @@ function GamePlayLayer:onTingArrowNtf(event)
     if value and hasReTing and tingState == enTingStatus.TING_TRUE and self.operateSystem:getDoorCard() > 0 then
         for i = 1, #myCards do
             if myCards[i]:getMjState() ~= enMjState.MJ_STATE_TOUCH_INVALID then
-                local arrow = display.newSprite("games/common/mj/games/ting_arrow.png")
+                local arrow = display.newSprite("real_res/1004368.png")
                 local nodeSize = myCards[i]:getContentSize()
                 local arrowSize = arrow:getContentSize()
                 arrow:setPosition(cc.p(0, nodeSize.height - 10))
@@ -1451,7 +1451,7 @@ function GamePlayLayer:onTingArrowNtf(event)
             local mjValue = myCards[i]:getValue()
             for j = 1, #ting do
                 if mjValue == ting[j] then
-                    local arrow = display.newSprite("games/common/mj/games/ting_arrow.png")
+                    local arrow = display.newSprite("real_res/1004368.png")
                     local nodeSize = myCards[i]:getContentSize()
                     local arrowSize = arrow:getContentSize()
                     arrow:setPosition(cc.p(0, nodeSize.height - 10))

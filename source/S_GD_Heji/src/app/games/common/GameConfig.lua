@@ -1,9 +1,9 @@
 --进入游戏界面
 function enterGame(data)
     display.removeUnusedSpriteFrames()
-    cc.SpriteFrameCache:getInstance():addSpriteFrames("games/common/mj/majiang_pai.plist")
-    cc.SpriteFrameCache:getInstance():addSpriteFrames("games/common/mj/shezi.plist")
-    cc.SpriteFrameCache:getInstance():addSpriteFrames("games/common/mj/flow.plist")
+    cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008025.plist")
+    cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008026.plist")
+    cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008024.plist")
     ccs.ArmatureDataManager:getInstance():addArmatureFileInfo("games/common/mj/armature/CpghAnimation.csb")
     Log.i("common###########enterGame",data)
 --  MjMediator:getInstance():entryMj()
@@ -31,18 +31,18 @@ _isDiamondVisible
 
 if IsPortrait then -- TODO
     --游戏图标
-    _gameTitlePath = "games/common/image/title.png";
+    _gameTitlePath = "real_res/1004239.png";
 end
 
 --是否支持用户自定义聊天
 _gameUserChatTxt = true;
 
 -- 背景音乐
-_gameBgMusicPath = "games/common/audio/mp3/music/bgMusic.mp3";
+_gameBgMusicPath = "real_res/1000113.mp3";
 
 if not IsPortrait then -- TODO
 -- 翻牌显示图片
-GC_TurnLaiziPath = "games/common/mj/games/fanpai.png"
+GC_TurnLaiziPath = "real_res/1004321.png"
 GC_TurnLaiziPath_2 = nil
 
 -- 胡牌番型后缀
@@ -60,19 +60,19 @@ _gameChatTxtCfg = {
 end
 ------------------------------------各自省包配置------------------------------------
 -- 亲友圈分享背景图
-_ClubShareBg = "package_res/config/image/club_bg.png"
+_ClubShareBg = "real_res/1004789.png"
 
 -- 大厅广告图
-_gameHallAdPath = "package_res/config/image/ad_hall.png"
+_gameHallAdPath = "real_res/1004787.png"
 
 -- 红包广告
-_gameRedpacketAdPath = "package_res/config/image/ad_redPacket.png"
+_gameRedpacketAdPath = "real_res/1004788.png"
 
 -- 登陆界面logo图
-GC_GameHallLogoPath = "package_res/config/hall/login/logo.png"
+GC_GameHallLogoPath = "real_res/1004786.png"
 
 -- 领取红包界面的微信名称图片
-_WeChatNameImage = "package_res/config/image/img_wx_2.png"
+_WeChatNameImage = "real_res/1004790.png"
 
 ------------------------------------------------------------------------------------
 APP_NAME_PATCH = APP_NAME_PATCH or "dszy"   --app热更保存的文件路径（子麻将热更的路径写成该麻将的名字  xxxmj_region）

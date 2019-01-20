@@ -27,19 +27,19 @@ function AnimLayer:onDingqueAnimStart(event)
     local resultImg = nil;
     if site == 1 and not VideotapeManager.getInstance():isPlayingVideo() then
         if result == 1 then
-            resultImg = ccui.ImageView:create("games/common/game/games/dq_btn_wan.png");
+            resultImg = ccui.ImageView:create("real_res/1004191.png");
         elseif result == 2 then
-            resultImg = ccui.ImageView:create("games/common/game/games/dq_btn_tiao.png");
+            resultImg = ccui.ImageView:create("real_res/1004189.png");
         elseif result == 3 then
-            resultImg = ccui.ImageView:create("games/common/game/games/dq_btn_tong.png");
+            resultImg = ccui.ImageView:create("real_res/1004190.png");
         end
     else
         if result == 1 then
-            resultImg = ccui.ImageView:create("games/common/game/games/dq_img_wan.png");
+            resultImg = ccui.ImageView:create("real_res/1004198.png");
         elseif result == 2 then
-            resultImg = ccui.ImageView:create("games/common/game/games/dq_img_tiao.png");
+            resultImg = ccui.ImageView:create("real_res/1004196.png");
         elseif result == 3 then
-            resultImg = ccui.ImageView:create("games/common/game/games/dq_img_tong.png");
+            resultImg = ccui.ImageView:create("real_res/1004197.png");
         end
     end
     if not resultImg then

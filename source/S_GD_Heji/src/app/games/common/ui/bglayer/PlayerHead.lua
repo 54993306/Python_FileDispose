@@ -106,10 +106,10 @@ function PlayerHead:setDelegate(delegate)
 end
 
 local function createNameTip(name)
-    local bg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "hall/Common/name_scale_bg.png")
+    local bg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "#1004052.png")
     bg:setContentSize(cc.size(80, 22))
 
-    local nameLabel = ccui.Text:create(name, "hall/font/fangzhengcuyuan.TTF", 18)
+    local nameLabel = ccui.Text:create(name, "res_TTF/1016001.TTF", 18)
     nameLabel:setColor(cc.c3b(0xff, 0xfe, 0xad))
     nameLabel:setPosition(cc.p(40, 11))
     nameLabel:setAnchorPoint(cc.p(0.5, 0.5))
@@ -201,13 +201,13 @@ function PlayerHead:setDingQueResult(result, site)
             imgDingque:setVisible(false);
         elseif result == 1 then
             imgDingque:setVisible(true);
-            imgDingque:loadTexture("games/common/mj/games/dq_icon_wan.png");
+            imgDingque:loadTexture("real_res/1004194.png");
         elseif result == 2 then
             imgDingque:setVisible(true);
-            imgDingque:loadTexture("games/common/mj/games/dq_icon_tiao.png");
+            imgDingque:loadTexture("real_res/1004192.png");
         elseif result == 3 then
             imgDingque:setVisible(true);
-            imgDingque:loadTexture("games/common/mj/games/dq_icon_tong.png");
+            imgDingque:loadTexture("real_res/1004193.png");
         end
     end
 end
@@ -284,11 +284,11 @@ function PlayerHead:setLaPaoZuoResualt(type, num, site)
     elseif type == enOperate.OPERATE_LAZHUANG then
         self:parseLaPaoZuoWidget(self.panel_heads[site], "la_panel", "text_la", num)
         local zuoIcon = ccui.Helper:seekWidgetByName(self.panel_heads[site], "img_la")
-        zuoIcon:loadTexture("games/common/game/common/icon_la.png")
+        zuoIcon:loadTexture("real_res/1004047.png")
     elseif type == enOperate.OPERATE_ZUO then
         self:parseLaPaoZuoWidget(self.panel_heads[site], "la_panel", "text_la", num)
         local zuoIcon = ccui.Helper:seekWidgetByName(self.panel_heads[site], "img_la")
-        zuoIcon:loadTexture("games/common/game/common/icon_zuo.png")
+        zuoIcon:loadTexture("real_res/1004050.png")
     elseif type == enOperate.OPERATE_XIADI then
         self:parseLaPaoZuoWidget(self.panel_heads[site], "di_panel", "text_di", num)
     end
@@ -380,7 +380,7 @@ function PlayerHead:updateHead(panel_head, site)
         image_head_Sprite:addChild(offlineImg, 100)
 
         local text = ccui.Text:create();
-        text:setFontName("hall/font/fangzhengcuyuan.TTF")
+        text:setFontName("res_TTF/1016001.TTF")
         text:setColor(cc.c3b(255, 62, 57))
         text:setFontSize(22)
         text:setString("已断开")
@@ -482,7 +482,7 @@ function PlayerHead:getPlayerHead(headSprite,site)
             self:getNetworkImage(headSprite, imgURL, imgName, site);
         end
     else
-        local headFile = "hall/Common/default_head_2.png";
+        local headFile = "real_res/1004043.png";
         headFile = cc.FileUtils:getInstance():fullPathForFilename(headFile);
         self.m_headImage[site] = headFile;
         if io.exists(headFile) then
@@ -690,7 +690,7 @@ function PlayerHead:initReadySprite()
     for i=1, #players do
         local head = self:getHead(i)
         local set_pos = ready_icon_pos[i]
-        self.m_continueReadySprites[i] = display.newSprite("games/common/mj/common/text_ready.png")
+        self.m_continueReadySprites[i] = display.newSprite("real_res/1004063.png")
         self.m_continueReadySprites[i]:setAnchorPoint(cc.p(0.5,0.5))
         local position = cc.p(0,0)
         if set_pos == 1 then
@@ -851,7 +851,7 @@ function PlayerHead:drawIpXiangTong(head, isShow)
     if isShow == nil then isShow = true end
     local headOneIp = head:getChildByName("ipxiangtong")
     if headOneIp == nil then
-        local ip = display.newSprite("games/common/mj/common/ipxiangtong.png")
+        local ip = display.newSprite("real_res/1004270.png")
         ip:setScale(0.85)
         ip:setName("ipxiangtong")
         ip:addTo(head)

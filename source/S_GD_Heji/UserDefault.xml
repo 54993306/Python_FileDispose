@@ -4,7 +4,7 @@
     <downloaded-version-codezd/>
     <update_path>D:\Svn_2d\S_GD_Trunk\guangdong_region/update/</update_path>
     <phonenumber>0</phonenumber>
-    <account>[{"pwd":"","usi":3747391760,"act":"wz_test_0016userx"},{"usi":3763771968,"pwd":"","act":"wz_test_0014userx"},{"pwd":"","usi":3758962237,"act":"wz_test_00111userx"},{"usi":3761633338,"pwd":"","act":"wz_test_0015userx"},{"pwd":"","usi":3758479055,"act":"wz_test_0013userx"},{"usi":3719087466,"pwd":"","act":"wz_test_0011userx"},{"pwd":"","usi":3730950599,"act":"wz_test_0011user "},{"usi":3789364210,"pwd":"","act":"wz_test_00116user"},{"pwd":"","usi":3713255071,"act":"wz_test_00115user"},{"usi":3735530627,"pwd":"","act":"wz_test_0017TAct"},{"pwd":"","usi":3742816374,"act":"wz_test_00114user"},{"usi":3777990916,"pwd":"","act":"wz_test_00113user"},{"pwd":"","usi":3729040113,"act":"wz_test_00112user"},{"usi":3797813772,"pwd":"","act":"wz_test_0016TAct"},{"pwd":"","usi":3763892006,"act":"wz_test_00111user"},{"usi":3761166487,"pwd":"","act":"wz_test_0018user"},{"pwd":"","usi":3746889477,"act":"wz_test_0017user"},{"usi":3777109865,"pwd":"","act":"wz_test_0015user"},{"pwd":"","usi":3750105507,"act":"wz_test_0014user"},{"usi":3722230453,"pwd":"","act":"wz_test_0013user"},{"pwd":"","usi":3748016225,"act":"wz_test_0012user"},{"usi":3741486872,"pwd":"","act":"wz_test_0015TAct"},{"pwd":"","usi":3784425649,"act":"wz_test_00112TAct"},{"usi":3785502319,"pwd":"","act":"wz_test_0016user"},{"pwd":"","usi":3741787844,"act":"wz_test_0018TAct"},{"usi":3712162700,"pwd":"","act":"wz_test_0019TAct"},{"pwd":"","usi":3751982636,"act":"wz_test_00110TAct"},{"usi":3766404930,"pwd":"","act":"oR61xv2Wl4PigHNBOsl97TD2AL_k"},{"pwd":"","usi":4227150095,"act":"wz_test_0011user"},{"usi":4246765435,"pwd":"","act":"wz_test_0014TAct"},{"pwd":"","usi":4216825139,"act":"wz_test_0013TAct"},{"usi":4235729239,"pwd":"","act":"wz_test_0012TAct"},{"pwd":"","usi":4291139038,"act":"wz_test_0011TAct"}]</account>
+    <account>[{"pwd":"","usi":3732702609,"act":"wz_test_0011TAct"}]</account>
     <account_temporary>[{"pwd":"","usi":3732702609,"act":"wz_test_0011TAct"}]</account_temporary>
     <cf_isNewer>false</cf_isNewer>
     <3748031544>1</3748031544>
@@ -18,7 +18,7 @@
     <logintype>wechat</logintype>
     <3766404930>1</3766404930>
     <9987500934>1</9987500934>
-    <clubURL>http://app73.stevengame.com/club/webapi/lailai_guangdong/124172/join_club</clubURL>
+    <clubURL>http://app73.stevengame.com/club/webapi/lailai_guangdong/124173/join_club</clubURL>
     <9989856467>1</9989856467>
     <3739478921>1</3739478921>
     <3785293649>1</3785293649>
@@ -126,7 +126,7 @@
     <3719087466>1</3719087466>
     <advert_time3719087466>15</advert_time3719087466>
     <3732702609>1</3732702609>
-    <advert_time3732702609>17</advert_time3732702609>
+    <advert_time3732702609>20</advert_time3732702609>
     <3748320255>1</3748320255>
     <advert_time3748320255>15</advert_time3748320255>
     <3758479055>1</3758479055>

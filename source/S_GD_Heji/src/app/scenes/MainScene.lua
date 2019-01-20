@@ -16,7 +16,7 @@ function MainScene:ctor()
     cc.Director:getInstance():setAnimationInterval(1/60);
     cc(self):addComponent("app.games.common.components.SingleTouchSwallow"):exportMethods()
     -- --解决真机上闪屏的问题
-    -- self.tmpImg = ccui.ImageView:create("hall/games/game_bg.png");
+    -- self.tmpImg = ccui.ImageView:create("real_res/1004471.png");
     -- self.tmpImg:ignoreContentAdaptWithSize(false);
     -- self.tmpImg:setLocalZOrder(0)
     -- self:addChild(self.tmpImg)
@@ -187,8 +187,8 @@ function MainScene:onEnter()
         --释放无用资源
         if device.platform == "windows" or device.platform == "mac" then
         else
-            cc.SpriteFrameCache:getInstance():removeSpriteFramesFromFile("games/common/mj/flow.plist")
-            cc.SpriteFrameCache:getInstance():removeSpriteFramesFromFile("games/common/mj/majiang_pai.plist")
+            cc.SpriteFrameCache:getInstance():removeSpriteFramesFromFile("res_plist/1008024.plist")
+            cc.SpriteFrameCache:getInstance():removeSpriteFramesFromFile("res_plist/1008025.plist")
             cc.SpriteFrameCache:getInstance():removeUnusedSpriteFrames();
             cc.Director:getInstance():getTextureCache():removeUnusedTextures();
         end

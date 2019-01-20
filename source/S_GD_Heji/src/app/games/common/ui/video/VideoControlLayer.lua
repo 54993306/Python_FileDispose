@@ -83,11 +83,11 @@ function VideoControlLayer:ctor(...)
     	if self.data and self.data.isDDZ then
     		self.djhf:setPositionY(display.height - 350) 
             if IsPortrait then -- TODO
-                self.djhf:loadTexture("package_res/games/pokercommon/paodekuai/duijuhuifang.png")
+                self.djhf:loadTexture("real_res/1004947.png")
             end
     	elseif self.data and self.data.isGD then
 			self.djhf:setPositionY(display.height - 150) 
-			self.djhf:loadTexture("package_res/games/pokercommon/paodekuai/duijuhuifang.png")
+			self.djhf:loadTexture("real_res/1004947.png")
     	else
     		self.djhf:setPositionY(display.height - 200) 
     	end
@@ -204,11 +204,11 @@ function VideoControlLayer:initContralPanel()
             if(VideotapeManager:getInstance():isPlayingEndState()==false) then --视频是否播放结束
                 if pWidget.select then
                     VideotapeManager:getInstance():pause()
-                    pIcon:loadTexture("hall/friendRoom/zanTing.png")
+                    pIcon:loadTexture("real_res/1004450.png")
                     pWidget.select = false
                 else
                     VideotapeManager:getInstance():resume()
-                    pIcon:loadTexture("hall/friendRoom/boFang.png")
+                    pIcon:loadTexture("#1004426.png")
                     pWidget.select = true
                 end
             end
@@ -248,7 +248,7 @@ function VideoControlLayer:initExitBtn()
         if pEventType == ccui.TouchEventType.ended then
             VideotapeManager:getInstance():pause()				
 			self.playBtn.select = false
-			self.playIcon:loadTexture("hall/friendRoom/zanTing.png")
+			self.playIcon:loadTexture("real_res/1004450.png")
 
             local _data = {}
             _data.type = 2;

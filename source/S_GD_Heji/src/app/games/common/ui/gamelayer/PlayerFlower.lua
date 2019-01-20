@@ -165,7 +165,7 @@ function PlayerFlower:scrollFunc(data, mWight, nIndex, scrollView)
     local bul = {gl.DST_COLOR,gl.ONE}
     if data.site == Define.site_self then
         local scrollSize = self.flower_ScrollView_1:getContentSize()
-        gmPng = "games/common/game/verticalGreenmask.png"
+        gmPng = "real_res/1004229.png"
         greenmask = display.newSprite(gmPng)
         gmSize = greenmask:getContentSize()
         greenmask:setBlendFunc(gl.DST_COLOR,gl.ONE_MINUS_SRC_ALPHA)
@@ -182,7 +182,7 @@ function PlayerFlower:scrollFunc(data, mWight, nIndex, scrollView)
         if self.playerCount == 2 then
             scrollView:setTouchEnabled(false)
             local scrollSize = self.flower_ScrollView_3:getContentSize()
-            gmPng = "games/common/game/verticalGreenmask.png"
+            gmPng = "real_res/1004229.png"
             greenmask = display.newSprite(gmPng)
             gmSize = greenmask:getContentSize()
             greenmask:setBlendFunc(gl.DST_COLOR,gl.ONE_MINUS_SRC_ALPHA)
@@ -192,7 +192,7 @@ function PlayerFlower:scrollFunc(data, mWight, nIndex, scrollView)
             mWight:setPosition(cc.p(x, y))
             mWight:setLocalZOrder(50 - nIndex)
         elseif self.playerCount == 3 or self.playerCount == 4 then
-            gmPng = "games/common/game/horizonGreenmask.png"
+            gmPng = "real_res/1004214.png"
             greenmask = display.newSprite(gmPng)
             gmSize = greenmask:getContentSize()
             greenmask:setBlendFunc(gl.DST_COLOR,gl.ONE_MINUS_SRC_ALPHA)
@@ -205,7 +205,7 @@ function PlayerFlower:scrollFunc(data, mWight, nIndex, scrollView)
         end
     elseif data.site == Define.site_other then
         if self.playerCount == 3 then
-            gmPng = "games/common/game/horizonGreenmask.png"
+            gmPng = "real_res/1004214.png"
             greenmask = display.newSprite(gmPng)
             gmSize = greenmask:getContentSize()
             -- greenmask:setPosition(cc.p(paiBgSize.width, paiBgSize.height))
@@ -217,14 +217,14 @@ function PlayerFlower:scrollFunc(data, mWight, nIndex, scrollView)
             end
             mWight:setPosition(cc.p(wightSize.width/2+5, (wightSize.height+(nIndex-1)*wightSize.height)*self.m_scale - gap + 20))
         elseif self.playerCount == 4 then
-            gmPng = "games/common/game/verticalGreenmask.png"
+            gmPng = "real_res/1004229.png"
             greenmask = display.newSprite(gmPng)
             gmSize = greenmask:getContentSize()
             greenmask:setBlendFunc(gl.DST_COLOR,gl.ONE_MINUS_SRC_ALPHA)
             mWight:setPosition(cc.p((wightPosx+wightSize.width/2+(nIndex-1)*wightSize.width)*self.m_scale + 50, 0))
         end
     elseif data.site == Define.site_left then
-        gmPng = "games/common/game/horizonGreenmask.png"
+        gmPng = "real_res/1004214.png"
         greenmask = display.newSprite(gmPng)
         gmSize = greenmask:getContentSize()
         -- greenmask:setPosition(cc.p(paiBgSize.width, paiBgSize.height))

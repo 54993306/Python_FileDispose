@@ -85,7 +85,7 @@ _MALLWECHAT = "客服微信：majiang6620"
 ------------------以后用这个表来存放全局定义-----------------
 GLOBAL_DEFINE = {}
 GLOBAL_DEFINE.DDZID = 20011 -- 掼蛋游戏ID, 如有修改, 请在config_package.lua文件中重写
-GLOBAL_DEFINE.HallLogo = "hall/huanpi2/Common/MAHJONG GAME.png" -- 登录/ 更新/ 大厅 界面的logo
+GLOBAL_DEFINE.HallLogo = "real_res/1004606.png" -- 登录/ 更新/ 大厅 界面的logo
 
 --------------------------------下方加载包体配置-----------------------------------------
 -- local FileTools = require("app.common.FileTools")

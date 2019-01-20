@@ -133,23 +133,23 @@ end
 function VideoControlLayer:initContralPanel()
 	-- 回放面板
 	self.allowSpeed = false
-	local videoPanel = display.newSprite("hall/friendRoom/videoPanel.png")
+	local videoPanel = display.newSprite("#1004449.png")
 	videoPanel:setPosition(cc.p(self.visibleWidth / 2, self.visibleHeight / 2 - 220))
 	self:addChild(videoPanel)
 	local panelSize = videoPanel:getContentSize()
 
 	-- 快进按钮
     self.fastBtn = ccui.Button:create()
-    self.fastBtn:loadTextureNormal("hall/friendRoom/kuaiJin1.png")
+    self.fastBtn:loadTextureNormal("#1004438.png")
     self.fastBtn:setPosition(cc.p(panelSize.width / 2, panelSize.height / 2))
     self.fastBtn:addTo(videoPanel)
     self.fastBtn:addTouchEventListener(handler(self, self.onClickedFast))
     self.fastBtn:setOpacity(kOpacity)
     self.fastBtn:setTouchEnabled(false)
 
-    local onImage 	= cc.MenuItemImage:create("hall/friendRoom/boFang.png", "hall/friendRoom/boFang.png")
+    local onImage 	= cc.MenuItemImage:create("#1004426.png", "#1004426.png")
     onImage:setOpacity(kOpacity)
-    local offImage  = cc.MenuItemImage:create("hall/friendRoom/zanTing.png", "hall/friendRoom/zanTing.png")
+    local offImage  = cc.MenuItemImage:create("real_res/1004450.png", "real_res/1004450.png")
     offImage:setOpacity(kOpacity)
     self.toggleClickVideo = cc.MenuItemToggle:create(onImage, offImage)
     self.toggleClickVideo:setEnabled(false)
@@ -177,7 +177,7 @@ function VideoControlLayer:initContralPanel()
 
     --  退出按钮
     local exitBtn = ccui.Button:create()
-    exitBtn:loadTextureNormal("hall/friendRoom/fanHui.png")
+    exitBtn:loadTextureNormal("#1004434.png")
     exitBtn:setPosition(cc.p(panelSize.width - clickSize.width / 2 - 30, panelSize.height / 2))
     exitBtn:addTo(videoPanel)
     exitBtn:addTouchEventListener(handler(self, self.onClickedExit))
@@ -198,10 +198,10 @@ function VideoControlLayer:setAllowSpeedVisible(isShow)
 	-- setVisible(visible)
 	if isShow
 	and self.allowSpeed then
-		self.fastBtn:loadTextureNormal("hall/friendRoom/kuaiJin.png")
+		self.fastBtn:loadTextureNormal("real_res/1004437.png")
 		self.fastBtn:setTouchEnabled(true)
 	else
-		self.fastBtn:loadTextureNormal("hall/friendRoom/kuaiJin1.png")
+		self.fastBtn:loadTextureNormal("#1004438.png")
 		self.fastBtn:setTouchEnabled(false)
 	end
 

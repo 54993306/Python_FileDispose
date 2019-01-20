@@ -4,14 +4,14 @@
 
 local PROP_IMG_MAP =
 {
-    [1] = "hall/huanpi2/Common/diamond.png",
-    [2] = "hall/huanpi2/Common/gold_icon.png",
+    [1] = "#1004575.png",
+    [2] = "#1004583.png",
 }
 
 setmetatable(PROP_IMG_MAP, PROP_IMG_MAP)
 
 PROP_IMG_MAP.__index = function(table, key)
-    return "games/common/GUI/image.png"
+    return "real_res/1004211.png"
 end
 
 return PROP_IMG_MAP

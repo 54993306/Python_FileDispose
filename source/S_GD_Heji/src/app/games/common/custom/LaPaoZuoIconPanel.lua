@@ -46,10 +46,10 @@ function LaPaoZuoIconPanel:initData()
         --  底
         ICON_DI = 4,
     }
-    self.m_iconTexture[self.m_iconType.ICON_LA] = "games/common/game/common/icon_la.png"
-    self.m_iconTexture[self.m_iconType.ICON_PAO] = "games/common/game/common/icon_pao.png"
-    self.m_iconTexture[self.m_iconType.ICON_ZUO] = "games/common/game/common/icon_zuo.png"
-    self.m_iconTexture[self.m_iconType.ICON_DI] = "games/common/game/common/icon_di.png"
+    self.m_iconTexture[self.m_iconType.ICON_LA] = "real_res/1004047.png"
+    self.m_iconTexture[self.m_iconType.ICON_PAO] = "real_res/1004048.png"
+    self.m_iconTexture[self.m_iconType.ICON_ZUO] = "real_res/1004050.png"
+    self.m_iconTexture[self.m_iconType.ICON_DI] = "real_res/1004046.png"
 end
 
 function LaPaoZuoIconPanel:initUI()

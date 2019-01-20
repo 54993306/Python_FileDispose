@@ -63,7 +63,7 @@ end
 
 function LayerTurnCard:initUI()
     --  标题——翻马
-    self.m_ImgTitle = cc.Sprite:create("games/common/game/fanma.png")
+    self.m_ImgTitle = cc.Sprite:create("real_res/1004090.png")
     self:addChild(self.m_ImgTitle)
     self.m_ImgTitle:setPosition(cc.p(display.cx, display.height * 0.85))
 

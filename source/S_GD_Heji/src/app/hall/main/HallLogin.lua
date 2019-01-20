@@ -151,7 +151,7 @@ function HallLogin:onShow()
     else
         self.btn_phone:setVisible(false)
         if IS_YINGYONGBAO or (IS_IOS and not kLoginInfo:getIsReview()) then
-            self.btn_login_img_txt:loadTexture("hall/loginUI/img_txt_visitor.png")
+            self.btn_login_img_txt:loadTexture("#1004740.png")
             self.isVisitor = true
         else
             self.btn_login_img_txt:loadTexture("hall/loginUI/img_txt_weichat.png")
@@ -231,7 +231,7 @@ end
 
 --不断刷新客服红点显示内容
 function HallLogin:updateHelp()
-    local hongdian = display.newSprite("hall/main/hongdian.png")
+    local hongdian = display.newSprite("real_res/1004749.png")
     local hdCs = hongdian:getContentSize()
     local kfCs = self.btn_kefu:getContentSize()
     self.btn_kefu:addChild(hongdian)
@@ -381,7 +381,7 @@ end
 function HallLogin:haveNewBgimage()
     if HANENEWBGIMAGE and PRODUCT_ID == 5542 then
         self.bg_image = ccui.Helper:seekWidgetByName(self.m_pWidget, "bg");
-        self.bg_image:loadTexture ( "hall/huanpi2/main_portrait/5542newbg.png" )
+        self.bg_image:loadTexture ( "real_res/1004665.png" )
     end
 
 end

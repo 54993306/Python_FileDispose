@@ -127,11 +127,11 @@ function RoomChatView:setTextFieldToEditBox(textfield)
     end
     local editbox = cc.ui.UIInput.new({
         UIInputType = 1,
-        image = "hall/Common/blank.png",
+        image = "real_res/1004041.png",
         listener = onEdit,
         size = tfS
     })
---    local imageNormal = display.newScale9Sprite("hall/Common/blank.png")
+--    local imageNormal = display.newScale9Sprite("real_res/1004041.png")
 
 --    local editbox = ccui.EditBox:create(cc.size(tfS.width,tfS.height), imageNormal)
     editbox:setContentSize(tfS)
@@ -261,7 +261,7 @@ function RoomChatView:onInit()
             btn_face:setTouchEnabled(false)
         end
         if(index >= #face_pic_list) then
-            btn_face:loadTextureNormal("hall/gameCommon/face/face_0.png");
+            btn_face:loadTextureNormal("real_res/1004469.png");
             btn_face:setVisible(false)
         else
             btn_face:loadTextureNormal("hall/gameCommon/face/armature_pic/face_" .. face_pic_list[index + 1] .. ".png");

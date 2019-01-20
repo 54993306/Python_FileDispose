@@ -19,15 +19,15 @@ end)
 -- @return void
 --]]
 function Robot:ctor()
-	local bgSprite = display.newSprite("games/common/mj/games/robot_bg.png")
+	local bgSprite = display.newSprite("real_res/1004365.png")
     local item_canelshadow = cc.MenuItemSprite:create(bgSprite, nil, nil)
 	item_canelshadow:registerScriptTapHandler(handler(self, self.btnCb))
 	item_canelshadow:setPosition(cc.p(Define.visibleWidth / 2, 0))
 	-- self:addChild(bgSprite)
 
 	-- 取消托管
-	local  btnSprite= display.newSprite("games/common/mj/common/game_btn_yellow.png")
-	local  cancelTextSprite= display.newSprite("games/common/mj/games/robot_text_cancel.png")
+	local  btnSprite= display.newSprite("real_res/1004264.png")
+	local  cancelTextSprite= display.newSprite("real_res/1004366.png")
 	cancelTextSprite:setPosition(cc.p(btnSprite:getContentSize().width / 2, btnSprite:getContentSize().height / 2))
 	cancelTextSprite:addTo(btnSprite)
 

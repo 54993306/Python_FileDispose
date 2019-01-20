@@ -24,8 +24,8 @@ function Card:init(  )
 end
 
 function Card:initData( )
-	cc.SpriteFrameCache:getInstance():addSpriteFrames("games/common/game/fangma.plist")
-	cc.SpriteFrameCache:getInstance():addSpriteFrames("games/common/game/fanmalight.plist")
+	cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008006.plist")
+	cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008009.plist")
 
     --  执行动画精灵
     self.m_AniSprite = {}

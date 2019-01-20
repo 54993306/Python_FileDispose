@@ -48,7 +48,7 @@ function DropItem:ctor(data)
     if self.m_data.title then
         local title=ccui.Text:create()
         title:setString(self.m_data.title)
-        title:setFontName("hall/font/fangzhengcuyuan.TTF")
+        title:setFontName("res_TTF/1016001.TTF")
         title:addTo(self)
         if IsPortrait then -- TODO
             title:setFontSize(G_ROOM_INFO_FORMAT.titleFontSize)
@@ -78,7 +78,7 @@ function DropItem:ctor(data)
 
     self.btn_defult = ccui.Helper:seekWidgetByName(self.m_pWidget, "btn_defult")
     self.btn_defult:setTitleText(data.radios[self.m_data.index] .. "　")
-    self.btn_defult:setTitleFontName("hall/font/fangzhengcuyuan.TTF")
+    self.btn_defult:setTitleFontName("res_TTF/1016001.TTF")
     self.btn_defult:setTitleColor(selectColor)
 
     if IsPortrait then -- TODO
@@ -126,7 +126,7 @@ function DropItem:ctor(data)
 
 
     if data.line then
-        local line=display.newSprite("hall/Common/line2.png")
+        local line=display.newSprite("#1004400.png")
         line:setScaleX(1000)
         line:setAnchorPoint(cc.p(0,0))
         line:addTo(self,-1)
@@ -144,14 +144,14 @@ function DropItem:initList(datas)
         else
             item:setFontSize(24)
         end
-        item:setFontName("hall/font/fangzhengcuyuan.TTF")
+        item:setFontName("res_TTF/1016001.TTF")
         item:setTextAreaSize(cc.size(self.m_data.width or 200,50))
       
         item:setColor(commonColor)
         item:setTouchEnabled(true)
 
         if k~=#datas then
-            local line=display.newSprite("hall/main/linellae.png")
+            local line=display.newSprite("real_res/1004757.png")
             line:setPositionX(item:getContentSize().width/2)
             if IsPortrait then -- TODO
                 line:setScale(0.2*(item:getContentSize().width/200),1.4)

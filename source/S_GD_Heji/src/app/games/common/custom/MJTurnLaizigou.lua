@@ -10,7 +10,7 @@ end)
 
 function MJTurnLaizigou:ctor(atomType)
     SoundManager.playEffect("lianglaizi", false);
---    local bg = display.newSprite("games/common/mj/games/laizidi.png")
+--    local bg = display.newSprite("real_res/1004350.png")
 --    bg:setPosition(cc.p(155+3,display.height - 51))
 --    bg:addTo(self)
     self._myPoker = display.newSprite("#self_poker.png")
@@ -37,7 +37,7 @@ function MJTurnLaizigou:atomAnimation()
         if GC_TurnLaiziPath then
             laizifjaowijef = display.newSprite(GC_TurnLaiziPath)
         else
-            laizifjaowijef = display.newSprite("games/common/mj/games/laizifjaowijef.png")
+            laizifjaowijef = display.newSprite("real_res/1004351.png")
         end
         laizifjaowijef:addTo(self)
         laizifjaowijef:setPosition(cc.p(250+pokeSize.width/2-7,display.height-61))

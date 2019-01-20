@@ -100,7 +100,7 @@ fun.initRecordItem = function(self, item)
     if lab_name then lab_name:setString(contentData)  end
 
     local itemImg = ccui.Helper:seekWidgetByName(item,"img_item")
-    local filePath = "hall/huanpi2/Common/redbag1.png"
+    local filePath = "real_res/1004619.png"
     local re, err = io.exists(filePath)
     if not re then
         itemImg:loadTexture(filePath)

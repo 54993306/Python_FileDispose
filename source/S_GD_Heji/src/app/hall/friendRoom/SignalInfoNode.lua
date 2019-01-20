@@ -54,7 +54,7 @@ end
 function SignalInfoNode:updateRoomId()
     self:initPayInfo()
     local room_Panel = self:getWidget(self.m_pWidget,"room_Panel")
-    local room_id = cc.Label:createWithBMFont("hall/font/room_num.fnt", kFriendRoomInfo:getRoomInfo().pa)
+    local room_id = cc.Label:createWithBMFont("real_res/1010012.fnt", kFriendRoomInfo:getRoomInfo().pa)
     room_id:setPosition(cc.p(100,37))
     room_Panel:addChild(room_id)
 end
@@ -67,15 +67,15 @@ function SignalInfoNode:initPayInfo()
 
 
     if playerInfos.clI ~= nil and playerInfos.clI > 0 then
-        img_paytype:loadTexture("hall/Common/clubpay.png", ccui.TextureResType.localType)
+        img_paytype:loadTexture("real_res/1004391.png", ccui.TextureResType.localType)
     else
         if playerInfos.RoFS and playerInfos.plS then
             if playerInfos.RoJST == 1 then          --是否需要考虑写成可拓展可配置的？
-                img_paytype:loadTexture("hall/Common/wonpay.png", ccui.TextureResType.localType)
+                img_paytype:loadTexture("real_res/1004074.png", ccui.TextureResType.localType)
             elseif playerInfos.RoJST == 2 then
-                img_paytype:loadTexture("hall/Common/winpay.png", ccui.TextureResType.localType)
+                img_paytype:loadTexture("real_res/1004073.png", ccui.TextureResType.localType)
             elseif playerInfos.RoJST == 3 then
-                local paynum = cc.Label:createWithBMFont("hall/font/room_num.fnt",math.ceil( playerInfos.RoFS / playerInfos.plS ))
+                local paynum = cc.Label:createWithBMFont("real_res/1010012.fnt",math.ceil( playerInfos.RoFS / playerInfos.plS ))
                 paynum:setScale(0.82)
                 paynum:setPosition(cc.p(70,-5))
                 room_Panel:addChild(paynum)
@@ -106,7 +106,7 @@ function SignalInfoNode:initTime()
     refreshTimeFun()
 
     -- 底板
-    local timeBg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "hall/Common/name_scale_bg.png")
+    local timeBg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "#1004052.png")
     timeBg:setContentSize(cc.size(self.label_time:getContentSize().width + 6, self.image_bat_bg:getContentSize().height + 4))
     timeBg:setPosition(cc.p(self.label_time:getPositionX(), self.panel:getContentSize().height * 0.5 + 2))
     self.panel:addChild(timeBg, -1)
@@ -139,7 +139,7 @@ function SignalInfoNode:initElectric()
     local posX, posY = self.progressBar_pro:getPosition()
     self.progressBar_pro:setPosition(cc.p(posX + 1, posY + 1))
 
-    self.proNum = cc.Label:createWithBMFont("hall/Common/batteryFont.fnt", "100%")
+    self.proNum = cc.Label:createWithBMFont("res_fnt/1010002.fnt", "100%")
     local x = self.image_bat_bg:getPositionX() + self.image_bat_bg:getContentSize().width + 8
     self.proNum:setPosition(cc.p(x , self.panel:getContentSize().height * 0.5 - 4))
     self.proNum:setAnchorPoint(cc.p(0.5, 0.85))
@@ -147,7 +147,7 @@ function SignalInfoNode:initElectric()
 
     -- 底板
     local bBgSize = self.image_bat_bg:getContentSize()
-    local proBg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "hall/Common/name_scale_bg.png")
+    local proBg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "#1004052.png")
     proBg:setContentSize(cc.size(bBgSize.width + self.proNum:getContentSize().width + 8, bBgSize.height + 4))
     proBg:setPosition(cc.p(self.image_bat_bg:getPositionX() - bBgSize.width * 0.5 - 4, self.panel:getContentSize().height * 0.5 + 2))
     proBg:setAnchorPoint(cc.p(0, 0.5))

@@ -6,7 +6,7 @@ ResourceCheck.check = function()
     if device.platform ~= "windows" then
         return
     end
-    if not cc.FileUtils:getInstance():isFileExist("package_res/config/image/club_bg.png") then
+    if not cc.FileUtils:getInstance():isFileExist("real_res/1004789.png") then
         local errorMessage = [[
             小伙子，亲友圈分享背景图片
             package_res/config/image/club_bg.png

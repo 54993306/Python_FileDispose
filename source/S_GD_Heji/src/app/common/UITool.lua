@@ -16,7 +16,7 @@ UITool.setTitleStyle = function(titleLabel)
         -- print(debug.traceback())
         return 
     end
-    titleLabel:setFontName("hall/font/fangzhengcuyuan.TTF");
+    titleLabel:setFontName("res_TTF/1016001.TTF");
     titleLabel:setColor(cc.c3b(0xff,0xd2,0x69));
     titleLabel:setFontSize(50)
     titleLabel:setCascadeColorEnabled(true)
@@ -24,7 +24,7 @@ UITool.setTitleStyle = function(titleLabel)
 end
 
 ---------------------------
-local bg = {path = "res/hall/huanpi2/Common/panel_black.png", capInsets = cc.rect(10,10,20,20), minSize = cc.size(20, 20)} -- 底框的配置
+local bg = {path = "#1004609.png", capInsets = cc.rect(10,10,20,20), minSize = cc.size(20, 20)} -- 底框的配置
 local baseOffConfig = {left = 0, right = 0, up = 0, bottom = 0} -- 默认的偏移
 -- 设置规则的底框
 -- @author 周思宇

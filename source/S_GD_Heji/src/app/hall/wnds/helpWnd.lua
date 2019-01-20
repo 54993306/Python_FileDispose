@@ -27,7 +27,7 @@ local function createText(text, textWidth)
     end
 
     local content = ccui.Text:create();
-    content:setFontName("hall/font/fangzhengcuyuan.TTF")
+    content:setFontName("res_TTF/1016001.TTF")
     if IsPortrait then -- TODO
         content:setColor(cc.c3b(0x33,0x33,0x33))
     else

@@ -7,9 +7,9 @@
 --  下来框
 local lDropDownBox = require("app.games.common.custom.DropDownBox.DropDownBox")
 --  字体路径
-local lFontFilePath = "hall/font/fangzhengcuyuan.TTF"
+local lFontFilePath = "res_TTF/1016001.TTF"
 --  分割线路径
-local lLineFilePath = "hall/Common/line2.png"
+local lLineFilePath = "#1004400.png"
 
 -- @brief   DropDownBoxPanel   创建“房间界面”定制版【下拉框面板块】
 local DropDownBoxPanel = class("DropDownBoxPanel", function()

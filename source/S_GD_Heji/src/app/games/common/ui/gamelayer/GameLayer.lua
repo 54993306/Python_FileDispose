@@ -176,7 +176,7 @@ function GameLayer:ctor()
     end)
 end
 function GameLayer:addSpriteFrames()
-    display.addSpriteFrames("games/common/mj/cardlight.plist", "games/common/mj/cardlight.png")
+    display.addSpriteFrames("res_plist/1008023.plist", "real_res/1004253.png")
 end
 -- function GameLayer:onMsgPlayCard()
 --     if self.operateLayer:isVisible() then
@@ -1296,7 +1296,7 @@ function GameLayer:showMoneyLabel(tmpSite, tmpMoney)
         local tx = "+" .. tmpMoney
         local jifen = {
             text = tx,
-            font = "games/common/gameCommon/add_num.fnt",
+            font = "real_res/1010005.fnt",
         }
         moneyLabel = display.newBMFontLabel(jifen);
 
@@ -1304,7 +1304,7 @@ function GameLayer:showMoneyLabel(tmpSite, tmpMoney)
         local tx = "" .. tmpMoney
         local jifen = {
             text = tx,
-            font = "games/common/gameCommon/sub_num.fnt",
+            font = "real_res/1010006.fnt",
         }
         moneyLabel = display.newBMFontLabel(jifen);
     end

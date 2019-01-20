@@ -5,16 +5,16 @@
 --endregion
 local Define = require "app.games.common.Define"
 local kLightPaths = {
-	"games/common/mj/games/clock_light_dong.png",
-	"games/common/mj/games/clock_light_nan.png",
-	"games/common/mj/games/clock_light_xi.png",
-	"games/common/mj/games/clock_light_bei.png"
+	"real_res/1004308.png",
+	"real_res/1004309.png",
+	"real_res/1004310.png",
+	"real_res/1004307.png"
 	}
 local kTextPaths = {
-	"games/common/mj/games/clock_text_dong.png",
-	"games/common/mj/games/clock_text_nan.png",
-	"games/common/mj/games/clock_text_xi.png",
-	"games/common/mj/games/clock_text_bei.png"
+	"real_res/1004317.png",
+	"real_res/1004318.png",
+	"real_res/1004319.png",
+	"real_res/1004316.png"
 }
 
 local kRotateAngles = {0, -90, -180, -270}
@@ -43,16 +43,16 @@ function Clock:ctor()
 
     if IsPortrait then -- TODO
         -- 闹钟背景
-        self.clockSprite = display.newSprite("games/common/mj/games/clock_bg1.png")
+        self.clockSprite = display.newSprite("real_res/1004305.png")
         self.clockSprite:setPosition(cc.p(visibleWidth / 2, visibleHeight /2 + 30))
     else
-    	self.clockButtomSprite = display.newSprite("games/common/mj/games/clock_buttom_bg.png")
+    	self.clockButtomSprite = display.newSprite("real_res/1004306.png")
     	self.clockButtomSprite:setPosition(cc.p(visibleWidth / 2, visibleHeight /2 + 40))
         self.clockButtomSprite:setScale(Define.mj_common_scale)
     	self.clockButtomSprite:addTo(self)
 
     	-- 闹钟背景
-    	self.clockSprite = display.newSprite("games/common/mj/games/clock_bg.png")
+    	self.clockSprite = display.newSprite("real_res/1004304.png")
     	self.clockSprite:setPosition(cc.p(visibleWidth / 2, visibleHeight /2 + 40))
     end
 
@@ -116,7 +116,7 @@ function Clock:initDoor()
 		self.textSpites[i]:setPosition(textPostions[i])
 	end
 	-- 倒计时
-	self.timeLabel = cc.LabelAtlas:_create("00", "games/common/mj/games/game_num_clock.png", 15, 22, string.byte("0"))
+	self.timeLabel = cc.LabelAtlas:_create("00", "real_res/1004345.png", 15, 22, string.byte("0"))
 	self.timeLabel:setAnchorPoint(cc.p(0.5, 0.5)):setPosition(cc.p(self.clockSprite:getContentSize().width / 2,
 		self.clockSprite:getContentSize().height / 2 ))
 	self.timeLabel:addTo(self.clockSprite)

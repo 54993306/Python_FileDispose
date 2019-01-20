@@ -114,7 +114,7 @@ end
 
 function MjGameScene:addDismissBtn(  )
     self.dismiss_btn = ccui.Button:create()
-    self.dismiss_btn:loadTextureNormal("games/common/game/games/menu_btn_jieshan.png")
+    self.dismiss_btn:loadTextureNormal("real_res/1004205.png")
 
     self.dismiss_btn:setPosition(cc.p(display.width -60, display.height - 135))
     self.dismiss_btn:addTo(self)

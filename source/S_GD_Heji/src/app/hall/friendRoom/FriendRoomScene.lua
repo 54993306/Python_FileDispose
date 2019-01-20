@@ -43,10 +43,10 @@ local kRuleOffY = -18
 FriendRoomScene = class("FriendRoomScene", UIWndBase)
 
 local function createNameTip(name)
-    local bg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "hall/Common/name_scale_bg.png")
+    local bg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "#1004052.png")
     bg:setContentSize(cc.size(80, 22))
     bg:setName("headnamebg")
-    local nameLabel = cc.Label:createWithTTF(name, "hall/font/fangzhengcuyuan.TTF", 18)
+    local nameLabel = cc.Label:createWithTTF(name, "res_TTF/1016001.TTF", 18)
     nameLabel:setColor(cc.c3b(0xff, 0xfe, 0xad))
     nameLabel:setPosition(cc.p(40, 11))
     nameLabel:setAnchorPoint(cc.p(0.5, 0.5))
@@ -344,7 +344,7 @@ function FriendRoomScene:setTextFieldToEditBox(textfield)
     if textfield:isMaxLengthEnabled() then
         ftMaxLength = textfield:getMaxLength()
     end
-   local imageNormal = display.newScale9Sprite("hall/Common/blank.png")
+   local imageNormal = display.newScale9Sprite("real_res/1004041.png")
 
    local editbox = ccui.EditBox:create(cc.size(tfS.width,tfS.height), imageNormal)
     editbox:setContentSize(tfS)
@@ -696,12 +696,12 @@ function FriendRoomScene:onClickButton(pWidget, EventType)
         elseif pWidget == self.turnBtn then
             local turnimg = ccui.Helper:seekWidgetByName(self.turnBtn,"img")
             if self.turnBtn.talkstate then
-                turnimg:loadTexture("hall/huanpi2/friendroomscene/keyboard.png")
+                turnimg:loadTexture("#1004635.png")
                 self.turnBtn.talkstate = false
                 self.inputPanel:setVisible(false)
                 self.beginSayBtn:setVisible(true)
             else
-                turnimg:loadTexture("hall/huanpi2/friendroomscene/mic.png")
+                turnimg:loadTexture("real_res/1004636.png")
                 self.turnBtn.talkstate = true
                 self.inputPanel:setVisible(true)
                 self.beginSayBtn:setVisible(false)
@@ -782,14 +782,14 @@ function FriendRoomScene:onClickButtonNewer(pWidget, EventType)
 end
 
 function FriendRoomScene:createRuleTip(ruleStr)
-    local ruleText = cc.Label:createWithTTF(ruleStr, "hall/font/fangzhengcuyuan.TTF", kRuleFontSize)
+    local ruleText = cc.Label:createWithTTF(ruleStr, "res_TTF/1016001.TTF", kRuleFontSize)
     ruleText:setColor(cc.c3b(0xb1, 0xcc, 0xa3))
     ruleText:setWidth(kRuleWidth)
     ruleText:setAlignment(cc.TEXT_ALIGNMENT_CENTER)
     ruleText:setAlignment(cc.VERTICAL_TEXT_ALIGNMENT_CENTER)
 
     if IsPortrait then -- TODO
-        local bg = ccui.Scale9Sprite:create(cc.rect(10, 10, 5, 5), "hall/Common/name_scale_bg.png")
+        local bg = ccui.Scale9Sprite:create(cc.rect(10, 10, 5, 5), "#1004052.png")
         bg:addChild(ruleText)
         local size = ruleText:getContentSize()
         size.width = size.width + 10
@@ -815,7 +815,7 @@ function FriendRoomScene:updateUI()
 
     --房间号
     local roomNumberLabel= ccui.Helper:seekWidgetByName(self.m_pWidget, "roomNumberLabel");
-    roomNumberLabel:setFontName("hall/font/fangzhengcuyuan.TTF")
+    roomNumberLabel:setFontName("res_TTF/1016001.TTF")
 
     local copyBtnLayout = ccui.Layout:create()
     -- local copyBtnLayout = display.newColorLayer(cc.c4b(100,100,100,255))
@@ -823,7 +823,7 @@ function FriendRoomScene:updateUI()
     roomNumberLabel:addChild(copyBtnLayout)
 
     if IsPortrait then -- TODO
-        local roomNum = cc.Label:createWithBMFont("hall/huanpi2/friendroomscene/num_room.fnt",playerInfos.pa)
+        local roomNum = cc.Label:createWithBMFont("real_res/1010018.fnt",playerInfos.pa)
         roomNum:setPosition(cc.p(roomNumberLabel:getContentSize().width + roomNum:getContentSize().width/2 + 15,roomNumberLabel:getContentSize().height / 2))
         roomNumberLabel:addChild(roomNum)
 
@@ -852,7 +852,7 @@ function FriendRoomScene:updateUI()
     local copyRoomId = cc.Label:create()
     copyRoomId:setString("(复制房间号)")
     copyRoomId:setSystemFontSize(28)
-    copyRoomId:setSystemFontName("hall/font/fangzhengcuyuan.TTF")
+    copyRoomId:setSystemFontName("res_TTF/1016001.TTF")
     copyRoomId:setPosition(cc.p(copyBtnLayout:getContentSize().width/2,copyBtnLayout:getContentSize().height/2))
     copyBtnLayout:addChild(copyRoomId)
 
@@ -861,7 +861,7 @@ function FriendRoomScene:updateUI()
     copyBtnLayout:addTouchEventListener(handler(self,self.onLabelClickButton));
 
     local copyRoomIdLine = cc.Label:create()
-    copyRoomIdLine:setSystemFontName("hall/font/fangzhengcuyuan.TTF")
+    copyRoomIdLine:setSystemFontName("res_TTF/1016001.TTF")
     copyRoomIdLine:setSystemFontSize(28)
     if IsPortrait then -- TODO
         copyRoomIdLine:setString("——————")
@@ -1140,7 +1140,7 @@ function FriendRoomScene:playerListViewUpdate()
                 break;
             end
         end
-        local headFile = "hall/huanpi2/Common/defaultCircleHead.png";
+        local headFile = "#1004291.png";
         if playerInfo then
             Log.i("------playerInfo", playerInfo);
             if IsPortrait then -- TODO
@@ -1153,7 +1153,7 @@ function FriendRoomScene:playerListViewUpdate()
             self:ipXiangTong(playerInfo, headImg);
             headImg:setVisible(true);
             playerName:setVisible(true);
-            playerName:setFontName("hall/font/fangzhengcuyuan.TTF")
+            playerName:setFontName("res_TTF/1016001.TTF")
             local retName = ToolKit.subUtfStrByCn(playerInfo.niN, 0, 5, "");
             if IsPortrait then -- TODO
                 Util.updateNickName(playerName, retName, 20)
@@ -1200,7 +1200,7 @@ function FriendRoomScene:playerListViewUpdate()
                 end
             else
                 if not IsPortrait then -- TODO
-                    headFile = "hall/Common/default_head_2.png";
+                    headFile = "real_res/1004043.png";
                 end
                 self.m_headImage[i] = headFile
                 headFile = cc.FileUtils:getInstance():fullPathForFilename(headFile);
@@ -1356,7 +1356,7 @@ end
 function FriendRoomScene:drawIpXiangTong(head)
     local headOneIp = head:getChildByName("ipxiangtong")
     if headOneIp == nil then
-        local ip = display.newSprite("games/common/mj/common/ipxiangtong.png")
+        local ip = display.newSprite("real_res/1004270.png")
         ip:setName("ipxiangtong");
         ip:addTo(head);
         local headSize = head:getContentSize();
@@ -1637,7 +1637,7 @@ function FriendRoomScene:insertSayText(chatData,color)
     local textHeight=label_text:getContentSize().height
     label_text:setString(strText)
     --临时创建一个label计算宽度
-    local tempLabel=ccui.Text:create(strText, "hall/font/fangzhengcuyuan.TTF", label_text:getFontSize())
+    local tempLabel=ccui.Text:create(strText, "res_TTF/1016001.TTF", label_text:getFontSize())
     local labelWidth=tempLabel:getContentSize().width < self.sayListView:getContentSize().width*0.8 and tempLabel:getContentSize().width or self.sayListView:getContentSize().width*0.8
 
     label_text:setTextAreaSize(cc.size(labelWidth,0))

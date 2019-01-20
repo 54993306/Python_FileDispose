@@ -81,7 +81,7 @@ function SelectServerWnd:createServerList()
     self.btnListView:setPosition(cc.p(10, 20))
     -- self.btnListView:addTo(serverLayer)
 
-    local labelChoose = cc.LabelTTF:create("服务器选择", "hall/font/fangzhengcuyuan.TTF", 30)
+    local labelChoose = cc.LabelTTF:create("服务器选择", "res_TTF/1016001.TTF", 30)
     labelChoose:setPosition(cc.p(serverLayer:getContentSize().width/2, serverLayer:getContentSize().height + 30))
     labelChoose:setColor(cc.c3b(0, 255, 0))
     labelChoose:addTo(serverLayer)
@@ -98,7 +98,7 @@ function SelectServerWnd:createInputBgLayer()
     layInPut:setPosition(cc.p(display.cx-50, 100))
     layInPut:addTo(self.InputLayer)
 
-    local labelChoose = cc.LabelTTF:create("服务器所需数据", "hall/font/fangzhengcuyuan.TTF", 30)
+    local labelChoose = cc.LabelTTF:create("服务器所需数据", "res_TTF/1016001.TTF", 30)
     labelChoose:setPosition(cc.p(layInPut:getContentSize().width/2, layInPut:getContentSize().height + 30))
     labelChoose:setColor(cc.c3b(0, 255, 0))
     labelChoose:addTo(layInPut)
@@ -111,7 +111,7 @@ function SelectServerWnd:initInputLyaerWidget()
 	local size = cc.size(300, 30)
 	local position = cc.p(195, 200)
 
-	inp_Wname = ccui.EditBox:create(size, "hall/Common/advertNoSelect.png")
+	inp_Wname = ccui.EditBox:create(size, "real_res/1004383.png")
 	inp_Wname:setPosition(position)
 	inp_Wname:setFontColor(cc.c3b(0, 0, 0))
 	inp_Wname:setMaxLength(100)
@@ -122,21 +122,21 @@ function SelectServerWnd:initInputLyaerWidget()
 		inp_Wname:setText(strAccountCache)
 	end
 
-	inp_headUrl = ccui.EditBox:create(size, "hall/Common/advertNoSelect.png")
+	inp_headUrl = ccui.EditBox:create(size, "real_res/1004383.png")
 	inp_headUrl:setPosition(position.x, position.y + 50)
 	inp_headUrl:setFontColor(cc.c3b(0, 0, 0))
 	inp_headUrl:setMaxLength(1000)
 	inp_headUrl:setPlaceHolder("在此输入头像url地址")
 	inp_headUrl:addTo(layInPut)
 
-	inp_UniID = ccui.EditBox:create(size, "hall/Common/advertNoSelect.png")
+	inp_UniID = ccui.EditBox:create(size, "real_res/1004383.png")
 	inp_UniID:setPosition(position.x, position.y + 100)
 	inp_UniID:setFontColor(cc.c3b(0, 0, 0))
 	inp_UniID:setMaxLength(100)
 	inp_UniID:setPlaceHolder("在此输入uni id")
 	inp_UniID:addTo(layInPut)
 
-	inp_openID = ccui.EditBox:create(size, "hall/Common/advertNoSelect.png")
+	inp_openID = ccui.EditBox:create(size, "real_res/1004383.png")
 	inp_openID:setPosition(position.x, position.y + 150)
 	inp_openID:setFontColor(cc.c3b(0, 0, 0))
 	inp_openID:setMaxLength(100)
@@ -158,14 +158,14 @@ function SelectServerWnd:initInputLyaerWidget()
     end
     inp_openID:registerScriptEditBoxHandler(openIDEditboxEventHandler)
 
-	inp_md5 = ccui.EditBox:create(size, "hall/Common/advertNoSelect.png")
+	inp_md5 = ccui.EditBox:create(size, "real_res/1004383.png")
 	inp_md5:setPosition(position.x, position.y + 200)
 	inp_md5:setFontColor(cc.c3b(0, 0, 0))
 	inp_md5:setMaxLength(100)
 	inp_md5:setPlaceHolder("在此输入md5")
 	inp_md5:addTo(layInPut)
 
-	self.server_IP = ccui.EditBox:create(cc.size(170, size.height), "hall/Common/advertNoSelect.png")
+	self.server_IP = ccui.EditBox:create(cc.size(170, size.height), "real_res/1004383.png")
 	self.server_IP:setPosition(cc.p(position.x - 65,position.y - 50))
 	self.server_IP:setFontColor(cc.c3b(0, 0, 0))
 	self.server_IP:setMaxLength(32)
@@ -179,7 +179,7 @@ function SelectServerWnd:initInputLyaerWidget()
 		end
 	end)
 
-	self.serverPort = ccui.EditBox:create(cc.size(110, size.height), "hall/Common/advertNoSelect.png")
+	self.serverPort = ccui.EditBox:create(cc.size(110, size.height), "real_res/1004383.png")
 	self.serverPort:setPosition(cc.p(position.x + self.server_IP:getContentSize().width/2,position.y - 50))
 	self.serverPort:setFontColor(cc.c3b(0, 0, 0))
 	self.serverPort:setMaxLength(15)
@@ -193,7 +193,7 @@ function SelectServerWnd:initInputLyaerWidget()
 		end
 	end)
 
-    local btnLogin = ccui.Button:create("hall/GUI/selected01.png")  -- 点击登陆按钮
+    local btnLogin = ccui.Button:create("real_res/1004472.png")  -- 点击登陆按钮
     btnLogin:setPosition(cc.p(180,60))
     btnLogin:setScaleX(3)
     btnLogin:addTo(self.layInPut)
@@ -276,7 +276,7 @@ end
 -- 按钮的界面初始化
 function SelectServerWnd:BtnLoginLayer()
 	self.btnLayer = self:createBtnLayer(Index.Btns)
-	local BtnPanel = ccui.Button:create("hall/GUI/selected01.png")
+	local BtnPanel = ccui.Button:create("real_res/1004472.png")
 	BtnPanel:setPosition(cc.p(display.cx - 250,self.btnLayer:getContentSize().height + 150))
 	BtnPanel:addTo(self.m_pWidget)
 	BtnPanel:setTitleText("BtnPanel") -- 设置按钮文字
@@ -288,7 +288,7 @@ function SelectServerWnd:BtnLoginLayer()
 	end)
     self:addTestLoginBtn(self.btnLayer)
 
-	local InputPanel = ccui.Button:create("hall/GUI/selected01.png")
+	local InputPanel = ccui.Button:create("real_res/1004472.png")
 	InputPanel:setPosition(cc.p( display.cx - 150, self.btnLayer:getContentSize().height + 150 )) -- 按钮位置(相对于父节点)
 	InputPanel:addTo(self.m_pWidget)
 	InputPanel:setTitleText("InputPanel") -- 设置按钮文字
@@ -301,7 +301,7 @@ function SelectServerWnd:BtnLoginLayer()
 end
 
 function SelectServerWnd:initTestWebView()
-    local webviewBtn = ccui.Button:create("hall/GUI/selected01.png")
+    local webviewBtn = ccui.Button:create("real_res/1004472.png")
     webviewBtn:setPosition(cc.p( display.cx + 50, self.btnLayer:getContentSize().height + 150 )) -- 按钮位置(相对于父节点)
     webviewBtn:addTo(self.m_pWidget)
     webviewBtn:setTitleText("WebView") -- 设置按钮文字
@@ -320,7 +320,7 @@ end
 
 function SelectServerWnd:initTAccountPanel()
     local btnLayer = self:createBtnLayer(Index.Tacs)
-    local TAccount = ccui.Button:create("hall/GUI/selected01.png")
+    local TAccount = ccui.Button:create("real_res/1004472.png")
     TAccount:addTo(self.m_pWidget)
     TAccount:setPosition(cc.p(display.cx - 50,self.btnLayer:getContentSize().height + 150))
     TAccount:setTitleText("TAccount") -- 设置按钮文字
@@ -338,7 +338,7 @@ function SelectServerWnd:customBtn(btns)
     local t_btn = btns[15]
     t_btn:setTitleText("666")
     t_btn:setColor(display.COLOR_RED)
-    -- cc.SpriteFrameCache:getInstance():addSpriteFrames("hall/Common/test.plist")
+    -- cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008027.plist")
     t_btn:addTouchEventListener( function(pWidget,touchType)   -- 使用异步加载精灵帧的方式来判断，合集图片是否会影响界面创建
         if touchType ==ccui.TouchEventType.ended then
             display.addSpriteFrames("3331.plist" , "4444.png" , function(plist, image)
@@ -359,7 +359,7 @@ function SelectServerWnd:addTestLoginBtn(lay,inp)
     local btns = {}
     inp = inp or "userx"
 	for i = 1, 16, 1 do
-		local t_btn = ccui.Button:create("hall/GUI/selected01.png")
+		local t_btn = ccui.Button:create("real_res/1004472.png")
 		t_btn:setPosition(cc.p((i - 1) % 4 * 130 + 100, 430 - math.floor((i - 1) / 4) * 120)) -- 按钮位置(相对于父节点)
         t_btn:addTo(lay)
 		t_btn:setTitleText(inp .. i) -- 设置按钮文字

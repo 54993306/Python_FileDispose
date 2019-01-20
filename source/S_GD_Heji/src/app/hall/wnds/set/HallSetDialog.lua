@@ -108,7 +108,7 @@ function HallSetDialog:createSoundPanel(audio_Panel)
                 SettingInfo.getInstance():setGameSoundValue(50)
                 -- 设置音效音量
                 audio.setSoundsVolume(50 / 80)
-                local img= "hall/huanpi2/set/btn_a_on.png"
+                local img= "#1004704.png"
                 self.soundSlider:loadSlidBallTextures(img,img,img) 
 
             else
@@ -134,7 +134,7 @@ function HallSetDialog:createSoundPanel(audio_Panel)
     soundVolume()
 
     if self.soundSlider:getPercent() <= 5 then
-        local img= "hall/huanpi2/set/btn_vol_unable.png"
+        local img= "#1004704.png"
         self.soundSlider:loadSlidBallTextures(img,img,img)       
     end
 
@@ -145,13 +145,13 @@ function HallSetDialog:createSoundPanel(audio_Panel)
             mWidget:setPercent(5)
             sound_on_off:setSelected(false)
 
-            local img= "hall/huanpi2/set/btn_vol_unable.png"
+            local img= "#1004704.png"
             mWidget:loadSlidBallTextures(img,img,img)
         elseif mWidget:getPercent() > 5  then
 
             SettingInfo.getInstance():setSoundStatus(true)
             sound_on_off:setSelected(true)
-            local img= "hall/huanpi2/set/btn_a_on.png"
+            local img= "#1004704.png"
             mWidget:loadSlidBallTextures(img,img,img)
 
             if mWidget:getPercent() >= 95 then
@@ -185,7 +185,7 @@ function HallSetDialog:setMusicPanel(audio_Panel)
                 -- 设置音乐音量
                 audio.setMusicVolume(50 / 80)
                 self.m_isMusic = true
-                local img= "hall/huanpi2/set/btn_a_on.png"
+                local img= "#1004704.png"
                 self.musicSlider:loadSlidBallTextures(img,img,img) 
                 
                 return
@@ -215,7 +215,7 @@ function HallSetDialog:setMusicPanel(audio_Panel)
     musicVolume()
 
     if self.musicSlider:getPercent() <= 5 then
-        local img= "hall/huanpi2/set/btn_vol_unable.png"
+        local img= "#1004704.png"
         self.musicSlider:loadSlidBallTextures(img,img,img)       
     end
 
@@ -229,7 +229,7 @@ function HallSetDialog:setMusicPanel(audio_Panel)
             self.m_isMusic = false
             music_on_off:setSelected(false)
 
-            local img= "hall/huanpi2/set/btn_vol_unable.png"
+            local img= "#1004704.png"
             mWidget:loadSlidBallTextures(img,img,img)
 
         else
@@ -244,7 +244,7 @@ function HallSetDialog:setMusicPanel(audio_Panel)
                 mWidget:setPercent(95)
             end
 
-            local img= "hall/huanpi2/set/btn_a_on.png"
+            local img= "#1004704.png"
             mWidget:loadSlidBallTextures(img,img,img)
         end
         musicVolume()

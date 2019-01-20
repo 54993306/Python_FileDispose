@@ -209,7 +209,7 @@ function MatchRecordDialog:showRecordList(info)
                 end
             end
 
-            -- local scoreSource = data.usL[i].ca > 0 and "hall/font/yellow_num_big.fnt" or "hall/font/green_num_big.fnt"
+            -- local scoreSource = data.usL[i].ca > 0 and "real_res/1010014.fnt" or "real_res/1010011.fnt"
             -- local scoreTip = cc.Label:createWithBMFont(scoreSource, data.usL[i].ca > 0 and "+" .. data.usL[i].ca or data.usL[i].ca)
             -- scoreTip:setPosition(playerScore:getPosition())
             -- scoreTip:setAnchorPoint(playerScore:getAnchorPoint())

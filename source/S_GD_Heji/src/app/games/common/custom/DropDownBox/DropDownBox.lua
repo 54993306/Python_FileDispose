@@ -5,15 +5,15 @@
 
 
 --  背景框
-local lBoxNormal = "games/common/game/drop_down_box_bg.png"
+local lBoxNormal = "real_res/1004080.png"
 -- 展开后背景框
-local lBoxContentNormal = "games/common/game/drop_down_box_content_bg.png"
+local lBoxContentNormal = "real_res/1004081.png"
 --  拉下手把
-local lIconNormal = "games/common/game/handle_down.png"
+local lIconNormal = "real_res/1004212.png"
 --  拉起手把
-local lIconShow = "games/common/game/handle_up.png"
+local lIconShow = "real_res/1004213.png"
 --  字体路径
-local lFontFilePath = "hall/font/fangzhengcuyuan.TTF"
+local lFontFilePath = "res_TTF/1016001.TTF"
 
 -- 为了与DropItem看起来一样做出的微调
 -- 文字框高度微调
@@ -219,7 +219,7 @@ function DropDownBox:addListViewItem(tag, strText)
 
     -- 增加下划线
     if tag ~= #self.m_Data.options then
-        local line=display.newSprite("hall/main/linellae.png")
+        local line=display.newSprite("real_res/1004757.png")
         line:setPositionX(self.m_BtnItem[tag]:getContentSize().width/2)
         line:setScale(0.2*(self.m_BtnItem[tag]:getContentSize().width/200),1.3)
         self.m_BtnItem[tag]:addChild(line)

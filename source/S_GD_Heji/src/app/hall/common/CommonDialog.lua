@@ -183,7 +183,7 @@ function CommonDialog:DynamicLabel()
     local textSize = 36
     local params = {}
     params.text = self.m_data.content or "暂无信息"
-    params.font = "hall/font/fangzhengcuyuan.TTF"
+    params.font = "res_TTF/1016001.TTF"
     if IsPortrait then -- TODO
         params.size = self.m_data.textSize or textSize
     else
@@ -235,7 +235,7 @@ function CommonDialog:subjoinLabel()
     subjoinLabel:setString(self.m_data.subjoin)
     subjoinLabel:setColor(cc.c3b(255,0,0))
     subjoinLabel:setSystemFontSize(textSize)
-    subjoinLabel:setSystemFontName("hall/font/fangzhengcuyuan.TTF")
+    subjoinLabel:setSystemFontName("res_TTF/1016001.TTF")
     copyBtnLayout:addChild(subjoinLabel)
 
     -- copyBtnLayout:setPosition(cc.p(subjoinLabel:getContentSize().width,self.content:getContentSize().height + copyBtnLayout:getContentSize().height - 5))
@@ -256,7 +256,7 @@ function CommonDialog:subjoinLabel()
     copyLabel:setString(self.m_data.handle)
     copyLabel:setColor(cc.c3b(255,0,0))
     copyLabel:setSystemFontSize(textSize)
-    copyLabel:setSystemFontName("hall/font/fangzhengcuyuan.TTF")
+    copyLabel:setSystemFontName("res_TTF/1016001.TTF")
     copyLabel:setPosition(cc.p(subjoinLabel:getContentSize().width + 60,copyBtnLayout:getContentSize().height/2))
     copyBtnLayout:addChild(copyLabel)
     
@@ -264,7 +264,7 @@ function CommonDialog:subjoinLabel()
     local copyRoomIdLine = cc.Label:create()
     copyRoomIdLine:setString("_____")
     copyRoomIdLine:setColor(cc.c3b(255,0,0))
-    copyRoomIdLine:setSystemFontName("hall/font/fangzhengcuyuan.TTF")
+    copyRoomIdLine:setSystemFontName("res_TTF/1016001.TTF")
     copyRoomIdLine:setSystemFontSize(textSize)
     copyRoomIdLine:setPosition(cc.p(subjoinLabel:getContentSize().width + 60,copyBtnLayout:getContentSize().height/2 - 5))
     copyBtnLayout:addChild(copyRoomIdLine)

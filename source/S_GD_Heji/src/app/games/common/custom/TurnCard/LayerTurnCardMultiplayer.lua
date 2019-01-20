@@ -58,7 +58,7 @@ end
 
 function LayerTurnCardMultiplayer:initUI()
     --  标题——翻马
-    self.m_ImgTitle = cc.Sprite:create("games/common/game/fanma.png")
+    self.m_ImgTitle = cc.Sprite:create("real_res/1004090.png")
     self:addChild(self.m_ImgTitle)
     self.m_ImgTitle:setPosition(cc.p(display.cx, display.height * 0.9))
 
@@ -196,7 +196,7 @@ function LayerTurnCardMultiplayer:createHeadPanel(playerID)
             lHeadIMG:setScale(90/lHeadIMG:getContentSize().width)
         end
     else
-        local lImgName = "hall/Common/default_head_2.png"
+        local lImgName = "real_res/1004043.png"
         local lHeadFile = cc.FileUtils:getInstance():fullPathForFilename(lImgName)
         if io.exists(lHeadFile) then
             lHeadIMG:setTexture(lHeadFile)
@@ -207,12 +207,12 @@ function LayerTurnCardMultiplayer:createHeadPanel(playerID)
 
 
     --  头像框
-    local lHeadBG = cc.Sprite:create("games/common/game/friendRoom/mjOver/bg_head.png")
+    local lHeadBG = cc.Sprite:create("real_res/1004112.png")
     lHeadNode:addChild(lHeadBG)
     local lHeadBGSize = lHeadBG:getContentSize()
 
     --  庄家图标
-    local lBankerIcon = cc.Sprite:create("games/common/game/friendRoom/mjOver/zhuang.png")
+    local lBankerIcon = cc.Sprite:create("real_res/1004177.png")
     lHeadBG:addChild(lBankerIcon)
     lBankerIcon:setPosition(cc.p(0, lHeadBGSize.height))
 
@@ -226,7 +226,7 @@ function LayerTurnCardMultiplayer:createHeadPanel(playerID)
     --  昵称
     local lNameLab = cc.Label:create()
     lHeadBG:addChild(lNameLab)
-    lNameLab:setSystemFontName("hall/font/fangzhengcuyuan.TTF")
+    lNameLab:setSystemFontName("res_TTF/1016001.TTF")
     lNameLab:setColor(cc.c3b(252, 234, 67))
     lNameLab:setAnchorPoint(cc.p(0, 1))
     lNameLab:setPosition(cc.p(0, lHeadBGSize.height * 0.05))

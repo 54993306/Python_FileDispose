@@ -55,7 +55,7 @@ function MJFanMa:createHeadPanel(lPlayerIndex)
             lHeadIMG:setScale(70 / lHeadIMG:getContentSize().width)
         end
     else
-        local lImgName = "hall/Common/default_head_2.png"
+        local lImgName = "real_res/1004043.png"
         local lHeadFile = cc.FileUtils:getInstance():fullPathForFilename(lImgName)
         if io.exists(lHeadFile) then
             lHeadIMG:setTexture(lHeadFile)
@@ -66,12 +66,12 @@ function MJFanMa:createHeadPanel(lPlayerIndex)
 
 
     --  头像框
-    local lHeadBG = cc.Sprite:create("games/common/mj/common/head_bg.png")
+    local lHeadBG = cc.Sprite:create("real_res/1004123.png")
     lHeadNode:addChild(lHeadBG)
     local lHeadBGSize = lHeadBG:getContentSize()
 
     --  庄家图标
-    local lBankerIcon = cc.Sprite:create("games/common/game/friendRoom/mjOver/zhuang.png")
+    local lBankerIcon = cc.Sprite:create("real_res/1004177.png")
     lHeadBG:addChild(lBankerIcon)
     lBankerIcon:setPosition(cc.p(0, lHeadBGSize.height))
 
@@ -85,7 +85,7 @@ function MJFanMa:createHeadPanel(lPlayerIndex)
     --  昵称
     local lNameLab = ccui.Text:create()
     lHeadBG:addChild(lNameLab)
-    lNameLab:setFontName("hall/font/fangzhengcuyuan.TTF")
+    lNameLab:setFontName("res_TTF/1016001.TTF")
     lNameLab:setColor(cc.c3b(252, 234, 67))
     lNameLab:setAnchorPoint(cc.p(0, 1))
     lNameLab:setPosition(cc.p(0, lHeadBGSize.height * 0.05))
@@ -229,12 +229,12 @@ end
 
 -- 初始化
 function MJFanMa:onInit()
-    cc.SpriteFrameCache:getInstance():addSpriteFrames("games/common/mj/majiang_pai.plist")
-    cc.SpriteFrameCache:getInstance():addSpriteFrames("games/common/game/fanma/fangma.plist")
-    cc.SpriteFrameCache:getInstance():addSpriteFrames("games/common/game/fanma/light.plist")
-    cc.SpriteFrameCache:getInstance():addSpriteFrames("games/common/game/fanma/explode.plist")
+    cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008025.plist")
+    cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008006.plist")
+    cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008008.plist")
+    cc.SpriteFrameCache:getInstance():addSpriteFrames("res_plist/1008007.plist")
 
-    local title=display.newSprite(self.m_config.titlePng or "games/common/game/fanma/title.png")
+    local title=display.newSprite(self.m_config.titlePng or "real_res/1004090.png")
     -- 设置标题缩放
     if self.m_config.titleScale then
         title:setScale(self.m_config.titleScale)

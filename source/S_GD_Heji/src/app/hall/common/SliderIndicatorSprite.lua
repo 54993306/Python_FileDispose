@@ -22,8 +22,8 @@ function SliderIndicatorSprite:ctor(params)
 	
 	self.m_type = params.uiType;
 	if(self.m_type == 1)then --
-	    local bg = ccui.ImageView:create("hall/Common/advertNoSelect.png");
-		self.m_selectImg = ccui.ImageView:create("hall/Common/advertSelect.png");
+	    local bg = ccui.ImageView:create("real_res/1004383.png");
+		self.m_selectImg = ccui.ImageView:create("real_res/1004384.png");
 		
 		self:addChild(bg);
 		self:addChild(self.m_selectImg);

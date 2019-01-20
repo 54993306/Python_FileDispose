@@ -195,7 +195,7 @@ function ActivityDialog:jumpCallback(arg)
 end
 
 function ActivityDialog:createOneButton(img, callback, margin, alignType)
-    btn = ccui.Button:create(img or "hall/huanpi2/Common/x.png")
+    btn = ccui.Button:create(img or "#1004629.png")
     btn:addTo(self.m_pWidget)
     btn:getLayoutParameter():setAlign(alignType or ccui.RelativeAlign.alignParentTopLeft)
     btn:getLayoutParameter():setMargin(margin)
@@ -216,10 +216,10 @@ function ActivityDialog:createBtns(webview)
         end
     end
     if IsPortrait then
-    	self.btn_back = self:createOneButton("hall/huanpi2/Common/btn_up.png", backCallback, {left = btnToLeft, top = btnTopMargin})
+    	self.btn_back = self:createOneButton("real_res/1004559.png", backCallback, {left = btnToLeft, top = btnTopMargin})
     	self.btn_back:setRotation(270)
     else
-	self.btn_back = self:createOneButton("hall/huanpi2/Common/btn_back.png", backCallback, {left = btnToLeft, top = btnTopMargin})
+	self.btn_back = self:createOneButton("#1004524.png", backCallback, {left = btnToLeft, top = btnTopMargin})
     	-- self.btn_back:setScaleX(-0.8):setScaleY(0.8)
     end
     local function forwardCallback()
@@ -229,10 +229,10 @@ function ActivityDialog:createBtns(webview)
         end
     end
     if IsPortrait then
-    	self.btn_forward = self:createOneButton("hall/huanpi2/Common/btn_up.png", forwardCallback, {left = btnToLeft + btnPadding, top = btnTopMargin})
+    	self.btn_forward = self:createOneButton("real_res/1004559.png", forwardCallback, {left = btnToLeft + btnPadding, top = btnTopMargin})
     	self.btn_forward:setRotation(90)
     else
-    	self.btn_forward = self:createOneButton("hall/huanpi2/Common/btn_back.png", forwardCallback, {left = btnToLeft + btnPadding, top = btnTopMargin})
+    	self.btn_forward = self:createOneButton("#1004524.png", forwardCallback, {left = btnToLeft + btnPadding, top = btnTopMargin})
     	self.btn_forward:setScaleX(-1)
     end
     local function refreshCallback()
@@ -242,7 +242,7 @@ function ActivityDialog:createBtns(webview)
         end
     end
     if IsPortrait then
-    	self.btn_refresh = self:createOneButton("hall/huanpi2/main_portrait/icon_back.png", refreshCallback, {left = btnToLeft + btnPadding * 2, top = btnTopMargin - 20})
+    	self.btn_refresh = self:createOneButton("#1004682.png", refreshCallback, {left = btnToLeft + btnPadding * 2, top = btnTopMargin - 20})
     	self.btn_refresh:setScaleX(-0.8):setScaleY(0.8)
     	self.btn_refresh:setRotation(90)
 
@@ -253,7 +253,7 @@ function ActivityDialog:createBtns(webview)
     
     --]]
     if IsPortrait then
-    	self.button_close = self:createOneButton("hall/huanpi2/Common/btn_x.png", handler(self, self.onClickButton), {right = -5, top = btnTopMargin - 30}, ccui.RelativeAlign.alignParentTopRight)
+    	self.button_close = self:createOneButton("#1004561.png", handler(self, self.onClickButton), {right = -5, top = btnTopMargin - 30}, ccui.RelativeAlign.alignParentTopRight)
     	self.button_close:setScale(0.8)
 	end	
 end

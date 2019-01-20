@@ -7,7 +7,7 @@
 local CardPanel = require("app.games.common.custom.TurnCard.CardPanel")
 
 --  标题图片路径
-local lTitleFilePath = "games/common/game/catch_chicken/title_turn_chicken.png"
+local lTitleFilePath = "real_res/1004007.png"
 local lCSBFilePath = "games/common/game/catch_chicken/animation/guizhouAnimation.csb"
 
 local LayerTurnCard = class("LayerTurnCard", function ()

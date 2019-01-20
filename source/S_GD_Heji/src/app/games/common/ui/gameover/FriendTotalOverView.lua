@@ -217,27 +217,27 @@ end
 function FriendTotalOverView:getPathByKey(data, key)
     if key == "bgSource" then
         if data.winner then
-          return "games/common/game/friendRoom/mjOver/total_over_item_win.png"
+          return "real_res/1004169.png"
         else
-          return "games/common/game/friendRoom/mjOver/total_over_item_fail.png"
+          return "real_res/1004168.png"
         end
     elseif key == "listPath" then
         if data.winner then
-          return "games/common/game/friendRoom/mjOver/total_sub_win_scale_bg.png"
+          return "real_res/1004172.png"
         else
-          return "games/common/game/friendRoom/mjOver/total_sub_fail_scale_bg.png"
+          return "real_res/1004171.png"
         end
     elseif key == "chargeBgSource" then
         if data.winner then
-          return "games/common/game/friendRoom/mjOver/win_charge_tip_bg.png"
+          return "real_res/1004175.png"
         else
-          return "games/common/game/friendRoom/mjOver/fail_chage_tip_bg.png"
+          return "real_res/1004120.png"
         end
     elseif key == "scoreItem" then
         if data.winner then
-          return "games/common/game/friendRoom/mjOver/total_win_tip_scale_bg.png"
+          return "real_res/1004174.png"
         else
-          return "games/common/game/friendRoom/mjOver/total_fail_tip_scale_bg.png"
+          return "real_res/1004167.png"
         end
     end
 end
@@ -281,17 +281,17 @@ function FriendTotalOverView:initWinnerInfo(item)
 
     local bgSource = item:getChildByName("bgSource")
     if IsPortrait then -- TODO
-        local dyjTip = cc.Sprite:create("games/common/game/friendRoom/mjOver/text_dyj.png")
+        local dyjTip = cc.Sprite:create("real_res/1004144.png")
         dyjTip:setPosition(cc.p(bgSource:getContentSize().width * 0.7, 80))
         item:addChild(dyjTip, 10)
     else
-        local dyjTip = cc.Sprite:create("games/common/game/friendRoom/mjOver/text_dayingjia.png")
+        local dyjTip = cc.Sprite:create("real_res/1004143.png")
         dyjTip:setPosition(cc.p(bgSource:getContentSize().width * 0.5 - 25, bgSource:getContentSize().height - 6)) -- 调整位置，第4个玩家胡，会超出屏幕
         item:addChild(dyjTip, 10)
     end
     -- item.data.wiA = 10
     if item.data.wiA == nil or item.data.wiA == 0 then return end
-    local scripBg = cc.Sprite:create("hall/huanpi2/Common/scrip_bg2.png")
+    local scripBg = cc.Sprite:create("real_res/1004621.png")
     if IsPortrait then -- TODO
         --修改 20171114 start 竖版换皮 修改牌局结束总结算获取元宝角标 diyal.yin
         -- scripBg:pos(bgSource:getContentSize().width,bgSource:getContentSize().height-30)
@@ -303,7 +303,7 @@ function FriendTotalOverView:initWinnerInfo(item)
     item:addChild(scripBg)
     scripBg:setScale(0.8)
 
-    local scripNum = cc.Label:createWithBMFont("hall/font/yellow_num_hrl.fnt",item.data.wiA)
+    local scripNum = cc.Label:createWithBMFont("res_fnt/1010015.fnt",item.data.wiA)
     scripNum:setRotation(33)
     scripNum:pos(scripBg:getContentSize().width/2-20,scripBg:getContentSize().height/2 + 10)
     scripBg:addChild(scripNum)
@@ -321,19 +321,19 @@ function FriendTotalOverView:initScore(item)
     if score_num > 0 then
         local score
         if IsPortrait then -- TODO
-            score =  cc.Label:createWithTTF("+" .. score_num, "hall/font/fangzhengcuyuan.TTF", 42)--cc.Label:createTTF("+" .. score_num,)--cc.Label:createWithBMFont("hall/font/yellow_num.fnt", "+" .. score_num)
+            score =  cc.Label:createWithTTF("+" .. score_num, "res_TTF/1016001.TTF", 42)--cc.Label:createTTF("+" .. score_num,)--cc.Label:createWithBMFont("real_res/1010013.fnt", "+" .. score_num)
             score:setPosition(cc.p(scoreSize.width * 0.5 , scoreSize.height * 0.5 ))--+ 40
             -- score:setScale(1.5)
             score:setColor(cc.c3b(255,253,87))
         else
-            score = cc.Label:createWithBMFont("hall/font/yellow_num.fnt", "+" .. score_num)
+            score = cc.Label:createWithBMFont("real_res/1010013.fnt", "+" .. score_num)
             score:setPosition(cc.p(scoreSize.width * 0.5 + 40, scoreSize.height * 0.5 - 8))
             score:setScale(1.5)
         end
         score:setAnchorPoint(cc.p(0.5, 0.5))
         pan_score:addChild(score, 1)
 
-        local winTip = cc.Sprite:create("games/common/game/friendRoom/mjOver/win_tip.png")
+        local winTip = cc.Sprite:create("real_res/1004176.png")
         local bgSource = item:getChildByName("bgSource")
         winTip:setPosition(cc.p(bgSource:getContentSize().width - 4, bgSource:getContentSize().height - 4))
         winTip:setAnchorPoint(cc.p(1, 1))
@@ -344,10 +344,10 @@ function FriendTotalOverView:initScore(item)
     else
         local score
         if IsPortrait then -- TODO
-            score = cc.Label:createWithTTF(score_num, "hall/font/fangzhengcuyuan.TTF", 42)--cc.Label:createWithBMFont("hall/font/green_num.fnt", score_num)
+            score = cc.Label:createWithTTF(score_num, "res_TTF/1016001.TTF", 42)--cc.Label:createWithBMFont("real_res/1010010.fnt", score_num)
             score:setPosition(cc.p(scoreSize.width * 0.5 , scoreSize.height * 0.5 ))--+ 40
         else
-            score = cc.Label:createWithBMFont("hall/font/green_num.fnt", score_num)
+            score = cc.Label:createWithBMFont("real_res/1010010.fnt", score_num)
             score:setPosition(cc.p(scoreSize.width * 0.5 + 40, scoreSize.height * 0.5 - 8))
             score:setScale(1.5)
         end
@@ -376,10 +376,10 @@ function FriendTotalOverView:initRoomMainIcon(item)
 
     if kFriendRoomInfo:isRoomMain(item.data.usI) then
         if IsPortrait then -- TODO
-            local img_host = ccui.Helper:seekWidgetByName(item, "img_host");--昵称--cc.Sprite:create("games/common/game/friendRoom/mjOver/fangzhu_tip.png")
+            local img_host = ccui.Helper:seekWidgetByName(item, "img_host");--昵称--cc.Sprite:create("real_res/1004122.png")
             img_host:setVisible(true)
         else
-            local img_host = cc.Sprite:create("games/common/game/friendRoom/mjOver/fangzhu_tip.png")
+            local img_host = cc.Sprite:create("real_res/1004122.png")
             img_host:setPosition(4, item:getContentSize().height - 4)
             img_host:setAnchorPoint(cc.p(0, 1))
             item:addChild(img_host)
@@ -407,7 +407,7 @@ function FriendTotalOverView:initChargeInfo(item)
         end
     else
         local chargeBg = cc.Sprite:create(self:getPathByKey(item.data,"chargeBgSource"))
-        local chargeInfo = display.newTTFLabel{size = 16,color = cc.c3b(0x07, 0x47, 0x4b), font = "hall/font/fangzhengcuyuan.TTF"}
+        local chargeInfo = display.newTTFLabel{size = 16,color = cc.c3b(0x07, 0x47, 0x4b), font = "res_TTF/1016001.TTF"}
         chargeInfo:setString(string.format("%s %d钻石", texts[idex], item.data.roFS))
         chargeInfo:pos(chargeBg:getContentSize().width/2,chargeBg:getContentSize().height/2)
         chargeBg:addChild(chargeInfo)
@@ -479,7 +479,7 @@ function FriendTotalOverView:initHeadImage(item)
             -- print("------------------FriendTotalOverView:initHeadImage")    -- 不存在这种情况，其他玩家的图片在牌局中一定被下载好了
         end
     else        
-        local headFile = "hall/Common/default_head_2.png";
+        local headFile = "real_res/1004043.png";
         headFile = cc.FileUtils:getInstance():fullPathForFilename(headFile);
         if io.exists(headFile) then
             img_head:loadTexture(headFile)
@@ -557,7 +557,7 @@ function FriendTotalOverView:drawActivionTips()
     else
         versionText:setPositionY(80)
     end
-    local lFontFilePath = "hall/font/fangzhengcuyuan.TTF"
+    local lFontFilePath = "res_TTF/1016001.TTF"
     -- local activtyBtnPosX = self.m_actionBtn:getPositionX()
     -- local activtyBtnPosY = self.m_actionBtn:getPositionY()
     local labelString = self.m_data.activityList.ms
@@ -572,11 +572,11 @@ function FriendTotalOverView:drawActivionTips()
     } )
 
     -- local activitySize = self:getContentSize()
-    -- local activtyTips_bg = display.newScale9Sprite("hall/huanpi2/main/bg_tishi.png", 
+    -- local activtyTips_bg = display.newScale9Sprite("real_res/1004651.png", 
     --                                                 activitySize.width/2, activitySize.height + 30,
     --                                                  cc.size(label:getContentSize().width + 30, 60),
     --                                                  cc.rect(30,20,10,1))
-    self.m_activityTips_bg = ccui.Scale9Sprite:create("hall/huanpi2/jiesuan/bg_tf.png")
+    self.m_activityTips_bg = ccui.Scale9Sprite:create("real_res/1004641.png")
     local tipsBgSize = self.m_activityTips_bg:getContentSize()
     
     local tipsWidth = self.m_activitylabel:getContentSize().width + 40

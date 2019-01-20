@@ -112,7 +112,7 @@ end
 local function compoundShareQRCodeImage(self, savePath)
     local bgpath = _ClubShareBg
     if not cc.FileUtils:getInstance():isFileExist(bgpath) then
-        bgpath = "package_res/config/image/club_bg.png"
+        bgpath = "real_res/1004789.png"
     end
     local QRbgImage = display.newSprite(bgpath)
     QRbgImage:setAnchorPoint(cc.p(0,0))

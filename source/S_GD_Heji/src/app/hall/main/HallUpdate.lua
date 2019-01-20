@@ -167,7 +167,7 @@ end
 function HallUpdate:haveNewBgimage()
     if HANENEWBGIMAGE and PRODUCT_ID == 5542 then
         self.bg_image = ccui.Helper:seekWidgetByName(self.m_pWidget, "bg");
-        self.bg_image:loadTexture ( "hall/huanpi2/main_portrait/5542newbg.png" )
+        self.bg_image:loadTexture ( "real_res/1004665.png" )
     end
 end
 

@@ -184,7 +184,7 @@ function clubRoomModel:addMaJiangRule(content,btn)
     local listPosY = self.list_rooms:getContentSize().height--setMargin
     local world_pos = btn:getParent():convertToWorldSpace(cc.p(pos_x,pos_y))
     local content_txt = ccui.Text:create();
-    content_txt:setFontName("hall/font/fangzhengcuyuan.TTF")
+    content_txt:setFontName("res_TTF/1016001.TTF")
     content_txt:setColor(cc.c3b(255,255,255))
     content_txt:setTextAreaSize(cc.size(330, 0));
     content_txt:setTextHorizontalAlignment(cc.TEXT_ALIGNMENT_CENTER)

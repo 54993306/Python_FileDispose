@@ -195,7 +195,7 @@ function MjMediator:onGameEntry(data)
     else
         UIManager.getInstance():changeToLandscape()
     end
-    local bg = display.newSprite("games/common/mj/games/game_bg.png")--"package_res/games/pokercommon/standings/aaaaaa.png")
+    local bg = display.newSprite("real_res/1004323.png")--"real_res/1004956.png")
     cc.Director:getInstance():getRunningScene():addChild(bg,999)
     bg:setPosition(cc.p(display.width/2,display.height/2))
     bgCSize = bg:getContentSize()

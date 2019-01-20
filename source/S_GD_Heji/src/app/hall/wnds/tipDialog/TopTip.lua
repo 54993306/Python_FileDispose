@@ -23,7 +23,7 @@ local _manualClose = false -- 是否可以手动关闭
 local _closing = false -- 是否正在关闭中
 
 TopTip.BgCfg = {
-    png = "hall/Common/tipDialog/bg_top_tip.png",
+    png = "real_res/1004412.png",
     startX = 20,
     startY = 20,
     size = cc.size(690, 168),
@@ -70,18 +70,18 @@ function TopTip:createTip()
     _widget:addTo(cc.Director:getInstance():getRunningScene(), UIManager.ZOrderOnScene.TopTip)
     self:regTouchEvent()
 
-    local cautionImg = display.newSprite("hall/Common/tipDialog/img_caution.png")
+    local cautionImg = display.newSprite("real_res/1004413.png")
     cautionImg:addTo(_widget)
     cautionImg:setPosition(cc.p(39, 129))
 
-    local cautionTitle = cc.Label:createWithTTF(self.m_data.title, "hall/font/fangzhengcuyuan.TTF", 27)
+    local cautionTitle = cc.Label:createWithTTF(self.m_data.title, "res_TTF/1016001.TTF", 27)
     cautionTitle:setColor(cc.c3b(0x06, 0x00, 0x00))
     cautionTitle:addTo(_widget)
     cautionTitle:setPosition(cc.p(123, 129))
 
 
     local cautionStr = string.format(self.m_data.content, self.m_data.countdown)
-    local cautionContent = cc.Label:createWithTTF(cautionStr, "hall/font/fangzhengcuyuan.TTF", 30)
+    local cautionContent = cc.Label:createWithTTF(cautionStr, "res_TTF/1016001.TTF", 30)
     cautionContent:setWidth(634)
     cautionContent:setColor(cc.c3b(0x06, 0x00, 0x00))
     cautionContent:addTo(_widget)

@@ -54,7 +54,7 @@ function FriendRoomPlayerHead:initView()
 
     if not IsPortrait then -- TODO
         local rootSize = self.m_pWidget:getContentSize()
-        local headBg = cc.Sprite:create("hall/Common/head_bg.png")
+        local headBg = cc.Sprite:create("real_res/1004123.png")
         headBg:setPosition(cc.p(rootSize.width * 0.5 - 2, 10))
         headBg:setAnchorPoint(cc.p(0.5, 0))
         self.m_pWidget:addChild(headBg, 5)

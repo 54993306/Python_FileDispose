@@ -20,7 +20,7 @@ local kActModeNormal = 1
 
 -- 示例：
 --     local action = self:createTouchableSprite({
---             image = "games/common/mj/games/game_btn_gang.png",
+--             image = "real_res/1004331.png",
 --             size = cc.size(100, 100),
 --             label = "TOUCH ME !",
 --             labelColor = cc.c3b(255, 0, 0)})
@@ -29,7 +29,7 @@ local kActModeNormal = 1
 --     cc(action):addComponent(Define.enComponentName.BUTTON_ACTION):exportMethods()
 --     action:onClicked(handler(self, MjMediator.onBtnGang))
 
---     local action = cc.ui.UIImage.new("games/common/mj/games/game_btn_gang.png")
+--     local action = cc.ui.UIImage.new("real_res/1004331.png")
 --         :pos(400, 200)
 --         :addTo(layer)
 --     cc(action):addComponent(Define.enComponentName.BUTTON_ACTION):exportMethods()

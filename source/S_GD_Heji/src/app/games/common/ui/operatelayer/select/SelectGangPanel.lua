@@ -42,7 +42,7 @@ function SelectGangPanel:onShow(content, callBack)
 	local scaleX = 69
 	local scaleY = 91
 	for i = 1, #content do
-		local gangBg = "games/common/mj/games/bg_action_gang.png"
+		local gangBg = "real_res/1004302.png"
 		local gangSp = cc.ui.UIImage.new(gangBg)
 		self:addChild(gangSp)
 		-- 绑定按钮
@@ -69,7 +69,7 @@ function SelectGangPanel:onShow(content, callBack)
 		gangSp:setPosition(cc.p(posX, gangSpSize.height / 2))
 	end
 
-	local pngImg 	= "games/common/mj/games/game_btn_qi.png"
+	local pngImg 	= "real_res/1004338.png"
 	local guoBtn = display.newSprite(pngImg)
 	        -- :pos(posX, 0)
 	        :addTo(self)

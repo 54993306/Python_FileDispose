@@ -44,7 +44,7 @@ function ObtainDialog:starEffect(pWidget,x,y)
     local romdomSet = cc.CallFunc:create(handler(data,function(data)
         local num = math.random(1,3)
         for i=1,num do
-            local spark = display.newSprite("hall/Common/star.png")
+            local spark = display.newSprite("real_res/1004409.png")
             spark:setOpacity(0)
             local delay = cc.DelayTime:create(math.random(3,8)/10)
             local fadein = cc.FadeIn:create(0.5)

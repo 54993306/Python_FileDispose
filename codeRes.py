@@ -17,7 +17,7 @@ class codeRes:
     FILEPATH = r"D:/Svn_2d/S_GD_Heji/res/"
     resTypes = ['\\.png', '\\.ExportJson', '\\.plist', '\\.json',
                 '\\.fnt', '\\.TTF', '\\.jpg', '\\.mp3', '\\.ogg']  # csb类资源不做匹配修改处理
-    handleType = ['.png', '.fnt', '.TTF']
+    handleType = ['.png', '.fnt', '.TTF' , ".plist"]
     changeResult = []  # 对数组合字符串做分别判断
 
     def __init__(self):  # 构造函数
@@ -80,14 +80,27 @@ class codeRes:
             self.currInfo["ValidChange"] = ValidChange
             ValidChange[md5code] = FileDict
 
-    # 记录所使用的Plist,可以拓展记录每个png对应的Plist文件
-    def recordPlist(self, plist):
+    # 记录当前修改所使用的Plist,可以拓展记录每个png对应的Plist文件
+    def recordPlist(self, md5code):
         if "PlistList" in self.currInfo:
-            self.currInfo["PlistList"].append(plist)
+            if md5code in self.currInfo["PlistList"]:
+                return
+            self.currInfo["PlistList"][md5code] =self.plistMd5.get(md5code)
         else:
-            PlistList = []
+            PlistList = collections.OrderedDict()
             self.currInfo["PlistList"] = PlistList
-            PlistList.append(plist)
+            PlistList[md5code] = self.plistMd5.get(md5code)
+
+    def recordNoDiposeType(self , oldstr, newstr , md5code ):
+        FileDict = collections.OrderedDict()
+        FileDict["new"] = newstr
+        FileDict["old"] = oldstr
+        if "NoDiposeType" in self.currInfo:
+            self.currInfo["NoDiposeType"][md5code] = FileDict
+        else:
+            ValidChange = collections.OrderedDict()
+            self.currInfo["NoDiposeType"] = ValidChange
+            ValidChange[md5code] = FileDict
 
     # 记录在Lua中使用但是Res路径中不存在的内容
     def recordNotFindRes(self, path):
@@ -160,7 +173,7 @@ class codeRes:
                         self.recordUnMatch(line + " >>> " + resType)
             content.append(line)
         self.printOutInfo(resList)
-        # self.createNewFile(content)
+        self.createNewFile(content)
 
     # 创建替换内容后的文件
     def createNewFile(self, content):
@@ -213,17 +226,17 @@ class codeRes:
             return
         return filepath
 
-    # 根据老路径取得新路径
+    # 根据老路径取得新路径 oldpath = D:/Svn_2d/S_GD_Heji/res/hall/font/fangzhengcuyuan.TTF
     def getResNewPath(self, oldpath):
         md5code = self.FileData.getFileMd5(oldpath)
         newFileName = self.FileData.getNewPathByOldPath(oldpath)
         newFileName = re.sub(comFun.OUTPUTTARGET, "", newFileName)
         _, filetype = os.path.splitext(newFileName)
         if not filetype in self.handleType:
+            self.recordNoDiposeType(oldpath , newFileName , md5code)
             return newFileName , md5code
         if md5code in self.plistMd5:
-            self.recordPlist(self.plistMd5.get(md5code))
-            self.printOutInfo("file in plist :" + self.plistMd5.get(md5code))
+            self.recordPlist(md5code)
             return "#" + os.path.basename(newFileName) , md5code # 要使用精灵帧的形式进行处理
         else:
             if self.FileData.getTPathByMd5Code(md5code):  # 包括大图，fnt，和手动设置为不进行打包的聂内容集合

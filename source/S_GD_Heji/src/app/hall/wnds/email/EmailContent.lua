@@ -107,7 +107,7 @@ if IsPortrait then -- TODO
         if autoLineHeight == nil then autoLineHeight = false end
         local params = {}
         params.text = text
-        params.font = "hall/font/fangzhengcuyuan.TTF"
+        params.font = "res_TTF/1016001.TTF"
         params.size = 26
         params.x = 0
         params.y = 0
@@ -150,7 +150,7 @@ if IsPortrait then -- TODO
 else
     function EmailContent:createTextInList(list,text, horizontalAlignment, customOpacity)
         local content = ccui.Text:create();
-        content:setFontName("hall/font/fangzhengcuyuan.TTF")
+        content:setFontName("res_TTF/1016001.TTF")
         content:setColor(cc.c3b(0xff,0xff,0xff))
         content:setOpacity(customOpacity and customOpacity or 204)
         content:setTextAreaSize(cc.size(850, 0));
@@ -242,7 +242,7 @@ end
 
 function EmailContent:createInterval(list)
     local content = ccui.Text:create();
-    content:setFontName("hall/font/fangzhengcuyuan.TTF")
+    content:setFontName("res_TTF/1016001.TTF")
     content:setFontSize(5);
     content:setString(" ");
     list:pushBackCustomItem(content);

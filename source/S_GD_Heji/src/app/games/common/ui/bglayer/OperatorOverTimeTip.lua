@@ -5,12 +5,12 @@
 
 local kOverTimeTipPaths =
 {
-    ["zuo"] = "games/common/mj/games/clock_overtime_zuo.png",
-    ["dui"] = "games/common/mj/games/clock_overtime_dui.png",
-    ["you"] = "games/common/mj/games/clock_overtime_you.png",
-    ["other"] = "games/common/mj/games/clock_overtime_qita.png",
+    ["zuo"] = "real_res/1004315.png",
+    ["dui"] = "real_res/1004311.png",
+    ["you"] = "real_res/1004314.png",
+    ["other"] = "real_res/1004313.png",
 
-    ["pointPath"] = "games/common/mj/games/clock_overtime_point.png"
+    ["pointPath"] = "real_res/1004312.png"
 }
 
 

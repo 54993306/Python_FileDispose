@@ -472,7 +472,7 @@ function PlayerLeftPanel:runPlayOutAction(startPos, OutValue, indexof)
 		self.m_showMjBg = nil
 	end
 
-	-- self.m_showMjBg = display.newSprite("games/common/mj/games/bg_big_out_poker.png")
+	-- self.m_showMjBg = display.newSprite("real_res/1004303.png")
 	-- self.m_showMjBg:setAnchorPoint(display.ANCHOR_POINTS[display.CENTER])
 	-- self.m_showMjBg:setPosition(cc.p(Define.g_left_show_pai_x-5, Define.g_left_show_pai_y)):addTo(self,100)
 

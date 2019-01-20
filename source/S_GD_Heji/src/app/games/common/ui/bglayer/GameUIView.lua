@@ -60,13 +60,13 @@ function GameUIView:createRuleTip(str)
     end
     -- str = "随便测试一下长规ad则看看 是什么形式 随便测试一 下长规则看看是什么形式 下长规则看看是什么形式"
     -- 初始化规则背景
-    self.ruleTextBg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "hall/Common/rule_bg.png")
+    self.ruleTextBg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "real_res/1004405.png")
     self.ruleTextBg:setAnchorPoint(cc.p(0.5, 1))
     self.ruleTextBg:setPosition(cc.p(display.cx, display.cy - 35))
 
     self.ruleTextBg:addTo(self.m_pWidget)
 
-    self.ruleText = cc.Label:createWithTTF(str, "hall/font/fangzhengcuyuan.TTF", kRuleFontSize)
+    self.ruleText = cc.Label:createWithTTF(str, "res_TTF/1016001.TTF", kRuleFontSize)
     self.ruleText:setWidth(kRuleWidth) -- 通过此方法可以设置最大宽度, 同时其contentSize也为自动适应的大小
     -- self.ruleText:setAnchorPoint(cc.p(0.5, 0.5))
     self.ruleText:setColor(cc.c3b(238,253,72))
@@ -182,14 +182,14 @@ function GameUIView:initTime(title_panel)
     -- local bg = ccui.Helper:seekWidgetByName(title_panel, "Image_bg")
     -- bg:setVisible(false)
 
-    -- local newBg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "hall/Common/name_scale_bg.png")
+    -- local newBg = ccui.Scale9Sprite:create(cc.rect(10, 10, 2, 2), "#1004052.png")
     -- newBg:setContentSize(cc.size(bg:getContentSize().width - 16, self.image_bat_bg:getContentSize().height + 8))
     -- newBg:setPosition(cc.p(bg:getPositionX() - 4, bg:getPositionY() + 6))
     -- title_panel:addChild(newBg, -1)
 
     --系统时间
     local label_time = self:getWidget(title_panel,"Label_time")
-    -- self.label_time = cc.Label:createWithBMFont("hall/Common/batteryFont.fnt", "10:03")
+    -- self.label_time = cc.Label:createWithBMFont("res_fnt/1010002.fnt", "10:03")
     -- self.label_time:setPosition(cc.p(newBg:getContentSize().width * 0.5, -22))
     -- newBg:addChild(self.label_time)
     -- label_time:setVisible(false)
@@ -460,13 +460,13 @@ function GameUIView:jiesanBtnEvent()
     --[[local yesBtn = cDialog:getYesBtn()
     local cancelBtn = cDialog:getCancelBtn()
 
-    yesBtn:loadTextureNormal("games/common/game/common/btn_yellow.png")
-    cancelBtn:loadTextureNormal("games/common/game/common/btn_gree.png")
+    yesBtn:loadTextureNormal("#1004040.png")
+    cancelBtn:loadTextureNormal("#1004015.png")
 
     local size = yesBtn:getContentSize()
 
-    local textureLeave = cc.Sprite:create("games/common/game/common/apply_leave.png")
-    local textureContinue = cc.Sprite:create("games/common/game/common/continue_game.png")
+    local textureLeave = cc.Sprite:create("real_res/1004009.png")
+    local textureContinue = cc.Sprite:create("real_res/1004042.png")
     textureLeave:setPosition(cc.p(size.width * 0.5 + 2, size.height * 0.5))
     textureContinue:setPosition(cc.p(size.width * 0.5 + 2, size.height * 0.5))
     yesBtn:addChild(textureContinue)
@@ -538,7 +538,7 @@ function GameUIView:updateRoomId()
     if IsPortrait then -- TODO
         local img_roomId=self:getWidget(self.m_pWidget,"img_roomid")
         img_roomId:setVisible(false)
-        local room_id = cc.Label:createWithTTF("房号:"..MjProxy:getInstance():getRoomId(), "hall/font/fangzhengcuyuan.TTF", 20)--cc.Label:createWithBMFont("hall/font/room_num.fnt", MjProxy:getInstance():getRoomId())
+        local room_id = cc.Label:createWithTTF("房号:"..MjProxy:getInstance():getRoomId(), "res_TTF/1016001.TTF", 20)--cc.Label:createWithBMFont("real_res/1010012.fnt", MjProxy:getInstance():getRoomId())
         -- room_id:setScale(0.82)
         room_id:setColor(cc.c3b(187,238,168))
         room_id:setPosition(cc.p(50,img_roomId:getPositionY()))
@@ -546,7 +546,7 @@ function GameUIView:updateRoomId()
 
         local img_paytype = self:getWidget(room_Panel,"img_paytype")
         img_paytype:setVisible(false)
-        local room_pay=cc.Label:createWithTTF("", "hall/font/fangzhengcuyuan.TTF", 20)
+        local room_pay=cc.Label:createWithTTF("", "res_TTF/1016001.TTF", 20)
         room_pay:setColor(cc.c3b(187,238,168))
         room_pay:setAlignment(cc.TEXT_ALIGNMENT_CENTER)
         room_pay:setAlignment(cc.VERTICAL_TEXT_ALIGNMENT_CENTER)
@@ -554,7 +554,7 @@ function GameUIView:updateRoomId()
         room_pay:setAnchorPoint(cc.p(0.5,1))
         room_pay:setPosition(cc.p(50,img_paytype:getPositionY()))
 
-        local room_pay_ext=cc.Label:createWithTTF("", "hall/font/fangzhengcuyuan.TTF", 20)
+        local room_pay_ext=cc.Label:createWithTTF("", "res_TTF/1016001.TTF", 20)
         room_pay_ext:setColor(cc.c3b(187, 238, 168))
         room_pay_ext:setAlignment(cc.TEXT_ALIGNMENT_CENTER)
         room_pay_ext:setAlignment(cc.VERTICAL_TEXT_ALIGNMENT_CENTER)
@@ -569,7 +569,7 @@ function GameUIView:updateRoomId()
         end
 
         if playerInfos.clI ~= nil and playerInfos.clI > 0 then
-            img_paytype:loadTexture("hall/Common/clubpay.png", ccui.TextureResType.localType)
+            img_paytype:loadTexture("real_res/1004391.png", ccui.TextureResType.localType)
 
             room_pay_ext:setVisible(true)
             room_pay_ext:setString("亲友圈付费")
@@ -579,13 +579,13 @@ function GameUIView:updateRoomId()
             if playerInfos.RoFS and playerInfos.plS then
                 if playerInfos.RoJST == 1 then          --是否需要考虑写成可拓展可配置的？
                     room_pay:setString("房主付费")
-                    -- img_paytype:loadTexture("hall/Common/wonpay.png", ccui.TextureResType.localType)
+                    -- img_paytype:loadTexture("real_res/1004074.png", ccui.TextureResType.localType)
                 elseif playerInfos.RoJST == 2 then
                     room_pay:setString("大赢家付费")
-                    -- img_paytype:loadTexture("hall/Common/winpay.png", ccui.TextureResType.localType)
+                    -- img_paytype:loadTexture("real_res/1004073.png", ccui.TextureResType.localType)
                 elseif playerInfos.RoJST == 3 then
                     room_pay:setString(string.format("AA付费\n(每人%s钻石)",math.ceil( playerInfos.RoFS / playerInfos.plS )))
-                    -- local paynum = cc.Label:createWithBMFont("hall/font/room_num.fnt",math.ceil( playerInfos.RoFS / playerInfos.plS ))
+                    -- local paynum = cc.Label:createWithBMFont("real_res/1010012.fnt",math.ceil( playerInfos.RoFS / playerInfos.plS ))
                     -- paynum:setScale(0.82)
                     -- paynum:setPosition(cc.p(55,-16))
                     -- room_Panel:addChild(paynum)
@@ -595,22 +595,22 @@ function GameUIView:updateRoomId()
             end
         end
     else
-        local room_id = cc.Label:createWithBMFont("hall/font/room_num.fnt", MjProxy:getInstance():getRoomId())
+        local room_id = cc.Label:createWithBMFont("real_res/1010012.fnt", MjProxy:getInstance():getRoomId())
         room_id:setScale(0.82)
         room_id:setPosition(cc.p(90,29))
         room_Panel:addChild(room_id)
 
         local img_paytype = self:getWidget(room_Panel,"img_paytype")
         if playerInfos.clI ~= nil and playerInfos.clI > 0 then
-            img_paytype:loadTexture("hall/Common/clubpay.png", ccui.TextureResType.localType)
+            img_paytype:loadTexture("real_res/1004391.png", ccui.TextureResType.localType)
         else
             if playerInfos.RoFS and playerInfos.plS then
                 if playerInfos.RoJST == 1 then          --是否需要考虑写成可拓展可配置的？
-                    img_paytype:loadTexture("hall/Common/wonpay.png", ccui.TextureResType.localType)
+                    img_paytype:loadTexture("real_res/1004074.png", ccui.TextureResType.localType)
                 elseif playerInfos.RoJST == 2 then
-                    img_paytype:loadTexture("hall/Common/winpay.png", ccui.TextureResType.localType)
+                    img_paytype:loadTexture("real_res/1004073.png", ccui.TextureResType.localType)
                 elseif playerInfos.RoJST == 3 then
-                    local paynum = cc.Label:createWithBMFont("hall/font/room_num.fnt",math.ceil( playerInfos.RoFS / playerInfos.plS ))
+                    local paynum = cc.Label:createWithBMFont("real_res/1010012.fnt",math.ceil( playerInfos.RoFS / playerInfos.plS ))
                     paynum:setScale(0.82)
                     paynum:setPosition(cc.p(55,-16))
                     room_Panel:addChild(paynum)

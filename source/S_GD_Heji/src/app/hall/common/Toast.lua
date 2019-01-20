@@ -66,11 +66,11 @@ Toast.show = function(self, text, showTime)
     testHeight:setTextAreaSize(cc.size(480, 0));
     testHeight:setString(text or "提示");
     testHeight:setFontSize(30);
-    testHeight:setFontName("hall/font/fangzhengcuyuan.TTF");
+    testHeight:setFontName("res_TTF/1016001.TTF");
     local size = testHeight:getContentSize();
 
     label:setString(text or "提示");
-    label:setFontName("hall/font/fangzhengcuyuan.TTF");
+    label:setFontName("res_TTF/1016001.TTF");
 
     if not IsPortrait then -- TODO
         local len,textWidth = ToolKit.widthSingle(text)
@@ -119,11 +119,11 @@ Toast.showReminder = function(self, text)
     testHeight:setTextAreaSize(cc.size(480, 0));
     testHeight:setString(text or "提示");
     testHeight:setFontSize(30);
-    testHeight:setFontName("hall/font/fangzhengcuyuan.TTF");
+    testHeight:setFontName("res_TTF/1016001.TTF");
     local size = testHeight:getContentSize();
 
     label:setString(text or "提示");
-    label:setFontName("hall/font/fangzhengcuyuan.TTF");
+    label:setFontName("res_TTF/1016001.TTF");
     label:setFontSize(24)
     local size = toast:getContentSize();
     toast:setPosition(cc.p((display.width - size.width)/2, 0.4*display.height));

@@ -20,32 +20,32 @@ local OperateBtnLayer = class("OperateBtnLayer", function ()
 end)
 -- 按钮图片
 local kBtnPngs = {
-	[enOperate.OPERATE_CHI] 		= "games/common/mj/games/game_btn_chi.png",
-	[enOperate.OPERATE_PENG] 		= "games/common/mj/games/game_btn_peng.png",
-	[enOperate.OPERATE_MING_GANG] 	= "games/common/mj/games/game_btn_gang.png",
-	[enOperate.OPERATE_JIA_GANG] 	= "games/common/mj/games/game_btn_bugang.png",
-	[enOperate.OPERATE_AN_GANG] 	= "games/common/mj/games/game_btn_gang.png",
-	[enOperate.OPERATE_TING] 		= "games/common/mj/games/game_btn_ting.png",
-	[enOperate.OPERATE_DIAN_PAO_HU] = "games/common/mj/games/game_btn_hu.png",
-	[enOperate.OPERATE_ZI_MO_HU] 	= "games/common/mj/games/game_btn_zimo.png",
-	[enOperate.OPERATE_QIANG_GANG_HU] 	= "games/common/mj/games/game_btn_hu_2.png",
-	[enOperate.OPERATE_DI_HU] 		= "games/common/mj/games/game_btn_dihu.png",
-	[enOperate.OPERATE_YANGMA] 		= "games/common/mj/games/game_btn_yangma.png",
-	[enOperate.OPERATE_DIAN_DI_HU] 		= "games/common/mj/games/game_btn_dihu.png",
-	[enOperate.OPERATE_DI_XIA_HU] = "games/common/mj/games/game_btn_hu.png",
+	[enOperate.OPERATE_CHI] 		= "real_res/1004328.png",
+	[enOperate.OPERATE_PENG] 		= "real_res/1004336.png",
+	[enOperate.OPERATE_MING_GANG] 	= "real_res/1004331.png",
+	[enOperate.OPERATE_JIA_GANG] 	= "real_res/1004326.png",
+	[enOperate.OPERATE_AN_GANG] 	= "real_res/1004331.png",
+	[enOperate.OPERATE_TING] 		= "real_res/1004341.png",
+	[enOperate.OPERATE_DIAN_PAO_HU] = "real_res/1004332.png",
+	[enOperate.OPERATE_ZI_MO_HU] 	= "real_res/1004344.png",
+	[enOperate.OPERATE_QIANG_GANG_HU] 	= "real_res/1004333.png",
+	[enOperate.OPERATE_DI_HU] 		= "real_res/1004330.png",
+	[enOperate.OPERATE_YANGMA] 		= "real_res/1004342.png",
+	[enOperate.OPERATE_DIAN_DI_HU] 		= "real_res/1004330.png",
+	[enOperate.OPERATE_DI_XIA_HU] = "real_res/1004332.png",
 	[enOperate.OPERATE_GANG_KAI] = "games/common/mj/games/game_btn_gangkai.png",
-	[enOperate.OPERATE_GUO] 		= "games/common/mj/games/game_btn_qi.png",
+	[enOperate.OPERATE_GUO] 		= "real_res/1004338.png",
 	[enOperate.OPERATE_JIA_BEI] 	= "games/common/mj/games/btn_jiabei.png",
-	[enOperate.OPERATE_BU_TING] 	= "games/common/mj/games/game_btn_buting.png",
-	[enOperate.OPERATE_TIAN_TING] 	= "games/common/mj/games/game_btn_tianting.png",
-	[enOperate.OPERATE_TIAN_HU] 	= "games/common/mj/games/game_btn_tianhu.png",
-	[enOperate.OPERATE_DIAN_TIAN_HU] 	= "games/common/mj/games/game_btn_tianhu.png",
-    [enOperate.OPERATE_ZHUA_PAI]    = "games/common/mj/games/game_btn_zhuapai.png",
-    ["DEFAULT"] = "games/common/mj/games/game_btn_default.png", -- 默认图片
+	[enOperate.OPERATE_BU_TING] 	= "real_res/1004327.png",
+	[enOperate.OPERATE_TIAN_TING] 	= "real_res/1004340.png",
+	[enOperate.OPERATE_TIAN_HU] 	= "real_res/1004339.png",
+	[enOperate.OPERATE_DIAN_TIAN_HU] 	= "real_res/1004339.png",
+    [enOperate.OPERATE_ZHUA_PAI]    = "real_res/1004343.png",
+    ["DEFAULT"] = "real_res/1004329.png", -- 默认图片
 }
 if IsPortrait then -- TODO
-    kBtnPngs[enOperate.OPERATE_GANG_KAI] = "games/common/mj/games/game_btn_hu.png"
-    kBtnPngs[enOperate.OPERATE_ASK_BU_HUA]    = "games/common/mj/games/game_btn_ask_buhua.png"
+    kBtnPngs[enOperate.OPERATE_GANG_KAI] = "real_res/1004332.png"
+    kBtnPngs[enOperate.OPERATE_ASK_BU_HUA]    = "real_res/1004325.png"
 end
 
 --[[

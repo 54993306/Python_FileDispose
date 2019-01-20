@@ -4,7 +4,7 @@ require("app.DebugHelper")
 -- 加入回放层
 local VideoControlLayer = require "app.games.common.ui.video.VideoControlLayer"
 FriendOverView = class("FriendOverView", UIWndBase)
-local kLaiziPang = "games/common/game/friendRoom/mjOver/laizi.png"
+local kLaiziPang = "real_res/1004129.png"
 function FriendOverView:ctor(data)
     self.super.ctor(self, "games/common/game/mj_over.csb", data);
 end
@@ -85,14 +85,14 @@ function FriendOverView:onInit()
 
     local startImage = ccui.Helper:seekWidgetByName(self.m_pWidget, "start_image")
     if kFriendRoomInfo:isGameEnd() or self:isLastGameCount() or self.isOver then --兼容旧版本逻辑所以三个全写上
-        startImage:loadTexture("games/common/game/friendRoom/mjOver/text_total_score.png")
+        startImage:loadTexture("real_res/1004155.png")
     end
 	
 	if VideotapeManager.getInstance():isPlayingVideo() then
         if IsPortrait then -- TODO
-            startImage:loadTexture("hall/huanpi2/jiesuan/btn_back.png")
+            startImage:loadTexture("real_res/1004642.png")
         else
-            startImage:loadTexture("games/common/game/friendRoom/mjOver/text_back.png")
+            startImage:loadTexture("real_res/1004141.png")
         end
     end
 
@@ -142,26 +142,26 @@ function FriendOverView:updateTitle(titleBg, img_title)
             local result = self.m_scoreitems[i]
             if result.totalGold > 0 then --我赢了
                 if IsPortrait then -- TODO
-                    img_title:loadTexture("games/common/game/friendRoom/mjOver/title_win.png")
+                    img_title:loadTexture("real_res/1004166.png")
                 else
-                    titleBg:loadTexture("games/common/game/friendRoom/mjOver/title_bg.png")
-                    img_title:loadTexture("games/common/game/friendRoom/mjOver/title1.png")
+                    titleBg:loadTexture("real_res/1004161.png")
+                    img_title:loadTexture("real_res/1004158.png")
                 end
                 break
             elseif result.totalGold < 0 then
                 if IsPortrait then -- TODO
-                    img_title:loadTexture("games/common/game/friendRoom/mjOver/title_fail.png")
+                    img_title:loadTexture("real_res/1004163.png")
                 else
-                    titleBg:loadTexture("games/common/game/friendRoom/mjOver/title_bg2.png")
-                    img_title:loadTexture("games/common/game/friendRoom/mjOver/title3.png")
+                    titleBg:loadTexture("real_res/1004162.png")
+                    img_title:loadTexture("real_res/1004160.png")
                 end
                 break
             else
                 if IsPortrait then -- TODO
-                    img_title:loadTexture("games/common/game/friendRoom/mjOver/title_ping.png")
+                    img_title:loadTexture("real_res/1004165.png")
                 else
-                    titleBg:loadTexture("games/common/game/friendRoom/mjOver/title_bg.png")
-                    img_title:loadTexture("games/common/game/friendRoom/mjOver/title2.png")
+                    titleBg:loadTexture("real_res/1004161.png")
+                    img_title:loadTexture("real_res/1004159.png")
                 end
                 break
             end
@@ -294,11 +294,11 @@ function FriendOverView:initScore(item,scoreitem)
     local lab_socre
     if IsPortrait then -- TODO
         if scoreitem.totalGold == 0 then
-            lab_socre = cc.Label:createWithTTF(scoreitem.totalGold, "hall/font/fangzhengcuyuan.TTF", 40)--cc.Label:createWithBMFont("hall/font/yellow_num.fnt", scoreitem.totalGold)
+            lab_socre = cc.Label:createWithTTF(scoreitem.totalGold, "res_TTF/1016001.TTF", 40)--cc.Label:createWithBMFont("real_res/1010013.fnt", scoreitem.totalGold)
         elseif scoreitem.totalGold < 0 then
-            lab_socre = cc.Label:createWithTTF(scoreitem.totalGold, "hall/font/fangzhengcuyuan.TTF", 40)--cc.Label:createWithBMFont("hall/font/green_num.fnt", scoreitem.totalGold)
+            lab_socre = cc.Label:createWithTTF(scoreitem.totalGold, "res_TTF/1016001.TTF", 40)--cc.Label:createWithBMFont("real_res/1010010.fnt", scoreitem.totalGold)
         else
-            lab_socre = cc.Label:createWithTTF("+"..scoreitem.totalGold, "hall/font/fangzhengcuyuan.TTF", 40)--cc.Label:createWithBMFont("hall/font/yellow_num.fnt", "+" .. scoreitem.totalGold)
+            lab_socre = cc.Label:createWithTTF("+"..scoreitem.totalGold, "res_TTF/1016001.TTF", 40)--cc.Label:createWithBMFont("real_res/1010013.fnt", "+" .. scoreitem.totalGold)
             lab_socre:setColor(cc.c3b(255,253,87))
         end
         lab_socre:setPosition(cc.p(scoreSize.width - 5, scoreSize.height * 0.5 - 15))
@@ -307,11 +307,11 @@ function FriendOverView:initScore(item,scoreitem)
         score_panel:addChild(lab_socre, 1)
     else
         if scoreitem.totalGold == 0 then
-            lab_socre = cc.Label:createWithBMFont("hall/font/yellow_num.fnt", scoreitem.totalGold)
+            lab_socre = cc.Label:createWithBMFont("real_res/1010013.fnt", scoreitem.totalGold)
         elseif scoreitem.totalGold < 0 then
-            lab_socre = cc.Label:createWithBMFont("hall/font/green_num.fnt", scoreitem.totalGold)
+            lab_socre = cc.Label:createWithBMFont("real_res/1010010.fnt", scoreitem.totalGold)
         else
-            lab_socre = cc.Label:createWithBMFont("hall/font/yellow_num.fnt", "+" .. scoreitem.totalGold)
+            lab_socre = cc.Label:createWithBMFont("real_res/1010013.fnt", "+" .. scoreitem.totalGold)
         end
         lab_socre:setPosition(cc.p(scoreSize.width * 0.5, scoreSize.height * 0.5 - 8))
         lab_socre:setScale(1.6)
@@ -326,18 +326,18 @@ function FriendOverView:initHuImage(item,scoreitems)
         -- 胡牌玩家
         img_hu:setVisible(true)
         if self.gameOverDatas.winType == enGameOverType.ZI_MO then
-            img_hu:loadTexture("games/common/game/friendRoom/mjOver/zimo.png", ccui.TextureResType.localType)
+            img_hu:loadTexture("real_res/1004178.png", ccui.TextureResType.localType)
         -- elseif self.gameOverDatas.winType == enGameOverType.FANG_PAO then
-        --     img_hu:loadTexture("games/common/game/friendRoom/mjOver/hupai.png", ccui.TextureResType.localType)
+        --     img_hu:loadTexture("real_res/1004124.png", ccui.TextureResType.localType)
         -- elseif self.gameOverDatas.winType == enGameOverType.QIANG_GANG_HU then
         --     img_hu:loadTexture("games/common/game/friendRoom/mjOver/icon_qiangganghu.png", ccui.TextureResType.localType)
         -- elseif self.gameOverDatas.winType == enGameOverType.GANG_KAI then
         --     img_hu:loadTexture("games/common/game/friendRoom/mjOver/icon_gangkai.png", ccui.TextureResType.localType)
         -- elseif self.gameOverDatas.winType == enGameOverType.DI_XIA_HU then
-        --     img_hu:loadTexture("games/common/game/friendRoom/mjOver/hupai.png", ccui.TextureResType.localType)
+        --     img_hu:loadTexture("real_res/1004124.png", ccui.TextureResType.localType)
         else
             -- img_hu:setVisible(false)  --  没匹配到就隐藏掉吧
-            img_hu:loadTexture("games/common/game/friendRoom/mjOver/hupai.png", ccui.TextureResType.localType)
+            img_hu:loadTexture("real_res/1004124.png", ccui.TextureResType.localType)
         end
         if IsPortrait then -- TODO
             img_hu:setVisible(true)
@@ -345,11 +345,11 @@ function FriendOverView:initHuImage(item,scoreitems)
     elseif (scoreitems.result == enResult.FANGPAO or scoreitems.result == enResult.FAILED)
         and self.gameOverDatas.winType == enGameOverType.FANG_PAO then
         img_hu:setVisible(true)
-        img_hu:loadTexture("games/common/game/friendRoom/mjOver/fangpao.png", ccui.TextureResType.localType)
+        img_hu:loadTexture("real_res/1004121.png", ccui.TextureResType.localType)
     elseif (scoreitems.result == enResult.FANGPAO or scoreitems.result == enResult.FAILED)-- 加入抢杠胡
         and self.gameOverDatas.winType == enGameOverType.QIANG_GANG_HU then
         img_hu:setVisible(true)
-        img_hu:loadTexture("games/common/game/friendRoom/mjOver/icon_qianggang.png", ccui.TextureResType.localType)
+        img_hu:loadTexture("real_res/1004125.png", ccui.TextureResType.localType)
     else
         img_hu:setVisible(false)
     end
@@ -619,11 +619,11 @@ function FriendOverView:addGroupIcon(groupNode, operateType, cardGroup)
     local groupSize = groupNode:getContentSize()
     local lTipsFilePath = ""
     if operateType == enOperate.OPERATE_AN_GANG then
-        lTipsFilePath = "games/common/mj/common/angang.png"
+        lTipsFilePath = "real_res/1004254.png"
     elseif operateType == enOperate.OPERATE_MING_GANG then
-        lTipsFilePath = "games/common/mj/common/minggang.png"
+        lTipsFilePath = "real_res/1004273.png"
     elseif operateType == enOperate.OPERATE_JIA_GANG then
-        lTipsFilePath = "games/common/mj/common/bugang.png"
+        lTipsFilePath = "real_res/1004263.png"
     elseif self.gameOverDatas.winType == enGameOverType.QIANG_GANG_HU then
         -- 根据赢家的Index来获取胡的牌, 然后在与胡的牌相同的碰牌上, 显示抢杠标签
         local winnerIndex = 1
@@ -643,7 +643,7 @@ function FriendOverView:addGroupIcon(groupNode, operateType, cardGroup)
         end
         if humj == cardGroup[1] then
             Log.i("FriendOverView:addGroupIcon find qianggang", humj)
-            local atBg = display.newSprite("games/common/game/friendRoom/mjOver/qianggang.png")
+            local atBg = display.newSprite("real_res/1004135.png")
             atBg:setPosition(cc.p(groupSize.width / 2 - 18, groupSize.height / 2 - 28))
             if IsPortrait then -- TODO
                 --修改 20171110 start 竖版换皮  diyal.yin
@@ -659,7 +659,7 @@ function FriendOverView:addGroupIcon(groupNode, operateType, cardGroup)
     else
         return
     end
-    local lTipsBG = cc.Sprite:create("games/common/mj/common/angang_bg.png")
+    local lTipsBG = cc.Sprite:create("real_res/1004255.png")
     groupNode:addChild(lTipsBG)
     if IsPortrait then -- TODO
         --修改 20171110 start 竖版换皮  diyal.yin
@@ -727,7 +727,7 @@ end
 --------------------------
 -- 添加胡牌角标
 function FriendOverView:addHuIcon(majiang)
-    local huIcon = display.newSprite("games/common/mj/common/icon_hu.png")
+    local huIcon = display.newSprite("real_res/1004268.png")
     huIcon:setAnchorPoint(cc.p(1,1))
     huIcon:setScale(0.8)
     huIcon:setPosition(cc.p(majiang:getContentSize().width /2 - 1, majiang:getContentSize().height / 2 - 10))
@@ -828,7 +828,7 @@ end
 
 function FriendOverView:initHeadImage(item,player)
     local img_head = ccui.Helper:seekWidgetByName(item, "head")
-    img_head:loadTexture("hall/Common/default_head_2.png");
+    img_head:loadTexture("real_res/1004043.png");
     local userId = player:getProp(enCreatureEntityProp.USERID)
     local imgURL = self.gameSystem:gameStartGetPlayerByUserid(userId):getProp(enCreatureEntityProp.ICON_ID) .. "";
     if string.len(imgURL) > 3 then
@@ -842,7 +842,7 @@ function FriendOverView:initHeadImage(item,player)
             self:getNetworkImage(imgURL, imgName)
         end
     else
-        local headFile = "hall/Common/default_head_2.png"
+        local headFile = "real_res/1004043.png"
         headFile = cc.FileUtils:getInstance():fullPathForFilename(headFile)
         if io.exists(headFile) then
             img_head:loadTexture(headFile)
@@ -851,7 +851,7 @@ function FriendOverView:initHeadImage(item,player)
     end
     if IsPortrait then -- TODO
         if kFriendRoomInfo:isRoomMain(userId) then
-            local img_host = ccui.Helper:seekWidgetByName(item, "img_host");--昵称--cc.Sprite:create("games/common/game/friendRoom/mjOver/fangzhu_tip.png")
+            local img_host = ccui.Helper:seekWidgetByName(item, "img_host");--昵称--cc.Sprite:create("real_res/1004122.png")
             img_host:setVisible(true)
         end
     end

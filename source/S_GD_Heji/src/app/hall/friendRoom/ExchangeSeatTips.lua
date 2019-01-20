@@ -87,7 +87,7 @@ function ExchangeSeatTips:onInit()
     self:tipsWords()
 end
 function ExchangeSeatTips:downHead(playerInfo, headImg, i)
-    local headFile = "hall/huanpi2/Common/defaultCircleHead.png";
+    local headFile = "#1004291.png";
     if playerInfo.heI and string.len(playerInfo.heI) > 4 then
         local imgName = playerInfo.usI .. ".jpg"
         headFile = cc.FileUtils:getInstance():fullPathForFilename(imgName)
@@ -217,15 +217,15 @@ function ExchangeSeatTips:tipsWords()
 
         local imgPath = ""
         if IsPortrait then
-            imgPath = "package_res/games/guandan/hall/huanpi2/friendroomscene/txt_exchange_cancel.png"
+            imgPath = "real_res/1004858.png"
         else
-            imgPath = "package_res/games/guandan/hall/huanpi2/friendroomscene/txt_exchange_cancel_hor.png"
+            imgPath = "real_res/1004859.png"
         end
         self.btnRefuse:getChildByName("img_txt"):loadTexture(imgPath)
         local originMargin_start = self.btnKnow:getLayoutParameter():getMargin()
         self.btnRefuse:getLayoutParameter():setMargin(originMargin_start)
 
-        imgExchange:loadTexture("package_res/games/guandan/hall/huanpi2/Common/img_exchange_normal.png")
+        imgExchange:loadTexture("real_res/1004851.png")
         self.txtTime:setString(string.format("(%d秒)", self.countDownTime))
         self.txtTime:setVisible(true)
         self:startCountDown()
@@ -233,9 +233,9 @@ function ExchangeSeatTips:tipsWords()
 
         local name = kFriendRoomInfo:getRoomPlayerListInfo(self.m_data.beAUI).niN
         topStr = string.format("正在与%s申请交换中...", name)
-        local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "正在与", "hall/font/fangzhengcuyuan.TTF", 37)
-        local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "hall/font/fangzhengcuyuan.TTF", 37)
-        local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "申请交换中...", "hall/font/fangzhengcuyuan.TTF", 37)
+        local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "正在与", "res_TTF/1016001.TTF", 37)
+        local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "res_TTF/1016001.TTF", 37)
+        local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "申请交换中...", "res_TTF/1016001.TTF", 37)
         richText:pushBackElement(re1)
         richText:pushBackElement(re2)
         richText:pushBackElement(re3)
@@ -243,21 +243,21 @@ function ExchangeSeatTips:tipsWords()
         self.btnKnow:setVisible(true)
         self.btnRefuse:setVisible(false)
         self.btnExchange:setVisible(false)
-        imgExchange:loadTexture("package_res/games/guandan/hall/huanpi2/Common/img_exchange_fail.png")
+        imgExchange:loadTexture("real_res/1004850.png")
 
         if self.m_data.beAUI ~= kUserInfo:getUserId() then
             local name = kFriendRoomInfo:getRoomPlayerListInfo(self.m_data.beAUI).niN
             topStr = string.format("%s拒绝了您交换座位请求", name)
-            local re1 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "hall/font/fangzhengcuyuan.TTF", 37)
-            local re2 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "拒绝了您交换座位请求", "hall/font/fangzhengcuyuan.TTF", 37)
+            local re1 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "res_TTF/1016001.TTF", 37)
+            local re2 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "拒绝了您交换座位请求", "res_TTF/1016001.TTF", 37)
             richText:pushBackElement(re1)
             richText:pushBackElement(re2)
         else
             local name = kFriendRoomInfo:getRoomPlayerListInfo(self.m_data.asUI).niN
             topStr = string.format("您拒绝了与玩家%s交换座位请求", name)
-            local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0,   0), 255, "您拒绝了与玩家", "hall/font/fangzhengcuyuan.TTF", 37)
-            local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "hall/font/fangzhengcuyuan.TTF", 37)
-            local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "交换座位请求", "hall/font/fangzhengcuyuan.TTF", 37)
+            local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0,   0), 255, "您拒绝了与玩家", "res_TTF/1016001.TTF", 37)
+            local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "res_TTF/1016001.TTF", 37)
+            local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "交换座位请求", "res_TTF/1016001.TTF", 37)
             richText:pushBackElement(re1)
             richText:pushBackElement(re2)
             richText:pushBackElement(re3)
@@ -266,7 +266,7 @@ function ExchangeSeatTips:tipsWords()
         self.btnKnow:setVisible(true)
         self.btnRefuse:setVisible(false)
         self.btnExchange:setVisible(false)
-        imgExchange:loadTexture("package_res/games/guandan/hall/huanpi2/Common/img_exchange_success.png")
+        imgExchange:loadTexture("real_res/1004852.png")
 
         local name = ""
         if self.m_data.asUI == kUserInfo:getUserId() then
@@ -275,9 +275,9 @@ function ExchangeSeatTips:tipsWords()
             name = kFriendRoomInfo:getRoomPlayerListInfo(self.m_data.asUI).niN
         end
         topStr = string.format("您与玩家%s交换座位成功", name)
-        local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "您与玩家", "hall/font/fangzhengcuyuan.TTF", 37)
-        local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "hall/font/fangzhengcuyuan.TTF", 37)
-        local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "交换座位成功", "hall/font/fangzhengcuyuan.TTF", 37)
+        local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "您与玩家", "res_TTF/1016001.TTF", 37)
+        local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "res_TTF/1016001.TTF", 37)
+        local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "交换座位成功", "res_TTF/1016001.TTF", 37)
         richText:pushBackElement(re1)
         richText:pushBackElement(re2)
         richText:pushBackElement(re3)
@@ -286,7 +286,7 @@ function ExchangeSeatTips:tipsWords()
         self.btnRefuse:setVisible(true)
         self.btnExchange:setVisible(true)
 
-        imgExchange:loadTexture("package_res/games/guandan/hall/huanpi2/Common/img_exchange_normal.png")
+        imgExchange:loadTexture("real_res/1004851.png")
         self.txtTime:setString(string.format("(%d秒)", self.countDownTime))
         self.txtTime:setVisible(true)
         self:startCountDown()
@@ -294,9 +294,9 @@ function ExchangeSeatTips:tipsWords()
         
         local name = kFriendRoomInfo:getRoomPlayerListInfo(self.m_data.asUI).niN
         topStr = string.format("玩家%s想要与您交换座位", name)
-        local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "玩家", "hall/font/fangzhengcuyuan.TTF", 37)
-        local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "hall/font/fangzhengcuyuan.TTF", 37)
-        local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "想要与您交换座位", "hall/font/fangzhengcuyuan.TTF", 37)
+        local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "玩家", "res_TTF/1016001.TTF", 37)
+        local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "res_TTF/1016001.TTF", 37)
+        local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "想要与您交换座位", "res_TTF/1016001.TTF", 37)
         richText:pushBackElement(re1)
         richText:pushBackElement(re2)
         richText:pushBackElement(re3)
@@ -311,11 +311,11 @@ function ExchangeSeatTips:tipsWords()
         local beName = kFriendRoomInfo:getRoomPlayerListInfo(self.m_data.beAUI).niN
         if self.m_data.ty == 1 then--1发起交换请求
             topStr = string.format("玩家%s正在与玩家%s交换座位", name, beName)
-            local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "玩家", "hall/font/fangzhengcuyuan.TTF", 37)
-            local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "hall/font/fangzhengcuyuan.TTF", 37)
-            local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "正在与玩家", "hall/font/fangzhengcuyuan.TTF", 37)
-            local re4 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, beName, "hall/font/fangzhengcuyuan.TTF", 37)
-            local re5 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "交换座位", "hall/font/fangzhengcuyuan.TTF", 37)
+            local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "玩家", "res_TTF/1016001.TTF", 37)
+            local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "res_TTF/1016001.TTF", 37)
+            local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "正在与玩家", "res_TTF/1016001.TTF", 37)
+            local re4 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, beName, "res_TTF/1016001.TTF", 37)
+            local re5 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "交换座位", "res_TTF/1016001.TTF", 37)
             richText:pushBackElement(re1)
             richText:pushBackElement(re2)
             richText:pushBackElement(re3)
@@ -324,12 +324,12 @@ function ExchangeSeatTips:tipsWords()
         else
             if self.m_data.chST then--同意
                 topStr = string.format("玩家%s与玩家%s交换座位成功", name, beName)
-                imgExchange:loadTexture("package_res/games/guandan/hall/huanpi2/Common/img_exchange_normal.png")
-                local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "玩家", "hall/font/fangzhengcuyuan.TTF", 37)
-                local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "hall/font/fangzhengcuyuan.TTF", 37)
-                local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "与玩家", "hall/font/fangzhengcuyuan.TTF", 37)
-                local re4 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, beName, "hall/font/fangzhengcuyuan.TTF", 37)
-                local re5 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "交换座位成功", "hall/font/fangzhengcuyuan.TTF", 37)
+                imgExchange:loadTexture("real_res/1004851.png")
+                local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "玩家", "res_TTF/1016001.TTF", 37)
+                local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "res_TTF/1016001.TTF", 37)
+                local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "与玩家", "res_TTF/1016001.TTF", 37)
+                local re4 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, beName, "res_TTF/1016001.TTF", 37)
+                local re5 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "交换座位成功", "res_TTF/1016001.TTF", 37)
                 richText:pushBackElement(re1)
                 richText:pushBackElement(re2)
                 richText:pushBackElement(re3)
@@ -337,12 +337,12 @@ function ExchangeSeatTips:tipsWords()
                 richText:pushBackElement(re5)
             else
                 topStr = string.format("玩家%s拒绝与玩家%s交换座位", name, beName)
-                imgExchange:loadTexture("package_res/games/guandan/hall/huanpi2/Common/img_exchange_fail.png")
-                local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "玩家", "hall/font/fangzhengcuyuan.TTF", 37)
-                local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, beName, "hall/font/fangzhengcuyuan.TTF", 37)
-                local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "拒绝与玩家", "hall/font/fangzhengcuyuan.TTF", 37)
-                local re4 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "hall/font/fangzhengcuyuan.TTF", 37)
-                local re5 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "交换座位", "hall/font/fangzhengcuyuan.TTF", 37)
+                imgExchange:loadTexture("real_res/1004850.png")
+                local re1 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "玩家", "res_TTF/1016001.TTF", 37)
+                local re2 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, beName, "res_TTF/1016001.TTF", 37)
+                local re3 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "拒绝与玩家", "res_TTF/1016001.TTF", 37)
+                local re4 = ccui.RichElementText:create(1, cc.c3b(130, 65,   5), 255, name, "res_TTF/1016001.TTF", 37)
+                local re5 = ccui.RichElementText:create(1, cc.c3b(0, 0, 0), 255, "交换座位", "res_TTF/1016001.TTF", 37)
                 richText:pushBackElement(re1)
                 richText:pushBackElement(re2)
                 richText:pushBackElement(re3)

@@ -75,7 +75,7 @@ end
 function PlayerChat:showChat(data) 
     local Lab = self:createChatLab(data)
     local posX,posY = self.m_chat_bg:getPosition()
-    local cat_bg = display.newScale9Sprite("hall/gameCommon/face/chat_bg.png",posX,posY)
+    local cat_bg = display.newScale9Sprite("real_res/1004468.png",posX,posY)
     cat_bg:setCapInsets(CapInsets)
     cat_bg:setLocalZOrder(3)
     cat_bg:addTo(self.m_head)
@@ -192,7 +192,7 @@ end
 
 function PlayerChat:createChatBg(face)
     local posX,posY = self.m_chat_bg:getPosition()
-    local cat_bg = display.newScale9Sprite("hall/gameCommon/face/chat_bg.png",posX,posY)
+    local cat_bg = display.newScale9Sprite("real_res/1004468.png",posX,posY)
     if self.m_site == Define.site_self then
         cat_bg:setAnchorPoint(cc.p(0,0))
     elseif self.m_site == Define.site_right then
@@ -253,7 +253,7 @@ function PlayerChat:createChatLab(data)
     local textSize = 20
     local params = {}
     params.text = data or ""
-    params.font = "hall/font/fangzhengcuyuan.TTF"
+    params.font = "res_TTF/1016001.TTF"
     params.size = textSize
     params.x = 0
     params.y = 0
@@ -298,24 +298,24 @@ function PlayerChat:showSpeaking(site,head)
     end
     local bgSize = cc.size(160, 80);
     if site == Define.site_self then
-        self.speakingBgs[site] = display.newScale9Sprite("games/common/speaking_bg.png", 100, 50, bgSize);
-        local voice_bg = ccui.ImageView:create("games/common/speak_voice_0.png");
+        self.speakingBgs[site] = display.newScale9Sprite("real_res/1004055.png", 100, 50, bgSize);
+        local voice_bg = ccui.ImageView:create("real_res/1004056.png");
         voice_bg:setPosition(cc.p(36, 40));
         self.speakingBgs[site]:addChild(voice_bg);
         voice_bg:setScaleX(-1);
     elseif site == Define.site_right then
-        self.speakingBgs[site] = display.newScale9Sprite("games/common/speaking_bg.png", -150, 50, bgSize);
-        local voice_bg = ccui.ImageView:create("games/common/speak_voice_0.png");
+        self.speakingBgs[site] = display.newScale9Sprite("real_res/1004055.png", -150, 50, bgSize);
+        local voice_bg = ccui.ImageView:create("real_res/1004056.png");
         voice_bg:setPosition(cc.p(124, 40));
         self.speakingBgs[site]:addChild(voice_bg);
     elseif site == Define.site_other then
-        self.speakingBgs[site] = display.newScale9Sprite("games/common/speaking_bg.png", -150, 0, bgSize);
-        local voice_bg = ccui.ImageView:create("games/common/speak_voice_0.png");
+        self.speakingBgs[site] = display.newScale9Sprite("real_res/1004055.png", -150, 0, bgSize);
+        local voice_bg = ccui.ImageView:create("real_res/1004056.png");
         self.speakingBgs[site]:addChild(voice_bg);
         voice_bg:setPosition(cc.p(124, 40));
     elseif site == Define.site_left then
-        self.speakingBgs[site] = display.newScale9Sprite("games/common/speaking_bg.png", 100, 50, bgSize);
-         local voice_bg = ccui.ImageView:create("games/common/speak_voice_0.png");
+        self.speakingBgs[site] = display.newScale9Sprite("real_res/1004055.png", 100, 50, bgSize);
+         local voice_bg = ccui.ImageView:create("real_res/1004056.png");
         self.speakingBgs[site]:addChild(voice_bg);
         voice_bg:setPosition(cc.p(36, 40));
         voice_bg:setScaleX(-1);

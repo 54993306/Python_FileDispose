@@ -20,7 +20,7 @@ function Indicator:ctor()
         self.pointSprite:removeFromParent()
         self.pointSprite = nil
     end
-    self.pointSprite = display.newSprite("games/common/mj/games/out_poker_point.png")
+    self.pointSprite = display.newSprite("real_res/1004363.png")
     self:addChild(self.pointSprite)
 
     self.pointSprite:runAction(cc.RepeatForever:create(cc.Sequence:create(cc.MoveBy:create(0.5, cc.p(0, 5)),cc.MoveBy:create(0.5, cc.p(0, -5)))))

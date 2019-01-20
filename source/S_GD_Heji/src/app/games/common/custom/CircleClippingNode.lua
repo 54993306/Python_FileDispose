@@ -14,12 +14,12 @@ end
 
 function CircleClippingNode:setImgFile(imgPath)
 
-    local stencil = cc.Sprite:create("hall/Common/circleClipStencil.png")
+    local stencil = cc.Sprite:create("real_res/1004389.png")
     stencil:setScale(self.m_stencilSize/77)
     stencil:setPosition(50, 50)
     local sp = cc.Sprite:create(imgPath)
     if sp == nil or tolua.isnull(sp) then
-        sp = cc.Sprite:create("hall/Common/defaultCircleHead.png")
+        sp = cc.Sprite:create("#1004291.png")
     end
     sp:setPosition(50, 50)
 

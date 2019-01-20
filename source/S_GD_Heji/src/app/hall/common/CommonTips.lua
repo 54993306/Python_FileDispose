@@ -52,7 +52,7 @@ function CommonTips:DynamicLabel()
     local textSize = 36
     local params = {}
     params.text = self.m_data.content or "暂无信息"
-    params.font = "hall/font/fangzhengcuyuan.TTF"
+    params.font = "res_TTF/1016001.TTF"
     params.size = textSize
     params.align =  cc.TEXT_ALIGNMENT_CENTER
     params.valign = cc.VERTICAL_TEXT_ALIGNMENT_CENTER
