@@ -75,7 +75,7 @@ class totalRes:
 
     # 复制文件
     def copyFile(self):
-        comFun.createNewDir(comFun.COPYPATH)5
+        comFun.createNewDir(comFun.COPYPATH)
         copynum = 0
         for md5Code , fileInfo in self.notRepeatmd5List.iteritems():
             if self.specialType(fileInfo):
