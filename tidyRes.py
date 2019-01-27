@@ -35,7 +35,7 @@ class tidyRes:
                 if not "new" in ChangeInfo:
                     continue
                 newPath = ChangeInfo["new"]["path"]
-                if re.search(comFun.RESFOLDER , newPath):
+                if re.search(comFun.RESFOLDER , newPath):   # 1004606 这个图片是不应该存在的。
                     if not newPath in JsonValidResList:
                         JsonValidResList.append(newPath)
                     shutil.copyfile(newPath , CopyToPath + "/" + os.path.basename(newPath))
@@ -46,10 +46,10 @@ class tidyRes:
             if not "ValidChange" in ChangeInfos:
                 continue
             for md5code , ChangeInfo in ChangeInfos["ValidChange"].iteritems():
-                if re.search(comFun.RESFOLDER + "/[\w]*?.png" , ChangeInfo["new"]):
+                if re.search(comFun.RESFOLDER + "/[\w]*?.(png|mp3)" , ChangeInfo["new"]):  # 这个类型判断也是不应该存在的。代码路径就是实际路径，不应该有这些东西
                     if not ChangeInfo["new"] in LuaValidResList:
                         LuaValidResList.append(ChangeInfo["new"])
-                    shutil.copyfile(ChangeInfo["new"], CopyToPath + "/" + os.path.basename(ChangeInfo["new"]))
+                    # shutil.copyfile(ChangeInfo["new"], CopyToPath + "/" + os.path.basename(ChangeInfo["new"]))
                     shutil.copyfile(ChangeInfo["new"], CopyToCodePath + "/" + os.path.basename(ChangeInfo["new"]))
 
         ValidResList = {}

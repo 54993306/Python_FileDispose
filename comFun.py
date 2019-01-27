@@ -9,13 +9,42 @@ import shutil
 import stat
 import collections
 import time
+##################################################################################################################
+# json UI 文件
+REALPATH                = "D:/Svn_2d/S_GD_Heji/res/hall/"           # 资源的具体位置和json的位置相关
+
+FILEPATH                = "D:/Svn_2d/S_GD_Heji/res/"                # 获取游戏中的资源位置，并进行去重和重命名处理
+
+CHANNEL                 = 1                                                  # 0 对应demo，1对应TEST，3对应Project
+
+if CHANNEL              == 1:
+    SEARLUAPATJ         = "D:/Svn_2d/S_GD_Heji/src/app"                      # 获取Lua文件的路径，只是大厅的Lua文件
+    TARGETPATH          = "D:/Python_FileDispose/source/UI_Shu/Resources/"   # 打包资源后输出路径
+    OUTPUTPATH          = "D:/Python_FileDispose/source/UI_Shu/Json/"        # 修改后的Json存储路径
+    NEWLUAPATH          = "D:/Python_FileDispose/source/S_GD_Heji/src/app"   # 修改后的Lua存储路径
+    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/" # 资源在代码中的路径
+    SEARCHJSONPATH      = "D:/Svn_2d/CoCoStuio/vertical/hall/Json"           # 整理后的Ui工程
+elif CHANNEL == "IOS_Audit":
+    TARGETPATH          = "D:/Svn_2d/CoCoStuio/vertical/hal_packres/Resources/"   # 打包资源后输出路径
+    OUTPUTPATH          = "D:/Svn_2d/CoCoStuio/vertical/hal_packres/Json/"        # 修改后的Json存储路径
+    NEWLUAPATH          = "D:/Python_FileDispose/source/S_GD_Heji/src/app"        # 修改后的Lua存储路径
+    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"      # 资源在代码中的路径
+    SEARCHJSONPATH      = "D:/Svn_2d/CoCoStuio/vertical/hall/Json"                # Ui工程中json文件的路径
+else:
+    SEARCHJSONPATH      = "D:/Svn_2d/UI_Shu/Json"                                   # 获取JsonUI文件的路径，只是竖版的大厅部分json
+    TARGETPATH          = "D:/Svn_2d/UI_Shu/Resources/"                             # 打包资源后输出路径
+    OUTPUTPATH          = "D:/Python_FileDispose/newJson/"                          # 修改后的Json存储路径
+    NEWLUAPATH          = "D:/Python_FileDispose/newLua/app"                        # 修改后的Lua存储路径
+    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"        # 资源在代码中的路径
+    SEARLUAPATJ         = "D:/Svn_2d/S_GD_Heji/src/app"                             # 获取Lua文件的路径，只是大厅的Lua文件
+
+##################################################################################################################
 
 BigFileSie              = 1024 * 100                                #100k以上即认为是大文件
 PNG_MAX_SIZE            = 1024                                      # 输出的图片大小,大多数平台支持的大小
 PNG_MAX_RES             = 512                                       # 判断是否为大尺寸资源
-UNPACKAGENUM            = 3
+UNPACKAGENUM            = 3                                         # 图片数量达到打包的张数
 
-FILEPATH                = "D:/Svn_2d/S_GD_Heji/res/"                # 获取游戏中的资源位置，并进行去重和重命名处理
 COPYPATH                = "D:/Python_FileDispose/real_res"          # 改名去重后的资源存储路径
 OUTPUTTARGET            = "D:/Python_FileDispose/"
 
@@ -25,36 +54,6 @@ PACKAGEOUTPUT           = "D:/Python_FileDispose/packagePList/"     # 打包成P
 RESFOLDER               = "real_res"
 
 ##################################################################################################################
-
-EXCUTE_INDEX            = 1                                         # 0 对应demo，1对应TEST，3对应Project
-
-SEARCHJSONPATH          = "D:/Svn_2d/UI_Shu/Json"                               # 获取JsonUI文件的路径，只是竖版的大厅部分json
-TARGETPATH              = "D:/Svn_2d/UI_Shu/Resources/"                         # 打包资源后输出路径
-OUTPUTPATH              = "D:/Python_FileDispose/newJson/"                      # 修改后的Json存储路径
-NEWLUAPATH              = "D:/Python_FileDispose/newLua/app"                    # 修改后的Lua存储路径
-MOVETOCODEPATH          = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"    # 资源在代码中的路径
-SEARLUAPATJ             = "D:/Svn_2d/S_GD_Heji/src/app"                         # 获取Lua文件的路径，只是大厅的Lua文件
-
-if EXCUTE_INDEX == 1:
-    SEARLUAPATJ         = "D:/Svn_2d/S_GD_Heji/src/app"                      # 获取Lua文件的路径，只是大厅的Lua文件
-    TARGETPATH          = "D:/Python_FileDispose/source/UI_Shu/Resources/"   # 打包资源后输出路径
-    OUTPUTPATH          = "D:/Python_FileDispose/source/UI_Shu/Json/"        # 修改后的Json存储路径
-    NEWLUAPATH          = "D:/Python_FileDispose/source/S_GD_Heji/src/app"   # 修改后的Lua存储路径
-    # SEARLUAPATJ         = NEWLUAPATH
-    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/" # 资源在代码中的路径
-    SEARCHJSONPATH      = "D:/Svn_2d/CoCoStuio/vertical/hall/Json"           # 整理后的Ui工程
-elif EXCUTE_INDEX == 2:
-    TARGETPATH          = "D:/Svn_2d/CoCoStuio/vertical/hal_packres/Resources/"   # 打包资源后输出路径
-    OUTPUTPATH          = "D:/Svn_2d/CoCoStuio/vertical/hal_packres/Json/"        # 修改后的Json存储路径
-    NEWLUAPATH          = "D:/Python_FileDispose/source/S_GD_Heji/src/app"        # 修改后的Lua存储路径
-    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"      # 资源在代码中的路径
-    SEARCHJSONPATH      = "D:/Svn_2d/CoCoStuio/vertical/hall/Json"                # Ui工程中json文件的路径
-
-##################################################################################################################
-
-# json UI 文件
-REALPATH                = "D:/Svn_2d/S_GD_Heji/res/hall/"           # 资源的具体位置和json的位置相关
-
 # 1 totalResDict
 DICTFILE                = "./output/1_FileDict.json"
 SIZEFILE                = "./output/1_FileSize.json"
@@ -80,12 +79,11 @@ CHANGERESULT            = "./output/4_UIChange.json"
 
 # 5 code res
 CODERESMESSAGE          = "./output/5_CodeChange.json"
-CODEFOLDER              = "D:/Svn_2d/S_GD_Heji/src/app"
-GAMECODEFOLDER          = "D:/Svn_2d/S_GD_Heji/src/package_src"
 
 # 6 tidy
 TIDYRECORD              = "./output/6_Tidy.json"
 
+##################################################################################################################
 def RecordToJsonFile(path , data):
     file_stream = open(path, "w+")
     file_stream.write(json.dumps(data, ensure_ascii=False, encoding="utf -8", indent=4))

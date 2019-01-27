@@ -1,7 +1,7 @@
 
 # -*- coding: UTF-8 -*-
-# TEST = False
-TEST = True
+TEST = False
+# TEST = True
 #
 import os
 import json
@@ -21,7 +21,7 @@ import fileDataHandle as FD
 
 if not TEST:
     # 去重和生成文件信息
-    # totalResDict.totalRes() #初始化所有的资源信息
+    totalResDict.totalRes() #初始化所有的资源信息
 
     # 对json中的资源做处理
     # jsonFileRes.jsonRes()  # 初始化所有json中包含的资源信息

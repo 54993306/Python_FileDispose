@@ -17,7 +17,7 @@ class codeRes:
     FILEPATH = r"D:/Svn_2d/S_GD_Heji/res/"
     resTypes = ['\\.png', '\\.ExportJson', '\\.plist', '\\.json',
                 '\\.fnt', '\\.TTF', '\\.jpg', '\\.mp3', '\\.ogg']  # csb类资源不做匹配修改处理
-    handleType = ['.png', '.fnt', '.TTF' , ".plist"]
+    handleType = ['.png', '.fnt', '.TTF' , ".plist"]  # plist 类的存储到特殊文件中了
     changeResult = []  # 对数组合字符串做分别判断
 
     def __init__(self):  # 构造函数
@@ -98,9 +98,9 @@ class codeRes:
         if "NoDiposeType" in self.currInfo:
             self.currInfo["NoDiposeType"][md5code] = FileDict
         else:
-            ValidChange = collections.OrderedDict()
-            self.currInfo["NoDiposeType"] = ValidChange
-            ValidChange[md5code] = FileDict
+            NoDiposeType = collections.OrderedDict()
+            self.currInfo["NoDiposeType"] = NoDiposeType
+            NoDiposeType[md5code] = FileDict
 
     # 记录在Lua中使用但是Res路径中不存在的内容
     def recordNotFindRes(self, path):

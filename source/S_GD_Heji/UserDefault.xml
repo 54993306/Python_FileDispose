@@ -4,14 +4,14 @@
     <downloaded-version-codezd/>
     <update_path>D:\Svn_2d\S_GD_Trunk\guangdong_region/update/</update_path>
     <phonenumber>0</phonenumber>
-    <account>[{"pwd":"","usi":3732702609,"act":"wz_test_0011TAct"}]</account>
-    <account_temporary>[{"pwd":"","usi":3732702609,"act":"wz_test_0011TAct"}]</account_temporary>
+    <account>[{"pwd":"","usi":3763062635,"act":"wz_test_0017TAct"},{"usi":3732702609,"pwd":"","act":"wz_test_0011TAct"}]</account>
+    <account_temporary>[{"pwd":"","usi":3763062635,"act":"wz_test_0017TAct"}]</account_temporary>
     <cf_isNewer>false</cf_isNewer>
     <3748031544>1</3748031544>
     <reveiw_version>true</reveiw_version>
-    <IntSelectAreaPlaceID>44440701</IntSelectAreaPlaceID>
+    <IntSelectAreaPlaceID>44441401</IntSelectAreaPlaceID>
     <4444_ContactInfoCache>微信公众号：&lt;20,66广东游戏大厅&gt;|代理招募：微信&lt;20,dsgd1003&gt;</4444_ContactInfoCache>
-    <RoundNum>1</RoundNum>
+    <RoundNum>0</RoundNum>
     <guidance>true</guidance>
     <SelectAreaGameID>10218.000000</SelectAreaGameID>
     <pdk_guidance_status>1</pdk_guidance_status>
@@ -126,7 +126,7 @@
     <3719087466>1</3719087466>
     <advert_time3719087466>15</advert_time3719087466>
     <3732702609>1</3732702609>
-    <advert_time3732702609>20</advert_time3732702609>
+    <advert_time3732702609>21</advert_time3732702609>
     <3748320255>1</3748320255>
     <advert_time3748320255>15</advert_time3748320255>
     <3758479055>1</3758479055>
@@ -147,4 +147,7 @@
     <advert_time3786273135>16</advert_time3786273135>
     <3726235390>1</3726235390>
     <advert_time3726235390>16</advert_time3726235390>
+    <popday>21</popday>
+    <3763062635>1</3763062635>
+    <advert_time3763062635>21</advert_time3763062635>
 </userDefaultRoot>
