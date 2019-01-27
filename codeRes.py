@@ -14,7 +14,6 @@ import fileDataHandle as FD
 
 class codeRes:
     absPathChild = ["games", "hall", "package_res","res"]
-    FILEPATH = r"D:/Svn_2d/S_GD_Heji/res/"
     resTypes = ['\\.png', '\\.ExportJson', '\\.plist', '\\.json',
                 '\\.fnt', '\\.TTF', '\\.jpg', '\\.mp3', '\\.ogg']  # csb类资源不做匹配修改处理
     handleType = ['.png', '.fnt', '.TTF' , ".plist"]  # plist 类的存储到特殊文件中了
@@ -217,7 +216,7 @@ class codeRes:
         if not paths in self.absPathChild:  # 判断路径是否为根路径内容
             self.printOutInfo("not abs path can't change :" + matchStr)
             return
-        filepath = self.FILEPATH + matchStr
+        filepath = comFun.FILEPATH + matchStr
         if not os.path.isabs(filepath):
             filepath = os.path.abspath(filepath)
         filepath = comFun.turnBias(filepath)
