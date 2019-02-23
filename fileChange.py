@@ -35,12 +35,21 @@ class replaceImage:
                 continue
             jsonPath = comFun.turnBias(jsonPath)
             _ , filename = os.path.split(jsonPath)
-            newFilePath = comFun.OUTPUTPATH + filename
-            shutil.copyfile(jsonPath , newFilePath)
-            print("\n==========>>>>" + jsonPath)
+            newFilePath = comFun.turnBias(comFun.OUTPUTPATH + filename)
+            if cmp(newFilePath , jsonPath) != 0:
+                shutil.copyfile(jsonPath , newFilePath)
+            print("\n==========>>>>" + newFilePath)
             self.streamDispose(newFilePath)
         # 对数据进行记录处理
         comFun.RecordToJsonFile(comFun.CHANGERESULT, self.changeRecord)
+        # self.putOutJsonName(jsonPaths)
+
+    # 输出json的名称，用于修改ui工程的导出文件内容
+    def putOutJsonName(self , jsonPaths):
+        for jsonPath in jsonPaths:
+            if not re.search(r".json" , jsonPath):
+                continue
+            print "<string>" + os.path.basename(jsonPath) + "</string>"
 
     # 文件处理
     def streamDispose(self , newJsonFile):

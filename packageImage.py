@@ -17,14 +17,14 @@ import xml.etree.ElementTree as ET
 # 图片合并的规则是相对负责的,出现图片的情况很多，包括在代码中使用和一张图被多个文件使用的情况
 
 class packageImage:
-    plistInfo = collections.OrderedDict()      # 合图后的plist包含的图片信息。
-    plistMd5 = collections.OrderedDict()       # 图片md5值对应存储的plist文件
-    lowRefPath = collections.OrderedDict()     # 引用计数低的路径
-    newResPath = collections.OrderedDict()     # 结构化存储文件被整理后的路径信息
-    outPutFolder = collections.OrderedDict()   # 生成的文件夹
-    moveRecord = collections.OrderedDict()     # 记录被使用的文件
-    packageInfo = collections.OrderedDict()    # 存储合成plist的res信息
-    unPackRepeat = collections.OrderedDict()   # 未打包和重复移动的文件
+    plistInfo       = collections.OrderedDict()     # 合图后的plist包含的图片信息。
+    plistMd5        = collections.OrderedDict()     # 图片md5值对应存储的plist文件
+    lowRefPath      = collections.OrderedDict()     # 引用计数低的路径
+    newResPath      = collections.OrderedDict()     # 结构化存储文件被整理后的路径信息
+    outPutFolder    = collections.OrderedDict()     # 生成的文件夹
+    moveRecord      = collections.OrderedDict()     # 记录被使用的文件
+    packageInfo     = collections.OrderedDict()     # 存储合成plist的res信息
+    unPackRepeat    = collections.OrderedDict()     # 未打包和重复移动的文件
     unPackRepeat["repeat"] = []
 
     def __init__(self):
@@ -58,10 +58,8 @@ class packageImage:
 
     # 清理文件夹
     def clearDir(self):
-        comFun.removeDir(comFun.PACKAGESOURCE)
-        comFun.removeDir(comFun.PACKAGEOUTPUT)
-        os.mkdir(comFun.PACKAGEOUTPUT, 0o777)
-        os.mkdir(comFun.PACKAGESOURCE, 0o777)
+        comFun.createNewDir(comFun.PACKAGESOURCE)
+        comFun.createNewDir(comFun.PACKAGEOUTPUT)
 
     # 对资源进行打包操作
     def packageRes(self):
@@ -174,8 +172,8 @@ class packageImage:
             return
         _, filetype = os.path.splitext(pResPath)
         outPutPath = "res_" + filetype.split(".")[1]
-        if not os.path.isdir(outPutPath):
-            os.mkdir(outPutPath, 0o777)
+        if not os.path.isdir(comFun.CHANNEL + outPutPath):
+            os.mkdir(comFun.CHANNEL + outPutPath, 0o777)
         if not outPutPath in self.outPutFolder:
             self.outPutFolder[outPutPath] = True
         command = self.NeedChangeStream(pResPath , outPutPath) # 移动与fnt对应的图片
@@ -183,7 +181,7 @@ class packageImage:
         # print "cur : " + pResPath + " Tag : " + tPath
         shutil.copyfile(pResPath , tPath)
         if command:
-            pNewResPath = re.sub("D:/Python_FileDispose", ".", tPath)   # 修改目标路径的文件，而不是本地文件
+            pNewResPath = re.sub(comFun.OUTPUTTARGET, "./" + comFun.CHANNEL , tPath)   # 修改目标路径的文件，而不是本地文件
             print command + pNewResPath
             # "wsl sed -i s/new/ccc/g ./file.txt"
             os.system(command + pNewResPath)
@@ -305,8 +303,8 @@ class packageImage:
     def copyOutPutFile(self):
         folderFiles = []  # 存储所有的json文件
         comFun.initPathFiles(comFun.PACKAGEOUTPUT, folderFiles)
-        self.copyFilesToPath(folderFiles, comFun.TARGETPATH + "res_package") #
-        self.copyFilesToPath(folderFiles, comFun.MOVETOCODEPATH + "res_package")  #
+        self.copyFilesToPath(folderFiles, comFun.TARGETPATH + comFun.RESPACKAGE) #
+        # self.copyFilesToPath(folderFiles, comFun.MOVETOCODEPATH + "res_package")  #
 
     # 将被移动的大图和其他资源拷贝到应用目录
     def copyMoveRes(self):
@@ -314,12 +312,11 @@ class packageImage:
             folderFiles = []  # 存储所有的json文件
             comFun.initPathFiles(folderpath, folderFiles)
             self.copyFilesToPath(folderFiles , comFun.TARGETPATH + folderpath)
-            self.copyFilesToPath(folderFiles, comFun.MOVETOCODEPATH + folderpath)
+            # self.copyFilesToPath(folderFiles, comFun.MOVETOCODEPATH + folderpath)
 
     # 将文件列表复制到指定目录
     def copyFilesToPath(self , files , path):
-        comFun.removeDir(path)
-        os.mkdir(path, 0o777)
+        comFun.createNewDir(path)
         for filepath in files:
             if not os.path.isabs(filepath):
                 filepath = os.path.abspath(filepath)

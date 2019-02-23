@@ -10,12 +10,27 @@ import stat
 import collections
 import time
 ##################################################################################################################
+
+BigFileSie              = 1024 * 100                                #100k以上即认为是大文件
+PNG_MAX_SIZE            = 1024                                      # 输出的图片大小,大多数平台支持的大小
+PNG_MAX_RES             = 512                                       # 判断是否为大尺寸资源
+UNPACKAGENUM            = 3                                         # 图片数量达到打包的张数
+
+RESFOLDER               = "res_other"
+RESPACKAGE              = "res_package/"
+##################################################################################################################
 # json UI 文件
-REALPATH                = "D:/Svn_2d/S_GD_Heji/res/hall/"           # 资源的具体位置和json的位置相关
+REALPATH                = "D:/Svn_2d/S_GD_Heji/res/hall/"                           # 资源的具体位置和json的位置相关
+FILEPATH                = "D:/Svn_2d/S_GD_Heji/res/"                                # 游戏中的资源位置，并进行去重和重命名处理
+SEARCHJSONPATH          = "D:/Svn_2d/UI_Shu/Json"                                   # 获取JsonUI文件的路径，只是竖版的大厅部分json
+TARGETPATH              = "D:/Svn_2d/UI_Shu/Resources/"                             # 打包资源后输出路径
+OUTPUTPATH              = "D:/Python_FileDispose/newJson/"                          # 修改后的Json存储路径
+NEWLUAPATH              = "D:/Python_FileDispose/newLua/app"                        # 修改后的Lua存储路径
+MOVETOCODEPATH          = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"        # 资源在代码中的路径
+SEARLUAPATJ             = "D:/Svn_2d/S_GD_Heji/src/app"                             # 获取Lua文件的路径，只是大厅的Lua文件
+UIPROJECT               = "D:/Svn_2d/UI_Shu/"
 
-FILEPATH                = "D:/Svn_2d/S_GD_Heji/res/"                # 获取游戏中的资源位置，并进行去重和重命名处理
-
-CHANNEL                 = 1                                                  # 0 对应demo，1对应TEST，3对应Project
+CHANNEL                 = "IOS_Audit/"
 
 if CHANNEL              == 1:
     SEARLUAPATJ         = "D:/Svn_2d/S_GD_Heji/src/app"                      # 获取Lua文件的路径，只是大厅的Lua文件
@@ -24,67 +39,60 @@ if CHANNEL              == 1:
     NEWLUAPATH          = "D:/Python_FileDispose/source/S_GD_Heji/src/app"   # 修改后的Lua存储路径
     MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/" # 资源在代码中的路径
     SEARCHJSONPATH      = "D:/Svn_2d/CoCoStuio/vertical/hall/Json"           # 整理后的Ui工程
-elif CHANNEL == "IOS_Audit":
-    TARGETPATH          = "D:/Svn_2d/CoCoStuio/vertical/hal_packres/Resources/"   # 打包资源后输出路径
-    OUTPUTPATH          = "D:/Svn_2d/CoCoStuio/vertical/hal_packres/Json/"        # 修改后的Json存储路径
-    NEWLUAPATH          = "D:/Python_FileDispose/source/S_GD_Heji/src/app"        # 修改后的Lua存储路径
-    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"      # 资源在代码中的路径
-    SEARCHJSONPATH      = "D:/Svn_2d/CoCoStuio/vertical/hall/Json"                # Ui工程中json文件的路径
-else:
-    SEARCHJSONPATH      = "D:/Svn_2d/UI_Shu/Json"                                   # 获取JsonUI文件的路径，只是竖版的大厅部分json
-    TARGETPATH          = "D:/Svn_2d/UI_Shu/Resources/"                             # 打包资源后输出路径
-    OUTPUTPATH          = "D:/Python_FileDispose/newJson/"                          # 修改后的Json存储路径
-    NEWLUAPATH          = "D:/Python_FileDispose/newLua/app"                        # 修改后的Lua存储路径
-    MOVETOCODEPATH      = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"        # 资源在代码中的路径
-    SEARLUAPATJ         = "D:/Svn_2d/S_GD_Heji/src/app"                             # 获取Lua文件的路径，只是大厅的Lua文件
+    UIPROJECT           = "D:/Svn_2d/CoCoStuio/vertical/hall/"
+elif "IOS_Audit/"       == CHANNEL:
+    UIPROJECT           = r"D:\Svn_2d\IOS_TiShen\UIProject\majiang/"
+    FILEPATH            = r"D:\Svn_2d\IOS_TiShen\Project\res/"                   # 代码中res路径
+    SEARCHJSONPATH      = r"D:\Svn_2d\IOS_TiShen\UIProject\majiang\Json/"       # UI工程json路径
+    REALPATH            = r"D:\Svn_2d\IOS_TiShen\Project\res\hall/"             # 用于跟Json中路径拼接得到真实路径
+    TARGETPATH          = r"D:\Svn_2d\IOS_TiShen\UIProject\majiang\Resources/"  # 打包资源后输出路径
+    OUTPUTPATH          = SEARCHJSONPATH                                        # 修改后的Json存储路径
+    SEARLUAPATJ         = r"D:\Svn_2d\IOS_TiShen\Project\src\app"               # 获取Lua文件的路径，只是大厅的Lua文件
+    NEWLUAPATH          = SEARLUAPATJ                                           # 修改后的Lua存储路径
+    MOVETOCODEPATH      = r"D:\Svn_2d\IOS_TiShen\Project\res\hall/"              # 资源在代码中的路径
+
 
 ##################################################################################################################
 
-BigFileSie              = 1024 * 100                                #100k以上即认为是大文件
-PNG_MAX_SIZE            = 1024                                      # 输出的图片大小,大多数平台支持的大小
-PNG_MAX_RES             = 512                                       # 判断是否为大尺寸资源
-UNPACKAGENUM            = 3                                         # 图片数量达到打包的张数
+OUTPUTTARGET            = "D:/Python_FileDispose/" + CHANNEL
+COPYPATH                = OUTPUTTARGET + "res_other"                 # 改名去重后的资源存储路径
+PACKAGESOURCE           = OUTPUTTARGET + "packSource/"               # 需要进行打包的文件夹和资源
+PACKAGEOUTPUT           = OUTPUTTARGET +  RESPACKAGE                 # 打包成资源路径
 
-COPYPATH                = "D:/Python_FileDispose/real_res"          # 改名去重后的资源存储路径
-OUTPUTTARGET            = "D:/Python_FileDispose/"
-
-PACKAGESOURCE           = "D:/Python_FileDispose/packageRes/"       # 需要进行打包的文件夹和资源
-PACKAGEOUTPUT           = "D:/Python_FileDispose/packagePList/"     # 打包成Plist后的存储理解
-
-RESFOLDER               = "real_res"
-
-##################################################################################################################
 # 1 totalResDict
-DICTFILE                = "./output/1_FileDict.json"
-SIZEFILE                = "./output/1_FileSize.json"
-MD5OLD_NEW              = "./output/1_NewFilesInfo.json"             # 包含新旧两种文件的信息和数据
-FILETYPENUM             = "./output/1_FileTypeNum.json"              # 存储文件类型和对应的文件数量
-NEWMD5                  = "./output/1_NewMd5.json"
+DICTFILE                = OUTPUTTARGET + "output/1_FileDict.json"
+SIZEFILE                = OUTPUTTARGET + "output/1_FileSize.json"
+MD5OLD_NEW              = OUTPUTTARGET + "output/1_NewFilesInfo.json"             # 包含新旧两种文件的信息和数据
+FILETYPENUM             = OUTPUTTARGET + "output/1_FileTypeNum.json"              # 存储文件类型和对应的文件数量
+NEWMD5                  = OUTPUTTARGET + "output/1_NewMd5.json"
 
 # 2 JsonFileRes 其他的非大厅部分的json，它拼接的路径就不是res/hall了
-JSONHAVARES             = "./output/2_JsonRes.json"
-COLLATINGJSON           = "./output/2_CollatingJsonRes.json"            # 整理之后的json资源
-REFERENCEFILE           = "./output/2_Reference.json"
-NOTFOUND                = "./output/2_NotFound.json"
+JSONHAVARES             = OUTPUTTARGET + "output/2_JsonRes.json"
+COLLATINGJSON           = OUTPUTTARGET + "output/2_CollatingJsonRes.json"            # 整理之后的json资源
+REFERENCEFILE           = OUTPUTTARGET + "output/2_Reference.json"
+NOTFOUND                = OUTPUTTARGET + "output/2_NotFound.json"
 
 # 3 packageImage
-PLISTINFO               = "./output/3_PlistInfo.json"                   # 合图后的plist包含的图片信息。
-PLISTMD5                = "./output/3_PlistMd5.json"                    # 图片md5值对应存储的plist文件
-TYPEPATHS               = "./output/3_ResTypePaths.json"                # 分类后对应的新路径和md5值，对不进行大图合成的资源进行分类存放
-UNPACKREPEATRES         = "./output/3_UnPackRepeatRes.json"
-MOVERECORD              = "./output/3_MoveRecord.json"                  # 记录被使用了的资源
+PLISTINFO               = OUTPUTTARGET + "output/3_PlistInfo.json"                   # 合图后的plist包含的图片信息。
+PLISTMD5                = OUTPUTTARGET + "output/3_PlistMd5.json"                    # 图片md5值对应存储的plist文件
+TYPEPATHS               = OUTPUTTARGET + "output/3_ResTypePaths.json"                # 分类后对应的新路径和md5值，对不进行大图合成的资源进行分类存放
+UNPACKREPEATRES         = OUTPUTTARGET + "output/3_UnPackRepeatRes.json"
+MOVERECORD              = OUTPUTTARGET + "output/3_MoveRecord.json"                  # 记录被使用了的资源
 
 # 4 fileChange
-CHANGERESULT            = "./output/4_UIChange.json"
+CHANGERESULT            = OUTPUTTARGET + "output/4_UIChange.json"
 
 # 5 code res
-CODERESMESSAGE          = "./output/5_CodeChange.json"
+CODERESMESSAGE          = OUTPUTTARGET + "output/5_CodeChange.json"
 
 # 6 tidy
-TIDYRECORD              = "./output/6_Tidy.json"
+TIDYRECORD              = OUTPUTTARGET + "output/6_Tidy.json"
 
 ##################################################################################################################
 def RecordToJsonFile(path , data):
+    dir , basename = os.path.split(path)
+    if not os.path.isdir(dir):
+        os.makedirs(dir, 0o777)
     file_stream = open(path, "w+")
     file_stream.write(json.dumps(data, ensure_ascii=False, encoding="utf -8", indent=4))
     file_stream.close()
@@ -216,6 +224,8 @@ def deleteDirByStr(str , paths):
             print nPath
             os.chmod(nPath, 0o777);
             os.remove(nPath)
+# shutil.copytree(r"D:\Svn_2d\CoCoStuio\vertical\hall", r"D:\Python_FileDispose\source\UI_Shu")
+# comFun.deleteDirByStr(r".svn", r"D:\Svn_2d\CoCoStuio\vertical\hal_packres")
 
 # 从 sourcepath 移动 包含type的文件到dirPath,是否保留原有的路径结构
 def moveTypeFileToTarget(sourcePath , type , dirPath):
@@ -231,12 +241,17 @@ def moveTypeFileToTarget(sourcePath , type , dirPath):
         if not re.search(type,path):
             continue
         shutil.copyfile(path , dirPath + "/" + os.path.basename(path))
+# comFun.moveTypeFileToTarget( r"D:\Svn_2d\IOS_TiShen\UIProject\majiang\Export", ".csb" , r"D:\Python_FileDispose\source\S_GD_Heji\res\hall")
 
 # 创建一个新路径
 def createNewDir(dirpath):
+    if not os.path.isdir(dirpath):
+        os.makedirs(dirpath, 0o777)
+        return
     removeDir(dirpath)
-    dir, _ = os.path.split(dirpath)
-    os.chmod(dir, 0o777)
+    dir = os.path.dirname(dirpath)
+    if os.path.isdir(dir):
+        os.chmod(dir, 0o777)
     os.mkdir(dirpath, 0o777)
 
 # 复制文件夹到指定文件夹，目标文件夹必须是不存在的路径

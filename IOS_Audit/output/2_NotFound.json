@@ -1,0 +1,64 @@
+{
+    "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": [
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/MAHJONGGAME.png"
+    ], 
+    "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallLogin.json": [
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/MAHJONGGAME.png"
+    ], 
+    "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallUpdate.json": [
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/MAHJONGGAME.png"
+    ], 
+    "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/RankingAddressNameInfo.json": [
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/baiminbg.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/headbg.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/close.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/text_bg2.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/text_bg2.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/text_bg2.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/upload.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/gray_bg.png"
+    ], 
+    "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/RankingConfirmInfo.json": [
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/baiminbg.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/close.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/cancelbtn.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/upbutton.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/gray_bg.png"
+    ], 
+    "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/RankingInfo.json": [
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/gray_bg.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/RankingTop.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/pvpnode.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/close.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/black_bg.png"
+    ], 
+    "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/RankingMatch.json": [
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/pvpbgimage.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/xiangqing.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/baiming.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/getWard.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/close.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/black_bg.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/black_bg.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/gray_bg.png"
+    ], 
+    "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/RankingNode.json": [
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/first.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/headbg.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/baiminbg.png"
+    ], 
+    "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/RankingRewardInfo.json": [
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/close.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/ranking_1.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/ranking_line.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/baiminbg.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/gray_bg.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/ranking_3.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/ranking_2.png"
+    ], 
+    "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/RankingSpecification.json": [
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/gray_bg.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/close.png", 
+        "D:/Svn_2d/IOS_TiShen/Project/res/hall/baiminbg.png"
+    ]
+}

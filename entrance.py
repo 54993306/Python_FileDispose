@@ -1,8 +1,5 @@
 
 # -*- coding: UTF-8 -*-
-TEST = False
-# TEST = True
-#
 import os
 import json
 import re
@@ -19,28 +16,34 @@ import tidyRes
 from PIL import Image
 import fileDataHandle as FD
 
-if not TEST:
-    # 去重和生成文件信息
-    totalResDict.totalRes() #初始化所有的资源信息
+TEST = False
+# TEST = True
+#
+if __name__ == "__main__":
+    if not TEST:
+        print ""
+        # 去重和生成文件信息
+        # totalResDict.totalRes() #初始化所有的资源信息
 
-    # 对json中的资源做处理
-    # jsonFileRes.jsonRes()  # 初始化所有json中包含的资源信息
+        # 对json中的资源做处理
+        # jsonFileRes.jsonRes()  # 初始化所有json中包含的资源信息
 
-    # 对UI中使用的资源进行5小图合并大图
-    # packageImage.packageImage()
+        # 对UI中使用的资源进行5小图合并大图
+        # packageImage.packageImage()
 
-    # 修改json文件为使用大图
-    # fileChange.replaceImage()
+        # 修改json文件为使用大图
+        # fileChange.replaceImage()
 
-    # 初始化代码中包含的资源信息
-    # codeRes.codeRes()
+        # 初始化代码中包含的资源信息
+        # codeRes.codeRes()
 
-    # 整理日志和资源
-    tidyRes.tidyRes()
-else:
-    print ""
-    # D:\Python_FileDispose\res_csb
-    # D:\Svn_2d\CoCoStuio\vertical\hal_packres\Export
-    # comFun.deleteDirByStr(r".svn", r"D:\Svn_2d\CoCoStuio\vertical\hal_packres")
-    # shutil.copytree(r"D:\Svn_2d\CoCoStuio\vertical\hall", r"D:\Python_FileDispose\source\UI_Shu")
-    comFun.moveTypeFileToTarget( r"D:\Svn_2d\CoCoStuio\vertical\hal_packres\Export", ".csb" , r"D:\Python_FileDispose\source\S_GD_Heji\res\hall")
+        # 整理日志和资源
+        tidyRes.tidyRes()
+    else:
+        print ""
+        # D:\Python_FileDispose\res_csb
+        # D:\Svn_2d\CoCoStuio\vertical\hal_packres\Export
+        # comFun.deleteDirByStr(r".svn", r"D:\Svn_2d\CoCoStuio\vertical\hal_packres")
+        # shutil.copytree(r"D:\Svn_2d\CoCoStuio\vertical\hall", r"D:\Python_FileDispose\source\UI_Shu")
+
+        # print os.path.dirname(r"D:\Python_FileDispose\res_csb")

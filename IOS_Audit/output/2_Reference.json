@@ -1,0 +1,2547 @@
+{
+    "e818da511ec616a003e21ec21c4c45ef": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004260.png", 
+        "total": 4, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/about_us.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "311fe2c8502079ceba4013671293c074": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/smallbg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004434.png", 
+        "total": 4, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/about_us.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "03027e30024c04bf392bde328087727b": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/abouttitle.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004395.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/about_us.json": 1
+        }
+    }, 
+    "863879ce150631ca8a8d596cd237491e": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/x.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004445.png", 
+        "total": 5, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/about_us.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/redPacket.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "cafa69cdc042f7ecea6dfed299612f73": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/font/fangzhengcuyuan.TTF", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1016001.TTF", 
+        "total": 67, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/about_us.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 45, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/adverview_page_heng.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/area_item.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 29, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/chat.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/chat_txt_item.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/city_item.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/club.json": 7, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyConfirmWnd.json": 7, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeAWnd.json": 7, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeBWnd.json": 10, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyRecordWnd.json": 12, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyWnd.json": 12, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubJoinedWnd.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubListView.json": 11, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 28, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMemberTypeWnd.json": 11, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 24, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubSwitchCreateRoomWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/common_dialog.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/common_tips.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/contact_item.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/contact_us.json": 6, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/duty.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_item.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_panel.json": 7, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCode.json": 21, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 13, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 27, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 39, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallLogin.json": 9, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallUpdate.json": 6, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/helpWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall.json": 9, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_item.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_playerinfo.json": 16, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_record.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 14, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 36, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/pay_select_type.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 29, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/player_position_info.json": 19, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/poplist.json": 10, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayitem.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayment.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/radio_item.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/radio_item_panel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/real_name.json": 13, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_dialog.json": 26, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_match_dialog.json": 24, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/recruit_dialog.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/redpacket_panel.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city_confirm_wnd.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_province_city.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 8, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond1.json": 7, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/video_layer.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/wechat_path.json": 6, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 9, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing_friend_item.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing_pro_item.json": 2
+        }
+    }, 
+    "669b870a64a5924b0a9792373faf1efb": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/L2_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004579.png", 
+        "total": 29, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/club.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyConfirmWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeBWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyRecordWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubListView.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMemberTypeWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubSwitchCreateRoomWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/common_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/common_tips.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/contact_us.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/duty.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/helpWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/pay_select_type.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayment.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/real_name.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_dialog.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_match_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_province_city.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond1.json": 1
+        }
+    }, 
+    "0ce8db96e54290f29c9fabadcb94d0de": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/Common/transparent_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004533.png", 
+        "total": 47, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/adverview_page_heng.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/area_item.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/club.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyConfirmWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeAWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeBWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyRecordWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubJoinedWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubListView.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMemberTypeWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 7, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubSwitchCreateRoomWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/CommonDialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/common_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/duty.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_item.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_panel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 8, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallLogin.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/helpWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_playerinfo.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/pay_select_type.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/player_position_info.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/poplist.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayment.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/real_name.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_dialog.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_match_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/recruit_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city_confirm_wnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_province_city.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond1.json": 1
+        }
+    }, 
+    "bdb98bef438f1b233d960e2f42f62e48": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/x.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004605.png", 
+        "total": 41, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/adverview_page_heng.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/club.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyConfirmWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeAWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeBWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyRecordWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubJoinedWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubListView.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMemberTypeWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubSwitchCreateRoomWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/CommonDialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/common_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/contact_us.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/duty.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/helpWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_playerinfo.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/pay_select_type.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/poplist.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayment.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/real_name.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_dialog.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_match_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/recruit_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city_confirm_wnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_province_city.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond1.json": 1
+        }
+    }, 
+    "b4de5d043b489adbe7f889beb84020a4": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/line_an.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004581.png", 
+        "total": 41, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/adverview_page_heng.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/club.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyConfirmWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeBWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyRecordWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubJoinedWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubListView.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMemberTypeWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubSwitchCreateRoomWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/common_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/contact_us.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/duty.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_item.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_panel.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/helpWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_playerinfo.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_record.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/pay_select_type.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/poplist.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayitem.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayment.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/real_name.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_dialog.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_match_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/recruit_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city_confirm_wnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_province_city.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond1.json": 1
+        }
+    }, 
+    "65941bb4f7ad2fd665234cafe13b47dd": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_gree.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004550.png", 
+        "total": 42, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 6, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/adverview_page_heng.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/club.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyConfirmWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeAWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeBWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubJoinedWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubListView.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMemberTypeWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/CommonDialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/common_dialog.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/contact_us.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/duty.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_panel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCode.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallLogin.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_item.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_playerinfo.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_record.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayment.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/real_name.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_dialog.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_match_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/recruit_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/redpacket_panel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city_confirm_wnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_province_city.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond1.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/wechat_path.json": 1
+        }
+    }, 
+    "63626f36da14b048b6820876eebb8fb4": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/L1_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004578.png", 
+        "total": 25, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/adverview_page_heng.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeAWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubJoinedWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/CommonDialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/contact_item.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/contact_us.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_panel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_playerinfo.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/poplist.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayment.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/recruit_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/redpacket_panel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city_confirm_wnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_province_city.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/wechat_path.json": 1
+        }
+    }, 
+    "f5060677f0d4c4e9d530070bdad15000": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_fx1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004573.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 2
+        }
+    }, 
+    "e25469619f02806dcf252138e21a2521": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/diamond_L.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004558.png", 
+        "total": 3, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayitem.json": 1
+        }
+    }, 
+    "4cfaedcf0cd2729944aeb069720a4e33": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/yuanbao.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004606.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 3
+        }
+    }, 
+    "21a87e917aac300c25504f0a1f3c851a": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_drop_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004549.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 2
+        }
+    }, 
+    "6ac9d5547324ba7db8fb64df01878622": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn-orange.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004542.png", 
+        "total": 7, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyConfirmWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/contact_us.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 1
+        }
+    }, 
+    "819cc4ffd377b94aa94bb0a687dc673a": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/panel_wight.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004590.png", 
+        "total": 12, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 9, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/club.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeAWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeBWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/CommonDialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 6, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayment.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/real_name.json": 2
+        }
+    }, 
+    "7e3334a75acb0f7defebb4ea8eaa35da": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_bg_redTips.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004566.png", 
+        "total": 3, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 9, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 6
+        }
+    }, 
+    "3f32f99888bddb6608f07e35ddc796c9": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_blue.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004546.png", 
+        "total": 16, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/bindPhone.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/club.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/contact_item.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCode.json": 10, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayitem.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/redpacket_panel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1
+        }
+    }, 
+    "649ff6987f138afc26d2f5cbd3279dab": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_bindWechat.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004568.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 1
+        }
+    }, 
+    "4bb071975aee6c6428702c36abd2e141": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_done.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004570.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 1
+        }
+    }, 
+    "87b49318e5f18bcf4fca2cfbf8158f12": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_grey.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004551.png", 
+        "total": 9, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/common_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_item.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_record.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/real_name.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city_confirm_wnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_province_city.json": 6
+        }
+    }, 
+    "efcbb62fe10c29698c2bf2b8b318e5b9": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/play_select_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004216.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 1
+        }
+    }, 
+    "4c9bd76d0b706d2968bccec697f988bf": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/play_select.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004215.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/accountPanel.json": 1
+        }
+    }, 
+    "b0e392f03d10e80c25657cacbe4b6def": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/img_login_add_02.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004672.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/adverview_page_heng.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/recruit_dialog.json": 1
+        }
+    }, 
+    "27af0949b8b44f2a21893a062749c30c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/img_add_frame.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004668.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/adverview_page_heng.json": 1
+        }
+    }, 
+    "616ac621b80137e0e04db621e4e899f5": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/panel_black_2.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004588.png", 
+        "total": 7, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/adverview_page_heng.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyRecordWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_item.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_playerinfo.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_record.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_dialog.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 1
+        }
+    }, 
+    "0a722e4014a1eca04123daf159107705": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_tab_select.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004553.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/area_item.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1
+        }
+    }, 
+    "7b14aa348be075c2917326e5a0e98092": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/friendRoom/mjOver/over_scale_bg1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004134.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/chat.json": 1
+        }
+    }, 
+    "f8aa3f2e26acc77b9f9f88029e285135": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/bg6_30x30.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004402.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/chat.json": 1
+        }
+    }, 
+    "4751e6e464a44c662911c00d39ae0024": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/bg2.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004399.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/chat.json": 1
+        }
+    }, 
+    "8976e84762353a2e7ed122502c2bfd30": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/bg3.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004400.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/chat.json": 1
+        }
+    }, 
+    "6013d3b40ad875dc14b83864c03bbbe0": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/gameCommon/chat/btn_send.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004504.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/chat.json": 1
+        }
+    }, 
+    "636690f6ed264d05b8004d2658c439ee": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/bg4.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004401.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/chat.json": 1
+        }
+    }, 
+    "e8410e251857d4228543f41712ada500": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/gameCommon/chat/chat_item_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004505.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/chat_txt_item.json": 1
+        }
+    }, 
+    "374ec915696b87be67f5e6fea99d549c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/radio_yellow_box_1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004593.png", 
+        "total": 4, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/city_item.json": 8, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 9, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 6, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "46f83eaa89b5eae0aa736f93fc10453e": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/btn_a_on.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004648.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/city_item.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 4
+        }
+    }, 
+    "36a9a22c9211018930e472cbe624aafb": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/panel_black.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004587.png", 
+        "total": 24, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/club.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyConfirmWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeAWnd.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeBWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyWnd.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubListView.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMemberTypeWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/CommonDialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/contact_us.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/duty.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_panel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/helpWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/pay_select_type.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/player_position_info.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayment.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/real_name.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 1
+        }
+    }, 
+    "d90bbbfb916038f7b07f9ca7ac0fbcfd": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/cut_off_line.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004556.png", 
+        "total": 11, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeAWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubJoinedWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/CommonDialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayment.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_dialog.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_match_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 1
+        }
+    }, 
+    "af7bbc6e6063f7953a926eefae4986ef": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_deepblue.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004548.png", 
+        "total": 15, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeAWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyModeBWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubJoinedWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubListView.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMemberTypeWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/CommonDialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_panel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallLogin.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayment.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond1.json": 2
+        }
+    }, 
+    "408bfbef6bf5689d418c47426ddc6ab4": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/club/tag_refuse.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004392.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyRecordWnd.json": 1
+        }
+    }, 
+    "5f03862d8be013f13280bba440a15406": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/club/teg_examine.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004393.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyRecordWnd.json": 1
+        }
+    }, 
+    "83be8674907be5dc42953c6295c05b12": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/club/tag_pass.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004391.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubApplyRecordWnd.json": 1
+        }
+    }, 
+    "442d1f6dba77f6cf501edfacbd631cc9": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_help.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004404.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubJoinedWnd.json": 1
+        }
+    }, 
+    "2e89157871662994eb4012ef5dcc5212": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/bottom_bg_zhe.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004541.png", 
+        "total": 7, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubJoinedWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubSwitchCreateRoomWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_panel.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_match_dialog.json": 1
+        }
+    }, 
+    "013d6eb145d011319b4b3b135414922a": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_panel_entrance.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004407.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubListView.json": 1
+        }
+    }, 
+    "91ad5b3819b9e021301d7196757c5177": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_panel_add.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004406.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubListView.json": 1
+        }
+    }, 
+    "2201b5fef456979063a0f81677aec28c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_panel_forbid.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004408.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubListView.json": 1
+        }
+    }, 
+    "c59999768b4e957cb955489a6efeab31": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/drop_down_box_content_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004089.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 2
+        }
+    }, 
+    "f658d79a61fd9d74b6644da045737810": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/handle_down.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004210.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 2
+        }
+    }, 
+    "560edb616b4450c1dc1a7b185e540eec": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/handle_up.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004211.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 2
+        }
+    }, 
+    "5a822568ae0153dd6dcd169d88be6f5a": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/radio_yellow_btn.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004594.png", 
+        "total": 3, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "9f0452f71fc408cb9219b1f281e41ae2": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/Common/defaultCircleHead.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004530.png", 
+        "total": 11, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 3, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/player_position_info.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/poplist.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_dialog.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_match_dialog.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 1
+        }
+    }, 
+    "59fb96bd8575ee07c647f055fd9d5fb8": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/mainCircleHeadFrame.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004638.png", 
+        "total": 7, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_dialog.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_match_dialog.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 1
+        }
+    }, 
+    "e186581b98be0e3f1eb01459f70ed398": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/room_owner.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004596.png", 
+        "total": 6, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_dialog.json": 5, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_match_dialog.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 1
+        }
+    }, 
+    "42c722f7ce59265002a666a34bf3988c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/tag_winner.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004436.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubMatchRecord.json": 4
+        }
+    }, 
+    "6ac9e264bd32da625fab519434ff8e5b": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/head_btn_add.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004421.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "831ca7c22b03d3f729c182f5ef153a62": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_info.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004552.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "ba347df6c5f9e58c03fece186252467c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/refreshTag.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004428.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/clubRoomListWnd.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "94fa42231c1e1ab370cd536423506e2b": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/game_panel_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004416.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/common_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/player_position_info.json": 1
+        }
+    }, 
+    "630a7c61df25fb33a1e8a2ed31f2c9b8": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/tips.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004604.png", 
+        "total": 3, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/contact_us.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 1
+        }
+    }, 
+    "f5e1e734889a8616fc2be84c3bfab9a5": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/mail.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004585.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_item.json": 1
+        }
+    }, 
+    "f6244e431b65f7552622b2749a80ffab": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/gift.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004562.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_item.json": 1
+        }
+    }, 
+    "9b903fe93923c26a83e6af4f1312ed51": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_back.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004545.png", 
+        "total": 3, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_panel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1
+        }
+    }, 
+    "1a8a18b6d9a9a3980c3dc2e8b81a6bcd": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/diamond.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004557.png", 
+        "total": 3, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/email_panel.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond1.json": 1
+        }
+    }, 
+    "ef8656036d1bf090d24f0690d4c8a90a": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/gameCommon/face/face_1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004523.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/face_item.json": 1
+        }
+    }, 
+    "42e8c64f9e6e3c079823cab07b84aaa0": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/L3_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004580.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1
+        }
+    }, 
+    "7c8cd7138d055d8be392f07858582ab6": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/btn_cancel_n.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004261.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1
+        }
+    }, 
+    "c088a3e8bb000030be67e4952e0c69c0": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/newer/mask_create.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004646.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1
+        }
+    }, 
+    "460ac48f11f08b060c222d438439bc2b": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/newer/tips_point.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004688.png", 
+        "total": 4, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1
+        }
+    }, 
+    "38e1632d46880bd165fa50d235cdfea0": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/newer/tips_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004687.png", 
+        "total": 4, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1
+        }
+    }, 
+    "ec742e8f74a55727388f7f347f4b2a12": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/newer/btn_over.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004686.png", 
+        "total": 4, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 1
+        }
+    }, 
+    "8f3968ff493a764965bbd14b3d69240d": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/broken_line1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004477.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 4
+        }
+    }, 
+    "d2d6ce500ac742d57b57a6f2643a6859": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/black_bj.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004475.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1
+        }
+    }, 
+    "fc5e04e3ff81e089f26dea4d72b1dbbd": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/broken_line.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004476.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 4
+        }
+    }, 
+    "8a66f9b4ea8cb797290d987f54b1e274": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/text_tip_ddz.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004481.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1
+        }
+    }, 
+    "cc8619a07cd271a4e384241026c688df": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/arrow3.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004474.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1
+        }
+    }, 
+    "52b2d5bde2d09c27507fd0984a09340e": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/img_role.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004480.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 1
+        }
+    }, 
+    "78228ecd01e1a1041664842a78559bf5": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/btn_ok.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004478.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomCreate.json": 3
+        }
+    }, 
+    "06dcd0153c1516c8aa17a55fcd465b19": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/games/game_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004524.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 1
+        }
+    }, 
+    "2206cbfccca6df39b25624dfe0bc239e": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_yaoqing.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004410.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 1
+        }
+    }, 
+    "aa3a08a3b5fedda01894c6b0fcd66c6f": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_jieshan.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004405.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 1
+        }
+    }, 
+    "22c7e09c6ff48c395a00dc0637a006f4": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/games/menu_btn_yuyin.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004526.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 1
+        }
+    }, 
+    "1422bd3c44687c2ff596b100cc1f7f76": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/friendRoom/mic/0.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004110.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 1
+        }
+    }, 
+    "48288a9ce97d185a47a2a957659d2a19": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/friendRoom/text_offline.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004182.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 4
+        }
+    }, 
+    "99d65918e9e298a80965974269d375b6": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/head_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004052.png", 
+        "total": 3, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/player_position_info.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing_friend_item.json": 1
+        }
+    }, 
+    "3c28546d11948e9922cd8f553dd2d2ea": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/friendRoom/speaking.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004181.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 4
+        }
+    }, 
+    "abcf626af9249052157687c6653cfe48": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/default_head_2.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004051.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 4, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing_friend_item.json": 1
+        }
+    }, 
+    "b275931cac37fdff39efc040f1929a50": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/roomMain.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004488.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 4
+        }
+    }, 
+    "e1c962b780c915386717064453f23bcf": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/chat_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004009.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 4
+        }
+    }, 
+    "d3d76788b1fa063abf2129e19f341fd9": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/games/menu_btn_chat.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004525.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/friendRoomScene.json": 1
+        }
+    }, 
+    "96b1dfbd7c54f025700983ff121ef3c1": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/main/adBoard_leftNpc.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004537.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "349648982bb1e43cc766bd243296f937": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/main/adBoard_rightNpc.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004538.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "1ea247ad067ab946fac37f42a5d15cb3": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/main/adBoard.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004536.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "1b05ce53dabd931b35568fa68031b953": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/ad01.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004658.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "3d9325db3e55e90c8b6a740ebdf9c50c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004540.png", 
+        "total": 3, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallLogin.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallUpdate.json": 1
+        }
+    }, 
+    "47fe4d4b3ad2f393783ff6f59da7a7d7": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/btn_add.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004661.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "dff1baa3991054c8b9a081c3e287b33e": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/img_coin.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004669.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "5921304bee810dd378246507f121d1da": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/img_money_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004673.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "53b58c78bb8c060dae0d172eb9259625": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/more.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004639.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "ea62107a076bfeef7bcccc8366a1e82d": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/TAG1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004641.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "f467cf12490898cc3632167dee471b4f": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/img_shopbg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004637.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "d72b6482c51c952ac77d3bb9d8bda29a": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/fangka_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004634.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "168093b8e6041a32670c8c48b9662d76": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/enImage/diamond2.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004458.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "321f59c2fb280ace920a84815dd47eb4": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/diamound_free.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004633.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "7ad5156c0122a8b7d6a8703789296fca": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_new.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004625.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "3eb5b8c037513ed5b0b1cb9c43bf9953": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_join.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004621.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "be88688e8c45359fd43070b71cea15f0": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_club.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004614.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "ae634710650032d3f3b4c84ca0e4d3c0": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/btn_match1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004663.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "1ff263b60e6fac7482eb9bbc5f92bc23": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/btn_match2.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004664.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "9cd7c80c9fb040795817106d68dac00a": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/btn_newer.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004665.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "3ee25eae803211398aece86bdda7ade8": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_match.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004624.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "b08086a0ddfbcd3d9a5941453151fd95": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_gold.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004620.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "7f3dc562f2554060eab3bfa37a07bf56": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_ahmj.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004609.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "22ab632ecb3dfdba139d412077d16ee9": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_ddz.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004615.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "51b6e2daa3c91f77675f41fa6db7f677": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_pdk.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004627.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "98db0565fac56055275e721a3fc2fcaf": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/Advertisement.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004608.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "f7375dedf9859f020fd87bf6fe36974b": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_bag.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004610.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "31ee13d77cada7127c2be054b06a1846": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/record.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004640.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "c85bc1b8cd52c024c91c8ba457bc9500": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_record.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004628.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "551b5442d01fad053c9bc3c26ed22aa4": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/Activity.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004607.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "1506ac2333ef45b918f0742d27a21512": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_exchange.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004617.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "8014180b42390f9dc73a6565cc995765": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_diamond.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004616.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "7bd560ee38187b5733b092db1d4dfa27": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_main_exchange.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004623.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "3233b0defc02a114e687479b0b936150": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/player_head.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004591.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 1
+        }
+    }, 
+    "70521baa420777f2aabad0af1a9b939d": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/taskicon.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004683.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "fc44e4f6c3ceb455e993295cc118f454": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_share.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004632.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "e23bebcf7d787321f3cf9b066f27acec": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_box_unselect.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004613.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 2
+        }
+    }, 
+    "2e47780e5b478a6ef3b393d6d477646e": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_box.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004612.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "fe12c25cc0432080a3c4645cb6e7bf5d": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_recruit_agency.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004629.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "f117de356597b3b8677c743739846ced": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_bind_phone.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004611.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "d82c8a160e629810892b98bf019d25b9": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_setting.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004631.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "c552837e971199a69903ea428b8b796c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/icon_rule.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004636.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "612a387ecf019fd5f249f2149825b537": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_mail.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004622.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "a8a31d4a7068b02f14da890b577f9363": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_notice.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004626.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "0cdfc5c36032c3a6dd13697048972c6f": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/btn_service.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004630.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "f5a237d2d5600917bba66692a03f28b2": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/Btn_accountManage.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004544.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "58160d3322ff2861827b272070a8573d": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/icon_back.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004635.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "78c1f897921a207a167e32216e5111f9": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/pvpMatch.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004679.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "c7030f8bc939e05e3cff2da9418f4262": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/newer/mask_hall.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004539.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall.json": 1
+        }
+    }, 
+    "12e4eef192c960a1bcc008d24b7ce5ab": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_finish.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004572.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 1
+        }
+    }, 
+    "37e997bbad425a2aed3cdb3cb534b895": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_switchAccount.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004574.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 1
+        }
+    }, 
+    "19b117d3762f7a8df6cde983d828303f": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_changePhone.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004569.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 1
+        }
+    }, 
+    "4e4b3ead2526bf6f81376c455b31c7b8": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_editCode.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004571.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallBind.json": 1
+        }
+    }, 
+    "d4f2f8d080d37afbb5297579d85b3787": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/loginUI/img_txt_weichat.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004535.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallLogin.json": 1
+        }
+    }, 
+    "34184ecc500226ef15111c2d508e8aea": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/loginUI/image_numLogin.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004534.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallLogin.json": 1
+        }
+    }, 
+    "1d94978041f7ad7d92fbc609d6044e80": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/check_box.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004554.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallLogin.json": 2
+        }
+    }, 
+    "14b1be3526dfcd9137dd1284a4e799f8": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/check_select.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004555.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallLogin.json": 1
+        }
+    }, 
+    "2ea4cde8048899a7cd257a9b50ac136c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/loading_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004583.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallUpdate.json": 1
+        }
+    }, 
+    "17f5c7b33e6db42b7efe769ceed82edb": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/loading_bar.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004582.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hallUpdate.json": 1
+        }
+    }, 
+    "66b9e4834e1ef0d4776efad216079d30": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/brocast_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004660.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/hall_notice.json": 1
+        }
+    }, 
+    "f5ab7589bb230c92354fc2e7f270ee10": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/games/game_gray_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004198.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "16a2d557d3e7f8bbf13583914e3f06c4": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/wifi_1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004077.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "a84de728042c147c9140263dfa563cd7": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/wifi_2.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004078.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "19160649ff8850d52dcfb7cbd065ce53": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/wifi_3.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004079.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "73c49d48153385204da4d3836cffb12d": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/wifi_4.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004080.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "6bc52aa557cd6400b694c26fffbfb13d": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/wifi.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004076.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "d0a9cf8948cb00230bd69546d32fd1c1": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/xinhao_1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004295.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "faeff129cf2318c7fcd4579cd12d31d0": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/xinhao_2.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004296.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "0528d8bb5e83d69e6277a0237e28f3a8": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/xinhao_3.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004297.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "554942c3228bfeedbdacb85bfda68546": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/xinhao_4.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004298.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "6c0f9a0e8213033163f10d7803ca8baf": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/xinhao_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004299.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "d567330de7014e930a380a5ce3d98dda": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/bat_pro.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004021.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "f3d96801c9d2f2520a033014f4107c2e": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/bat_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004020.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "2ad42bde5033fbb54a29baa384b188a5": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/batteryFont.fnt", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1010002.fnt", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "27c436d5263549cab51ef5e44e3ce95b": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/roomid.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004429.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "0fb9743e9ccf16a30cc6e5bda8ba7696": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/aapay.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004394.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/infoNode.json": 1
+        }
+    }, 
+    "eb1d0c37b2cb837b712e4046ad8eb17b": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/loading.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004426.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/loading.json": 1
+        }
+    }, 
+    "69765f0e10fd0b2082ecf5986c450c53": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/loading_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004427.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/loading.json": 1
+        }
+    }, 
+    "d1ceb2e62e64dbb582a261eeba1383af": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/select_wight.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004598.png", 
+        "total": 3, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 1
+        }
+    }, 
+    "da9a42c50defb0da0825fa4702f426de": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/gold_icon.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004563.png", 
+        "total": 3, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_item.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_prop_dialog.json": 1
+        }
+    }, 
+    "12d333f9bd54294fd27dfbf6071c50dc": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/semicircle4.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004432.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall.json": 1
+        }
+    }, 
+    "48219fa17555f51e5945d3b7277a4b92": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/semicircle2.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004431.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall.json": 1
+        }
+    }, 
+    "8777b36c1d55dfbf0ffbd2ee22ed3db4": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/tag_one.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004603.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_item.json": 1
+        }
+    }, 
+    "1b9792d7c93d11b4088fb2f3205bc6c3": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/redbag.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004595.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_item.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_record.json": 1
+        }
+    }, 
+    "05ebb1e4853fb68ba2c42c1998433536": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/exchange_tag.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004561.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/mall_record.json": 1
+        }
+    }, 
+    "a7edc54a8f854399efb5ef832c3c1275": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/qrcode.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004592.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 1
+        }
+    }, 
+    "9667166dc77b7e1e0df9c21f5803572e": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/shareWxIcon.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004600.png", 
+        "total": 3, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond1.json": 1
+        }
+    }, 
+    "c17bd28252a6f524c36b3995e9d10d00": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/shareCircleIcon.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004599.png", 
+        "total": 3, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond1.json": 1
+        }
+    }, 
+    "e0aaa771771e85faf5dbcfa8976335a9": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/smllqr.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004601.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/myclub.json": 1
+        }
+    }, 
+    "2644a934fbbcbf903bce53dba065b3af": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/Common/btn_gray.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004529.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_diamond.json": 1
+        }
+    }, 
+    "41d5f304b17e3b5e087a1e93197060d1": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/light_effect.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004424.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_prop_dialog.json": 1
+        }
+    }, 
+    "a61bacb1cda3fcd85549dfb4b1c9a541": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/gxhd_wz.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004420.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_prop_dialog.json": 1
+        }
+    }, 
+    "b5b879e49c6d4675ce44147f10ee1522": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/font/yellow_num_hrl.fnt", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1010015.fnt", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_prop_dialog.json": 1
+        }
+    }, 
+    "9d18d0ed2419a05dfd079165c4c0fc9a": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/huode_dk.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004422.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_prop_dialog.json": 1
+        }
+    }, 
+    "7c04b720e0c820d4905692e013b92967": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/img_queding.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004483.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_prop_dialog.json": 1
+        }
+    }, 
+    "5f3f20f7bf7051c432c8498891976f06": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_gree.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004403.png", 
+        "total": 4, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/obtain_prop_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond.json": 2, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "c2a5e5f190e2bc37fce30056a351db6c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/quickpayment/pay_zfb.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004691.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/pay_select_type.json": 1
+        }
+    }, 
+    "5361eeb2e7cb5019e30c1d5c255a2a49": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/quickpayment/pay_wx.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004690.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/pay_select_type.json": 1
+        }
+    }, 
+    "02ca0cd82e29709b6a4b100150ee3f77": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/quickpayment/img_rmb.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004689.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/pay_select_type.json": 1
+        }
+    }, 
+    "57e2c83fb0b8cc0e5457c89558ce37c9": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/Common/mainCircleHeadFrame.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004531.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 1
+        }
+    }, 
+    "06b35df1505da406301d44deda89eee5": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn-red50.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004543.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 1
+        }
+    }, 
+    "79116f08a6f9770fd5a7e57a76907597": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_unbind.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004575.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 1
+        }
+    }, 
+    "34c3153e899f021154efc0eb53597cb1": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_binded.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004567.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/Playerpanel.json": 1
+        }
+    }, 
+    "9e8f86743c72cc573250feb14dfe994c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/game_x.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004417.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/player_position_info.json": 1
+        }
+    }, 
+    "455998d6cbe9d1bf5fd833722209c63b": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/Common/otherCircleHeadFrame.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004532.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/poplist.json": 4
+        }
+    }, 
+    "dbeb2de77eba6677348973d3d303e2bc": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/tag_2.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004602.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/quickpayitem.json": 1
+        }
+    }, 
+    "cdd252d39b69b7fc4be48b9703e6e200": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/round_select_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004218.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/radio_item.json": 1
+        }
+    }, 
+    "d90c6a84e43e806e199e4a21269db48b": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/yuan.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004446.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/radio_item_panel.json": 1
+        }
+    }, 
+    "deb24149a82e77ed9e35af5b5f4a5edf": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/yuan_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004447.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/radio_item_panel.json": 1
+        }
+    }, 
+    "b93b955ed27a18baac77c1be21b2ab6a": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/gou.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004418.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/radio_item_panel.json": 1
+        }
+    }, 
+    "770b8046cdab163e97d2dc436c6c8190": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/gou_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004419.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/radio_item_panel.json": 1
+        }
+    }, 
+    "f6e63288d339a5ff4af7975b20a0e1e5": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/yuan_wei.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004448.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/radio_item_panel.json": 1
+        }
+    }, 
+    "13025050a34177dc4ace9c92b32da083": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/GUI/image.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004209.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/record_dialog.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/rule_dialog.json": 1
+        }
+    }, 
+    "6d73efa3a6e21fb9de2a83370e80289d": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/panel_black_21.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004589.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/recruit_dialog.json": 1
+        }
+    }, 
+    "f79edc8fbe03331a89014379568e5897": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/toumingdi.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004441.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/redPacket.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/shareDialog.json": 1
+        }
+    }, 
+    "69844b329fda7137eb94f1c89f90f1ca": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/lastUpdateAD.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004487.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/redPacket.json": 1
+        }
+    }, 
+    "cbb93512f4087f6c2804b76607b8dc66": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/line2.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004425.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_charge.json": 2
+        }
+    }, 
+    "8d531aa6ec30b9e23395d9def829ef54": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/Common/btn_close.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004528.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_city.json": 2
+        }
+    }, 
+    "c59dbe3fde1b38461688ffe143ac5b6b": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/slider1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004433.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/select_province_city.json": 3
+        }
+    }, 
+    "b404038691d5e8c921d9618dfb88c7e6": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/set/wanfa_text.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004490.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 1
+        }
+    }, 
+    "434fa2a36953e19998b9195397cfadc1": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/set/exit_login.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004489.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 1
+        }
+    }, 
+    "419d15de74fe6f5ea2cb8527ff4b8159": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_yellow.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004411.png", 
+        "total": 2, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 1, 
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "c113b0c98a0345c877c90bc0e96ceb19": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/vioce_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004655.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 2
+        }
+    }, 
+    "afab09dc071c3f2e0098a1243d439d7c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/vioce_bar.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004654.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 2
+        }
+    }, 
+    "14fb0e68626725a81d0a819b47d99f44": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/music_off.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004653.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 6
+        }
+    }, 
+    "1b5d91278c5d8a08fbb013a8e0b62a42": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/music_btn.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004652.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 2
+        }
+    }, 
+    "399c4d60cb15008240611a69ab374582": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/btn_off.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004649.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 8
+        }
+    }, 
+    "2e784463d0bbf5cf8de729d4169fd42e": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/btn_on.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004650.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/set_dialog_game.json": 4
+        }
+    }, 
+    "44d1b2ff26639e9bc524aad13af3bc4c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/tongyong_yuanjiao.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004440.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/shareDialog.json": 1
+        }
+    }, 
+    "5b9a1af6ca4e08760d90e2342201c736": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/selectInterface/title_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004226.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/shareDialog.json": 1
+        }
+    }, 
+    "36d02065214fd5bc7a40e9d439b05987": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/selectInterface/close_btn.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004220.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/shareDialog.json": 1
+        }
+    }, 
+    "18f0bebe9db98001c7cd1bb63edc6675": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/share/hayouqun.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004491.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/shareDialog.json": 1
+        }
+    }, 
+    "6351622ddcb1532d0862410a62076ddd": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/share/penyouquan_icon.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004493.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/shareDialog.json": 1
+        }
+    }, 
+    "1e2138f5aef386a4cc4906d1d5f848f1": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/share/pengyouquan.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004492.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/shareDialog.json": 1
+        }
+    }, 
+    "014d856d48a7fcce531a212433aa1bd7": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/share/share_title.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004494.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/shareDialog.json": 1
+        }
+    }, 
+    "ecff046f14017cb1cafc641f2a1b79db": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/share/weixin_icon.png.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004495.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/shareDialog.json": 1
+        }
+    }, 
+    "97c76ab12abdcc6f53bca822883de101": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/smbg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004682.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond.json": 2
+        }
+    }, 
+    "b5835afecc95d6f3d5b734b4b7427a22": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/packeg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004677.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond.json": 1
+        }
+    }, 
+    "8e8e64096c2ae5af697f014271ab1bf9": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/title_free.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004684.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond.json": 1
+        }
+    }, 
+    "0a934867aeafae017cf23146c0d3e4cb": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/invite.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004674.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond.json": 1
+        }
+    }, 
+    "9772edc09f9556951986daa50095ecaf": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/dayshare.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004666.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond.json": 1
+        }
+    }, 
+    "045a858cd41b4ee2a29327471f2ca0e8": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/sharefriend.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004681.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond.json": 1
+        }
+    }, 
+    "9867f4ed399ed385fd706e0b0e3dddee": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/redrectangle.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004680.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/share_diamond.json": 1
+        }
+    }, 
+    "7d2aa2cb4f385a385b1dd5ada917d501": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/toast_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004439.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/toast.json": 2
+        }
+    }, 
+    "82729ddb59906e18f5da2d865b7fbe34": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/itembg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004484.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/video_layer.json": 3
+        }
+    }, 
+    "119d5039d3048824f10440f0f131b509": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/boFang.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004473.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/video_layer.json": 1
+        }
+    }, 
+    "c051ac1693c553069aed62d1a4c63ebc": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/kuaiJin1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004486.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/video_layer.json": 1
+        }
+    }, 
+    "b4eccd1dc20dcba78fb629a7a91fc684": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/fanHui.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004482.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/video_layer.json": 1
+        }
+    }, 
+    "407c48d182853373076f82165615896d": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/videoPanel.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004502.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/video_layer.json": 1
+        }
+    }, 
+    "1c365bf7e29bab95ebc0f6aba96b38c3": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/titlevideo.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004501.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/video_layer.json": 1
+        }
+    }, 
+    "8703c7ece403f3f84ea3c93ba84b58db": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/mall/img_wx_1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004642.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/wechat_path.json": 1
+        }
+    }, 
+    "f0940c6a21959c24a4d6609c52ae3db3": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/mall/img_wx_2.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004643.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/wechat_path.json": 1
+        }
+    }, 
+    "b26ec0327aacf6c5a751fdc74c858879": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/mall/img_wx_3.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004644.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/wechat_path.json": 1
+        }
+    }, 
+    "4b0d7a18827dca0fb87a6b5fcd8ee180": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/mall/img_wx_4.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004645.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/wechat_path.json": 1
+        }
+    }, 
+    "aff193d77e55901fb093e93ab9eb2b01": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/btn_diamond.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004662.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing.json": 1
+        }
+    }, 
+    "06aa0350ae5093f05f869c4601b5bce3": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/label_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004423.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing.json": 1
+        }
+    }, 
+    "2e2561bd9ea0a3383c6a778601068dbe": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/wenzi_dikuang2.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004442.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing.json": 1
+        }
+    }, 
+    "c8567206d27120b93581040656dc0fd0": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/img_title.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004696.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing.json": 1
+        }
+    }, 
+    "04200cbd2fbbfe150a817b7bf4518e11": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/img_txt_yaoqing.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004698.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing.json": 1
+        }
+    }, 
+    "eda0f2f93f69312f213d87d1a9db70e9": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/img_title1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004697.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "975fa0baf4682eb4f41fd5f6e532229c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/img_txt_yaoqing1.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004699.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "1df8ccd3108fb3251b20927338c41cc7": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/img_youli.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004701.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "65182690a0c4c586e02bbadc63419ee7": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/img_yaoqing.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004700.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "077b6b0810dc098f9ce59051a79da47c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/arrow_left.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004694.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "c90a4116b6f5f564ea69e153888bf087": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/arrow_right.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004695.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "2774b31517e8474e5f63ec81cbdb8a1c": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/pro_front.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004703.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "eba15f22ba4c529a41693472c86e2137": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/pro_bg.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004702.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqinghaoyou.json": 1
+        }
+    }, 
+    "d9c87bb8c76d62bc84f7811eeefb9047": {
+        "Path": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/img_fangka.png", 
+        "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004671.png", 
+        "total": 1, 
+        "RefList": {
+            "D:/Svn_2d/IOS_TiShen/UIProject/majiang/Json/yaoqing_pro_item.json": 1
+        }
+    }
+}

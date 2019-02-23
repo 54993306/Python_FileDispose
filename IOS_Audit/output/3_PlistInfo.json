@@ -1,0 +1,888 @@
+{
+    "D:/Python_FileDispose/IOS_Audit/res_package/accountPanel.plist": {
+        "1004215.png": {
+            "md5": "4c9bd76d0b706d2968bccec697f988bf", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004215.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/play_select.png"
+        }, 
+        "1004216.png": {
+            "md5": "efcbb62fe10c29698c2bf2b8b318e5b9", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004216.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/play_select_bg.png"
+        }, 
+        "1004549.png": {
+            "md5": "21a87e917aac300c25504f0a1f3c851a", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004549.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_drop_bg.png"
+        }, 
+        "1004568.png": {
+            "md5": "649ff6987f138afc26d2f5cbd3279dab", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004568.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_bindWechat.png"
+        }, 
+        "1004570.png": {
+            "md5": "4bb071975aee6c6428702c36abd2e141", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004570.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_done.png"
+        }, 
+        "1004573.png": {
+            "md5": "f5060677f0d4c4e9d530070bdad15000", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004573.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_fx1.png"
+        }, 
+        "1004606.png": {
+            "md5": "4cfaedcf0cd2729944aeb069720a4e33", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004606.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/yuanbao.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/chat.plist": {
+        "1004134.png": {
+            "md5": "7b14aa348be075c2917326e5a0e98092", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004134.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/friendRoom/mjOver/over_scale_bg1.png"
+        }, 
+        "1004399.png": {
+            "md5": "4751e6e464a44c662911c00d39ae0024", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004399.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/bg2.png"
+        }, 
+        "1004400.png": {
+            "md5": "8976e84762353a2e7ed122502c2bfd30", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004400.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/bg3.png"
+        }, 
+        "1004401.png": {
+            "md5": "636690f6ed264d05b8004d2658c439ee", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004401.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/bg4.png"
+        }, 
+        "1004402.png": {
+            "md5": "f8aa3f2e26acc77b9f9f88029e285135", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004402.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/bg6_30x30.png"
+        }, 
+        "1004504.png": {
+            "md5": "6013d3b40ad875dc14b83864c03bbbe0", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004504.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/gameCommon/chat/btn_send.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/clubApplyRecordWnd.plist": {
+        "1004391.png": {
+            "md5": "83be8674907be5dc42953c6295c05b12", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004391.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/club/tag_pass.png"
+        }, 
+        "1004392.png": {
+            "md5": "408bfbef6bf5689d418c47426ddc6ab4", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004392.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/club/tag_refuse.png"
+        }, 
+        "1004393.png": {
+            "md5": "5f03862d8be013f13280bba440a15406", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004393.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/club/teg_examine.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/clubListView.plist": {
+        "1004406.png": {
+            "md5": "91ad5b3819b9e021301d7196757c5177", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004406.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_panel_add.png"
+        }, 
+        "1004407.png": {
+            "md5": "013d6eb145d011319b4b3b135414922a", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004407.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_panel_entrance.png"
+        }, 
+        "1004408.png": {
+            "md5": "2201b5fef456979063a0f81677aec28c", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004408.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_panel_forbid.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/clubMatchRecord.plist": {
+        "1004089.png": {
+            "md5": "c59999768b4e957cb955489a6efeab31", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004089.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/drop_down_box_content_bg.png"
+        }, 
+        "1004210.png": {
+            "md5": "f658d79a61fd9d74b6644da045737810", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004210.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/handle_down.png"
+        }, 
+        "1004211.png": {
+            "md5": "560edb616b4450c1dc1a7b185e540eec", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004211.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/handle_up.png"
+        }, 
+        "1004436.png": {
+            "md5": "42c722f7ce59265002a666a34bf3988c", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004436.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/tag_winner.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/clubRoomListWnd.plist": {
+        "1004421.png": {
+            "md5": "6ac9e264bd32da625fab519434ff8e5b", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004421.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/head_btn_add.png"
+        }, 
+        "1004428.png": {
+            "md5": "ba347df6c5f9e58c03fece186252467c", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004428.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/refreshTag.png"
+        }, 
+        "1004552.png": {
+            "md5": "831ca7c22b03d3f729c182f5ef153a62", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004552.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_info.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/foreload.plist": {
+        "1004052.png": {
+            "md5": "99d65918e9e298a80965974269d375b6", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004052.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/head_bg.png"
+        }, 
+        "1004260.png": {
+            "md5": "e818da511ec616a003e21ec21c4c45ef", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004260.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/bg.png"
+        }, 
+        "1004403.png": {
+            "md5": "5f3f20f7bf7051c432c8498891976f06", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004403.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_gree.png"
+        }, 
+        "1004434.png": {
+            "md5": "311fe2c8502079ceba4013671293c074", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004434.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/smallbg.png"
+        }, 
+        "1004445.png": {
+            "md5": "863879ce150631ca8a8d596cd237491e", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004445.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/x.png"
+        }, 
+        "1004530.png": {
+            "md5": "9f0452f71fc408cb9219b1f281e41ae2", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004530.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/Common/defaultCircleHead.png"
+        }, 
+        "1004533.png": {
+            "md5": "0ce8db96e54290f29c9fabadcb94d0de", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004533.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/Common/transparent_bg.png"
+        }, 
+        "1004541.png": {
+            "md5": "2e89157871662994eb4012ef5dcc5212", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004541.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/bottom_bg_zhe.png"
+        }, 
+        "1004542.png": {
+            "md5": "6ac9d5547324ba7db8fb64df01878622", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004542.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn-orange.png"
+        }, 
+        "1004545.png": {
+            "md5": "9b903fe93923c26a83e6af4f1312ed51", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004545.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_back.png"
+        }, 
+        "1004546.png": {
+            "md5": "3f32f99888bddb6608f07e35ddc796c9", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004546.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_blue.png"
+        }, 
+        "1004548.png": {
+            "md5": "af7bbc6e6063f7953a926eefae4986ef", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004548.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_deepblue.png"
+        }, 
+        "1004550.png": {
+            "md5": "65941bb4f7ad2fd665234cafe13b47dd", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004550.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_gree.png"
+        }, 
+        "1004551.png": {
+            "md5": "87b49318e5f18bcf4fca2cfbf8158f12", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004551.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn_grey.png"
+        }, 
+        "1004556.png": {
+            "md5": "d90bbbfb916038f7b07f9ca7ac0fbcfd", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004556.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/cut_off_line.png"
+        }, 
+        "1004557.png": {
+            "md5": "1a8a18b6d9a9a3980c3dc2e8b81a6bcd", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004557.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/diamond.png"
+        }, 
+        "1004558.png": {
+            "md5": "e25469619f02806dcf252138e21a2521", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004558.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/diamond_L.png"
+        }, 
+        "1004563.png": {
+            "md5": "da9a42c50defb0da0825fa4702f426de", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004563.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/gold_icon.png"
+        }, 
+        "1004566.png": {
+            "md5": "7e3334a75acb0f7defebb4ea8eaa35da", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004566.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_bg_redTips.png"
+        }, 
+        "1004578.png": {
+            "md5": "63626f36da14b048b6820876eebb8fb4", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004578.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/L1_bg.png"
+        }, 
+        "1004579.png": {
+            "md5": "669b870a64a5924b0a9792373faf1efb", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004579.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/L2_bg.png"
+        }, 
+        "1004581.png": {
+            "md5": "b4de5d043b489adbe7f889beb84020a4", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004581.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/line_an.png"
+        }, 
+        "1004587.png": {
+            "md5": "36a9a22c9211018930e472cbe624aafb", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004587.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/panel_black.png"
+        }, 
+        "1004588.png": {
+            "md5": "616ac621b80137e0e04db621e4e899f5", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004588.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/panel_black_2.png"
+        }, 
+        "1004590.png": {
+            "md5": "819cc4ffd377b94aa94bb0a687dc673a", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004590.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/panel_wight.png"
+        }, 
+        "1004593.png": {
+            "md5": "374ec915696b87be67f5e6fea99d549c", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004593.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/radio_yellow_box_1.png"
+        }, 
+        "1004594.png": {
+            "md5": "5a822568ae0153dd6dcd169d88be6f5a", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004594.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/radio_yellow_btn.png"
+        }, 
+        "1004596.png": {
+            "md5": "e186581b98be0e3f1eb01459f70ed398", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004596.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/room_owner.png"
+        }, 
+        "1004598.png": {
+            "md5": "d1ceb2e62e64dbb582a261eeba1383af", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004598.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/select_wight.png"
+        }, 
+        "1004599.png": {
+            "md5": "c17bd28252a6f524c36b3995e9d10d00", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004599.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/shareCircleIcon.png"
+        }, 
+        "1004600.png": {
+            "md5": "9667166dc77b7e1e0df9c21f5803572e", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004600.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/shareWxIcon.png"
+        }, 
+        "1004604.png": {
+            "md5": "630a7c61df25fb33a1e8a2ed31f2c9b8", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004604.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/tips.png"
+        }, 
+        "1004605.png": {
+            "md5": "bdb98bef438f1b233d960e2f42f62e48", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004605.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/x.png"
+        }, 
+        "1004638.png": {
+            "md5": "59fb96bd8575ee07c647f055fd9d5fb8", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004638.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/main/mainCircleHeadFrame.png"
+        }, 
+        "1004686.png": {
+            "md5": "ec742e8f74a55727388f7f347f4b2a12", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004686.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/newer/btn_over.png"
+        }, 
+        "1004687.png": {
+            "md5": "38e1632d46880bd165fa50d235cdfea0", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004687.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/newer/tips_bg.png"
+        }, 
+        "1004688.png": {
+            "md5": "460ac48f11f08b060c222d438439bc2b", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004688.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/newer/tips_point.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/friendRoomCreate.plist": {
+        "1004261.png": {
+            "md5": "7c8cd7138d055d8be392f07858582ab6", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004261.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/btn_cancel_n.png"
+        }, 
+        "1004474.png": {
+            "md5": "cc8619a07cd271a4e384241026c688df", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004474.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/arrow3.png"
+        }, 
+        "1004475.png": {
+            "md5": "d2d6ce500ac742d57b57a6f2643a6859", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004475.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/black_bj.png"
+        }, 
+        "1004476.png": {
+            "md5": "fc5e04e3ff81e089f26dea4d72b1dbbd", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004476.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/broken_line.png"
+        }, 
+        "1004477.png": {
+            "md5": "8f3968ff493a764965bbd14b3d69240d", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004477.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/broken_line1.png"
+        }, 
+        "1004478.png": {
+            "md5": "78228ecd01e1a1041664842a78559bf5", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004478.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/btn_ok.png"
+        }, 
+        "1004480.png": {
+            "md5": "52b2d5bde2d09c27507fd0984a09340e", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004480.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/img_role.png"
+        }, 
+        "1004481.png": {
+            "md5": "8a66f9b4ea8cb797290d987f54b1e274", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004481.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/ddz/text_tip_ddz.png"
+        }, 
+        "1004580.png": {
+            "md5": "42e8c64f9e6e3c079823cab07b84aaa0", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004580.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/L3_bg.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/friendRoomScene.plist": {
+        "1004009.png": {
+            "md5": "e1c962b780c915386717064453f23bcf", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004009.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/chat_bg.png"
+        }, 
+        "1004051.png": {
+            "md5": "abcf626af9249052157687c6653cfe48", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004051.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/default_head_2.png"
+        }, 
+        "1004110.png": {
+            "md5": "1422bd3c44687c2ff596b100cc1f7f76", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004110.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/friendRoom/mic/0.png"
+        }, 
+        "1004181.png": {
+            "md5": "3c28546d11948e9922cd8f553dd2d2ea", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004181.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/friendRoom/speaking.png"
+        }, 
+        "1004182.png": {
+            "md5": "48288a9ce97d185a47a2a957659d2a19", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004182.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/friendRoom/text_offline.png"
+        }, 
+        "1004405.png": {
+            "md5": "aa3a08a3b5fedda01894c6b0fcd66c6f", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004405.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_jieshan.png"
+        }, 
+        "1004410.png": {
+            "md5": "2206cbfccca6df39b25624dfe0bc239e", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004410.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_yaoqing.png"
+        }, 
+        "1004488.png": {
+            "md5": "b275931cac37fdff39efc040f1929a50", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004488.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/roomMain.png"
+        }, 
+        "1004525.png": {
+            "md5": "d3d76788b1fa063abf2129e19f341fd9", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004525.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/games/menu_btn_chat.png"
+        }, 
+        "1004526.png": {
+            "md5": "22c7e09c6ff48c395a00dc0637a006f4", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004526.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/games/menu_btn_yuyin.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/hallBind.plist": {
+        "1004569.png": {
+            "md5": "19b117d3762f7a8df6cde983d828303f", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004569.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_changePhone.png"
+        }, 
+        "1004571.png": {
+            "md5": "4e4b3ead2526bf6f81376c455b31c7b8", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004571.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_editCode.png"
+        }, 
+        "1004572.png": {
+            "md5": "12e4eef192c960a1bcc008d24b7ce5ab", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004572.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_finish.png"
+        }, 
+        "1004574.png": {
+            "md5": "37e997bbad425a2aed3cdb3cb534b895", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004574.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_switchAccount.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/hallLogin.plist": {
+        "1004534.png": {
+            "md5": "34184ecc500226ef15111c2d508e8aea", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004534.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/loginUI/image_numLogin.png"
+        }, 
+        "1004535.png": {
+            "md5": "d4f2f8d080d37afbb5297579d85b3787", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004535.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/loginUI/img_txt_weichat.png"
+        }, 
+        "1004554.png": {
+            "md5": "1d94978041f7ad7d92fbc609d6044e80", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004554.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/check_box.png"
+        }, 
+        "1004555.png": {
+            "md5": "14b1be3526dfcd9137dd1284a4e799f8", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004555.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/check_select.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/infoNode.plist": {
+        "1004020.png": {
+            "md5": "f3d96801c9d2f2520a033014f4107c2e", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004020.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/bat_bg.png"
+        }, 
+        "1004021.png": {
+            "md5": "d567330de7014e930a380a5ce3d98dda", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004021.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/bat_pro.png"
+        }, 
+        "1004076.png": {
+            "md5": "6bc52aa557cd6400b694c26fffbfb13d", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004076.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/wifi.png"
+        }, 
+        "1004077.png": {
+            "md5": "16a2d557d3e7f8bbf13583914e3f06c4", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004077.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/wifi_1.png"
+        }, 
+        "1004078.png": {
+            "md5": "a84de728042c147c9140263dfa563cd7", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004078.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/wifi_2.png"
+        }, 
+        "1004079.png": {
+            "md5": "19160649ff8850d52dcfb7cbd065ce53", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004079.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/wifi_3.png"
+        }, 
+        "1004080.png": {
+            "md5": "73c49d48153385204da4d3836cffb12d", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004080.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/common/wifi_4.png"
+        }, 
+        "1004198.png": {
+            "md5": "f5ab7589bb230c92354fc2e7f270ee10", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004198.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/games/game_gray_bg.png"
+        }, 
+        "1004295.png": {
+            "md5": "d0a9cf8948cb00230bd69546d32fd1c1", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004295.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/xinhao_1.png"
+        }, 
+        "1004296.png": {
+            "md5": "faeff129cf2318c7fcd4579cd12d31d0", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004296.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/xinhao_2.png"
+        }, 
+        "1004297.png": {
+            "md5": "0528d8bb5e83d69e6277a0237e28f3a8", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004297.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/xinhao_3.png"
+        }, 
+        "1004298.png": {
+            "md5": "554942c3228bfeedbdacb85bfda68546", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004298.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/xinhao_4.png"
+        }, 
+        "1004299.png": {
+            "md5": "6c0f9a0e8213033163f10d7803ca8baf", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004299.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/mj/common/xinhao_bg.png"
+        }, 
+        "1004394.png": {
+            "md5": "0fb9743e9ccf16a30cc6e5bda8ba7696", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004394.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/aapay.png"
+        }, 
+        "1004429.png": {
+            "md5": "27c436d5263549cab51ef5e44e3ce95b", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004429.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/roomid.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/obtain_prop_dialog.plist": {
+        "1004420.png": {
+            "md5": "a61bacb1cda3fcd85549dfb4b1c9a541", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004420.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/gxhd_wz.png"
+        }, 
+        "1004422.png": {
+            "md5": "9d18d0ed2419a05dfd079165c4c0fc9a", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004422.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/huode_dk.png"
+        }, 
+        "1004424.png": {
+            "md5": "41d5f304b17e3b5e087a1e93197060d1", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004424.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/light_effect.png"
+        }, 
+        "1004483.png": {
+            "md5": "7c04b720e0c820d4905692e013b92967", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004483.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/img_queding.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/pay_select_type.plist": {
+        "1004689.png": {
+            "md5": "02ca0cd82e29709b6a4b100150ee3f77", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004689.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/quickpayment/img_rmb.png"
+        }, 
+        "1004690.png": {
+            "md5": "5361eeb2e7cb5019e30c1d5c255a2a49", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004690.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/quickpayment/pay_wx.png"
+        }, 
+        "1004691.png": {
+            "md5": "c2a5e5f190e2bc37fce30056a351db6c", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004691.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/quickpayment/pay_zfb.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/Playerpanel.plist": {
+        "1004531.png": {
+            "md5": "57e2c83fb0b8cc0e5457c89558ce37c9", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004531.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi/Common/mainCircleHeadFrame.png"
+        }, 
+        "1004543.png": {
+            "md5": "06b35df1505da406301d44deda89eee5", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004543.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/btn-red50.png"
+        }, 
+        "1004567.png": {
+            "md5": "34c3153e899f021154efc0eb53597cb1", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004567.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_binded.png"
+        }, 
+        "1004575.png": {
+            "md5": "79116f08a6f9770fd5a7e57a76907597", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004575.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/Common/image_unbind.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/radio_item_panel.plist": {
+        "1004418.png": {
+            "md5": "b93b955ed27a18baac77c1be21b2ab6a", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004418.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/gou.png"
+        }, 
+        "1004419.png": {
+            "md5": "770b8046cdab163e97d2dc436c6c8190", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004419.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/gou_bg.png"
+        }, 
+        "1004446.png": {
+            "md5": "d90c6a84e43e806e199e4a21269db48b", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004446.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/yuan.png"
+        }, 
+        "1004447.png": {
+            "md5": "deb24149a82e77ed9e35af5b5f4a5edf", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004447.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/yuan_bg.png"
+        }, 
+        "1004448.png": {
+            "md5": "f6e63288d339a5ff4af7975b20a0e1e5", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004448.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/yuan_wei.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/set_dialog_game.plist": {
+        "1004411.png": {
+            "md5": "419d15de74fe6f5ea2cb8527ff4b8159", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004411.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/btn_yellow.png"
+        }, 
+        "1004489.png": {
+            "md5": "434fa2a36953e19998b9195397cfadc1", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004489.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/set/exit_login.png"
+        }, 
+        "1004490.png": {
+            "md5": "b404038691d5e8c921d9618dfb88c7e6", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004490.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/set/wanfa_text.png"
+        }, 
+        "1004649.png": {
+            "md5": "399c4d60cb15008240611a69ab374582", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004649.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/btn_off.png"
+        }, 
+        "1004650.png": {
+            "md5": "2e784463d0bbf5cf8de729d4169fd42e", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004650.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/btn_on.png"
+        }, 
+        "1004652.png": {
+            "md5": "1b5d91278c5d8a08fbb013a8e0b62a42", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004652.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/music_btn.png"
+        }, 
+        "1004653.png": {
+            "md5": "14fb0e68626725a81d0a819b47d99f44", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004653.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/music_off.png"
+        }, 
+        "1004654.png": {
+            "md5": "afab09dc071c3f2e0098a1243d439d7c", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004654.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/vioce_bar.png"
+        }, 
+        "1004655.png": {
+            "md5": "c113b0c98a0345c877c90bc0e96ceb19", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004655.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/set/vioce_bg.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/shareDialog.plist": {
+        "1004220.png": {
+            "md5": "36d02065214fd5bc7a40e9d439b05987", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004220.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/selectInterface/close_btn.png"
+        }, 
+        "1004226.png": {
+            "md5": "5b9a1af6ca4e08760d90e2342201c736", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004226.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/games/common/game/selectInterface/title_bg.png"
+        }, 
+        "1004440.png": {
+            "md5": "44d1b2ff26639e9bc524aad13af3bc4c", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004440.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/tongyong_yuanjiao.png"
+        }, 
+        "1004491.png": {
+            "md5": "18f0bebe9db98001c7cd1bb63edc6675", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004491.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/share/hayouqun.png"
+        }, 
+        "1004492.png": {
+            "md5": "1e2138f5aef386a4cc4906d1d5f848f1", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004492.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/share/pengyouquan.png"
+        }, 
+        "1004493.png": {
+            "md5": "6351622ddcb1532d0862410a62076ddd", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004493.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/share/penyouquan_icon.png"
+        }, 
+        "1004494.png": {
+            "md5": "014d856d48a7fcce531a212433aa1bd7", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004494.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/share/share_title.png"
+        }, 
+        "1004495.png": {
+            "md5": "ecff046f14017cb1cafc641f2a1b79db", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004495.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/share/weixin_icon.png.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/share_diamond.plist": {
+        "1004666.png": {
+            "md5": "9772edc09f9556951986daa50095ecaf", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004666.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/dayshare.png"
+        }, 
+        "1004674.png": {
+            "md5": "0a934867aeafae017cf23146c0d3e4cb", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004674.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/invite.png"
+        }, 
+        "1004677.png": {
+            "md5": "b5835afecc95d6f3d5b734b4b7427a22", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004677.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/packeg.png"
+        }, 
+        "1004680.png": {
+            "md5": "9867f4ed399ed385fd706e0b0e3dddee", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004680.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/redrectangle.png"
+        }, 
+        "1004681.png": {
+            "md5": "045a858cd41b4ee2a29327471f2ca0e8", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004681.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/sharefriend.png"
+        }, 
+        "1004682.png": {
+            "md5": "97c76ab12abdcc6f53bca822883de101", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004682.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/smbg.png"
+        }, 
+        "1004684.png": {
+            "md5": "8e8e64096c2ae5af697f014271ab1bf9", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004684.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/title_free.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/video_layer.plist": {
+        "1004473.png": {
+            "md5": "119d5039d3048824f10440f0f131b509", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004473.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/boFang.png"
+        }, 
+        "1004482.png": {
+            "md5": "b4eccd1dc20dcba78fb629a7a91fc684", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004482.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/fanHui.png"
+        }, 
+        "1004484.png": {
+            "md5": "82729ddb59906e18f5da2d865b7fbe34", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004484.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/itembg.png"
+        }, 
+        "1004486.png": {
+            "md5": "c051ac1693c553069aed62d1a4c63ebc", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004486.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/kuaiJin1.png"
+        }, 
+        "1004501.png": {
+            "md5": "1c365bf7e29bab95ebc0f6aba96b38c3", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004501.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/titlevideo.png"
+        }, 
+        "1004502.png": {
+            "md5": "407c48d182853373076f82165615896d", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004502.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/friendRoom/videoPanel.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/wechat_path.plist": {
+        "1004642.png": {
+            "md5": "8703c7ece403f3f84ea3c93ba84b58db", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004642.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/mall/img_wx_1.png"
+        }, 
+        "1004643.png": {
+            "md5": "f0940c6a21959c24a4d6609c52ae3db3", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004643.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/mall/img_wx_2.png"
+        }, 
+        "1004644.png": {
+            "md5": "b26ec0327aacf6c5a751fdc74c858879", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004644.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/mall/img_wx_3.png"
+        }, 
+        "1004645.png": {
+            "md5": "4b0d7a18827dca0fb87a6b5fcd8ee180", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004645.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/huanpi2/mall/img_wx_4.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/yaoqing.plist": {
+        "1004423.png": {
+            "md5": "06aa0350ae5093f05f869c4601b5bce3", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004423.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/label_bg.png"
+        }, 
+        "1004442.png": {
+            "md5": "2e2561bd9ea0a3383c6a778601068dbe", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004442.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/Common/wenzi_dikuang2.png"
+        }, 
+        "1004662.png": {
+            "md5": "aff193d77e55901fb093e93ab9eb2b01", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004662.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/main/btn_diamond.png"
+        }, 
+        "1004696.png": {
+            "md5": "c8567206d27120b93581040656dc0fd0", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004696.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/img_title.png"
+        }, 
+        "1004698.png": {
+            "md5": "04200cbd2fbbfe150a817b7bf4518e11", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004698.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/img_txt_yaoqing.png"
+        }
+    }, 
+    "D:/Python_FileDispose/IOS_Audit/res_package/yaoqinghaoyou.plist": {
+        "1004694.png": {
+            "md5": "077b6b0810dc098f9ce59051a79da47c", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004694.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/arrow_left.png"
+        }, 
+        "1004695.png": {
+            "md5": "c90a4116b6f5f564ea69e153888bf087", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004695.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/arrow_right.png"
+        }, 
+        "1004697.png": {
+            "md5": "eda0f2f93f69312f213d87d1a9db70e9", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004697.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/img_title1.png"
+        }, 
+        "1004699.png": {
+            "md5": "975fa0baf4682eb4f41fd5f6e532229c", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004699.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/img_txt_yaoqing1.png"
+        }, 
+        "1004700.png": {
+            "md5": "65182690a0c4c586e02bbadc63419ee7", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004700.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/img_yaoqing.png"
+        }, 
+        "1004701.png": {
+            "md5": "1df8ccd3108fb3251b20927338c41cc7", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004701.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/img_youli.png"
+        }, 
+        "1004702.png": {
+            "md5": "eba15f22ba4c529a41693472c86e2137", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004702.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/pro_bg.png"
+        }, 
+        "1004703.png": {
+            "md5": "2774b31517e8474e5f63ec81cbdb8a1c", 
+            "new": "D:/Python_FileDispose/IOS_Audit/res_other/1004703.png", 
+            "old": "D:/Svn_2d/IOS_TiShen/Project/res/hall/yaoqing/pro_front.png"
+        }
+    }
+}
