@@ -15,22 +15,9 @@ class tidyRes:
 
     def __init__(self):
         self.tidyInfo = collections.OrderedDict()  # 存储整理相关的信息
-        self.tidyInfo["Channel"] = comFun.OUTPUTTARGET
-        self.tidyInfo["CodePath"] = comFun.MOVETOCODEPATH
-        self.UIChange = comFun.GetDataByFile(comFun.CHANGERESULT)
-        self.CodeChange = comFun.GetDataByFile(comFun.CODERESMESSAGE)
 
-        self.UIResPath = comFun.TARGETPATH + comFun.RESFOLDER
-        comFun.createNewDir(self.UIResPath)
-
-        self.CodeResPath = comFun.MOVETOCODEPATH + comFun.RESFOLDER
-        comFun.createNewDir(self.CodeResPath)
-
-        self.PackagePath = comFun.MOVETOCODEPATH + comFun.RESPACKAGE
+        self.PackagePath = comFun.MOVETOCODEPATH + "res_package/"
         comFun.createNewDir(self.PackagePath)
-        # self.moveCsb()   # 需要手动操作
-
-        self.tidy()
 
     def moveCsb(self):
         jsonPaths = []
@@ -39,59 +26,54 @@ class tidyRes:
             if not re.search(r".json", jsonPath):
                 continue
             print "<string>" + os.path.basename(jsonPath) + "</string>"
-
         comFun.moveTypeFileToTarget( comFun.UIPROJECT + r"/Export", ".csb" , comFun.REALPATH)
 
-    # 实际移动的文件和原去重后的文件想比较，得出的差异就是每种资源多余的文件差异。
-    def tidy(self):
-        self.tidyInfo["JsonChange"] = self.moveUIRes()
-        self.tidyInfo["CodeChange"] = self.moveCodeRes()
-        print(json.dumps(self.tidyInfo, ensure_ascii=False, encoding="utf -8", indent=4))
-        comFun.RecordToJsonFile(comFun.TIDYRECORD, self.tidyInfo)
-
+    # 移动UI类所使用资源至UI工程和代码工程
     def moveUIRes(self):
+        UIChange = comFun.GetDataByFile(comFun.CHANGERESULT)
         JsonValidResList = []
-        for jsonPath , ChangeList in self.UIChange.iteritems():
+        for jsonPath , ChangeList in UIChange.iteritems():
             for index , ChangeInfo in ChangeList.iteritems():
-                if not "new" in ChangeInfo:
+                if not ChangeInfo["new"]["plistFile"] and not ChangeInfo["new"]["path"]:
+                    print(" ERROR " + jsonPath + " Not have Change")
                     continue
+                newPath = ""
                 if ChangeInfo["new"]["plistFile"]:
-                    newPath = comFun.OUTPUTTARGET + ChangeInfo["new"]["plistFile"]
-                    if not newPath in JsonValidResList:
-                        JsonValidResList.append(newPath)
-                    self.copyFileToPath(newPath, self.CodeResPath + "/" + os.path.basename(newPath))
+                    newPath = ChangeInfo["new"]["plistFile"]
                 elif ChangeInfo["new"]["path"]:
-                    newPath = comFun.OUTPUTTARGET + ChangeInfo["new"]["path"]
-                    if not newPath in JsonValidResList:
-                        JsonValidResList.append(newPath)
-                    # shutil.copyfile(newPath , self.UIResPath + "/" + os.path.basename(newPath))   # 在打包的时候已经做了移动处理
-                    self.copyFileToPath(newPath, self.CodeResPath + "/" + os.path.basename(newPath))
-
-        return JsonValidResList
+                    newPath = ChangeInfo["new"]["path"]
+                if not newPath in JsonValidResList:
+                    JsonValidResList.append(newPath)
+                # 将文件拷贝到代码工程
+                self.copyFileToPath(comFun.OUTPUTTARGET + newPath, comFun.REALPATH + newPath)
+                # 将文件拷贝到UI工程
+                self.copyFileToPath(comFun.OUTPUTTARGET + newPath, comFun.TARGETPATH + newPath)
+        self.tidyInfo["JsonChange"] = JsonValidResList
 
     def moveCodeRes(self):
+        CodeChange = comFun.GetDataByFile(comFun.CODERESMESSAGE)
         LuaValidResList = []
-        for luaPath , ChangeInfos in self.CodeChange.iteritems():  # 代码中对每个json文件中使用的资源有过一个去重处理 dict key
+        for luaPath , ChangeInfos in CodeChange.iteritems():  # 代码中对每个json文件中使用的资源有过一个去重处理 dict key
             if not "ValidChange" in ChangeInfos:
                 continue
             for md5code , ChangeInfo in ChangeInfos["ValidChange"].iteritems():
-                if re.search(comFun.RESFOLDER + "/[\w]*?.(png|mp3)" , ChangeInfo["new"]):  # 这个类型判断也是不应该存在的。代码路径就是实际路径，不应该有这些东西
-                    newPath = comFun.OUTPUTTARGET + ChangeInfo["new"]
-                    if not newPath in LuaValidResList:
-                        LuaValidResList.append("Channel/" + ChangeInfo["new"])
-                    self.copyFileToPath(newPath, self.CodeResPath + "/" + os.path.basename(newPath))
-            if not "PlistList" in ChangeInfos:
-                continue
-            for md5code , PListPath in ChangeInfos["PlistList"].iteritems():
-                self.copyFileToPath(PListPath, self.PackagePath + "/" + os.path.basename(PListPath))
-        return LuaValidResList
+                if not ChangeInfo["new"] in LuaValidResList:
+                    LuaValidResList.append("Channel/" + ChangeInfo["new"])
+                self.copyFileToPath(comFun.OUTPUTTARGET + ChangeInfo["new"], comFun.REALPATH + ChangeInfo["new"])
+            # if not "PlistList" in ChangeInfos:
+            #     continue
+            # for md5code , PListPath in ChangeInfos["PlistList"].iteritems():
+            #     self.copyFileToPath(PListPath, self.PackagePath + "/" + os.path.basename(PListPath))
+        self.tidyInfo["CodeChange"] = LuaValidResList
+        print(json.dumps(LuaValidResList, ensure_ascii=False, encoding="utf -8", indent=4))
+        comFun.RecordToJsonFile(comFun.TIDYRECORD, self.tidyInfo)
 
     # 拷贝文件到新路径
     def copyFileToPath(self , oldPath , newPath):
         if not os.path.isabs(oldPath):
             oldPath = os.path.abspath(oldPath)
         oldPath = comFun.turnBias(oldPath)
-        dir = os.path.dirname(oldPath)          # 创建文件路径
+        dir = os.path.dirname(newPath)          # 创建文件路径
         if not os.path.isdir(dir):
             os.makedirs(dir, 0o777)
         if os.path.isfile(oldPath):

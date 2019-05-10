@@ -28,33 +28,30 @@ class packageImage:
     unPackRepeat["repeat"] = []
 
     def __init__(self):
-        self.tidyRes()
-
-    # 将数据都记录到文件中
-    def recordData(self):
-        comFun.RecordToJsonFile(comFun.PLISTINFO , self.plistInfo)
-
-        comFun.RecordToJsonFile(comFun.PLISTMD5, self.plistMd5)
-
-        comFun.RecordToJsonFile(comFun.TYPEPATHS, self.newResPath)    # 新路径新增到文件信息记录中
-        self.fileData.refreshTypeDataToFile(self.newResPath)
-
-        comFun.RecordToJsonFile(comFun.UNPACKREPEATRES, self.unPackRepeat)
-
-        comFun.RecordToJsonFile(comFun.MOVERECORD, self.moveRecord)
-
-    def tidyRes(self):
-        self.fileData = FD.fileDataHandle()
+        self.FileData = FD.fileDataHandle()
         self.clearDir()
         self.tidyForeRes()  # 文件被移动一次后第二次合成时，会报错，文件已经被移走了
         self.tidyModuleRes()
         self.packageRes()
         self.initNewImageInfo()
         self.initPlistMd5()
-        self.tidyPlistRes()
         self.recordData()
-        self.copyOutPutFile()
-        self.copyMoveRes()
+        # self.tidyPlistRes()
+        # self.copyOutPutFile()
+        # self.copyMoveRes()
+
+    # 将数据都记录到文件中
+    def recordData(self):
+        # comFun.RecordToJsonFile(comFun.PLISTINFO , self.plistInfo)
+
+        # comFun.RecordToJsonFile(comFun.PLISTMD5, self.plistMd5)
+
+        comFun.RecordToJsonFile(comFun.TYPEPATHS, self.newResPath)    # 新路径新增到文件信息记录中
+        self.FileData.refreshTypeDataToFile(self.newResPath)
+
+        # comFun.RecordToJsonFile(comFun.UNPACKREPEATRES, self.unPackRepeat)
+
+        # comFun.RecordToJsonFile(comFun.MOVERECORD, self.moveRecord)
 
     # 清理文件夹
     def clearDir(self):
@@ -67,12 +64,21 @@ class packageImage:
             # 将模块下的内容打包输出到指定目录下
             self.singlePackageTexture(comFun.PNG_MAX_SIZE, outPutName, SourcePath)
 
+    # 对资源做分类整理，本方法，应该在资源去重和生成md5后作为第一步进行实践整理的。
+    def classifyRes(self):
+        resList = []
+        comFun.initPathFiles(comFun.RESPATH, resList)
+        for resPath in resList:
+            _, filetype = os.path.splitext(resPath)
+            if filetype and cmp(filetype, ".png") != 0:
+                self.handleOtherRes(resPath)
+
     # 根据引用计数，执行打包工具脚本合成大图,试用版软件可以实现切图无水印
     def tidyForeRes(self):
         SOURCE_FOLDER = comFun.PACKAGESOURCE + "foreload"   # 存储引用计数较高的资源
         if not os.path.isdir(SOURCE_FOLDER):
             os.mkdir(SOURCE_FOLDER, 0o777)
-        refDict = comFun.GetDataByFile(comFun.REFERENCEFILE)
+        refDict = comFun.GetDataByFile(comFun.REFERENCEFILE) # 以Json文件为基础，对资源进行分类整理
         for MD5code , fileinfo in refDict.iteritems():
             _, filetype = os.path.splitext(fileinfo["new"])
             if cmp(filetype, ".png") != 0:
@@ -116,13 +122,13 @@ class packageImage:
         comFun.initPathFiles(modulePath, folderFiles)
         if not len(folderFiles):
             return False
-        if len(folderFiles) < comFun.UNPACKAGENUM:
+        if len(folderFiles) < comFun.UNPACKAGENUM:   # 不要每次都移动图片，判断使用的图片是否满足条件后再做图片的移动处理
             for resPath in folderFiles:
                 resPath = comFun.turnBias(resPath)
                 md5code = self.moveRecord[resPath]["md5"]
                 if md5code in self.unPackRepeat:   # 已经被移动过一次，则移动回原来的位置去，避免图片重复出现
                     print "repeat :" + resPath
-                    self.moveResToPath(resPath, comFun.COPYPATH, True)
+                    self.moveResToPath(resPath, comFun.RESPATH, True)
                 else:
                     self.moveResToPath(resPath, SourcePath, True)  # 达不到打包条件的图片会统一存放到这个位置，没有进行进一步的处理
                     self.unPackRepeat[self.moveRecord[resPath]["md5"]] = SourcePath + "/" + os.path.basename(resPath)
@@ -192,9 +198,9 @@ class packageImage:
     def NeedChangeStream(self , pNewResPath , outPutPath ):
         _, filetype = os.path.splitext(pNewResPath)
         if cmp(filetype, ".fnt") == 0 or cmp(filetype, ".plist") == 0:  # 针对fnt类文件进行特殊处理
-            oldpath = self.fileData.getOldPathBypath(pNewResPath)
+            oldpath = self.FileData.getOldPathBypath(pNewResPath)
             pResPath = re.sub(filetype, r".png", oldpath)
-            newPath = self.fileData.getNewPathByOldPath(pResPath)       # 找到相应的png图
+            newPath = self.FileData.getNewPathByOldPath(pResPath)       # 找到相应的png图
             if not newPath:
                 print("not found file " + pResPath)
                 return
@@ -216,7 +222,7 @@ class packageImage:
     def initNewPathRes(self , oldPath , newPath , outPutPath):
         # print "res move: " + oldPath.ljust(58) + ">>> " + newPath
         resInfo = collections.OrderedDict()
-        resInfo["md5"] = self.fileData.getFileMd5(oldPath)
+        resInfo["md5"] = self.FileData.getFileMd5(oldPath)
         resInfo["path"] = newPath
         if outPutPath in self.newResPath:
             resList = self.newResPath.get(outPutPath)
@@ -276,7 +282,7 @@ class packageImage:
         self.plistInfo[plistPath] = pngList
         for ele in pElements:
             if re.search(r".png", ele.text):
-                pngList[ele.text] = self.fileData.getResInfoByBaseName(ele.text)
+                pngList[ele.text] = self.FileData.getResInfoByBaseName(ele.text)
 
 
     # 找到包含图片名称的dict并返回，因文件结构原因，只好这样去找。
@@ -291,28 +297,13 @@ class packageImage:
 
     # 初始化md5对应的文件所在的plist文件
     def initPlistMd5(self):
-        for md5 , filepath in self.fileData.getFileDatas().iteritems():
+        for md5 , filepath in self.FileData.getFileDatas().iteritems():
             filename = os.path.basename(filepath["new"])
             for plistpath , pnglist in self.plistInfo.iteritems():
                 for pngName in pnglist:
                     if cmp(filename , pngName) == 0:
                         self.plistMd5[md5] = plistpath                  # 文件md5值对应所存储的plist文件
         # print(json.dumps(self.plistMd5, ensure_ascii=False, encoding="utf -8", indent=4))
-
-    # 拷贝输出的plist文件到指定目录
-    def copyOutPutFile(self):
-        folderFiles = []  # 存储所有的json文件
-        comFun.initPathFiles(comFun.PACKAGEOUTPUT, folderFiles)
-        self.copyFilesToPath(folderFiles, comFun.TARGETPATH + comFun.RESPACKAGE) #
-        # self.copyFilesToPath(folderFiles, comFun.MOVETOCODEPATH + "res_package")  #
-
-    # 将被移动的大图和其他资源拷贝到应用目录
-    def copyMoveRes(self):
-        for folderpath in self.outPutFolder.iterkeys():
-            folderFiles = []  # 存储所有的json文件
-            comFun.initPathFiles(folderpath, folderFiles)
-            self.copyFilesToPath(folderFiles , comFun.TARGETPATH + folderpath)
-            # self.copyFilesToPath(folderFiles, comFun.MOVETOCODEPATH + folderpath)
 
     # 将文件列表复制到指定目录
     def copyFilesToPath(self , files , path):
@@ -328,4 +319,4 @@ class packageImage:
     # 记录移动的文件信息
     def recordMovePath(self , path ,tPath):
         tPath = comFun.turnBias(tPath)
-        self.moveRecord[tPath] = self.fileData.getResInfoByNewPath(path)
+        self.moveRecord[tPath] = self.FileData.getResInfoByNewPath(path)

@@ -9,6 +9,7 @@ import shutil
 import stat
 import collections
 import time
+import types
 ##################################################################################################################
 
 BigFileSie              = 1024 * 100                                #100k以上即认为是大文件
@@ -16,8 +17,6 @@ PNG_MAX_SIZE            = 1024                                      # 输出的�
 PNG_MAX_RES             = 512                                       # 判断是否为大尺寸资源
 UNPACKAGENUM            = 3                                         # 图片数量达到打包的张数
 
-RESFOLDER               = "res_other"
-RESPACKAGE              = "res_package/"
 ##################################################################################################################
 # json UI 文件
 REALPATH                = "D:/Svn_2d/S_GD_Heji/res/hall/"                           # 资源的具体位置和json的位置相关
@@ -30,7 +29,7 @@ MOVETOCODEPATH          = "D:/Python_FileDispose/source/S_GD_Heji/res/hall/"    
 SEARLUAPATJ             = "D:/Svn_2d/S_GD_Heji/src/app"                             # 获取Lua文件的路径，只是大厅的Lua文件
 UIPROJECT               = "D:/Svn_2d/UI_Shu/"
 
-CHANNEL                 = "IOS_Audit/"
+CHANNEL                 = "3740/"
 
 if CHANNEL              == 1:
     SEARLUAPATJ         = "D:/Svn_2d/S_GD_Heji/src/app"                      # 获取Lua文件的路径，只是大厅的Lua文件
@@ -50,14 +49,26 @@ elif "IOS_Audit/"       == CHANNEL:
     SEARLUAPATJ         = r"D:\Svn_2d\IOS_TiShen\Project\src\app"               # 获取Lua文件的路径，只是大厅的Lua文件
     NEWLUAPATH          = SEARLUAPATJ                                           # 修改后的Lua存储路径
     MOVETOCODEPATH      = r"D:\Svn_2d\IOS_TiShen\Project\res\hall/"              # 资源在代码中的路径
+elif "3740/"            == CHANNEL:
+    UIPROJECT           = r"D:\Svn_2d\CoCoStuio\vertical\package_hall/"                     # UI工程项目所在路径
+    TARGETPATH          = UIPROJECT + "Resources/"                                          # 打包资源后输出路径
+    SEARCHJSONPATH      = UIPROJECT + "Json/"                                               # UI工程json路径
+    OUTPUTPATH          = SEARCHJSONPATH                                                    # 修改后的Json存储路径
+
+    CODEPROJECT         = r"D:\Svn_2d\AutoPackage\Portrait\DaShengMaJong\3740\trunk/"       # 代码工程路径
+    SEARLUAPATJ         = CODEPROJECT       + "src/app"                                     # 获取Lua文件的路径，只是大厅的Lua文件
+    FILEPATH            = CODEPROJECT       + "res/"                                        # 代码中res路径,用于获取全部资源信息
+    REALPATH            = FILEPATH          + "hall/"                                       # 用于跟Json中路径拼接得到真实路径
+    MOVETOCODEPATH      = REALPATH                                                          # 资源在代码中的路径
+    NEWLUAPATH          = SEARLUAPATJ                                                       # 修改后的Lua存储路径
 
 
 ##################################################################################################################
 
 OUTPUTTARGET            = "D:/Python_FileDispose/" + CHANNEL
-COPYPATH                = OUTPUTTARGET + "res_other"                 # 改名去重后的资源存储路径
-PACKAGESOURCE           = OUTPUTTARGET + "packSource/"               # 需要进行打包的文件夹和资源
-PACKAGEOUTPUT           = OUTPUTTARGET +  RESPACKAGE                 # 打包成资源路径
+RESPATH                 = OUTPUTTARGET + "Resource/"                   # 改名去重后的资源存储路径
+PACKAGEOUTPUT           = OUTPUTTARGET + "res_package/"                # 打包成资源路径
+PACKAGESOURCE           = OUTPUTTARGET + "packSource/"                 # 需要进行打包的文件夹和资源
 
 # 1 totalResDict
 DICTFILE                = OUTPUTTARGET + "output/1_FileDict.json"
@@ -124,7 +135,7 @@ def Test2(rootDir):
             Test2(path)
 # Test2(filefilepath)
 FileMd5Dict = collections.OrderedDict()   #用于记录文件的路径和md5值,避免同一路径多次生成
-def getFileMd5( path ):
+def generateFileMd5( path ):
     if FileMd5Dict.has_key(path):
         return FileMd5Dict.get(path)
 
@@ -228,7 +239,9 @@ def deleteDirByStr(str , paths):
 # comFun.deleteDirByStr(r".svn", r"D:\Svn_2d\CoCoStuio\vertical\hal_packres")
 
 # 从 sourcepath 移动 包含type的文件到dirPath,是否保留原有的路径结构
-def moveTypeFileToTarget(sourcePath , type , dirPath):
+def moveTypeFileToTarget(sourcePath , type , dirPath , update = False):
+    sourcePath = turnBias(sourcePath)
+    dirPath = turnBias(dirPath)
     if not os.path.isdir(sourcePath) or not os.path.isdir(dirPath):
         print "moveTypeFileToTarget is not dir"
         return
@@ -240,7 +253,13 @@ def moveTypeFileToTarget(sourcePath , type , dirPath):
         path = turnBias(path)
         if not re.search(type,path):
             continue
-        shutil.copyfile(path , dirPath + "/" + os.path.basename(path))
+        if update :     # 以更新的模式进行拷贝，刷新已经存在的文件
+            nDirPath = re.sub(sourcePath,dirPath,path)
+            if not os.path.isdir(os.path.dirname(nDirPath)):
+                os.makedirs(os.path.dirname(nDirPath), 0o777)
+            shutil.copyfile(path, nDirPath)
+        else:
+            shutil.copyfile(path , dirPath + "/" + os.path.basename(path))
 # comFun.moveTypeFileToTarget( r"D:\Svn_2d\IOS_TiShen\UIProject\majiang\Export", ".csb" , r"D:\Python_FileDispose\source\S_GD_Heji\res\hall")
 
 # 创建一个新路径
@@ -280,3 +299,18 @@ def addDataToFile(path , key , data , newFile = False):
     fileData[str(key)] = data
     stream.write(json.dumps(fileData, ensure_ascii=False, encoding="utf -8", indent=4))
     stream.close()
+
+# 1、拷贝文件夹到目标路径
+# shutil.copytree(r"D:\Svn_2d\CoCoStuio\vertical\hall", r"D:\Svn_2d\CoCoStuio\vertical\package_hall")
+# 2、删除文件夹中某类型文件
+# comFun.deleteDirByStr(r".svn", r"D:\Svn_2d\CoCoStuio\vertical\package_hall")
+# 3、复制文件夹内容到某路径，可以是更新的形式 (有可能与1重复，未测试)
+# comFun.moveTypeFileToTarget(r"D:\Svn_2d\UI_Shu\Resources", ".png",r"D:\Svn_2d\CoCoStuio\vertical\hall\Resources",True)
+
+def svnExport(sourcePath , targetPath):
+    if not os.path.exists(sourcePath):
+        print("svnExport sourcePath exceptional")
+        return
+    removeDir(targetPath)
+    # svn 的export会创建一个目标路径文件夹
+    os.system("svn export %s %s" % (sourcePath , targetPath))
